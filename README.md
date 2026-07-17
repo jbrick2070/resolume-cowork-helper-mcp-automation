@@ -58,6 +58,9 @@ resolume-cowork-helper-mcp-automation/
                 08-your-topic-pack    - ANY topic -> full 4x8-bank-optimized set
                 09-any-controller     - bring your own hardware; agent researches
                                         its banks/colors and maps to it
+  compositions/ ready-to-load all-generative .avc files (Res Fable Orbit
+                Gen.avc ships after its QA pass; prompt 07 builds it on
+                your machine today)
   controllers/  APC 40 MK II - Orbit v1.xml (91 shortcuts, validated) +
                 LAYOUT_CARD.md (printable, every control explained)
   docs/         fft-recipe-card.md    - the wiring convention and why it feels alive
