@@ -101,7 +101,7 @@
             "floor": 0.12
           },
           "custom_source": true,
-          "fallback": "Static"
+          "fallback": "Gradient"
         },
         {
           "col": 8,
