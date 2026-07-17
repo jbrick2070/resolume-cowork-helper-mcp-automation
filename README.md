@@ -58,9 +58,10 @@ resolume-cowork-helper-mcp-automation/
                 08-your-topic-pack    - ANY topic -> full 4x8-bank-optimized set
                 09-any-controller     - bring your own hardware; agent researches
                                         its banks/colors and maps to it
-  compositions/ ready-to-load all-generative .avc files (Res Fable Orbit
-                Gen.avc ships after its QA pass; prompt 07 builds it on
-                your machine today)
+  compositions/ TWO ready-to-load all-generative .avc files, every cell
+                filled and playable out of the box:
+                Res Fable Live Gen.avc  - 6 decks x 4x8, the simpler start
+                Res Fable Orbit Gen.avc - 5 decks x 4x9, the space journey
   controllers/  APC 40 MK II - Orbit v1.xml (91 shortcuts, validated) +
                 LAYOUT_CARD.md (printable, every control explained)
   docs/         fft-recipe-card.md    - the wiring convention and why it feels alive
@@ -99,8 +100,10 @@ clicking. Five installs-and-pastes:
 
 1. Connect your agent to a Resolume MCP; open any comp in Avenue/Arena 7.
 2. Run `prompts/01-first-contact.md`. If the reads match your screen, go.
-3. Run `prompts/07-orbit-gen-rebuild.md` (the full five-deck set) or
-   `prompts/02-fft-starter-comp.md` (a simpler single-deck instrument).
+3. Or skip the agent entirely: open a comp from `compositions/` - both
+   ship complete. Agent roads: `prompts/07-orbit-gen-rebuild.md` (rebuild
+   the five-deck set) or `prompts/02-fft-starter-comp.md` (build a simpler
+   single-deck instrument from scratch).
 4. Drop `controllers/APC 40 MK II - Orbit v1.xml` into Resolume's MIDI
    preset folder; Preferences > MIDI: enable the APC40 mkII as input AND
    output; select the preset. The grid lights in your column colors.
