@@ -69,6 +69,11 @@ resolume-cowork-helper-mcp-automation/
   LICENSE       MIT
 ```
 
+## Just want to play? -> [INSTALL.md](INSTALL.md)
+
+One page, four copy-paste steps: composition, plugins, controller preset,
+audio. No AI, no coding, ~10 minutes to a lit grid.
+
 ## Never coded? Start here (the from-zero path)
 
 You do not need to program anything. You type sentences; the agent does the
