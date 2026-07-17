@@ -17,14 +17,29 @@ layout live. Screenshots sell this better than any paragraph. -->
 
 ## What this is
 
-The generative-only edition of **Res Fable Orbit** - a five-deck
-exact-science space set (Physics / Planets / Stellar / Galactic / Cosmic).
-Every column is a real physical phenomenon with a placard citing the real
-dates and numbers; column 9 of every deck is the TRANSIT to the next regime;
-the last transit is the Pale Blue Dot. Zero clip files ship - every reactive
-cell is a native Resolume generative source, FFT-wired, and the manifests
-mark exactly where your own footage plugs in. Your clips, your rights, your
-set.
+Three things, in Resolume's own terms:
+
+1. **A complete Resolume composition, delivered as buildable specs.**
+   "Res Fable Orbit" is a full Avenue/Arena composition: 5 decks x 4
+   layers x 9 columns - 180 clip slots of named scenes, layer blend modes
+   set (Alpha/Screen/Screen/Add), a Bloom on the top layer, a bypassed
+   7-effect composition rack, and every Pulse-row clip a native generative
+   source with its opacity FFT-linked (band, gain, fallback, floor all
+   specified). The `manifests/` JSON is that composition cell by cell;
+   prompt 07 has an agent rebuild the .avc on your machine. The theme is
+   exact science - every column is a real phenomenon with a cited placard,
+   and column 9 of each deck is the TRANSIT to the next.
+2. **A customized controller shortcut layout.** A working "APC 40 MK II"
+   MIDI preset XML mapped to that composition: 91 shortcuts - clip launch
+   pads with per-column color feedback, layer opacity faders, effect
+   bypass punches, transit and deck-switch on the scene-launch buttons.
+3. **The prompts and protocols that made both.** Nine copy-paste prompts
+   so an agent does the same against YOUR composition and YOUR hardware,
+   plus the crash-tested rules for letting an agent drive Avenue at all.
+
+Zero clip files ship - the composition is 100% generative sources, so it
+opens on any machine, and the manifests mark exactly where your own
+footage plugs in. Your clips, your rights, your set.
 
 ## Repo tree
 
