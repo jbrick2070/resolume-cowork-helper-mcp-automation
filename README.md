@@ -1,10 +1,12 @@
 # fable-kit
 
-**An AI coding agent can build you a performing VJ rig.** This kit proves it:
-an FFT-reactive Resolume composition, a fully colored APC40 mkII layout, even
-custom FFGL plugins - plus the exact copy-paste prompts to make it happen on
-YOUR machine with YOUR clips. Nothing to buy; bring Resolume Avenue/Arena 7,
-a controller, and an agent (Claude Code / Cowork) with a Resolume MCP.
+**An AI agent can build your Resolume compositions and your customized
+controller shortcut layouts.** This kit proves it: FFT-reactive comps built
+scene by scene, a complete APC40 mkII shortcut layout authored and validated
+(91 mappings, grid colors and all), even custom FFGL plugins - plus the
+exact copy-paste prompts to make it happen on YOUR machine with YOUR clips.
+Nothing to buy; bring Resolume Avenue/Arena 7, a controller, and an agent
+(Claude Code / Cowork) with a Resolume MCP.
 
 > Tested on Resolume Avenue 7.27 + Resolume MCP 7.26, Windows 11.
 > Version drift is real; pin your expectations here.
