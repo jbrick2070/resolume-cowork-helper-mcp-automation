@@ -1,4 +1,4 @@
-# fable-kit
+# resolume-cowork-helper-mcp-automation
 
 **An AI agent can build your Resolume compositions and your customized
 controller shortcut layouts.** This kit proves it: FFT-reactive comps built
@@ -29,7 +29,7 @@ set.
 ## Repo tree
 
 ```
-fable-kit/
+resolume-cowork-helper-mcp-automation/
   manifests/    orbit_gen_O1..O5.json - the five decks as machine-readable
                 specs: per cell source, FFT band/gain/fallback/floor, mood
                 notes, user slots, native fallbacks for custom sources

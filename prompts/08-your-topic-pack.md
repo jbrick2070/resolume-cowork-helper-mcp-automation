@@ -12,8 +12,8 @@ Build me a complete, performable, APC40-optimized Resolume set about:
 [YOUR TOPIC - e.g. the deep ocean, fungal networks, the history of
 Detroit techno, Roman engineering, the human heart]
 
-First, read your reference material from the fable-kit folder at
-[PATH TO fable-kit/]: the manifest schema in manifests/orbit_gen_O1.json,
+First, read your reference material from this kit's folder at
+[PATH TO THIS KIT'S FOLDER]: the manifest schema in manifests/orbit_gen_O1.json,
 the FFT convention in docs/fft-recipe-card.md, and the safety rules in
 docs/stability-protocol.md. Those three files govern everything below.
 
