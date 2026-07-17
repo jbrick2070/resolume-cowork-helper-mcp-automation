@@ -75,6 +75,42 @@ resolume-cowork-helper-mcp-automation/
 One page, four copy-paste steps: composition, plugins, controller preset,
 audio. No AI, no coding, ~10 minutes to a lit grid.
 
+## Installing the APC40 mkII shortcuts (never done this before? read this)
+
+The preset is just an XML file you copy into one folder, then pick from a
+menu. Step by step:
+
+1. Download a preset from this repo's `controllers/` folder:
+   `APC 40 MK II - Orbit v1.xml` (for the Orbit comp) or
+   `APC 40 MK II - Fable v4.2.xml` (for the Live comp).
+2. Close Resolume if it is running.
+3. Open File Explorer (Finder on Mac) and go to your Documents folder,
+   then into `Resolume Avenue` > `Shortcuts` > `MIDI`. Notes: if you run
+   Arena the folder says `Resolume Arena`; if Windows keeps your Documents
+   in OneDrive, it is OneDrive's Documents folder; if `Shortcuts\MIDI`
+   does not exist yet, start Resolume once, press Ctrl+M then Escape, and
+   the folder appears.
+4. Copy the XML file into that `MIDI` folder. That is the whole install.
+5. Plug in the APC40 mkII BEFORE starting Resolume, then start Resolume
+   and open the matching composition from `compositions/`.
+6. In Resolume: Avenue (or Arena) menu > Preferences > MIDI. You will see
+   "APC40 mkII" listed as a device. Turn it ON as an input AND as an
+   output - both checkboxes. Output is what makes the pads light up.
+7. Still in that MIDI preferences panel, next to the device there is a
+   preset dropdown - choose the preset you copied in
+   ("APC 40 MK II - Orbit v1" or "- Fable v4.2").
+8. Close Preferences. Within a couple of seconds the pad grid lights up
+   in the comp's column colors. Press the bottom-left pad: it should
+   launch the bottom-left clip (layer 1, column 1). Faders move layer
+   opacities; the bottom-right scene-launch button jumps to the next deck.
+
+If something misbehaves: no lights means output was not enabled (step 6);
+wrong clips launching means another app (like Ableton) grabbed the
+controller first - close it and power-cycle the APC; the preset missing
+from the dropdown means the XML landed in the wrong folder (step 3).
+Full troubleshooting and the every-button map: `controllers/INSTALL.md`
+and `controllers/LAYOUT_CARD.md`.
+
 ## Never coded? Start here (the from-zero path)
 
 You do not need to program anything. You type sentences; the agent does the
