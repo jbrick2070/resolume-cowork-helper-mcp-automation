@@ -38,6 +38,9 @@ fable-kit/
                 05-your-clips         - curate + wire YOUR library, safely
                 06-custom-ffgl        - build a plugin from the FFGL SDK
                 07-orbit-gen-rebuild  - rebuild this whole set from manifests/
+                08-your-topic-pack    - ANY topic -> full 4x8-bank-optimized set
+                09-any-controller     - bring your own hardware; agent researches
+                                        its banks/colors and maps to it
   controllers/  APC 40 MK II - Orbit v1.xml (91 shortcuts, validated) +
                 LAYOUT_CARD.md (printable, every control explained)
   docs/         fft-recipe-card.md    - the wiring convention and why it feels alive
@@ -103,13 +106,15 @@ Orbit is one theme: space, told in five physics regimes. The format is the
 reusable part - a pack is just five things: themed deck manifests (steal the
 JSON schema in `manifests/`, it is self-explanatory), an energy-contour
 column order, placards that tell the truth, a matching controller preset,
-and the discipline in `docs/`. So tell your agent:
-
-> "Read fable-kit's manifests to learn the schema, then draft a five-deck
-> pack about [YOUR OBSESSION - deep sea, fungi, Detroit techno history,
-> the Roman aqueducts] - native sources only, FFT per the recipe card,
-> placards with real citations. Then build it with prompt 07's method and
-> write my controller preset with prompt 03."
+and the discipline in `docs/`. `prompts/08-your-topic-pack.md` is the
+one-paste version: fill in your topic ([deep sea, fungi, Detroit techno
+history, the Roman aqueducts...]) and your agent designs, builds,
+FFT-wires, and controller-maps the whole set - shaped to the APC40's 4x8
+pad bank from the first design decision, placards cited, energy contour
+enforced. Not an APC40 owner? `prompts/09-any-controller.md` has the agent
+research YOUR hardware's actual banks, buttons, and color system, derive
+the grid rule for it, and author the preset to match - plus your own
+stated requirements.
 
 Claude is what this kit was built and tested with, but the prompts are
 plain text and the manifests are plain JSON - any agent that can drive a
