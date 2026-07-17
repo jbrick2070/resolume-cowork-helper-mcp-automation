@@ -7,7 +7,7 @@ any Avenue/Arena 7 machine, no agent required.
 
 The original 6-deck tabbed performance master, gen edition: 6 decks x 4
 layers x 8 columns of scene banks, FFT-wired generative Pulse rows, comp FX
-rack, clip cells emptied to user slots. Pairs with
+rack, clip cells pre-filled with dressed generative placeholders (overwrite with your footage). Pairs with
 `../controllers/APC 40 MK II - Fable v4.2.xml` (90 shortcuts: grid, FX
 punch row, next-deck on bottom scene-launch - same activation steps as the
 Orbit preset, see ../controllers/INSTALL.md). This is the simpler of the
@@ -20,8 +20,9 @@ The five-deck composition described by `../manifests/`, as one file:
 Bloom on the Pulse layer, the bypassed 7-effect composition rack, and every
 Pulse cell FFT-wired (external FFT, per-cell band/gain/fallback/floor).
 100% generative sources - the custom-source cells ship as their native
-fallbacks per the manifests. Bed and Body rows are intentionally empty user
-slots: prompt 05 wires YOUR footage into them.
+fallbacks per the manifests. Every cell ships filled - non-Pulse rows carry generative
+placeholders (varied sources, rotated palettes, effect dressing) meant to
+be overwritten with YOUR footage: prompt 05 walks it.
 
 PAIRED CONTROLLER PACK: load this comp, then activate
 `../controllers/APC 40 MK II - Orbit v1.xml` (Preferences > MIDI, APC40

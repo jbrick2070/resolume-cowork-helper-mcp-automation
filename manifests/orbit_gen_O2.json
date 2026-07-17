@@ -304,5 +304,5 @@
       ]
     }
   },
-  "edition": "Zero file dependencies: opens on any Avenue 7 machine. Pulse row is the original FFT-wired generative spec verbatim. Bed/Structure cells that used local clips are user slots with a generative fallback; prompt 05 teaches wiring YOUR OWN clips into them. Body row is the WITNESS row - it wants human/instrument footage, so it ships as user slots (dark until you feed it)."
+  "edition": "Zero file dependencies: opens on any Avenue 7 machine. Pulse row is the original FFT-wired generative spec verbatim. Every other cell ships PRE-FILLED with a generative placeholder (varied native sources, palette-rotated colors, effect dressing on alternating cells) so the composition performs complete out of the box. Cells marked user_slot are designed to be OVERWRITTEN with your own footage - prompt 05 walks that. Custom sources ship as native fallbacks per custom_source/fallback."
 }
