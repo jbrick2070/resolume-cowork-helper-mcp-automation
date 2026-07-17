@@ -3,6 +3,16 @@
 Ready-to-load, all-generative `.avc` files - zero file dependencies, open on
 any Avenue/Arena 7 machine, no agent required.
 
+## Res Fable Live Gen.avc (SHIPPED)
+
+The original 6-deck tabbed performance master, gen edition: 6 decks x 4
+layers x 8 columns of scene banks, FFT-wired generative Pulse rows, comp FX
+rack, clip cells emptied to user slots. Pairs with
+`../controllers/APC 40 MK II - Fable v4.2.xml` (90 shortcuts: grid, FX
+punch row, next-deck on bottom scene-launch - same activation steps as the
+Orbit preset, see ../controllers/INSTALL.md). This is the simpler of the
+two comps - start here if Orbit's transit ritual is too much ceremony.
+
 ## Res Fable Orbit Gen.avc (SHIPPED)
 
 The five-deck composition described by `../manifests/`, as one file:
