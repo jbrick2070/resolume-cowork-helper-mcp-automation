@@ -1,0 +1,291 @@
+{
+  "manifest": "Res Fable Orbit - O4 Galactic deck - GENERATIVE-ONLY EDITION (fable-kit)",
+  "generated": "2026-07-17 overnight (autonomous curation - P2 polish review invited)",
+  "deck": {
+    "position_at_build": 5,
+    "name": "O4 Galactic"
+  },
+  "source_of_truth": "fable-kit gen edition, derived 2026-07-17 from the Res Fable Orbit build",
+  "fft_convention": "bands bass 0-0.33 / mids 0.33-0.66 / highs 0.66-1.0; opacity sweep floor 0.12 except strobes 0. Gig state = External FFT.",
+  "columns": [
+    "Galactic Year",
+    "Density Waves",
+    "Rotation Curve",
+    "Sgr A*",
+    "Lensing",
+    "Collision",
+    "Globulars",
+    "Local Group",
+    "O4 Transit"
+  ],
+  "note_fablelens": "FableLens (P2/P3 plugin) rides the col-5 BED clip when it ships; bed cell deliberately populated so the lens has a carrier.",
+  "layers": {
+    "L4_Pulse": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "source": "Rings",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 1800,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 2,
+          "source": "Spiral",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 600,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 3,
+          "source": "Lines",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 600,
+            "floor": 0.12
+          },
+          "note": "the plateau, literally"
+        },
+        {
+          "col": 4,
+          "source": "Metaballs",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 300,
+            "floor": 0.12
+          },
+          "note": "tight grid = P2 polish"
+        },
+        {
+          "col": 5,
+          "source": "Sine Wave",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 500,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 6,
+          "source": "Geometry Pattern Maker",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 800,
+            "floor": 0.12
+          },
+          "custom_source": true,
+          "fallback": "Checkered"
+        },
+        {
+          "col": 7,
+          "source": "Golden Flicker Reel",
+          "fft": {
+            "param": "video/opacity",
+            "band": "highs",
+            "gain_db": 6,
+            "fallback_ms": 400,
+            "floor": 0.12
+          },
+          "custom_source": true,
+          "fallback": "Static"
+        },
+        {
+          "col": 8,
+          "source": "Line Scape",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 800,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 9,
+          "source": "Tunnelines",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 300,
+            "floor": 0.12
+          }
+        }
+      ]
+    },
+    "L1_Bed": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "user_slot": true,
+          "mood": "Galactic Year - the great wheel",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 2,
+          "user_slot": true,
+          "mood": "Density Waves - pattern vs matter",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 3,
+          "user_slot": true,
+          "mood": "Rotation Curve - light that will not fall off",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 4,
+          "dark_by_design": true,
+          "note": "Sgr A* - black; tight Metaballs orbit it"
+        },
+        {
+          "col": 5,
+          "user_slot": true,
+          "mood": "Lensing - FableLens carrier (variant take)",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 6,
+          "user_slot": true,
+          "mood": "Collision - interpenetration",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 7,
+          "user_slot": true,
+          "mood": "Globulars - the old cluster",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 8,
+          "user_slot": true,
+          "mood": "Local Group - approach (variant take)",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 9,
+          "user_slot": true,
+          "mood": "TRANSIT Hubble Flow - carried outward (variant take)",
+          "gen_fallback": "Abstract Field"
+        }
+      ]
+    },
+    "L2_Structure": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "user_slot": true,
+          "mood": "the mirrored arena turns",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 2,
+          "user_slot": true,
+          "mood": "dimensional traffic jam",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 3,
+          "dark_by_design": true
+        },
+        {
+          "col": 4,
+          "dark_by_design": true
+        },
+        {
+          "col": 5,
+          "user_slot": true,
+          "mood": "Lensing - the sphere warps the plane",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 6,
+          "user_slot": true,
+          "mood": "Collision - mirrored pair",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 7,
+          "dark_by_design": true
+        },
+        {
+          "col": 8,
+          "user_slot": true,
+          "mood": "Local Group geometry",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 9,
+          "dark_by_design": true
+        }
+      ]
+    },
+    "L3_Body": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "dark_by_design": true
+        },
+        {
+          "col": 2,
+          "dark_by_design": true
+        },
+        {
+          "col": 3,
+          "user_slot": true,
+          "mood": "the dish cranes - Rubin's plates",
+          "dark_until_fed": true
+        },
+        {
+          "col": 4,
+          "user_slot": true,
+          "mood": "tracking S2 at 7650 km/s",
+          "dark_until_fed": true
+        },
+        {
+          "col": 5,
+          "user_slot": true,
+          "mood": "Eddington's plate close-up",
+          "dark_until_fed": true
+        },
+        {
+          "col": 6,
+          "dark_by_design": true
+        },
+        {
+          "col": 7,
+          "dark_by_design": true
+        },
+        {
+          "col": 8,
+          "dark_by_design": true
+        },
+        {
+          "col": 9,
+          "dark_by_design": true
+        }
+      ]
+    }
+  },
+  "edition": "Zero file dependencies: opens on any Avenue 7 machine. Pulse row is the original FFT-wired generative spec verbatim. Bed/Structure cells that used local clips are user slots with a generative fallback; prompt 05 teaches wiring YOUR OWN clips into them. Body row is the WITNESS row - it wants human/instrument footage, so it ships as user slots (dark until you feed it)."
+}

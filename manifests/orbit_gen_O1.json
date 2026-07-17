@@ -1,0 +1,299 @@
+{
+  "manifest": "Res Fable Orbit - O1 Physics deck - GENERATIVE-ONLY EDITION (fable-kit)",
+  "generated": "2026-07-16",
+  "deck": {
+    "position_at_build": 1,
+    "name": "O1 Physics"
+  },
+  "source_of_truth": "fable-kit gen edition, derived 2026-07-17 from the Res Fable Orbit build",
+  "fft_convention": "bands bass 0-0.33 / mids 0.33-0.66 / highs 0.66-1.0; gain dB as noted; fallback ms as noted; opacity sweep floor 0.12 except strobes 0. Gig state = External FFT (wake-up checklist).",
+  "columns": [
+    "Countdown",
+    "Kepler",
+    "Hohmann",
+    "Max Q",
+    "Insertion",
+    "Free Fall",
+    "Resonance",
+    "Escape",
+    "O1 Transit"
+  ],
+  "layers": {
+    "L4_Pulse": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "source": "Lines",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 300,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 2,
+          "source": "Rings",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 600,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 3,
+          "source": "Spiral",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 500,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 4,
+          "source": "Stroboscope",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass 0-0.25",
+            "gain_db": 3,
+            "fallback_ms": 100,
+            "floor": 0.0
+          }
+        },
+        {
+          "col": 5,
+          "source": "Tunnelines",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 300,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 6,
+          "source": "Metaballs",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 1800,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 7,
+          "source": "Geometry Pattern Maker",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 400,
+            "floor": 0.12
+          },
+          "custom_source": true,
+          "fallback": "Checkered"
+        },
+        {
+          "col": 8,
+          "source": "Line Scape",
+          "fft": {
+            "param": "video/opacity",
+            "band": "highs",
+            "gain_db": 6,
+            "fallback_ms": 250,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 9,
+          "source": "Abstract Field",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 1800,
+            "floor": 0.12
+          }
+        }
+      ],
+      "dressing": "NAKED this round (r2 s6 no-effect fallback is always legal); per-cell dressing pass at P2 polish"
+    },
+    "L1_Bed": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "user_slot": true,
+          "mood": "open - blank leader",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 2,
+          "user_slot": true,
+          "mood": "open - gentle drift",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 3,
+          "user_slot": true,
+          "mood": "build - handheld energy",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 4,
+          "user_slot": true,
+          "mood": "PEAK - flicker under Max Q strobe",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 5,
+          "user_slot": true,
+          "mood": "peak - one-second cuts",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 6,
+          "user_slot": true,
+          "mood": "comedown - long night",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 7,
+          "user_slot": true,
+          "mood": "deep - 16mm texture",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 8,
+          "user_slot": true,
+          "mood": "null/art - static",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 9,
+          "user_slot": true,
+          "mood": "TRANSIT - continuous cruise zoom",
+          "gen_fallback": "Abstract Field"
+        }
+      ]
+    },
+    "L2_Structure": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "source": "Gradient",
+          "note": "angular sweep = countdown"
+        },
+        {
+          "col": 2,
+          "source": "Shaper",
+          "note": "ellipse = Kepler orbit"
+        },
+        {
+          "col": 3,
+          "source": "Lines",
+          "note": "rotated = transfer path"
+        },
+        {
+          "col": 4,
+          "source": "Checkered",
+          "note": "aero stress grid"
+        },
+        {
+          "col": 5,
+          "source": "Shaper",
+          "note": "circle = orbit achieved"
+        },
+        {
+          "col": 6,
+          "dark_by_design": true,
+          "note": "free fall = nothing to hold"
+        },
+        {
+          "col": 7,
+          "source": "Rings",
+          "note": "resonance rings 1:2:4"
+        },
+        {
+          "col": 8,
+          "dark_by_design": true,
+          "note": "escape = past structure"
+        },
+        {
+          "col": 9,
+          "source": "Gradient",
+          "note": "radial slow = cruise glow"
+        }
+      ]
+    },
+    "L3_Body": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "user_slot": true,
+          "mood": "ignition hold",
+          "dark_until_fed": true
+        },
+        {
+          "col": 2,
+          "user_slot": true,
+          "mood": "wrists = instruments",
+          "dark_until_fed": true
+        },
+        {
+          "col": 3,
+          "user_slot": true,
+          "mood": "palms brace",
+          "dark_until_fed": true
+        },
+        {
+          "col": 4,
+          "user_slot": true,
+          "mood": "Max Q clench",
+          "dark_until_fed": true
+        },
+        {
+          "col": 5,
+          "user_slot": true,
+          "mood": "g-load neck",
+          "dark_until_fed": true
+        },
+        {
+          "col": 6,
+          "user_slot": true,
+          "mood": "free-fall breath",
+          "dark_until_fed": true
+        },
+        {
+          "col": 7,
+          "user_slot": true,
+          "mood": "resonance interlock",
+          "dark_until_fed": true
+        },
+        {
+          "col": 8,
+          "user_slot": true,
+          "mood": "single fingertip = escape touch",
+          "dark_until_fed": true
+        },
+        {
+          "col": 9,
+          "user_slot": true,
+          "mood": "cruise - light touch",
+          "dark_until_fed": true
+        }
+      ]
+    }
+  },
+  "edition": "Zero file dependencies: opens on any Avenue 7 machine. Pulse row is the original FFT-wired generative spec verbatim. Bed/Structure cells that used local clips are user slots with a generative fallback; prompt 05 teaches wiring YOUR OWN clips into them. Body row is the WITNESS row - it wants human/instrument footage, so it ships as user slots (dark until you feed it)."
+}

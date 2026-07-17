@@ -1,0 +1,281 @@
+{
+  "manifest": "Res Fable Orbit - O5 Cosmic deck - GENERATIVE-ONLY EDITION (fable-kit)",
+  "generated": "2026-07-17 overnight (autonomous curation - P2 polish review invited)",
+  "deck": {
+    "position_at_build": 4,
+    "name": "O5 Cosmic"
+  },
+  "source_of_truth": "fable-kit gen edition, derived 2026-07-17 from the Res Fable Orbit build",
+  "fft_convention": "bands bass 0-0.33 / mids 0.33-0.66 / highs 0.66-1.0; opacity sweep floor 0.12 except strobes 0. Gig state = External FFT.",
+  "columns": [
+    "Redshift",
+    "CMB",
+    "Cosmic Web",
+    "Inflation",
+    "Chirp",
+    "Dark Energy",
+    "Deep Field",
+    "Null Field",
+    "O5 Transit"
+  ],
+  "layers": {
+    "L4_Pulse": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "source": "Sine Wave",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 1800,
+            "floor": 0.12
+          },
+          "note": "hue drift = P2 polish"
+        },
+        {
+          "col": 2,
+          "source": "Abstract Field",
+          "fft": {
+            "param": "video/opacity",
+            "band": "highs",
+            "gain_db": 6,
+            "fallback_ms": 400,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 3,
+          "source": "Lines",
+          "fft": {
+            "param": "video/opacity",
+            "band": "mids",
+            "gain_db": 6,
+            "fallback_ms": 600,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 4,
+          "source": "Stroboscope",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass 0-0.25",
+            "gain_db": 3,
+            "fallback_ms": 100,
+            "floor": 0.0
+          }
+        },
+        {
+          "col": 5,
+          "source": "Rings",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 100,
+            "floor": 0.12
+          },
+          "note": "chirp gate - tight fallback"
+        },
+        {
+          "col": 6,
+          "source": "Metaballs",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 6,
+            "fallback_ms": 1800,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 7,
+          "source": "Golden Flicker Reel",
+          "fft": {
+            "param": "video/opacity",
+            "band": "highs",
+            "gain_db": 3,
+            "fallback_ms": 800,
+            "floor": 0.12
+          },
+          "custom_source": true,
+          "fallback": "Static"
+        },
+        {
+          "col": 8,
+          "source": "Line Scape",
+          "fft": {
+            "param": "video/opacity",
+            "band": "highs",
+            "gain_db": 9,
+            "fallback_ms": 250,
+            "floor": 0.12
+          }
+        },
+        {
+          "col": 9,
+          "source": "Geometry Pattern Maker",
+          "fft": {
+            "param": "video/opacity",
+            "band": "bass",
+            "gain_db": 3,
+            "fallback_ms": 1800,
+            "floor": 0.12
+          },
+          "note": "single minimal element = P2 polish (param trim)",
+          "custom_source": true,
+          "fallback": "Checkered"
+        }
+      ]
+    },
+    "L1_Bed": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "user_slot": true,
+          "mood": "Redshift - the long drift out",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 2,
+          "user_slot": true,
+          "mood": "CMB - faint uniform glow",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 3,
+          "dark_by_design": true,
+          "note": "Web lives on Structure"
+        },
+        {
+          "col": 4,
+          "dark_by_design": true,
+          "note": "Inflation = strobe only"
+        },
+        {
+          "col": 5,
+          "dark_by_design": true,
+          "note": "Chirp = Rings only, black behind"
+        },
+        {
+          "col": 6,
+          "user_slot": true,
+          "mood": "Dark Energy - variant take, accelerating away",
+          "gen_fallback": "Abstract Field"
+        },
+        {
+          "col": 7,
+          "dark_by_design": true,
+          "note": "Deep Field - Hubble stared at NOTHING; flicker carries"
+        },
+        {
+          "col": 8,
+          "dark_by_design": true,
+          "note": "Null Field"
+        },
+        {
+          "col": 9,
+          "dark_by_design": true,
+          "note": "Pale Blue Dot - the dark is the point; Body carries the human"
+        }
+      ]
+    },
+    "L2_Structure": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "dark_by_design": true
+        },
+        {
+          "col": 2,
+          "user_slot": true,
+          "mood": "CMB anisotropy texture",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 3,
+          "user_slot": true,
+          "mood": "the cosmic web itself",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 4,
+          "dark_by_design": true
+        },
+        {
+          "col": 5,
+          "dark_by_design": true
+        },
+        {
+          "col": 6,
+          "user_slot": true,
+          "mood": "lattice stretching - dark energy",
+          "gen_fallback": "Shaper"
+        },
+        {
+          "col": 7,
+          "dark_by_design": true
+        },
+        {
+          "col": 8,
+          "dark_by_design": true,
+          "note": "ident superseded to Body (r2 house precedent)"
+        },
+        {
+          "col": 9,
+          "dark_by_design": true
+        }
+      ]
+    },
+    "L3_Body": {
+      "status": "SPEC (gen edition)",
+      "cells": [
+        {
+          "col": 1,
+          "dark_by_design": true
+        },
+        {
+          "col": 2,
+          "dark_by_design": true
+        },
+        {
+          "col": 3,
+          "dark_by_design": true
+        },
+        {
+          "col": 4,
+          "dark_by_design": true
+        },
+        {
+          "col": 5,
+          "dark_by_design": true
+        },
+        {
+          "col": 6,
+          "dark_by_design": true
+        },
+        {
+          "col": 7,
+          "dark_by_design": true
+        },
+        {
+          "col": 8,
+          "user_slot": true,
+          "mood": "Null Field ident - hydrogen, the first forge (placard names all four)",
+          "dark_until_fed": true
+        },
+        {
+          "col": 9,
+          "user_slot": true,
+          "mood": "Pale Blue Dot - one human, faint (opacity drop = P2 polish)",
+          "dark_until_fed": true
+        }
+      ]
+    }
+  },
+  "edition": "Zero file dependencies: opens on any Avenue 7 machine. Pulse row is the original FFT-wired generative spec verbatim. Bed/Structure cells that used local clips are user slots with a generative fallback; prompt 05 teaches wiring YOUR OWN clips into them. Body row is the WITNESS row - it wants human/instrument footage, so it ships as user slots (dark until you feed it)."
+}
