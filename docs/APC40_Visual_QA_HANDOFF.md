@@ -75,36 +75,28 @@ parameter { action:"set", target:"clip", layer:L, column:1, parameter:"triggerst
 
 ---
 
-## Knobs & faders — think creatively (criterion 4)
+## Knobs & faders — persistent label, reacts IN PLACE (criterion 4)
 
-These are continuous, not on/off, so no single trick feels right — this is the part to be
-inventive with. A good continuous indicator does **two** jobs: **(a) signal that the control is
-being touched**, and **(b) show its value**. The trap: a CC only fires **on change**, and
-faders/knobs **hold** their position — so "hide at rest = opacity 0" only hides at value 0, not
-when merely untouched. Design around that. Menu below — pick and combine.
+Continuous controls hold their value, so the system may need the CC layer to stay connected (always
+on) just to render. That's fine — let the label **persist**: always visible, parked in its fixed
+spot (its "lane"). The reaction is an **in-place appearance change**: turning the knob or moving
+the fader **changes the label's color** (or brightness / outline / glow) — but it **never moves,
+resizes big, or flies around**. Stays in its lane = no overlap (criterion 2) and the panel stays
+readable, while movement still proves the control works.
 
-**Ways to show VALUE:**
-- **Level bar / fill** — a bar beside the label fills 0→100% with the value. Most meter-like, instantly readable.
-- **Position travel** — the label rides its control's axis: a fader's label slides up/down its track, a knob's label swings on an arc. Mirrors the real motion.
-- **Ring / arc** — an arc around the label fills with the value, echoing the APC's own LED ring.
-- **Scale** — the label grows with the value.
-- **Color ramp** — hue/brightness shifts with value (dim→bright, or cool→hot).
-- **Numeric readout** — print the raw 0-127. The most literal "serves the purpose."
-- **Rotation** (knobs) — spin a needle/label like the knob pointer.
+- **Default:** label always on, dim/neutral at rest; **movement shifts its color** (cycle hue, or dim→bright), settling back when the control stops.
+- **Do not** try to encode the exact value — just react. Color-cycling on movement can't be "off," because it asserts no measurement.
+- Vary the reaction if you like: hue cycle, outline color, glow, a brightness pulse — anything that changes *where it sits*.
 
-**Ways to signal TOUCH:**
-- **Value-gate opacity** — opacity ∝ value. Simplest, but only hides at 0.
-- **Flash-on-change** — every CC change briefly pulses the label bright, then it decays back to dim/hidden. This genuinely means "I just touched this," independent of value. Needs a decay envelope — do it with a Resolume auto-pilot/dashboard envelope, or cleaner in **Chataigne (the Baton layer)**, which can turn a CC change into a timed opacity pulse.
-- **Always-dim + bright-on-touch** — keep the label faintly visible so the panel stays readable, brighten on change.
+**Skip (not worth the calibration, and they risk moving the label):** level bars, position-travel,
+exact LED rings, numeric 0-127, value-proportional opacity. A later bonus at most, never required.
 
-**Recommended combo:** *flash-on-change to signal touch + a level bar (or numeric) for value* — that
-gives knobs/faders the same instant "active + here's my state" read that Toggle gives buttons.
-
-**Implementation notes (any of the above):**
-- The clip must be **connected/playing** to render at all — auto-connect every CC layer on load; do **not** Toggle them.
-- Route the CC to a value channel: layer `video/opacity` (gate), Transform **Scale**, a bar clip's parameter, etc.
-  Shortcut target e.g. `CC → /composition/layers/L/video/opacity`; add a second target for the value channel if used.
-- The plain CC→opacity fallback works, but it's the floor, not the goal. The idea deserves better — be creative here.
+**Implementation notes:**
+- CC layers stay **connected** (auto-connect on load) with opacity up so the label persists; do **not** Toggle them.
+- Map the CC → a **color / brightness parameter of the label**, not its position or scale.
+- A clean "shift then settle" envelope is fiddly in Resolume alone — it's the natural job for
+  **Chataigne (the Baton layer)**: turn a raw CC change into a timed color/brightness pulse in place.
+  Persistent-label + react-in-place is exactly the behavior Baton is meant to add.
 
 ---
 
