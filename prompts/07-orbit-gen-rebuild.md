@@ -1,4 +1,4 @@
-# Prompt 07 - Rebuild Res Fable Orbit (generative edition)
+# Prompt 07 - Rebuild Res React Orbit (generative edition)
 
 Prereq: prompt 01 worked; the five manifests from this kit's `manifests/`
 folder are on your machine. This rebuilds a five-deck exact-science space
@@ -7,7 +7,7 @@ confirmations.
 
 ---
 
-Rebuild the "Res Fable Orbit" generative edition in Resolume from the five
+Rebuild the "Res React Orbit" generative edition in Resolume from the five
 manifest files at [PATH TO manifests/orbit_gen_O1..O5.json].
 
 The shape: five deck tabs - O1 Physics, O2 Planets, O3 Stellar, O4
@@ -24,7 +24,7 @@ Method, per deck (deck 1 first, then duplicate its clean shell for the
 others and rename):
 1. Build/verify the layer stack and 9 columns, named per the manifest.
 2. Load the Pulse row from the manifest's L4 cells - all native sources.
-   If a cell names a source your Resolume does not have (e.g. "Fable
+   If a cell names a source your Resolume does not have (e.g. "React
    Pulsar", "Golden Flicker Reel"), use the manifest's fallback or the
    nearest native equivalent, and note the substitution.
 3. FFT-wire each Pulse cell's listed param: external FFT, the manifest's

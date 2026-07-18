@@ -6,6 +6,11 @@ buttons, and color system, derives the grid rule for it, and shapes the
 set + preset around what you own. Works standalone after prompt 02/07/08,
 or replaces prompt 03 entirely.
 
+Throughout, follow the kit's control law in `docs/CONTROL_LOGIC.md` - its
+safety rails, two-tier knob design, serializer law, and debunk list apply to
+EVERY controller, not just the APC40 (there is no "connected clip dashboard"
+address - never invent one).
+
 ---
 
 My controller is: [MAKE + EXACT MODEL - e.g. Akai APC mini mk2, Novation
@@ -49,13 +54,21 @@ PHASE 3 - MAP AND SHIP:
    painting - write it, python-rtmidi, and explain how it coexists with
    Resolume's feedback), remaining controls per my requirements, transit
    and deck-next on whatever this surface's best equivalent of scene
-   launch is. Every shortcut: unique id, unique MIDI key; validate counts
-   equal before finishing. UTF-8 no BOM, CRLF.
+   launch is. For any knobs/encoders, use the two-tier dashboard design from
+   CONTROL_LOGIC.md (selected-clip dashboard + the always-correct layer-rack
+   tier), the canonical 8-slot scheme, and ALL its safety rails - Trails
+   feedback capped 0.95, strobe off knobs, enum/boolean params to BUTTONS not
+   dials, Video Router never self-inputs. Reuse rig-proven shortcut blocks and
+   diff+clone any new species per the serializer law; never emit a debunked
+   path or fabricated schema. Every shortcut: unique id, unique MIDI key;
+   validate counts equal before finishing. UTF-8 no BOM, CRLF.
 7. Deliver: preset XML (+ helper script if needed), a layout card naming
    every control's job, and the activation steps (Preferences > MIDI,
    input AND output, which preset to pick).
 
 VERIFY (me): plug in, load, play. Every pad launches what its position
 says, colors mean something, and nothing in my requirements list got
-silently dropped. If a control does the wrong thing, tell the agent WHICH
-one - it is a two-minute remap, not a redesign.
+silently dropped. Turn on General Preferences > "Update clip panels on external
+triggers" so knob banks follow what you launch, and pin any Trails dial to max
+to confirm the image still decays (no freeze). If a control does the wrong
+thing, tell the agent WHICH one - it is a two-minute remap, not a redesign.

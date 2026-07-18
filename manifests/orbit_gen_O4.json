@@ -1,11 +1,11 @@
 {
-  "manifest": "Res Fable Orbit - O4 Galactic deck - GENERATIVE-ONLY EDITION (fable-kit)",
+  "manifest": "Res React Orbit - O4 Galactic deck - GENERATIVE-ONLY EDITION (react-kit)",
   "generated": "2026-07-17 overnight (autonomous curation - P2 polish review invited)",
   "deck": {
     "position_at_build": 5,
     "name": "O4 Galactic"
   },
-  "source_of_truth": "fable-kit gen edition, derived 2026-07-17 from the Res Fable Orbit build",
+  "source_of_truth": "react-kit gen edition, derived 2026-07-17 from the Res React Orbit build",
   "fft_convention": "bands bass 0-0.33 / mids 0.33-0.66 / highs 0.66-1.0; opacity sweep floor 0.12 except strobes 0. Gig state = External FFT.",
   "columns": [
     "Galactic Year",
@@ -18,7 +18,7 @@
     "Local Group",
     "O4 Transit"
   ],
-  "note_fablelens": "FableLens (P2/P3 plugin) rides the col-5 BED clip when it ships; bed cell deliberately populated so the lens has a carrier.",
+  "note_reactlens": "ReactLens (P2/P3 plugin) rides the col-5 BED clip when it ships; bed cell deliberately populated so the lens has a carrier.",
   "layers": {
     "L4_Pulse": {
       "status": "SPEC (gen edition)",
@@ -159,7 +159,7 @@
         {
           "col": 5,
           "user_slot": true,
-          "mood": "Lensing - FableLens carrier (variant take)",
+          "mood": "Lensing - ReactLens carrier (variant take)",
           "gen_fallback": "Abstract Field"
         },
         {

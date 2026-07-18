@@ -660,12 +660,6 @@
 		</Shortcut>
 		<!-- v4.1: layer 5/6 shortcut removed here (comp is 4 layers since 2026-07-16). Control is intentionally DARK. Hand-map later via Ctrl+M: click the new target in Avenue, then press/move this control. Was: /composition/layers/5/video/opacity, uniqueId 1784313000064 -->
 		<!-- v4.1: layer 5/6 shortcut removed here (comp is 4 layers since 2026-07-16). Control is intentionally DARK. Hand-map later via Ctrl+M: click the new target in Avenue, then press/move this control. Was: /composition/layers/6/video/opacity, uniqueId 1784313000065 -->
-		<Shortcut name="Shortcut" uniqueId="1784313000066" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/video/effects/trails/effect/feedback" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/video/effects/trails/effect/feedback" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<RawInputMessage key="144115188075857846" value="0.9000000000000000222" numSteps="128" />
-		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1784313000067" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/4/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/4/master" translationType="1" allowedTranslationTypes="11" />
@@ -686,12 +680,6 @@
 			<RawInputMessage key="144115188075859888" value="0.5" numSteps="128" />
 		</Shortcut>
 		<!-- DEVICE KNOBS: 1 Trails Feedback / 2 Bloom Brightness / 3 Bloom Threshold / 4 Hue Rotate / 5 ShiftRGB Distance / 6 LoRez Pixel Size / 7 LoRez Bit Reduction / 8 unmapped (Sat. Scale address unverifiable) -->
-		<Shortcut name="Shortcut" uniqueId="1784313000070" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/video/effects/trails/effect/feedback" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/video/effects/trails/effect/feedback" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<RawInputMessage key="144115188075860144" value="0.9000000000000000222" numSteps="128" />
-		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1784313000071" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/4/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/4/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="11" />
@@ -780,15 +768,6 @@
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075868080" value="0.0078125" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1784313001082" paramNodeName="RangedParam[bool]" behaviour="4">
-			<ShortcutPath name="InputPath" path="/composition/video/effects/trails/bypassed" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/video/effects/trails/bypassed" translationType="1" allowedTranslationTypes="1" />
-			<RawInputMessage key="72057594037936272" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.023622047244094488" />
-				<Value first="On" second="0.10236220472440945" />
-			</NamedValues>
-		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1784313001083" paramNodeName="RangedParam[bool]" behaviour="4">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/huerotate/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/huerotate/bypassed" translationType="1" allowedTranslationTypes="1" />
@@ -829,15 +808,6 @@
 			<ShortcutPath name="InputPath" path="/composition/video/effects/mirrorquad/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/mirrorquad/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037937552" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.023622047244094488" />
-				<Value first="On" second="0.10236220472440945" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1784313001088" paramNodeName="RangedParam[bool]" behaviour="4">
-			<ShortcutPath name="InputPath" path="/composition/video/effects/freeze/bypassed" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/video/effects/freeze/bypassed" translationType="1" allowedTranslationTypes="1" />
-			<RawInputMessage key="72057594037937808" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.023622047244094488" />
 				<Value first="On" second="0.10236220472440945" />

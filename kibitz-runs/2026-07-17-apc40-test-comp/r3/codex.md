@@ -1,0 +1,31 @@
+VERDICT: no. The plan has unresolved handoff gaps between manifest, preset parser, clip generator, and MIDI LED test sequencing.
+
+MUST-FIX BEFORE BUILD:
+1. [Map-freeze parser] Parser output cannot satisfy [Manifest] "one row per grid pad": notes 0 and 6 are intentionally missing shortcuts in the real preset, so iterating only `<Shortcut>` rows will never emit the required empty manifest rows. Verified: parsed note-on grid shortcuts include notes 1-5, 7, and 8-39, but not 0 or 6; examples in `C:/Art Projects/Res_Fable/react-kit/controllers/APC 40 MK II - React v4.4.xml:771`, `:817`, `:11`, `:479`. Concrete fix: manifest builder must enumerate notes 0-39, left-join parsed shortcuts, and synthesize `kind=empty`, `shortcut_uniqueId=null`, `resolume_target=null`, `resolume_feedback_values=null` for missing notes 0 and 6.
+
+2. [Preflight + runbook] The run order conflicts with the raw MIDI LED script. Plan says MIDI output enabled, load comp, then run `apc40_led_test.py`; the script opens the APC40 MIDI output directly and exits 2 on "PORT BUSY or unopenable". Verified in `C:/Art Projects/Res_Fable/apc40_led_test.py:31-34`. Concrete fix: run direct-LED test before Avenue owns the output port, or explicitly disable/close Resolume MIDI output for that step; then re-enable output before Resolume feedback tests.
+
+3. [Preflight + runbook] "press pads in note order" violates [FX row] "test blackout LAST" and makes FX visual testing unreliable. Notes 1-5 are composition effect bypass toggles and note 7 is composition bypass; if tested before any clip note 8-39 is launched, there may be no visible signal, and note 7 can black out the rest of the run. Verified targets in `C:/Art Projects/Res_Fable/react-kit/controllers/APC 40 MK II - React v4.4.xml:772`, `:808`, `:817-819`; first clip note starts at raw key for note 8 in `:11`. Concrete fix: test empty/direct LEDs first if desired, launch a known visible clip, test clip notes 8-39, test FX notes 1-5 against that live image, then test note 7 blackout last and explicitly restore `/composition/bypassed=false`.
+
+4. [Manifest] Manifest provides only `direct_led_velocity_0_127`, but [Clip-clone contract] needs an `.avc` background color param. Resolume clip colors are serialized as `ParamColor` plus RGB ranges, not APC velocity integers. Verified Text Block color serialization in `C:/Art Projects/Res_Fable/react-kit/compositions/Res React Live Gen.avc:515-523`; LED velocities are only MIDI values in `C:/Art Projects/Res_Fable/apc40_led_test.py:15`. Concrete fix: add `screen_color_rgb` and/or serialized `ParamColor` fields to the manifest, with an explicit velocity-to-screen-color palette lookup.
+
+5. [Clip-clone contract] "Post-build validation: no duplicate `uniqueId`" is too broad for the existing `.avc` scaffold. The real React comp already repeats column uniqueIds across decks, so a global duplicate-id assertion will fail before new clips are even considered. Verified duplicate `1784183992090` at `C:/Art Projects/Res_Fable/react-kit/compositions/Res React Live Gen.avc:398`, `:3406`, `:6385`, `:9378`, `:12728`, `:15820`. Concrete fix: assert no duplicate new IDs introduced by the clone operation, and separately assert unique `Clip` ids/clone subtree ids if that is the contract.
+
+SHOULD-FIX:
+1. [Manifest] `resolume_feedback_values` omits the real `Connected & previewing` state. The preset includes it in every clip shortcut. Verified in `C:/Art Projects/Res_Fable/react-kit/controllers/APC 40 MK II - React v4.4.xml:13-18`. Concrete fix: include the exact NamedValues keys from XML, including `Connected & previewing`, or declare that the manifest intentionally normalizes/aliases it.
+
+2. [FX row] The target paths are `.../bypassed`, so the state polarity is inverted from "effect on". Verified in `C:/Art Projects/Res_Fable/react-kit/controllers/APC 40 MK II - React v4.4.xml:772`, `:781`, `:790`, `:799`, `:808`. Concrete fix: add `state_polarity=bypassed_true_means_effect_off` or label reports as bypass-state, not FX-on-state.
+
+3. [Preflight + runbook] The plan asks to verify `apc40_led_test.py` "port-select", but the script has no CLI/port selector and picks the first output containing "APC40". Verified in `C:/Art Projects/Res_Fable/apc40_led_test.py:19-24`, `:31`. Concrete fix: add/require `--port-index` or `--port-name`, or remove port-select from acceptance criteria.
+
+4. [Build path] Do not wire the build to `make_gen_avc.py` as-is. It is hard-coded for a different source/output and Orbit deck map, not a 4x8 grid-map test comp. Verified `SRC`, `OUT`, and deck constants in `C:/Art Projects/Res_Fable/make_gen_avc.py:9-10`, `:23-25`. Concrete fix: reuse only its parsing/id-allocation patterns, or make a new parameterized builder taking `--src`, `--out`, `--manifest`, `--specimen`.
+
+5. [Clip-clone contract] Encoding is an unstated dependency. Existing generator reads/writes `.avc` as latin-1, not UTF-8, likely to preserve opaque embedded data. Verified in `C:/Art Projects/Res_Fable/make_gen_avc.py:12`, `:175`. Concrete fix: specify `.avc` read/write encoding and newline policy in the build contract.
+
+OPTIONAL / NICE-TO-HAVE:
+1. [Manifest] Add `raw_status`/LED MIDI status to direct LED metadata. Current scripts disagree on final solid channel: `apc40_led_test.py` sends `0x90` then `0x95` (`C:/Art Projects/Res_Fable/apc40_led_test.py:37-43`), while `fx_row_paint.py` uses `0x96` (`C:/Art Projects/Res_Fable/fx_row_paint.py:30`, `:52`).
+2. [Preflight + runbook] Add a teardown checklist: stop any painter, restore composition bypass, restore FX bypass states, and optionally clear LEDs.
+
+CUT THESE (over-engineering):
+1. [Manifest] Cut CSV as a build dependency. JSON plus a generated human table is enough; CSV adds a third contract to keep synchronized without adding wiring value.
+2. [Clip-clone contract] Cut automated "legible" validation from v1 unless a real renderer/screenshot step exists. Keep deterministic checks for non-empty text and correct placement; visual legibility is a manual acceptance check unless grounded by tooling.

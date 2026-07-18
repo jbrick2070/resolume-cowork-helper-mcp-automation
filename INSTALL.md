@@ -11,8 +11,8 @@ Copy a comp from this repo's `compositions/` into:
 
     Documents\Resolume Avenue\Compositions\
 
-- `Res Fable Live Gen.avc` - 6 decks of scene banks, the simpler start
-- `Res Fable Orbit Gen.avc` - the five-regime space journey
+- `Res React Live Gen.avc` - 6 decks of scene banks, the simpler start
+- `Res React Orbit Gen.avc` - the five-regime space journey
 
 Open Resolume > Composition menu > Open, pick the file. First open takes a
 moment while thumbnails generate. Both comps are 100% generative - no
@@ -25,9 +25,9 @@ Copy everything from this repo's `plugins/dll/` into:
     Documents\Resolume Avenue\Extra Effects\
 
 (create the folder if it does not exist), then RESTART Resolume - it only
-scans that folder at startup. You get five new toys: sources "Fable
-Pulsar" and "Fable Video Musi[c]" under Sources, and three effects under
-Video Effects. Try Fable Pulsar in Orbit's O3 deck, column 5 - that cell
+scans that folder at startup. You get five new toys: sources "React
+Pulsar" and "React Video Musi[c]" under Sources, and three effects under
+Video Effects. Try React Pulsar in Orbit's O3 deck, column 5 - that cell
 was designed for it. Details and build-from-source: `plugins/README.md`.
 
 ## 3. The controller (APC40 mkII)
@@ -37,7 +37,7 @@ Copy the preset XML from this repo's `controllers/` into:
     Documents\Resolume Avenue\Shortcuts\MIDI\
 
 - `APC 40 MK II - Orbit v1.xml` pairs with the Orbit comp
-- `APC 40 MK II - Fable v4.2.xml` pairs with the Live comp
+- `APC 40 MK II - React v4.4.xml` pairs with the Live comp
 
 Then in Resolume: Preferences > MIDI > enable "APC40 mkII" as INPUT **and**
 OUTPUT (output = pad colors), and select the preset for the device. The

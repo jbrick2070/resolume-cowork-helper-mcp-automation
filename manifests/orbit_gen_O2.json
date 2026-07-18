@@ -1,11 +1,11 @@
 {
-  "manifest": "Res Fable Orbit - O2 Planets deck - GENERATIVE-ONLY EDITION (fable-kit)",
+  "manifest": "Res React Orbit - O2 Planets deck - GENERATIVE-ONLY EDITION (react-kit)",
   "generated": "2026-07-17 overnight (autonomous curation - P2 polish review invited)",
   "deck": {
     "position_at_build": 3,
     "name": "O2 Planets"
   },
-  "source_of_truth": "fable-kit gen edition, derived 2026-07-17 from the Res Fable Orbit build",
+  "source_of_truth": "react-kit gen edition, derived 2026-07-17 from the Res React Orbit build",
   "fft_convention": "bands bass 0-0.33 / mids 0.33-0.66 / highs 0.66-1.0; opacity sweep floor 0.12 except strobes 0. Gig state = External FFT.",
   "columns": [
     "Mercury",

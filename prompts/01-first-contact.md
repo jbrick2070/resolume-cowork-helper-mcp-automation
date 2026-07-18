@@ -21,7 +21,7 @@ Do this, in order:
 2. List my layers with their blend modes and opacities.
 3. List whatever is in column 1.
 4. Take a monitor snapshot and describe what you actually see in pixels.
-5. Rename exactly one thing: layer 1, to "Fable Test" (Title Case). Then
+5. Rename exactly one thing: layer 1, to "React Test" (Title Case). Then
    read it back to prove it stuck, then rename it back to its original name.
 6. Tell me one thing about my composition I probably did not know.
 

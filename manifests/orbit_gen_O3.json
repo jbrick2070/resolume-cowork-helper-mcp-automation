@@ -1,11 +1,11 @@
 {
-  "manifest": "Res Fable Orbit - O3 Stellar deck - GENERATIVE-ONLY EDITION (fable-kit)",
+  "manifest": "Res React Orbit - O3 Stellar deck - GENERATIVE-ONLY EDITION (react-kit)",
   "generated": "2026-07-16",
   "deck": {
     "position_at_build": 2,
     "name": "O3 Stellar"
   },
-  "source_of_truth": "fable-kit gen edition, derived 2026-07-17 from the Res Fable Orbit build",
+  "source_of_truth": "react-kit gen edition, derived 2026-07-17 from the Res React Orbit build",
   "fft_convention": "bands bass 0-0.33 / mids 0.33-0.66 / highs 0.66-1.0; gain dB as noted; fallback ms as noted; opacity sweep floor 0.12 except strobes 0. Gig state = External FFT.",
   "columns": [
     "Fusion",
@@ -70,7 +70,7 @@
         },
         {
           "col": 5,
-          "source": "Fable Pulsar",
+          "source": "React Pulsar",
           "fft": {
             "param": "video/source/Level",
             "band": "bass",

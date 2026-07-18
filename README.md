@@ -20,7 +20,7 @@ layout live. Screenshots sell this better than any paragraph. -->
 Three things, in Resolume's own terms:
 
 1. **A complete Resolume composition, delivered as buildable specs.**
-   "Res Fable Orbit" is a full Avenue/Arena composition: 5 decks x 4
+   "Res React Orbit" is a full Avenue/Arena composition: 5 decks x 4
    layers x 9 columns - 180 clip slots of named scenes, layer blend modes
    set (Alpha/Screen/Screen/Add), a Bloom on the top layer, a bypassed
    7-effect composition rack, and every Pulse-row clip a native generative
@@ -60,13 +60,18 @@ resolume-cowork-helper-mcp-automation/
                                         its banks/colors and maps to it
   compositions/ TWO ready-to-load all-generative .avc files, every cell
                 filled and playable out of the box:
-                Res Fable Live Gen.avc  - 6 decks x 4x8, the simpler start
-                Res Fable Orbit Gen.avc - 5 decks x 4x9, the space journey
-  controllers/  APC 40 MK II - Orbit v1.xml (91 shortcuts, validated) +
-                LAYOUT_CARD.md (printable, every control explained)
-  docs/         fft-recipe-card.md    - the wiring convention and why it feels alive
-                stability-protocol.md - how not to crash Avenue while an agent drives
-                orbit-placards.md     - the science, scene by scene, read-aloud ready
+                Res React Live Gen.avc  - 6 decks x 4x8, the simpler start
+                Res React Orbit Gen.avc - 5 decks x 4x9, the space journey
+  controllers/  APC 40 MK II - React v4.4.xml (freeze-safe) + Orbit v1.xml +
+                LAYOUT_CARD.md (printable). Prompt 03 generates an Ease-of-Use
+                + an Expert preset for any comp.
+  docs/         CONTROL_LOGIC.md          - THE control law: safety rails + knob design
+                APC40_Standard_Layout.md  - the standard layout spec (two presets, grid)
+                APC40_Control_Map.xlsx    - every control x preset + provenance (verify sheet)
+                APC40_Standard_Layout.png - one-page readable layout picture
+                fft-recipe-card.md        - the wiring convention and why it feels alive
+                stability-protocol.md     - how not to crash Avenue while an agent drives
+                orbit-placards.md         - the science, scene by scene, read-aloud ready
   LICENSE       MIT
 ```
 
@@ -82,7 +87,8 @@ menu. Step by step:
 
 1. Download a preset from this repo's `controllers/` folder:
    `APC 40 MK II - Orbit v1.xml` (for the Orbit comp) or
-   `APC 40 MK II - Fable v4.2.xml` (for the Live comp).
+   `APC 40 MK II - React v4.4.xml` (for the Live comp; v4.4 is the freeze-safe
+   build - see `docs/CONTROL_LOGIC.md`).
 2. Close Resolume if it is running.
 3. Open File Explorer (Finder on Mac) and go to your Documents folder,
    then into `Resolume Avenue` > `Shortcuts` > `MIDI`. Notes: if you run
@@ -98,11 +104,13 @@ menu. Step by step:
    output - both checkboxes. Output is what makes the pads light up.
 7. Still in that MIDI preferences panel, next to the device there is a
    preset dropdown - choose the preset you copied in
-   ("APC 40 MK II - Orbit v1" or "- Fable v4.2").
+   ("APC 40 MK II - Orbit v1" or "- React v4.4").
 8. Close Preferences. Within a couple of seconds the pad grid lights up
    in the comp's column colors. Press the bottom-left pad: it should
    launch the bottom-left clip (layer 1, column 1). Faders move layer
-   opacities; the bottom-right scene-launch button jumps to the next deck.
+   opacities; the bottom-right scene-launch button jumps to the next deck. (The printed Standard
+Layout targets Pulse on the top row and FX on the bottom; the shipping presets are being
+rolled to that — see `controllers/LAYOUT_CARD.md` "Preset status".)
 
 If something misbehaves: no lights means output was not enabled (step 6);
 wrong clips launching means another app (like Ableton) grabbed the
@@ -155,12 +163,12 @@ document. This kit ships TOOLS, not output; the taste stays yours.
 
 ## Custom sources and what ships later
 
-Three Pulse cells reference sources that are not stock Avenue: Fable Pulsar
+Three Pulse cells reference sources that are not stock Avenue: React Pulsar
 (a custom FFGL source - CP1919 pulsar ridgelines, stateless, 7 scalar
 params) and two Wire patches (Golden Flicker Reel, Geometry Pattern Maker).
 Every such cell is marked `custom_source` with a native `fallback` - the set
 plays complete without them. Roadmap: ready-to-load generative `.avc` comps
-and the Fable Optics plugin pack land after license review of the Resolume
+and the React Optics plugin pack land after license review of the Resolume
 FFGL SDK terms (source-only if redistribution requires it). Prompt 06 builds
 you the plugin either way.
 

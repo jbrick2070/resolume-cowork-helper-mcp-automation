@@ -17,7 +17,7 @@ will learn Resolume's MIDI system doing it). Both below.
    create any MIDI shortcut, and it appears. Official folder map:
    https://resolume.com/support/en/directory-list
 3. Plug in the APC40 mkII, start Resolume, open the composition
-   (`Res Fable Orbit Gen.avc` from this kit's `compositions/`).
+   (`Res React Orbit Gen.avc` from this kit's `compositions/`).
 4. Preferences > MIDI: enable "APC40 mkII" as INPUT **and** OUTPUT.
    Output is not optional - it is what drives the pad color feedback.
 5. In the same MIDI preferences, select the preset

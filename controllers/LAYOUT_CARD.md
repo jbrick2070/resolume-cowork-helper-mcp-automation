@@ -1,42 +1,58 @@
-# APC 40 MK II - Orbit v1 - Layout Card (print me)
+# APC40 mkII — Standard Layout Card (print me)
 
-Preset: `APC 40 MK II - Orbit v1.xml`
-Activation: Resolume Preferences > MIDI > enable "APC40 mkII" as INPUT and
-OUTPUT (output = pad color feedback), then select the preset. Grid lights
-within ~2 seconds of a comp with clips.
+Full spec: `../docs/APC40_Standard_Layout.md` · picture: `../docs/APC40_Standard_Layout.png`
+· every control + provenance: `../docs/APC40_Control_Map.xlsx` · law: `../docs/CONTROL_LOGIC.md`
 
-## Clip grid (5x8 pads)
+**Authoritative presets:** `APC 40 MK II - React v4.4.xml` (pairs with the Live comp) and
+`APC 40 MK II - Orbit v1.xml` (pairs with the Space/Orbit comp). Older versions retired.
 
-- Rows 1-4 (bottom-up) = layers: Bed / Structure / Body / Pulse.
-- Columns 1-8 = scene columns 1-8 of the ACTIVE deck. Pads launch cells;
-  column colors are per-deck feedback.
-- Row 5 = FX PUNCH ROW (composition effect bypass toggles, in rack order):
-  Trails, Hue Rotate, Shift RGB, LoRez, Invert RGB, Mirror Quad, Freeze,
-  comp Blackout. Punch in, punch out - they are toggles.
+**Activation:** Resolume Preferences > MIDI > enable "APC40 mkII" as INPUT and OUTPUT (output
+= pad-colour feedback), then select the preset. Also turn ON General Preferences > "Update
+clip panels on external triggers" so the Track-knob dashboards follow the clip you launch.
 
-## Scene launch column (right edge, 5 buttons)
+Convention: **SOLID = documented / rig-proven · DASHED = proposed, capture a UI specimen first.**
 
-- TOP = trigger column 9: the TRANSIT. Fire it, let it establish for a
-  phrase while your clips keep playing, then...
-- BOTTOM = next deck (cycles all deck tabs, wraps). That is the jump:
-  transit establishes, bottom button lands you in the next regime.
-- Middle three: dark by design (documented hand-map slots for direct
-  deck jumps if you want them - Resolume Ctrl+M, ~30 s each).
+## Clip grid (5×8 pads) — top row = top layer
 
-## Faders and knobs
+- Row 1 (top) = **L4 Pulse** clips 1–8
+- Row 2 = **L3 Body** · Row 3 = **L2 Structure** · Row 4 = **L1 Bed** (bottom of the block = Layer 1)
+- Row 5 (bottom) = **FX PUNCH ROW** — 8 composition-FX toggles, punch in / out. Freeze is
+  momentary; there is no Trails-feedback pad (that was the freeze footgun, removed). This FX
+  row is the Expert preset; Ease-of-Use leaves the bottom row as clip/look launch.
+- Columns 1–8 = the 8 clips per layer; pad colours are per-column feedback.
 
-- Faders 1-8: layer opacities (5-8 unmapped on a 4-layer comp).
-- Master fader: composition master. Crossfader: crossfader.
-- Device knobs 1 and 4: Trails feedback / Hue Rotate amount rides.
-- Clip-stop row: buttons 1-4 eject layers 1-4; 5-8 unmapped.
+## Scene launch (right edge) + knobs
 
-## Performance notes
+- **Scene Launch** = whole-look launch (composition columns, Ableton-style). Bank ◀▶ pages
+  further columns. **Stop All Clips** ejects everything.
+- **Track Control knobs** → selected-clip dashboard 1–8 (rides what's on screen). *PROVEN.*
+- **Device Control knobs** → layer dashboards 1–8, banked across layers by Track Select.
 
-- Column order IS the energy arc on every deck: 1-2 open, 3 build,
-  4-5 peak, 6-7 comedown, 8 null/art, 9 transit. Muscle memory transfers
-  across all five decks.
-- Tap tempo on the Resolume side; nothing in the set assumes a numeric
-  BPM. Audio reactivity is FFT on external input - set your audio device
-  before doors.
-- Validation state of this XML: 91 shortcuts, 91 unique ids, 91 unique
-  MIDI keys, transit note present exactly once.
+## Faders, crossfader, transport
+
+- **Faders 1–4** = Layer Master (numeric order: 1 = Bed/L1 … 4 = Pulse/L4). **5–8** = layer
+  transition duration, clamped 0–2 s (Expert). **Master** = composition master.
+- **Crossfader** = DRY ⟷ Performance FX (Crossfader Phase; excludes opacity/Freeze/blackout/strobe).
+- **Transport / utility:** Play (fwd/pause) · Stop (eject all) · Record (output) · Session
+  (latched blackout) · Tap Tempo · Nudge −/+ · Bank ◀▶ (columns) · Shift (CLEAN-FX reset).
+- Channel-strip buttons: Clip Stop = eject layer · Activator = layer on (LED lit = visible)
+  · Solo = layer solo · Rec-Arm = Comp-FX arm 1–8.
+
+> Fader order (Bed → Pulse, left to right) is the reverse of the grid stack (Pulse on top).
+> Deliberate — tape-label the faders.
+
+## Orbit (Space) preset — deck variant
+
+The Orbit comp is a five-deck space set; its column order IS the energy arc (1–2 open, 3
+build, 4–5 peak, 6–7 comedown, 8 art, 9 transit). On `Orbit v1`, the Scene Launch top button
+fires column 9 (the transit) and the bottom button jumps to the next deck. Tap tempo on the
+Resolume side; audio reactivity is FFT on external input — set your audio device before doors.
+
+## Preset status
+
+`React v4.4` and `Orbit v1` are the proven, freeze-safe presets. The **Standard orientation
+above** (Pulse to the true top row, FX punch to the bottom) is the target the docs and image
+now specify; where a shipping XML still uses the prior orientation, re-confirm in Resolume
+before a gig — launch a top-row pad and check it fires **Pulse**. Re-flipping is not a blind
+index edit: moving the FX row off the top swaps two rows' shortcut *species* (clip-launch
+quartet ↔ effect-toggle), so do it in the Resolume UI or via a tested transform.

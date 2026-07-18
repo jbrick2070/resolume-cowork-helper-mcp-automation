@@ -1,4 +1,4 @@
-# plugins/ - the Fable FFGL plugins (source + DLLs)
+# plugins/ - the React FFGL plugins (source + DLLs)
 
 Five custom FFGL plugins for Resolume Avenue/Arena 7, written with an AI
 agent driving the build (prompt 06 documents the method). Ships as both
@@ -6,13 +6,13 @@ ready-to-use x64 DLLs and full source.
 
 | Plugin | Type | One line |
 |---|---|---|
-| Fable Pulsar | SOURCE | 1967 - CP1919 pulsar ridgelines, stateless, 7 FFT-linkable params |
-| Fable Video Music | SOURCE | 1977 - Atari Video Music raster patterns |
-| Fable Gate | EFFECT | hard luma gate |
-| Fable Anamorphic | EFFECT | anamorphic streak/squeeze with internal clock |
-| Fable Scanline | EFFECT | scanline displace |
+| React Pulsar | SOURCE | 1967 - CP1919 pulsar ridgelines, stateless, 7 FFT-linkable params |
+| React Video Music | SOURCE | 1977 - Atari Video Music raster patterns |
+| React Gate | EFFECT | hard luma gate |
+| React Anamorphic | EFFECT | anamorphic streak/squeeze with internal clock |
+| React Scanline | EFFECT | scanline displace |
 
-Placards and per-plugin details: `FABLE_OPTICS_NOTES.md`.
+Placards and per-plugin details: `REACT_OPTICS_NOTES.md`.
 
 ## Install the DLLs (no coding)
 
@@ -20,7 +20,7 @@ Placards and per-plugin details: `FABLE_OPTICS_NOTES.md`.
    (Arena: `Documents\Resolume Arena\Extra Effects\`; create the folder if
    missing).
 2. RESTART Resolume - it only scans Extra Effects at startup.
-3. Sources appear under Sources ("Fable Pulsar", "Fable Video Musi" - the
+3. Sources appear under Sources ("React Pulsar", "React Video Musi" - the
    16-char display limit trims the last one); effects under Video Effects.
 
 Windows x64 only, built against Avenue 7.27. SmartScreen may warn on
@@ -33,7 +33,7 @@ unsigned DLLs - that is expected for community plugins.
 3. Copy the matching `.vcxproj` from `build/` into the SDK's
    `build/windows/` (they reference SDK-relative paths).
 4. Build with VS2022 Build Tools:
-   `MSBuild build\windows\FablePulsar.vcxproj /p:Configuration=Release /p:Platform=x64`
+   `MSBuild build\windows\ReactPulsar.vcxproj /p:Configuration=Release /p:Platform=x64`
 5. Deploy the DLL from `binaries\x64\Release\` per the install steps above.
 
 Constraints these plugins honor (and yours should too): GLSL 410 single

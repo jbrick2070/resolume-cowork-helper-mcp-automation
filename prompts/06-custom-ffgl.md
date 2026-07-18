@@ -2,7 +2,7 @@
 
 Prereq: comfort with the idea of C++ compiling on your machine. Windows:
 Visual Studio 2022 Build Tools (free). Expect an hour the first time.
-This is how the Fable Pulsar source in the Orbit manifests was born.
+This is how the React Pulsar source in the Orbit manifests was born.
 
 ---
 

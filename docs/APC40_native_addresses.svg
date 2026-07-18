@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="4680" height="2790" viewBox="-360 -90 4680 2790"
+     role="img" aria-labelledby="svg-title svg-desc">
+<rect x="-360" y="-90" width="4680" height="2790" fill="#ffffff"/>
+  <title id="svg-title">Blank APC40 mkII control-surface template</title>
+  <desc id="svg-desc">A label-free white vector template with black outlines for every top-panel control.</desc>
+
+  <defs>
+    <style>
+      .case { fill:#fff; stroke:#000; stroke-width:16; }
+      .section { fill:none; stroke:#000; stroke-width:10; }
+      .control { fill:#fff; stroke:#000; stroke-width:11; }
+      .detail { fill:none; stroke:#000; stroke-width:7; }
+      .hairline { fill:none; stroke:#000; stroke-width:5; }
+      .knob-line { fill:none; stroke:#000; stroke-width:8; stroke-linecap:round; }
+      .hit-area { fill:#fff; stroke:#000; stroke-width:11; }
+    </style>
+
+    <g id="encoder">
+      <circle class="detail" cx="0" cy="0" r="69"/>
+      <circle class="control" cx="0" cy="0" r="47"/>
+      <circle class="hairline" cx="0" cy="0" r="35"/>
+      <line class="knob-line" x1="0" y1="-8" x2="0" y2="-39"/>
+      <g class="hairline">
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-135)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-118.125)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-101.25)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-84.375)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-67.5)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-50.625)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-33.75)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(-16.875)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(16.875)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(33.75)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(50.625)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(67.5)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(84.375)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(101.25)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(118.125)"/>
+        <line x1="0" y1="-87" x2="0" y2="-104" transform="rotate(135)"/>
+      </g>
+    </g>
+
+    <g id="small-knob">
+      <circle class="detail" cx="0" cy="0" r="58"/>
+      <circle class="control" cx="0" cy="0" r="39"/>
+      <line class="knob-line" x1="0" y1="-7" x2="0" y2="-32"/>
+      <g class="hairline">
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(-125)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(-100)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(-75)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(-50)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(-25)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(25)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(50)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(75)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(100)"/>
+        <line x1="0" y1="-67" x2="0" y2="-81" transform="rotate(125)"/>
+      </g>
+    </g>
+
+    <g id="pad">
+      <rect class="control" x="-140" y="-54" width="280" height="108" rx="16"/>
+    </g>
+
+    <g id="scene-pad">
+      <rect class="control" x="-87" y="-54" width="174" height="108" rx="15"/>
+    </g>
+
+    <g id="clip-stop">
+      <rect class="detail" x="-101" y="-69" width="202" height="138" rx="26"/>
+      <rect class="control" x="-79" y="-50" width="158" height="100" rx="17"/>
+    </g>
+
+    <g id="track-select">
+      <rect class="control" x="-140" y="-46" width="280" height="92" rx="15"/>
+    </g>
+
+    <g id="track-button">
+      <rect class="detail" x="-57" y="-52" width="114" height="104" rx="15"/>
+      <rect class="control" x="-48" y="-43" width="96" height="86" rx="10"/>
+    </g>
+
+    <g id="small-button">
+      <rect class="control" x="-40" y="-30" width="80" height="60" rx="9"/>
+    </g>
+
+    <g id="fader">
+      <rect class="hairline" x="-13" y="-246" width="26" height="492" rx="5"/>
+      <line class="hairline" x1="-105" y1="-225" x2="-80" y2="-225"/>
+      <line class="hairline" x1="-105" y1="0" x2="-80" y2="0"/>
+      <line class="hairline" x1="-105" y1="225" x2="-80" y2="225"/>
+      <rect class="control" x="-91" y="-296" width="182" height="76" rx="7"/>
+      <line class="hairline" x1="-78" y1="-275" x2="78" y2="-275"/>
+      <line class="hairline" x1="-78" y1="-258" x2="78" y2="-258"/>
+      <line class="hairline" x1="-78" y1="-241" x2="78" y2="-241"/>
+    </g>
+
+    <g id="crossfader">
+      <rect class="hairline" x="-248" y="-13" width="496" height="26" rx="5"/>
+      <rect class="control" x="-42" y="-76" width="84" height="152" rx="7"/>
+      <line class="hairline" x1="-23" y1="-64" x2="-23" y2="64"/>
+      <line class="hairline" x1="0" y1="-64" x2="0" y2="64"/>
+      <line class="hairline" x1="23" y1="-64" x2="23" y2="64"/>
+    </g>
+  </defs>
+
+  <rect width="4240" height="2540" fill="#fff"/>
+  <rect id="device-outline" class="case" x="20" y="20" width="4200" height="2500" rx="70"/>
+  <rect class="hairline" x="42" y="42" width="4156" height="2456" rx="55"/>
+
+  <g id="panel-dividers">
+    <path class="section" d="M2890 70V2478"/>
+    <rect class="section" x="52" y="70" width="2620" height="272" rx="24"/>
+    <rect class="section" x="52" y="355" width="2620" height="800" rx="20"/>
+    <rect class="section" x="52" y="1172" width="2620" height="178" rx="18"/>
+    <rect class="section" x="52" y="1362" width="2820" height="148" rx="18"/>
+    <rect class="section" x="52" y="1522" width="2820" height="280" rx="18"/>
+    <rect class="section" x="52" y="1815" width="2820" height="663" rx="18"/>
+    <rect class="section" x="2920" y="882" width="1254" height="648" rx="22"/>
+  </g>
+
+  <g id="top-encoders">
+    <use id="top-encoder-1" href="#encoder" xlink:href="#encoder" transform="translate(225 207)"/>
+    <use id="top-encoder-2" href="#encoder" xlink:href="#encoder" transform="translate(545 207)"/>
+    <use id="top-encoder-3" href="#encoder" xlink:href="#encoder" transform="translate(865 207)"/>
+    <use id="top-encoder-4" href="#encoder" xlink:href="#encoder" transform="translate(1185 207)"/>
+    <use id="top-encoder-5" href="#encoder" xlink:href="#encoder" transform="translate(1505 207)"/>
+    <use id="top-encoder-6" href="#encoder" xlink:href="#encoder" transform="translate(1825 207)"/>
+    <use id="top-encoder-7" href="#encoder" xlink:href="#encoder" transform="translate(2145 207)"/>
+    <use id="top-encoder-8" href="#encoder" xlink:href="#encoder" transform="translate(2465 207)"/>
+  </g>
+
+  <g id="clip-grid">
+    <g id="clip-row-1">
+      <use id="clip-r1-c1" href="#pad" xlink:href="#pad" transform="translate(225 465)"/>
+      <use id="clip-r1-c2" href="#pad" xlink:href="#pad" transform="translate(545 465)"/>
+      <use id="clip-r1-c3" href="#pad" xlink:href="#pad" transform="translate(865 465)"/>
+      <use id="clip-r1-c4" href="#pad" xlink:href="#pad" transform="translate(1185 465)"/>
+      <use id="clip-r1-c5" href="#pad" xlink:href="#pad" transform="translate(1505 465)"/>
+      <use id="clip-r1-c6" href="#pad" xlink:href="#pad" transform="translate(1825 465)"/>
+      <use id="clip-r1-c7" href="#pad" xlink:href="#pad" transform="translate(2145 465)"/>
+      <use id="clip-r1-c8" href="#pad" xlink:href="#pad" transform="translate(2465 465)"/>
+      <use id="scene-1" href="#scene-pad" xlink:href="#scene-pad" transform="translate(2745 465)"/>
+    </g>
+    <g id="clip-row-2">
+      <use id="clip-r2-c1" href="#pad" xlink:href="#pad" transform="translate(225 620)"/>
+      <use id="clip-r2-c2" href="#pad" xlink:href="#pad" transform="translate(545 620)"/>
+      <use id="clip-r2-c3" href="#pad" xlink:href="#pad" transform="translate(865 620)"/>
+      <use id="clip-r2-c4" href="#pad" xlink:href="#pad" transform="translate(1185 620)"/>
+      <use id="clip-r2-c5" href="#pad" xlink:href="#pad" transform="translate(1505 620)"/>
+      <use id="clip-r2-c6" href="#pad" xlink:href="#pad" transform="translate(1825 620)"/>
+      <use id="clip-r2-c7" href="#pad" xlink:href="#pad" transform="translate(2145 620)"/>
+      <use id="clip-r2-c8" href="#pad" xlink:href="#pad" transform="translate(2465 620)"/>
+      <use id="scene-2" href="#scene-pad" xlink:href="#scene-pad" transform="translate(2745 620)"/>
+    </g>
+    <g id="clip-row-3">
+      <use id="clip-r3-c1" href="#pad" xlink:href="#pad" transform="translate(225 775)"/>
+      <use id="clip-r3-c2" href="#pad" xlink:href="#pad" transform="translate(545 775)"/>
+      <use id="clip-r3-c3" href="#pad" xlink:href="#pad" transform="translate(865 775)"/>
+      <use id="clip-r3-c4" href="#pad" xlink:href="#pad" transform="translate(1185 775)"/>
+      <use id="clip-r3-c5" href="#pad" xlink:href="#pad" transform="translate(1505 775)"/>
+      <use id="clip-r3-c6" href="#pad" xlink:href="#pad" transform="translate(1825 775)"/>
+      <use id="clip-r3-c7" href="#pad" xlink:href="#pad" transform="translate(2145 775)"/>
+      <use id="clip-r3-c8" href="#pad" xlink:href="#pad" transform="translate(2465 775)"/>
+      <use id="scene-3" href="#scene-pad" xlink:href="#scene-pad" transform="translate(2745 775)"/>
+    </g>
+    <g id="clip-row-4">
+      <use id="clip-r4-c1" href="#pad" xlink:href="#pad" transform="translate(225 930)"/>
+      <use id="clip-r4-c2" href="#pad" xlink:href="#pad" transform="translate(545 930)"/>
+      <use id="clip-r4-c3" href="#pad" xlink:href="#pad" transform="translate(865 930)"/>
+      <use id="clip-r4-c4" href="#pad" xlink:href="#pad" transform="translate(1185 930)"/>
+      <use id="clip-r4-c5" href="#pad" xlink:href="#pad" transform="translate(1505 930)"/>
+      <use id="clip-r4-c6" href="#pad" xlink:href="#pad" transform="translate(1825 930)"/>
+      <use id="clip-r4-c7" href="#pad" xlink:href="#pad" transform="translate(2145 930)"/>
+      <use id="clip-r4-c8" href="#pad" xlink:href="#pad" transform="translate(2465 930)"/>
+      <use id="scene-4" href="#scene-pad" xlink:href="#scene-pad" transform="translate(2745 930)"/>
+    </g>
+    <g id="clip-row-5">
+      <use id="clip-r5-c1" href="#pad" xlink:href="#pad" transform="translate(225 1085)"/>
+      <use id="clip-r5-c2" href="#pad" xlink:href="#pad" transform="translate(545 1085)"/>
+      <use id="clip-r5-c3" href="#pad" xlink:href="#pad" transform="translate(865 1085)"/>
+      <use id="clip-r5-c4" href="#pad" xlink:href="#pad" transform="translate(1185 1085)"/>
+      <use id="clip-r5-c5" href="#pad" xlink:href="#pad" transform="translate(1505 1085)"/>
+      <use id="clip-r5-c6" href="#pad" xlink:href="#pad" transform="translate(1825 1085)"/>
+      <use id="clip-r5-c7" href="#pad" xlink:href="#pad" transform="translate(2145 1085)"/>
+      <use id="clip-r5-c8" href="#pad" xlink:href="#pad" transform="translate(2465 1085)"/>
+      <use id="scene-5" href="#scene-pad" xlink:href="#scene-pad" transform="translate(2745 1085)"/>
+    </g>
+  </g>
+
+  <g id="clip-stop-row">
+    <use id="clip-stop-1" href="#clip-stop" xlink:href="#clip-stop" transform="translate(225 1261)"/>
+    <use id="clip-stop-2" href="#clip-stop" xlink:href="#clip-stop" transform="translate(545 1261)"/>
+    <use id="clip-stop-3" href="#clip-stop" xlink:href="#clip-stop" transform="translate(865 1261)"/>
+    <use id="clip-stop-4" href="#clip-stop" xlink:href="#clip-stop" transform="translate(1185 1261)"/>
+    <use id="clip-stop-5" href="#clip-stop" xlink:href="#clip-stop" transform="translate(1505 1261)"/>
+    <use id="clip-stop-6" href="#clip-stop" xlink:href="#clip-stop" transform="translate(1825 1261)"/>
+    <use id="clip-stop-7" href="#clip-stop" xlink:href="#clip-stop" transform="translate(2145 1261)"/>
+    <use id="clip-stop-8" href="#clip-stop" xlink:href="#clip-stop" transform="translate(2465 1261)"/>
+    <use id="stop-all-clips" href="#clip-stop" xlink:href="#clip-stop" transform="translate(2745 1261) scale(.86)"/>
+  </g>
+
+  <g id="track-selectors">
+    <use id="track-select-1" href="#track-select" xlink:href="#track-select" transform="translate(225 1436)"/>
+    <use id="track-select-2" href="#track-select" xlink:href="#track-select" transform="translate(545 1436)"/>
+    <use id="track-select-3" href="#track-select" xlink:href="#track-select" transform="translate(865 1436)"/>
+    <use id="track-select-4" href="#track-select" xlink:href="#track-select" transform="translate(1185 1436)"/>
+    <use id="track-select-5" href="#track-select" xlink:href="#track-select" transform="translate(1505 1436)"/>
+    <use id="track-select-6" href="#track-select" xlink:href="#track-select" transform="translate(1825 1436)"/>
+    <use id="track-select-7" href="#track-select" xlink:href="#track-select" transform="translate(2145 1436)"/>
+    <use id="track-select-8" href="#track-select" xlink:href="#track-select" transform="translate(2465 1436)"/>
+    <use id="master-select" href="#track-select" xlink:href="#track-select" transform="translate(2745 1436) scale(.62 1)"/>
+  </g>
+
+  <g id="track-buttons">
+    <g id="track-buttons-1">
+      <use id="track-1-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-1-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-1-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-1-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <g id="track-buttons-2" transform="translate(320 0)">
+      <use id="track-2-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-2-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-2-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-2-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <g id="track-buttons-3" transform="translate(640 0)">
+      <use id="track-3-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-3-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-3-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-3-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <g id="track-buttons-4" transform="translate(960 0)">
+      <use id="track-4-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-4-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-4-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-4-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <g id="track-buttons-5" transform="translate(1280 0)">
+      <use id="track-5-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-5-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-5-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-5-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <g id="track-buttons-6" transform="translate(1600 0)">
+      <use id="track-6-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-6-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-6-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-6-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <g id="track-buttons-7" transform="translate(1920 0)">
+      <use id="track-7-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-7-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-7-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-7-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <g id="track-buttons-8" transform="translate(2240 0)">
+      <use id="track-8-button-a" href="#track-button" xlink:href="#track-button" transform="translate(164 1602)"/>
+      <use id="track-8-button-b" href="#track-button" xlink:href="#track-button" transform="translate(286 1602)"/>
+      <use id="track-8-button-c" href="#track-button" xlink:href="#track-button" transform="translate(164 1722)"/>
+      <use id="track-8-button-d" href="#track-button" xlink:href="#track-button" transform="translate(286 1722)"/>
+    </g>
+    <use id="cue-level" href="#small-knob" xlink:href="#small-knob" transform="translate(2745 1662)"/>
+  </g>
+
+  <g id="channel-faders">
+    <use id="channel-fader-1" href="#fader" xlink:href="#fader" transform="translate(225 2180)"/>
+    <use id="channel-fader-2" href="#fader" xlink:href="#fader" transform="translate(545 2180)"/>
+    <use id="channel-fader-3" href="#fader" xlink:href="#fader" transform="translate(865 2180)"/>
+    <use id="channel-fader-4" href="#fader" xlink:href="#fader" transform="translate(1185 2180)"/>
+    <use id="channel-fader-5" href="#fader" xlink:href="#fader" transform="translate(1505 2180)"/>
+    <use id="channel-fader-6" href="#fader" xlink:href="#fader" transform="translate(1825 2180)"/>
+    <use id="channel-fader-7" href="#fader" xlink:href="#fader" transform="translate(2145 2180)"/>
+    <use id="channel-fader-8" href="#fader" xlink:href="#fader" transform="translate(2465 2180)"/>
+    <use id="master-fader" href="#fader" xlink:href="#fader" transform="translate(2745 2180) scale(.82 1)"/>
+  </g>
+
+  <g id="global-and-transport-controls">
+    <g id="global-mode-buttons">
+      <use id="global-mode-1" href="#small-button" xlink:href="#small-button" transform="translate(3025 395)"/>
+      <use id="global-mode-2" href="#small-button" xlink:href="#small-button" transform="translate(3025 585)"/>
+      <use id="global-mode-3" href="#small-button" xlink:href="#small-button" transform="translate(3025 775)"/>
+    </g>
+    <g id="transport-buttons">
+      <use id="transport-1" href="#small-button" xlink:href="#small-button" transform="translate(3370 395)"/>
+      <use id="transport-2" href="#small-button" xlink:href="#small-button" transform="translate(3690 395)"/>
+      <use id="transport-3" href="#small-button" xlink:href="#small-button" transform="translate(4010 395)"/>
+      <use id="transport-4" href="#small-button" xlink:href="#small-button" transform="translate(3370 585)"/>
+      <use id="transport-5" href="#small-button" xlink:href="#small-button" transform="translate(3690 585)"/>
+      <use id="transport-6" href="#small-button" xlink:href="#small-button" transform="translate(3370 775)"/>
+      <use id="transport-7" href="#small-button" xlink:href="#small-button" transform="translate(3690 775)"/>
+      <use id="tempo-knob" href="#small-knob" xlink:href="#small-knob" transform="translate(4010 680)"/>
+    </g>
+  </g>
+
+  <g id="device-encoders">
+    <use id="device-encoder-1" href="#encoder" xlink:href="#encoder" transform="translate(3050 1035)"/>
+    <use id="device-encoder-2" href="#encoder" xlink:href="#encoder" transform="translate(3370 1035)"/>
+    <use id="device-encoder-3" href="#encoder" xlink:href="#encoder" transform="translate(3690 1035)"/>
+    <use id="device-encoder-4" href="#encoder" xlink:href="#encoder" transform="translate(4010 1035)"/>
+    <use id="device-encoder-5" href="#encoder" xlink:href="#encoder" transform="translate(3050 1345)"/>
+    <use id="device-encoder-6" href="#encoder" xlink:href="#encoder" transform="translate(3370 1345)"/>
+    <use id="device-encoder-7" href="#encoder" xlink:href="#encoder" transform="translate(3690 1345)"/>
+    <use id="device-encoder-8" href="#encoder" xlink:href="#encoder" transform="translate(4010 1345)"/>
+  </g>
+
+  <g id="device-buttons">
+    <use id="device-button-top-1" href="#small-button" xlink:href="#small-button" transform="translate(3050 1660)"/>
+    <use id="device-button-top-2" href="#small-button" xlink:href="#small-button" transform="translate(3370 1660)"/>
+    <use id="device-button-top-3" href="#small-button" xlink:href="#small-button" transform="translate(3690 1660)"/>
+    <use id="device-button-top-4" href="#small-button" xlink:href="#small-button" transform="translate(4010 1660)"/>
+    <use id="device-button-bottom-1" href="#small-button" xlink:href="#small-button" transform="translate(3050 1830)"/>
+    <use id="device-button-bottom-2" href="#small-button" xlink:href="#small-button" transform="translate(3370 1830)"/>
+    <use id="device-button-bottom-3" href="#small-button" xlink:href="#small-button" transform="translate(3690 1830)"/>
+    <use id="device-button-bottom-4" href="#small-button" xlink:href="#small-button" transform="translate(4010 1830)"/>
+  </g>
+
+  <g id="bank-navigation">
+    <rect class="section" x="2985" y="1950" width="350" height="250" rx="22"/>
+    <path id="bank-up" class="control" d="M3030 2050L3078 1992H3242L3290 2050L3242 2080H3078Z"/>
+    <path id="bank-down" class="control" d="M3030 2100L3078 2160H3242L3290 2100L3242 2070H3078Z"/>
+    <path id="bank-left" class="control" d="M3080 2000L3020 2055V2095L3080 2150L3112 2105V2045Z"/>
+    <path id="bank-right" class="control" d="M3240 2000L3300 2055V2095L3240 2150L3208 2105V2045Z"/>
+    <use id="shift-button" href="#small-button" xlink:href="#small-button" transform="translate(3690 2075)"/>
+    <use id="bank-button" href="#small-button" xlink:href="#small-button" transform="translate(4010 2075)"/>
+  </g>
+
+  <g id="crossfader-control">
+    <use id="crossfader" href="#crossfader" xlink:href="#crossfader" transform="translate(3690 2380)"/>
+  </g>
+<g id="native-addr"><text x="-350" y="-30" font-family="DejaVu Sans Mono, monospace" font-size="52" fill="#222" font-weight="bold" text-anchor="start">APC40 mkII — native MIDI addresses (decoded from React v4.4 preset)</text><rect x="2760" y="-72" width="30" height="30" fill="#fff" stroke="#1668B8" stroke-width="4"/><text x="2805" y="-48" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="normal" text-anchor="start">decoded from your preset (rig-confirmed)</text><rect x="3760" y="-72" width="30" height="30" fill="#fff" stroke="#8A6D1A" stroke-width="4"/><text x="3805" y="-48" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#8A6D1A" font-weight="normal" text-anchor="start">Akai protocol standard</text><text x="225" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC48</text><text x="545" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC49</text><text x="865" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC50</text><text x="1185" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC51</text><text x="1505" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC52</text><text x="1825" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC53</text><text x="2145" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC54</text><text x="2465" y="327" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CC55</text><rect x="962" y="23" width="767" height="58" rx="9" fill="#fff" stroke="#1668B8" stroke-width="4"/><text x="1345" y="67.24" font-family="DejaVu Sans Mono, monospace" font-size="36" fill="#1668B8" font-weight="bold" text-anchor="middle">TRACK CONTROL  —  CC 48-55  (ch1)</text><text x="3050" y="1143" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC16</text><text x="3370" y="1143" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC17</text><text x="3690" y="1143" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC18</text><text x="4010" y="1143" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC19</text><text x="3050" y="1453" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC20</text><text x="3370" y="1453" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC21</text><text x="3690" y="1453" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC22</text><text x="4010" y="1453" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC23</text><rect x="3178" y="905" width="705" height="54" rx="9" fill="#fff" stroke="#1668B8" stroke-width="4"/><text x="3530" y="945.88" font-family="DejaVu Sans Mono, monospace" font-size="32" fill="#1668B8" font-weight="bold" text-anchor="middle">DEVICE CONTROL  —  CC 16-23  (ch1)</text><text x="225" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n32</text><text x="545" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n33</text><text x="865" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n34</text><text x="1185" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n35</text><text x="1505" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n36</text><text x="1825" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n37</text><text x="2145" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n38</text><text x="2465" y="477" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n39</text><text x="225" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n24</text><text x="545" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n25</text><text x="865" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n26</text><text x="1185" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n27</text><text x="1505" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n28</text><text x="1825" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n29</text><text x="2145" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n30</text><text x="2465" y="632" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n31</text><text x="225" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n16</text><text x="545" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n17</text><text x="865" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n18</text><text x="1185" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n19</text><text x="1505" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n20</text><text x="1825" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n21</text><text x="2145" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n22</text><text x="2465" y="787" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n23</text><text x="225" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n8</text><text x="545" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n9</text><text x="865" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n10</text><text x="1185" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n11</text><text x="1505" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n12</text><text x="1825" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n13</text><text x="2145" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n14</text><text x="2465" y="942" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n15</text><text x="225" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n0</text><text x="545" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n1</text><text x="865" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n2</text><text x="1185" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n3</text><text x="1505" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n4</text><text x="1825" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n5</text><text x="2145" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n6</text><text x="2465" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="40" fill="#7A3FC0" font-weight="bold" text-anchor="middle">n7</text><rect x="239" y="268" width="722" height="58" rx="9" fill="#fff" stroke="#7A3FC0" stroke-width="4"/><text x="600" y="312.24" font-family="DejaVu Sans Mono, monospace" font-size="36" fill="#7A3FC0" font-weight="bold" text-anchor="middle">CLIP GRID  —  notes 0-39  (ch1)</text><text x="2745" y="477" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n82</text><text x="2745" y="632" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n83</text><text x="2745" y="787" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n84</text><text x="2745" y="942" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n85</text><text x="2745" y="1097" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n86</text><rect x="2581" y="271" width="328" height="52" rx="9" fill="#fff" stroke="#8A6D1A" stroke-width="4"/><text x="2745" y="310.2" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#8A6D1A" font-weight="bold" text-anchor="middle">SCENE  —  n82-86</text><text x="0" y="8" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">n81</text><text x="225" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="225" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><text x="545" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="545" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><text x="865" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="865" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><text x="1185" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="1185" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><text x="1505" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="1505" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><text x="1825" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="1825" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><text x="2145" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="2145" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><text x="2465" y="1271" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n52</text><text x="2465" y="1446" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">n51</text><rect x="-278" y="1233" width="256" height="50" rx="9" fill="#fff" stroke="#1668B8" stroke-width="4"/><text x="-150" y="1270.52" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CLIP STOP n52</text><rect x="-260" y="1408" width="221" height="50" rx="9" fill="#fff" stroke="#1668B8" stroke-width="4"/><text x="-150" y="1445.52" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">TRK SEL n51</text><text x="164" y="1612" font-family="DejaVu Sans Mono, monospace" font-size="22" fill="#1668B8" font-weight="bold" text-anchor="middle">n48</text><text x="286" y="1612" font-family="DejaVu Sans Mono, monospace" font-size="22" fill="#1668B8" font-weight="bold" text-anchor="middle">n49</text><text x="164" y="1732" font-family="DejaVu Sans Mono, monospace" font-size="22" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n50</text><text x="286" y="1732" font-family="DejaVu Sans Mono, monospace" font-size="22" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n66</text><rect x="-229" y="1635" width="159" height="48" rx="9" fill="#fff" stroke="#1668B8" stroke-width="4"/><text x="-150" y="1670.84" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#1668B8" font-weight="bold" text-anchor="middle">TRK BTNS</text><text x="-150" y="1712" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#1668B8" font-weight="normal" text-anchor="middle">n48 act·n49 solo</text><text x="-150" y="1744" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#8A6D1A" font-weight="normal" text-anchor="middle">n50 arm·n66 A/B</text><text x="-150" y="1776" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#666" font-weight="normal" text-anchor="middle">(ch = track 1-8)</text><text x="225" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch1</text><text x="545" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch2</text><text x="865" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch3</text><text x="1185" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch4</text><text x="1505" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch5</text><text x="1825" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch6</text><text x="2145" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch7</text><text x="2465" y="2480" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC7 ch8</text><text x="0" y="300" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC14</text><rect x="-221" y="2151" width="142" height="52" rx="9" fill="#fff" stroke="#1668B8" stroke-width="4"/><text x="-150" y="2190.2" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">FADERS</text><text x="-150" y="2230" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#1668B8" font-weight="normal" text-anchor="middle">CC7 ch1-8</text><text x="-150" y="2262" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#1668B8" font-weight="normal" text-anchor="middle">master CC14</text><text x="2745" y="1770" font-family="DejaVu Sans Mono, monospace" font-size="28" fill="#1668B8" font-weight="bold" text-anchor="middle">CC47</text><text x="4010" y="788" font-family="DejaVu Sans Mono, monospace" font-size="26" fill="#8A6D1A" font-weight="bold" text-anchor="middle">CC13 / tap n99</text><text x="3025" y="403" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n87</text><text x="3025" y="593" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n88</text><text x="3025" y="783" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n89</text><text x="3370" y="403" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n91</text><text x="3690" y="403" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n92</text><text x="4010" y="403" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n93</text><text x="3370" y="593" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n67</text><text x="3690" y="593" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n90</text><text x="3370" y="783" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n99</text><text x="3690" y="783" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n100</text><text x="3050" y="1668" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n58</text><text x="3370" y="1668" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n59</text><text x="3690" y="1668" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n60</text><text x="4010" y="1668" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n62</text><text x="3050" y="1838" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n63</text><text x="3370" y="1838" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n64</text><text x="3690" y="1838" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n61</text><text x="4010" y="1838" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n80</text><text x="3690" y="2083" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n98</text><text x="4010" y="2083" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">n81</text><rect x="3312" y="271" width="755" height="52" rx="9" fill="#fff" stroke="#8A6D1A" stroke-width="4"/><text x="3690" y="310.2" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#8A6D1A" font-weight="bold" text-anchor="middle">TRANSPORT / DEVICE  —  notes (Akai std)</text><text x="3690" y="2316" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#1668B8" font-weight="bold" text-anchor="middle">CROSSFADER  CC15</text><text x="3160" y="2250" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#8A6D1A" font-weight="bold" text-anchor="middle">BANK NAV  n94-95 / n96-97</text><text x="-350" y="2610" font-family="DejaVu Sans Mono, monospace" font-size="30" fill="#666" font-weight="normal" text-anchor="start">Grid: note = (row_from_bottom)x8 + (col-1).  Per-track buttons: note = button type, MIDI channel = track (1-8).  Knobs/faders = CC.</text></g>
+</svg>

@@ -1,4 +1,4 @@
-# RES FABLE ORBIT — SCENE PLACARDS (ORBIT_NOTES.md)
+# RES REACT ORBIT — SCENE PLACARDS (ORBIT_NOTES.md)
 
 Generated 2026-07-16 overnight session. Placards carry the chronology (pack law:
 grid order = energy contour, placard = historical truth). One placard per built
@@ -128,11 +128,11 @@ NOTE (sonification honesty): pulsar pulses are radio intensity, not sound.
 Every pulsar "sound" you have heard is a sonification — a chosen mapping
 of radio flux to audio. The famous stacked-ridgeline plot of B1919+21
 (Harold Craft's 1970 thesis, later the cover of Unknown Pleasures) is a
-chart, not a waveform. This scene's FablePulsar plugin does the same
+chart, not a waveform. This scene's ReactPulsar plugin does the same
 thing honestly in reverse: your music's bass drives the Level of a
 CP1919-style ridgeline stack. It is a mapping. It never claims to be
 the star.
-ON THE RIG: FablePulsar (FFGL source, built and shipped this session) —
+ON THE RIG: ReactPulsar (FFGL source, built and shipped this session) —
 Level rides the bass; stack sparse (N~33) so the layer Bloom does not
 wash the ridgelines white. Structure: the dish stares (surveillance take).
 
@@ -261,7 +261,7 @@ ON THE RIG: Tight Metaballs orbiting on bass; high-speed tracking body.
 FACT: Eddington's 1919 eclipse measured starlight bending 1.75 arcseconds
 around the Sun. Einstein rings and the 1979 twin quasar are the same
 physics scaled up: mass is a lens.
-ON THE RIG: Sine Wave on bass; mandala-burst bed = the FableLens carrier
+ON THE RIG: Sine Wave on bass; mandala-burst bed = the ReactLens carrier
 when the plugin ships (P2/P3). Body: Eddington's plate close-up.
 
 ### O4-C6 COLLISION
