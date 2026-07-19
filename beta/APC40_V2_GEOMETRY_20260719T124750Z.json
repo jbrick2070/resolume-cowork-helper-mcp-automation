@@ -1,0 +1,3457 @@
+{
+  "canvas": {
+    "height": 1080,
+    "origin": "top-left",
+    "width": 1920
+  },
+  "decoration": {
+    "collision_count": 0,
+    "primitive_count": 54,
+    "primitives": [
+      {
+        "family": "shell",
+        "id": "shell-top",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 112.0,
+        "x2": 1808.0,
+        "y1": 66.0,
+        "y2": 66.0
+      },
+      {
+        "family": "shell",
+        "id": "shell-right",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1808.0,
+        "x2": 1808.0,
+        "y1": 66.0,
+        "y2": 1022.0
+      },
+      {
+        "family": "shell",
+        "id": "shell-bottom",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 112.0,
+        "x2": 1808.0,
+        "y1": 1022.0,
+        "y2": 1022.0
+      },
+      {
+        "family": "shell",
+        "id": "shell-left",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 112.0,
+        "x2": 112.0,
+        "y1": 66.0,
+        "y2": 1022.0
+      },
+      {
+        "family": "section-divider",
+        "id": "main-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1272.0,
+        "x2": 1272.0,
+        "y1": 174.0,
+        "y2": 1010.0
+      },
+      {
+        "family": "grid-divider",
+        "id": "grid-row-1",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1260.0,
+        "y1": 261.0,
+        "y2": 261.0
+      },
+      {
+        "family": "grid-divider",
+        "id": "grid-row-2",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1260.0,
+        "y1": 321.0,
+        "y2": 321.0
+      },
+      {
+        "family": "grid-divider",
+        "id": "grid-row-3",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1260.0,
+        "y1": 381.0,
+        "y2": 381.0
+      },
+      {
+        "family": "grid-divider",
+        "id": "grid-row-4",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1260.0,
+        "y1": 442.0,
+        "y2": 442.0
+      },
+      {
+        "family": "section-divider",
+        "id": "clip-stop-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1260.0,
+        "y1": 506.0,
+        "y2": 506.0
+      },
+      {
+        "family": "section-divider",
+        "id": "track-select-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1260.0,
+        "y1": 576.0,
+        "y2": 576.0
+      },
+      {
+        "family": "section-divider",
+        "id": "track-mode-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1260.0,
+        "y1": 640.0,
+        "y2": 640.0
+      },
+      {
+        "family": "section-divider",
+        "id": "fader-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 122.0,
+        "x2": 1158.0,
+        "y1": 760.0,
+        "y2": 760.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-top-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1796.0,
+        "y1": 392.0,
+        "y2": 392.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-knob-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1796.0,
+        "y1": 544.0,
+        "y2": 544.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-button-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1796.0,
+        "y1": 662.0,
+        "y2": 662.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-controls-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1796.0,
+        "y1": 729.0,
+        "y2": 729.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-navigation-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1796.0,
+        "y1": 800.0,
+        "y2": 800.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-mix-divider",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1796.0,
+        "y1": 910.0,
+        "y2": 910.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-upper-row-1",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1660.0,
+        "y1": 255.0,
+        "y2": 255.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-upper-row-2",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1284.0,
+        "x2": 1660.0,
+        "y1": 321.0,
+        "y2": 321.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-upper-column-1",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1397.0,
+        "x2": 1397.0,
+        "y1": 174.0,
+        "y2": 380.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-upper-column-2",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1534.0,
+        "x2": 1534.0,
+        "y1": 174.0,
+        "y2": 380.0
+      },
+      {
+        "family": "section-divider",
+        "id": "right-upper-column-3",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1660.0,
+        "x2": 1660.0,
+        "y1": 174.0,
+        "y2": 380.0
+      },
+      {
+        "family": "crossfader-guide",
+        "id": "crossfader-guide",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1479.0,
+        "x2": 1715.0,
+        "y1": 930.0,
+        "y2": 930.0
+      },
+      {
+        "family": "crossfader-guide",
+        "id": "crossfader-cap-left",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1479.0,
+        "x2": 1479.0,
+        "y1": 920.0,
+        "y2": 936.0
+      },
+      {
+        "family": "crossfader-guide",
+        "id": "crossfader-cap-right",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1715.0,
+        "x2": 1715.0,
+        "y1": 920.0,
+        "y2": 936.0
+      },
+      {
+        "family": "master-guide",
+        "id": "master-guide",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1278.0,
+        "x2": 1278.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-1",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 256.0,
+        "x2": 256.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-2",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 386.0,
+        "x2": 386.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-3",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 516.0,
+        "x2": 516.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-4",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 646.0,
+        "x2": 646.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-5",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 775.0,
+        "x2": 775.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-6",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 905.0,
+        "x2": 905.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-7",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1035.0,
+        "x2": 1035.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "family": "track-fader-guide",
+        "id": "track-fader-8",
+        "kind": "line",
+        "stroke_px": 2.0,
+        "x1": 1157.0,
+        "x2": 1157.0,
+        "y1": 787.0,
+        "y2": 1009.0
+      },
+      {
+        "cx": 191.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-1",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 321.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-2",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 451.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-3",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 581.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-4",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 711.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-5",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 840.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-6",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 970.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-7",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1100.0,
+        "cy": 130.0,
+        "family": "knob-surround",
+        "id": "track-knob-8",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1337.0,
+        "cy": 452.0,
+        "family": "knob-surround",
+        "id": "device-knob-1",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1467.0,
+        "cy": 452.0,
+        "family": "knob-surround",
+        "id": "device-knob-2",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1597.0,
+        "cy": 452.0,
+        "family": "knob-surround",
+        "id": "device-knob-3",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1727.0,
+        "cy": 452.0,
+        "family": "knob-surround",
+        "id": "device-knob-4",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1337.0,
+        "cy": 573.0,
+        "family": "knob-surround",
+        "id": "device-knob-5",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1467.0,
+        "cy": 573.0,
+        "family": "knob-surround",
+        "id": "device-knob-6",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1597.0,
+        "cy": 573.0,
+        "family": "knob-surround",
+        "id": "device-knob-7",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1727.0,
+        "cy": 573.0,
+        "family": "knob-surround",
+        "id": "device-knob-8",
+        "kind": "circle",
+        "radius": 32.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1214.0,
+        "cy": 696.0,
+        "family": "knob-surround",
+        "id": "cue-level",
+        "kind": "circle",
+        "radius": 24.0,
+        "stroke_px": 2.0
+      },
+      {
+        "cx": 1727.0,
+        "cy": 303.0,
+        "family": "knob-surround",
+        "id": "tempo",
+        "kind": "circle",
+        "radius": 24.0,
+        "stroke_px": 2.0
+      }
+    ]
+  },
+  "fft_contract": {
+    "fallback_ms": 1400,
+    "frequency_band": [
+      0.0,
+      0.33
+    ],
+    "gain_db": 3.0,
+    "geometry_modulated": false,
+    "hue_modulated": false,
+    "output_range": [
+      0.12,
+      0.28
+    ],
+    "phase_source": "composition_fft",
+    "target": "clip video opacity"
+  },
+  "native_text_block": {
+    "cell_collision_count": 0,
+    "clipped_cell_count": 916,
+    "color_rgba": "#557f96ff",
+    "font": "Cascadia Mono",
+    "grid_columns": 128,
+    "grid_rows": 48,
+    "intended_bounds": [
+      112.0,
+      66.0,
+      1808.0,
+      1022.0
+    ],
+    "line_width": 5000.0,
+    "occupied_cells": 830,
+    "size": 0.5,
+    "style": "Regular",
+    "text": "+------------------------------------------------------------------------------------------------------------------------------+\n|                                                                                                                              |\n|   |   |     .   |    |         |   |     |   |    |    |    |   |     |   |                                                  |\n|   |   |    |    |    |    |    |   +-   -+   |    |    |    |   ++    |   |                                                  |\n|   |   |    +-   |    |    |    |   |     |   |    |    |    |   ++    |   |                                                  |\n|                                                                                      |        |         |         |          |\n|                                                                                      |        |         |         |          |\n|                                                                                      |        |         |         |          |\n|                                                                                      |        |         |         |          |\n|                                                                                      |       -+-        +-       -+          |\n+-                                      .                                      .      -+        |         |         |    .     |\n|                                                                                      |        |         |         |  |   |   |\n|                                                                                      |        |         |         |  |   |   |\n+-                                      .                                      .      -+       -+--      -+-       -+          |\n|                                                                                      |        |         |         |          |\n+-                                      .                                      .      -+        |         |         |          |\n|                                                                                      +---++---+----++---+---+++---+---+++----+\n|                                                                                      |   ++        ++       +++       +++    |\n+-                                      .                                      .      -+  .   |    |    |    |   .     |   |   |\n|                                                                                      | .    |    |    |    |    .    |   |   |\n|                                                                                      |  .   |    |    |    |   .     |   |   |\n|                                                                                      |                                       |\n+-         .        --        .         .         .        --        .         .      -+                                       |\n|                                                                                      |                                       |\n|                                                                                      +-+-   +----+    +----+   -+----+   +---+\n+-         .        --        .         .         .        --        .         .      -+ |    |    |    |    |    |    |   |   |\n|                                                                                      |  .   |    |    |    |   .     |   |   |\n|                                                                                      |                                       |\n+-                                      .                                      .      -+                                       |\n|                                                                                      |        --        --        .         -+\n|                                                                                      |                                       |\n|                                                                                      |                                       |\n|                                                                                      |                                       |\n|                                                                                      +-       ---      ---       ---       --+\n+----------+------------------+---------+---------+--------+---------+---------        |                                       |\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 +---------------------------------------+\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 +-----     ----+++++++++++++++++++------+\n|          |                  |         |         |        |         |                 |              +++++++++++++++++++      |\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 |                                       |\n|          |                  |         |         |        |         |                 |                                       |\n+-         |                  |         |         |        |         |                 +---------------------------------------+\n",
+    "text_sha256": "5a2e7e89142777b6bca6ae49c890aa28cca4baff06b9092aa9aed62014e39611",
+    "transform": {
+      "position_x": -21.0,
+      "position_y": 0.0,
+      "scale": 50.0,
+      "scale_h": 181.0,
+      "scale_w": 184.0
+    }
+  },
+  "protection": {
+    "box_count": 295,
+    "collision_count": 0,
+    "control_count": 148,
+    "controls": [
+      {
+        "label_box": [
+          138,
+          450,
+          244,
+          494
+        ],
+        "layer": 1,
+        "layer_name": "Grid 5 Track 1",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037928080",
+        "witness_box": [
+          234,
+          451,
+          244,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          268,
+          450,
+          374,
+          494
+        ],
+        "layer": 2,
+        "layer_name": "Grid 5 Track 2",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037928336",
+        "witness_box": [
+          364,
+          451,
+          374,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          398,
+          450,
+          504,
+          494
+        ],
+        "layer": 3,
+        "layer_name": "Grid 5 Track 3",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037928592",
+        "witness_box": [
+          494,
+          451,
+          504,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          528,
+          450,
+          634,
+          494
+        ],
+        "layer": 4,
+        "layer_name": "Grid 5 Track 4",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037928848",
+        "witness_box": [
+          624,
+          451,
+          634,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          658,
+          450,
+          764,
+          494
+        ],
+        "layer": 5,
+        "layer_name": "Grid 5 Track 5",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037929104",
+        "witness_box": [
+          754,
+          451,
+          764,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          787,
+          450,
+          893,
+          494
+        ],
+        "layer": 6,
+        "layer_name": "Grid 5 Track 6",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037929360",
+        "witness_box": [
+          883,
+          451,
+          893,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          917,
+          450,
+          1023,
+          494
+        ],
+        "layer": 7,
+        "layer_name": "Grid 5 Track 7",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037929616",
+        "witness_box": [
+          1013,
+          451,
+          1023,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          1047,
+          450,
+          1153,
+          494
+        ],
+        "layer": 8,
+        "layer_name": "Grid 5 Track 8",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037929872",
+        "witness_box": [
+          1143,
+          451,
+          1153,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          138,
+          390,
+          244,
+          434
+        ],
+        "layer": 9,
+        "layer_name": "Grid 4 Track 1",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037930128",
+        "witness_box": [
+          234,
+          391,
+          244,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          268,
+          390,
+          374,
+          434
+        ],
+        "layer": 10,
+        "layer_name": "Grid 4 Track 2",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037930384",
+        "witness_box": [
+          364,
+          391,
+          374,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          398,
+          390,
+          504,
+          434
+        ],
+        "layer": 11,
+        "layer_name": "Grid 4 Track 3",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037930640",
+        "witness_box": [
+          494,
+          391,
+          504,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          528,
+          390,
+          634,
+          434
+        ],
+        "layer": 12,
+        "layer_name": "Grid 4 Track 4",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037930896",
+        "witness_box": [
+          624,
+          391,
+          634,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          658,
+          390,
+          764,
+          434
+        ],
+        "layer": 13,
+        "layer_name": "Grid 4 Track 5",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037931152",
+        "witness_box": [
+          754,
+          391,
+          764,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          787,
+          390,
+          893,
+          434
+        ],
+        "layer": 14,
+        "layer_name": "Grid 4 Track 6",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037931408",
+        "witness_box": [
+          883,
+          391,
+          893,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          917,
+          390,
+          1023,
+          434
+        ],
+        "layer": 15,
+        "layer_name": "Grid 4 Track 7",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037931664",
+        "witness_box": [
+          1013,
+          391,
+          1023,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          1047,
+          390,
+          1153,
+          434
+        ],
+        "layer": 16,
+        "layer_name": "Grid 4 Track 8",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037931920",
+        "witness_box": [
+          1143,
+          391,
+          1153,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          138,
+          329,
+          244,
+          373
+        ],
+        "layer": 17,
+        "layer_name": "Grid 3 Track 1",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037932176",
+        "witness_box": [
+          234,
+          330,
+          244,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          268,
+          329,
+          374,
+          373
+        ],
+        "layer": 18,
+        "layer_name": "Grid 3 Track 2",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037932432",
+        "witness_box": [
+          364,
+          330,
+          374,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          398,
+          329,
+          504,
+          373
+        ],
+        "layer": 19,
+        "layer_name": "Grid 3 Track 3",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037932688",
+        "witness_box": [
+          494,
+          330,
+          504,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          528,
+          329,
+          634,
+          373
+        ],
+        "layer": 20,
+        "layer_name": "Grid 3 Track 4",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037932944",
+        "witness_box": [
+          624,
+          330,
+          634,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          658,
+          329,
+          764,
+          373
+        ],
+        "layer": 21,
+        "layer_name": "Grid 3 Track 5",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037933200",
+        "witness_box": [
+          754,
+          330,
+          764,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          787,
+          329,
+          893,
+          373
+        ],
+        "layer": 22,
+        "layer_name": "Grid 3 Track 6",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037933456",
+        "witness_box": [
+          883,
+          330,
+          893,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          917,
+          329,
+          1023,
+          373
+        ],
+        "layer": 23,
+        "layer_name": "Grid 3 Track 7",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037933712",
+        "witness_box": [
+          1013,
+          330,
+          1023,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          1047,
+          329,
+          1153,
+          373
+        ],
+        "layer": 24,
+        "layer_name": "Grid 3 Track 8",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037933968",
+        "witness_box": [
+          1143,
+          330,
+          1153,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          138,
+          269,
+          244,
+          313
+        ],
+        "layer": 25,
+        "layer_name": "Grid 2 Track 1",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037934224",
+        "witness_box": [
+          234,
+          270,
+          244,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          268,
+          269,
+          374,
+          313
+        ],
+        "layer": 26,
+        "layer_name": "Grid 2 Track 2",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037934480",
+        "witness_box": [
+          364,
+          270,
+          374,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          398,
+          269,
+          504,
+          313
+        ],
+        "layer": 27,
+        "layer_name": "Grid 2 Track 3",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037934736",
+        "witness_box": [
+          494,
+          270,
+          504,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          528,
+          269,
+          634,
+          313
+        ],
+        "layer": 28,
+        "layer_name": "Grid 2 Track 4",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037934992",
+        "witness_box": [
+          624,
+          270,
+          634,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          658,
+          269,
+          764,
+          313
+        ],
+        "layer": 29,
+        "layer_name": "Grid 2 Track 5",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037935248",
+        "witness_box": [
+          754,
+          270,
+          764,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          787,
+          269,
+          893,
+          313
+        ],
+        "layer": 30,
+        "layer_name": "Grid 2 Track 6",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037935504",
+        "witness_box": [
+          883,
+          270,
+          893,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          917,
+          269,
+          1023,
+          313
+        ],
+        "layer": 31,
+        "layer_name": "Grid 2 Track 7",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037935760",
+        "witness_box": [
+          1013,
+          270,
+          1023,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          1047,
+          269,
+          1153,
+          313
+        ],
+        "layer": 32,
+        "layer_name": "Grid 2 Track 8",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037936016",
+        "witness_box": [
+          1143,
+          270,
+          1153,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          138,
+          209,
+          244,
+          253
+        ],
+        "layer": 33,
+        "layer_name": "Grid 1 Track 1",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037936272",
+        "witness_box": [
+          234,
+          210,
+          244,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          268,
+          209,
+          374,
+          253
+        ],
+        "layer": 34,
+        "layer_name": "Grid 1 Track 2",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037936528",
+        "witness_box": [
+          364,
+          210,
+          374,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          398,
+          209,
+          504,
+          253
+        ],
+        "layer": 35,
+        "layer_name": "Grid 1 Track 3",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037936784",
+        "witness_box": [
+          494,
+          210,
+          504,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          528,
+          209,
+          634,
+          253
+        ],
+        "layer": 36,
+        "layer_name": "Grid 1 Track 4",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037937040",
+        "witness_box": [
+          624,
+          210,
+          634,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          658,
+          209,
+          764,
+          253
+        ],
+        "layer": 37,
+        "layer_name": "Grid 1 Track 5",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037937296",
+        "witness_box": [
+          754,
+          210,
+          764,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          787,
+          209,
+          893,
+          253
+        ],
+        "layer": 38,
+        "layer_name": "Grid 1 Track 6",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037937552",
+        "witness_box": [
+          883,
+          210,
+          893,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          917,
+          209,
+          1023,
+          253
+        ],
+        "layer": 39,
+        "layer_name": "Grid 1 Track 7",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037937808",
+        "witness_box": [
+          1013,
+          210,
+          1023,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          1047,
+          209,
+          1153,
+          253
+        ],
+        "layer": 40,
+        "layer_name": "Grid 1 Track 8",
+        "motion_box": null,
+        "prototype": "grid_pad",
+        "raw_key": "72057594037938064",
+        "witness_box": [
+          1143,
+          210,
+          1153,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          1181,
+          209,
+          1247,
+          253
+        ],
+        "layer": 41,
+        "layer_name": "Scene Launch 1",
+        "motion_box": null,
+        "prototype": "scene_pad",
+        "raw_key": "72057594037949072",
+        "witness_box": [
+          1237,
+          210,
+          1247,
+          220
+        ]
+      },
+      {
+        "label_box": [
+          1181,
+          269,
+          1247,
+          313
+        ],
+        "layer": 42,
+        "layer_name": "Scene Launch 2",
+        "motion_box": null,
+        "prototype": "scene_pad",
+        "raw_key": "72057594037949328",
+        "witness_box": [
+          1237,
+          270,
+          1247,
+          280
+        ]
+      },
+      {
+        "label_box": [
+          1181,
+          329,
+          1247,
+          373
+        ],
+        "layer": 43,
+        "layer_name": "Scene Launch 3",
+        "motion_box": null,
+        "prototype": "scene_pad",
+        "raw_key": "72057594037949584",
+        "witness_box": [
+          1237,
+          330,
+          1247,
+          340
+        ]
+      },
+      {
+        "label_box": [
+          1181,
+          390,
+          1247,
+          434
+        ],
+        "layer": 44,
+        "layer_name": "Scene Launch 4",
+        "motion_box": null,
+        "prototype": "scene_pad",
+        "raw_key": "72057594037949840",
+        "witness_box": [
+          1237,
+          391,
+          1247,
+          401
+        ]
+      },
+      {
+        "label_box": [
+          1181,
+          450,
+          1247,
+          494
+        ],
+        "layer": 45,
+        "layer_name": "Scene Launch 5",
+        "motion_box": null,
+        "prototype": "scene_pad",
+        "raw_key": "72057594037950096",
+        "witness_box": [
+          1237,
+          451,
+          1247,
+          461
+        ]
+      },
+      {
+        "label_box": [
+          146,
+          518,
+          236,
+          562
+        ],
+        "layer": 46,
+        "layer_name": "Clip Stop 1",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941392",
+        "witness_box": [
+          226,
+          519,
+          236,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          276,
+          518,
+          366,
+          562
+        ],
+        "layer": 47,
+        "layer_name": "Clip Stop 2",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941393",
+        "witness_box": [
+          356,
+          519,
+          366,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          406,
+          518,
+          496,
+          562
+        ],
+        "layer": 48,
+        "layer_name": "Clip Stop 3",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941394",
+        "witness_box": [
+          486,
+          519,
+          496,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          536,
+          518,
+          626,
+          562
+        ],
+        "layer": 49,
+        "layer_name": "Clip Stop 4",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941395",
+        "witness_box": [
+          616,
+          519,
+          626,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          666,
+          518,
+          756,
+          562
+        ],
+        "layer": 50,
+        "layer_name": "Clip Stop 5",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941396",
+        "witness_box": [
+          746,
+          519,
+          756,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          795,
+          518,
+          885,
+          562
+        ],
+        "layer": 51,
+        "layer_name": "Clip Stop 6",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941397",
+        "witness_box": [
+          875,
+          519,
+          885,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          925,
+          518,
+          1015,
+          562
+        ],
+        "layer": 52,
+        "layer_name": "Clip Stop 7",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941398",
+        "witness_box": [
+          1005,
+          519,
+          1015,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          1055,
+          518,
+          1145,
+          562
+        ],
+        "layer": 53,
+        "layer_name": "Clip Stop 8",
+        "motion_box": null,
+        "prototype": "clip_stop",
+        "raw_key": "72057594037941399",
+        "witness_box": [
+          1135,
+          519,
+          1145,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          138,
+          590,
+          244,
+          626
+        ],
+        "layer": 54,
+        "layer_name": "Track Select 1",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941136",
+        "witness_box": [
+          234,
+          591,
+          244,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          268,
+          590,
+          374,
+          626
+        ],
+        "layer": 55,
+        "layer_name": "Track Select 2",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941137",
+        "witness_box": [
+          364,
+          591,
+          374,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          398,
+          590,
+          504,
+          626
+        ],
+        "layer": 56,
+        "layer_name": "Track Select 3",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941138",
+        "witness_box": [
+          494,
+          591,
+          504,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          528,
+          590,
+          634,
+          626
+        ],
+        "layer": 57,
+        "layer_name": "Track Select 4",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941139",
+        "witness_box": [
+          624,
+          591,
+          634,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          658,
+          590,
+          764,
+          626
+        ],
+        "layer": 58,
+        "layer_name": "Track Select 5",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941140",
+        "witness_box": [
+          754,
+          591,
+          764,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          787,
+          590,
+          893,
+          626
+        ],
+        "layer": 59,
+        "layer_name": "Track Select 6",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941141",
+        "witness_box": [
+          883,
+          591,
+          893,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          917,
+          590,
+          1023,
+          626
+        ],
+        "layer": 60,
+        "layer_name": "Track Select 7",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941142",
+        "witness_box": [
+          1013,
+          591,
+          1023,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          1047,
+          590,
+          1153,
+          626
+        ],
+        "layer": 61,
+        "layer_name": "Track Select 8",
+        "motion_box": null,
+        "prototype": "track_select",
+        "raw_key": "72057594037941143",
+        "witness_box": [
+          1143,
+          591,
+          1153,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          197,
+          702,
+          235,
+          738
+        ],
+        "layer": 62,
+        "layer_name": "Record Arm 1",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940368",
+        "witness_box": [
+          225,
+          727,
+          235,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          327,
+          702,
+          365,
+          738
+        ],
+        "layer": 63,
+        "layer_name": "Record Arm 2",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940369",
+        "witness_box": [
+          355,
+          727,
+          365,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          457,
+          702,
+          495,
+          738
+        ],
+        "layer": 64,
+        "layer_name": "Record Arm 3",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940370",
+        "witness_box": [
+          485,
+          727,
+          495,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          586,
+          702,
+          624,
+          738
+        ],
+        "layer": 65,
+        "layer_name": "Record Arm 4",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940371",
+        "witness_box": [
+          614,
+          727,
+          624,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          716,
+          702,
+          754,
+          738
+        ],
+        "layer": 66,
+        "layer_name": "Record Arm 5",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940372",
+        "witness_box": [
+          744,
+          727,
+          754,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          846,
+          702,
+          884,
+          738
+        ],
+        "layer": 67,
+        "layer_name": "Record Arm 6",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940373",
+        "witness_box": [
+          874,
+          727,
+          884,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          976,
+          702,
+          1014,
+          738
+        ],
+        "layer": 68,
+        "layer_name": "Record Arm 7",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940374",
+        "witness_box": [
+          1004,
+          727,
+          1014,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          1106,
+          702,
+          1144,
+          738
+        ],
+        "layer": 69,
+        "layer_name": "Record Arm 8",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940375",
+        "witness_box": [
+          1134,
+          727,
+          1144,
+          737
+        ]
+      },
+      {
+        "label_box": [
+          148,
+          702,
+          186,
+          738
+        ],
+        "layer": 70,
+        "layer_name": "Solo 1",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940624",
+        "witness_box": [
+          176,
+          703,
+          186,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          277,
+          702,
+          315,
+          738
+        ],
+        "layer": 71,
+        "layer_name": "Solo 2",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940625",
+        "witness_box": [
+          305,
+          703,
+          315,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          407,
+          702,
+          445,
+          738
+        ],
+        "layer": 72,
+        "layer_name": "Solo 3",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940626",
+        "witness_box": [
+          435,
+          703,
+          445,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          537,
+          702,
+          575,
+          738
+        ],
+        "layer": 73,
+        "layer_name": "Solo 4",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940627",
+        "witness_box": [
+          565,
+          703,
+          575,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          667,
+          702,
+          705,
+          738
+        ],
+        "layer": 74,
+        "layer_name": "Solo 5",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940628",
+        "witness_box": [
+          695,
+          703,
+          705,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          797,
+          702,
+          835,
+          738
+        ],
+        "layer": 75,
+        "layer_name": "Solo 6",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940629",
+        "witness_box": [
+          825,
+          703,
+          835,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          926,
+          702,
+          964,
+          738
+        ],
+        "layer": 76,
+        "layer_name": "Solo 7",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940630",
+        "witness_box": [
+          954,
+          703,
+          964,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          1056,
+          702,
+          1094,
+          738
+        ],
+        "layer": 77,
+        "layer_name": "Solo 8",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940631",
+        "witness_box": [
+          1084,
+          703,
+          1094,
+          713
+        ]
+      },
+      {
+        "label_box": [
+          148,
+          655,
+          186,
+          691
+        ],
+        "layer": 78,
+        "layer_name": "Activator 1",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940880",
+        "witness_box": [
+          176,
+          656,
+          186,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          277,
+          655,
+          315,
+          691
+        ],
+        "layer": 79,
+        "layer_name": "Activator 2",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940881",
+        "witness_box": [
+          305,
+          656,
+          315,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          407,
+          655,
+          445,
+          691
+        ],
+        "layer": 80,
+        "layer_name": "Activator 3",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940882",
+        "witness_box": [
+          435,
+          656,
+          445,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          537,
+          655,
+          575,
+          691
+        ],
+        "layer": 81,
+        "layer_name": "Activator 4",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940883",
+        "witness_box": [
+          565,
+          656,
+          575,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          667,
+          655,
+          705,
+          691
+        ],
+        "layer": 82,
+        "layer_name": "Activator 5",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940884",
+        "witness_box": [
+          695,
+          656,
+          705,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          797,
+          655,
+          835,
+          691
+        ],
+        "layer": 83,
+        "layer_name": "Activator 6",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940885",
+        "witness_box": [
+          825,
+          656,
+          835,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          926,
+          655,
+          964,
+          691
+        ],
+        "layer": 84,
+        "layer_name": "Activator 7",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940886",
+        "witness_box": [
+          954,
+          656,
+          964,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          1056,
+          655,
+          1094,
+          691
+        ],
+        "layer": 85,
+        "layer_name": "Activator 8",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037940887",
+        "witness_box": [
+          1084,
+          656,
+          1094,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          197,
+          655,
+          235,
+          691
+        ],
+        "layer": 86,
+        "layer_name": "Crossfade A B 1",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944976",
+        "witness_box": [
+          225,
+          656,
+          235,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          327,
+          655,
+          365,
+          691
+        ],
+        "layer": 87,
+        "layer_name": "Crossfade A B 2",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944977",
+        "witness_box": [
+          355,
+          656,
+          365,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          457,
+          655,
+          495,
+          691
+        ],
+        "layer": 88,
+        "layer_name": "Crossfade A B 3",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944978",
+        "witness_box": [
+          485,
+          656,
+          495,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          586,
+          655,
+          624,
+          691
+        ],
+        "layer": 89,
+        "layer_name": "Crossfade A B 4",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944979",
+        "witness_box": [
+          614,
+          656,
+          624,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          716,
+          655,
+          754,
+          691
+        ],
+        "layer": 90,
+        "layer_name": "Crossfade A B 5",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944980",
+        "witness_box": [
+          744,
+          656,
+          754,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          846,
+          655,
+          884,
+          691
+        ],
+        "layer": 91,
+        "layer_name": "Crossfade A B 6",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944981",
+        "witness_box": [
+          874,
+          656,
+          884,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          976,
+          655,
+          1014,
+          691
+        ],
+        "layer": 92,
+        "layer_name": "Crossfade A B 7",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944982",
+        "witness_box": [
+          1004,
+          656,
+          1014,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          1106,
+          655,
+          1144,
+          691
+        ],
+        "layer": 93,
+        "layer_name": "Crossfade A B 8",
+        "motion_box": null,
+        "prototype": "track_button",
+        "raw_key": "72057594037944983",
+        "witness_box": [
+          1134,
+          656,
+          1144,
+          666
+        ]
+      },
+      {
+        "label_box": [
+          146,
+          877,
+          188,
+          915
+        ],
+        "layer": 94,
+        "layer_name": "Track Fader 1",
+        "motion_box": [
+          143,
+          783,
+          239,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857840",
+        "witness_box": [
+          143,
+          783,
+          239,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          276,
+          877,
+          318,
+          915
+        ],
+        "layer": 95,
+        "layer_name": "Track Fader 2",
+        "motion_box": [
+          273,
+          783,
+          369,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857841",
+        "witness_box": [
+          273,
+          783,
+          369,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          406,
+          877,
+          448,
+          915
+        ],
+        "layer": 96,
+        "layer_name": "Track Fader 3",
+        "motion_box": [
+          403,
+          783,
+          499,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857842",
+        "witness_box": [
+          403,
+          783,
+          499,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          536,
+          877,
+          578,
+          915
+        ],
+        "layer": 97,
+        "layer_name": "Track Fader 4",
+        "motion_box": [
+          533,
+          783,
+          629,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857843",
+        "witness_box": [
+          533,
+          783,
+          629,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          666,
+          877,
+          708,
+          915
+        ],
+        "layer": 98,
+        "layer_name": "Track Fader 5",
+        "motion_box": [
+          663,
+          783,
+          759,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857844",
+        "witness_box": [
+          663,
+          783,
+          759,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          795,
+          877,
+          837,
+          915
+        ],
+        "layer": 99,
+        "layer_name": "Track Fader 6",
+        "motion_box": [
+          792,
+          783,
+          888,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857845",
+        "witness_box": [
+          792,
+          783,
+          888,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          925,
+          877,
+          967,
+          915
+        ],
+        "layer": 100,
+        "layer_name": "Track Fader 7",
+        "motion_box": [
+          922,
+          783,
+          1018,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857846",
+        "witness_box": [
+          922,
+          783,
+          1018,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          1055,
+          877,
+          1097,
+          915
+        ],
+        "layer": 101,
+        "layer_name": "Track Fader 8",
+        "motion_box": [
+          1052,
+          783,
+          1148,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075857847",
+        "witness_box": [
+          1052,
+          783,
+          1148,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          147,
+          174,
+          235,
+          203
+        ],
+        "layer": 102,
+        "layer_name": "Track Knob 1",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075868336",
+        "witness_box": [
+          180,
+          119,
+          202,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          277,
+          174,
+          365,
+          203
+        ],
+        "layer": 103,
+        "layer_name": "Track Knob 2",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075868592",
+        "witness_box": [
+          310,
+          119,
+          332,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          407,
+          174,
+          495,
+          203
+        ],
+        "layer": 104,
+        "layer_name": "Track Knob 3",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075868848",
+        "witness_box": [
+          440,
+          119,
+          462,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          537,
+          174,
+          625,
+          203
+        ],
+        "layer": 105,
+        "layer_name": "Track Knob 4",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075869104",
+        "witness_box": [
+          570,
+          119,
+          592,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          667,
+          174,
+          755,
+          203
+        ],
+        "layer": 106,
+        "layer_name": "Track Knob 5",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075869360",
+        "witness_box": [
+          700,
+          119,
+          722,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          796,
+          174,
+          884,
+          203
+        ],
+        "layer": 107,
+        "layer_name": "Track Knob 6",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075869616",
+        "witness_box": [
+          829,
+          119,
+          851,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          926,
+          174,
+          1014,
+          203
+        ],
+        "layer": 108,
+        "layer_name": "Track Knob 7",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075869872",
+        "witness_box": [
+          959,
+          119,
+          981,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          1056,
+          174,
+          1144,
+          203
+        ],
+        "layer": 109,
+        "layer_name": "Track Knob 8",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075870128",
+        "witness_box": [
+          1089,
+          119,
+          1111,
+          141
+        ]
+      },
+      {
+        "label_box": [
+          1293,
+          496,
+          1381,
+          525
+        ],
+        "layer": 110,
+        "layer_name": "Device Knob 1",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075860144",
+        "witness_box": [
+          1326,
+          441,
+          1348,
+          463
+        ]
+      },
+      {
+        "label_box": [
+          1423,
+          496,
+          1511,
+          525
+        ],
+        "layer": 111,
+        "layer_name": "Device Knob 2",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075860400",
+        "witness_box": [
+          1456,
+          441,
+          1478,
+          463
+        ]
+      },
+      {
+        "label_box": [
+          1553,
+          496,
+          1641,
+          525
+        ],
+        "layer": 112,
+        "layer_name": "Device Knob 3",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075860656",
+        "witness_box": [
+          1586,
+          441,
+          1608,
+          463
+        ]
+      },
+      {
+        "label_box": [
+          1683,
+          496,
+          1771,
+          525
+        ],
+        "layer": 113,
+        "layer_name": "Device Knob 4",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075860912",
+        "witness_box": [
+          1716,
+          441,
+          1738,
+          463
+        ]
+      },
+      {
+        "label_box": [
+          1293,
+          617,
+          1381,
+          646
+        ],
+        "layer": 114,
+        "layer_name": "Device Knob 5",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075861168",
+        "witness_box": [
+          1326,
+          562,
+          1348,
+          584
+        ]
+      },
+      {
+        "label_box": [
+          1423,
+          617,
+          1511,
+          646
+        ],
+        "layer": 115,
+        "layer_name": "Device Knob 6",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075861424",
+        "witness_box": [
+          1456,
+          562,
+          1478,
+          584
+        ]
+      },
+      {
+        "label_box": [
+          1553,
+          617,
+          1641,
+          646
+        ],
+        "layer": 116,
+        "layer_name": "Device Knob 7",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075861680",
+        "witness_box": [
+          1586,
+          562,
+          1608,
+          584
+        ]
+      },
+      {
+        "label_box": [
+          1683,
+          617,
+          1771,
+          646
+        ],
+        "layer": 117,
+        "layer_name": "Device Knob 8",
+        "motion_box": null,
+        "prototype": "rotary",
+        "raw_key": "144115188075861936",
+        "witness_box": [
+          1716,
+          562,
+          1738,
+          584
+        ]
+      },
+      {
+        "label_box": [
+          1434,
+          188,
+          1500,
+          220
+        ],
+        "layer": 118,
+        "layer_name": "Play",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037951376",
+        "witness_box": [
+          1490,
+          189,
+          1500,
+          199
+        ]
+      },
+      {
+        "label_box": [
+          1429,
+          230,
+          1505,
+          248
+        ],
+        "layer": 119,
+        "layer_name": "Stop",
+        "motion_box": null,
+        "prototype": "secondary_text",
+        "raw_key": "72057594037951632",
+        "witness_box": [
+          1429,
+          230,
+          1505,
+          248
+        ]
+      },
+      {
+        "label_box": [
+          1564,
+          188,
+          1630,
+          220
+        ],
+        "layer": 120,
+        "layer_name": "Record",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037951888",
+        "witness_box": [
+          1620,
+          189,
+          1630,
+          199
+        ]
+      },
+      {
+        "label_box": [
+          1564,
+          262,
+          1630,
+          294
+        ],
+        "layer": 121,
+        "layer_name": "Tap Tempo",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037953424",
+        "witness_box": [
+          1620,
+          263,
+          1630,
+          273
+        ]
+      },
+      {
+        "label_box": [
+          1434,
+          335,
+          1500,
+          367
+        ],
+        "layer": 122,
+        "layer_name": "Nudge Minus",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037953680",
+        "witness_box": [
+          1490,
+          336,
+          1500,
+          346
+        ]
+      },
+      {
+        "label_box": [
+          1564,
+          335,
+          1630,
+          367
+        ],
+        "layer": 123,
+        "layer_name": "Nudge Plus",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037953936",
+        "witness_box": [
+          1620,
+          336,
+          1630,
+          346
+        ]
+      },
+      {
+        "label_box": [
+          1294,
+          188,
+          1360,
+          220
+        ],
+        "layer": 124,
+        "layer_name": "Pan Mode",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037950352",
+        "witness_box": [
+          1350,
+          189,
+          1360,
+          199
+        ]
+      },
+      {
+        "label_box": [
+          1181,
+          518,
+          1247,
+          562
+        ],
+        "layer": 125,
+        "layer_name": "Stop All Clips",
+        "motion_box": null,
+        "prototype": "stop_all",
+        "raw_key": "72057594037948816",
+        "witness_box": [
+          1237,
+          519,
+          1247,
+          529
+        ]
+      },
+      {
+        "label_box": [
+          1363,
+          822,
+          1401,
+          854
+        ],
+        "layer": 126,
+        "layer_name": "Bank Up",
+        "motion_box": null,
+        "prototype": "bank_polygon",
+        "raw_key": "72057594037952144",
+        "witness_box": [
+          1391,
+          823,
+          1401,
+          833
+        ]
+      },
+      {
+        "label_box": [
+          1363,
+          860,
+          1401,
+          892
+        ],
+        "layer": 127,
+        "layer_name": "Bank Down",
+        "motion_box": null,
+        "prototype": "bank_polygon",
+        "raw_key": "72057594037952400",
+        "witness_box": [
+          1391,
+          861,
+          1401,
+          871
+        ]
+      },
+      {
+        "label_box": [
+          1408,
+          841,
+          1446,
+          873
+        ],
+        "layer": 128,
+        "layer_name": "Bank Right",
+        "motion_box": null,
+        "prototype": "bank_polygon",
+        "raw_key": "72057594037952656",
+        "witness_box": [
+          1436,
+          842,
+          1446,
+          852
+        ]
+      },
+      {
+        "label_box": [
+          1318,
+          841,
+          1356,
+          873
+        ],
+        "layer": 129,
+        "layer_name": "Bank Left",
+        "motion_box": null,
+        "prototype": "bank_polygon",
+        "raw_key": "72057594037952912",
+        "witness_box": [
+          1346,
+          842,
+          1356,
+          852
+        ]
+      },
+      {
+        "label_box": [
+          1564,
+          841,
+          1630,
+          873
+        ],
+        "layer": 130,
+        "layer_name": "Shift",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037953168",
+        "witness_box": [
+          1620,
+          842,
+          1630,
+          852
+        ]
+      },
+      {
+        "label_box": [
+          1304,
+          680,
+          1370,
+          712
+        ],
+        "layer": 131,
+        "layer_name": "Device Left",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037942928",
+        "witness_box": [
+          1360,
+          681,
+          1370,
+          691
+        ]
+      },
+      {
+        "label_box": [
+          1434,
+          680,
+          1500,
+          712
+        ],
+        "layer": 132,
+        "layer_name": "Device Right",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037943184",
+        "witness_box": [
+          1490,
+          681,
+          1500,
+          691
+        ]
+      },
+      {
+        "label_box": [
+          1564,
+          680,
+          1630,
+          712
+        ],
+        "layer": 133,
+        "layer_name": "Bank Left Button",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037943440",
+        "witness_box": [
+          1620,
+          681,
+          1630,
+          691
+        ]
+      },
+      {
+        "label_box": [
+          1694,
+          680,
+          1760,
+          712
+        ],
+        "layer": 134,
+        "layer_name": "Bank Right Button",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037943696",
+        "witness_box": [
+          1750,
+          681,
+          1760,
+          691
+        ]
+      },
+      {
+        "label_box": [
+          1304,
+          746,
+          1370,
+          778
+        ],
+        "layer": 135,
+        "layer_name": "Device On Off",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037943952",
+        "witness_box": [
+          1360,
+          747,
+          1370,
+          757
+        ]
+      },
+      {
+        "label_box": [
+          1434,
+          746,
+          1500,
+          778
+        ],
+        "layer": 136,
+        "layer_name": "Device Lock",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037944208",
+        "witness_box": [
+          1490,
+          747,
+          1500,
+          757
+        ]
+      },
+      {
+        "label_box": [
+          1564,
+          746,
+          1630,
+          778
+        ],
+        "layer": 137,
+        "layer_name": "Clip Device View",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037944464",
+        "witness_box": [
+          1620,
+          747,
+          1630,
+          757
+        ]
+      },
+      {
+        "label_box": [
+          1694,
+          746,
+          1760,
+          778
+        ],
+        "layer": 138,
+        "layer_name": "Detail View",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037944720",
+        "witness_box": [
+          1750,
+          747,
+          1760,
+          757
+        ]
+      },
+      {
+        "label_box": [
+          1294,
+          262,
+          1360,
+          294
+        ],
+        "layer": 139,
+        "layer_name": "Sends Mode",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037950608",
+        "witness_box": [
+          1350,
+          263,
+          1360,
+          273
+        ]
+      },
+      {
+        "label_box": [
+          1294,
+          335,
+          1360,
+          367
+        ],
+        "layer": 140,
+        "layer_name": "User Mode",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037950864",
+        "witness_box": [
+          1350,
+          336,
+          1360,
+          346
+        ]
+      },
+      {
+        "label_box": [
+          1434,
+          262,
+          1500,
+          294
+        ],
+        "layer": 141,
+        "layer_name": "Metronome",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037951120",
+        "witness_box": [
+          1490,
+          263,
+          1500,
+          273
+        ]
+      },
+      {
+        "label_box": [
+          1694,
+          188,
+          1760,
+          220
+        ],
+        "layer": 142,
+        "layer_name": "Session Record",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037954192",
+        "witness_box": [
+          1750,
+          189,
+          1760,
+          199
+        ]
+      },
+      {
+        "label_box": [
+          1169,
+          877,
+          1211,
+          915
+        ],
+        "layer": 143,
+        "layer_name": "Master Fader",
+        "motion_box": [
+          1166,
+          783,
+          1262,
+          1013
+        ],
+        "prototype": "vertical_fader",
+        "raw_key": "144115188075859632",
+        "witness_box": [
+          1166,
+          783,
+          1262,
+          1013
+        ]
+      },
+      {
+        "label_box": [
+          1483,
+          949,
+          1527,
+          1003
+        ],
+        "layer": 144,
+        "layer_name": "Crossfader",
+        "motion_box": [
+          1479,
+          946,
+          1715,
+          1006
+        ],
+        "prototype": "crossfader",
+        "raw_key": "144115188075859888",
+        "witness_box": [
+          1479,
+          946,
+          1715,
+          1006
+        ]
+      },
+      {
+        "label_box": [
+          1180,
+          730,
+          1248,
+          759
+        ],
+        "layer": 145,
+        "layer_name": "Cue Level",
+        "motion_box": null,
+        "prototype": "small_rotary",
+        "raw_key": "144115188075868080",
+        "witness_box": [
+          1203,
+          685,
+          1225,
+          707
+        ]
+      },
+      {
+        "label_box": [
+          1181,
+          590,
+          1247,
+          626
+        ],
+        "layer": 146,
+        "layer_name": "Master Select",
+        "motion_box": null,
+        "prototype": "master_select",
+        "raw_key": "72057594037948560",
+        "witness_box": [
+          1237,
+          591,
+          1247,
+          601
+        ]
+      },
+      {
+        "label_box": [
+          1694,
+          841,
+          1760,
+          873
+        ],
+        "layer": 147,
+        "layer_name": "Bank Lock",
+        "motion_box": null,
+        "prototype": "small_button",
+        "raw_key": "72057594037954448",
+        "witness_box": [
+          1750,
+          842,
+          1760,
+          852
+        ]
+      },
+      {
+        "label_box": [
+          1693,
+          337,
+          1761,
+          366
+        ],
+        "layer": 148,
+        "layer_name": "Tempo Knob",
+        "motion_box": null,
+        "prototype": "small_rotary",
+        "raw_key": "144115188075859376",
+        "witness_box": [
+          1716,
+          292,
+          1738,
+          314
+        ]
+      }
+    ],
+    "padding_px": 4.0
+  },
+  "run_id": "20260719T124750Z",
+  "schema_version": 1,
+  "source": {
+    "blob": "docs/APC40_visual_qa_geometry.json",
+    "canonical_json_sha256": "c515ef288ce0bb3d90e787e08c6d8d0aee0bc76d6635bc2f5d0ffd3c3249427f",
+    "commit": "7711f49",
+    "r1_composition": "compositions/APC40_Visual_QA_148.avc",
+    "r1_sha256": "91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99"
+  }
+}
