@@ -34,7 +34,7 @@ EXPECTED_R1_MIDI_SHA256 = (
     "4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5"
 )
 EXPECTED_CANDIDATE_SHA256 = (
-    "cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9"
+    "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8"
 )
 R1_COMPOSITION = Path("compositions/APC40_Visual_QA_148.avc")
 R1_CONTROLLER = Path("controllers/APC 40 MK II - Visual QA.xml")
@@ -107,6 +107,19 @@ def sha256_file(path: Path) -> str:
 
 def approx(actual: float, expected: float, tolerance: float = 1e-9) -> bool:
     return abs(actual - expected) <= tolerance
+
+
+def approx_sequence(actual: Any, expected: Iterable[float]) -> bool:
+    expected_values = tuple(expected)
+    if not isinstance(actual, list) or len(actual) != len(expected_values):
+        return False
+    try:
+        return all(
+            approx(float(value), expected_value)
+            for value, expected_value in zip(actual, expected_values)
+        )
+    except (TypeError, ValueError):
+        return False
 
 
 def as_float(node: ET.Element | None, attribute: str = "value") -> float | None:
@@ -809,15 +822,15 @@ def main() -> int:
     check(
         "candidate_counts",
         (
-            candidate_root.attrib.get("numLayers") == "149"
+            candidate_root.attrib.get("numLayers") == "150"
             and candidate_root.attrib.get("numColumns") == "1"
             and candidate_root.attrib.get("numDecks") == "3"
-            and len(candidate_layers) == 149
-            and len(candidate_clips) == 149
+            and len(candidate_layers) == 150
+            and len(candidate_clips) == 150
             and len(candidate_decks) == 3
             and len(first_deck_columns) == 1
-            and len({node.attrib.get("uniqueId") for node in candidate_layers}) == 149
-            and len({node.attrib.get("uniqueId") for node in candidate_clips}) == 149
+            and len({node.attrib.get("uniqueId") for node in candidate_layers}) == 150
+            and len({node.attrib.get("uniqueId") for node in candidate_clips}) == 150
             and len(candidate_root.findall("./Group")) == 0
         ),
         {
@@ -834,22 +847,22 @@ def main() -> int:
             ),
         },
         {
-            "layers": 149,
-            "clips": 149,
+            "layers": 150,
+            "clips": 150,
             "columns": 1,
             "decks": 3,
             "groups": 0,
-            "unique_layer_ids": 149,
-            "unique_clip_ids": 149,
+            "unique_layer_ids": 150,
+            "unique_clip_ids": 150,
         },
         "Composition and active Deck element counts",
     )
     check(
         "append_only_layer_indices",
         [int(node.attrib["layerIndex"]) for node in candidate_layers]
-        == list(range(149)),
+        == list(range(150)),
         [int(node.attrib["layerIndex"]) for node in candidate_layers],
-        "exactly 0..148",
+        "exactly 0..149",
         "Layer/@layerIndex",
     )
 
@@ -999,7 +1012,7 @@ def main() -> int:
         not beta_controller.exists(),
         0 if not beta_controller.exists() else "beta preset exists",
         0,
-        "V2 reuses the immutable R1 preset; layer 149 has no shortcut",
+        "V2 reuses the immutable R1 preset; layers 149-150 have no shortcuts",
     )
 
     external_media = scan_external_media(candidate_root)
@@ -1011,7 +1024,7 @@ def main() -> int:
         "external_media",
         (
             not external_media
-            and len(video_sources) == 149
+            and len(video_sources) == 150
             and source_types == ["GeneratorVideoSource"]
         ),
         {
@@ -1021,14 +1034,16 @@ def main() -> int:
         },
         {
             "external_hits": [],
-            "video_source_count": 149,
+            "video_source_count": 150,
             "source_types": ["GeneratorVideoSource"],
         },
         "saved AVC semantic scan",
     )
 
-    new_layer = candidate_layers[-1]
-    new_clip = candidate_clips[-1]
+    new_layer = candidate_layers[-2]
+    new_clip = candidate_clips[-2]
+    solid_layer = candidate_layers[-1]
+    solid_clip = candidate_clips[-1]
     layer_blend = new_layer.find(
         "./VideoTrack/ChoosableMixer[@name='Blend']/RenderPass"
     )
@@ -1036,6 +1051,20 @@ def main() -> int:
         "./VideoTrack/Params/ParamRange[@name='Opacity']"
     )
     source_render = new_clip.find("./VideoTrack/PrimarySource/VideoSource/RenderPass")
+    solid_layer_blend = solid_layer.find(
+        "./VideoTrack/ChoosableMixer[@name='Blend']/RenderPass"
+    )
+    solid_layer_opacity = solid_layer.find(
+        "./VideoTrack/Params/ParamRange[@name='Opacity']"
+    )
+    solid_source_render = solid_clip.find(
+        "./VideoTrack/PrimarySource/VideoSource/RenderPass"
+    )
+    solid_color_node = (
+        None
+        if solid_source_render is None
+        else named_param(solid_source_render, "ParamColor", "Color")
+    )
     text_node = None if source_render is None else named_param(
         source_render, "ParamText", "Text"
     )
@@ -1082,6 +1111,12 @@ def main() -> int:
         "./VideoTrack/RenderPass[@name='RenderPassChain']/RenderPass"
     )
     new_layer_audio_effects = new_layer.findall(
+        "./AudioTrack/AudioEffectChain/*"
+    )
+    solid_clip_effects = solid_clip.findall(
+        "./VideoTrack/RenderPass[@name='RenderPassChain']/RenderPass"
+    )
+    solid_layer_audio_effects = solid_layer.findall(
         "./AudioTrack/AudioEffectChain/*"
     )
     source_contract_actual = {
@@ -1176,6 +1211,48 @@ def main() -> int:
         },
         "text_sha256": geometry["native_text_block"]["text_sha256"],
     }
+    solid_source_contract_actual = {
+        "source": (
+            None
+            if solid_source_render is None
+            else solid_source_render.attrib.get("type")
+        ),
+        "color": {
+            "parameter_tag": (
+                None if solid_color_node is None else solid_color_node.tag
+            ),
+            "parameter_name": (
+                None
+                if solid_color_node is None
+                else solid_color_node.attrib.get("name")
+            ),
+            "parameter_type": (
+                None
+                if solid_color_node is None
+                else solid_color_node.attrib.get("T")
+            ),
+            "abgr_decimal": (
+                None
+                if solid_color_node is None
+                else solid_color_node.attrib.get("value")
+            ),
+            "rgba": abgr_decimal_to_rgba(
+                None
+                if solid_color_node is None
+                else solid_color_node.attrib.get("value")
+            ),
+        },
+    }
+    solid_source_contract_expected = {
+        "source": "SolidColor",
+        "color": {
+            "parameter_tag": "ParamColor",
+            "parameter_name": "Color",
+            "parameter_type": "COLOR",
+            "abgr_decimal": "4281671093",
+            "rgba": "#b51d35ff",
+        },
+    }
     check(
         "v2_layer_source_contract",
         (
@@ -1212,30 +1289,97 @@ def main() -> int:
             and new_clip_effects[0].attrib.get("type") == "TransformEffect"
             and not new_layer_audio_effects
             and new_clip.find("./AudioTrack") is None
+            and element_name(solid_layer) == "V2 Crossfader Base"
+            and solid_layer.attrib.get("layerIndex") == "149"
+            and solid_layer_blend is not None
+            and solid_layer_blend.attrib.get("type") == "Add"
+            and approx(as_float(solid_layer_opacity) or -1, 1.0)
+            and element_name(solid_clip) == "V2 Crossfader Base"
+            and solid_clip.attrib.get("layerIndex") == "149"
+            and solid_clip.attrib.get("columnIndex") == "0"
+            and solid_source_render is not None
+            and solid_source_render.attrib.get("type") == "SolidColor"
+            and solid_color_node is not None
+            and solid_color_node.tag == "ParamColor"
+            and solid_color_node.attrib.get("name") == "Color"
+            and solid_color_node.attrib.get("T") == "COLOR"
+            and solid_color_node.attrib.get("value") == "4281671093"
+            and len(solid_clip_effects) == 1
+            and solid_clip_effects[0].attrib.get("type") == "TransformEffect"
+            and not solid_layer_audio_effects
+            and solid_clip.find("./AudioTrack") is None
         ),
         {
-            "layer": element_name(new_layer),
-            "blend": None if layer_blend is None else layer_blend.attrib.get("type"),
-            "layer_opacity": as_float(layer_opacity),
-            "clip": element_name(new_clip),
-            "source_contract": source_contract_actual,
-            "clip_effect_types": [
-                node.attrib.get("type") for node in new_clip_effects
-            ],
-            "layer_audio_effect_count": len(new_layer_audio_effects),
-            "clip_has_audio_track": new_clip.find("./AudioTrack") is not None,
+            "text_block": {
+                "layer": element_name(new_layer),
+                "layer_index": new_layer.attrib.get("layerIndex"),
+                "blend": (
+                    None if layer_blend is None else layer_blend.attrib.get("type")
+                ),
+                "layer_opacity": as_float(layer_opacity),
+                "clip": element_name(new_clip),
+                "clip_layer_index": new_clip.attrib.get("layerIndex"),
+                "clip_column_index": new_clip.attrib.get("columnIndex"),
+                "source_contract": source_contract_actual,
+                "clip_effect_types": [
+                    node.attrib.get("type") for node in new_clip_effects
+                ],
+                "layer_audio_effect_count": len(new_layer_audio_effects),
+                "clip_has_audio_track": (
+                    new_clip.find("./AudioTrack") is not None
+                ),
+            },
+            "crossfader_base": {
+                "layer": element_name(solid_layer),
+                "layer_index": solid_layer.attrib.get("layerIndex"),
+                "blend": (
+                    None
+                    if solid_layer_blend is None
+                    else solid_layer_blend.attrib.get("type")
+                ),
+                "layer_opacity": as_float(solid_layer_opacity),
+                "clip": element_name(solid_clip),
+                "clip_layer_index": solid_clip.attrib.get("layerIndex"),
+                "clip_column_index": solid_clip.attrib.get("columnIndex"),
+                "source_contract": solid_source_contract_actual,
+                "clip_effect_types": [
+                    node.attrib.get("type") for node in solid_clip_effects
+                ],
+                "layer_audio_effect_count": len(solid_layer_audio_effects),
+                "clip_has_audio_track": (
+                    solid_clip.find("./AudioTrack") is not None
+                ),
+            },
         },
         {
-            "layer": "V2 Chassis Low FFT",
-            "blend": "Add",
-            "layer_opacity": 1.0,
-            "clip": "V2 Chassis Low FFT",
-            "source_contract": source_contract_expected,
-            "clip_effect_types": ["TransformEffect"],
-            "layer_audio_effect_count": 0,
-            "clip_has_audio_track": False,
+            "text_block": {
+                "layer": "V2 Chassis Low FFT",
+                "layer_index": "148",
+                "blend": "Add",
+                "layer_opacity": 1.0,
+                "clip": "V2 Chassis Low FFT",
+                "clip_layer_index": "148",
+                "clip_column_index": "0",
+                "source_contract": source_contract_expected,
+                "clip_effect_types": ["TransformEffect"],
+                "layer_audio_effect_count": 0,
+                "clip_has_audio_track": False,
+            },
+            "crossfader_base": {
+                "layer": "V2 Crossfader Base",
+                "layer_index": "149",
+                "blend": "Add",
+                "layer_opacity": 1.0,
+                "clip": "V2 Crossfader Base",
+                "clip_layer_index": "149",
+                "clip_column_index": "0",
+                "source_contract": solid_source_contract_expected,
+                "clip_effect_types": ["TransformEffect"],
+                "layer_audio_effect_count": 0,
+                "clip_has_audio_track": False,
+            },
         },
-        "append-only layer 149 and clip 149",
+        "append-only layers/clips 149-150 with generator-only sources",
     )
     check(
         "v2_source_outline_contract",
@@ -1275,97 +1419,200 @@ def main() -> int:
         ),
     )
 
-    transform = new_clip.find(
+    text_transform = new_clip.find(
         "./VideoTrack/RenderPass[@name='RenderPassChain']/"
         "RenderPass[@type='TransformEffect']"
     )
-    transform_actual: dict[str, float | None] = {}
+    solid_transform = solid_clip.find(
+        "./VideoTrack/RenderPass[@name='RenderPassChain']/"
+        "RenderPass[@type='TransformEffect']"
+    )
+    text_transform_actual: dict[str, float | None] = {}
     for name in ("Position X", "Position Y", "Scale", "Scale W", "Scale H"):
-        node = None if transform is None else named_param(
-            transform, "ParamRange", name
+        node = None if text_transform is None else named_param(
+            text_transform, "ParamRange", name
         )
-        transform_actual[name] = 0.0 if node is None and name == "Position Y" else as_float(node)
-    expected_transform = {
+        text_transform_actual[name] = (
+            None
+            if text_transform is None
+            else 0.0
+            if node is None and name == "Position Y"
+            else as_float(node)
+        )
+    solid_transform_actual: dict[str, float | None] = {}
+    for name in ("Position X", "Position Y", "Scale", "Scale W", "Scale H"):
+        node = None if solid_transform is None else named_param(
+            solid_transform, "ParamRange", name
+        )
+        solid_transform_actual[name] = (
+            None
+            if solid_transform is None
+            else 100.0
+            if node is None and name == "Scale"
+            else as_float(node)
+        )
+    expected_text_transform = {
         "Position X": 13.0,
         "Position Y": 0.0,
         "Scale": 50.0,
         "Scale W": 204.0,
         "Scale H": 170.0,
     }
+    expected_solid_transform = {
+        "Position X": 637.0,
+        "Position Y": 480.0,
+        "Scale": 100.0,
+        "Scale W": 12.5,
+        "Scale H": 0.5,
+    }
     check(
         "v2_transform_static",
-        all(
-            value is not None and approx(value, expected_transform[name])
-            for name, value in transform_actual.items()
+        (
+            all(
+                value is not None
+                and approx(value, expected_text_transform[name])
+                for name, value in text_transform_actual.items()
+            )
+            and all(
+                value is not None
+                and approx(value, expected_solid_transform[name])
+                for name, value in solid_transform_actual.items()
+            )
         ),
-        transform_actual,
-        expected_transform,
-        "clip Transform; geometry is not FFT-modulated",
+        {
+            "text_block": text_transform_actual,
+            "crossfader_base": solid_transform_actual,
+        },
+        {
+            "text_block": expected_text_transform,
+            "crossfader_base": expected_solid_transform,
+        },
+        "both clip Transforms are static; geometry is not FFT-modulated",
     )
 
-    opacity = new_clip.find("./VideoTrack/Params/ParamRange[@name='Opacity']")
-    fft = None if opacity is None else opacity.find("./PhaseSourceFFT")
-    opacity_range = None if opacity is None else opacity.find("./ValueRange")
-    frequency = None if fft is None else named_param(
-        fft, "ParamRange", "FrequencyRange"
-    )
-    gain = None if fft is None else named_param(fft, "ParamRange", "Gain")
-    fallback = None if fft is None else named_param(fft, "ParamRange", "Fallback")
-    frequency_range = None if frequency is None else frequency.find("./ValueRange")
-    fft_nodes = new_clip.findall(".//PhaseSourceFFT")
-    fft_parents = parent_map(new_clip)
-    fft_target_is_opacity = (
-        len(fft_nodes) == 1
-        and fft_nodes[0] in fft_parents
-        and fft_parents[fft_nodes[0]] is opacity
+    def clip_fft_contract(clip: ET.Element) -> dict[str, Any]:
+        opacity = clip.find(
+            "./VideoTrack/Params/ParamRange[@name='Opacity']"
+        )
+        fft = None if opacity is None else opacity.find("./PhaseSourceFFT")
+        opacity_range = None if opacity is None else opacity.find("./ValueRange")
+        frequency = None if fft is None else named_param(
+            fft, "ParamRange", "FrequencyRange"
+        )
+        gain = None if fft is None else named_param(fft, "ParamRange", "Gain")
+        fallback = (
+            None if fft is None else named_param(fft, "ParamRange", "Fallback")
+        )
+        frequency_range = (
+            None if frequency is None else frequency.find("./ValueRange")
+        )
+        fft_nodes = clip.findall(".//PhaseSourceFFT")
+        fft_parents = parent_map(clip)
+        return {
+            "phase_source": None if fft is None else fft.attrib.get("linkId"),
+            "frequency_value": as_float(frequency),
+            "frequency_min": as_float(frequency_range, "min"),
+            "frequency_max": as_float(frequency_range, "max"),
+            "gain_db": as_float(gain),
+            "fallback_ms": as_float(fallback),
+            "output_min": as_float(opacity_range, "min"),
+            "output_max": as_float(opacity_range, "max"),
+            "fft_node_count": len(fft_nodes),
+            "target_is_clip_opacity": (
+                len(fft_nodes) == 1
+                and fft_nodes[0] in fft_parents
+                and fft_parents[fft_nodes[0]] is opacity
+            ),
+        }
+
+    expected_fft_contract = {
+        "phase_source": "/audioengine/compositionfft",
+        "frequency_value": 0.165,
+        "frequency_min": 0.0,
+        "frequency_max": 0.33,
+        "gain_db": 3.0,
+        "fallback_ms": 1400.0,
+        "output_min": 0.65,
+        "output_max": 0.95,
+        "fft_node_count": 1,
+        "target_is_clip_opacity": True,
+    }
+
+    def matches_fft_contract(actual: dict[str, Any]) -> bool:
+        numeric_keys = (
+            "frequency_value",
+            "frequency_min",
+            "frequency_max",
+            "gain_db",
+            "fallback_ms",
+            "output_min",
+            "output_max",
+        )
+        return (
+            actual["phase_source"] == expected_fft_contract["phase_source"]
+            and all(
+                actual[key] is not None
+                and approx(actual[key], expected_fft_contract[key])
+                for key in numeric_keys
+            )
+            and actual["fft_node_count"] == 1
+            and actual["target_is_clip_opacity"]
+        )
+
+    text_fft_actual = clip_fft_contract(new_clip)
+    solid_fft_actual = clip_fft_contract(solid_clip)
+    fft_driven_clips = [
+        {
+            "layer": int(clip.attrib["layerIndex"]) + 1,
+            "column": int(clip.attrib["columnIndex"]) + 1,
+            "name": element_name(clip),
+            "fft_node_count": len(clip.findall(".//PhaseSourceFFT")),
+        }
+        for clip in candidate_clips
+        if clip.findall(".//PhaseSourceFFT")
+    ]
+    expected_fft_driven_clips = [
+        {
+            "layer": 149,
+            "column": 1,
+            "name": "V2 Chassis Low FFT",
+            "fft_node_count": 1,
+        },
+        {
+            "layer": 150,
+            "column": 1,
+            "name": "V2 Crossfader Base",
+            "fft_node_count": 1,
+        },
+    ]
+    composition_fft_node_count = len(
+        candidate_root.findall(".//PhaseSourceFFT")
     )
     fft_actual = {
-        "phase_source": None if fft is None else fft.attrib.get("linkId"),
-        "frequency_value": as_float(frequency),
-        "frequency_min": as_float(frequency_range, "min"),
-        "frequency_max": as_float(frequency_range, "max"),
-        "gain_db": as_float(gain),
-        "fallback_ms": as_float(fallback),
-        "output_min": as_float(opacity_range, "min"),
-        "output_max": as_float(opacity_range, "max"),
-        "fft_node_count": len(fft_nodes),
-        "target_is_clip_opacity": fft_target_is_opacity,
+        "text_block": text_fft_actual,
+        "crossfader_base": solid_fft_actual,
+        "contracts_identical": text_fft_actual == solid_fft_actual,
+        "composition_fft_node_count": composition_fft_node_count,
+        "fft_driven_clips": fft_driven_clips,
     }
     check(
         "fft_contract",
         (
-            fft_actual["phase_source"] == "/audioengine/compositionfft"
-            and fft_actual["frequency_value"] is not None
-            and approx(fft_actual["frequency_value"], 0.165)
-            and fft_actual["frequency_min"] is not None
-            and approx(fft_actual["frequency_min"], 0.0)
-            and fft_actual["frequency_max"] is not None
-            and approx(fft_actual["frequency_max"], 0.33)
-            and fft_actual["gain_db"] is not None
-            and approx(fft_actual["gain_db"], 3.0)
-            and fft_actual["fallback_ms"] is not None
-            and approx(fft_actual["fallback_ms"], 1400.0)
-            and fft_actual["output_min"] is not None
-            and approx(fft_actual["output_min"], 0.65)
-            and fft_actual["output_max"] is not None
-            and approx(fft_actual["output_max"], 0.95)
-            and fft_actual["fft_node_count"] == 1
-            and fft_actual["target_is_clip_opacity"]
+            matches_fft_contract(text_fft_actual)
+            and matches_fft_contract(solid_fft_actual)
+            and text_fft_actual == solid_fft_actual
+            and composition_fft_node_count == 2
+            and fft_driven_clips == expected_fft_driven_clips
         ),
         fft_actual,
         {
-            "phase_source": "/audioengine/compositionfft",
-            "frequency_value": 0.165,
-            "frequency_min": 0.0,
-            "frequency_max": 0.33,
-            "gain_db": 3.0,
-            "fallback_ms": 1400.0,
-            "output_min": 0.65,
-            "output_max": 0.95,
-            "fft_node_count": 1,
-            "target_is_clip_opacity": True,
+            "text_block": expected_fft_contract,
+            "crossfader_base": expected_fft_contract,
+            "contracts_identical": True,
+            "composition_fft_node_count": 2,
+            "fft_driven_clips": expected_fft_driven_clips,
         },
-        "only clip 149 opacity is FFT-driven",
+        "only clips 149-150 opacity are identically composition-FFT-driven",
     )
 
     primitives = geometry["decoration"]["primitives"]
@@ -1378,6 +1625,40 @@ def main() -> int:
         item for item in primitives if item["family"] == "track-fader-guide"
     ]
     native_text = geometry["native_text_block"]
+    solid_overlay = geometry["solid_overlay"]
+    solid_overlay_transform = solid_overlay["transform"]
+    expected_geometry_fft = {
+        "phase_source": "composition_fft",
+        "frequency_band": [0.0, 0.33],
+        "gain_db": 3.0,
+        "fallback_ms": 1400,
+        "output_range": [0.65, 0.95],
+        "target": "clip video opacity",
+        "geometry_modulated": False,
+        "hue_modulated": False,
+    }
+    expected_solid_overlay = {
+        "layer": 150,
+        "name": "V2 Crossfader Base",
+        "shape": "rectangle",
+        "source": "Solid Color",
+        "color_rgba": "#b51d35ff",
+        "abgr_decimal": "4281671093",
+        "blend_mode": "Add",
+        "layer_opacity": 1.0,
+        "collision_count": 0,
+        "center": [1597.0, 1020.0],
+        "size": [240.0, 5.4],
+        "bounds": [1477.0, 1017.3, 1717.0, 1022.7],
+        "transform": {
+            "position_x": 637.0,
+            "position_y": 480.0,
+            "scale": 100.0,
+            "scale_w": 12.5,
+            "scale_h": 0.5,
+        },
+        "fft_contract": expected_geometry_fft,
+    }
     check(
         "geometry_collision_contract",
         (
@@ -1391,15 +1672,43 @@ def main() -> int:
             and native_text["grid_rows"] == 60
             and native_text["effective_dot_columns"] == 320
             and native_text["effective_dot_rows"] == 240
-            and native_text["desired_dot_count"] == 5382
-            and native_text["occupied_dot_count"] == 5377
+            and native_text["desired_dot_count"] == 5376
+            and native_text["occupied_dot_count"] == 5371
             and native_text["clipped_dot_count"] == 5
             and native_text["dot_collision_count"] == 0
-            and native_text["nonblank_glyph_count"] == 2221
+            and native_text["nonblank_glyph_count"] == 2195
             and native_text["represented_primitive_count"] == 54
             and native_text["empty_primitive_count"] == 0
             and approx(float(native_text["source_scale"]), 0.28)
             and len(track_guides) == 8
+            and solid_overlay["layer"] == 150
+            and solid_overlay["name"] == "V2 Crossfader Base"
+            and solid_overlay["shape"] == "rectangle"
+            and solid_overlay["source"] == "Solid Color"
+            and solid_overlay["color_rgba"] == "#b51d35ff"
+            and solid_overlay["abgr_decimal"] == "4281671093"
+            and solid_overlay["blend_mode"] == "Add"
+            and approx(float(solid_overlay["layer_opacity"]), 1.0)
+            and solid_overlay["collision_count"] == 0
+            and approx_sequence(
+                solid_overlay["center"], (1597.0, 1020.0)
+            )
+            and approx_sequence(solid_overlay["size"], (240.0, 5.4))
+            and approx_sequence(
+                solid_overlay["bounds"],
+                (1477.0, 1017.3, 1717.0, 1022.7),
+            )
+            and approx(
+                float(solid_overlay_transform["position_x"]), 637.0
+            )
+            and approx(
+                float(solid_overlay_transform["position_y"]), 480.0
+            )
+            and approx(float(solid_overlay_transform["scale"]), 100.0)
+            and approx(float(solid_overlay_transform["scale_w"]), 12.5)
+            and approx(float(solid_overlay_transform["scale_h"]), 0.5)
+            and solid_overlay["fft_contract"] == expected_geometry_fft
+            and geometry["fft_contract"] == expected_geometry_fft
         ),
         {
             "controls": geometry["protection"]["control_count"],
@@ -1424,6 +1733,8 @@ def main() -> int:
             "source_scale": native_text["source_scale"],
             "track_fader_guides": len(track_guides),
             "prototype_counts": prototype_counts,
+            "solid_overlay": solid_overlay,
+            "geometry_fft_contract": geometry["fft_contract"],
         },
         {
             "controls": 148,
@@ -1434,18 +1745,23 @@ def main() -> int:
             "grid_rows": 60,
             "effective_dot_columns": 320,
             "effective_dot_rows": 240,
-            "desired_dot_count": 5382,
-            "occupied_dot_count": 5377,
+            "desired_dot_count": 5376,
+            "occupied_dot_count": 5371,
             "clipped_dot_count": 5,
             "dot_collision_count": 0,
             "text_cell_collisions": 0,
-            "nonblank_glyph_count": 2221,
+            "nonblank_glyph_count": 2195,
             "represented_primitive_count": 54,
             "empty_primitive_count": 0,
             "source_scale": 0.28,
             "track_fader_guides": 8,
+            "solid_overlay": expected_solid_overlay,
+            "geometry_fft_contract": expected_geometry_fft,
         },
-        "resting, fader/knob motion hull, crossfader, and chassis geometry",
+        (
+            "resting, fader/knob motion hull, chassis geometry, and "
+            "collision-free Solid Color crossfader base"
+        ),
     )
 
     screenshot_records: list[dict[str, Any]] = []
@@ -1738,14 +2054,17 @@ def main() -> int:
             "columns": len(first_deck_columns),
             "layers": len(candidate_layers),
             "protected_layers": 148,
-            "added_layers": 1,
+            "added_layers": 2,
             "clips": len(candidate_clips),
             "shortcut_records": len(shortcuts),
             "unique_raw_midi_keys": len(raw_keys),
             "added_midi_shortcuts": 0,
             "external_media": len(external_media),
         },
-        "source": source_contract_actual,
+        "source": {
+            "text_block": source_contract_actual,
+            "crossfader_base": solid_source_contract_actual,
+        },
         "fft": fft_actual,
         "geometry": {
             "artifact": DEFAULT_GEOMETRY.as_posix(),
@@ -1771,6 +2090,7 @@ def main() -> int:
             ],
             "empty_primitive_count": native_text["empty_primitive_count"],
             "source_scale": native_text["source_scale"],
+            "solid_overlay": solid_overlay,
             "collision_states": collision_states,
         },
         "visual_metrics": {

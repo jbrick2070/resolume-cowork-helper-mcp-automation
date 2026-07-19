@@ -39,6 +39,13 @@ GRID_COLUMNS = 160
 GRID_ROWS = 60
 DOT_COLUMNS = GRID_COLUMNS * 2
 DOT_ROWS = GRID_ROWS * 4
+BASE_OVERLAY_TRANSFORM = {
+    "position_x": 637.0,
+    "position_y": 480.0,
+    "scale": 100.0,
+    "scale_w": 12.5,
+    "scale_h": 0.5,
+}
 
 # Unicode Braille stores a 2x4 dot tile in one fixed-width character.
 BRAILLE_BITS = {
@@ -166,9 +173,9 @@ def build_primitives() -> list[dict[str, Any]]:
         line("right-upper-column-1", 1397, 174, 1397, 380, "section-divider"),
         line("right-upper-column-2", 1534, 174, 1534, 380, "section-divider"),
         line("right-upper-column-3", 1660, 174, 1660, 380, "section-divider"),
-        line("crossfader-guide", 1479, 930, 1715, 930, "crossfader-guide"),
-        line("crossfader-cap-left", 1479, 920, 1479, 936, "crossfader-guide"),
-        line("crossfader-cap-right", 1715, 920, 1715, 936, "crossfader-guide"),
+        line("crossfader-guide", 1479, 1016, 1715, 1016, "crossfader-guide"),
+        line("crossfader-cap-left", 1479, 1012, 1479, 1020, "crossfader-guide"),
+        line("crossfader-cap-right", 1715, 1012, 1715, 1020, "crossfader-guide"),
         line("master-guide", 1278, 787, 1278, 1009, "master-guide"),
     ]
 
@@ -431,6 +438,32 @@ def build(repo_root: Path) -> dict[str, Any]:
 
     text, text_metrics = grid_text(primitives, protected)
     text_sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
+    overlay_center = [
+        CANVAS[0] / 2.0 + BASE_OVERLAY_TRANSFORM["position_x"],
+        CANVAS[1] / 2.0 + BASE_OVERLAY_TRANSFORM["position_y"],
+    ]
+    overlay_size = [
+        CANVAS[0] * BASE_OVERLAY_TRANSFORM["scale_w"] / 100.0,
+        CANVAS[1] * BASE_OVERLAY_TRANSFORM["scale_h"] / 100.0,
+    ]
+    overlay_bounds = [
+        overlay_center[0] - overlay_size[0] / 2.0,
+        overlay_center[1] - overlay_size[1] / 2.0,
+        overlay_center[0] + overlay_size[0] / 2.0,
+        overlay_center[1] + overlay_size[1] / 2.0,
+    ]
+    overlay_collisions = [
+        {
+            "layer": record["layer"],
+            "raw_key": record["raw_key"],
+            "role": record["role"],
+        }
+        for record in protected
+        if boxes_overlap(overlay_bounds, record["padded_box"])
+    ]
+    if overlay_collisions:
+        preview = json.dumps(overlay_collisions[:8], indent=2)
+        raise AssertionError(f"solid overlay collisions found:\n{preview}")
     source_blob_sha = hashlib.sha256(
         json.dumps(source, sort_keys=True, separators=(",", ":")).encode("utf-8")
     ).hexdigest()
@@ -499,6 +532,31 @@ def build(repo_root: Path) -> dict[str, Any]:
             "cell_collision_count": text_metrics["dot_collision_count"],
             "text_sha256": text_sha,
             "text": text,
+        },
+        "solid_overlay": {
+            "layer": 150,
+            "name": "V2 Crossfader Base",
+            "source": "Solid Color",
+            "color_rgba": "#b51d35ff",
+            "abgr_decimal": "4281671093",
+            "blend_mode": "Add",
+            "layer_opacity": 1.0,
+            "shape": "rectangle",
+            "center": overlay_center,
+            "size": overlay_size,
+            "bounds": overlay_bounds,
+            "collision_count": len(overlay_collisions),
+            "transform": BASE_OVERLAY_TRANSFORM,
+            "fft_contract": {
+                "target": "clip video opacity",
+                "phase_source": "composition_fft",
+                "frequency_band": [0.0, 0.33],
+                "output_range": [0.65, 0.95],
+                "gain_db": 3.0,
+                "fallback_ms": 1400,
+                "geometry_modulated": False,
+                "hue_modulated": False,
+            },
         },
         "fft_contract": {
             "target": "clip video opacity",

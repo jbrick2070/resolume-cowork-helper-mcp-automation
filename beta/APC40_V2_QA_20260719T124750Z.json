@@ -3,7 +3,7 @@
   "candidate": {
     "name": "APC40_Visual_Twin_V2_Candidate_20260719T124750Z",
     "path": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-    "sha256": "cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9"
+    "sha256": "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8"
   },
   "checks": [
     {
@@ -21,9 +21,9 @@
       "status": "PASS"
     },
     {
-      "actual": "cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9",
+      "actual": "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8",
       "evidence": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-      "expected": "cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9",
+      "expected": "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8",
       "id": "candidate_hash",
       "status": "PASS"
     },
@@ -55,23 +55,23 @@
     },
     {
       "actual": {
-        "clips": 149,
+        "clips": 150,
         "columns": 1,
         "decks": 3,
         "groups": 0,
-        "layers": 149,
-        "unique_clip_ids": 149,
-        "unique_layer_ids": 149
+        "layers": 150,
+        "unique_clip_ids": 150,
+        "unique_layer_ids": 150
       },
       "evidence": "Composition and active Deck element counts",
       "expected": {
-        "clips": 149,
+        "clips": 150,
         "columns": 1,
         "decks": 3,
         "groups": 0,
-        "layers": 149,
-        "unique_clip_ids": 149,
-        "unique_layer_ids": 149
+        "layers": 150,
+        "unique_clip_ids": 150,
+        "unique_layer_ids": 150
       },
       "id": "candidate_counts",
       "status": "PASS"
@@ -226,10 +226,11 @@
         145,
         146,
         147,
-        148
+        148,
+        149
       ],
       "evidence": "Layer/@layerIndex",
-      "expected": "exactly 0..148",
+      "expected": "exactly 0..149",
       "id": "append_only_layer_indices",
       "status": "PASS"
     },
@@ -326,7 +327,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "341.73622047758544795"
+              "281.49999999385909177"
             ],
             "clip_name": "CC7/C1",
             "context": "render_pass:TransformEffect",
@@ -341,10 +342,8 @@
             "baseline_values": [
               "0.82086614173228344971"
             ],
-            "candidate_record_count": 1,
-            "candidate_values": [
-              "0.86220472440944884163"
-            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
             "clip_name": "CC7/C1",
             "context": "video_track",
             "control_name": "Track Fader 1",
@@ -360,7 +359,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "357.39763780335488264"
+              "434.50000002252636477"
             ],
             "clip_name": "CC7/C2",
             "context": "render_pass:TransformEffect",
@@ -377,7 +376,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "0.82637795275590553157"
+              "0.6500000000000000222"
             ],
             "clip_name": "CC7/C2",
             "context": "video_track",
@@ -426,7 +425,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "293.54724409060145263"
+              "434.50000002252636477"
             ],
             "clip_name": "CC7/C4",
             "context": "render_pass:TransformEffect",
@@ -443,7 +442,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "0.97244094488188981273"
+              "0.6500000000000000222"
             ],
             "clip_name": "CC7/C4",
             "context": "video_track",
@@ -460,7 +459,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "285.1141732228861656"
+              "434.50000002252636477"
             ],
             "clip_name": "CC7/C6",
             "context": "render_pass:TransformEffect",
@@ -477,7 +476,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "0.99173228346456698823"
+              "0.6500000000000000222"
             ],
             "clip_name": "CC7/C6",
             "context": "video_track",
@@ -526,7 +525,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "281.49999999385909177"
+              "434.50000002252636477"
             ],
             "clip_name": "CC7/C8",
             "context": "render_pass:TransformEffect",
@@ -541,8 +540,10 @@
             "baseline_values": [
               "0.66653543307086615677"
             ],
-            "candidate_record_count": 0,
-            "candidate_values": [],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.6500000000000000222"
+            ],
             "clip_name": "CC7/C8",
             "context": "video_track",
             "control_name": "Track Fader 8",
@@ -660,7 +661,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "115.86614173228343816"
+              "135"
             ],
             "clip_name": "CC52/C1",
             "context": "render_pass:TransformEffect",
@@ -675,10 +676,8 @@
             "baseline_values": [
               "0.3499999999999999778"
             ],
-            "candidate_record_count": 1,
-            "candidate_values": [
-              "0.95393700787401580765"
-            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
             "clip_name": "CC52/C1",
             "context": "video_track",
             "control_name": "Track Knob 5",
@@ -830,7 +829,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "642.11023623453365872"
+              "694.1417323155910708"
             ],
             "clip_name": "CC15/C1",
             "context": "render_pass:TransformEffect",
@@ -847,7 +846,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "0.8401574803149606252"
+              "0.99448818897637791814"
             ],
             "clip_name": "CC15/C1",
             "context": "video_track",
@@ -893,7 +892,7 @@
     },
     {
       "actual": 0,
-      "evidence": "V2 reuses the immutable R1 preset; layer 149 has no shortcut",
+      "evidence": "V2 reuses the immutable R1 preset; layers 149-150 have no shortcuts",
       "expected": 0,
       "id": "added_midi_shortcuts",
       "status": "PASS"
@@ -904,7 +903,7 @@
         "source_types": [
           "GeneratorVideoSource"
         ],
-        "video_source_count": 149
+        "video_source_count": 150
       },
       "evidence": "saved AVC semantic scan",
       "expected": {
@@ -912,87 +911,145 @@
         "source_types": [
           "GeneratorVideoSource"
         ],
-        "video_source_count": 149
+        "video_source_count": 150
       },
       "id": "external_media",
       "status": "PASS"
     },
     {
       "actual": {
-        "blend": "Add",
-        "clip": "V2 Chassis Low FFT",
-        "clip_effect_types": [
-          "TransformEffect"
-        ],
-        "clip_has_audio_track": false,
-        "layer": "V2 Chassis Low FFT",
-        "layer_audio_effect_count": 0,
-        "layer_opacity": 1.0,
-        "source_contract": {
-          "color": {
-            "abgr_decimal": "4281671093",
-            "parameter_name": "Color",
-            "parameter_tag": "ParamColor",
-            "parameter_type": "COLOR",
-            "rgba": "#b51d35ff"
-          },
-          "font": "Cascadia Mono",
-          "line_width": 5000.0,
-          "outline": {
-            "color_abgr_decimal": "4281671093",
-            "color_parameter_name": "Outline Color",
-            "color_parameter_tag": "ParamColor",
-            "color_parameter_type": "COLOR",
-            "color_rgba": "#b51d35ff",
-            "width": 0.22,
-            "width_parameter_name": "Outline Width",
-            "width_parameter_tag": "ParamRange",
-            "width_parameter_type": "DOUBLE"
-          },
-          "size": 0.5,
-          "source": "BlockTextGenerator",
-          "source_scale": 0.28,
-          "style": "Regular",
-          "text_sha256": "d47ef34b8f46784fce80d774d2528e28901b941a7995303ff5616cb2b656a91c"
+        "crossfader_base": {
+          "blend": "Add",
+          "clip": "V2 Crossfader Base",
+          "clip_column_index": "0",
+          "clip_effect_types": [
+            "TransformEffect"
+          ],
+          "clip_has_audio_track": false,
+          "clip_layer_index": "149",
+          "layer": "V2 Crossfader Base",
+          "layer_audio_effect_count": 0,
+          "layer_index": "149",
+          "layer_opacity": 1.0,
+          "source_contract": {
+            "color": {
+              "abgr_decimal": "4281671093",
+              "parameter_name": "Color",
+              "parameter_tag": "ParamColor",
+              "parameter_type": "COLOR",
+              "rgba": "#b51d35ff"
+            },
+            "source": "SolidColor"
+          }
+        },
+        "text_block": {
+          "blend": "Add",
+          "clip": "V2 Chassis Low FFT",
+          "clip_column_index": "0",
+          "clip_effect_types": [
+            "TransformEffect"
+          ],
+          "clip_has_audio_track": false,
+          "clip_layer_index": "148",
+          "layer": "V2 Chassis Low FFT",
+          "layer_audio_effect_count": 0,
+          "layer_index": "148",
+          "layer_opacity": 1.0,
+          "source_contract": {
+            "color": {
+              "abgr_decimal": "4281671093",
+              "parameter_name": "Color",
+              "parameter_tag": "ParamColor",
+              "parameter_type": "COLOR",
+              "rgba": "#b51d35ff"
+            },
+            "font": "Cascadia Mono",
+            "line_width": 5000.0,
+            "outline": {
+              "color_abgr_decimal": "4281671093",
+              "color_parameter_name": "Outline Color",
+              "color_parameter_tag": "ParamColor",
+              "color_parameter_type": "COLOR",
+              "color_rgba": "#b51d35ff",
+              "width": 0.22,
+              "width_parameter_name": "Outline Width",
+              "width_parameter_tag": "ParamRange",
+              "width_parameter_type": "DOUBLE"
+            },
+            "size": 0.5,
+            "source": "BlockTextGenerator",
+            "source_scale": 0.28,
+            "style": "Regular",
+            "text_sha256": "9914d821ada8eeeb881c7d625c76c85684178193000628dc9ec23a23dd005bcf"
+          }
         }
       },
-      "evidence": "append-only layer 149 and clip 149",
+      "evidence": "append-only layers/clips 149-150 with generator-only sources",
       "expected": {
-        "blend": "Add",
-        "clip": "V2 Chassis Low FFT",
-        "clip_effect_types": [
-          "TransformEffect"
-        ],
-        "clip_has_audio_track": false,
-        "layer": "V2 Chassis Low FFT",
-        "layer_audio_effect_count": 0,
-        "layer_opacity": 1.0,
-        "source_contract": {
-          "color": {
-            "abgr_decimal": "4281671093",
-            "parameter_name": "Color",
-            "parameter_tag": "ParamColor",
-            "parameter_type": "COLOR",
-            "rgba": "#b51d35ff"
-          },
-          "font": "Cascadia Mono",
-          "line_width": 5000.0,
-          "outline": {
-            "color_abgr_decimal": "4281671093",
-            "color_parameter_name": "Outline Color",
-            "color_parameter_tag": "ParamColor",
-            "color_parameter_type": "COLOR",
-            "color_rgba": "#b51d35ff",
-            "width": 0.22,
-            "width_parameter_name": "Outline Width",
-            "width_parameter_tag": "ParamRange",
-            "width_parameter_type": "DOUBLE"
-          },
-          "size": 0.5,
-          "source": "BlockTextGenerator",
-          "source_scale": 0.28,
-          "style": "Regular",
-          "text_sha256": "d47ef34b8f46784fce80d774d2528e28901b941a7995303ff5616cb2b656a91c"
+        "crossfader_base": {
+          "blend": "Add",
+          "clip": "V2 Crossfader Base",
+          "clip_column_index": "0",
+          "clip_effect_types": [
+            "TransformEffect"
+          ],
+          "clip_has_audio_track": false,
+          "clip_layer_index": "149",
+          "layer": "V2 Crossfader Base",
+          "layer_audio_effect_count": 0,
+          "layer_index": "149",
+          "layer_opacity": 1.0,
+          "source_contract": {
+            "color": {
+              "abgr_decimal": "4281671093",
+              "parameter_name": "Color",
+              "parameter_tag": "ParamColor",
+              "parameter_type": "COLOR",
+              "rgba": "#b51d35ff"
+            },
+            "source": "SolidColor"
+          }
+        },
+        "text_block": {
+          "blend": "Add",
+          "clip": "V2 Chassis Low FFT",
+          "clip_column_index": "0",
+          "clip_effect_types": [
+            "TransformEffect"
+          ],
+          "clip_has_audio_track": false,
+          "clip_layer_index": "148",
+          "layer": "V2 Chassis Low FFT",
+          "layer_audio_effect_count": 0,
+          "layer_index": "148",
+          "layer_opacity": 1.0,
+          "source_contract": {
+            "color": {
+              "abgr_decimal": "4281671093",
+              "parameter_name": "Color",
+              "parameter_tag": "ParamColor",
+              "parameter_type": "COLOR",
+              "rgba": "#b51d35ff"
+            },
+            "font": "Cascadia Mono",
+            "line_width": 5000.0,
+            "outline": {
+              "color_abgr_decimal": "4281671093",
+              "color_parameter_name": "Outline Color",
+              "color_parameter_tag": "ParamColor",
+              "color_parameter_type": "COLOR",
+              "color_rgba": "#b51d35ff",
+              "width": 0.22,
+              "width_parameter_name": "Outline Width",
+              "width_parameter_tag": "ParamRange",
+              "width_parameter_type": "DOUBLE"
+            },
+            "size": 0.5,
+            "source": "BlockTextGenerator",
+            "source_scale": 0.28,
+            "style": "Regular",
+            "text_sha256": "9914d821ada8eeeb881c7d625c76c85684178193000628dc9ec23a23dd005bcf"
+          }
         }
       },
       "id": "v2_layer_source_contract",
@@ -1045,48 +1102,126 @@
     },
     {
       "actual": {
-        "Position X": 13.0,
-        "Position Y": 0.0,
-        "Scale": 50.0,
-        "Scale H": 170.0,
-        "Scale W": 204.0
+        "crossfader_base": {
+          "Position X": 637.0,
+          "Position Y": 480.0,
+          "Scale": 100.0,
+          "Scale H": 0.5,
+          "Scale W": 12.5
+        },
+        "text_block": {
+          "Position X": 13.0,
+          "Position Y": 0.0,
+          "Scale": 50.0,
+          "Scale H": 170.0,
+          "Scale W": 204.0
+        }
       },
-      "evidence": "clip Transform; geometry is not FFT-modulated",
+      "evidence": "both clip Transforms are static; geometry is not FFT-modulated",
       "expected": {
-        "Position X": 13.0,
-        "Position Y": 0.0,
-        "Scale": 50.0,
-        "Scale H": 170.0,
-        "Scale W": 204.0
+        "crossfader_base": {
+          "Position X": 637.0,
+          "Position Y": 480.0,
+          "Scale": 100.0,
+          "Scale H": 0.5,
+          "Scale W": 12.5
+        },
+        "text_block": {
+          "Position X": 13.0,
+          "Position Y": 0.0,
+          "Scale": 50.0,
+          "Scale H": 170.0,
+          "Scale W": 204.0
+        }
       },
       "id": "v2_transform_static",
       "status": "PASS"
     },
     {
       "actual": {
-        "fallback_ms": 1400.0,
-        "fft_node_count": 1,
-        "frequency_max": 0.33,
-        "frequency_min": 0.0,
-        "frequency_value": 0.165,
-        "gain_db": 3.0,
-        "output_max": 0.95,
-        "output_min": 0.65,
-        "phase_source": "/audioengine/compositionfft",
-        "target_is_clip_opacity": true
+        "composition_fft_node_count": 2,
+        "contracts_identical": true,
+        "crossfader_base": {
+          "fallback_ms": 1400.0,
+          "fft_node_count": 1,
+          "frequency_max": 0.33,
+          "frequency_min": 0.0,
+          "frequency_value": 0.165,
+          "gain_db": 3.0,
+          "output_max": 0.95,
+          "output_min": 0.65,
+          "phase_source": "/audioengine/compositionfft",
+          "target_is_clip_opacity": true
+        },
+        "fft_driven_clips": [
+          {
+            "column": 1,
+            "fft_node_count": 1,
+            "layer": 149,
+            "name": "V2 Chassis Low FFT"
+          },
+          {
+            "column": 1,
+            "fft_node_count": 1,
+            "layer": 150,
+            "name": "V2 Crossfader Base"
+          }
+        ],
+        "text_block": {
+          "fallback_ms": 1400.0,
+          "fft_node_count": 1,
+          "frequency_max": 0.33,
+          "frequency_min": 0.0,
+          "frequency_value": 0.165,
+          "gain_db": 3.0,
+          "output_max": 0.95,
+          "output_min": 0.65,
+          "phase_source": "/audioengine/compositionfft",
+          "target_is_clip_opacity": true
+        }
       },
-      "evidence": "only clip 149 opacity is FFT-driven",
+      "evidence": "only clips 149-150 opacity are identically composition-FFT-driven",
       "expected": {
-        "fallback_ms": 1400.0,
-        "fft_node_count": 1,
-        "frequency_max": 0.33,
-        "frequency_min": 0.0,
-        "frequency_value": 0.165,
-        "gain_db": 3.0,
-        "output_max": 0.95,
-        "output_min": 0.65,
-        "phase_source": "/audioengine/compositionfft",
-        "target_is_clip_opacity": true
+        "composition_fft_node_count": 2,
+        "contracts_identical": true,
+        "crossfader_base": {
+          "fallback_ms": 1400.0,
+          "fft_node_count": 1,
+          "frequency_max": 0.33,
+          "frequency_min": 0.0,
+          "frequency_value": 0.165,
+          "gain_db": 3.0,
+          "output_max": 0.95,
+          "output_min": 0.65,
+          "phase_source": "/audioengine/compositionfft",
+          "target_is_clip_opacity": true
+        },
+        "fft_driven_clips": [
+          {
+            "column": 1,
+            "fft_node_count": 1,
+            "layer": 149,
+            "name": "V2 Chassis Low FFT"
+          },
+          {
+            "column": 1,
+            "fft_node_count": 1,
+            "layer": 150,
+            "name": "V2 Crossfader Base"
+          }
+        ],
+        "text_block": {
+          "fallback_ms": 1400.0,
+          "fft_node_count": 1,
+          "frequency_max": 0.33,
+          "frequency_min": 0.0,
+          "frequency_value": 0.165,
+          "gain_db": 3.0,
+          "output_max": 0.95,
+          "output_min": 0.65,
+          "phase_source": "/audioengine/compositionfft",
+          "target_is_clip_opacity": true
+        }
       },
       "id": "fft_contract",
       "status": "PASS"
@@ -1095,16 +1230,32 @@
       "actual": {
         "clipped_dot_count": 5,
         "controls": 148,
-        "desired_dot_count": 5382,
+        "desired_dot_count": 5376,
         "dot_collision_count": 0,
         "effective_dot_columns": 320,
         "effective_dot_rows": 240,
         "empty_primitive_count": 0,
         "encoding": "unicode_braille_2x4",
+        "geometry_fft_contract": {
+          "fallback_ms": 1400,
+          "frequency_band": [
+            0.0,
+            0.33
+          ],
+          "gain_db": 3.0,
+          "geometry_modulated": false,
+          "hue_modulated": false,
+          "output_range": [
+            0.65,
+            0.95
+          ],
+          "phase_source": "composition_fft",
+          "target": "clip video opacity"
+        },
         "grid_columns": 160,
         "grid_rows": 60,
-        "nonblank_glyph_count": 2221,
-        "occupied_dot_count": 5377,
+        "nonblank_glyph_count": 2195,
+        "occupied_dot_count": 5371,
         "protected_boxes": 295,
         "prototype_counts": {
           "bank_polygon": 4,
@@ -1123,27 +1274,139 @@
           "vertical_fader": 9
         },
         "represented_primitive_count": 54,
+        "solid_overlay": {
+          "abgr_decimal": "4281671093",
+          "blend_mode": "Add",
+          "bounds": [
+            1477.0,
+            1017.3,
+            1717.0,
+            1022.7
+          ],
+          "center": [
+            1597.0,
+            1020.0
+          ],
+          "collision_count": 0,
+          "color_rgba": "#b51d35ff",
+          "fft_contract": {
+            "fallback_ms": 1400,
+            "frequency_band": [
+              0.0,
+              0.33
+            ],
+            "gain_db": 3.0,
+            "geometry_modulated": false,
+            "hue_modulated": false,
+            "output_range": [
+              0.65,
+              0.95
+            ],
+            "phase_source": "composition_fft",
+            "target": "clip video opacity"
+          },
+          "layer": 150,
+          "layer_opacity": 1.0,
+          "name": "V2 Crossfader Base",
+          "shape": "rectangle",
+          "size": [
+            240.0,
+            5.4
+          ],
+          "source": "Solid Color",
+          "transform": {
+            "position_x": 637.0,
+            "position_y": 480.0,
+            "scale": 100.0,
+            "scale_h": 0.5,
+            "scale_w": 12.5
+          }
+        },
         "source_scale": 0.28,
         "text_cell_collisions": 0,
         "track_fader_guides": 8,
         "vector_collisions": 0,
         "vector_primitives": 54
       },
-      "evidence": "resting, fader/knob motion hull, crossfader, and chassis geometry",
+      "evidence": "resting, fader/knob motion hull, chassis geometry, and collision-free Solid Color crossfader base",
       "expected": {
         "clipped_dot_count": 5,
         "controls": 148,
-        "desired_dot_count": 5382,
+        "desired_dot_count": 5376,
         "dot_collision_count": 0,
         "effective_dot_columns": 320,
         "effective_dot_rows": 240,
         "empty_primitive_count": 0,
         "encoding": "unicode_braille_2x4",
+        "geometry_fft_contract": {
+          "fallback_ms": 1400,
+          "frequency_band": [
+            0.0,
+            0.33
+          ],
+          "gain_db": 3.0,
+          "geometry_modulated": false,
+          "hue_modulated": false,
+          "output_range": [
+            0.65,
+            0.95
+          ],
+          "phase_source": "composition_fft",
+          "target": "clip video opacity"
+        },
         "grid_columns": 160,
         "grid_rows": 60,
-        "nonblank_glyph_count": 2221,
-        "occupied_dot_count": 5377,
+        "nonblank_glyph_count": 2195,
+        "occupied_dot_count": 5371,
         "represented_primitive_count": 54,
+        "solid_overlay": {
+          "abgr_decimal": "4281671093",
+          "blend_mode": "Add",
+          "bounds": [
+            1477.0,
+            1017.3,
+            1717.0,
+            1022.7
+          ],
+          "center": [
+            1597.0,
+            1020.0
+          ],
+          "collision_count": 0,
+          "color_rgba": "#b51d35ff",
+          "fft_contract": {
+            "fallback_ms": 1400,
+            "frequency_band": [
+              0.0,
+              0.33
+            ],
+            "gain_db": 3.0,
+            "geometry_modulated": false,
+            "hue_modulated": false,
+            "output_range": [
+              0.65,
+              0.95
+            ],
+            "phase_source": "composition_fft",
+            "target": "clip video opacity"
+          },
+          "layer": 150,
+          "layer_opacity": 1.0,
+          "name": "V2 Crossfader Base",
+          "shape": "rectangle",
+          "size": [
+            240.0,
+            5.4
+          ],
+          "source": "Solid Color",
+          "transform": {
+            "position_x": 637.0,
+            "position_y": 480.0,
+            "scale": 100.0,
+            "scale_h": 0.5,
+            "scale_w": 12.5
+          }
+        },
         "source_scale": 0.28,
         "text_cell_collisions": 0,
         "track_fader_guides": 8,
@@ -1158,43 +1421,43 @@
         {
           "height": 113,
           "path": "01-r1-witnesses-candidate-baseline.png",
-          "sha256": "f204c7bae516c4d5294f594c61dd87a4d4896d43546138959333b6182603b8c3",
+          "sha256": "ebf76604aaf96a1c4aeb123a2c47c6ca8ab8d3fa6e37ede3ad1d204daf744304",
           "width": 200
         },
         {
           "height": 113,
           "path": "03-v2-fft-silence-composite.png",
-          "sha256": "dc503e93c2022c5cc96519f1258dbdf98c98181be30c177be84a35c473fa2104",
+          "sha256": "1842c3b9015150a17c3aa368ab5acf58a81d639d97ded29aa1f490a112d1216e",
           "width": 200
         },
         {
           "height": 113,
           "path": "03b-v2-fft-silence-layer.png",
-          "sha256": "1414366f80c064839623d1db1a39bdb2d1fa505a3c955ee82c3630ce8212ae9d",
+          "sha256": "1b16a97bc596e2822b197cd500dc198d0e054d739405b12666634109fec2cdf2",
           "width": 200
         },
         {
           "height": 113,
           "path": "04-v2-bypass-r1-restore.png",
-          "sha256": "f204c7bae516c4d5294f594c61dd87a4d4896d43546138959333b6182603b8c3",
+          "sha256": "ebf76604aaf96a1c4aeb123a2c47c6ca8ab8d3fa6e37ede3ad1d204daf744304",
           "width": 200
         },
         {
           "height": 113,
           "path": "05-v2-low-band-peak-envelope.png",
-          "sha256": "46276d947ae0ee7443e2c5357f62163edc0b663010c62837e0362d433aefc63c",
+          "sha256": "9822dc5b4309bb480fce2403b8f3d997cdc968f4d560bf6f6a5461ea77573e40",
           "width": 200
         },
         {
           "height": 113,
           "path": "05b-v2-low-band-peak-layer.png",
-          "sha256": "ab189f77b7109529a39e2da3b2b73d994c118306d1a29d7695ecd093f6ff4989",
+          "sha256": "d027b3a6fd6f3d6780443125f4f38de19c456e26e6dd0c0f7a64cc7f23d15317",
           "width": 200
         },
         {
           "height": 113,
           "path": "06-v2-final-restored.png",
-          "sha256": "dc503e93c2022c5cc96519f1258dbdf98c98181be30c177be84a35c473fa2104",
+          "sha256": "1842c3b9015150a17c3aa368ab5acf58a81d639d97ded29aa1f490a112d1216e",
           "width": 200
         }
       ],
@@ -1230,31 +1493,31 @@
       "actual": {
         "accepted_range_enforced_by": "fft_contract",
         "composite_floor_vs_peak": {
-          "changed_percent": 16.451327433628318,
-          "changed_pixels": 3718,
+          "changed_percent": 16.464601769911503,
+          "changed_pixels": 3721,
           "height": 113,
-          "mae": 0.11408554572271386,
+          "mae": 0.11315634218289086,
           "max_channel_difference": 8,
-          "mse": 0.1941150442477876,
+          "mse": 0.19174041297935104,
           "pixel_identical": false,
-          "psnr_db": 55.25021165610366,
+          "psnr_db": 55.30366702428137,
           "width": 200
         },
         "final_restored_matches_floor_sha": true,
-        "floor_layer_mean_luma": 2.902352805309673,
+        "floor_layer_mean_luma": 2.870599938053037,
         "isolated_layer_floor_vs_peak": {
-          "changed_percent": 14.902654867256636,
-          "changed_pixels": 3368,
+          "changed_percent": 14.752212389380531,
+          "changed_pixels": 3334,
           "height": 113,
-          "mae": 0.0903834808259587,
+          "mae": 0.08954277286135694,
           "max_channel_difference": 5,
-          "mse": 0.11589970501474926,
+          "mse": 0.1150589970501475,
           "pixel_identical": false,
-          "psnr_db": 57.48998030259187,
+          "psnr_db": 57.52159776833609,
           "width": 200
         },
         "monitor_luma_limitation": "Arena monitor 200x113 isolated-layer RGB is alpha-composited and downsampled; mean luma is not a monotonic opacity meter. The increasing accepted range is enforced separately by fft_contract.",
-        "peak_layer_mean_luma": 2.854504194690188
+        "peak_layer_mean_luma": 2.823080053097267
       },
       "evidence": "nonblack, pixel-distinct floor/peak endpoints and exact floor restoration; numeric accepted-range increase is proved by fft_contract, not downsampled monitor luma",
       "expected": {
@@ -1293,7 +1556,7 @@
           "ready": true,
           "status": "ok"
         },
-        "mcp_sessions": 49,
+        "mcp_sessions": 50,
         "wire_application": {
           "count": 0,
           "expected": "closed is valid"
@@ -1327,13 +1590,13 @@
     }
   ],
   "counts": {
-    "added_layers": 1,
+    "added_layers": 2,
     "added_midi_shortcuts": 0,
-    "clips": 149,
+    "clips": 150,
     "columns": 1,
     "decks": 3,
     "external_media": 0,
-    "layers": 149,
+    "layers": 150,
     "protected_layers": 148,
     "resolution": [
       1920,
@@ -1344,16 +1607,46 @@
   },
   "failures": [],
   "fft": {
-    "fallback_ms": 1400.0,
-    "fft_node_count": 1,
-    "frequency_max": 0.33,
-    "frequency_min": 0.0,
-    "frequency_value": 0.165,
-    "gain_db": 3.0,
-    "output_max": 0.95,
-    "output_min": 0.65,
-    "phase_source": "/audioengine/compositionfft",
-    "target_is_clip_opacity": true
+    "composition_fft_node_count": 2,
+    "contracts_identical": true,
+    "crossfader_base": {
+      "fallback_ms": 1400.0,
+      "fft_node_count": 1,
+      "frequency_max": 0.33,
+      "frequency_min": 0.0,
+      "frequency_value": 0.165,
+      "gain_db": 3.0,
+      "output_max": 0.95,
+      "output_min": 0.65,
+      "phase_source": "/audioengine/compositionfft",
+      "target_is_clip_opacity": true
+    },
+    "fft_driven_clips": [
+      {
+        "column": 1,
+        "fft_node_count": 1,
+        "layer": 149,
+        "name": "V2 Chassis Low FFT"
+      },
+      {
+        "column": 1,
+        "fft_node_count": 1,
+        "layer": 150,
+        "name": "V2 Crossfader Base"
+      }
+    ],
+    "text_block": {
+      "fallback_ms": 1400.0,
+      "fft_node_count": 1,
+      "frequency_max": 0.33,
+      "frequency_min": 0.0,
+      "frequency_value": 0.165,
+      "gain_db": 3.0,
+      "output_max": 0.95,
+      "output_min": 0.65,
+      "phase_source": "/audioengine/compositionfft",
+      "target_is_clip_opacity": true
+    }
   },
   "geometry": {
     "artifact": "beta/APC40_V2_GEOMETRY_20260719T124750Z.json",
@@ -1399,7 +1692,7 @@
         "state": "V2 bypass"
       }
     ],
-    "desired_dot_count": 5382,
+    "desired_dot_count": 5376,
     "dot_collision_count": 0,
     "effective_dot_columns": 320,
     "effective_dot_rows": 240,
@@ -1408,11 +1701,59 @@
     "grid_columns": 160,
     "grid_rows": 60,
     "native_text_cell_collisions": 0,
-    "nonblank_glyph_count": 2221,
-    "occupied_dot_count": 5377,
+    "nonblank_glyph_count": 2195,
+    "occupied_dot_count": 5371,
     "protected_boxes": 295,
     "protected_controls": 148,
     "represented_primitive_count": 54,
+    "solid_overlay": {
+      "abgr_decimal": "4281671093",
+      "blend_mode": "Add",
+      "bounds": [
+        1477.0,
+        1017.3,
+        1717.0,
+        1022.7
+      ],
+      "center": [
+        1597.0,
+        1020.0
+      ],
+      "collision_count": 0,
+      "color_rgba": "#b51d35ff",
+      "fft_contract": {
+        "fallback_ms": 1400,
+        "frequency_band": [
+          0.0,
+          0.33
+        ],
+        "gain_db": 3.0,
+        "geometry_modulated": false,
+        "hue_modulated": false,
+        "output_range": [
+          0.65,
+          0.95
+        ],
+        "phase_source": "composition_fft",
+        "target": "clip video opacity"
+      },
+      "layer": 150,
+      "layer_opacity": 1.0,
+      "name": "V2 Crossfader Base",
+      "shape": "rectangle",
+      "size": [
+        240.0,
+        5.4
+      ],
+      "source": "Solid Color",
+      "transform": {
+        "position_x": 637.0,
+        "position_y": 480.0,
+        "scale": 100.0,
+        "scale_h": 0.5,
+        "scale_w": 12.5
+      }
+    },
     "source_scale": 0.28,
     "vector_collisions": 0,
     "vector_primitives": 54
@@ -1483,7 +1824,7 @@
       "ready": true,
       "status": "ok"
     },
-    "mcp_sessions": 49,
+    "mcp_sessions": 50,
     "wire_application": {
       "count": 0,
       "expected": "closed is valid"
@@ -1497,31 +1838,43 @@
   },
   "schema_version": 1,
   "source": {
-    "color": {
-      "abgr_decimal": "4281671093",
-      "parameter_name": "Color",
-      "parameter_tag": "ParamColor",
-      "parameter_type": "COLOR",
-      "rgba": "#b51d35ff"
+    "crossfader_base": {
+      "color": {
+        "abgr_decimal": "4281671093",
+        "parameter_name": "Color",
+        "parameter_tag": "ParamColor",
+        "parameter_type": "COLOR",
+        "rgba": "#b51d35ff"
+      },
+      "source": "SolidColor"
     },
-    "font": "Cascadia Mono",
-    "line_width": 5000.0,
-    "outline": {
-      "color_abgr_decimal": "4281671093",
-      "color_parameter_name": "Outline Color",
-      "color_parameter_tag": "ParamColor",
-      "color_parameter_type": "COLOR",
-      "color_rgba": "#b51d35ff",
-      "width": 0.22,
-      "width_parameter_name": "Outline Width",
-      "width_parameter_tag": "ParamRange",
-      "width_parameter_type": "DOUBLE"
-    },
-    "size": 0.5,
-    "source": "BlockTextGenerator",
-    "source_scale": 0.28,
-    "style": "Regular",
-    "text_sha256": "d47ef34b8f46784fce80d774d2528e28901b941a7995303ff5616cb2b656a91c"
+    "text_block": {
+      "color": {
+        "abgr_decimal": "4281671093",
+        "parameter_name": "Color",
+        "parameter_tag": "ParamColor",
+        "parameter_type": "COLOR",
+        "rgba": "#b51d35ff"
+      },
+      "font": "Cascadia Mono",
+      "line_width": 5000.0,
+      "outline": {
+        "color_abgr_decimal": "4281671093",
+        "color_parameter_name": "Outline Color",
+        "color_parameter_tag": "ParamColor",
+        "color_parameter_type": "COLOR",
+        "color_rgba": "#b51d35ff",
+        "width": 0.22,
+        "width_parameter_name": "Outline Width",
+        "width_parameter_tag": "ParamRange",
+        "width_parameter_type": "DOUBLE"
+      },
+      "size": 0.5,
+      "source": "BlockTextGenerator",
+      "source_scale": 0.28,
+      "style": "Regular",
+      "text_sha256": "9914d821ada8eeeb881c7d625c76c85684178193000628dc9ec23a23dd005bcf"
+    }
   },
   "verdict": "PARTIAL — software candidate ready for human test",
   "visual_metrics": {
@@ -1537,30 +1890,30 @@
       "width": 200
     },
     "composite_floor_vs_peak": {
-      "changed_percent": 16.451327433628318,
-      "changed_pixels": 3718,
+      "changed_percent": 16.464601769911503,
+      "changed_pixels": 3721,
       "height": 113,
-      "mae": 0.11408554572271386,
+      "mae": 0.11315634218289086,
       "max_channel_difference": 8,
-      "mse": 0.1941150442477876,
+      "mse": 0.19174041297935104,
       "pixel_identical": false,
-      "psnr_db": 55.25021165610366,
+      "psnr_db": 55.30366702428137,
       "width": 200
     },
     "final_restored_matches_floor_sha": true,
-    "floor_layer_mean_luma": 2.902352805309673,
+    "floor_layer_mean_luma": 2.870599938053037,
     "isolated_layer_floor_vs_peak": {
-      "changed_percent": 14.902654867256636,
-      "changed_pixels": 3368,
+      "changed_percent": 14.752212389380531,
+      "changed_pixels": 3334,
       "height": 113,
-      "mae": 0.0903834808259587,
+      "mae": 0.08954277286135694,
       "max_channel_difference": 5,
-      "mse": 0.11589970501474926,
+      "mse": 0.1150589970501475,
       "pixel_identical": false,
-      "psnr_db": 57.48998030259187,
+      "psnr_db": 57.52159776833609,
       "width": 200
     },
     "monitor_luma_limitation": "Arena monitor 200x113 isolated-layer RGB is alpha-composited and downsampled; mean luma is not a monotonic opacity meter. The increasing accepted range is enforced separately by fft_contract.",
-    "peak_layer_mean_luma": 2.854504194690188
+    "peak_layer_mean_luma": 2.823080053097267
   }
 }
