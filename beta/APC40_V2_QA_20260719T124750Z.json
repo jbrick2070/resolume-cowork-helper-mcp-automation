@@ -3,7 +3,7 @@
   "candidate": {
     "name": "APC40_Visual_Twin_V2_Candidate_20260719T124750Z",
     "path": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-    "sha256": "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8"
+    "sha256": "ceaf9d54a7891c835f2bc8b43df83af9478b2a94f4349ad61a716858cf05c013"
   },
   "checks": [
     {
@@ -21,9 +21,9 @@
       "status": "PASS"
     },
     {
-      "actual": "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8",
+      "actual": "ceaf9d54a7891c835f2bc8b43df83af9478b2a94f4349ad61a716858cf05c013",
       "evidence": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-      "expected": "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8",
+      "expected": "ceaf9d54a7891c835f2bc8b43df83af9478b2a94f4349ad61a716858cf05c013",
       "id": "candidate_hash",
       "status": "PASS"
     },
@@ -59,6 +59,10 @@
         "columns": 1,
         "decks": 3,
         "groups": 0,
+        "inactive_deck_clip_counts": [
+          0,
+          0
+        ],
         "layers": 150,
         "unique_clip_ids": 150,
         "unique_layer_ids": 150
@@ -69,6 +73,10 @@
         "columns": 1,
         "decks": 3,
         "groups": 0,
+        "inactive_deck_clip_counts": [
+          0,
+          0
+        ],
         "layers": 150,
         "unique_clip_ids": 150,
         "unique_layer_ids": 150
@@ -661,7 +669,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "135"
+              "130.74803149606299257"
             ],
             "clip_name": "CC52/C1",
             "context": "render_pass:TransformEffect",
@@ -676,8 +684,10 @@
             "baseline_values": [
               "0.3499999999999999778"
             ],
-            "candidate_record_count": 0,
-            "candidate_values": [],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.98976377952755911771"
+            ],
             "clip_name": "CC52/C1",
             "context": "video_track",
             "control_name": "Track Knob 5",
@@ -829,7 +839,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "694.1417323155910708"
+              "689.49606302264146507"
             ],
             "clip_name": "CC15/C1",
             "context": "render_pass:TransformEffect",
@@ -846,7 +856,7 @@
             ],
             "candidate_record_count": 1,
             "candidate_values": [
-              "0.99448818897637791814"
+              "0.98070866141732282451"
             ],
             "clip_name": "CC15/C1",
             "context": "video_track",
@@ -971,7 +981,7 @@
               "color_parameter_tag": "ParamColor",
               "color_parameter_type": "COLOR",
               "color_rgba": "#b51d35ff",
-              "width": 0.22,
+              "width": 0.32,
               "width_parameter_name": "Outline Width",
               "width_parameter_tag": "ParamRange",
               "width_parameter_type": "DOUBLE"
@@ -980,7 +990,7 @@
             "source": "BlockTextGenerator",
             "source_scale": 0.28,
             "style": "Regular",
-            "text_sha256": "9914d821ada8eeeb881c7d625c76c85684178193000628dc9ec23a23dd005bcf"
+            "text_sha256": "8507f7b5017405bb738281b3105daf67c24f3201c0ca5c39dd4b6f28f512ee4b"
           }
         }
       },
@@ -1039,7 +1049,7 @@
               "color_parameter_tag": "ParamColor",
               "color_parameter_type": "COLOR",
               "color_rgba": "#b51d35ff",
-              "width": 0.22,
+              "width": 0.32,
               "width_parameter_name": "Outline Width",
               "width_parameter_tag": "ParamRange",
               "width_parameter_type": "DOUBLE"
@@ -1048,7 +1058,7 @@
             "source": "BlockTextGenerator",
             "source_scale": 0.28,
             "style": "Regular",
-            "text_sha256": "9914d821ada8eeeb881c7d625c76c85684178193000628dc9ec23a23dd005bcf"
+            "text_sha256": "8507f7b5017405bb738281b3105daf67c24f3201c0ca5c39dd4b6f28f512ee4b"
           }
         }
       },
@@ -1070,7 +1080,7 @@
           "color_parameter_tag": "ParamColor",
           "color_parameter_type": "COLOR",
           "color_rgba": "#b51d35ff",
-          "width": 0.22,
+          "width": 0.32,
           "width_parameter_name": "Outline Width",
           "width_parameter_tag": "ParamRange",
           "width_parameter_type": "DOUBLE"
@@ -1091,7 +1101,7 @@
           "color_parameter_tag": "ParamColor",
           "color_parameter_type": "COLOR",
           "color_rgba": "#b51d35ff",
-          "width": 0.22,
+          "width": 0.32,
           "width_parameter_name": "Outline Width",
           "width_parameter_tag": "ParamRange",
           "width_parameter_type": "DOUBLE"
@@ -1107,7 +1117,7 @@
           "Position Y": 480.0,
           "Scale": 100.0,
           "Scale H": 0.5,
-          "Scale W": 12.5
+          "Scale W": 13.9
         },
         "text_block": {
           "Position X": 13.0,
@@ -1124,7 +1134,7 @@
           "Position Y": 480.0,
           "Scale": 100.0,
           "Scale H": 0.5,
-          "Scale W": 12.5
+          "Scale W": 13.9
         },
         "text_block": {
           "Position X": 13.0,
@@ -1228,9 +1238,11 @@
     },
     {
       "actual": {
-        "clipped_dot_count": 5,
+        "clip_enabled_primitive_count": 35,
+        "clipped_dot_count": 749,
+        "clipped_intent_collision_count": 45,
         "controls": 148,
-        "desired_dot_count": 5376,
+        "desired_dot_count": 6640,
         "dot_collision_count": 0,
         "effective_dot_columns": 320,
         "effective_dot_rows": 240,
@@ -1254,8 +1266,9 @@
         },
         "grid_columns": 160,
         "grid_rows": 60,
-        "nonblank_glyph_count": 2195,
-        "occupied_dot_count": 5371,
+        "nonblank_glyph_count": 2334,
+        "occupied_dot_count": 5891,
+        "outline_width": 0.32,
         "protected_boxes": 295,
         "prototype_counts": {
           "bank_polygon": 4,
@@ -1273,14 +1286,15 @@
           "track_select": 8,
           "vertical_fader": 9
         },
-        "represented_primitive_count": 54,
+        "rendered_collision_count": 0,
+        "represented_primitive_count": 72,
         "solid_overlay": {
           "abgr_decimal": "4281671093",
           "blend_mode": "Add",
           "bounds": [
-            1477.0,
+            1463.56,
             1017.3,
-            1717.0,
+            1730.44,
             1022.7
           ],
           "center": [
@@ -1310,7 +1324,7 @@
           "name": "V2 Crossfader Base",
           "shape": "rectangle",
           "size": [
-            240.0,
+            266.88,
             5.4
           ],
           "source": "Solid Color",
@@ -1319,20 +1333,22 @@
             "position_y": 480.0,
             "scale": 100.0,
             "scale_h": 0.5,
-            "scale_w": 12.5
+            "scale_w": 13.9
           }
         },
         "source_scale": 0.28,
         "text_cell_collisions": 0,
         "track_fader_guides": 8,
         "vector_collisions": 0,
-        "vector_primitives": 54
+        "vector_primitives": 72
       },
-      "evidence": "resting, fader/knob motion hull, chassis geometry, and collision-free Solid Color crossfader base",
+      "evidence": "35 markup-aligned intents deliberately clip 45 protected-envelope intersections; unexpected vector, rendered-dot, text-cell, motion-hull, and Solid Color crossfader-base collisions remain zero",
       "expected": {
-        "clipped_dot_count": 5,
+        "clip_enabled_primitive_count": 35,
+        "clipped_dot_count": 749,
+        "clipped_intent_collision_count": 45,
         "controls": 148,
-        "desired_dot_count": 5376,
+        "desired_dot_count": 6640,
         "dot_collision_count": 0,
         "effective_dot_columns": 320,
         "effective_dot_rows": 240,
@@ -1356,16 +1372,19 @@
         },
         "grid_columns": 160,
         "grid_rows": 60,
-        "nonblank_glyph_count": 2195,
-        "occupied_dot_count": 5371,
-        "represented_primitive_count": 54,
+        "nonblank_glyph_count": 2334,
+        "occupied_dot_count": 5891,
+        "outline_width": 0.32,
+        "protected_boxes": 295,
+        "rendered_collision_count": 0,
+        "represented_primitive_count": 72,
         "solid_overlay": {
           "abgr_decimal": "4281671093",
           "blend_mode": "Add",
           "bounds": [
-            1477.0,
+            1463.56,
             1017.3,
-            1717.0,
+            1730.44,
             1022.7
           ],
           "center": [
@@ -1395,7 +1414,7 @@
           "name": "V2 Crossfader Base",
           "shape": "rectangle",
           "size": [
-            240.0,
+            266.88,
             5.4
           ],
           "source": "Solid Color",
@@ -1404,14 +1423,14 @@
             "position_y": 480.0,
             "scale": 100.0,
             "scale_h": 0.5,
-            "scale_w": 12.5
+            "scale_w": 13.9
           }
         },
         "source_scale": 0.28,
         "text_cell_collisions": 0,
         "track_fader_guides": 8,
         "vector_collisions": 0,
-        "vector_primitives": 54
+        "vector_primitives": 72
       },
       "id": "geometry_collision_contract",
       "status": "PASS"
@@ -1421,43 +1440,43 @@
         {
           "height": 113,
           "path": "01-r1-witnesses-candidate-baseline.png",
-          "sha256": "ebf76604aaf96a1c4aeb123a2c47c6ca8ab8d3fa6e37ede3ad1d204daf744304",
+          "sha256": "6627b0cda946693785b70530f84186da84999d6ea68c7924969bfe83dd93d86d",
           "width": 200
         },
         {
           "height": 113,
           "path": "03-v2-fft-silence-composite.png",
-          "sha256": "1842c3b9015150a17c3aa368ab5acf58a81d639d97ded29aa1f490a112d1216e",
+          "sha256": "c62b68b6e4f58235679f420b65fa0ef7f957d128509f2f857cd70c94fc016c5f",
           "width": 200
         },
         {
           "height": 113,
           "path": "03b-v2-fft-silence-layer.png",
-          "sha256": "1b16a97bc596e2822b197cd500dc198d0e054d739405b12666634109fec2cdf2",
+          "sha256": "aa6f194221eff3263365612c83b4cd04fa306964dfa0a7deee25d62661e17e1a",
           "width": 200
         },
         {
           "height": 113,
           "path": "04-v2-bypass-r1-restore.png",
-          "sha256": "ebf76604aaf96a1c4aeb123a2c47c6ca8ab8d3fa6e37ede3ad1d204daf744304",
+          "sha256": "6627b0cda946693785b70530f84186da84999d6ea68c7924969bfe83dd93d86d",
           "width": 200
         },
         {
           "height": 113,
           "path": "05-v2-low-band-peak-envelope.png",
-          "sha256": "9822dc5b4309bb480fce2403b8f3d997cdc968f4d560bf6f6a5461ea77573e40",
+          "sha256": "7a929b34b3088f9ffe913b67dfb70ee107e2b8da7f8fde9e0929f19ee92076a0",
           "width": 200
         },
         {
           "height": 113,
           "path": "05b-v2-low-band-peak-layer.png",
-          "sha256": "d027b3a6fd6f3d6780443125f4f38de19c456e26e6dd0c0f7a64cc7f23d15317",
+          "sha256": "39062aa25c7849537d664cb86e2ab5c53db3f735e64ebd9ca2c22f03d8a3c54d",
           "width": 200
         },
         {
           "height": 113,
           "path": "06-v2-final-restored.png",
-          "sha256": "1842c3b9015150a17c3aa368ab5acf58a81d639d97ded29aa1f490a112d1216e",
+          "sha256": "c62b68b6e4f58235679f420b65fa0ef7f957d128509f2f857cd70c94fc016c5f",
           "width": 200
         }
       ],
@@ -1493,31 +1512,31 @@
       "actual": {
         "accepted_range_enforced_by": "fft_contract",
         "composite_floor_vs_peak": {
-          "changed_percent": 16.464601769911503,
-          "changed_pixels": 3721,
+          "changed_percent": 16.38938053097345,
+          "changed_pixels": 3704,
           "height": 113,
-          "mae": 0.11315634218289086,
-          "max_channel_difference": 8,
-          "mse": 0.19174041297935104,
+          "mae": 0.11146017699115045,
+          "max_channel_difference": 9,
+          "mse": 0.19107669616519174,
           "pixel_identical": false,
-          "psnr_db": 55.30366702428137,
+          "psnr_db": 55.3187263741313,
           "width": 200
         },
         "final_restored_matches_floor_sha": true,
-        "floor_layer_mean_luma": 2.870599938053037,
+        "floor_layer_mean_luma": 3.2320162920352877,
         "isolated_layer_floor_vs_peak": {
-          "changed_percent": 14.752212389380531,
-          "changed_pixels": 3334,
+          "changed_percent": 14.809734513274336,
+          "changed_pixels": 3347,
           "height": 113,
-          "mae": 0.08954277286135694,
+          "mae": 0.08707964601769912,
           "max_channel_difference": 5,
-          "mse": 0.1150589970501475,
+          "mse": 0.10837758112094395,
           "pixel_identical": false,
-          "psnr_db": 57.52159776833609,
+          "psnr_db": 57.78140907101203,
           "width": 200
         },
         "monitor_luma_limitation": "Arena monitor 200x113 isolated-layer RGB is alpha-composited and downsampled; mean luma is not a monotonic opacity meter. The increasing accepted range is enforced separately by fft_contract.",
-        "peak_layer_mean_luma": 2.823080053097267
+        "peak_layer_mean_luma": 3.1786465752211224
       },
       "evidence": "nonblack, pixel-distinct floor/peak endpoints and exact floor restoration; numeric accepted-range increase is proved by fft_contract, not downsampled monitor luma",
       "expected": {
@@ -1556,7 +1575,7 @@
           "ready": true,
           "status": "ok"
         },
-        "mcp_sessions": 50,
+        "mcp_sessions": 109,
         "wire_application": {
           "count": 0,
           "expected": "closed is valid"
@@ -1596,6 +1615,10 @@
     "columns": 1,
     "decks": 3,
     "external_media": 0,
+    "inactive_deck_clip_counts": [
+      0,
+      0
+    ],
     "layers": 150,
     "protected_layers": 148,
     "resolution": [
@@ -1650,7 +1673,9 @@
   },
   "geometry": {
     "artifact": "beta/APC40_V2_GEOMETRY_20260719T124750Z.json",
-    "clipped_dot_count": 5,
+    "clip_enabled_primitive_count": 35,
+    "clipped_dot_count": 749,
+    "clipped_intent_collision_count": 45,
     "collision_states": [
       {
         "intersections": 0,
@@ -1692,7 +1717,7 @@
         "state": "V2 bypass"
       }
     ],
-    "desired_dot_count": 5376,
+    "desired_dot_count": 6640,
     "dot_collision_count": 0,
     "effective_dot_columns": 320,
     "effective_dot_rows": 240,
@@ -1701,18 +1726,20 @@
     "grid_columns": 160,
     "grid_rows": 60,
     "native_text_cell_collisions": 0,
-    "nonblank_glyph_count": 2195,
-    "occupied_dot_count": 5371,
+    "nonblank_glyph_count": 2334,
+    "occupied_dot_count": 5891,
+    "outline_width": 0.32,
     "protected_boxes": 295,
     "protected_controls": 148,
-    "represented_primitive_count": 54,
+    "rendered_collision_count": 0,
+    "represented_primitive_count": 72,
     "solid_overlay": {
       "abgr_decimal": "4281671093",
       "blend_mode": "Add",
       "bounds": [
-        1477.0,
+        1463.56,
         1017.3,
-        1717.0,
+        1730.44,
         1022.7
       ],
       "center": [
@@ -1742,7 +1769,7 @@
       "name": "V2 Crossfader Base",
       "shape": "rectangle",
       "size": [
-        240.0,
+        266.88,
         5.4
       ],
       "source": "Solid Color",
@@ -1751,14 +1778,19 @@
         "position_y": 480.0,
         "scale": 100.0,
         "scale_h": 0.5,
-        "scale_w": 12.5
+        "scale_w": 13.9
       }
     },
     "source_scale": 0.28,
     "vector_collisions": 0,
-    "vector_primitives": 54
+    "vector_primitives": 72
   },
   "human_gates": [
+    {
+      "id": "cold_reopen_persistence",
+      "scope": "restart Avenue, cold-open the saved V2 candidate, and confirm all 150 clips, deep-red Text Block geometry, widened Solid Color base, FFT contracts, playback, and bypass persistence",
+      "status": "OPEN — HUMAN TEST REQUIRED"
+    },
     {
       "id": "physical_apc40_complete_sweep",
       "scope": "every button family and feedback color; track/master faders at min/mid/max; all ordinary/device knobs at both extremes; tempo both directions; crossfader both endpoints",
@@ -1824,7 +1856,7 @@
       "ready": true,
       "status": "ok"
     },
-    "mcp_sessions": 50,
+    "mcp_sessions": 109,
     "wire_application": {
       "count": 0,
       "expected": "closed is valid"
@@ -1864,7 +1896,7 @@
         "color_parameter_tag": "ParamColor",
         "color_parameter_type": "COLOR",
         "color_rgba": "#b51d35ff",
-        "width": 0.22,
+        "width": 0.32,
         "width_parameter_name": "Outline Width",
         "width_parameter_tag": "ParamRange",
         "width_parameter_type": "DOUBLE"
@@ -1873,7 +1905,7 @@
       "source": "BlockTextGenerator",
       "source_scale": 0.28,
       "style": "Regular",
-      "text_sha256": "9914d821ada8eeeb881c7d625c76c85684178193000628dc9ec23a23dd005bcf"
+      "text_sha256": "8507f7b5017405bb738281b3105daf67c24f3201c0ca5c39dd4b6f28f512ee4b"
     }
   },
   "verdict": "PARTIAL — software candidate ready for human test",
@@ -1890,30 +1922,30 @@
       "width": 200
     },
     "composite_floor_vs_peak": {
-      "changed_percent": 16.464601769911503,
-      "changed_pixels": 3721,
+      "changed_percent": 16.38938053097345,
+      "changed_pixels": 3704,
       "height": 113,
-      "mae": 0.11315634218289086,
-      "max_channel_difference": 8,
-      "mse": 0.19174041297935104,
+      "mae": 0.11146017699115045,
+      "max_channel_difference": 9,
+      "mse": 0.19107669616519174,
       "pixel_identical": false,
-      "psnr_db": 55.30366702428137,
+      "psnr_db": 55.3187263741313,
       "width": 200
     },
     "final_restored_matches_floor_sha": true,
-    "floor_layer_mean_luma": 2.870599938053037,
+    "floor_layer_mean_luma": 3.2320162920352877,
     "isolated_layer_floor_vs_peak": {
-      "changed_percent": 14.752212389380531,
-      "changed_pixels": 3334,
+      "changed_percent": 14.809734513274336,
+      "changed_pixels": 3347,
       "height": 113,
-      "mae": 0.08954277286135694,
+      "mae": 0.08707964601769912,
       "max_channel_difference": 5,
-      "mse": 0.1150589970501475,
+      "mse": 0.10837758112094395,
       "pixel_identical": false,
-      "psnr_db": 57.52159776833609,
+      "psnr_db": 57.78140907101203,
       "width": 200
     },
     "monitor_luma_limitation": "Arena monitor 200x113 isolated-layer RGB is alpha-composited and downsampled; mean luma is not a monotonic opacity meter. The increasing accepted range is enforced separately by fft_contract.",
-    "peak_layer_mean_luma": 2.823080053097267
+    "peak_layer_mean_luma": 3.1786465752211224
   }
 }

@@ -43,7 +43,7 @@ BASE_OVERLAY_TRANSFORM = {
     "position_x": 637.0,
     "position_y": 480.0,
     "scale": 100.0,
-    "scale_w": 12.5,
+    "scale_w": 13.9,
     "scale_h": 0.5,
 }
 
@@ -76,7 +76,12 @@ def load_source_geometry(repo_root: Path) -> dict[str, Any]:
         capture_output=True,
         text=True,
         encoding="utf-8",
+        timeout=30,
     )
+    if len(proc.stdout.encode("utf-8")) > 2 * 1024 * 1024:
+        raise ValueError(
+            f"source geometry blob exceeds 2 MiB: {SOURCE_COMMIT}:{SOURCE_BLOB}"
+        )
     return json.loads(proc.stdout)
 
 
@@ -114,9 +119,9 @@ def line(
     x2: float,
     y2: float,
     family: str,
+    *,
+    clip_to_protection: bool = False,
 ) -> dict[str, Any]:
-    if x1 != x2 and y1 != y2:
-        raise ValueError(f"{primitive_id}: only axis-aligned lines are supported")
     return {
         "id": primitive_id,
         "kind": "line",
@@ -126,6 +131,7 @@ def line(
         "x2": float(x2),
         "y2": float(y2),
         "stroke_px": STROKE,
+        "clip_to_protection": clip_to_protection,
     }
 
 
@@ -144,6 +150,30 @@ def circle(
         "cy": float(cy),
         "radius": float(radius),
         "stroke_px": STROKE,
+        "clip_to_protection": False,
+    }
+
+
+def ellipse(
+    primitive_id: str,
+    cx: float,
+    cy: float,
+    radius_x: float,
+    radius_y: float,
+    family: str,
+    *,
+    clip_to_protection: bool = True,
+) -> dict[str, Any]:
+    return {
+        "id": primitive_id,
+        "kind": "ellipse",
+        "family": family,
+        "cx": float(cx),
+        "cy": float(cy),
+        "radius_x": float(radius_x),
+        "radius_y": float(radius_y),
+        "stroke_px": STROKE,
+        "clip_to_protection": clip_to_protection,
     }
 
 
@@ -173,10 +203,174 @@ def build_primitives() -> list[dict[str, Any]]:
         line("right-upper-column-1", 1397, 174, 1397, 380, "section-divider"),
         line("right-upper-column-2", 1534, 174, 1534, 380, "section-divider"),
         line("right-upper-column-3", 1660, 174, 1660, 380, "section-divider"),
-        line("crossfader-guide", 1479, 1016, 1715, 1016, "crossfader-guide"),
-        line("crossfader-cap-left", 1479, 1012, 1479, 1020, "crossfader-guide"),
-        line("crossfader-cap-right", 1715, 1012, 1715, 1020, "crossfader-guide"),
+        line("crossfader-guide", 1463, 1019, 1730, 1019, "crossfader-guide"),
+        line("crossfader-cap-left", 1463, 945, 1463, 1019, "crossfader-guide"),
+        line("crossfader-cap-right", 1730, 945, 1730, 1019, "crossfader-guide"),
         line("master-guide", 1278, 787, 1278, 1009, "master-guide"),
+        # User-marked hardware accents. These intent paths are deliberately
+        # raster-clipped around every padded R1 witness cell below.
+        line(
+            "marked-pad-top",
+            130,
+            194,
+            1166,
+            194,
+            "marked-pad-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-pad-row-1-lower",
+            122,
+            227,
+            1167,
+            227,
+            "marked-pad-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-matrix-scene-separator",
+            1167,
+            194,
+            1167,
+            505,
+            "marked-scene-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-scene-1-underline",
+            1178,
+            257,
+            1257,
+            257,
+            "marked-scene-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-left-row-2-tick",
+            124,
+            290,
+            231,
+            290,
+            "marked-pad-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-scene-2-underline",
+            1180,
+            319,
+            1274,
+            319,
+            "marked-scene-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-left-row-3-tick",
+            124,
+            348,
+            231,
+            348,
+            "marked-pad-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-scene-3-underline",
+            1182,
+            381,
+            1275,
+            381,
+            "marked-scene-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-left-row-4-tick",
+            122,
+            409,
+            240,
+            409,
+            "marked-pad-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-scene-4-underline",
+            1181,
+            439,
+            1283,
+            439,
+            "marked-scene-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-left-row-5-tick",
+            120,
+            473,
+            222,
+            473,
+            "marked-pad-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-scene-5-underline",
+            1180,
+            497,
+            1281,
+            497,
+            "marked-scene-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-left-grid-bottom",
+            122,
+            503,
+            225,
+            503,
+            "marked-pad-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-track-mode-tick",
+            124,
+            643,
+            245,
+            643,
+            "marked-track-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-fader-section-tick",
+            130,
+            700,
+            247,
+            700,
+            "marked-track-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-track-mode-vertical",
+            193,
+            652,
+            193,
+            746,
+            "marked-track-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-navigation-left",
+            1306,
+            810,
+            1306,
+            904,
+            "marked-navigation-guide",
+            clip_to_protection=True,
+        ),
+        line(
+            "marked-navigation-right",
+            1458,
+            810,
+            1458,
+            904,
+            "marked-navigation-guide",
+            clip_to_protection=True,
+        ),
     ]
 
     # Eight channel-strip guides occupy the safe gaps immediately right of
@@ -186,17 +380,53 @@ def build_primitives() -> list[dict[str, Any]]:
             line(f"track-fader-{index}", x, 787, x, 1009, "track-fader-guide")
         )
 
-    # Conservative radii sit outside the protected center witness and stop
-    # before the protected label below each rotary.
-    track_centers = [(191, 130), (321, 130), (451, 130), (581, 130)]
-    track_centers += [(711, 130), (840, 130), (970, 130), (1100, 130)]
-    device_centers = [(1337, 452), (1467, 452), (1597, 452), (1727, 452)]
-    device_centers += [(1337, 573), (1467, 573), (1597, 573), (1727, 573)]
-    for index, (cx, cy) in enumerate(track_centers, 1):
-        primitives.append(circle(f"track-knob-{index}", cx, cy, 32, "knob-surround"))
-    for index, (cx, cy) in enumerate(device_centers, 1):
-        primitives.append(circle(f"device-knob-{index}", cx, cy, 32, "knob-surround"))
-    primitives.append(circle("cue-level", 1214, 696, 24, "knob-surround"))
+    # The green user markup is a placement trace only. These larger deep-red
+    # contours replace the undersized rings and are clipped around labels.
+    track_contours = [
+        (189, 122, 59, 57),
+        (322, 127, 55, 51),
+        (453, 126, 61, 49),
+        (586, 128, 56, 56),
+        (710, 122, 54, 59),
+        (837, 118, 58, 59),
+        (970, 125, 55, 56),
+        (1106, 125, 62, 52),
+    ]
+    device_contours = [
+        (1345, 442, 41, 41),
+        (1476, 444, 48, 42),
+        (1609, 443, 51, 41),
+        (1740, 443, 58, 42),
+        (1345, 571, 43, 47),
+        (1474, 571, 45, 50),
+        (1610, 574, 47, 42),
+        (1737, 573, 49, 47),
+    ]
+    for index, (cx, cy, radius_x, radius_y) in enumerate(track_contours, 1):
+        primitives.append(
+            ellipse(
+                f"track-knob-{index}",
+                cx,
+                cy,
+                radius_x,
+                radius_y,
+                "knob-surround",
+            )
+        )
+    for index, (cx, cy, radius_x, radius_y) in enumerate(device_contours, 1):
+        primitives.append(
+            ellipse(
+                f"device-knob-{index}",
+                cx,
+                cy,
+                radius_x,
+                radius_y,
+                "knob-surround",
+            )
+        )
+    primitives.append(
+        ellipse("cue-level", 1234, 716, 56, 62, "knob-surround")
+    )
     primitives.append(circle("tempo", 1727, 303, 24, "knob-surround"))
     return primitives
 
@@ -262,6 +492,28 @@ def primitive_collisions(
                 primitive["radius"] + half >= minimum
                 and primitive["radius"] - half <= maximum
             )
+        elif primitive["kind"] == "ellipse":
+            cx = primitive["cx"]
+            cy = primitive["cy"]
+            radius_x = primitive["radius_x"]
+            radius_y = primitive["radius_y"]
+            x1, y1, x2, y2 = box
+            nearest_x = min(max(cx, x1), x2)
+            nearest_y = min(max(cy, y1), y2)
+            minimum = math.sqrt(
+                ((nearest_x - cx) / radius_x) ** 2
+                + ((nearest_y - cy) / radius_y) ** 2
+            )
+            maximum = max(
+                math.sqrt(
+                    ((x - cx) / radius_x) ** 2
+                    + ((y - cy) / radius_y) ** 2
+                )
+                for x in (x1, x2)
+                for y in (y1, y2)
+            )
+            normalized_half = half / min(radius_x, radius_y)
+            hit = 1.0 + normalized_half >= minimum and 1.0 - normalized_half <= maximum
         if hit:
             result.append(
                 {
@@ -306,10 +558,21 @@ def dots_for_primitive(primitive: dict[str, Any]) -> set[tuple[int, int]]:
         if c1 == c2:
             for row in range(min(r1, r2), max(r1, r2) + 1):
                 dots.add((c1, row))
-        else:
+        elif r1 == r2:
             for column in range(min(c1, c2), max(c1, c2) + 1):
                 dots.add((column, r1))
-    else:
+        else:
+            samples = max(abs(c2 - c1), abs(r2 - r1)) * 4 + 1
+            for index in range(samples):
+                fraction = index / max(samples - 1, 1)
+                x = primitive["x1"] + (
+                    primitive["x2"] - primitive["x1"]
+                ) * fraction
+                y = primitive["y1"] + (
+                    primitive["y2"] - primitive["y1"]
+                ) * fraction
+                dots.add(coordinate_to_dot(x, y))
+    elif primitive["kind"] == "circle":
         circumference = 2.0 * math.pi * primitive["radius"]
         x1, y1, x2, y2 = SAFE_BOX
         step_x = (x2 - x1) / DOT_COLUMNS
@@ -323,6 +586,30 @@ def dots_for_primitive(primitive: dict[str, Any]) -> set[tuple[int, int]]:
             x = primitive["cx"] + math.cos(angle) * primitive["radius"]
             y = primitive["cy"] + math.sin(angle) * primitive["radius"]
             dots.add(coordinate_to_dot(x, y))
+    elif primitive["kind"] == "ellipse":
+        radius_x = primitive["radius_x"]
+        radius_y = primitive["radius_y"]
+        circumference = math.pi * (
+            3.0 * (radius_x + radius_y)
+            - math.sqrt(
+                (3.0 * radius_x + radius_y)
+                * (radius_x + 3.0 * radius_y)
+            )
+        )
+        x1, y1, x2, y2 = SAFE_BOX
+        step_x = (x2 - x1) / DOT_COLUMNS
+        step_y = (y2 - y1) / DOT_ROWS
+        samples = max(
+            96,
+            math.ceil(circumference / min(step_x, step_y) * 4.0),
+        )
+        for index in range(samples):
+            angle = 2.0 * math.pi * index / samples
+            x = primitive["cx"] + math.cos(angle) * radius_x
+            y = primitive["cy"] + math.sin(angle) * radius_y
+            dots.add(coordinate_to_dot(x, y))
+    else:
+        raise ValueError(f"unsupported primitive kind: {primitive['kind']}")
     return dots
 
 
@@ -432,9 +719,19 @@ def build(repo_root: Path) -> dict[str, Any]:
         for primitive in primitives
         for collision in primitive_collisions(primitive, protected)
     ]
-    if collisions:
-        preview = json.dumps(collisions[:8], indent=2)
-        raise AssertionError(f"vector collisions found:\n{preview}")
+    clip_enabled_ids = {
+        primitive["id"]
+        for primitive in primitives
+        if primitive.get("clip_to_protection")
+    }
+    unexpected_collisions = [
+        collision
+        for collision in collisions
+        if collision["primitive_id"] not in clip_enabled_ids
+    ]
+    if unexpected_collisions:
+        preview = json.dumps(unexpected_collisions[:8], indent=2)
+        raise AssertionError(f"unexpected vector collisions found:\n{preview}")
 
     text, text_metrics = grid_text(primitives, protected)
     text_sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
@@ -487,7 +784,10 @@ def build(repo_root: Path) -> dict[str, Any]:
         },
         "decoration": {
             "primitive_count": len(primitives),
-            "collision_count": 0,
+            "collision_count": len(unexpected_collisions),
+            "clipped_intent_collision_count": len(collisions),
+            "clip_enabled_primitive_count": len(clip_enabled_ids),
+            "rendered_collision_count": text_metrics["dot_collision_count"],
             "primitives": primitives,
         },
         "native_text_block": {
@@ -495,7 +795,7 @@ def build(repo_root: Path) -> dict[str, Any]:
             "style": "Regular",
             "color_rgba": "#b51d35ff",
             "outline_color_rgba": "#b51d35ff",
-            "outline_width": 0.22,
+            "outline_width": 0.32,
             "outline_geometry_contract": {
                 "bounded_by": "protected maximum dot-cell geometry",
                 "enlarges_protected_geometry_footprint": False,

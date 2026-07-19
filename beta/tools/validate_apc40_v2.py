@@ -34,7 +34,7 @@ EXPECTED_R1_MIDI_SHA256 = (
     "4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5"
 )
 EXPECTED_CANDIDATE_SHA256 = (
-    "22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8"
+    "ceaf9d54a7891c835f2bc8b43df83af9478b2a94f4349ad61a716858cf05c013"
 )
 R1_COMPOSITION = Path("compositions/APC40_Visual_QA_148.avc")
 R1_CONTROLLER = Path("controllers/APC 40 MK II - Visual QA.xml")
@@ -605,6 +605,7 @@ def runtime_observation(expected_name: str) -> dict[str, Any]:
         text=True,
         encoding="utf-8",
         errors="replace",
+        timeout=15,
     )
     processes = json.loads(proc.stdout)
     if isinstance(processes, dict):
@@ -794,6 +795,9 @@ def main() -> int:
     first_deck_columns = (
         [] if not candidate_decks else candidate_decks[0].findall("./Column")
     )
+    inactive_deck_clip_counts = [
+        len(deck.findall("./Clip")) for deck in candidate_decks[1:]
+    ]
 
     candidate_name_node = direct_named_param(
         candidate_root, "Param", "Name"
@@ -829,6 +833,7 @@ def main() -> int:
             and len(candidate_clips) == 150
             and len(candidate_decks) == 3
             and len(first_deck_columns) == 1
+            and inactive_deck_clip_counts == [0, 0]
             and len({node.attrib.get("uniqueId") for node in candidate_layers}) == 150
             and len({node.attrib.get("uniqueId") for node in candidate_clips}) == 150
             and len(candidate_root.findall("./Group")) == 0
@@ -838,6 +843,7 @@ def main() -> int:
             "clips": len(candidate_clips),
             "columns": len(first_deck_columns),
             "decks": len(candidate_decks),
+            "inactive_deck_clip_counts": inactive_deck_clip_counts,
             "groups": len(candidate_root.findall("./Group")),
             "unique_layer_ids": len(
                 {node.attrib.get("uniqueId") for node in candidate_layers}
@@ -851,6 +857,7 @@ def main() -> int:
             "clips": 150,
             "columns": 1,
             "decks": 3,
+            "inactive_deck_clip_counts": [0, 0],
             "groups": 0,
             "unique_layer_ids": 150,
             "unique_clip_ids": 150,
@@ -1093,6 +1100,8 @@ def main() -> int:
         source_render, "ParamRange", "Outline Width"
     )
     geometry_text = geometry["native_text_block"]["text"]
+    # ElementTree normalizes XML attribute newlines. The appended V2 Text Block
+    # is serialized last, so read that raw value to keep it byte-verifiable.
     raw_text_matches = re.findall(
         r'<ParamText name="Text" T="STRING" default="Resolume" '
         r'value="(.*?)">\s*<Params name="Params">',
@@ -1207,7 +1216,7 @@ def main() -> int:
             "width_parameter_tag": "ParamRange",
             "width_parameter_name": "Outline Width",
             "width_parameter_type": "DOUBLE",
-            "width": 0.22,
+            "width": 0.32,
         },
         "text_sha256": geometry["native_text_block"]["text_sha256"],
     }
@@ -1284,7 +1293,7 @@ def main() -> int:
             and outline_color_node.attrib.get("value") == "4281671093"
             and outline_width_node is not None
             and outline_width_node.attrib.get("T") == "DOUBLE"
-            and approx(as_float(outline_width_node) or -1, 0.22)
+            and approx(as_float(outline_width_node) or -1, 0.32)
             and len(new_clip_effects) == 1
             and new_clip_effects[0].attrib.get("type") == "TransformEffect"
             and not new_layer_audio_effects
@@ -1403,7 +1412,7 @@ def main() -> int:
             and source_contract_actual["outline"]["width_parameter_type"]
             == "DOUBLE"
             and source_contract_actual["outline"]["width"] is not None
-            and approx(source_contract_actual["outline"]["width"], 0.22)
+            and approx(source_contract_actual["outline"]["width"], 0.32)
         ),
         {
             "color": source_contract_actual["color"],
@@ -1462,7 +1471,7 @@ def main() -> int:
         "Position X": 637.0,
         "Position Y": 480.0,
         "Scale": 100.0,
-        "Scale W": 12.5,
+        "Scale W": 13.9,
         "Scale H": 0.5,
     }
     check(
@@ -1648,13 +1657,13 @@ def main() -> int:
         "layer_opacity": 1.0,
         "collision_count": 0,
         "center": [1597.0, 1020.0],
-        "size": [240.0, 5.4],
-        "bounds": [1477.0, 1017.3, 1717.0, 1022.7],
+        "size": [266.88, 5.4],
+        "bounds": [1463.56, 1017.3, 1730.44, 1022.7],
         "transform": {
             "position_x": 637.0,
             "position_y": 480.0,
             "scale": 100.0,
-            "scale_w": 12.5,
+            "scale_w": 13.9,
             "scale_h": 0.5,
         },
         "fft_contract": expected_geometry_fft,
@@ -1664,21 +1673,25 @@ def main() -> int:
         (
             geometry["protection"]["control_count"] == 148
             and geometry["protection"]["collision_count"] == 0
-            and geometry["decoration"]["primitive_count"] == 54
+            and geometry["decoration"]["primitive_count"] == 72
+            and geometry["decoration"]["clip_enabled_primitive_count"] == 35
+            and geometry["decoration"]["clipped_intent_collision_count"] == 45
             and geometry["decoration"]["collision_count"] == 0
+            and geometry["decoration"]["rendered_collision_count"] == 0
             and native_text["cell_collision_count"] == 0
             and native_text["encoding"] == "unicode_braille_2x4"
             and native_text["grid_columns"] == 160
             and native_text["grid_rows"] == 60
             and native_text["effective_dot_columns"] == 320
             and native_text["effective_dot_rows"] == 240
-            and native_text["desired_dot_count"] == 5376
-            and native_text["occupied_dot_count"] == 5371
-            and native_text["clipped_dot_count"] == 5
+            and native_text["desired_dot_count"] == 6640
+            and native_text["occupied_dot_count"] == 5891
+            and native_text["clipped_dot_count"] == 749
             and native_text["dot_collision_count"] == 0
-            and native_text["nonblank_glyph_count"] == 2195
-            and native_text["represented_primitive_count"] == 54
+            and native_text["nonblank_glyph_count"] == 2334
+            and native_text["represented_primitive_count"] == 72
             and native_text["empty_primitive_count"] == 0
+            and approx(float(native_text["outline_width"]), 0.32)
             and approx(float(native_text["source_scale"]), 0.28)
             and len(track_guides) == 8
             and solid_overlay["layer"] == 150
@@ -1693,10 +1706,10 @@ def main() -> int:
             and approx_sequence(
                 solid_overlay["center"], (1597.0, 1020.0)
             )
-            and approx_sequence(solid_overlay["size"], (240.0, 5.4))
+            and approx_sequence(solid_overlay["size"], (266.88, 5.4))
             and approx_sequence(
                 solid_overlay["bounds"],
-                (1477.0, 1017.3, 1717.0, 1022.7),
+                (1463.56, 1017.3, 1730.44, 1022.7),
             )
             and approx(
                 float(solid_overlay_transform["position_x"]), 637.0
@@ -1705,7 +1718,7 @@ def main() -> int:
                 float(solid_overlay_transform["position_y"]), 480.0
             )
             and approx(float(solid_overlay_transform["scale"]), 100.0)
-            and approx(float(solid_overlay_transform["scale_w"]), 12.5)
+            and approx(float(solid_overlay_transform["scale_w"]), 13.9)
             and approx(float(solid_overlay_transform["scale_h"]), 0.5)
             and solid_overlay["fft_contract"] == expected_geometry_fft
             and geometry["fft_contract"] == expected_geometry_fft
@@ -1714,7 +1727,16 @@ def main() -> int:
             "controls": geometry["protection"]["control_count"],
             "protected_boxes": geometry["protection"]["box_count"],
             "vector_primitives": geometry["decoration"]["primitive_count"],
+            "clip_enabled_primitive_count": geometry["decoration"][
+                "clip_enabled_primitive_count"
+            ],
+            "clipped_intent_collision_count": geometry["decoration"][
+                "clipped_intent_collision_count"
+            ],
             "vector_collisions": geometry["decoration"]["collision_count"],
+            "rendered_collision_count": geometry["decoration"][
+                "rendered_collision_count"
+            ],
             "encoding": native_text["encoding"],
             "grid_columns": native_text["grid_columns"],
             "grid_rows": native_text["grid_rows"],
@@ -1730,6 +1752,7 @@ def main() -> int:
                 "represented_primitive_count"
             ],
             "empty_primitive_count": native_text["empty_primitive_count"],
+            "outline_width": native_text["outline_width"],
             "source_scale": native_text["source_scale"],
             "track_fader_guides": len(track_guides),
             "prototype_counts": prototype_counts,
@@ -1738,29 +1761,35 @@ def main() -> int:
         },
         {
             "controls": 148,
-            "vector_primitives": 54,
+            "protected_boxes": 295,
+            "vector_primitives": 72,
+            "clip_enabled_primitive_count": 35,
+            "clipped_intent_collision_count": 45,
             "vector_collisions": 0,
+            "rendered_collision_count": 0,
             "encoding": "unicode_braille_2x4",
             "grid_columns": 160,
             "grid_rows": 60,
             "effective_dot_columns": 320,
             "effective_dot_rows": 240,
-            "desired_dot_count": 5376,
-            "occupied_dot_count": 5371,
-            "clipped_dot_count": 5,
+            "desired_dot_count": 6640,
+            "occupied_dot_count": 5891,
+            "clipped_dot_count": 749,
             "dot_collision_count": 0,
             "text_cell_collisions": 0,
-            "nonblank_glyph_count": 2195,
-            "represented_primitive_count": 54,
+            "nonblank_glyph_count": 2334,
+            "represented_primitive_count": 72,
             "empty_primitive_count": 0,
+            "outline_width": 0.32,
             "source_scale": 0.28,
             "track_fader_guides": 8,
             "solid_overlay": expected_solid_overlay,
             "geometry_fft_contract": expected_geometry_fft,
         },
         (
-            "resting, fader/knob motion hull, chassis geometry, and "
-            "collision-free Solid Color crossfader base"
+            "35 markup-aligned intents deliberately clip 45 protected-envelope "
+            "intersections; unexpected vector, rendered-dot, text-cell, motion-"
+            "hull, and Solid Color crossfader-base collisions remain zero"
         ),
     )
 
@@ -1803,19 +1832,39 @@ def main() -> int:
     peak_image = screenshot_dir / EXPECTED_SCREENSHOTS[4]
     peak_layer_image = screenshot_dir / EXPECTED_SCREENSHOTS[5]
     final_image = screenshot_dir / EXPECTED_SCREENSHOTS[6]
-    bypass_metrics = image_metrics(baseline_image, bypass_image)
-    bypass_sha_identical = (
-        sha256_file(baseline_image) == sha256_file(bypass_image)
-    )
-    silence_peak_metrics = image_metrics(silence_image, peak_image)
-    layer_silence_peak_metrics = image_metrics(
-        silence_layer_image, peak_layer_image
-    )
-    layer_silence_luma = mean_luma(silence_layer_image)
-    layer_peak_luma = mean_luma(peak_layer_image)
-    final_restored_matches_silence_sha = (
-        sha256_file(silence_image) == sha256_file(final_image)
-    )
+    unavailable_metrics = {
+        "width": None,
+        "height": None,
+        "mae": None,
+        "mse": None,
+        "psnr_db": None,
+        "pixel_identical": False,
+        "max_channel_difference": None,
+        "changed_pixels": 0,
+        "changed_percent": 0.0,
+    }
+    if screenshot_ok:
+        bypass_metrics = image_metrics(baseline_image, bypass_image)
+        bypass_sha_identical = (
+            sha256_file(baseline_image) == sha256_file(bypass_image)
+        )
+        silence_peak_metrics = image_metrics(silence_image, peak_image)
+        layer_silence_peak_metrics = image_metrics(
+            silence_layer_image, peak_layer_image
+        )
+        layer_silence_luma = mean_luma(silence_layer_image)
+        layer_peak_luma = mean_luma(peak_layer_image)
+        final_restored_matches_silence_sha = (
+            sha256_file(silence_image) == sha256_file(final_image)
+        )
+    else:
+        bypass_metrics = unavailable_metrics.copy()
+        bypass_sha_identical = False
+        silence_peak_metrics = unavailable_metrics.copy()
+        layer_silence_peak_metrics = unavailable_metrics.copy()
+        layer_silence_luma = 0.0
+        layer_peak_luma = 0.0
+        final_restored_matches_silence_sha = False
     monitor_luma_limitation = (
         "Arena monitor 200x113 isolated-layer RGB is alpha-composited and "
         "downsampled; mean luma is not a monotonic opacity meter. The "
@@ -1937,6 +1986,15 @@ def main() -> int:
 
     human_gates = [
         {
+            "id": "cold_reopen_persistence",
+            "status": "OPEN — HUMAN TEST REQUIRED",
+            "scope": (
+                "restart Avenue, cold-open the saved V2 candidate, and confirm "
+                "all 150 clips, deep-red Text Block geometry, widened Solid "
+                "Color base, FFT contracts, playback, and bypass persistence"
+            ),
+        },
+        {
             "id": "physical_apc40_complete_sweep",
             "status": "OPEN — HUMAN TEST REQUIRED",
             "scope": (
@@ -2051,6 +2109,7 @@ def main() -> int:
         "counts": {
             "resolution": [1920, 1080],
             "decks": len(candidate_decks),
+            "inactive_deck_clip_counts": inactive_deck_clip_counts,
             "columns": len(first_deck_columns),
             "layers": len(candidate_layers),
             "protected_layers": 148,
@@ -2071,7 +2130,16 @@ def main() -> int:
             "protected_controls": geometry["protection"]["control_count"],
             "protected_boxes": geometry["protection"]["box_count"],
             "vector_primitives": geometry["decoration"]["primitive_count"],
+            "clip_enabled_primitive_count": geometry["decoration"][
+                "clip_enabled_primitive_count"
+            ],
+            "clipped_intent_collision_count": geometry["decoration"][
+                "clipped_intent_collision_count"
+            ],
             "vector_collisions": geometry["decoration"]["collision_count"],
+            "rendered_collision_count": geometry["decoration"][
+                "rendered_collision_count"
+            ],
             "encoding": native_text["encoding"],
             "grid_columns": native_text["grid_columns"],
             "grid_rows": native_text["grid_rows"],
@@ -2089,6 +2157,7 @@ def main() -> int:
                 "represented_primitive_count"
             ],
             "empty_primitive_count": native_text["empty_primitive_count"],
+            "outline_width": native_text["outline_width"],
             "source_scale": native_text["source_scale"],
             "solid_overlay": solid_overlay,
             "collision_states": collision_states,
