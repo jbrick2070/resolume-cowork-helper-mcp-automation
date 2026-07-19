@@ -25,12 +25,12 @@ and the user explicitly approves promotion.
 - Composition name:
   `APC40_Visual_Twin_V2_Candidate_20260719T124750Z`
 - SHA-256:
-  `cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9`
+  `22bae0c136ef28f3f353fd9c6e1a5eece816beac03a28678be653d18ff67d0d8`
 - Branch: `codex/apc40-v2-overnight`
 - Latest tested candidate/artifact commit:
-  `b43979b188854a3dc868cca4fba5b80fb1609f48`
-- Red refinement commit:
-  `b7adbe15c7b97cced6ee02c7199a63150fd436c5`
+  `6265c1bc1aa8d680e28a2cf4137791db59478ec8`
+- Crossfader-base refinement commit:
+  `6265c1bc1aa8d680e28a2cf4137791db59478ec8`
 - Push state: the latest tested artifact commit is confirmed on
   `origin/codex/apc40-v2-overnight`.
 - Starting `main` / `origin/main`:
@@ -51,7 +51,7 @@ save. They remain byte-identical.
 
 ## Exact V2 addition and bypass
 
-Only one append-only layer was added above the frozen R1 range:
+Two append-only layers were added above the frozen R1 range:
 
 - Layer 149 / clip 149, column 1: `V2 Chassis Low FFT`
 - Native source: `Text Block` / `BlockTextGenerator`
@@ -70,10 +70,22 @@ Only one append-only layer was added above the frozen R1 range:
 - Added MIDI shortcuts: `0`
 - External media: `0`
 
-For instant rollback, toggle **Bypass** on layer 149. Bypass restores the R1
-image; unbypass restores V2. No protected layer needs to change.
-Final live readback shows layer 149 active, not soloed, not bypassed, with its
-thumbnail regenerated and all 149 clips playing.
+- Layer 150 / clip 150, column 1: `V2 Crossfader Base`
+- Native source: `Solid Color`
+- Color: `#b51d35ff`
+- Transform: X `637`, Y `480`, Scale `100`, Scale W `12.5`, Scale H `0.5`
+- Native rectangle: center `(1597, 1020)`, size `240 x 5.4 px`
+- Blend: `Add`
+- Layer opacity: `1.0`
+- Audio track: none
+- Effects: mandatory clip Transform only
+- Added MIDI shortcuts: `0`
+- External media: `0`
+
+For instant rollback, toggle **Bypass** on layers 149 and 150. Bypassing both
+restores the R1 image; unbypassing both restores V2. No protected layer needs
+to change. Post-save MCP readback shows both V2 layers active, not soloed, not
+bypassed, and all 150 clips playing.
 
 ## Reconciled counts
 
@@ -81,9 +93,9 @@ thumbnail regenerated and all 149 clips playing.
 |---|---:|
 | Resolution | 1920 × 1080 |
 | Decks / columns / groups | 3 / 1 / 0 |
-| Layers / clips | 149 / 149 |
-| Frozen R1 layers / added layers | 148 / 1 |
-| Generator video sources | 149 |
+| Layers / clips | 150 / 150 |
+| Frozen R1 layers / added layers | 148 / 2 |
+| Generator video sources | 150 |
 | MIDI shortcut records / unique shortcut IDs | 203 / 203 |
 | Raw MIDI messages / unique raw keys | 203 / 148 |
 | Added MIDI shortcuts / external media | 0 / 0 |
@@ -98,48 +110,52 @@ semantic mismatch was found.
 The native Text Block encodes the chassis as Unicode Braille:
 
 - Geometry JSON SHA-256:
-  `9f429e7278765ca5eb8c361ed1d3231688dcd35a214f917e9fa5c44a0d05f79f`
+  `7c50c103760c4c06f80000875f39646e6303067af79fb4f333dbe1d5e5e0a7d5`
 - Native text SHA-256:
-  `d47ef34b8f46784fce80d774d2528e28901b941a7995303ff5616cb2b656a91c`
+  `9914d821ada8eeeb881c7d625c76c85684178193000628dc9ec23a23dd005bcf`
 - Glyph grid: `160 × 60`
 - Effective dot grid: `320 × 240`
 - Vector primitives: `54`
 - Primitives represented: `54`
-- Desired dots: `5382`
-- Occupied dots: `5377`
+- Desired dots: `5376`
+- Occupied dots: `5371`
 - Deliberately clipped dots: `5`
-- Nonblank glyphs: `2221`
+- Nonblank glyphs: `2195`
 - Empty primitives: `0`
 - Vector, dot, and native text-cell collisions: `0`
 
 The native `0.22` outline is bounded by the protected maximum dot-cell
 footprint. It does not enlarge the protected geometry footprint, and the
-outline contract retains zero dot collisions.
+outline contract retains zero dot collisions. The crossfader guide in the
+Braille chassis was moved below the protected crossfader envelope. Because
+that final glyph row is cropped in Avenue, layer 150 supplies the visible
+deep-red base as an independently positioned native rectangle. Its bounds are
+`[1477.0, 1017.3, 1717.0, 1022.7]` with zero protected-box collisions.
 
 All 148 controls are protected across 295 label, witness, and motion boxes.
 Machine intersections are zero for the resting/all-visible state, complete
 fader motion envelopes, complete knob rotation hulls, both crossfader
-endpoints, chassis-only, the synthetic low-band peak, and layer-149 bypass.
+endpoints, chassis-only, the synthetic low-band peak, and layers 149–150
+bypassed.
 The corresponding physical sweeps remain open for a human.
 
 ## FFT contract
 
-FFT affects only layer-149 clip opacity:
+FFT affects only clip opacity on the two new decoration layers:
 
 - Phase source: composition FFT (`/audioengine/compositionfft`)
 - Avenue normalized low-band selection: value `0.165`, range `0.00–0.33`
 - Gain: `+3 dB`
 - Fallback: `1400 ms`
 - Output opacity: `0.65–0.95`
-- FFT nodes: `1`
+- FFT nodes: `2` total, one on each added clip
 - Geometry, position, scale, rotation, extent, hue, color, and blur modulation:
   none
 - R1 witness modulation: none
 
 The screenshots verify nonblack, pixel-distinct floor and synthetic-peak
 endpoints. The exact increasing opacity range is proved by the saved numeric FFT
-contract, not by mean monitor luma. A fresh MCP live-motion capture at the Arena
-monitor's `200 × 113` resolution quantized to `0.00`; it does not certify
+contract, not by mean monitor luma. No automated monitor capture certifies
 real-audio response. Real silence, bass, midrange, high-frequency, and
 accepted-peak calibration remains **OPEN — HUMAN TEST REQUIRED**.
 
@@ -148,7 +164,7 @@ accepted-peak calibration remains **OPEN — HUMAN TEST REQUIRED**.
 - [R1 witness baseline](screenshots/apc40-v2-20260719T124750Z/01-r1-witnesses-candidate-baseline.png)
 - [FFT silence composite](screenshots/apc40-v2-20260719T124750Z/03-v2-fft-silence-composite.png)
 - [FFT silence, layer 149 isolated](screenshots/apc40-v2-20260719T124750Z/03b-v2-fft-silence-layer.png)
-- [Layer-149 bypass / exact R1 restoration](screenshots/apc40-v2-20260719T124750Z/04-v2-bypass-r1-restore.png)
+- [Both V2 layers bypassed / exact R1 restoration](screenshots/apc40-v2-20260719T124750Z/04-v2-bypass-r1-restore.png)
 - [Synthetic low-band peak, all witnesses](screenshots/apc40-v2-20260719T124750Z/05-v2-low-band-peak-envelope.png)
 - [Synthetic low-band peak, layer 149 isolated](screenshots/apc40-v2-20260719T124750Z/05b-v2-low-band-peak-layer.png)
 - [Final restored silence state](screenshots/apc40-v2-20260719T124750Z/06-v2-final-restored.png)
@@ -156,16 +172,17 @@ accepted-peak calibration remains **OPEN — HUMAN TEST REQUIRED**.
 Baseline and bypass captures are file- and pixel-identical: `0` changed pixels,
 MAE `0`, MSE `0`, and maximum channel difference `0`.
 
-The composite floor versus synthetic peak changed `3718 / 22600` pixels
-(`16.4513%`): MAE `0.11409`, MSE `0.19412`, maximum channel difference `8`,
-and PSNR `55.2502 dB`. The isolated layer changed `3368 / 22600` pixels
-(`14.9027%`): MAE `0.09038`, MSE `0.11590`, maximum channel difference `5`,
-and PSNR `57.4900 dB`. The final restored capture is byte-identical to the
+The composite floor versus synthetic peak changed `3721 / 22600` pixels
+(`16.4646%`): MAE `0.11316`, MSE `0.19174`, maximum channel difference `8`,
+and PSNR `55.3037 dB`. The isolated chassis layer changed `3334 / 22600`
+pixels (`14.7522%`): MAE `0.08954`, MSE `0.11506`, maximum channel
+difference `5`, and PSNR `57.5216 dB`. The final restored capture is
+byte-identical to the
 floor capture.
 
 At `200 × 113`, Arena's isolated-layer RGB monitor is alpha-composited and
 downsampled. Mean luma is therefore non-monotonic as an opacity meter: the
-floor measured `2.90235` and the peak `2.85450`. Automated evidence is endpoint
+floor measured `2.87060` and the peak `2.82308`. Automated evidence is endpoint
 pixel distinctness plus the exact `0.65–0.95` numeric FFT contract; no
 monotonic-luma claim is made.
 
@@ -180,8 +197,8 @@ monotonic-luma claim is made.
 | Resolume Avenue | 1 | 45652 | exact V2 candidate active |
 | Resolume Wire application | 0 | — | closed is valid |
 
-The gateway reported 49 persistent MCP sessions; these are sessions, not
-duplicate server processes.
+The gateway reported 50 persistent MCP sessions at final validation; these are
+sessions, not duplicate server processes.
 Resolume reported no critical diagnostic issue; the sole warning was the
 expected high count of additive witness layers.
 
@@ -205,8 +222,11 @@ reopen, then accept only if V2 frame time regresses by no more than 10%.
 The structured receipt is
 [`APC40_V2_QA_20260719T124750Z.json`](APC40_V2_QA_20260719T124750Z.json).
 It reports **22 PASS, 0 failures, 3 human gates open**. The candidate and R1
-AVC files, controller XML, geometry JSON, seven PNGs, Python sources, external
-media, personal paths, and live singleton topology were validated.
+AVC files, controller XML, geometry JSON, and seven PNGs were validated together
+with external-media semantics, a personal-path scan of the candidate/geometry
+artifacts, and live singleton topology. Both Python sources passed `py_compile`
+and `git diff --check`; an independent scan of all changed public text found no
+personal filesystem path.
 
 ## Open tests
 
@@ -221,11 +241,11 @@ media, personal paths, and live singleton topology were validated.
 
 ## Five-minute morning test
 
-1. Open the exact V2 candidate above. Confirm its name, 149 layers, one column,
+1. Open the exact V2 candidate above. Confirm its name, 150 layers, one column,
    three decks, and one instance of every runtime singleton.
 2. Select `APC 40 MK II - Visual QA`; do not install or modify another XML.
-3. Trigger column 1 if needed and confirm all 149 clips are playing.
-4. Bypass layer 149, confirm exact R1 restoration, then unbypass it.
+3. Trigger column 1 if needed and confirm all 150 clips are playing.
+4. Bypass layers 149 and 150, confirm exact R1 restoration, then unbypass both.
 5. Sweep every track and master fader through minimum, midpoint, and maximum;
    confirm full travel, readability, and zero chassis intersection.
 6. Rotate every ordinary/device knob to both extremes and Tempo in both
