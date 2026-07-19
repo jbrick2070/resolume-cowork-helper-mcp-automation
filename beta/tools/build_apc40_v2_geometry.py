@@ -28,7 +28,7 @@ SOURCE_COMMIT = "7711f49"
 SOURCE_BLOB = "docs/APC40_visual_qa_geometry.json"
 R1_COMPOSITION = Path("compositions/APC40_Visual_QA_148.avc")
 R1_SHA256 = "91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99"
-RUN_ID = "20260719T124750Z"
+RUN_ID = "20260719T204648Z"
 DEFAULT_OUTPUT = Path(f"beta/APC40_V2_GEOMETRY_{RUN_ID}.json")
 
 CANVAS = (1920, 1080)
@@ -380,27 +380,31 @@ def build_primitives() -> list[dict[str, Any]]:
             line(f"track-fader-{index}", x, 787, x, 1009, "track-fader-guide")
         )
 
-    # The green user markup is a placement trace only. These larger deep-red
-    # contours replace the undersized rings and are clipped around labels.
+    # The green user markup is a placement trace only. Compare-attempt
+    # re-centering: each contour is anchored on the measured green ring so it
+    # encircles the knob witness AND its rotated label group (cx from the
+    # protected witness/label boxes; cy/radii measured per-knob from the green
+    # markup). Deliberate breaks where the ring crosses the knob or a grid label
+    # are produced by protection clipping and are acceptable.
     track_contours = [
-        (189, 122, 59, 57),
-        (322, 127, 55, 51),
-        (453, 126, 61, 49),
-        (586, 128, 56, 56),
-        (710, 122, 54, 59),
-        (837, 118, 58, 59),
-        (970, 125, 55, 56),
-        (1106, 125, 62, 52),
+        (191, 174, 56, 50),
+        (321, 174, 56, 50),
+        (451, 174, 56, 50),
+        (581, 174, 56, 50),
+        (711, 174, 56, 50),
+        (840, 174, 56, 50),
+        (970, 174, 56, 50),
+        (1100, 174, 56, 50),
     ]
     device_contours = [
-        (1345, 442, 41, 41),
-        (1476, 444, 48, 42),
-        (1609, 443, 51, 41),
-        (1740, 443, 58, 42),
-        (1345, 571, 43, 47),
-        (1474, 571, 45, 50),
-        (1610, 574, 47, 42),
-        (1737, 573, 49, 47),
+        (1337, 483, 50, 42),
+        (1467, 483, 50, 42),
+        (1597, 483, 50, 42),
+        (1727, 483, 50, 42),
+        (1337, 605, 50, 43),
+        (1467, 605, 50, 43),
+        (1597, 605, 50, 43),
+        (1727, 605, 50, 43),
     ]
     for index, (cx, cy, radius_x, radius_y) in enumerate(track_contours, 1):
         primitives.append(
@@ -425,7 +429,7 @@ def build_primitives() -> list[dict[str, Any]]:
             )
         )
     primitives.append(
-        ellipse("cue-level", 1234, 716, 56, 62, "knob-surround")
+        ellipse("cue-level", 1216, 732, 48, 50, "knob-surround")
     )
     primitives.append(circle("tempo", 1727, 303, 24, "knob-surround"))
     return primitives

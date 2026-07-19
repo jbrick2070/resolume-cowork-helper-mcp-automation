@@ -25,8 +25,9 @@ from pathlib import Path
 from typing import Any, Iterable
 
 
-RUN_ID = "20260719T124750Z"
-EXPECTED_NAME = f"APC40_Visual_Twin_V2_Candidate_{RUN_ID}"
+RUN_ID = "20260719T204648Z"
+CANDIDATE_KIND = "Compare"
+EXPECTED_NAME = f"APC40_Visual_Twin_V2_{CANDIDATE_KIND}_{RUN_ID}"
 EXPECTED_R1_AVC_SHA256 = (
     "91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99"
 )
@@ -34,23 +35,23 @@ EXPECTED_R1_MIDI_SHA256 = (
     "4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5"
 )
 EXPECTED_CANDIDATE_SHA256 = (
-    "ceaf9d54a7891c835f2bc8b43df83af9478b2a94f4349ad61a716858cf05c013"
+    "ec3a5447e9febee1f407ae59bfe9e1b44046b0b87d448aa9f8297182b756cc52"
 )
 R1_COMPOSITION = Path("compositions/APC40_Visual_QA_148.avc")
 R1_CONTROLLER = Path("controllers/APC 40 MK II - Visual QA.xml")
 DEFAULT_CANDIDATE = Path(
-    f"beta/compositions/APC40_Visual_Twin_V2_Candidate_{RUN_ID}.avc"
+    f"beta/compositions/APC40_Visual_Twin_V2_{CANDIDATE_KIND}_{RUN_ID}.avc"
 )
 DEFAULT_GEOMETRY = Path(f"beta/APC40_V2_GEOMETRY_{RUN_ID}.json")
 DEFAULT_SCREENSHOTS = Path(f"beta/screenshots/apc40-v2-{RUN_ID}")
 DEFAULT_OUTPUT = Path(f"beta/APC40_V2_QA_{RUN_ID}.json")
 EXPECTED_SCREENSHOTS = (
-    "01-r1-witnesses-candidate-baseline.png",
-    "03-v2-fft-silence-composite.png",
-    "03b-v2-fft-silence-layer.png",
+    "01-baseline.png",
+    "03-v2-fft-floor.png",
+    "03b-v2-decoration-layer-isolated.png",
     "04-v2-bypass-r1-restore.png",
-    "05-v2-low-band-peak-envelope.png",
-    "05b-v2-low-band-peak-layer.png",
+    "05-v2-fft-peak.png",
+    "05b-v2-decoration-layer-peak.png",
     "06-v2-final-restored.png",
 )
 PARAM_TAGS_WITH_VALUE = {"Param", "ParamChoice", "ParamColor", "ParamText"}
@@ -749,7 +750,13 @@ def main() -> int:
             failures.append(check_id)
 
     r1_sha = sha256_file(r1_path)
-    controller_sha = sha256_file(controller_path)
+    # The canonical R1 controller hash is the LF-normalized digest. Windows
+    # checkouts store this text file with CRLF, so the raw-byte digest differs
+    # while the file remains the accepted R1 export byte-for-byte. Normalize
+    # newlines so the identity check holds on any platform.
+    controller_sha = hashlib.sha256(
+        controller_path.read_bytes().replace(b"\r\n", b"\n")
+    ).hexdigest()
     candidate_sha = sha256_file(candidate_path)
     candidate_xml_text = candidate_path.read_text(encoding="utf-8")
     check(
@@ -1675,7 +1682,7 @@ def main() -> int:
             and geometry["protection"]["collision_count"] == 0
             and geometry["decoration"]["primitive_count"] == 72
             and geometry["decoration"]["clip_enabled_primitive_count"] == 35
-            and geometry["decoration"]["clipped_intent_collision_count"] == 45
+            and geometry["decoration"]["clipped_intent_collision_count"] == 79
             and geometry["decoration"]["collision_count"] == 0
             and geometry["decoration"]["rendered_collision_count"] == 0
             and native_text["cell_collision_count"] == 0
@@ -1684,11 +1691,11 @@ def main() -> int:
             and native_text["grid_rows"] == 60
             and native_text["effective_dot_columns"] == 320
             and native_text["effective_dot_rows"] == 240
-            and native_text["desired_dot_count"] == 6640
-            and native_text["occupied_dot_count"] == 5891
-            and native_text["clipped_dot_count"] == 749
+            and native_text["desired_dot_count"] == 6622
+            and native_text["occupied_dot_count"] == 5435
+            and native_text["clipped_dot_count"] == 1187
             and native_text["dot_collision_count"] == 0
-            and native_text["nonblank_glyph_count"] == 2334
+            and native_text["nonblank_glyph_count"] == 2235
             and native_text["represented_primitive_count"] == 72
             and native_text["empty_primitive_count"] == 0
             and approx(float(native_text["outline_width"]), 0.32)
@@ -1764,7 +1771,7 @@ def main() -> int:
             "protected_boxes": 295,
             "vector_primitives": 72,
             "clip_enabled_primitive_count": 35,
-            "clipped_intent_collision_count": 45,
+            "clipped_intent_collision_count": 79,
             "vector_collisions": 0,
             "rendered_collision_count": 0,
             "encoding": "unicode_braille_2x4",
@@ -1772,12 +1779,12 @@ def main() -> int:
             "grid_rows": 60,
             "effective_dot_columns": 320,
             "effective_dot_rows": 240,
-            "desired_dot_count": 6640,
-            "occupied_dot_count": 5891,
-            "clipped_dot_count": 749,
+            "desired_dot_count": 6622,
+            "occupied_dot_count": 5435,
+            "clipped_dot_count": 1187,
             "dot_collision_count": 0,
             "text_cell_collisions": 0,
-            "nonblank_glyph_count": 2334,
+            "nonblank_glyph_count": 2235,
             "represented_primitive_count": 72,
             "empty_primitive_count": 0,
             "outline_width": 0.32,
