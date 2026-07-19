@@ -6,275 +6,215 @@ Run ID: `20260719T124750Z`
 
 **PARTIAL — software candidate ready for human test.**
 
-The saved candidate, R1 integrity, append-only structure, MIDI contract,
-collision geometry, visual evidence, FFT configuration, external-media scan,
-and MCP singleton topology pass automated QA. Physical APC40 behavior, real
-audio calibration, a cold reopen, and comparable elevated performance capture
-remain **OPEN — HUMAN TEST REQUIRED**. Do not promote or merge this candidate
-until those checks pass and the user explicitly approves promotion.
+Automated QA reports **21 PASS, 0 failures, and 3 explicit human gates
+open**. The saved candidate, immutable R1 hashes, append-only structure, MIDI
+contract, deterministic collision geometry, representative visual evidence,
+FFT configuration, external-media scan, and MCP singleton topology pass.
+
+Physical APC40 behavior, real-audio calibration, and matched performance remain
+**OPEN — HUMAN TEST REQUIRED**. A cold reopen/persistence check is also open.
+Do not promote or merge this candidate until those checks pass and the user
+explicitly approves promotion.
 
 ## Candidate and Git receipt
 
-- Current absolute path:
+- Absolute path:
   `C:\Art Projects\Res_Fable\react-kit-apc40-v2-overnight\beta\compositions\APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc`
 - Repository path:
   `beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc`
 - Composition name:
   `APC40_Visual_Twin_V2_Candidate_20260719T124750Z`
-- Candidate SHA-256:
-  `3727adb8973f63f8988014e1b29efc03e6018900474e0ca502901f94d1883329`
+- SHA-256:
+  `52e20cf4b530979573eacd3f57d5995bbd6f7706b07b79ccc4b07713cdb473dd`
 - Branch: `codex/apc40-v2-overnight`
 - Candidate/artifact commit:
-  `2c926629e0dffab5a1ad7ace5399e15acecfcad0`
-- Starting `main`/`origin/main` commit:
+  `7b0086415cf80995a399055f1aca77bd2cc371d1`
+- Push state: that artifact commit is confirmed on
+  `origin/codex/apc40-v2-overnight`.
+- Starting `main` / `origin/main`:
   `c0a318da260b58c12c8545fe43a091bbbbc966c6`
-- Push target: `origin/codex/apc40-v2-overnight`
 
-This handoff is intentionally a later documentation commit so it can contain
-the immutable candidate/artifact commit hash above. After pulling the branch,
-`git rev-parse HEAD` identifies the handoff receipt commit.
+The handoff may be committed later than the immutable candidate/artifact commit
+so it can record that exact hash.
 
 ## R1 protection receipt
 
-Both canonical R1 files were hashed before mutation and again after the final
-candidate save. They remain byte-identical and were never overwritten,
-renamed, installed, or cleaned up.
+Both canonical R1 files were hashed before mutation and after the final V2
+save. They remain byte-identical.
 
-| Protected file | Before SHA-256 | After SHA-256 | Result |
-|---|---|---|---|
-| `compositions/APC40_Visual_QA_148.avc` | `91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99` | `91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99` | PASS |
-| `controllers/APC 40 MK II - Visual QA.xml` | `4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5` | `4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5` | PASS |
+| Protected file | Before SHA-256 | After SHA-256 |
+|---|---|---|
+| `compositions/APC40_Visual_QA_148.avc` | `91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99` | `91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99` |
+| `controllers/APC 40 MK II - Visual QA.xml` | `4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5` | `4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5` |
 
-The validator reads the canonical on-rig R1 paths because a linked worktree
-checkout may normalize XML line endings even when Git correctly reports the
-tracked controller file as unchanged.
+## Exact V2 addition and bypass
 
-## Exact V2 addition
+Only one append-only layer was added above the frozen R1 range:
 
-Only one layer was appended above the frozen R1 range:
-
-- Layer 149: `V2 Chassis Low FFT`
-- Clip 149 / column 1: `V2 Chassis Low FFT`
-- Source: native `Text Block` / `BlockTextGenerator`
-- Font dependency: installed `Cascadia Mono`, Regular
-- Text color: `#557f96ff`
-- Source size: `0.5`
-- Source line width: `5000`
-- Transform: X `-21`, Y `0`, Scale `50`, Scale W `184`, Scale H `181`
-- Layer opacity: `1.0`
+- Layer 149 / clip 149, column 1: `V2 Chassis Low FFT`
+- Native source: `Text Block` / `BlockTextGenerator`
+- Font: `Cascadia Mono`, Regular
+- Color: `#557f96ff`
+- Text size: `0.5`
+- Source Scale: `0.28`
+- Line width: `5000`
+- Transform: X `13`, Y `0`, Scale `50`, Scale W `204`, Scale H `170`
 - Blend: `Add`
+- Layer opacity: `1.0`
+- Audio track: none
+- Effects: mandatory clip Transform only
 - Added MIDI shortcuts: `0`
-- Added effects: only the mandatory clip Transform
 - External media: `0`
 
-The chassis is generated from deterministic, clipped ASCII geometry. It adds a
-subtle controller shell, section separators, rotary surrounds, eight track
-fader guides, a master guide, and a crossfader guide without entering any
-protected R1 label, witness, or full-motion envelope.
-
-Instant rollback is the layer-149 **Bypass** toggle. Bypassing layer 149 restores
-the accepted R1 image; unbypass restores V2. No R1 layer needs to be changed.
+For instant rollback, toggle **Bypass** on layer 149. Bypass restores the R1
+image; unbypass restores V2. No protected layer needs to change.
+Final live readback shows layer 149 active, not soloed, not bypassed, with its
+thumbnail regenerated and all 149 clips playing.
 
 ## Reconciled counts
 
 | Item | Count |
 |---|---:|
 | Resolution | 1920 × 1080 |
-| Decks | 3 |
-| Columns | 1 |
-| Groups | 0 |
-| Layers | 149 |
-| Frozen R1 layers | 148 |
-| Added layers | 1 |
-| Clips | 149 |
+| Decks / columns / groups | 3 / 1 / 0 |
+| Layers / clips | 149 / 149 |
+| Frozen R1 layers / added layers | 148 / 1 |
 | Generator video sources | 149 |
-| MIDI shortcut records | 203 |
-| Unique shortcut IDs | 203 |
-| Raw MIDI messages | 203 |
-| Unique raw MIDI keys | 148 |
-| Added MIDI shortcuts | 0 |
-| External media files | 0 |
+| MIDI shortcut records / unique shortcut IDs | 203 / 203 |
+| Raw MIDI messages / unique raw keys | 203 / 148 |
+| Added MIDI shortcuts / external media | 0 / 0 |
 
-The first 148 layer IDs, names, colors, render-pass behavior, clip IDs, source
-IDs/types, and static witness configuration match R1 semantically. The receipt
-also documents two accepted save-time current-value differences that do not
-change behavior: one transition-mixer runtime value and one audio numeric
-serialization drift of at most `0.0001`.
+The first 148 layer and clip identities, sources, mappings, and static witness
+semantics pass the validator. Save-time fader, rotary, crossfader, and mixer
+current values are explicitly enumerated as runtime state in the QA JSON; no
+semantic mismatch was found.
+
+## Geometry and collision QA
+
+The native Text Block encodes the chassis as Unicode Braille:
+
+- Glyph grid: `160 × 60`
+- Effective dot grid: `320 × 240`
+- Vector primitives: `54`
+- Primitives represented: `54`
+- Desired dots: `5382`
+- Occupied dots: `5377`
+- Deliberately clipped dots: `5`
+- Nonblank glyphs: `2221`
+- Empty primitives: `0`
+- Vector, dot, and native text-cell collisions: `0`
+
+All 148 controls are protected across 295 label, witness, and motion boxes.
+Machine intersections are zero for the resting/all-visible state, complete
+fader motion envelopes, complete knob rotation hulls, both crossfader
+endpoints, chassis-only, the synthetic low-band peak, and layer-149 bypass.
+The corresponding physical sweeps remain open for a human.
 
 ## FFT contract
 
-FFT affects decoration only:
+FFT affects only layer-149 clip opacity:
 
-- Target: clip 149 video opacity
 - Phase source: composition FFT (`/audioengine/compositionfft`)
-- Avenue normalized band selection: value `0.165`, range `0.00–0.33`
+- Avenue normalized low-band selection: value `0.165`, range `0.00–0.33`
 - Gain: `+3 dB`
 - Fallback: `1400 ms`
-- Output opacity: `0.12–0.28`
-- Value behavior: forward (`>`)
-- Nonzero silence floor: `0.12`
-- Bounded accepted peak: `0.28`
-- Geometry modulation: none
-- Position/scale/rotation/extent modulation: none
-- Hue/color/blur modulation: none
+- Output opacity: `0.35–0.62`
+- FFT nodes: `1`
+- Geometry, position, scale, rotation, extent, hue, color, and blur modulation:
+  none
 - R1 witness modulation: none
 
-The low-band accepted peak was synthesized only to prove the configured output
-envelope and capture visual evidence. Real bass, midrange, and high-frequency
-isolation remains a human audio test.
+The screenshots verify the configured nonzero floor and synthetic accepted
+peak. A fresh MCP live-motion sample after the final repair measured `0.00`.
+An earlier user report of motion is not treated as certification: real silence,
+bass, midrange, high-frequency, and accepted-peak audio calibration remains
+**OPEN — HUMAN TEST REQUIRED**.
 
-## Collision QA
-
-The deterministic geometry artifact protects all 148 controls with 4 px
-padding around 295 distinct label/witness/motion boxes. It contains 54 vector
-primitives and 830 surviving native text cells.
-
-| State | Method | Intersections | Human status |
-|---|---|---:|---|
-| Resting / all visible | Saved composite plus protected geometry | 0 | Automated PASS |
-| Track and master faders min/mid/max | Full protected motion boxes | 0 | Physical sweep OPEN |
-| Ordinary and device knobs at both extremes | Full rotary motion hulls | 0 | Physical sweep OPEN |
-| Crossfader at both endpoints | Full protected motion box | 0 | Physical sweep OPEN |
-| Chassis-only silence floor | Isolated layer capture | 0 | Automated PASS |
-| Implemented low-band accepted peak | Isolated layer and full composite | 0 | Real-audio peak OPEN |
-| Layer-149 bypass | R1 baseline/bypass comparison | 0 | Automated PASS |
-
-Vector collisions: `0`. Native text-cell collisions: `0`.
-
-## Visual evidence
+## Visual evidence and metrics
 
 - [R1 witness baseline](screenshots/apc40-v2-20260719T124750Z/01-r1-witnesses-candidate-baseline.png)
 - [FFT silence composite](screenshots/apc40-v2-20260719T124750Z/03-v2-fft-silence-composite.png)
 - [FFT silence, layer 149 isolated](screenshots/apc40-v2-20260719T124750Z/03b-v2-fft-silence-layer.png)
-- [Layer-149 bypass / R1 restoration](screenshots/apc40-v2-20260719T124750Z/04-v2-bypass-r1-restore.png)
-- [Synthetic low-band accepted peak, all witnesses](screenshots/apc40-v2-20260719T124750Z/05-v2-low-band-peak-envelope.png)
-- [Synthetic low-band accepted peak, layer 149 isolated](screenshots/apc40-v2-20260719T124750Z/05b-v2-low-band-peak-layer.png)
+- [Layer-149 bypass / exact R1 restoration](screenshots/apc40-v2-20260719T124750Z/04-v2-bypass-r1-restore.png)
+- [Synthetic low-band peak, all witnesses](screenshots/apc40-v2-20260719T124750Z/05-v2-low-band-peak-envelope.png)
+- [Synthetic low-band peak, layer 149 isolated](screenshots/apc40-v2-20260719T124750Z/05b-v2-low-band-peak-layer.png)
 - [Final restored silence state](screenshots/apc40-v2-20260719T124750Z/06-v2-final-restored.png)
 
-Baseline versus bypass quantitative comparison:
+Baseline and bypass captures are file- and pixel-identical: `0` changed pixels,
+MAE `0`, MSE `0`, and maximum channel difference `0`.
 
-- PSNR: `47.2251 dB`
-- MAE: `0.24109`
-- MSE: `1.23189`
-- Maximum channel difference: `36`
-- Changed pixels: `3325 / 22600` (`14.712%`)
-
-This is a near-identical restoration at monitor-capture scale; the residual is
-capture/render antialiasing noise. Silence-to-peak composite changed 435 pixels.
-The isolated chassis mean luma increased from `0.65999` to `0.67183`. The final
-restored composite is byte-identical to the silence composite. Motion analysis
-under silence measured `0.00`, confirming the chassis geometry is static.
-
-Resolume reported no critical diagnostics. Its one warning was the expected
-high count of additive witness layers. The loaded-file inventory was empty.
+Silence versus synthetic peak changed `5163 / 22600` pixels (`22.8451%`):
+MAE `0.40938`, MSE `1.69761`, maximum channel difference `18`, and PSNR
+`45.8324 dB`. Isolated-layer mean luma rose from `4.63027` to `4.97923`.
+The final restored capture is byte-identical to the silence capture.
 
 ## Runtime singleton receipt
 
-Final observed topology:
-
-| Process | Count | PID | Parent / state |
+| Process | Count | PID | State |
 |---|---:|---:|---|
-| HTTP MCP gateway | 1 | 49776 | healthy, ready, queue depth 0 |
-| Arena MCP child | 1 | 46912 | parent 49776, ready |
-| Wire MCP child | 1 | 20828 | parent 49776, ready |
+| HTTP MCP gateway | 1 | 49776 | healthy; queue depth 0 |
+| Arena MCP child | 1 | 46912 | ready; parent is gateway |
+| Wire MCP child | 1 | 20828 | ready; parent is gateway |
 | Avenue pipe bridge | 1 | 66752 | active |
 | Resolume Avenue | 1 | 45652 | exact V2 candidate active |
 | Resolume Wire application | 0 | — | closed is valid |
 
-The singleton check distinguishes persistent MCP sessions from actual server
-processes. No duplicate bridge, gateway, Arena child, Wire child, or Avenue
-application was running.
+The gateway reported 49 persistent MCP sessions; these are sessions, not
+duplicate server processes.
+Resolume reported no critical diagnostic issue; the sole warning was the
+expected high count of additive witness layers.
 
 ## Performance gate
 
 **OPEN — HUMAN TEST REQUIRED / privilege blocked.**
 
-- Baseline UI observation: `23.9 FPS` (context only)
+- Baseline UI observation: `23.9 FPS`
 - Implied frame time: `41.841 ms`
 - Comparable V2 FPS/frame time: unavailable
-- Computed regression: unavailable
-- Rejection threshold: more than `10%` frame-time regression
+- Frame-time regression: unavailable
+- Provisional rejection threshold: more than `10%`
 
-PresentMon v1.7 is installed at:
+The UI observation is context only and cannot pass the gate. Non-elevated
+PresentMon returned no samples because the user is not in `Performance Log
+Users`. Run matched elevated five-minute R1 and V2 captures after the cold
+reopen, then accept only if V2 frame time regresses by no more than 10%.
 
-`C:\Program Files\NVIDIA Corporation\FrameViewSDK\bin\PresentMon_x64.exe`
-
-The unattended, non-elevated capture exited without samples; the current user
-is not in `Performance Log Users`. Therefore neither performance pass nor
-regression percentage is claimed.
-
-Run each composition for five comparable minutes from an elevated PowerShell:
-
-```powershell
-$pm = 'C:\Program Files\NVIDIA Corporation\FrameViewSDK\bin\PresentMon_x64.exe'
-$avenuePid = (Get-Process -Name Avenue | Select-Object -First 1).Id
-& $pm --process_id $avenuePid --timed 300 --terminate_after_timed `
-  --output_stdout --no_console_stats --no_track_input `
-  --session_name APC40_R1_5m |
-  Set-Content -LiteralPath "$env:USERPROFILE\Desktop\apc40-r1-5m.csv"
-```
-
-Repeat after opening V2, changing both `R1` labels above to `V2`. Calculate:
-
-```powershell
-$r1 = (Import-Csv "$env:USERPROFILE\Desktop\apc40-r1-5m.csv" |
-  Measure-Object -Property MsBetweenPresents -Average).Average
-$v2 = (Import-Csv "$env:USERPROFILE\Desktop\apc40-v2-5m.csv" |
-  Measure-Object -Property MsBetweenPresents -Average).Average
-$regressionPercent = 100 * (($v2 / $r1) - 1)
-```
-
-Accept only when `$regressionPercent -le 10`.
-
-## Automated QA reproduction
-
-From the repository root:
-
-```powershell
-python beta/tools/build_apc40_v2_geometry.py --check
-python beta/tools/validate_apc40_v2.py `
-  --canonical-r1-root 'C:\Art Projects\Res_Fable\react-kit' --check
-```
+## Automated QA
 
 The structured receipt is
-[`beta/APC40_V2_QA_20260719T124750Z.json`](APC40_V2_QA_20260719T124750Z.json).
-It reports 21 automated checks passed, zero failures, and three explicit human
-gates open. Both generated JSON files were reopened and parsed; both Python
-tools compile; the AVC and controller XML parse; no personal path, secret
-marker, URL, or external-media reference was found.
+[`APC40_V2_QA_20260719T124750Z.json`](APC40_V2_QA_20260719T124750Z.json).
+It reports **21 PASS, 0 failures, 3 human gates open**. The candidate and R1
+AVC files, controller XML, geometry JSON, seven PNGs, Python sources, external
+media, personal paths, and live singleton topology were validated.
 
 ## Open tests
 
 - **OPEN — HUMAN TEST REQUIRED:** cold-open the saved candidate and confirm
   persistence after Resolume restart.
-- **OPEN — HUMAN TEST REQUIRED:** complete APC40 button, fader, knob, tempo,
-  crossfader, LED, feedback-color, toggle, and momentary behavior sweep.
-- **OPEN — HUMAN TEST REQUIRED:** play silence, isolated bass/low, midrange,
-  and high-frequency material and confirm only the intended low band breathes.
-- **OPEN — HUMAN TEST REQUIRED:** confirm readability of white, red, blue,
-  amber, and RGB witnesses at a real output size.
-- **OPEN — HUMAN TEST REQUIRED:** collect matched elevated 5-minute R1/V2
+- **OPEN — HUMAN TEST REQUIRED:** complete the APC40 button, fader, knob,
+  tempo, crossfader, LED, feedback-color, toggle, and momentary sweep.
+- **OPEN — HUMAN TEST REQUIRED:** play real silence, bass/low, midrange, and
+  high-frequency material and calibrate the accepted peak.
+- **OPEN — HUMAN TEST REQUIRED:** collect matched elevated five-minute R1/V2
   PresentMon intervals and enforce the 10% frame-time gate.
 
-## Five-minute morning controller test
+## Five-minute morning test
 
-1. Open the exact V2 candidate above; confirm the exact composition name,
-   149 layers, one column, three decks, and one instance of every runtime
-   singleton.
+1. Open the exact V2 candidate above. Confirm its name, 149 layers, one column,
+   three decks, and one instance of every runtime singleton.
 2. Select `APC 40 MK II - Visual QA`; do not install or modify another XML.
 3. Trigger column 1 if needed and confirm all 149 clips are playing.
-4. Toggle Bypass on layer 149: confirm the accepted R1 image returns instantly,
-   then unbypass and confirm the chassis returns.
-5. Sweep every track fader and the master fader through minimum, midpoint, and
-   maximum; verify full travel and zero chassis intersection.
-6. Rotate every ordinary/device knob to both extremes and rotate Tempo in both
-   directions; verify bounded relative behavior and zero intersection.
-7. Sweep the crossfader to both endpoints, then press every button family;
-   verify toggle/momentary behavior plus LED and feedback color families.
-8. Play silence, bass/low, midrange, and high-frequency material; confirm a
-   visible floor at silence, bounded low-band breathing, and no unintended
+4. Bypass layer 149, confirm exact R1 restoration, then unbypass it.
+5. Sweep every track and master fader through minimum, midpoint, and maximum;
+   confirm full travel, readability, and zero chassis intersection.
+6. Rotate every ordinary/device knob to both extremes and Tempo in both
+   directions; confirm bounded relative behavior and zero intersection.
+7. Sweep the crossfader to both endpoints and press every button family;
+   confirm toggle/momentary behavior plus LED and feedback colors.
+8. Play silence, bass/low, midrange, and high-frequency material; confirm the
+   visible silence floor, bounded low-band response, and no unintended
    mid/high response.
-9. Confirm all controls remain readable at accepted peak, including white,
-   red, blue, amber, and RGB witnesses; confirm no overlap anywhere.
-10. Record PASS/FAIL for each open item. Promote or merge only after all pass
-    and the user explicitly approves promotion.
+9. Confirm all white, red, blue, amber, and RGB witnesses remain readable at
+   accepted peak with zero overlap.
+10. Record PASS/FAIL for every open item. **Do not promote or merge until all
+    gates pass and the user explicitly approves promotion.**
