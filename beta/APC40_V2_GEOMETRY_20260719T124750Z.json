@@ -542,8 +542,8 @@
     "geometry_modulated": false,
     "hue_modulated": false,
     "output_range": [
-      0.35,
-      0.62
+      0.65,
+      0.95
     ],
     "phase_source": "composition_fft",
     "target": "clip video opacity"
@@ -552,7 +552,7 @@
     "cell_collision_count": 0,
     "clipped_cell_count": 5,
     "clipped_dot_count": 5,
-    "color_rgba": "#557f96ff",
+    "color_rgba": "#b51d35ff",
     "desired_dot_count": 5382,
     "dot_collision_count": 0,
     "effective_dot_columns": 320,
@@ -572,6 +572,13 @@
     "nonblank_glyph_count": 2221,
     "occupied_cells": 5377,
     "occupied_dot_count": 5377,
+    "outline_color_rgba": "#b51d35ff",
+    "outline_geometry_contract": {
+      "bounded_by": "protected maximum dot-cell geometry",
+      "dot_collision_count": 0,
+      "enlarges_protected_geometry_footprint": false
+    },
+    "outline_width": 0.22,
     "represented_primitive_count": 54,
     "size": 0.5,
     "source_scale": 0.28,
