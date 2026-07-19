@@ -1,7 +1,8 @@
 # APC40 mkII — Native MIDI Address Reference (every surface)
 
 Complete decode of every control on the APC40 mkII. **Rig-confirmed** entries were decoded
-from `APC 40 MK II - React v4.4.xml` (86 mapped controls); the rest are filled from the official
+from `beta/controllers/APC 40 MK II - React v4.4.xml` (86 mapped controls);
+the rest are filled from the official
 **Akai APC40 Mk2 Communications Protocol v1.2**. Companion diagram: `APC40_native_addresses.svg`.
 
 Encoding: note-on status = `0x90 + (channel-1)`; CC status = `0xB0 + (channel-1)`.

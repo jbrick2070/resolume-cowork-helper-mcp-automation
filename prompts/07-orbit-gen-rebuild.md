@@ -46,4 +46,4 @@ it; it is not your bug.
 VERIFY (me): five tabs, tap through each deck's columns with music -
 five different physics regimes, one instrument. Then run prompt 03
 against it for the matching APC40 layout, or use the shipped
-"APC 40 MK II - Orbit v1" preset from controllers/.
+"APC 40 MK II - Orbit v1" preset from `beta/controllers/`.

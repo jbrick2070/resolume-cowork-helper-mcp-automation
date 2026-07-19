@@ -1,7 +1,11 @@
 # APC40 mkII — Standard Layout Card (print me)
 
-Full spec: `../docs/APC40_Standard_Layout.md` · picture: `../docs/APC40_Standard_Layout.png`
-· every control + provenance: `../docs/APC40_Control_Map.xlsx` · law: `../docs/CONTROL_LOGIC.md`
+> **Beta performance layout:** this card does not describe the verified
+> 148-control Visual QA twin.
+
+Full spec: `../../docs/APC40_Standard_Layout.md` · picture:
+`../../docs/APC40_Standard_Layout.png` · every control + provenance:
+`../../docs/APC40_Control_Map.xlsx` · law: `../../docs/CONTROL_LOGIC.md`
 
 **Authoritative presets:** `APC 40 MK II - React v4.4.xml` (pairs with the Live comp) and
 `APC 40 MK II - Orbit v1.xml` (pairs with the Space/Orbit comp). Older versions retired.

@@ -1,64 +1,61 @@
-# INSTALL - zero to playing in ~10 minutes, no AI, no coding
+# INSTALL - verified APC40 mkII visual twin
 
-Four copy-paste steps. Windows paths shown; on macOS replace `Documents\`
-with `~/Documents/`. Using Arena instead of Avenue? Its folders say
-"Resolume Arena". If your Documents folder is OneDrive-managed, everything
-lives under OneDrive's Documents.
+The stable release is one tested composition/preset pair. Windows paths are
+shown; Arena uses `Resolume Arena` instead of `Resolume Avenue`.
 
-## 1. The composition
+## 1. Install the composition
 
-Copy a comp from this repo's `compositions/` into:
+Copy:
+
+    compositions\APC40_Visual_QA_148.avc
+
+to:
 
     Documents\Resolume Avenue\Compositions\
 
-- `Res React Live Gen.avc` - 6 decks of scene banks, the simpler start
-- `Res React Orbit Gen.avc` - the five-regime space journey
+Open it from Resolume's Composition menu. It contains 148 native Text Animator
+clips and has no external media dependencies.
 
-Open Resolume > Composition menu > Open, pick the file. First open takes a
-moment while thumbnails generate. Both comps are 100% generative - no
-media files needed, nothing else to download.
+## 2. Install the MIDI preset
 
-## 2. The plugins (optional but recommended)
+Close Resolume, then copy:
 
-Copy everything from this repo's `plugins/dll/` into:
+    controllers\APC 40 MK II - Visual QA.xml
 
-    Documents\Resolume Avenue\Extra Effects\
-
-(create the folder if it does not exist), then RESTART Resolume - it only
-scans that folder at startup. You get five new toys: sources "React
-Pulsar" and "React Video Musi[c]" under Sources, and three effects under
-Video Effects. Try React Pulsar in Orbit's O3 deck, column 5 - that cell
-was designed for it. Details and build-from-source: `plugins/README.md`.
-
-## 3. The controller (APC40 mkII)
-
-Copy the preset XML from this repo's `controllers/` into:
+to:
 
     Documents\Resolume Avenue\Shortcuts\MIDI\
 
-- `APC 40 MK II - Orbit v1.xml` pairs with the Orbit comp
-- `APC 40 MK II - React v4.4.xml` pairs with the Live comp
+If Windows redirects Documents to OneDrive, use the matching OneDrive
+Documents folder. On macOS use:
 
-Then in Resolume: Preferences > MIDI > enable "APC40 mkII" as INPUT **and**
-OUTPUT (output = pad colors), and select the preset for the device. The
-grid lights up within a couple of seconds. What every button does:
-`controllers/LAYOUT_CARD.md`. No APC40? `prompts/09-any-controller.md`
-maps YOUR hardware. Prefer to map by hand? `controllers/INSTALL.md` has
-the manual road with official Resolume doc links.
+    ~/Documents/Resolume Avenue/Shortcuts/MIDI/
 
-## 4. The audio
+Start Resolume with the APC40 mkII connected. In Preferences > MIDI:
 
-Preferences > Audio > set your audio INPUT device (line-in, loopback, or
-a virtual cable carrying the DJ feed). The reactive cells listen to
-external FFT - the room, not the clips. Play music; the Pulse row
-breathes. No music = cells sit at their calm floor levels, by design.
+1. enable `APC40 mkII` as both MIDI INPUT and MIDI OUTPUT;
+2. leave the device in Alternate Ableton Live Mode;
+3. select `APC 40 MK II - Visual QA`.
 
-## It's not working
+Trigger column 1 once if the labels are dark. Grid/buttons should toggle their
+matching labels, faders should move vertically, knobs should rotate, and the
+crossfader should move horizontally.
 
-- Pads launch wrong cells: power-cycle the APC; make sure Ableton or
-  another app didn't grab it first.
-- No pad colors: the APC is input-only - enable it as OUTPUT too.
-- Plugins missing: you didn't restart Resolume after copying the DLLs.
-- Preset not in the dropdown: wrong folder - note Shortcuts\MIDI, not
-  Presets. Full folder map: https://resolume.com/support/en/directory-list
-- More: `controllers/INSTALL.md` troubleshooting section.
+## Beta material
+
+`beta/` contains the older React Live and Orbit compositions and their matching
+controller presets. They are retained as experiments and are not claimed as
+end-to-end controller-verified releases.
+
+The FFGL plugins and FFT prompts are optional building material for those beta
+experiments; they are not required by the stable visual twin.
+
+## Troubleshooting
+
+- No pad colors: enable the APC40 mkII as MIDI OUTPUT as well as INPUT.
+- Preset missing: confirm the XML is in `Shortcuts\MIDI`, then restart Resolume.
+- Labels remain dark: trigger column 1.
+- Wrong device behavior: close Ableton or any other app using the APC, then
+  power-cycle it before reopening Resolume.
+- Full MIDI folder reference:
+  https://resolume.com/support/en/directory-list

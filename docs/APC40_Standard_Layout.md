@@ -108,8 +108,10 @@ Enforced by default, overridable per comp (`CONTROL_LOGIC.md` §5 is the full ta
 
 ## 6. Implementation status (the loose ends, stated)
 
-- **Authoritative presets:** `controllers/APC 40 MK II - React v4.4.xml` (selected-clip knobs,
-  freeze-safe) and `controllers/APC 40 MK II - Orbit v1.xml`. Older versions retired.
+- **Beta reference presets:** `beta/controllers/APC 40 MK II - React v4.4.xml`
+  (selected-clip knobs, freeze-safe) and
+  `beta/controllers/APC 40 MK II - Orbit v1.xml`. These are not the verified
+  148-control Visual QA preset.
 - **PROVEN and shippable now:** the Ease-of-Use core (grid launch + selected-clip knobs +
   faders). This is preset v4.4's proven material.
 - **DOC (documented, lower-risk):** the Tier-B layer-dashboard mechanism (CC16–23, Track-Select

@@ -1,5 +1,10 @@
 # Prompt 09 - Any Controller (bring your own hardware)
 
+This prompt builds a **performance mapping**. To mirror every physical control
+as an on-screen diagnostic instrument, start with
+`docs/CONTROLLER_VISUAL_TWIN_PLAYBOOK.md` and then use
+`docs/ANY_CONTROLLER_VISUAL_TWIN_PROMPT.md`.
+
 The flexible version of the controller step: you name YOUR MIDI controller
 and YOUR requirements; the agent researches the hardware's actual banks,
 buttons, and color system, derives the grid rule for it, and shapes the
@@ -60,8 +65,10 @@ PHASE 3 - MAP AND SHIP:
    feedback capped 0.95, strobe off knobs, enum/boolean params to BUTTONS not
    dials, Video Router never self-inputs. Reuse rig-proven shortcut blocks and
    diff+clone any new species per the serializer law; never emit a debunked
-   path or fabricated schema. Every shortcut: unique id, unique MIDI key;
-   validate counts equal before finishing. UTF-8 no BOM, CRLF.
+   path or fabricated schema. Every performance action: unique ID and unique
+   raw MIDI key except a serializer-required feedback sibling or another
+   explicitly documented grouping; validate the declared groups and counts
+   before finishing. UTF-8 no BOM, CRLF.
 7. Deliver: preset XML (+ helper script if needed), a layout card naming
    every control's job, and the activation steps (Preferences > MIDI,
    input AND output, which preset to pick).

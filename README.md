@@ -1,45 +1,32 @@
 # resolume-cowork-helper-mcp-automation
 
-**An AI agent can build your Resolume compositions and your customized
-controller shortcut layouts.** This kit proves it: FFT-reactive comps built
-scene by scene, a complete APC40 mkII shortcut layout authored and validated
-(91 mappings, grid colors and all), even custom FFGL plugins - plus the
-exact copy-paste prompts to make it happen on YOUR machine with YOUR clips.
-Nothing to buy; bring Resolume Avenue/Arena 7, a controller, and an agent
-(Claude Code / Cowork) with a Resolume MCP.
+**An AI agent can build your Resolume compositions and customized controller
+shortcut layouts.** The stable release is a complete APC40 mkII visual twin:
+148 native Text Animator witnesses driven by a verified 203-shortcut MIDI
+preset. The repository also includes reusable prompts, control maps, and
+experimental FFT-reactive compositions under `beta/`.
 
 > Tested on Resolume Avenue 7.27 + Resolume MCP 7.26, Windows 11.
 > Version drift is real; pin your expectations here.
-
-<!-- TODO before publish: 3 GIFs - (1) the APC grid lighting up in column
-colors, (2) a deck playing with FFT response, (3) an agent building the
-layout live. Screenshots sell this better than any paragraph. -->
 
 ## What this is
 
 Three things, in Resolume's own terms:
 
-1. **A complete Resolume composition, delivered as buildable specs.**
-   "Res React Orbit" is a full Avenue/Arena composition: 5 decks x 4
-   layers x 9 columns - 180 clip slots of named scenes, layer blend modes
-   set (Alpha/Screen/Screen/Add), a Bloom on the top layer, a bypassed
-   7-effect composition rack, and every Pulse-row clip a native generative
-   source with its opacity FFT-linked (band, gain, fallback, floor all
-   specified). The `manifests/` JSON is that composition cell by cell;
-   prompt 07 has an agent rebuild the .avc on your machine. The theme is
-   exact science - every column is a real phenomenon with a cited placard,
-   and column 9 of each deck is the TRANSIT to the next.
-2. **A customized controller shortcut layout.** A working "APC 40 MK II"
-   MIDI preset XML mapped to that composition: 91 shortcuts - clip launch
-   pads with per-column color feedback, layer opacity faders, effect
-   bypass punches, transit and deck-switch on the scene-launch buttons.
+1. **A verified controller visual twin.** `APC40_Visual_QA_148.avc` mirrors
+   every physical control without external media. Its matching preset makes
+   buttons toggle, faders travel, knobs rotate, and hardware LEDs follow the
+   APC40 mkII's actual color capabilities.
+2. **Experimental performance instruments.** The earlier React Live and
+   Orbit compositions, their controller presets, FFT manifests, and custom
+   FFGL plugins remain available under `beta/` and the supporting folders.
+   They are useful building material, but their controller pairings are not
+   part of the verified stable release.
 3. **The prompts and protocols that made both.** Nine copy-paste prompts
    so an agent does the same against YOUR composition and YOUR hardware,
    plus the crash-tested rules for letting an agent drive Avenue at all.
 
-Zero clip files ship - the composition is 100% generative sources, so it
-opens on any machine, and the manifests mark exactly where your own
-footage plugs in. Your clips, your rights, your set.
+No external clip files are required by the stable visual twin.
 
 ## Repo tree
 
@@ -58,16 +45,13 @@ resolume-cowork-helper-mcp-automation/
                 08-your-topic-pack    - ANY topic -> full 4x8-bank-optimized set
                 09-any-controller     - bring your own hardware; agent researches
                                         its banks/colors and maps to it
-  compositions/ TWO ready-to-load all-generative .avc files, every cell
-                filled and playable out of the box:
-                Res React Live Gen.avc  - 6 decks x 4x8, the simpler start
-                Res React Orbit Gen.avc - 5 decks x 4x9, the space journey
-  controllers/  APC 40 MK II - React v4.4.xml (freeze-safe) + Orbit v1.xml +
-                LAYOUT_CARD.md (printable). Prompt 03 generates an Ease-of-Use
-                + an Expert preset for any comp.
+  compositions/ APC40_Visual_QA_148.avc - verified 148-control APC40 twin
+  controllers/  APC 40 MK II - Visual QA.xml - verified 203-shortcut preset
+  beta/         older React Live + Orbit compositions and controller presets
   docs/         CONTROL_LOGIC.md          - THE control law: safety rails + knob design
-                APC40_Standard_Layout.md  - the standard layout spec (two presets, grid)
-                APC40_Control_Map.xlsx    - every control x preset + provenance (verify sheet)
+                CONTROLLER_VISUAL_TWIN_PLAYBOOK.md - reusable build guide + lessons learned
+                APC40_Standard_Layout.md  - beta performance-layout design
+                APC40_Control_Map.xlsx    - beta performance map + provenance
                 APC40_Standard_Layout.png - one-page readable layout picture
                 fft-recipe-card.md        - the wiring convention and why it feels alive
                 stability-protocol.md     - how not to crash Avenue while an agent drives
@@ -85,10 +69,7 @@ audio. No AI, no coding, ~10 minutes to a lit grid.
 The preset is just an XML file you copy into one folder, then pick from a
 menu. Step by step:
 
-1. Download a preset from this repo's `controllers/` folder:
-   `APC 40 MK II - Orbit v1.xml` (for the Orbit comp) or
-   `APC 40 MK II - React v4.4.xml` (for the Live comp; v4.4 is the freeze-safe
-   build - see `docs/CONTROL_LOGIC.md`).
+1. Download `controllers/APC 40 MK II - Visual QA.xml`.
 2. Close Resolume if it is running.
 3. Open File Explorer (Finder on Mac) and go to your Documents folder,
    then into `Resolume Avenue` > `Shortcuts` > `MIDI`. Notes: if you run
@@ -98,26 +79,23 @@ menu. Step by step:
    the folder appears.
 4. Copy the XML file into that `MIDI` folder. That is the whole install.
 5. Plug in the APC40 mkII BEFORE starting Resolume, then start Resolume
-   and open the matching composition from `compositions/`.
+   and open `compositions/APC40_Visual_QA_148.avc`.
 6. In Resolume: Avenue (or Arena) menu > Preferences > MIDI. You will see
    "APC40 mkII" listed as a device. Turn it ON as an input AND as an
    output - both checkboxes. Output is what makes the pads light up.
-7. Still in that MIDI preferences panel, next to the device there is a
-   preset dropdown - choose the preset you copied in
-   ("APC 40 MK II - Orbit v1" or "- React v4.4").
-8. Close Preferences. Within a couple of seconds the pad grid lights up
-   in the comp's column colors. Press the bottom-left pad: it should
-   launch the bottom-left clip (layer 1, column 1). Faders move layer
-   opacities; the bottom-right scene-launch button jumps to the next deck. (The printed Standard
-Layout targets Pulse on the top row and FX on the bottom; the shipping presets are being
-rolled to that — see `controllers/LAYOUT_CARD.md` "Preset status".)
+7. Still in that MIDI preferences panel, choose
+   `APC 40 MK II - Visual QA`.
+8. Close Preferences and trigger column 1 once if the labels are dark.
+   Buttons toggle their matching witnesses; faders move vertically; knobs
+   rotate; the crossfader moves horizontally.
 
 If something misbehaves: no lights means output was not enabled (step 6);
 wrong clips launching means another app (like Ableton) grabbed the
 controller first - close it and power-cycle the APC; the preset missing
 from the dropdown means the XML landed in the wrong folder (step 3).
-Full troubleshooting and the every-button map: `controllers/INSTALL.md`
-and `controllers/LAYOUT_CARD.md`.
+Full troubleshooting: `controllers/INSTALL.md`. The stable control inventory
+is in `docs/APC40_Visual_QA_Control_Map.xlsx` and
+`docs/APC40_native_addresses.md`.
 
 ## Never coded? Start here (the from-zero path)
 
@@ -144,33 +122,27 @@ clicking. Five installs-and-pastes:
 
 1. Connect your agent to a Resolume MCP; open any comp in Avenue/Arena 7.
 2. Run `prompts/01-first-contact.md`. If the reads match your screen, go.
-3. Or skip the agent entirely: open a comp from `compositions/` - both
-   ship complete. Agent roads: `prompts/07-orbit-gen-rebuild.md` (rebuild
-   the five-deck set) or `prompts/02-fft-starter-comp.md` (build a simpler
-   single-deck instrument from scratch).
-4. Drop `controllers/APC 40 MK II - Orbit v1.xml` into Resolume's MIDI
-   preset folder; Preferences > MIDI: enable the APC40 mkII as input AND
-   output; select the preset. The grid lights in your column colors.
-5. Set your audio input device (the set reacts to external FFT - the room,
-   not the clips) and play.
+3. Or skip the agent entirely: open
+   `compositions/APC40_Visual_QA_148.avc`.
+4. Install `controllers/APC 40 MK II - Visual QA.xml`; enable the APC40
+   mkII as input AND output; select that preset.
+5. Trigger column 1 if needed, then touch the hardware and watch the twin.
 
 ## Who this is for
 
-VJs who want a controller layout without hand-mapping 91 shortcuts. Agent
-users who want a real-world rig project. Skeptics: the preset XML and the
-manifests work with zero AI involved - the prompts just automate what they
-document. This kit ships TOOLS, not output; the taste stays yours.
+VJs and tinkerers who want a controller twin without hand-building 148
+layers and 203 shortcuts. The verified composition and preset work with
+zero AI involved; the prompts document how to repeat the method.
 
-## Custom sources and what ships later
+## Beta performance experiments
 
 Three Pulse cells reference sources that are not stock Avenue: React Pulsar
 (a custom FFGL source - CP1919 pulsar ridgelines, stateless, 7 scalar
 params) and two Wire patches (Golden Flicker Reel, Geometry Pattern Maker).
 Every such cell is marked `custom_source` with a native `fallback` - the set
-plays complete without them. Roadmap: ready-to-load generative `.avc` comps
-and the React Optics plugin pack land after license review of the Resolume
-FFGL SDK terms (source-only if redistribution requires it). Prompt 06 builds
-you the plugin either way.
+plays without them. The React Live and Orbit `.avc` files and their controller
+presets are retained under `beta/`; they are not claimed as end-to-end
+controller-verified builds. Prompt 06 documents the plugin build path.
 
 ## Make your OWN pack (the actual point)
 
@@ -196,16 +168,33 @@ personal paths. That is the whole tradition. Send a link.
 
 ## Build a controller visual twin
 
-The [any-controller visual-twin prompt](docs/ANY_CONTROLLER_VISUAL_TWIN_PROMPT.md)
-covers hardware research, a Text Animator twin, shortcut XML, a machine-checkable
-Excel map, chassis geometry, extreme-state QA, and optional FFT decoration. The
-APC40 mkII reference set is the
-[R1 enhancement review prompt](docs/2026-07-19-apc40-fft-enhancements/R1_REVIEW_PROMPT.md),
-the [Visual QA handoff](docs/APC40_Visual_QA_HANDOFF.md), and the
-[Visual QA control-map workbook](docs/APC40_Visual_QA_Control_Map.xlsx).
-Install `controllers/APC 40 MK II - Visual QA.xml`; the neighboring
-`- Pristine 148.xml` file is the generator's one-mapping-per-control baseline,
-not the performance preset.
+Start with the
+[controller visual-twin playbook](docs/CONTROLLER_VISUAL_TWIN_PLAYBOOK.md).
+It turns the APC40 build's failures and fixes into a reusable workflow for any
+controller: inventory, manifests, specimen-first XML, a small hardware pilot,
+live calibration, extreme-state QA, process hygiene, and rollback. Then give
+the [any-controller execution prompt](docs/ANY_CONTROLLER_VISUAL_TWIN_PROMPT.md)
+to an agent.
+
+Choose the product deliberately: the beta 91-shortcut performance design
+launches and controls a show; the stable 148-control, 203-shortcut Visual QA
+preset mirrors the physical surface for diagnosis. A visual twin may
+intentionally fan one raw CC into wake, opacity, and motion records. That is
+not a duplicate mapping bug, and it does not replace the stricter
+performance-preset rules in [Control Logic](docs/CONTROL_LOGIC.md).
+
+The APC40 mkII reference set is the
+[ready-to-open composition](compositions/APC40_Visual_QA_148.avc), the
+[accepted MIDI preset](controllers/APC%2040%20MK%20II%20-%20Visual%20QA.xml),
+the [control-map workbook](docs/APC40_Visual_QA_Control_Map.xlsx), and the
+[native address map](docs/APC40_native_addresses.md).
+
+![APC40 mkII visual twin](docs/APC40_Visual_Twin.png)
+
+Open the `.avc`, install the matching XML, enable the APC40 mkII as both MIDI
+input and output, and select `APC 40 MK II - Visual QA`. The composition has
+148 native Text Animator clips, one per physical control, and no external
+media dependencies.
 
 ## Safety, support, license
 

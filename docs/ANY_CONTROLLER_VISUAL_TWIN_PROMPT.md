@@ -1,5 +1,10 @@
 # Any MIDI Controller -> Resolume Avenue Visual Twin
 
+This is the long-form execution prompt. Read
+[Build Your Own Controller Visual Twin](CONTROLLER_VISUAL_TWIN_PLAYBOOK.md)
+first for the short workflow, the performance-map versus visual-twin decision,
+and the mistakes this prompt is designed to prevent.
+
 Copy this prompt into an agent that can inspect files, research the exact
 controller, and control Resolume Avenue. Replace the bracketed fields. The
 agent must stop at every approval gate and must never guess MIDI addresses or
@@ -294,7 +299,10 @@ Requirements:
 - one stable shortcut record per required input mapping;
 - feedback siblings where the controller and Resolume schema support them;
 - unique shortcut IDs;
-- unique raw MIDI keys except documented mode/channel distinctions;
+- unique `(raw_key, role, input_path)` tuples;
+- repeated raw MIDI keys only inside one control's declared multi-target group
+  (for example wake + opacity + motion) or a documented mode/bank distinction;
+- an expected role count for every declared multi-target group;
 - exact positional target paths for the final layer allocation;
 - correct channel numbering, note/CC status, value range, relative mode,
   trigger style, and feedback behavior;
@@ -308,7 +316,8 @@ Generate a semantic JSON representation of the XML and validate:
 - every manifest mapping appears exactly once;
 - every XML target resolves to an intended new layer and clip;
 - every physical control is covered;
-- no duplicate IDs or unexpected raw keys exist;
+- no duplicate IDs, duplicate `(raw_key, role, input_path)` tuples, incomplete
+  role groups, or unexpected raw keys exist;
 - no original shortcut target changed in clone mode;
 - serialize -> parse -> serialize preserves the accepted semantics.
 

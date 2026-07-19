@@ -131,15 +131,13 @@ leave static. Pattern/Chunk/Solid: switch per scene like the real buttons.
 
 ---
 
-## Rebuild and deploy (any of the four)
+## Rebuild (from the `plugins/` directory)
 
-```
-& "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe" "C:\Art Projects\Res_Fable\ffgl\build\windows\<Name>.vcxproj" /p:Configuration=Release /p:Platform=x64
+```powershell
+$msbuild = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+& $msbuild ".\build\<Name>.vcxproj" /p:Configuration=Release /p:Platform=x64
 ```
 
-Batch helpers: `C:\Art Projects\Res_Fable\ffgl\build_react_optics.ps1` builds
-Gate + Anamorphic + Video Music; `deploy_react_optics.ps1` verifies x64 and copies
-them to Extra Effects with display names. Scanline keeps its own
-`deploy_react_scanline.ps1`. Plugin ids registry:
-`C:\Art Projects\Res_Fable\ffgl\build\PluginIds.txt` (FSCN, FGTE, FANA, FAVM).
-Avenue only rescans Extra Effects at startup — restart it to pick up new DLLs.
+The project files are under `plugins/build/`; release binaries are under
+`plugins/dll/`. Copy the DLLs to Resolume's Extra Effects folder. Avenue only
+rescans Extra Effects at startup, so restart it to pick up new DLLs.
