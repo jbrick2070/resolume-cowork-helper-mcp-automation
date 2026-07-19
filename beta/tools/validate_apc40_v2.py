@@ -34,7 +34,7 @@ EXPECTED_R1_MIDI_SHA256 = (
     "4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5"
 )
 EXPECTED_CANDIDATE_SHA256 = (
-    "3727adb8973f63f8988014e1b29efc03e6018900474e0ca502901f94d1883329"
+    "52e20cf4b530979573eacd3f57d5995bbd6f7706b07b79ccc4b07713cdb473dd"
 )
 R1_COMPOSITION = Path("compositions/APC40_Visual_QA_148.avc")
 R1_CONTROLLER = Path("controllers/APC 40 MK II - Visual QA.xml")
@@ -54,6 +54,41 @@ EXPECTED_SCREENSHOTS = (
     "06-v2-final-restored.png",
 )
 PARAM_TAGS_WITH_VALUE = {"Param", "ParamChoice", "ParamColor", "ParamText"}
+LAYER_RUNTIME_PARAMETERS = frozenset(
+    {
+        (None, "Master"),
+        ("audio_track", "Volume"),
+        ("video_track", "Opacity"),
+        ("layer_blend_mixer", "Opacity"),
+        ("transition_mixer_current_state", "Opacity"),
+    }
+)
+CLIP_RUNTIME_PARAMETERS_BY_PROTOTYPE = {
+    "vertical_fader": frozenset(
+        {
+            ("video_track", "Opacity"),
+            ("render_pass:TransformEffect", "Position Y"),
+        }
+    ),
+    "rotary": frozenset(
+        {
+            ("video_track", "Opacity"),
+            ("render_pass:TransformEffect", "Rotation Z"),
+        }
+    ),
+    "small_rotary": frozenset(
+        {
+            ("video_track", "Opacity"),
+            ("render_pass:TransformEffect", "Rotation Z"),
+        }
+    ),
+    "crossfader": frozenset(
+        {
+            ("video_track", "Opacity"),
+            ("render_pass:TransformEffect", "Position X"),
+        }
+    ),
+}
 MEDIA_EXTENSIONS = re.compile(
     r"\.(?:avi|bmp|flac|gif|jpeg|jpg|m4a|mkv|mov|mp3|mp4|mpeg|mpg|png|"
     r"tif|tiff|wav|webm)(?:$|[?#])",
@@ -115,16 +150,26 @@ def parameter_context(
     node: ET.Element, parents: dict[ET.Element, ET.Element]
 ) -> str | None:
     current = node
+    render_context: str | None = None
+    video_context: str | None = None
     while current in parents:
         current = parents[current]
-        if (
-            current.tag == "ChoosableMixer"
-            and current.attrib.get("name") == "Transition"
-        ):
-            return "transition_mixer_current_state"
+        if current.tag == "ChoosableMixer":
+            if current.attrib.get("name") == "Transition":
+                return "transition_mixer_current_state"
+            if current.attrib.get("name") == "Blend":
+                return "layer_blend_mixer"
         if current.tag == "AudioTrack":
             return "audio_track"
-    return None
+        if current.tag == "RenderPass" and render_context is None:
+            render_context = "render_pass:" + (
+                current.attrib.get("type")
+                or current.attrib.get("name")
+                or "unknown"
+            )
+        if current.tag == "VideoTrack":
+            video_context = "video_track"
+    return render_context or video_context
 
 
 def static_parameter_signature(entity: ET.Element) -> list[dict[str, Any]]:
@@ -181,49 +226,65 @@ def static_parameter_signature(entity: ET.Element) -> list[dict[str, Any]]:
     return signature
 
 
-def layer_parameters_equivalent(
+def partition_parameters(
+    records: list[dict[str, Any]],
+    runtime_keys: frozenset[tuple[str | None, str]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    protected: list[dict[str, Any]] = []
+    runtime: list[dict[str, Any]] = []
+    for record in records:
+        key = (record.get("context"), record.get("name"))
+        target = runtime if key in runtime_keys else protected
+        target.append(record)
+    return protected, runtime
+
+
+def runtime_records_are_static(records: list[dict[str, Any]]) -> bool:
+    """Runtime-value exceptions may never hide animation or range changes."""
+
+    return all(
+        record.get("tag") == "ParamRange"
+        and record.get("type") == "DOUBLE"
+        and record.get("phase") in (None, "PhaseSourceStatic")
+        and record.get("link_id") is None
+        and record.get("range") is None
+        for record in records
+    )
+
+
+def accepted_runtime_parameter_changes(
     baseline: list[dict[str, Any]],
     candidate: list[dict[str, Any]],
-) -> tuple[bool, list[dict[str, Any]]]:
-    """Allow only known save-time current-state and sub-0.0001 numeric drift."""
+    runtime_keys: frozenset[tuple[str | None, str]],
+    reason: str,
+) -> list[dict[str, Any]]:
+    """Describe only allowlisted runtime records that actually changed."""
 
-    if len(baseline) != len(candidate):
-        return False, []
-    accepted: list[dict[str, Any]] = []
-    for before, after in zip(baseline, candidate):
-        if before == after:
-            continue
-        before_without_value = {
-            key: value for key, value in before.items() if key != "value"
-        }
-        after_without_value = {
-            key: value for key, value in after.items() if key != "value"
-        }
-        if before_without_value != after_without_value:
-            return False, accepted
-        before_value = before.get("value")
-        after_value = after.get("value")
-        reason: str | None = None
-        if before.get("context") == "transition_mixer_current_state":
-            reason = "transition mixer current value is save-time runtime state"
-        else:
-            try:
-                if abs(float(before_value) - float(after_value)) <= 0.0001:
-                    reason = "numeric serialization drift <= 0.0001"
-            except (TypeError, ValueError):
-                pass
-        if reason is None:
-            return False, accepted
-        accepted.append(
-            {
-                "context": before.get("context"),
-                "parameter": before.get("name"),
-                "baseline_value": before_value,
-                "candidate_value": after_value,
-                "reason": reason,
-            }
-        )
-    return True, accepted
+    changes: list[dict[str, Any]] = []
+    for context, name in sorted(runtime_keys, key=str):
+        before = [
+            record
+            for record in baseline
+            if (record.get("context"), record.get("name")) == (context, name)
+        ]
+        after = [
+            record
+            for record in candidate
+            if (record.get("context"), record.get("name")) == (context, name)
+        ]
+        if before != after:
+            changes.append(
+                {
+                    "context": context,
+                    "parameter": name,
+                    "baseline_record_count": len(before),
+                    "candidate_record_count": len(after),
+                    "baseline_values": [record.get("value") for record in before],
+                    "candidate_values": [record.get("value") for record in after],
+                    "reason": reason,
+                }
+            )
+    return changes
 
 
 def protected_layer_equivalent(
@@ -234,8 +295,56 @@ def protected_layer_equivalent(
     for key in ("attrs", "name", "render_passes"):
         if before[key] != after[key]:
             return False, []
-    return layer_parameters_equivalent(
-        before["parameters"], after["parameters"]
+    before_protected, before_runtime = partition_parameters(
+        before["parameters"], LAYER_RUNTIME_PARAMETERS
+    )
+    after_protected, after_runtime = partition_parameters(
+        after["parameters"], LAYER_RUNTIME_PARAMETERS
+    )
+    accepted = accepted_runtime_parameter_changes(
+        before_runtime,
+        after_runtime,
+        LAYER_RUNTIME_PARAMETERS,
+        "save-time layer mixer state",
+    )
+    return (
+        before_protected == after_protected
+        and runtime_records_are_static(before_runtime)
+        and runtime_records_are_static(after_runtime),
+        accepted,
+    )
+
+
+def protected_clip_equivalent(
+    baseline: ET.Element,
+    candidate: ET.Element,
+    prototype: str | None,
+) -> tuple[bool, list[dict[str, Any]]]:
+    before = clip_fingerprint(baseline)
+    after = clip_fingerprint(candidate)
+    for key in ("attrs", "name", "render_passes", "sources"):
+        if before[key] != after[key]:
+            return False, []
+    runtime_keys = CLIP_RUNTIME_PARAMETERS_BY_PROTOTYPE.get(
+        prototype, frozenset()
+    )
+    before_protected, before_runtime = partition_parameters(
+        before["parameters"], runtime_keys
+    )
+    after_protected, after_runtime = partition_parameters(
+        after["parameters"], runtime_keys
+    )
+    accepted = accepted_runtime_parameter_changes(
+        before_runtime,
+        after_runtime,
+        runtime_keys,
+        f"save-time {prototype or 'unclassified'} control state",
+    )
+    return (
+        before_protected == after_protected
+        and runtime_records_are_static(before_runtime)
+        and runtime_records_are_static(after_runtime),
+        accepted,
     )
 
 
@@ -437,7 +546,8 @@ def image_metrics(first: Path, second: Path) -> dict[str, Any]:
         "height": height_a,
         "mae": sum(differences) / len(differences),
         "mse": mse,
-        "psnr_db": math.inf if mse == 0 else 10 * math.log10((255**2) / mse),
+        "psnr_db": None if mse == 0 else 10 * math.log10((255**2) / mse),
+        "pixel_identical": mse == 0,
         "max_channel_difference": max(differences, default=0),
         "changed_pixels": changed_pixels,
         "changed_percent": 100 * changed_pixels / pixel_count,
@@ -733,7 +843,7 @@ def main() -> int:
     )
 
     protected_layer_mismatches: list[int] = []
-    protected_layer_transients: list[dict[str, Any]] = []
+    accepted_layer_runtime_state: list[dict[str, Any]] = []
     for index, (baseline, candidate) in enumerate(
         zip(baseline_layers, candidate_layers[:148])
     ):
@@ -741,37 +851,84 @@ def main() -> int:
         if not equivalent:
             protected_layer_mismatches.append(index + 1)
         for item in accepted:
-            protected_layer_transients.append({"layer": index + 1, **item})
-    protected_clip_mismatches = [
-        index + 1
-        for index, (baseline, candidate) in enumerate(
-            zip(baseline_clips, candidate_clips[:148])
+            accepted_layer_runtime_state.append(
+                {
+                    "layer": index + 1,
+                    "layer_name": element_name(candidate),
+                    **item,
+                }
+            )
+
+    controls_by_layer = {
+        int(control["layer"]): control
+        for control in geometry["protection"]["controls"]
+    }
+    protected_clip_mismatches: list[int] = []
+    accepted_clip_runtime_state: list[dict[str, Any]] = []
+    for baseline, candidate in zip(baseline_clips, candidate_clips[:148]):
+        layer = int(candidate.attrib["layerIndex"]) + 1
+        control = controls_by_layer.get(layer)
+        prototype = None if control is None else str(control["prototype"])
+        equivalent, accepted = protected_clip_equivalent(
+            baseline, candidate, prototype
         )
-        if clip_fingerprint(baseline) != clip_fingerprint(candidate)
-    ]
+        if not equivalent:
+            protected_clip_mismatches.append(layer)
+        for item in accepted:
+            accepted_clip_runtime_state.append(
+                {
+                    "layer": layer,
+                    "clip_name": element_name(candidate),
+                    "control_name": (
+                        None if control is None else control["layer_name"]
+                    ),
+                    "prototype": prototype,
+                    **item,
+                }
+            )
     check(
         "protected_layer_fingerprints",
         len(baseline_layers) == 148 and not protected_layer_mismatches,
         {
             "semantic_mismatches": protected_layer_mismatches,
-            "accepted_save_time_transients": protected_layer_transients,
+            "accepted_runtime_state": accepted_layer_runtime_state,
         },
         {
             "semantic_mismatches": [],
-            "accepted_save_time_transients": "documented if present",
+            "accepted_runtime_state": "documented if present",
         },
         (
-            "Layer identities, behavior/render-pass structure, and static "
-            "parameters; transition current-state is excluded and numeric "
-            "serialization drift is limited to 0.0001"
+            "Layer attrs/name/render passes and every parameter except exact "
+            "runtime mixer paths for Master, Volume, and Opacity; runtime "
+            "records must remain static/unlinked and every change is listed"
         ),
     )
     check(
         "protected_clip_fingerprints",
-        len(baseline_clips) == 148 and not protected_clip_mismatches,
-        protected_clip_mismatches,
-        [],
-        "Clip/source identities and static visual/animation configuration",
+        (
+            len(baseline_clips) == 148
+            and len(controls_by_layer) == 148
+            and not protected_clip_mismatches
+        ),
+        {
+            "geometry_control_layers": len(controls_by_layer),
+            "semantic_mismatches": protected_clip_mismatches,
+            "accepted_runtime_state": accepted_clip_runtime_state,
+        },
+        {
+            "geometry_control_layers": 148,
+            "semantic_mismatches": [],
+            "accepted_runtime_state": "documented if present",
+        },
+        (
+            "Clip attrs/name/render passes/source signatures and every "
+            "parameter except prototype- and path-scoped VideoTrack/Transform "
+            "runtime fields: vertical_fader Opacity/Position Y, rotary or "
+            "small_rotary Opacity/Rotation Z, and crossfader Opacity/Position "
+            "X; runtime records must remain static/unlinked, while source "
+            "Opacity, phase, link, range, Text, Color, and all other records "
+            "remain exact"
+        ),
     )
 
     preset = direct_named_param(candidate_root, "Param", "MidiShortcutPreset")
@@ -880,6 +1037,9 @@ def main() -> int:
     size_node = None if source_render is None else named_param(
         source_render, "ParamRange", "Size"
     )
+    source_scale_node = None if source_render is None else named_param(
+        source_render, "ParamRange", "Scale"
+    )
     line_width_node = None if source_render is None else named_param(
         source_render, "ParamRange", "Line Width"
     )
@@ -928,6 +1088,7 @@ def main() -> int:
             and style_node is not None
             and style_node.attrib.get("value") == "Regular"
             and approx(as_float(size_node) or -1, 0.5)
+            and approx(as_float(source_scale_node) or -1, 0.28)
             and approx(as_float(line_width_node) or -1, 5000.0)
             and color_node is not None
             and color_node.attrib.get("value") == "4288053077"
@@ -945,6 +1106,7 @@ def main() -> int:
             "font": None if font_node is None else font_node.attrib.get("value"),
             "style": None if style_node is None else style_node.attrib.get("value"),
             "size": as_float(size_node),
+            "source_scale": as_float(source_scale_node),
             "line_width": as_float(line_width_node),
             "color_abgr": None if color_node is None else color_node.attrib.get("value"),
             "text_sha256": candidate_text_sha,
@@ -963,6 +1125,7 @@ def main() -> int:
             "font": "Cascadia Mono",
             "style": "Regular",
             "size": 0.5,
+            "source_scale": 0.28,
             "line_width": 5000.0,
             "color_rgba": "#557f96ff",
             "text_sha256": geometry["native_text_block"]["text_sha256"],
@@ -984,11 +1147,11 @@ def main() -> int:
         )
         transform_actual[name] = 0.0 if node is None and name == "Position Y" else as_float(node)
     expected_transform = {
-        "Position X": -21.0,
+        "Position X": 13.0,
         "Position Y": 0.0,
         "Scale": 50.0,
-        "Scale W": 184.0,
-        "Scale H": 181.0,
+        "Scale W": 204.0,
+        "Scale H": 170.0,
     }
     check(
         "v2_transform_static",
@@ -1044,9 +1207,9 @@ def main() -> int:
             and fft_actual["fallback_ms"] is not None
             and approx(fft_actual["fallback_ms"], 1400.0)
             and fft_actual["output_min"] is not None
-            and approx(fft_actual["output_min"], 0.12)
+            and approx(fft_actual["output_min"], 0.35)
             and fft_actual["output_max"] is not None
-            and approx(fft_actual["output_max"], 0.28)
+            and approx(fft_actual["output_max"], 0.62)
             and fft_actual["fft_node_count"] == 1
             and fft_actual["target_is_clip_opacity"]
         ),
@@ -1058,8 +1221,8 @@ def main() -> int:
             "frequency_max": 0.33,
             "gain_db": 3.0,
             "fallback_ms": 1400.0,
-            "output_min": 0.12,
-            "output_max": 0.28,
+            "output_min": 0.35,
+            "output_max": 0.62,
             "fft_node_count": 1,
             "target_is_clip_opacity": True,
         },
@@ -1075,6 +1238,7 @@ def main() -> int:
     track_guides = [
         item for item in primitives if item["family"] == "track-fader-guide"
     ]
+    native_text = geometry["native_text_block"]
     check(
         "geometry_collision_contract",
         (
@@ -1082,7 +1246,20 @@ def main() -> int:
             and geometry["protection"]["collision_count"] == 0
             and geometry["decoration"]["primitive_count"] == 54
             and geometry["decoration"]["collision_count"] == 0
-            and geometry["native_text_block"]["cell_collision_count"] == 0
+            and native_text["cell_collision_count"] == 0
+            and native_text["encoding"] == "unicode_braille_2x4"
+            and native_text["grid_columns"] == 160
+            and native_text["grid_rows"] == 60
+            and native_text["effective_dot_columns"] == 320
+            and native_text["effective_dot_rows"] == 240
+            and native_text["desired_dot_count"] == 5382
+            and native_text["occupied_dot_count"] == 5377
+            and native_text["clipped_dot_count"] == 5
+            and native_text["dot_collision_count"] == 0
+            and native_text["nonblank_glyph_count"] == 2221
+            and native_text["represented_primitive_count"] == 54
+            and native_text["empty_primitive_count"] == 0
+            and approx(float(native_text["source_scale"]), 0.28)
             and len(track_guides) == 8
         ),
         {
@@ -1090,10 +1267,22 @@ def main() -> int:
             "protected_boxes": geometry["protection"]["box_count"],
             "vector_primitives": geometry["decoration"]["primitive_count"],
             "vector_collisions": geometry["decoration"]["collision_count"],
-            "occupied_text_cells": geometry["native_text_block"]["occupied_cells"],
-            "text_cell_collisions": geometry["native_text_block"][
-                "cell_collision_count"
+            "encoding": native_text["encoding"],
+            "grid_columns": native_text["grid_columns"],
+            "grid_rows": native_text["grid_rows"],
+            "effective_dot_columns": native_text["effective_dot_columns"],
+            "effective_dot_rows": native_text["effective_dot_rows"],
+            "desired_dot_count": native_text["desired_dot_count"],
+            "occupied_dot_count": native_text["occupied_dot_count"],
+            "clipped_dot_count": native_text["clipped_dot_count"],
+            "dot_collision_count": native_text["dot_collision_count"],
+            "text_cell_collisions": native_text["cell_collision_count"],
+            "nonblank_glyph_count": native_text["nonblank_glyph_count"],
+            "represented_primitive_count": native_text[
+                "represented_primitive_count"
             ],
+            "empty_primitive_count": native_text["empty_primitive_count"],
+            "source_scale": native_text["source_scale"],
             "track_fader_guides": len(track_guides),
             "prototype_counts": prototype_counts,
         },
@@ -1101,7 +1290,20 @@ def main() -> int:
             "controls": 148,
             "vector_primitives": 54,
             "vector_collisions": 0,
+            "encoding": "unicode_braille_2x4",
+            "grid_columns": 160,
+            "grid_rows": 60,
+            "effective_dot_columns": 320,
+            "effective_dot_rows": 240,
+            "desired_dot_count": 5382,
+            "occupied_dot_count": 5377,
+            "clipped_dot_count": 5,
+            "dot_collision_count": 0,
             "text_cell_collisions": 0,
+            "nonblank_glyph_count": 2221,
+            "represented_primitive_count": 54,
+            "empty_primitive_count": 0,
+            "source_scale": 0.28,
             "track_fader_guides": 8,
         },
         "resting, fader/knob motion hull, crossfader, and chassis geometry",
@@ -1147,14 +1349,23 @@ def main() -> int:
     peak_layer_image = screenshot_dir / EXPECTED_SCREENSHOTS[5]
     final_image = screenshot_dir / EXPECTED_SCREENSHOTS[6]
     bypass_metrics = image_metrics(baseline_image, bypass_image)
+    bypass_sha_identical = (
+        sha256_file(baseline_image) == sha256_file(bypass_image)
+    )
     silence_peak_metrics = image_metrics(silence_image, peak_image)
     layer_silence_luma = mean_luma(silence_layer_image)
     layer_peak_luma = mean_luma(peak_layer_image)
     check(
         "bypass_restores_r1",
-        bypass_metrics["psnr_db"] >= 40.0,
-        bypass_metrics,
-        "PSNR >= 40 dB",
+        bypass_metrics["pixel_identical"] and bypass_sha_identical,
+        {
+            "metrics": bypass_metrics,
+            "file_sha_identical": bypass_sha_identical,
+        },
+        {
+            "pixel_identical": True,
+            "file_sha_identical": True,
+        },
         "R1 baseline versus V2-layer bypass capture",
     )
     check(
@@ -1380,9 +1591,24 @@ def main() -> int:
             "protected_boxes": geometry["protection"]["box_count"],
             "vector_primitives": geometry["decoration"]["primitive_count"],
             "vector_collisions": geometry["decoration"]["collision_count"],
-            "native_text_cell_collisions": geometry["native_text_block"][
+            "encoding": native_text["encoding"],
+            "grid_columns": native_text["grid_columns"],
+            "grid_rows": native_text["grid_rows"],
+            "effective_dot_columns": native_text["effective_dot_columns"],
+            "effective_dot_rows": native_text["effective_dot_rows"],
+            "desired_dot_count": native_text["desired_dot_count"],
+            "occupied_dot_count": native_text["occupied_dot_count"],
+            "clipped_dot_count": native_text["clipped_dot_count"],
+            "dot_collision_count": native_text["dot_collision_count"],
+            "native_text_cell_collisions": native_text[
                 "cell_collision_count"
             ],
+            "nonblank_glyph_count": native_text["nonblank_glyph_count"],
+            "represented_primitive_count": native_text[
+                "represented_primitive_count"
+            ],
+            "empty_primitive_count": native_text["empty_primitive_count"],
+            "source_scale": native_text["source_scale"],
             "collision_states": collision_states,
         },
         "visual_metrics": {

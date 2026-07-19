@@ -35,8 +35,22 @@ CANVAS = (1920, 1080)
 SAFE_BOX = (112.0, 66.0, 1808.0, 1022.0)
 PADDING = 4.0
 STROKE = 2.0
-GRID_COLUMNS = 128
-GRID_ROWS = 48
+GRID_COLUMNS = 160
+GRID_ROWS = 60
+DOT_COLUMNS = GRID_COLUMNS * 2
+DOT_ROWS = GRID_ROWS * 4
+
+# Unicode Braille stores a 2x4 dot tile in one fixed-width character.
+BRAILLE_BITS = {
+    (0, 0): 0x01,
+    (0, 1): 0x02,
+    (0, 2): 0x04,
+    (0, 3): 0x40,
+    (1, 0): 0x08,
+    (1, 1): 0x10,
+    (1, 2): 0x20,
+    (1, 3): 0x80,
+}
 
 
 def sha256_file(path: Path) -> str:
@@ -253,60 +267,72 @@ def primitive_collisions(
     return result
 
 
-def coordinate_to_cell(
-    x: float, y: float, columns: int = GRID_COLUMNS, rows: int = GRID_ROWS
-) -> tuple[int, int]:
+def coordinate_to_dot(x: float, y: float) -> tuple[int, int]:
     x1, y1, x2, y2 = SAFE_BOX
-    column = round((x - x1) * (columns - 1) / (x2 - x1))
-    row = round((y - y1) * (rows - 1) / (y2 - y1))
+    step_x = (x2 - x1) / DOT_COLUMNS
+    step_y = (y2 - y1) / DOT_ROWS
+    column = math.floor((x - x1) / step_x)
+    row = math.floor((y - y1) / step_y)
     return (
-        max(0, min(columns - 1, column)),
-        max(0, min(rows - 1, row)),
+        max(0, min(DOT_COLUMNS - 1, column)),
+        max(0, min(DOT_ROWS - 1, row)),
     )
 
 
-def cell_box(column: int, row: int) -> list[float]:
+def dot_box(column: int, row: int) -> list[float]:
     x1, y1, x2, y2 = SAFE_BOX
-    step_x = (x2 - x1) / (GRID_COLUMNS - 1)
-    step_y = (y2 - y1) / (GRID_ROWS - 1)
-    cx = x1 + column * step_x
-    cy = y1 + row * step_y
-    return [cx - step_x / 2, cy - step_y / 2, cx + step_x / 2, cy + step_y / 2]
+    step_x = (x2 - x1) / DOT_COLUMNS
+    step_y = (y2 - y1) / DOT_ROWS
+    return [
+        x1 + column * step_x,
+        y1 + row * step_y,
+        x1 + (column + 1) * step_x,
+        y1 + (row + 1) * step_y,
+    ]
 
 
-def cells_for_primitive(primitive: dict[str, Any]) -> set[tuple[int, int]]:
-    cells: set[tuple[int, int]] = set()
+def dots_for_primitive(primitive: dict[str, Any]) -> set[tuple[int, int]]:
+    dots: set[tuple[int, int]] = set()
     if primitive["kind"] == "line":
-        c1, r1 = coordinate_to_cell(primitive["x1"], primitive["y1"])
-        c2, r2 = coordinate_to_cell(primitive["x2"], primitive["y2"])
+        c1, r1 = coordinate_to_dot(primitive["x1"], primitive["y1"])
+        c2, r2 = coordinate_to_dot(primitive["x2"], primitive["y2"])
         if c1 == c2:
             for row in range(min(r1, r2), max(r1, r2) + 1):
-                cells.add((c1, row))
+                dots.add((c1, row))
         else:
             for column in range(min(c1, c2), max(c1, c2) + 1):
-                cells.add((column, r1))
+                dots.add((column, r1))
     else:
         circumference = 2.0 * math.pi * primitive["radius"]
-        samples = max(24, int(circumference / 4.0))
+        x1, y1, x2, y2 = SAFE_BOX
+        step_x = (x2 - x1) / DOT_COLUMNS
+        step_y = (y2 - y1) / DOT_ROWS
+        samples = max(
+            96,
+            math.ceil(circumference / min(step_x, step_y) * 4.0),
+        )
         for index in range(samples):
             angle = 2.0 * math.pi * index / samples
             x = primitive["cx"] + math.cos(angle) * primitive["radius"]
             y = primitive["cy"] + math.sin(angle) * primitive["radius"]
-            cells.add(coordinate_to_cell(x, y))
-    return cells
+            dots.add(coordinate_to_dot(x, y))
+    return dots
 
 
 def grid_text(
     primitives: list[dict[str, Any]], protected: list[dict[str, Any]]
-) -> tuple[str, list[dict[str, Any]], int]:
+) -> tuple[str, dict[str, Any]]:
     desired: set[tuple[int, int]] = set()
+    primitive_dots: dict[str, set[tuple[int, int]]] = {}
     for primitive in primitives:
-        desired.update(cells_for_primitive(primitive))
+        dots = dots_for_primitive(primitive)
+        primitive_dots[primitive["id"]] = dots
+        desired.update(dots)
 
     occupied: set[tuple[int, int]] = set()
     clipped: list[dict[str, Any]] = []
     for column, row in sorted(desired, key=lambda item: (item[1], item[0])):
-        box = cell_box(column, row)
+        box = dot_box(column, row)
         hits = [
             record
             for record in protected
@@ -317,64 +343,65 @@ def grid_text(
                 {
                     "column": column,
                     "row": row,
-                    "cell_box": [round(value, 3) for value in box],
+                    "dot_box": [round(value, 6) for value in box],
                     "protected_layers": sorted({record["layer"] for record in hits}),
                 }
             )
         else:
             occupied.add((column, row))
 
-    # ASCII keeps the live source immune to Windows code-page differences.
-    # Corners/intersections use '+', straight runs use '-'/'|', and isolated
-    # samples from a clipped rotary surround use a quiet dot.
-    glyphs = {
-        0: ".",
-        1: "-",
-        2: "|",
-        3: "+",
-        4: "-",
-        5: "-",
-        6: "+",
-        7: "+",
-        8: "|",
-        9: "+",
-        10: "|",
-        11: "+",
-        12: "+",
-        13: "+",
-        14: "+",
-        15: "+",
-    }
+    empty_primitives = sorted(
+        primitive_id
+        for primitive_id, dots in primitive_dots.items()
+        if not (dots & occupied)
+    )
+    if empty_primitives:
+        raise AssertionError(
+            "native Braille raster lost complete primitives: "
+            + ", ".join(empty_primitives)
+        )
+
+    # U+2800 is a non-collapsing blank glyph in Cascadia Mono. Keeping every
+    # row at exactly 160 characters prevents Text Block from re-aligning short
+    # rows, while each visible glyph packs a 2x4 dot tile.
     lines: list[str] = []
     for row in range(GRID_ROWS):
         chars: list[str] = []
         for column in range(GRID_COLUMNS):
-            if (column, row) not in occupied:
-                chars.append(" ")
-                continue
             mask = 0
-            if (column - 1, row) in occupied:
-                mask |= 1
-            if (column, row - 1) in occupied:
-                mask |= 2
-            if (column + 1, row) in occupied:
-                mask |= 4
-            if (column, row + 1) in occupied:
-                mask |= 8
-            chars.append(glyphs[mask])
-        lines.append("".join(chars).rstrip())
-    text = "\n".join(lines).rstrip() + "\n"
+            for local_x in range(2):
+                for local_y in range(4):
+                    if (
+                        column * 2 + local_x,
+                        row * 4 + local_y,
+                    ) in occupied:
+                        mask |= BRAILLE_BITS[(local_x, local_y)]
+            chars.append(chr(0x2800 + mask))
+        lines.append("".join(chars))
+    text = "\n".join(lines)
 
-    # Recheck the surviving character cells as maximum ink rectangles.
-    cell_collisions = 0
+    # Recheck each surviving logical dot as a maximum ink rectangle.
+    dot_collisions = 0
     for column, row in occupied:
-        box = cell_box(column, row)
-        cell_collisions += sum(
+        box = dot_box(column, row)
+        dot_collisions += sum(
             1 for record in protected if boxes_overlap(box, record["padded_box"])
         )
-    if cell_collisions:
-        raise AssertionError(f"character cell collision count is {cell_collisions}")
-    return text, clipped, len(occupied)
+    if dot_collisions:
+        raise AssertionError(f"Braille dot collision count is {dot_collisions}")
+
+    nonblank_glyph_count = sum(
+        1 for line_text in lines for glyph in line_text if ord(glyph) != 0x2800
+    )
+    return text, {
+        "desired_dot_count": len(desired),
+        "occupied_dot_count": len(occupied),
+        "clipped_dot_count": len(clipped),
+        "dot_collision_count": dot_collisions,
+        "nonblank_glyph_count": nonblank_glyph_count,
+        "represented_primitive_count": len(primitives) - len(empty_primitives),
+        "empty_primitive_count": len(empty_primitives),
+    }
 
 
 def build(repo_root: Path) -> dict[str, Any]:
@@ -402,7 +429,7 @@ def build(repo_root: Path) -> dict[str, Any]:
         preview = json.dumps(collisions[:8], indent=2)
         raise AssertionError(f"vector collisions found:\n{preview}")
 
-    text, clipped_cells, occupied_cells = grid_text(primitives, protected)
+    text, text_metrics = grid_text(primitives, protected)
     text_sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
     source_blob_sha = hashlib.sha256(
         json.dumps(source, sort_keys=True, separators=(",", ":")).encode("utf-8")
@@ -435,20 +462,34 @@ def build(repo_root: Path) -> dict[str, Any]:
             "style": "Regular",
             "color_rgba": "#557f96ff",
             "size": 0.5,
+            "source_scale": 0.28,
             "line_width": 5000.0,
             "transform": {
-                "position_x": -21.0,
+                "position_x": 13.0,
                 "position_y": 0.0,
                 "scale": 50.0,
-                "scale_w": 184.0,
-                "scale_h": 181.0,
+                "scale_w": 204.0,
+                "scale_h": 170.0,
             },
+            "encoding": "unicode_braille_2x4",
             "grid_columns": GRID_COLUMNS,
             "grid_rows": GRID_ROWS,
+            "effective_dot_columns": DOT_COLUMNS,
+            "effective_dot_rows": DOT_ROWS,
             "intended_bounds": list(SAFE_BOX),
-            "occupied_cells": occupied_cells,
-            "clipped_cell_count": len(clipped_cells),
-            "cell_collision_count": 0,
+            "desired_dot_count": text_metrics["desired_dot_count"],
+            "occupied_dot_count": text_metrics["occupied_dot_count"],
+            "nonblank_glyph_count": text_metrics["nonblank_glyph_count"],
+            "clipped_dot_count": text_metrics["clipped_dot_count"],
+            "dot_collision_count": text_metrics["dot_collision_count"],
+            "represented_primitive_count": text_metrics[
+                "represented_primitive_count"
+            ],
+            "empty_primitive_count": text_metrics["empty_primitive_count"],
+            # Compatibility aliases retained for the current QA validator.
+            "occupied_cells": text_metrics["occupied_dot_count"],
+            "clipped_cell_count": text_metrics["clipped_dot_count"],
+            "cell_collision_count": text_metrics["dot_collision_count"],
             "text_sha256": text_sha,
             "text": text,
         },
@@ -456,7 +497,7 @@ def build(repo_root: Path) -> dict[str, Any]:
             "target": "clip video opacity",
             "phase_source": "composition_fft",
             "frequency_band": [0.0, 0.33],
-            "output_range": [0.12, 0.28],
+            "output_range": [0.35, 0.62],
             "gain_db": 3.0,
             "fallback_ms": 1400,
             "geometry_modulated": False,
@@ -486,6 +527,8 @@ def main() -> int:
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(serialized, encoding="utf-8", newline="\n")
     if args.print_text:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(encoding="utf-8")
         sys.stdout.write(document["native_text_block"]["text"])
     else:
         print(
@@ -495,7 +538,18 @@ def main() -> int:
                     "controls": document["protection"]["control_count"],
                     "primitives": document["decoration"]["primitive_count"],
                     "collisions": document["decoration"]["collision_count"],
-                    "occupied_cells": document["native_text_block"]["occupied_cells"],
+                    "occupied_dots": document["native_text_block"][
+                        "occupied_dot_count"
+                    ],
+                    "nonblank_glyphs": document["native_text_block"][
+                        "nonblank_glyph_count"
+                    ],
+                    "clipped_dots": document["native_text_block"][
+                        "clipped_dot_count"
+                    ],
+                    "dot_collisions": document["native_text_block"][
+                        "dot_collision_count"
+                    ],
                     "text_sha256": document["native_text_block"]["text_sha256"],
                 },
                 sort_keys=True,

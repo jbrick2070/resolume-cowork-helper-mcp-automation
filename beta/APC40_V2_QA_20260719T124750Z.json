@@ -3,7 +3,7 @@
   "candidate": {
     "name": "APC40_Visual_Twin_V2_Candidate_20260719T124750Z",
     "path": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-    "sha256": "3727adb8973f63f8988014e1b29efc03e6018900474e0ca502901f94d1883329"
+    "sha256": "52e20cf4b530979573eacd3f57d5995bbd6f7706b07b79ccc4b07713cdb473dd"
   },
   "checks": [
     {
@@ -21,9 +21,9 @@
       "status": "PASS"
     },
     {
-      "actual": "3727adb8973f63f8988014e1b29efc03e6018900474e0ca502901f94d1883329",
+      "actual": "52e20cf4b530979573eacd3f57d5995bbd6f7706b07b79ccc4b07713cdb473dd",
       "evidence": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-      "expected": "3727adb8973f63f8988014e1b29efc03e6018900474e0ca502901f94d1883329",
+      "expected": "52e20cf4b530979573eacd3f57d5995bbd6f7706b07b79ccc4b07713cdb473dd",
       "id": "candidate_hash",
       "status": "PASS"
     },
@@ -235,38 +235,632 @@
     },
     {
       "actual": {
-        "accepted_save_time_transients": [
+        "accepted_runtime_state": [
           {
-            "baseline_value": "0.98013448715209960938",
-            "candidate_value": "0.96127074956893920898",
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.98013448715209960938"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.9818159937858581543"
+            ],
             "context": "transition_mixer_current_state",
             "layer": 40,
+            "layer_name": "Grid 1 Track 8",
             "parameter": "Opacity",
-            "reason": "transition mixer current value is save-time runtime state"
+            "reason": "save-time layer mixer state"
           },
           {
-            "baseline_value": "-0.62164023029294679379",
-            "candidate_value": "-0.62162016899211003373",
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "-0.62164023029294679379"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "-0.62162016899211003373"
+            ],
             "context": "audio_track",
             "layer": 44,
+            "layer_name": "Scene Launch 4",
             "parameter": "Volume",
-            "reason": "numeric serialization drift <= 0.0001"
+            "reason": "save-time layer mixer state"
+          },
+          {
+            "baseline_record_count": 0,
+            "baseline_values": [],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "-1.2665203302135041863"
+            ],
+            "context": "audio_track",
+            "layer": 136,
+            "layer_name": "Device Lock",
+            "parameter": "Volume",
+            "reason": "save-time layer mixer state"
+          },
+          {
+            "baseline_record_count": 0,
+            "baseline_values": [],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.859375"
+            ],
+            "context": "layer_blend_mixer",
+            "layer": 136,
+            "layer_name": "Device Lock",
+            "parameter": "Opacity",
+            "reason": "save-time layer mixer state"
+          },
+          {
+            "baseline_record_count": 0,
+            "baseline_values": [],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.859375"
+            ],
+            "context": null,
+            "layer": 136,
+            "layer_name": "Device Lock",
+            "parameter": "Master",
+            "reason": "save-time layer mixer state"
           }
         ],
         "semantic_mismatches": []
       },
-      "evidence": "Layer identities, behavior/render-pass structure, and static parameters; transition current-state is excluded and numeric serialization drift is limited to 0.0001",
+      "evidence": "Layer attrs/name/render passes and every parameter except exact runtime mixer paths for Master, Volume, and Opacity; runtime records must remain static/unlinked and every change is listed",
       "expected": {
-        "accepted_save_time_transients": "documented if present",
+        "accepted_runtime_state": "documented if present",
         "semantic_mismatches": []
       },
       "id": "protected_layer_fingerprints",
       "status": "PASS"
     },
     {
-      "actual": [],
-      "evidence": "Clip/source identities and static visual/animation configuration",
-      "expected": [],
+      "actual": {
+        "accepted_runtime_state": [
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "359.80708662270626519"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "301.98031495832401561"
+            ],
+            "clip_name": "CC7/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Fader 1",
+            "layer": 94,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.82086614173228344971"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.95314960629921263724"
+            ],
+            "clip_name": "CC7/C1",
+            "context": "video_track",
+            "control_name": "Track Fader 1",
+            "layer": 94,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "400.76771655163611285"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "281.49999999385909177"
+            ],
+            "clip_name": "CC7/C2",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Fader 2",
+            "layer": 95,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.72716535433070872418"
+            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
+            "clip_name": "CC7/C2",
+            "context": "video_track",
+            "control_name": "Track Fader 2",
+            "layer": 95,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "371.85433071944862604"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "281.49999999385909177"
+            ],
+            "clip_name": "CC7/C3",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Fader 3",
+            "layer": 96,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.79330708661417326244"
+            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
+            "clip_name": "CC7/C3",
+            "context": "video_track",
+            "control_name": "Track Fader 3",
+            "layer": 96,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "383.90157481619826285"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "281.49999999385909177"
+            ],
+            "clip_name": "CC7/C4",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Fader 4",
+            "layer": 97,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.76574803149606296415"
+            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
+            "clip_name": "CC7/C4",
+            "context": "video_track",
+            "control_name": "Track Fader 4",
+            "layer": 97,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "317.64173228409345029"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "281.49999999385909177"
+            ],
+            "clip_name": "CC7/C6",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Fader 6",
+            "layer": 99,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.91732283464566921616"
+            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
+            "clip_name": "CC7/C6",
+            "context": "video_track",
+            "control_name": "Track Fader 6",
+            "layer": 99,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "434.50000002252636477"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "283.90944881321047433"
+            ],
+            "clip_name": "CC7/C7",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Fader 7",
+            "layer": 100,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.6500000000000000222"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.99448818897637791814"
+            ],
+            "clip_name": "CC7/C7",
+            "context": "video_track",
+            "control_name": "Track Fader 7",
+            "layer": 100,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "427.27165356447949307"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "281.49999999385909177"
+            ],
+            "clip_name": "CC7/C8",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Fader 8",
+            "layer": 101,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.66653543307086615677"
+            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
+            "clip_name": "CC7/C8",
+            "context": "video_track",
+            "control_name": "Track Fader 8",
+            "layer": 101,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "75.472440944881867608"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "-77.598425196850399743"
+            ],
+            "clip_name": "CC48/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Knob 1",
+            "layer": 102,
+            "parameter": "Rotation Z",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.85669291338582675976"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.48818897637795277689"
+            ],
+            "clip_name": "CC48/C1",
+            "context": "video_track",
+            "control_name": "Track Knob 1",
+            "layer": 102,
+            "parameter": "Opacity",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "-105.23622047244094801"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "126.49606299212598515"
+            ],
+            "clip_name": "CC49/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Knob 2",
+            "layer": 103,
+            "parameter": "Rotation Z",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.42165354330708659791"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.9795275590551181244"
+            ],
+            "clip_name": "CC49/C1",
+            "context": "video_track",
+            "control_name": "Track Knob 2",
+            "layer": 103,
+            "parameter": "Opacity",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "-113.74015748031496287"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "79.724409448818903456"
+            ],
+            "clip_name": "CC50/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Knob 3",
+            "layer": 104,
+            "parameter": "Rotation Z",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.40118110236220472231"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.86692913385826775308"
+            ],
+            "clip_name": "CC50/C1",
+            "context": "video_track",
+            "control_name": "Track Knob 3",
+            "layer": 104,
+            "parameter": "Opacity",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "-135"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "111.61417322834643073"
+            ],
+            "clip_name": "CC52/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Knob 5",
+            "layer": 106,
+            "parameter": "Rotation Z",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.3499999999999999778"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.94370078740157481434"
+            ],
+            "clip_name": "CC52/C1",
+            "context": "video_track",
+            "control_name": "Track Knob 5",
+            "layer": 106,
+            "parameter": "Opacity",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "-115.86614173228345237"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "-79.724409448818889246"
+            ],
+            "clip_name": "CC53/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Knob 6",
+            "layer": 107,
+            "parameter": "Rotation Z",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.39606299212598422566"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.48307086614173222472"
+            ],
+            "clip_name": "CC53/C1",
+            "context": "video_track",
+            "control_name": "Track Knob 6",
+            "layer": 107,
+            "parameter": "Opacity",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "-20.196850393700799486"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "-64.842519685039377464"
+            ],
+            "clip_name": "CC54/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Knob 7",
+            "layer": 108,
+            "parameter": "Rotation Z",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.62637795275590546495"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.51889763779527553478"
+            ],
+            "clip_name": "CC54/C1",
+            "context": "video_track",
+            "control_name": "Track Knob 7",
+            "layer": 108,
+            "parameter": "Opacity",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "-135"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "-117.99212598425197029"
+            ],
+            "clip_name": "CC55/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Track Knob 8",
+            "layer": 109,
+            "parameter": "Rotation Z",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.3499999999999999778"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.390944881889763729"
+            ],
+            "clip_name": "CC55/C1",
+            "context": "video_track",
+            "control_name": "Track Knob 8",
+            "layer": 109,
+            "parameter": "Opacity",
+            "prototype": "rotary",
+            "reason": "save-time rotary control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "335.71259842921426753"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "281.49999999385909177"
+            ],
+            "clip_name": "CC14/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Master Fader",
+            "layer": 143,
+            "parameter": "Position Y",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.87598425196850393526"
+            ],
+            "candidate_record_count": 0,
+            "candidate_values": [],
+            "clip_name": "CC14/C1",
+            "context": "video_track",
+            "control_name": "Master Fader",
+            "layer": 143,
+            "parameter": "Opacity",
+            "prototype": "vertical_fader",
+            "reason": "save-time vertical_fader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "633.7480315072243684"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "642.11023623453365872"
+            ],
+            "clip_name": "CC15/C1",
+            "context": "render_pass:TransformEffect",
+            "control_name": "Crossfader",
+            "layer": 144,
+            "parameter": "Position X",
+            "prototype": "crossfader",
+            "reason": "save-time crossfader control state"
+          },
+          {
+            "baseline_record_count": 1,
+            "baseline_values": [
+              "0.81535433070866147887"
+            ],
+            "candidate_record_count": 1,
+            "candidate_values": [
+              "0.8401574803149606252"
+            ],
+            "clip_name": "CC15/C1",
+            "context": "video_track",
+            "control_name": "Crossfader",
+            "layer": 144,
+            "parameter": "Opacity",
+            "prototype": "crossfader",
+            "reason": "save-time crossfader control state"
+          }
+        ],
+        "geometry_control_layers": 148,
+        "semantic_mismatches": []
+      },
+      "evidence": "Clip attrs/name/render passes/source signatures and every parameter except prototype- and path-scoped VideoTrack/Transform runtime fields: vertical_fader Opacity/Position Y, rotary or small_rotary Opacity/Rotation Z, and crossfader Opacity/Position X; runtime records must remain static/unlinked, while source Opacity, phase, link, range, Text, Color, and all other records remain exact",
+      "expected": {
+        "accepted_runtime_state": "documented if present",
+        "geometry_control_layers": 148,
+        "semantic_mismatches": []
+      },
       "id": "protected_clip_fingerprints",
       "status": "PASS"
     },
@@ -333,8 +927,9 @@
         "line_width": 5000.0,
         "size": 0.5,
         "source": "BlockTextGenerator",
+        "source_scale": 0.28,
         "style": "Regular",
-        "text_sha256": "5a2e7e89142777b6bca6ae49c890aa28cca4baff06b9092aa9aed62014e39611"
+        "text_sha256": "d47ef34b8f46784fce80d774d2528e28901b941a7995303ff5616cb2b656a91c"
       },
       "evidence": "append-only layer 149 and clip 149",
       "expected": {
@@ -352,27 +947,28 @@
         "line_width": 5000.0,
         "size": 0.5,
         "source": "BlockTextGenerator",
+        "source_scale": 0.28,
         "style": "Regular",
-        "text_sha256": "5a2e7e89142777b6bca6ae49c890aa28cca4baff06b9092aa9aed62014e39611"
+        "text_sha256": "d47ef34b8f46784fce80d774d2528e28901b941a7995303ff5616cb2b656a91c"
       },
       "id": "v2_layer_source_contract",
       "status": "PASS"
     },
     {
       "actual": {
-        "Position X": -21.0,
+        "Position X": 13.0,
         "Position Y": 0.0,
         "Scale": 50.0,
-        "Scale H": 181.0,
-        "Scale W": 184.0
+        "Scale H": 170.0,
+        "Scale W": 204.0
       },
       "evidence": "clip Transform; geometry is not FFT-modulated",
       "expected": {
-        "Position X": -21.0,
+        "Position X": 13.0,
         "Position Y": 0.0,
         "Scale": 50.0,
-        "Scale H": 181.0,
-        "Scale W": 184.0
+        "Scale H": 170.0,
+        "Scale W": 204.0
       },
       "id": "v2_transform_static",
       "status": "PASS"
@@ -385,8 +981,8 @@
         "frequency_min": 0.0,
         "frequency_value": 0.165,
         "gain_db": 3.0,
-        "output_max": 0.28,
-        "output_min": 0.12,
+        "output_max": 0.62,
+        "output_min": 0.35,
         "phase_source": "/audioengine/compositionfft",
         "target_is_clip_opacity": true
       },
@@ -398,8 +994,8 @@
         "frequency_min": 0.0,
         "frequency_value": 0.165,
         "gain_db": 3.0,
-        "output_max": 0.28,
-        "output_min": 0.12,
+        "output_max": 0.62,
+        "output_min": 0.35,
         "phase_source": "/audioengine/compositionfft",
         "target_is_clip_opacity": true
       },
@@ -408,8 +1004,18 @@
     },
     {
       "actual": {
+        "clipped_dot_count": 5,
         "controls": 148,
-        "occupied_text_cells": 830,
+        "desired_dot_count": 5382,
+        "dot_collision_count": 0,
+        "effective_dot_columns": 320,
+        "effective_dot_rows": 240,
+        "empty_primitive_count": 0,
+        "encoding": "unicode_braille_2x4",
+        "grid_columns": 160,
+        "grid_rows": 60,
+        "nonblank_glyph_count": 2221,
+        "occupied_dot_count": 5377,
         "protected_boxes": 295,
         "prototype_counts": {
           "bank_polygon": 4,
@@ -427,6 +1033,8 @@
           "track_select": 8,
           "vertical_fader": 9
         },
+        "represented_primitive_count": 54,
+        "source_scale": 0.28,
         "text_cell_collisions": 0,
         "track_fader_guides": 8,
         "vector_collisions": 0,
@@ -434,7 +1042,20 @@
       },
       "evidence": "resting, fader/knob motion hull, crossfader, and chassis geometry",
       "expected": {
+        "clipped_dot_count": 5,
         "controls": 148,
+        "desired_dot_count": 5382,
+        "dot_collision_count": 0,
+        "effective_dot_columns": 320,
+        "effective_dot_rows": 240,
+        "empty_primitive_count": 0,
+        "encoding": "unicode_braille_2x4",
+        "grid_columns": 160,
+        "grid_rows": 60,
+        "nonblank_glyph_count": 2221,
+        "occupied_dot_count": 5377,
+        "represented_primitive_count": 54,
+        "source_scale": 0.28,
         "text_cell_collisions": 0,
         "track_fader_guides": 8,
         "vector_collisions": 0,
@@ -448,43 +1069,43 @@
         {
           "height": 113,
           "path": "01-r1-witnesses-candidate-baseline.png",
-          "sha256": "b7a64984bc642840395c1e8febf29487aa9fa3bada6f6ca04f03cea5a3bb4aed",
+          "sha256": "6e4240f97367f8ca00d5e226eef7cd7651f99e01150af389db5d8347372182ae",
           "width": 200
         },
         {
           "height": 113,
           "path": "03-v2-fft-silence-composite.png",
-          "sha256": "902448ab26e9125306bc379b095fa6ddf04c728d5a80c54d9d69cab8064505e4",
+          "sha256": "a7252966d8174d2283bacf72e736919a286dc69e3314323df2b5d2ed3f1b37bd",
           "width": 200
         },
         {
           "height": 113,
           "path": "03b-v2-fft-silence-layer.png",
-          "sha256": "07a51100b25e0dc8e192cdd1e6297f6ef0f47fd4b95472700e4cae41c16276e6",
+          "sha256": "8e9bcb22cfca1db6b92575d214a614d7c6f1fcc269c1853585624cb9b666064e",
           "width": 200
         },
         {
           "height": 113,
           "path": "04-v2-bypass-r1-restore.png",
-          "sha256": "59ce87da4945cfd1fe18496542bc94a90b7f654c06b8045064a03d1e973eaa1c",
+          "sha256": "6e4240f97367f8ca00d5e226eef7cd7651f99e01150af389db5d8347372182ae",
           "width": 200
         },
         {
           "height": 113,
           "path": "05-v2-low-band-peak-envelope.png",
-          "sha256": "cc3f24f23121f1ae16d107f0602547936ebf163883ecb05b81070c4e21e34c54",
+          "sha256": "c2f6b9eb61cb91d243fdb859794c1121fbbca2a56b94aecf4cb73b88767cb6fa",
           "width": 200
         },
         {
           "height": 113,
           "path": "05b-v2-low-band-peak-layer.png",
-          "sha256": "d1994362e837d845cb904b89ae7108406f2c8073726821fee6dcec57d99671ec",
+          "sha256": "5183a68c45c67d0bc46a4999ac2de09360d417beef670e80c62d8893947eea85",
           "width": 200
         },
         {
           "height": 113,
           "path": "06-v2-final-restored.png",
-          "sha256": "902448ab26e9125306bc379b095fa6ddf04c728d5a80c54d9d69cab8064505e4",
+          "sha256": "a7252966d8174d2283bacf72e736919a286dc69e3314323df2b5d2ed3f1b37bd",
           "width": 200
         }
       ],
@@ -495,33 +1116,41 @@
     },
     {
       "actual": {
-        "changed_percent": 14.712389380530974,
-        "changed_pixels": 3325,
-        "height": 113,
-        "mae": 0.24109144542772862,
-        "max_channel_difference": 36,
-        "mse": 1.2318879056047198,
-        "psnr_db": 47.22509169429227,
-        "width": 200
+        "file_sha_identical": true,
+        "metrics": {
+          "changed_percent": 0.0,
+          "changed_pixels": 0,
+          "height": 113,
+          "mae": 0.0,
+          "max_channel_difference": 0,
+          "mse": 0.0,
+          "pixel_identical": true,
+          "psnr_db": null,
+          "width": 200
+        }
       },
       "evidence": "R1 baseline versus V2-layer bypass capture",
-      "expected": "PSNR >= 40 dB",
+      "expected": {
+        "file_sha_identical": true,
+        "pixel_identical": true
+      },
       "id": "bypass_restores_r1",
       "status": "PASS"
     },
     {
       "actual": {
         "final_restored_matches_silence_sha": true,
-        "peak_layer_mean_luma": 0.6718272477876093,
-        "silence_layer_mean_luma": 0.659989327433628,
+        "peak_layer_mean_luma": 4.9792322566370855,
+        "silence_layer_mean_luma": 4.630268796460139,
         "silence_vs_peak": {
-          "changed_percent": 1.924778761061947,
-          "changed_pixels": 435,
+          "changed_percent": 22.845132743362832,
+          "changed_pixels": 5163,
           "height": 113,
-          "mae": 0.029424778761061948,
-          "max_channel_difference": 17,
-          "mse": 0.14004424778761063,
-          "psnr_db": 56.66815085661938,
+          "mae": 0.40938053097345134,
+          "max_channel_difference": 18,
+          "mse": 1.6976106194690266,
+          "pixel_identical": false,
+          "psnr_db": 45.83242277556184,
           "width": 200
         }
       },
@@ -559,7 +1188,7 @@
           "ready": true,
           "status": "ok"
         },
-        "mcp_sessions": 48,
+        "mcp_sessions": 49,
         "wire_application": {
           "count": 0,
           "expected": "closed is valid"
@@ -616,13 +1245,14 @@
     "frequency_min": 0.0,
     "frequency_value": 0.165,
     "gain_db": 3.0,
-    "output_max": 0.28,
-    "output_min": 0.12,
+    "output_max": 0.62,
+    "output_min": 0.35,
     "phase_source": "/audioengine/compositionfft",
     "target_is_clip_opacity": true
   },
   "geometry": {
     "artifact": "beta/APC40_V2_GEOMETRY_20260719T124750Z.json",
+    "clipped_dot_count": 5,
     "collision_states": [
       {
         "intersections": 0,
@@ -664,9 +1294,21 @@
         "state": "V2 bypass"
       }
     ],
+    "desired_dot_count": 5382,
+    "dot_collision_count": 0,
+    "effective_dot_columns": 320,
+    "effective_dot_rows": 240,
+    "empty_primitive_count": 0,
+    "encoding": "unicode_braille_2x4",
+    "grid_columns": 160,
+    "grid_rows": 60,
     "native_text_cell_collisions": 0,
+    "nonblank_glyph_count": 2221,
+    "occupied_dot_count": 5377,
     "protected_boxes": 295,
     "protected_controls": 148,
+    "represented_primitive_count": 54,
+    "source_scale": 0.28,
     "vector_collisions": 0,
     "vector_primitives": 54
   },
@@ -736,7 +1378,7 @@
       "ready": true,
       "status": "ok"
     },
-    "mcp_sessions": 48,
+    "mcp_sessions": 49,
     "wire_application": {
       "count": 0,
       "expected": "closed is valid"
@@ -752,25 +1394,27 @@
   "verdict": "PARTIAL — software candidate ready for human test",
   "visual_metrics": {
     "baseline_vs_bypass": {
-      "changed_percent": 14.712389380530974,
-      "changed_pixels": 3325,
+      "changed_percent": 0.0,
+      "changed_pixels": 0,
       "height": 113,
-      "mae": 0.24109144542772862,
-      "max_channel_difference": 36,
-      "mse": 1.2318879056047198,
-      "psnr_db": 47.22509169429227,
+      "mae": 0.0,
+      "max_channel_difference": 0,
+      "mse": 0.0,
+      "pixel_identical": true,
+      "psnr_db": null,
       "width": 200
     },
-    "peak_layer_mean_luma": 0.6718272477876093,
-    "silence_layer_mean_luma": 0.659989327433628,
+    "peak_layer_mean_luma": 4.9792322566370855,
+    "silence_layer_mean_luma": 4.630268796460139,
     "silence_vs_synthetic_peak": {
-      "changed_percent": 1.924778761061947,
-      "changed_pixels": 435,
+      "changed_percent": 22.845132743362832,
+      "changed_pixels": 5163,
       "height": 113,
-      "mae": 0.029424778761061948,
-      "max_channel_difference": 17,
-      "mse": 0.14004424778761063,
-      "psnr_db": 56.66815085661938,
+      "mae": 0.40938053097345134,
+      "max_channel_difference": 18,
+      "mse": 1.6976106194690266,
+      "pixel_identical": false,
+      "psnr_db": 45.83242277556184,
       "width": 200
     }
   }
