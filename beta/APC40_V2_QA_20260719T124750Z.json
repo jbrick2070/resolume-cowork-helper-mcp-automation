@@ -3,7 +3,7 @@
   "candidate": {
     "name": "APC40_Visual_Twin_V2_Candidate_20260719T124750Z",
     "path": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-    "sha256": "a34857e377579ebd523ce27be6b63eb28d81353e4e114fbd8666920774851f67"
+    "sha256": "cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9"
   },
   "checks": [
     {
@@ -21,9 +21,9 @@
       "status": "PASS"
     },
     {
-      "actual": "a34857e377579ebd523ce27be6b63eb28d81353e4e114fbd8666920774851f67",
+      "actual": "cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9",
       "evidence": "beta/compositions/APC40_Visual_Twin_V2_Candidate_20260719T124750Z.avc",
-      "expected": "a34857e377579ebd523ce27be6b63eb28d81353e4e114fbd8666920774851f67",
+      "expected": "cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9",
       "id": "candidate_hash",
       "status": "PASS"
     },
