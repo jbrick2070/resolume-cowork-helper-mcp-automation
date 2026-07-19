@@ -1,7 +1,47 @@
 # APC40 mkII → Resolume Visual QA Overlay — Handoff Spec
 
-For the next coder. This is a **forward spec**, not a status log. Build to the acceptance
-criteria below; improve the idea freely, but do not ship until all four criteria pass 100%.
+> **Continuous-control completion update — 2026-07-19:** Accepted build
+> `B1-728792218d26e596` is installed as `APC 40 MK II - Visual QA`
+> (SHA-256 `4628634b4fb9a9909a5b1ee9d7c9df1a759371cc7a90ce183d8bb4cc40d1abc5`).
+> Avenue 7.27.1 restarted cleanly into `APC40_Visual_QA_148`; the Restart A2
+> preflight passed with one Avenue process, one bridge process, 148 layers, and
+> the expected composition fingerprint.
+>
+> The user then physically swept and visually confirmed **all 28 continuous
+> controls**: track faders 1–8, Master, X-Fade, track knobs 1–8, device knobs
+> 1–8, Cue Level, and Tempo. The moving/rotating labels remained separated in
+> the captured sweep. Evidence is archived in
+> `docs/2026-07-18-apc40-animated-visual-qa/artifacts/physical_qa_continuous_sweep_fullscreen.png`
+> and
+> `docs/2026-07-18-apc40-animated-visual-qa/artifacts/physical_qa_continuous_sweep_cue_annotated.png`.
+> A final all-controls-on frame also verifies that the complete panel remains
+> legible without collisions:
+> `docs/2026-07-18-apc40-animated-visual-qa/artifacts/physical_qa_full_panel_all_controls.png`
+> (SHA-256 `17fa9eb2e657c2bad1e26db079221c3a7ecb47422f69dc95ca78d7950ff2fba1`).
+> No further continuous-control XML regeneration is required.
+
+> **Implementation update — 2026-07-18:** The fader design and build procedure in the
+> original handoff below are superseded by
+> `docs/2026-07-18-apc40-animated-visual-qa/roundtable/pass04_plan.md`.
+> That build-locked plan is the authority whenever this historical forward spec conflicts
+> with it.
+>
+> The centerpiece is now physical motion. Each of the nine vertical faders carries its
+> complete two-line live tag (`▬ FADERn` or `▬ MASTER`, plus the MIDI address) almost the
+> full height of its rail. The crossfader carries the analogous `█ X-FADE` tag left to
+> right. The name, glyph, and address travel as one readable unit; fixed rails, endpoints,
+> and compact channel/address anchors remain in the static overlay. Rotary controls turn
+> their live triangular witnesses and use value-proportional opacity.
+>
+> Offline implementation is complete: the canonical 148-control manifest, deterministic
+> B0 overlay/crops/calibration/live-controls, safety runner, and installable three-control
+> pilot candidate have been generated and verified. The pilot has **not** been installed,
+> Avenue has **not** been mutated or restarted, and nothing has been saved. Live B1 text
+> calibration, full-preset generation, layer 149, and controller QA intentionally wait for
+> the staged hardware pilot.
+
+For historical context, this was the original forward spec. Build to the acceptance
+criteria below only where they do not conflict with the build-locked plan.
 
 ---
 
@@ -123,13 +163,14 @@ reload it in Resolume (Shortcuts → MIDI). Targets are **positional** so they w
 
 ## Existing assets (start here, don't rebuild from scratch)
 
-- **Composition:** the live 145-layer Visual QA comp in `…/Resolume Avenue/Compositions/`.
-- **Active preset:** `APC 40 MK II - Visual QA.xml` (OneDrive Shortcuts/MIDI + `react-kit/controllers/`).
-- **Ground-truth preset:** `react-kit/controllers/APC 40 MK II - React v4.4.xml`.
+- **Composition:** the saved 148-layer `APC40_Visual_QA_148` composition.
+- **Accepted preset:** `controllers/APC 40 MK II - Visual QA.xml` (203 shortcuts; install this one).
+- **Pristine generator reference:** `controllers/APC 40 MK II - Visual QA - Pristine 148.xml`
+  (one mapping per physical control; do not install it over the accepted preset).
 - **Address reference:** `react-kit/docs/APC40_native_addresses.{md,svg,png}` ← the authoritative map.
-- **Bridge:** `C:\Art Projects\Res_Fable\avenue_pipe_bridge.py` (run before any MCP call).
-- Generator/diagnostic scripts live in the Antigravity scratch folder (145-layer setup, toggle,
-  scale, alignment, duplicate-key check). Reuse them; the master is `generate_145_midi_shortcuts.py`.
+- **Bridge:** `<workspace>/avenue_pipe_bridge.py` (run before any MCP call).
+- **Generator and QA tools:** `scripts/generate_apc40_visual_qa.py`,
+  `scripts/apc40_visual_qa_live.py`, and `scripts/render_apc40_live_overlay.py`.
 
 ---
 

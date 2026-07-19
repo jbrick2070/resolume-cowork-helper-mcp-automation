@@ -1,0 +1,61 @@
+{
+  "artifacts": {
+    "react-kit/docs/APC40_visual_qa_calibration.json": {
+      "bytes": 20145,
+      "sha256": "125996eaf5f5385c3566fac6d509b9028bcca49e69a822dda6bba2dd1b3b6289"
+    },
+    "react-kit/docs/APC40_visual_qa_crop_crossfader.png": {
+      "bytes": 991,
+      "sha256": "667e76771e5b266fba5200a132b504baec553546b9c376a2d7bea55378e1d09e"
+    },
+    "react-kit/docs/APC40_visual_qa_crop_fader.png": {
+      "bytes": 4814,
+      "sha256": "8f3fb661d1eff89b6da190e6a5a554d4d2e37590f3b3379f5c055c7cfe9debc6"
+    },
+    "react-kit/docs/APC40_visual_qa_crop_grid.png": {
+      "bytes": 59802,
+      "sha256": "b6136e5f30262c512c739c888b8a6bc256e5edd1cc0146ef8b7ae62bea79f598"
+    },
+    "react-kit/docs/APC40_visual_qa_crop_navigation.png": {
+      "bytes": 30340,
+      "sha256": "66f7a520e8b24ad88e1fb37e7a5252a8d450cfee13ba7d05c5a2410f861f2f17"
+    },
+    "react-kit/docs/APC40_visual_qa_crop_rotary.png": {
+      "bytes": 119852,
+      "sha256": "95f3eee7ce8868bc949b79b9d0fce7fa1c7bebdb19e9b4e81d4d336186a54c2f"
+    },
+    "react-kit/docs/APC40_visual_qa_crop_track_cluster.png": {
+      "bytes": 18818,
+      "sha256": "01ca53537128daa17bb577c134411795e834ee6595db004f9e5057d8c82b1139"
+    },
+    "react-kit/docs/APC40_visual_qa_crop_transport.png": {
+      "bytes": 50646,
+      "sha256": "021ddf15625fadc6b279bf96588d8b1558f2e4104c661003fdedce92642c9b74"
+    },
+    "react-kit/docs/APC40_visual_qa_geometry.json": {
+      "bytes": 165955,
+      "sha256": "d4e0b40c75cda778afc4b47b90d829cc9a253d84f70eef7fcfa8257ee0b77887"
+    },
+    "react-kit/docs/APC40_visual_qa_live_controls.json": {
+      "bytes": 269688,
+      "sha256": "cb0991b866ee1a19f157c2f6531051fc0afed77cebbf56035232df4904f4fb43"
+    },
+    "react-kit/docs/APC40_visual_qa_live_overlay.png": {
+      "bytes": 136868,
+      "sha256": "b40edd6f9432466a6f3d0d8a6e1d7c7c0fe3318b3f430c9bf470ed7256f928a3"
+    },
+    "react-kit/docs/APC40_visual_qa_live_overlay_debug.png": {
+      "bytes": 164131,
+      "sha256": "638df7bce14caead695fef6aaadcde09ff4870fdc1f2da7ecbee309394ce0a4b"
+    },
+    "react-kit/docs/APC40_visual_qa_renderer_report.json": {
+      "bytes": 111305,
+      "sha256": "7696b2e809438b4595bf091297cb353170c54b7f1a0766c7ca6f351230f69888"
+    }
+  },
+  "build_id": "B1-728792218d26e596",
+  "measurement_sha256": "a0caad298361409ff12b79aa3f759c33a09fb14e723227d5f38a2eb37ebe839e",
+  "parent_build_id": "B0-7605a6b62b27abca",
+  "schema_version": 1,
+  "status": "accepted"
+}

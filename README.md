@@ -194,6 +194,19 @@ Resolume MCP can play. If you make a pack, publish it the same way this
 one shipped: manifests + prompts + preset + placards, no clip files, no
 personal paths. That is the whole tradition. Send a link.
 
+## Build a controller visual twin
+
+The [any-controller visual-twin prompt](docs/ANY_CONTROLLER_VISUAL_TWIN_PROMPT.md)
+covers hardware research, a Text Animator twin, shortcut XML, a machine-checkable
+Excel map, chassis geometry, extreme-state QA, and optional FFT decoration. The
+APC40 mkII reference set is the
+[R1 enhancement review prompt](docs/2026-07-19-apc40-fft-enhancements/R1_REVIEW_PROMPT.md),
+the [Visual QA handoff](docs/APC40_Visual_QA_HANDOFF.md), and the
+[Visual QA control-map workbook](docs/APC40_Visual_QA_Control_Map.xlsx).
+Install `controllers/APC 40 MK II - Visual QA.xml`; the neighboring
+`- Pristine 148.xml` file is the generator's one-mapping-per-control baseline,
+not the performance preset.
+
 ## Safety, support, license
 
 The stability protocol in `docs/` is not optional reading - every rule in it
