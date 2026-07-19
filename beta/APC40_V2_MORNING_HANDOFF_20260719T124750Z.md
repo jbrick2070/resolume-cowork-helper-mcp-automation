@@ -6,15 +6,15 @@ Run ID: `20260719T124750Z`
 
 **PARTIAL — software candidate ready for human test.**
 
-Automated QA reports **21 PASS, 0 failures, and 3 explicit human gates
+Automated QA reports **22 PASS, 0 failures, and 3 explicit human gates
 open**. The saved candidate, immutable R1 hashes, append-only structure, MIDI
 contract, deterministic collision geometry, representative visual evidence,
 FFT configuration, external-media scan, and MCP singleton topology pass.
 
 Physical APC40 behavior, real-audio calibration, and matched performance remain
 **OPEN — HUMAN TEST REQUIRED**. A cold reopen/persistence check is also open.
-Do not promote or merge this candidate until those checks pass and the user
-explicitly approves promotion.
+Do not promote, merge, or open a PR for this candidate until those checks pass
+and the user explicitly approves promotion.
 
 ## Candidate and Git receipt
 
@@ -25,11 +25,13 @@ explicitly approves promotion.
 - Composition name:
   `APC40_Visual_Twin_V2_Candidate_20260719T124750Z`
 - SHA-256:
-  `52e20cf4b530979573eacd3f57d5995bbd6f7706b07b79ccc4b07713cdb473dd`
+  `cec1137a2230dfa3f5a45563fbefed73fc1c5451f90f67cada60cfc8501a04c9`
 - Branch: `codex/apc40-v2-overnight`
-- Candidate/artifact commit:
-  `7b0086415cf80995a399055f1aca77bd2cc371d1`
-- Push state: that artifact commit is confirmed on
+- Latest tested candidate/artifact commit:
+  `b43979b188854a3dc868cca4fba5b80fb1609f48`
+- Red refinement commit:
+  `b7adbe15c7b97cced6ee02c7199a63150fd436c5`
+- Push state: the latest tested artifact commit is confirmed on
   `origin/codex/apc40-v2-overnight`.
 - Starting `main` / `origin/main`:
   `c0a318da260b58c12c8545fe43a091bbbbc966c6`
@@ -54,7 +56,9 @@ Only one append-only layer was added above the frozen R1 range:
 - Layer 149 / clip 149, column 1: `V2 Chassis Low FFT`
 - Native source: `Text Block` / `BlockTextGenerator`
 - Font: `Cascadia Mono`, Regular
-- Color: `#557f96ff`
+- Fill color: `#b51d35ff`
+- Outline color: `#b51d35ff`
+- Outline Width: `0.22`
 - Text size: `0.5`
 - Source Scale: `0.28`
 - Line width: `5000`
@@ -93,6 +97,10 @@ semantic mismatch was found.
 
 The native Text Block encodes the chassis as Unicode Braille:
 
+- Geometry JSON SHA-256:
+  `9f429e7278765ca5eb8c361ed1d3231688dcd35a214f917e9fa5c44a0d05f79f`
+- Native text SHA-256:
+  `d47ef34b8f46784fce80d774d2528e28901b941a7995303ff5616cb2b656a91c`
 - Glyph grid: `160 × 60`
 - Effective dot grid: `320 × 240`
 - Vector primitives: `54`
@@ -103,6 +111,10 @@ The native Text Block encodes the chassis as Unicode Braille:
 - Nonblank glyphs: `2221`
 - Empty primitives: `0`
 - Vector, dot, and native text-cell collisions: `0`
+
+The native `0.22` outline is bounded by the protected maximum dot-cell
+footprint. It does not enlarge the protected geometry footprint, and the
+outline contract retains zero dot collisions.
 
 All 148 controls are protected across 295 label, witness, and motion boxes.
 Machine intersections are zero for the resting/all-visible state, complete
@@ -118,17 +130,18 @@ FFT affects only layer-149 clip opacity:
 - Avenue normalized low-band selection: value `0.165`, range `0.00–0.33`
 - Gain: `+3 dB`
 - Fallback: `1400 ms`
-- Output opacity: `0.35–0.62`
+- Output opacity: `0.65–0.95`
 - FFT nodes: `1`
 - Geometry, position, scale, rotation, extent, hue, color, and blur modulation:
   none
 - R1 witness modulation: none
 
-The screenshots verify the configured nonzero floor and synthetic accepted
-peak. A fresh MCP live-motion sample after the final repair measured `0.00`.
-An earlier user report of motion is not treated as certification: real silence,
-bass, midrange, high-frequency, and accepted-peak audio calibration remains
-**OPEN — HUMAN TEST REQUIRED**.
+The screenshots verify nonblack, pixel-distinct floor and synthetic-peak
+endpoints. The exact increasing opacity range is proved by the saved numeric FFT
+contract, not by mean monitor luma. A fresh MCP live-motion capture at the Arena
+monitor's `200 × 113` resolution quantized to `0.00`; it does not certify
+real-audio response. Real silence, bass, midrange, high-frequency, and
+accepted-peak calibration remains **OPEN — HUMAN TEST REQUIRED**.
 
 ## Visual evidence and metrics
 
@@ -143,10 +156,18 @@ bass, midrange, high-frequency, and accepted-peak audio calibration remains
 Baseline and bypass captures are file- and pixel-identical: `0` changed pixels,
 MAE `0`, MSE `0`, and maximum channel difference `0`.
 
-Silence versus synthetic peak changed `5163 / 22600` pixels (`22.8451%`):
-MAE `0.40938`, MSE `1.69761`, maximum channel difference `18`, and PSNR
-`45.8324 dB`. Isolated-layer mean luma rose from `4.63027` to `4.97923`.
-The final restored capture is byte-identical to the silence capture.
+The composite floor versus synthetic peak changed `3718 / 22600` pixels
+(`16.4513%`): MAE `0.11409`, MSE `0.19412`, maximum channel difference `8`,
+and PSNR `55.2502 dB`. The isolated layer changed `3368 / 22600` pixels
+(`14.9027%`): MAE `0.09038`, MSE `0.11590`, maximum channel difference `5`,
+and PSNR `57.4900 dB`. The final restored capture is byte-identical to the
+floor capture.
+
+At `200 × 113`, Arena's isolated-layer RGB monitor is alpha-composited and
+downsampled. Mean luma is therefore non-monotonic as an opacity meter: the
+floor measured `2.90235` and the peak `2.85450`. Automated evidence is endpoint
+pixel distinctness plus the exact `0.65–0.95` numeric FFT contract; no
+monotonic-luma claim is made.
 
 ## Runtime singleton receipt
 
@@ -183,7 +204,7 @@ reopen, then accept only if V2 frame time regresses by no more than 10%.
 
 The structured receipt is
 [`APC40_V2_QA_20260719T124750Z.json`](APC40_V2_QA_20260719T124750Z.json).
-It reports **21 PASS, 0 failures, 3 human gates open**. The candidate and R1
+It reports **22 PASS, 0 failures, 3 human gates open**. The candidate and R1
 AVC files, controller XML, geometry JSON, seven PNGs, Python sources, external
 media, personal paths, and live singleton topology were validated.
 
@@ -216,5 +237,5 @@ media, personal paths, and live singleton topology were validated.
    mid/high response.
 9. Confirm all white, red, blue, amber, and RGB witnesses remain readable at
    accepted peak with zero overlap.
-10. Record PASS/FAIL for every open item. **Do not promote or merge until all
-    gates pass and the user explicitly approves promotion.**
+10. Record PASS/FAIL for every open item. **Do not promote, merge, or open a PR
+    until all gates pass and the user explicitly approves promotion.**
