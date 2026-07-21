@@ -205,3 +205,27 @@ confirmation; the prompts are written that way on purpose.
 As-is, PRs welcome, no support promised. Kit text, manifests, prompts:
 MIT (see LICENSE). Placard facts carry their citations inline - corrections
 are the most welcome PR of all.
+
+
+## Electric Zentropa
+
+`beta/streamdeck-animated-v3/compositions/` ships two finished builds of the
+APC40 mkII visual twin, "Electric Zentropa":
+
+- **APC40_Electric_Zentropa.avc** - animated. Opens fully lit and auto-playing,
+  with the knob rings and grid pads reacting to Avenue's audio FFT.
+- **APC40_Electric_Zentropa_Static.avc** - the same board held calm and fully
+  lit, every reactive range pinned to full so nothing dances.
+
+Under `beta/streamdeck-animated-v3/wire/` is **APC40_FFT_Driver.wire**, a
+Resolume Wire patch that splits the external/composition FFT into eight bands
+and drives the physical APC40's ring meters (CC48-55, Volume Style) and row-5
+pad shades over MIDI. Wire is a paid Resolume product; its demo watermark makes
+the patch preview-only until licensed.
+
+## Dedication
+
+Electric Zentropa was finished on 20 July 2026 - **Nam June Paik's birthday** -
+and is dedicated to his memory. Paik taught the machine to sing; this project
+tries, in a small way, to let the controller listen back.
+백남준 선생님을 기리며 (In memory of Nam June Paik).

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Electric Zentropa — Ending Frame</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;}
+  .stage{
+    position:fixed;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    font-family:"Malgun Gothic","Segoe UI",system-ui,sans-serif;
+    background:radial-gradient(circle at 50% 42%,#140406 0%,#000 70%);
+  }
+  .rainbow{
+    position:absolute;top:0;left:0;width:100%;height:6px;
+    background:linear-gradient(90deg,#e0141f,#ff8a00,#ffe000,#39d353,#00c2c7,#2b7bff,#7a3cff,#ff3ca6);
+    filter:saturate(1.2);
+    box-shadow:0 0 24px rgba(255,255,255,.25);
+  }
+  .rainbow.b{top:auto;bottom:0;}
+  .title{
+    color:#e0141f;font-weight:700;letter-spacing:.28em;
+    font-size:2.1vw;text-transform:uppercase;margin-bottom:5vh;
+    text-shadow:0 0 18px rgba(224,20,31,.55);
+  }
+  .bye{
+    color:#fff;font-weight:800;font-size:13vw;line-height:1;
+    -webkit-text-stroke:3px #e0141f;
+    text-shadow:0 0 40px rgba(224,20,31,.65),0 0 90px rgba(255,255,255,.18);
+    animation:breathe 4.5s ease-in-out infinite;
+  }
+  @keyframes breathe{
+    0%,100%{text-shadow:0 0 34px rgba(224,20,31,.5),0 0 80px rgba(255,255,255,.12);}
+    50%{text-shadow:0 0 60px rgba(224,20,31,.85),0 0 120px rgba(255,255,255,.28);}
+  }
+  .sub{color:#cfcfcf;font-size:1.5vw;margin-top:6vh;letter-spacing:.06em;text-align:center;}
+  .sub .en{color:#8a8a8a;font-size:1.15vw;display:block;margin-top:.6vh;letter-spacing:.14em;}
+  .paik{color:#7a7a7a;font-size:1.05vw;margin-top:3.5vh;letter-spacing:.18em;text-transform:uppercase;}
+  .sig{position:absolute;bottom:5.5vh;color:#e0141f;font-size:1.2vw;letter-spacing:.3em;}
+  .dots{position:absolute;bottom:11vh;display:flex;gap:1.1vw;}
+  .dots i{width:.9vw;height:.9vw;border-radius:50%;display:block;animation:pulse 2.4s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{transform:scale(.7);opacity:.5;}50%{transform:scale(1.15);opacity:1;}}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="rainbow"></div>
+  <div class="rainbow b"></div>
+  <div class="title">Electric Zentropa</div>
+  <div class="bye">안녕히&nbsp;가세요</div>
+  <div class="sub">보내주셔서 고맙습니다 · 엄마께 사랑을
+    <span class="en">GOODBYE — THANK YOU FOR WATCHING</span>
+  </div>
+  <div class="paik">백남준 선생님을 기리며 · for Nam June Paik · July 20</div>
+  <div class="dots"></div>
+  <div class="sig">— VERNE</div>
+</div>
+<script>
+  const cols=['#e0141f','#ff8a00','#ffe000','#39d353','#00c2c7','#2b7bff','#7a3cff','#ff3ca6'];
+  const d=document.querySelector('.dots');
+  cols.forEach((c,i)=>{const s=document.createElement('i');s.style.background=c;s.style.boxShadow='0 0 14px '+c;s.style.animationDelay=(i*0.18)+'s';d.appendChild(s);});
+</script>
+</body>
+</html>

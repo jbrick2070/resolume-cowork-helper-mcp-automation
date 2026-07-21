@@ -8,3 +8,8 @@ kibitz-runs/
 docs/**/runtime/
 docs/**/roundtable/
 docs/**/offline-preview/
+
+# Large rendered media (binaries, not for git)
+*.mov
+beta/streamdeck-animated-v3/media/
+beta/streamdeck-animated-v3/backups/
