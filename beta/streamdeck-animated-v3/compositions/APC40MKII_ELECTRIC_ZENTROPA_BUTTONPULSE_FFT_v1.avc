@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <Composition name="Composition" uniqueId="1784183990045" numDecks="3" currentDeckIndex="0" numLayers="152" numColumns="2" compositionIsRelative="0">
 	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="27" microVersion="1" revision="15990" />
 	<CompositionInfo name="APC40MKII_ELECTRIC_ZENTROPA_BUTTONPULSE_FFT_v1" description="" width="1920" height="1080">
@@ -7,12 +7,12 @@
 		<DeckInfo name="empty" id="1784407300992" closed="0" />
 	</CompositionInfo>
 	<Params name="Params">
-		<Param name="Name" T="STRING" default="" value="APC40MKII_ELECTRIC_ZENTROPA_BUTTONPULSE_FFT_v1" />
+		<Param name="Name" T="STRING" default="" value="APC40MKII_ELECTRIC_ZENTROPA_BUTTONPULSE_FFT_v2" />
 		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999966437958">
 			<PhaseSourceStatic name="PhaseSourceStatic" />
 		</ParamRange>
 		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default" />
-		<Param name="MidiShortcutPreset" T="STRING" default="" value="APC40MKII_ELECTRIC_ZENTROPA_BUTTONPULSE_FFT_v1" />
+		<Param name="MidiShortcutPreset" T="STRING" default="" value="APC40MKII_ELECTRIC_ZENTROPA_BUTTONPULSE_FFT_v2" />
 		<Param name="OscShortcutPreset" T="STRING" default="" value="OutputAllMessages" />
 	</Params>
 	<CompositionView name="CompositionView">
@@ -34112,3 +34112,4 @@
 		<Note text_size_multiplier="2" text_color_index="4" text="" />
 	</Notes>
 </Composition>
+

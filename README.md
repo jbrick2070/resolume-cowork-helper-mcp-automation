@@ -1,4 +1,4 @@
-# resolume-cowork-helper-mcp-automation
+# apc40mkii-kit
 
 **An AI agent can build your Resolume compositions and customized controller
 shortcut layouts.** The stable release is a complete APC40 mkII visual twin:
@@ -17,7 +17,7 @@ Three things, in Resolume's own terms:
    every physical control without external media. Its matching preset makes
    buttons toggle, faders travel, knobs rotate, and hardware LEDs follow the
    APC40 mkII's actual color capabilities.
-2. **Experimental performance instruments.** The earlier React Live and
+2. **Experimental performance instruments.** The earlier audio-reactive and
    Orbit compositions, their controller presets, FFT manifests, and custom
    FFGL plugins remain available under `beta/` and the supporting folders.
    They are useful building material, but their controller pairings are not
@@ -31,7 +31,7 @@ No external clip files are required by the stable visual twin.
 ## Repo tree
 
 ```
-resolume-cowork-helper-mcp-automation/
+apc40mkii-kit/
   manifests/    orbit_gen_O1..O5.json - the five decks as machine-readable
                 specs: per cell source, FFT band/gain/fallback/floor, mood
                 notes, user slots, native fallbacks for custom sources
@@ -47,7 +47,7 @@ resolume-cowork-helper-mcp-automation/
                                         its banks/colors and maps to it
   compositions/ APC40_Visual_QA_148.avc - verified 148-control APC40 twin
   controllers/  APC 40 MK II - Visual QA.xml - verified 203-shortcut preset
-  beta/         older React Live + Orbit compositions and controller presets
+  beta/         older audio-reactive + Orbit compositions and controller presets
   docs/         CONTROL_LOGIC.md          - THE control law: safety rails + knob design
                 CONTROLLER_VISUAL_TWIN_PLAYBOOK.md - reusable build guide + lessons learned
                 APC40_Standard_Layout.md  - beta performance-layout design
@@ -136,11 +136,11 @@ zero AI involved; the prompts document how to repeat the method.
 
 ## Beta performance experiments
 
-Three Pulse cells reference sources that are not stock Avenue: React Pulsar
+Three Pulse cells reference sources that are not stock Avenue: Fable Pulsar
 (a custom FFGL source - CP1919 pulsar ridgelines, stateless, 7 scalar
 params) and two Wire patches (Golden Flicker Reel, Geometry Pattern Maker).
 Every such cell is marked `custom_source` with a native `fallback` - the set
-plays without them. The React Live and Orbit `.avc` files and their controller
+plays without them. The audio-reactive and Orbit `.avc` files and their controller
 presets are retained under `beta/`; they are not claimed as end-to-end
 controller-verified builds. Prompt 06 documents the plugin build path.
 
@@ -212,15 +212,11 @@ are the most welcome PR of all.
 `beta/streamdeck-animated-v3/` ships three named, matched editions of the APC40
 mkII visual twin, **Electric Zentropa**:
 
-- **ButtonGlow Baseline v1** - the controller-first rollback with the good sine
-  motion, lit buttons, continuously visible chassis, and known-good 148-control
-  mappings.
-- **ButtonPulse FFT v1** - ButtonGlow plus spatial FFT on the 120 visible
-  ON/pressed clips. Bass lives toward the bottom/left, mids through the center,
-  and highs toward the top/right; the background and continuous controls are
-  left alone.
-- **ScreenPulse v1** - the music-driven, screen-first edition with the chassis
-  always visible. Its physical button LEDs are not intended to stay latched.
+- **AUDIOBEDS_NO_TOGGLES** - The audio-reactive version with FFT-driven beds, but native toggle behaviors are disabled.
+- **TOGGLES_NO_BEDS** - The robust controller-first layout. Perfect toggle logic for all 148 single-color buttons with constant chassis visibility, but no audio-reactive beds.
+- **AUDIOBEDS_AND_TOGGLES** - The ultimate hybrid. Combines the full FFT-reactive beds with perfectly mapped button toggles.
+
+In the stable release folders (`compositions/` and `controllers/`), you will find the **Lost Buttons** edition (`APC40MKII_Electric_Zentropa_Lost_Buttons.avc` and `.xml`). This edition maps all physical buttons to `connectnextclip` for rock-solid on-screen UI reliability, intentionally sacrificing physical button LED toggle states.
 
 The older `APC40_Electric_Zentropa.avc` and static source builds remain in the
 composition directory as development history.
@@ -233,7 +229,7 @@ Avenue `Shortcuts/MIDI` folder, restart Avenue so it registers the preset, and
 then open the matching composition. Enable the APC40 mkII as both MIDI input
 and output and select the exact matching preset name.
 
-ButtonGlow and ButtonPulse retain the known-good A/B mappings on all eight
+The matched presets retain the known-good A/B mappings on all eight
 tracks: press clip 1 in Toggle mode with connected-state LED feedback. Detailed
 file names, intended uses, and limitations are in
 [`beta/streamdeck-animated-v3/BASELINES.md`](beta/streamdeck-animated-v3/BASELINES.md).

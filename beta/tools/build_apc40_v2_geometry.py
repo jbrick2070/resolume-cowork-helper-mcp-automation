@@ -28,13 +28,17 @@ SOURCE_COMMIT = "7711f49"
 SOURCE_BLOB = "docs/APC40_visual_qa_geometry.json"
 R1_COMPOSITION = Path("compositions/APC40_Visual_QA_148.avc")
 R1_SHA256 = "91cc3096d7aa0f12f648b970cc2b6352a5bd19dd4d5dfb60bf33188c5ebd7f99"
-RUN_ID = "20260719T204648Z"
+RUN_ID = "20260719T231500Z"
 DEFAULT_OUTPUT = Path(f"beta/APC40_V2_GEOMETRY_{RUN_ID}.json")
 
 CANVAS = (1920, 1080)
 SAFE_BOX = (112.0, 66.0, 1808.0, 1022.0)
 PADDING = 4.0
-STROKE = 2.0
+# The previous 2 px intent raster was technically present but resolved as a
+# faint dotted hairline in Avenue's Text Block renderer.  Six canvas pixels
+# makes neighbouring 2x4 Braille dots overlap after the source transform,
+# giving the marked chassis a continuous, hardware-weight contour.
+STROKE = 6.0
 GRID_COLUMNS = 160
 GRID_ROWS = 60
 DOT_COLUMNS = GRID_COLUMNS * 2
@@ -120,7 +124,7 @@ def line(
     y2: float,
     family: str,
     *,
-    clip_to_protection: bool = False,
+    clip_to_protection: bool = True,
 ) -> dict[str, Any]:
     return {
         "id": primitive_id,
@@ -150,7 +154,7 @@ def circle(
         "cy": float(cy),
         "radius": float(radius),
         "stroke_px": STROKE,
-        "clip_to_protection": False,
+        "clip_to_protection": True,
     }
 
 
@@ -614,7 +618,25 @@ def dots_for_primitive(primitive: dict[str, Any]) -> set[tuple[int, int]]:
             dots.add(coordinate_to_dot(x, y))
     else:
         raise ValueError(f"unsupported primitive kind: {primitive['kind']}")
-    return dots
+    # A Braille glyph is not a stroked-vector primitive: a single sampled dot
+    # becomes a tiny isolated speck in Avenue.  Dilate the sampled centreline
+    # in dot space so the encoded raster honours the declared hardware-weight
+    # stroke after the live source transform.
+    x1, y1, x2, y2 = SAFE_BOX
+    step_x = (x2 - x1) / DOT_COLUMNS
+    step_y = (y2 - y1) / DOT_ROWS
+    radius_x = max(0, math.ceil((primitive["stroke_px"] / 2.0) / step_x))
+    radius_y = max(0, math.ceil((primitive["stroke_px"] / 2.0) / step_y))
+    return {
+        (candidate_column, candidate_row)
+        for column, row in dots
+        for candidate_column in range(
+            max(0, column - radius_x), min(DOT_COLUMNS, column + radius_x + 1)
+        )
+        for candidate_row in range(
+            max(0, row - radius_y), min(DOT_ROWS, row + radius_y + 1)
+        )
+    }
 
 
 def grid_text(

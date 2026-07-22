@@ -1,0 +1,3160 @@
+[
+ {
+  "layer": 1,
+  "name": "Grid 5 Track 1",
+  "color_id": 4,
+  "text": "G1-5 N0/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   138,
+   450,
+   244,
+   494
+  ],
+  "witness_box": [
+   234,
+   451,
+   244,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037928080"
+ },
+ {
+  "layer": 2,
+  "name": "Grid 5 Track 2",
+  "color_id": 3,
+  "text": "G2-5 N1/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   268,
+   450,
+   374,
+   494
+  ],
+  "witness_box": [
+   364,
+   451,
+   374,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037928336"
+ },
+ {
+  "layer": 3,
+  "name": "Grid 5 Track 3",
+  "color_id": 2,
+  "text": "G3-5 N2/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   398,
+   450,
+   504,
+   494
+  ],
+  "witness_box": [
+   494,
+   451,
+   504,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037928592"
+ },
+ {
+  "layer": 4,
+  "name": "Grid 5 Track 4",
+  "color_id": 1,
+  "text": "G4-5 N3/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   528,
+   450,
+   634,
+   494
+  ],
+  "witness_box": [
+   624,
+   451,
+   634,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037928848"
+ },
+ {
+  "layer": 5,
+  "name": "Grid 5 Track 5",
+  "color_id": 1,
+  "text": "G5-5 N4/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   658,
+   450,
+   764,
+   494
+  ],
+  "witness_box": [
+   754,
+   451,
+   764,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037929104"
+ },
+ {
+  "layer": 6,
+  "name": "Grid 5 Track 6",
+  "color_id": 5,
+  "text": "G6-5 N5/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   787,
+   450,
+   893,
+   494
+  ],
+  "witness_box": [
+   883,
+   451,
+   893,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037929360"
+ },
+ {
+  "layer": 7,
+  "name": "Grid 5 Track 7",
+  "color_id": 5,
+  "text": "G7-5 N6/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   917,
+   450,
+   1023,
+   494
+  ],
+  "witness_box": [
+   1013,
+   451,
+   1023,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037929616"
+ },
+ {
+  "layer": 8,
+  "name": "Grid 5 Track 8",
+  "color_id": 4,
+  "text": "G8-5 N7/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   1047,
+   450,
+   1153,
+   494
+  ],
+  "witness_box": [
+   1143,
+   451,
+   1153,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037929872"
+ },
+ {
+  "layer": 9,
+  "name": "Grid 4 Track 1",
+  "color_id": 4,
+  "text": "G1-4 N8/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   138,
+   390,
+   244,
+   434
+  ],
+  "witness_box": [
+   234,
+   391,
+   244,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037930128"
+ },
+ {
+  "layer": 10,
+  "name": "Grid 4 Track 2",
+  "color_id": 3,
+  "text": "G2-4 N9/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   268,
+   390,
+   374,
+   434
+  ],
+  "witness_box": [
+   364,
+   391,
+   374,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037930384"
+ },
+ {
+  "layer": 11,
+  "name": "Grid 4 Track 3",
+  "color_id": 2,
+  "text": "G3-4 N10/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   398,
+   390,
+   504,
+   434
+  ],
+  "witness_box": [
+   494,
+   391,
+   504,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037930640"
+ },
+ {
+  "layer": 12,
+  "name": "Grid 4 Track 4",
+  "color_id": 1,
+  "text": "G4-4 N11/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   528,
+   390,
+   634,
+   434
+  ],
+  "witness_box": [
+   624,
+   391,
+   634,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037930896"
+ },
+ {
+  "layer": 13,
+  "name": "Grid 4 Track 5",
+  "color_id": 1,
+  "text": "G5-4 N12/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   658,
+   390,
+   764,
+   434
+  ],
+  "witness_box": [
+   754,
+   391,
+   764,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037931152"
+ },
+ {
+  "layer": 14,
+  "name": "Grid 4 Track 6",
+  "color_id": 5,
+  "text": "G6-4 N13/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   787,
+   390,
+   893,
+   434
+  ],
+  "witness_box": [
+   883,
+   391,
+   893,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037931408"
+ },
+ {
+  "layer": 15,
+  "name": "Grid 4 Track 7",
+  "color_id": 5,
+  "text": "G7-4 N14/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   917,
+   390,
+   1023,
+   434
+  ],
+  "witness_box": [
+   1013,
+   391,
+   1023,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037931664"
+ },
+ {
+  "layer": 16,
+  "name": "Grid 4 Track 8",
+  "color_id": 4,
+  "text": "G8-4 N15/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   1047,
+   390,
+   1153,
+   434
+  ],
+  "witness_box": [
+   1143,
+   391,
+   1153,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037931920"
+ },
+ {
+  "layer": 17,
+  "name": "Grid 3 Track 1",
+  "color_id": 4,
+  "text": "G1-3 N16/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   138,
+   329,
+   244,
+   373
+  ],
+  "witness_box": [
+   234,
+   330,
+   244,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037932176"
+ },
+ {
+  "layer": 18,
+  "name": "Grid 3 Track 2",
+  "color_id": 3,
+  "text": "G2-3 N17/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   268,
+   329,
+   374,
+   373
+  ],
+  "witness_box": [
+   364,
+   330,
+   374,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037932432"
+ },
+ {
+  "layer": 19,
+  "name": "Grid 3 Track 3",
+  "color_id": 2,
+  "text": "G3-3 N18/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   398,
+   329,
+   504,
+   373
+  ],
+  "witness_box": [
+   494,
+   330,
+   504,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037932688"
+ },
+ {
+  "layer": 20,
+  "name": "Grid 3 Track 4",
+  "color_id": 1,
+  "text": "G4-3 N19/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   528,
+   329,
+   634,
+   373
+  ],
+  "witness_box": [
+   624,
+   330,
+   634,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037932944"
+ },
+ {
+  "layer": 21,
+  "name": "Grid 3 Track 5",
+  "color_id": 1,
+  "text": "G5-3 N20/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   658,
+   329,
+   764,
+   373
+  ],
+  "witness_box": [
+   754,
+   330,
+   764,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037933200"
+ },
+ {
+  "layer": 22,
+  "name": "Grid 3 Track 6",
+  "color_id": 5,
+  "text": "G6-3 N21/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   787,
+   329,
+   893,
+   373
+  ],
+  "witness_box": [
+   883,
+   330,
+   893,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037933456"
+ },
+ {
+  "layer": 23,
+  "name": "Grid 3 Track 7",
+  "color_id": 5,
+  "text": "G7-3 N22/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   917,
+   329,
+   1023,
+   373
+  ],
+  "witness_box": [
+   1013,
+   330,
+   1023,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037933712"
+ },
+ {
+  "layer": 24,
+  "name": "Grid 3 Track 8",
+  "color_id": 4,
+  "text": "G8-3 N23/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   1047,
+   329,
+   1153,
+   373
+  ],
+  "witness_box": [
+   1143,
+   330,
+   1153,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037933968"
+ },
+ {
+  "layer": 25,
+  "name": "Grid 2 Track 1",
+  "color_id": 4,
+  "text": "G1-2 N24/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   138,
+   269,
+   244,
+   313
+  ],
+  "witness_box": [
+   234,
+   270,
+   244,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037934224"
+ },
+ {
+  "layer": 26,
+  "name": "Grid 2 Track 2",
+  "color_id": 3,
+  "text": "G2-2 N25/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   268,
+   269,
+   374,
+   313
+  ],
+  "witness_box": [
+   364,
+   270,
+   374,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037934480"
+ },
+ {
+  "layer": 27,
+  "name": "Grid 2 Track 3",
+  "color_id": 2,
+  "text": "G3-2 N26/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   398,
+   269,
+   504,
+   313
+  ],
+  "witness_box": [
+   494,
+   270,
+   504,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037934736"
+ },
+ {
+  "layer": 28,
+  "name": "Grid 2 Track 4",
+  "color_id": 1,
+  "text": "G4-2 N27/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   528,
+   269,
+   634,
+   313
+  ],
+  "witness_box": [
+   624,
+   270,
+   634,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037934992"
+ },
+ {
+  "layer": 29,
+  "name": "Grid 2 Track 5",
+  "color_id": 1,
+  "text": "G5-2 N28/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   658,
+   269,
+   764,
+   313
+  ],
+  "witness_box": [
+   754,
+   270,
+   764,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037935248"
+ },
+ {
+  "layer": 30,
+  "name": "Grid 2 Track 6",
+  "color_id": 5,
+  "text": "G6-2 N29/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   787,
+   269,
+   893,
+   313
+  ],
+  "witness_box": [
+   883,
+   270,
+   893,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037935504"
+ },
+ {
+  "layer": 31,
+  "name": "Grid 2 Track 7",
+  "color_id": 5,
+  "text": "G7-2 N30/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   917,
+   269,
+   1023,
+   313
+  ],
+  "witness_box": [
+   1013,
+   270,
+   1023,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037935760"
+ },
+ {
+  "layer": 32,
+  "name": "Grid 2 Track 8",
+  "color_id": 4,
+  "text": "G8-2 N31/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   1047,
+   269,
+   1153,
+   313
+  ],
+  "witness_box": [
+   1143,
+   270,
+   1153,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037936016"
+ },
+ {
+  "layer": 33,
+  "name": "Grid 1 Track 1",
+  "color_id": 4,
+  "text": "G1-1 N32/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   138,
+   209,
+   244,
+   253
+  ],
+  "witness_box": [
+   234,
+   210,
+   244,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037936272"
+ },
+ {
+  "layer": 34,
+  "name": "Grid 1 Track 2",
+  "color_id": 3,
+  "text": "G2-1 N33/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   268,
+   209,
+   374,
+   253
+  ],
+  "witness_box": [
+   364,
+   210,
+   374,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037936528"
+ },
+ {
+  "layer": 35,
+  "name": "Grid 1 Track 3",
+  "color_id": 2,
+  "text": "G3-1 N34/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   398,
+   209,
+   504,
+   253
+  ],
+  "witness_box": [
+   494,
+   210,
+   504,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037936784"
+ },
+ {
+  "layer": 36,
+  "name": "Grid 1 Track 4",
+  "color_id": 1,
+  "text": "G4-1 N35/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   528,
+   209,
+   634,
+   253
+  ],
+  "witness_box": [
+   624,
+   210,
+   634,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037937040"
+ },
+ {
+  "layer": 37,
+  "name": "Grid 1 Track 5",
+  "color_id": 1,
+  "text": "G5-1 N36/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   658,
+   209,
+   764,
+   253
+  ],
+  "witness_box": [
+   754,
+   210,
+   764,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037937296"
+ },
+ {
+  "layer": 38,
+  "name": "Grid 1 Track 6",
+  "color_id": 5,
+  "text": "G6-1 N37/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   787,
+   209,
+   893,
+   253
+  ],
+  "witness_box": [
+   883,
+   210,
+   893,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037937552"
+ },
+ {
+  "layer": 39,
+  "name": "Grid 1 Track 7",
+  "color_id": 5,
+  "text": "G7-1 N38/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   917,
+   209,
+   1023,
+   253
+  ],
+  "witness_box": [
+   1013,
+   210,
+   1023,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037937808"
+ },
+ {
+  "layer": 40,
+  "name": "Grid 1 Track 8",
+  "color_id": 4,
+  "text": "G8-1 N39/C1",
+  "prototype": "grid_pad",
+  "label_box": [
+   1047,
+   209,
+   1153,
+   253
+  ],
+  "witness_box": [
+   1143,
+   210,
+   1153,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037938064"
+ },
+ {
+  "layer": 41,
+  "name": "Scene Launch 1",
+  "color_id": 2,
+  "text": "SCENE1 N82/C1",
+  "prototype": "scene_pad",
+  "label_box": [
+   1181,
+   209,
+   1247,
+   253
+  ],
+  "witness_box": [
+   1237,
+   210,
+   1247,
+   220
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037949072"
+ },
+ {
+  "layer": 42,
+  "name": "Scene Launch 2",
+  "color_id": 2,
+  "text": "SCENE2 N83/C1",
+  "prototype": "scene_pad",
+  "label_box": [
+   1181,
+   269,
+   1247,
+   313
+  ],
+  "witness_box": [
+   1237,
+   270,
+   1247,
+   280
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037949328"
+ },
+ {
+  "layer": 43,
+  "name": "Scene Launch 3",
+  "color_id": 2,
+  "text": "SCENE3 N84/C1",
+  "prototype": "scene_pad",
+  "label_box": [
+   1181,
+   329,
+   1247,
+   373
+  ],
+  "witness_box": [
+   1237,
+   330,
+   1247,
+   340
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037949584"
+ },
+ {
+  "layer": 44,
+  "name": "Scene Launch 4",
+  "color_id": 2,
+  "text": "SCENE4 N85/C1",
+  "prototype": "scene_pad",
+  "label_box": [
+   1181,
+   390,
+   1247,
+   434
+  ],
+  "witness_box": [
+   1237,
+   391,
+   1247,
+   401
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037949840"
+ },
+ {
+  "layer": 45,
+  "name": "Scene Launch 5",
+  "color_id": 2,
+  "text": "SCENE5 N86/C1",
+  "prototype": "scene_pad",
+  "label_box": [
+   1181,
+   450,
+   1247,
+   494
+  ],
+  "witness_box": [
+   1237,
+   451,
+   1247,
+   461
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037950096"
+ },
+ {
+  "layer": 46,
+  "name": "Clip Stop 1",
+  "color_id": 1,
+  "text": "STOP1 N52/C1",
+  "prototype": "clip_stop",
+  "label_box": [
+   146,
+   518,
+   236,
+   562
+  ],
+  "witness_box": [
+   226,
+   519,
+   236,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941392"
+ },
+ {
+  "layer": 47,
+  "name": "Clip Stop 2",
+  "color_id": 1,
+  "text": "STOP2 N52/C2",
+  "prototype": "clip_stop",
+  "label_box": [
+   276,
+   518,
+   366,
+   562
+  ],
+  "witness_box": [
+   356,
+   519,
+   366,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941393"
+ },
+ {
+  "layer": 48,
+  "name": "Clip Stop 3",
+  "color_id": 1,
+  "text": "STOP3 N52/C3",
+  "prototype": "clip_stop",
+  "label_box": [
+   406,
+   518,
+   496,
+   562
+  ],
+  "witness_box": [
+   486,
+   519,
+   496,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941394"
+ },
+ {
+  "layer": 49,
+  "name": "Clip Stop 4",
+  "color_id": 1,
+  "text": "STOP4 N52/C4",
+  "prototype": "clip_stop",
+  "label_box": [
+   536,
+   518,
+   626,
+   562
+  ],
+  "witness_box": [
+   616,
+   519,
+   626,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941395"
+ },
+ {
+  "layer": 50,
+  "name": "Clip Stop 5",
+  "color_id": 1,
+  "text": "STOP5 N52/C5",
+  "prototype": "clip_stop",
+  "label_box": [
+   666,
+   518,
+   756,
+   562
+  ],
+  "witness_box": [
+   746,
+   519,
+   756,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941396"
+ },
+ {
+  "layer": 51,
+  "name": "Clip Stop 6",
+  "color_id": 1,
+  "text": "STOP6 N52/C6",
+  "prototype": "clip_stop",
+  "label_box": [
+   795,
+   518,
+   885,
+   562
+  ],
+  "witness_box": [
+   875,
+   519,
+   885,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941397"
+ },
+ {
+  "layer": 52,
+  "name": "Clip Stop 7",
+  "color_id": 1,
+  "text": "STOP7 N52/C7",
+  "prototype": "clip_stop",
+  "label_box": [
+   925,
+   518,
+   1015,
+   562
+  ],
+  "witness_box": [
+   1005,
+   519,
+   1015,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941398"
+ },
+ {
+  "layer": 53,
+  "name": "Clip Stop 8",
+  "color_id": 1,
+  "text": "STOP8 N52/C8",
+  "prototype": "clip_stop",
+  "label_box": [
+   1055,
+   518,
+   1145,
+   562
+  ],
+  "witness_box": [
+   1135,
+   519,
+   1145,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941399"
+ },
+ {
+  "layer": 54,
+  "name": "Track Select 1",
+  "color_id": 4,
+  "text": "SEL1 N51/C1",
+  "prototype": "track_select",
+  "label_box": [
+   138,
+   590,
+   244,
+   626
+  ],
+  "witness_box": [
+   234,
+   591,
+   244,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941136"
+ },
+ {
+  "layer": 55,
+  "name": "Track Select 2",
+  "color_id": 4,
+  "text": "SEL2 N51/C2",
+  "prototype": "track_select",
+  "label_box": [
+   268,
+   590,
+   374,
+   626
+  ],
+  "witness_box": [
+   364,
+   591,
+   374,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941137"
+ },
+ {
+  "layer": 56,
+  "name": "Track Select 3",
+  "color_id": 4,
+  "text": "SEL3 N51/C3",
+  "prototype": "track_select",
+  "label_box": [
+   398,
+   590,
+   504,
+   626
+  ],
+  "witness_box": [
+   494,
+   591,
+   504,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941138"
+ },
+ {
+  "layer": 57,
+  "name": "Track Select 4",
+  "color_id": 4,
+  "text": "SEL4 N51/C4",
+  "prototype": "track_select",
+  "label_box": [
+   528,
+   590,
+   634,
+   626
+  ],
+  "witness_box": [
+   624,
+   591,
+   634,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941139"
+ },
+ {
+  "layer": 58,
+  "name": "Track Select 5",
+  "color_id": 4,
+  "text": "SEL5 N51/C5",
+  "prototype": "track_select",
+  "label_box": [
+   658,
+   590,
+   764,
+   626
+  ],
+  "witness_box": [
+   754,
+   591,
+   764,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941140"
+ },
+ {
+  "layer": 59,
+  "name": "Track Select 6",
+  "color_id": 4,
+  "text": "SEL6 N51/C6",
+  "prototype": "track_select",
+  "label_box": [
+   787,
+   590,
+   893,
+   626
+  ],
+  "witness_box": [
+   883,
+   591,
+   893,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941141"
+ },
+ {
+  "layer": 60,
+  "name": "Track Select 7",
+  "color_id": 4,
+  "text": "SEL7 N51/C7",
+  "prototype": "track_select",
+  "label_box": [
+   917,
+   590,
+   1023,
+   626
+  ],
+  "witness_box": [
+   1013,
+   591,
+   1023,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941142"
+ },
+ {
+  "layer": 61,
+  "name": "Track Select 8",
+  "color_id": 4,
+  "text": "SEL8 N51/C8",
+  "prototype": "track_select",
+  "label_box": [
+   1047,
+   590,
+   1153,
+   626
+  ],
+  "witness_box": [
+   1143,
+   591,
+   1153,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037941143"
+ },
+ {
+  "layer": 62,
+  "name": "Record Arm 1",
+  "color_id": 1,
+  "text": "\u25cf N48/C1",
+  "prototype": "track_button",
+  "label_box": [
+   197,
+   702,
+   235,
+   738
+  ],
+  "witness_box": [
+   225,
+   727,
+   235,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940368"
+ },
+ {
+  "layer": 63,
+  "name": "Record Arm 2",
+  "color_id": 1,
+  "text": "\u25cf N48/C2",
+  "prototype": "track_button",
+  "label_box": [
+   327,
+   702,
+   365,
+   738
+  ],
+  "witness_box": [
+   355,
+   727,
+   365,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940369"
+ },
+ {
+  "layer": 64,
+  "name": "Record Arm 3",
+  "color_id": 1,
+  "text": "\u25cf N48/C3",
+  "prototype": "track_button",
+  "label_box": [
+   457,
+   702,
+   495,
+   738
+  ],
+  "witness_box": [
+   485,
+   727,
+   495,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940370"
+ },
+ {
+  "layer": 65,
+  "name": "Record Arm 4",
+  "color_id": 1,
+  "text": "\u25cf N48/C4",
+  "prototype": "track_button",
+  "label_box": [
+   586,
+   702,
+   624,
+   738
+  ],
+  "witness_box": [
+   614,
+   727,
+   624,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940371"
+ },
+ {
+  "layer": 66,
+  "name": "Record Arm 5",
+  "color_id": 1,
+  "text": "\u25cf N48/C5",
+  "prototype": "track_button",
+  "label_box": [
+   716,
+   702,
+   754,
+   738
+  ],
+  "witness_box": [
+   744,
+   727,
+   754,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940372"
+ },
+ {
+  "layer": 67,
+  "name": "Record Arm 6",
+  "color_id": 1,
+  "text": "\u25cf N48/C6",
+  "prototype": "track_button",
+  "label_box": [
+   846,
+   702,
+   884,
+   738
+  ],
+  "witness_box": [
+   874,
+   727,
+   884,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940373"
+ },
+ {
+  "layer": 68,
+  "name": "Record Arm 7",
+  "color_id": 1,
+  "text": "\u25cf N48/C7",
+  "prototype": "track_button",
+  "label_box": [
+   976,
+   702,
+   1014,
+   738
+  ],
+  "witness_box": [
+   1004,
+   727,
+   1014,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940374"
+ },
+ {
+  "layer": 69,
+  "name": "Record Arm 8",
+  "color_id": 1,
+  "text": "\u25cf N48/C8",
+  "prototype": "track_button",
+  "label_box": [
+   1106,
+   702,
+   1144,
+   738
+  ],
+  "witness_box": [
+   1134,
+   727,
+   1144,
+   737
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940375"
+ },
+ {
+  "layer": 70,
+  "name": "Solo 1",
+  "color_id": 1,
+  "text": "S N49/C1",
+  "prototype": "track_button",
+  "label_box": [
+   148,
+   702,
+   186,
+   738
+  ],
+  "witness_box": [
+   176,
+   703,
+   186,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940624"
+ },
+ {
+  "layer": 71,
+  "name": "Solo 2",
+  "color_id": 1,
+  "text": "S N49/C2",
+  "prototype": "track_button",
+  "label_box": [
+   277,
+   702,
+   315,
+   738
+  ],
+  "witness_box": [
+   305,
+   703,
+   315,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940625"
+ },
+ {
+  "layer": 72,
+  "name": "Solo 3",
+  "color_id": 1,
+  "text": "S N49/C3",
+  "prototype": "track_button",
+  "label_box": [
+   407,
+   702,
+   445,
+   738
+  ],
+  "witness_box": [
+   435,
+   703,
+   445,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940626"
+ },
+ {
+  "layer": 73,
+  "name": "Solo 4",
+  "color_id": 1,
+  "text": "S N49/C4",
+  "prototype": "track_button",
+  "label_box": [
+   537,
+   702,
+   575,
+   738
+  ],
+  "witness_box": [
+   565,
+   703,
+   575,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940627"
+ },
+ {
+  "layer": 74,
+  "name": "Solo 5",
+  "color_id": 1,
+  "text": "S N49/C5",
+  "prototype": "track_button",
+  "label_box": [
+   667,
+   702,
+   705,
+   738
+  ],
+  "witness_box": [
+   695,
+   703,
+   705,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940628"
+ },
+ {
+  "layer": 75,
+  "name": "Solo 6",
+  "color_id": 1,
+  "text": "S N49/C6",
+  "prototype": "track_button",
+  "label_box": [
+   797,
+   702,
+   835,
+   738
+  ],
+  "witness_box": [
+   825,
+   703,
+   835,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940629"
+ },
+ {
+  "layer": 76,
+  "name": "Solo 7",
+  "color_id": 1,
+  "text": "S N49/C7",
+  "prototype": "track_button",
+  "label_box": [
+   926,
+   702,
+   964,
+   738
+  ],
+  "witness_box": [
+   954,
+   703,
+   964,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940630"
+ },
+ {
+  "layer": 77,
+  "name": "Solo 8",
+  "color_id": 1,
+  "text": "S N49/C8",
+  "prototype": "track_button",
+  "label_box": [
+   1056,
+   702,
+   1094,
+   738
+  ],
+  "witness_box": [
+   1084,
+   703,
+   1094,
+   713
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940631"
+ },
+ {
+  "layer": 78,
+  "name": "Activator 1",
+  "color_id": 2,
+  "text": "1 N50/C1",
+  "prototype": "track_button",
+  "label_box": [
+   148,
+   655,
+   186,
+   691
+  ],
+  "witness_box": [
+   176,
+   656,
+   186,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940880"
+ },
+ {
+  "layer": 79,
+  "name": "Activator 2",
+  "color_id": 2,
+  "text": "2 N50/C2",
+  "prototype": "track_button",
+  "label_box": [
+   277,
+   655,
+   315,
+   691
+  ],
+  "witness_box": [
+   305,
+   656,
+   315,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940881"
+ },
+ {
+  "layer": 80,
+  "name": "Activator 3",
+  "color_id": 2,
+  "text": "3 N50/C3",
+  "prototype": "track_button",
+  "label_box": [
+   407,
+   655,
+   445,
+   691
+  ],
+  "witness_box": [
+   435,
+   656,
+   445,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940882"
+ },
+ {
+  "layer": 81,
+  "name": "Activator 4",
+  "color_id": 2,
+  "text": "4 N50/C4",
+  "prototype": "track_button",
+  "label_box": [
+   537,
+   655,
+   575,
+   691
+  ],
+  "witness_box": [
+   565,
+   656,
+   575,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940883"
+ },
+ {
+  "layer": 82,
+  "name": "Activator 5",
+  "color_id": 2,
+  "text": "5 N50/C5",
+  "prototype": "track_button",
+  "label_box": [
+   667,
+   655,
+   705,
+   691
+  ],
+  "witness_box": [
+   695,
+   656,
+   705,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940884"
+ },
+ {
+  "layer": 83,
+  "name": "Activator 6",
+  "color_id": 2,
+  "text": "6 N50/C6",
+  "prototype": "track_button",
+  "label_box": [
+   797,
+   655,
+   835,
+   691
+  ],
+  "witness_box": [
+   825,
+   656,
+   835,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940885"
+ },
+ {
+  "layer": 84,
+  "name": "Activator 7",
+  "color_id": 2,
+  "text": "7 N50/C7",
+  "prototype": "track_button",
+  "label_box": [
+   926,
+   655,
+   964,
+   691
+  ],
+  "witness_box": [
+   954,
+   656,
+   964,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940886"
+ },
+ {
+  "layer": 85,
+  "name": "Activator 8",
+  "color_id": 2,
+  "text": "8 N50/C8",
+  "prototype": "track_button",
+  "label_box": [
+   1056,
+   655,
+   1094,
+   691
+  ],
+  "witness_box": [
+   1084,
+   656,
+   1094,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037940887"
+ },
+ {
+  "layer": 86,
+  "name": "Crossfade A B 1",
+  "color_id": 1,
+  "text": "A/B N66/C1",
+  "prototype": "track_button",
+  "label_box": [
+   197,
+   655,
+   235,
+   691
+  ],
+  "witness_box": [
+   225,
+   656,
+   235,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944976"
+ },
+ {
+  "layer": 87,
+  "name": "Crossfade A B 2",
+  "color_id": 1,
+  "text": "A/B N66/C2",
+  "prototype": "track_button",
+  "label_box": [
+   327,
+   655,
+   365,
+   691
+  ],
+  "witness_box": [
+   355,
+   656,
+   365,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944977"
+ },
+ {
+  "layer": 88,
+  "name": "Crossfade A B 3",
+  "color_id": 1,
+  "text": "A/B N66/C3",
+  "prototype": "track_button",
+  "label_box": [
+   457,
+   655,
+   495,
+   691
+  ],
+  "witness_box": [
+   485,
+   656,
+   495,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944978"
+ },
+ {
+  "layer": 89,
+  "name": "Crossfade A B 4",
+  "color_id": 1,
+  "text": "A/B N66/C4",
+  "prototype": "track_button",
+  "label_box": [
+   586,
+   655,
+   624,
+   691
+  ],
+  "witness_box": [
+   614,
+   656,
+   624,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944979"
+ },
+ {
+  "layer": 90,
+  "name": "Crossfade A B 5",
+  "color_id": 1,
+  "text": "A/B N66/C5",
+  "prototype": "track_button",
+  "label_box": [
+   716,
+   655,
+   754,
+   691
+  ],
+  "witness_box": [
+   744,
+   656,
+   754,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944980"
+ },
+ {
+  "layer": 91,
+  "name": "Crossfade A B 6",
+  "color_id": 1,
+  "text": "A/B N66/C6",
+  "prototype": "track_button",
+  "label_box": [
+   846,
+   655,
+   884,
+   691
+  ],
+  "witness_box": [
+   874,
+   656,
+   884,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944981"
+ },
+ {
+  "layer": 92,
+  "name": "Crossfade A B 7",
+  "color_id": 1,
+  "text": "A/B N66/C7",
+  "prototype": "track_button",
+  "label_box": [
+   976,
+   655,
+   1014,
+   691
+  ],
+  "witness_box": [
+   1004,
+   656,
+   1014,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944982"
+ },
+ {
+  "layer": 93,
+  "name": "Crossfade A B 8",
+  "color_id": 1,
+  "text": "A/B N66/C8",
+  "prototype": "track_button",
+  "label_box": [
+   1106,
+   655,
+   1144,
+   691
+  ],
+  "witness_box": [
+   1134,
+   656,
+   1144,
+   666
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944983"
+ },
+ {
+  "layer": 94,
+  "name": "Track Fader 1",
+  "color_id": 3,
+  "text": "FADER1 CC7/C1 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   146,
+   877,
+   188,
+   915
+  ],
+  "witness_box": [
+   143,
+   783,
+   239,
+   1013
+  ],
+  "motion_box": [
+   143,
+   783,
+   239,
+   1013
+  ],
+  "raw_key": "144115188075857840"
+ },
+ {
+  "layer": 95,
+  "name": "Track Fader 2",
+  "color_id": 3,
+  "text": "FADER2 CC7/C2 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   276,
+   877,
+   318,
+   915
+  ],
+  "witness_box": [
+   273,
+   783,
+   369,
+   1013
+  ],
+  "motion_box": [
+   273,
+   783,
+   369,
+   1013
+  ],
+  "raw_key": "144115188075857841"
+ },
+ {
+  "layer": 96,
+  "name": "Track Fader 3",
+  "color_id": 3,
+  "text": "FADER3 CC7/C3 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   406,
+   877,
+   448,
+   915
+  ],
+  "witness_box": [
+   403,
+   783,
+   499,
+   1013
+  ],
+  "motion_box": [
+   403,
+   783,
+   499,
+   1013
+  ],
+  "raw_key": "144115188075857842"
+ },
+ {
+  "layer": 97,
+  "name": "Track Fader 4",
+  "color_id": 3,
+  "text": "FADER4 CC7/C4 \u2581 000",
+  "prototype": "vertical_fader",
+  "label_box": [
+   536,
+   877,
+   578,
+   915
+  ],
+  "witness_box": [
+   533,
+   783,
+   629,
+   1013
+  ],
+  "motion_box": [
+   533,
+   783,
+   629,
+   1013
+  ],
+  "raw_key": "144115188075857843"
+ },
+ {
+  "layer": 98,
+  "name": "Track Fader 5",
+  "color_id": 3,
+  "text": "FADER5 CC7/C5 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   666,
+   877,
+   708,
+   915
+  ],
+  "witness_box": [
+   663,
+   783,
+   759,
+   1013
+  ],
+  "motion_box": [
+   663,
+   783,
+   759,
+   1013
+  ],
+  "raw_key": "144115188075857844"
+ },
+ {
+  "layer": 99,
+  "name": "Track Fader 6",
+  "color_id": 3,
+  "text": "FADER6 CC7/C6 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   795,
+   877,
+   837,
+   915
+  ],
+  "witness_box": [
+   792,
+   783,
+   888,
+   1013
+  ],
+  "motion_box": [
+   792,
+   783,
+   888,
+   1013
+  ],
+  "raw_key": "144115188075857845"
+ },
+ {
+  "layer": 100,
+  "name": "Track Fader 7",
+  "color_id": 3,
+  "text": "FADER7 CC7/C7 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   925,
+   877,
+   967,
+   915
+  ],
+  "witness_box": [
+   922,
+   783,
+   1018,
+   1013
+  ],
+  "motion_box": [
+   922,
+   783,
+   1018,
+   1013
+  ],
+  "raw_key": "144115188075857846"
+ },
+ {
+  "layer": 101,
+  "name": "Track Fader 8",
+  "color_id": 3,
+  "text": "FADER8 CC7/C8 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   1055,
+   877,
+   1097,
+   915
+  ],
+  "witness_box": [
+   1052,
+   783,
+   1148,
+   1013
+  ],
+  "motion_box": [
+   1052,
+   783,
+   1148,
+   1013
+  ],
+  "raw_key": "144115188075857847"
+ },
+ {
+  "layer": 102,
+  "name": "Track Knob 1",
+  "color_id": 3,
+  "text": "TRACK1 CC48/C1 \u2192 107",
+  "prototype": "rotary",
+  "label_box": [
+   147,
+   152,
+   235,
+   181
+  ],
+  "witness_box": [
+   180,
+   97,
+   202,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075868336"
+ },
+ {
+  "layer": 103,
+  "name": "Track Knob 2",
+  "color_id": 3,
+  "text": "TRACK2 CC49/C1 \u2196 042",
+  "prototype": "rotary",
+  "label_box": [
+   277,
+   152,
+   365,
+   181
+  ],
+  "witness_box": [
+   310,
+   97,
+   332,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075868592"
+ },
+ {
+  "layer": 104,
+  "name": "Track Knob 3",
+  "color_id": 3,
+  "text": "TRACK3 CC50/C1 \u2190 024",
+  "prototype": "rotary",
+  "label_box": [
+   407,
+   152,
+   495,
+   181
+  ],
+  "witness_box": [
+   440,
+   97,
+   462,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075868848"
+ },
+ {
+  "layer": 105,
+  "name": "Track Knob 4",
+  "color_id": 3,
+  "text": "TRACK4 CC51/C1 \u2196 034",
+  "prototype": "rotary",
+  "label_box": [
+   537,
+   152,
+   625,
+   181
+  ],
+  "witness_box": [
+   570,
+   97,
+   592,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075869104"
+ },
+ {
+  "layer": 106,
+  "name": "Track Knob 5",
+  "color_id": 3,
+  "text": "TRACK5 CC52/C1 \u2196 039",
+  "prototype": "rotary",
+  "label_box": [
+   667,
+   152,
+   755,
+   181
+  ],
+  "witness_box": [
+   700,
+   97,
+   722,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075869360"
+ },
+ {
+  "layer": 107,
+  "name": "Track Knob 6",
+  "color_id": 3,
+  "text": "TRACK6 CC53/C1 \u2190 031",
+  "prototype": "rotary",
+  "label_box": [
+   796,
+   152,
+   884,
+   181
+  ],
+  "witness_box": [
+   829,
+   97,
+   851,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075869616"
+ },
+ {
+  "layer": 108,
+  "name": "Track Knob 7",
+  "color_id": 3,
+  "text": "TRACK7 CC54/C1 \u2197 093",
+  "prototype": "rotary",
+  "label_box": [
+   926,
+   152,
+   1014,
+   181
+  ],
+  "witness_box": [
+   959,
+   97,
+   981,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075869872"
+ },
+ {
+  "layer": 109,
+  "name": "Track Knob 8",
+  "color_id": 3,
+  "text": "TRACK8 CC55/C1 \u2191 073",
+  "prototype": "rotary",
+  "label_box": [
+   1056,
+   152,
+   1144,
+   181
+  ],
+  "witness_box": [
+   1089,
+   97,
+   1111,
+   119
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075870128"
+ },
+ {
+  "layer": 110,
+  "name": "Device Knob 1",
+  "color_id": 3,
+  "text": "DEV1 CC16/C1 \u2197 077",
+  "prototype": "rotary",
+  "label_box": [
+   1293,
+   496,
+   1381,
+   525
+  ],
+  "witness_box": [
+   1326,
+   441,
+   1348,
+   463
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075860144"
+ },
+ {
+  "layer": 111,
+  "name": "Device Knob 2",
+  "color_id": 3,
+  "text": "DEV2 CC17/C1 \u2192 107",
+  "prototype": "rotary",
+  "label_box": [
+   1423,
+   496,
+   1511,
+   525
+  ],
+  "witness_box": [
+   1456,
+   441,
+   1478,
+   463
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075860400"
+ },
+ {
+  "layer": 112,
+  "name": "Device Knob 3",
+  "color_id": 3,
+  "text": "DEV3 CC18/C1 \u2192 099",
+  "prototype": "rotary",
+  "label_box": [
+   1553,
+   496,
+   1641,
+   525
+  ],
+  "witness_box": [
+   1586,
+   441,
+   1608,
+   463
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075860656"
+ },
+ {
+  "layer": 113,
+  "name": "Device Knob 4",
+  "color_id": 3,
+  "text": "DEV4 CC19/C1 \u2198 127",
+  "prototype": "rotary",
+  "label_box": [
+   1683,
+   496,
+   1771,
+   525
+  ],
+  "witness_box": [
+   1716,
+   441,
+   1738,
+   463
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075860912"
+ },
+ {
+  "layer": 114,
+  "name": "Device Knob 5",
+  "color_id": 3,
+  "text": "DEV5 CC20/C1 \u2196 038",
+  "prototype": "rotary",
+  "label_box": [
+   1293,
+   617,
+   1381,
+   646
+  ],
+  "witness_box": [
+   1326,
+   562,
+   1348,
+   584
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075861168"
+ },
+ {
+  "layer": 115,
+  "name": "Device Knob 6",
+  "color_id": 3,
+  "text": "DEV6 CC21/C1 \u2197 094",
+  "prototype": "rotary",
+  "label_box": [
+   1423,
+   617,
+   1511,
+   646
+  ],
+  "witness_box": [
+   1456,
+   562,
+   1478,
+   584
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075861424"
+ },
+ {
+  "layer": 116,
+  "name": "Device Knob 7",
+  "color_id": 3,
+  "text": "DEV7 CC22/C1 \u2191 056",
+  "prototype": "rotary",
+  "label_box": [
+   1553,
+   617,
+   1641,
+   646
+  ],
+  "witness_box": [
+   1586,
+   562,
+   1608,
+   584
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075861680"
+ },
+ {
+  "layer": 117,
+  "name": "Device Knob 8",
+  "color_id": 3,
+  "text": "DEV8 CC23/C1 \u2191 058",
+  "prototype": "rotary",
+  "label_box": [
+   1683,
+   617,
+   1771,
+   646
+  ],
+  "witness_box": [
+   1716,
+   562,
+   1738,
+   584
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075861936"
+ },
+ {
+  "layer": 118,
+  "name": "Play",
+  "color_id": 2,
+  "text": "PLAY N91/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1434,
+   188,
+   1500,
+   220
+  ],
+  "witness_box": [
+   1490,
+   189,
+   1500,
+   199
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037951376"
+ },
+ {
+  "layer": 119,
+  "name": "Stop",
+  "color_id": 4,
+  "text": "STOP N92/C1",
+  "prototype": "secondary_text",
+  "label_box": [
+   1429,
+   230,
+   1505,
+   248
+  ],
+  "witness_box": [
+   1429,
+   230,
+   1505,
+   248
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037951632"
+ },
+ {
+  "layer": 120,
+  "name": "Record",
+  "color_id": 1,
+  "text": "RECORD N93/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1564,
+   188,
+   1630,
+   220
+  ],
+  "witness_box": [
+   1620,
+   189,
+   1630,
+   199
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037951888"
+ },
+ {
+  "layer": 121,
+  "name": "Tap Tempo",
+  "color_id": 1,
+  "text": "TAP N99/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1564,
+   262,
+   1630,
+   294
+  ],
+  "witness_box": [
+   1620,
+   263,
+   1630,
+   273
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037953424"
+ },
+ {
+  "layer": 122,
+  "name": "Nudge Minus",
+  "color_id": 1,
+  "text": "NUDGE- N100/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1434,
+   335,
+   1500,
+   367
+  ],
+  "witness_box": [
+   1490,
+   336,
+   1500,
+   346
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037953680"
+ },
+ {
+  "layer": 123,
+  "name": "Nudge Plus",
+  "color_id": 1,
+  "text": "NUDGE+ N101/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1564,
+   335,
+   1630,
+   367
+  ],
+  "witness_box": [
+   1620,
+   336,
+   1630,
+   346
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037953936"
+ },
+ {
+  "layer": 124,
+  "name": "Pan Mode",
+  "color_id": 5,
+  "text": "PAN N87/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1294,
+   188,
+   1360,
+   220
+  ],
+  "witness_box": [
+   1350,
+   189,
+   1360,
+   199
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037950352"
+ },
+ {
+  "layer": 125,
+  "name": "Stop All Clips",
+  "color_id": 1,
+  "text": "STOPALL N81/C1",
+  "prototype": "stop_all",
+  "label_box": [
+   1181,
+   518,
+   1247,
+   562
+  ],
+  "witness_box": [
+   1237,
+   519,
+   1247,
+   529
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037948816"
+ },
+ {
+  "layer": 126,
+  "name": "Bank Up",
+  "color_id": 5,
+  "text": "U N94/C1",
+  "prototype": "bank_polygon",
+  "label_box": [
+   1363,
+   822,
+   1401,
+   854
+  ],
+  "witness_box": [
+   1391,
+   823,
+   1401,
+   833
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037952144"
+ },
+ {
+  "layer": 127,
+  "name": "Bank Down",
+  "color_id": 5,
+  "text": "D N95/C1",
+  "prototype": "bank_polygon",
+  "label_box": [
+   1363,
+   860,
+   1401,
+   892
+  ],
+  "witness_box": [
+   1391,
+   861,
+   1401,
+   871
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037952400"
+ },
+ {
+  "layer": 128,
+  "name": "Bank Right",
+  "color_id": 5,
+  "text": "R N96/C1",
+  "prototype": "bank_polygon",
+  "label_box": [
+   1408,
+   841,
+   1446,
+   873
+  ],
+  "witness_box": [
+   1436,
+   842,
+   1446,
+   852
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037952656"
+ },
+ {
+  "layer": 129,
+  "name": "Bank Left",
+  "color_id": 5,
+  "text": "L N97/C1",
+  "prototype": "bank_polygon",
+  "label_box": [
+   1318,
+   841,
+   1356,
+   873
+  ],
+  "witness_box": [
+   1346,
+   842,
+   1356,
+   852
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037952912"
+ },
+ {
+  "layer": 130,
+  "name": "Shift",
+  "color_id": 5,
+  "text": "SHIFT N98/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1564,
+   841,
+   1630,
+   873
+  ],
+  "witness_box": [
+   1620,
+   842,
+   1630,
+   852
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037953168"
+ },
+ {
+  "layer": 131,
+  "name": "Device Left",
+  "color_id": 5,
+  "text": "DEVICE< N58/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1304,
+   680,
+   1370,
+   712
+  ],
+  "witness_box": [
+   1360,
+   681,
+   1370,
+   691
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037942928"
+ },
+ {
+  "layer": 132,
+  "name": "Device Right",
+  "color_id": 5,
+  "text": "DEVICE> N59/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1434,
+   680,
+   1500,
+   712
+  ],
+  "witness_box": [
+   1490,
+   681,
+   1500,
+   691
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037943184"
+ },
+ {
+  "layer": 133,
+  "name": "Bank Left Button",
+  "color_id": 5,
+  "text": "BANK< N60/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1564,
+   680,
+   1630,
+   712
+  ],
+  "witness_box": [
+   1620,
+   681,
+   1630,
+   691
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037943440"
+ },
+ {
+  "layer": 134,
+  "name": "Bank Right Button",
+  "color_id": 5,
+  "text": "BANK> N61/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1694,
+   680,
+   1760,
+   712
+  ],
+  "witness_box": [
+   1750,
+   681,
+   1760,
+   691
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037943696"
+ },
+ {
+  "layer": 135,
+  "name": "Device On Off",
+  "color_id": 2,
+  "text": "ON/OFF N62/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1304,
+   746,
+   1370,
+   778
+  ],
+  "witness_box": [
+   1360,
+   747,
+   1370,
+   757
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037943952"
+ },
+ {
+  "layer": 136,
+  "name": "Device Lock",
+  "color_id": 5,
+  "text": "LOCK N63/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1434,
+   746,
+   1500,
+   778
+  ],
+  "witness_box": [
+   1490,
+   747,
+   1500,
+   757
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944208"
+ },
+ {
+  "layer": 137,
+  "name": "Clip Device View",
+  "color_id": 5,
+  "text": "CLIP/DEV N64/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1564,
+   746,
+   1630,
+   778
+  ],
+  "witness_box": [
+   1620,
+   747,
+   1630,
+   757
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944464"
+ },
+ {
+  "layer": 138,
+  "name": "Detail View",
+  "color_id": 5,
+  "text": "DETAIL N65/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1694,
+   746,
+   1760,
+   778
+  ],
+  "witness_box": [
+   1750,
+   747,
+   1760,
+   757
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037944720"
+ },
+ {
+  "layer": 139,
+  "name": "Sends Mode",
+  "color_id": 5,
+  "text": "SENDS N88/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1294,
+   262,
+   1360,
+   294
+  ],
+  "witness_box": [
+   1350,
+   263,
+   1360,
+   273
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037950608"
+ },
+ {
+  "layer": 140,
+  "name": "User Mode",
+  "color_id": 5,
+  "text": "USER N89/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1294,
+   335,
+   1360,
+   367
+  ],
+  "witness_box": [
+   1350,
+   336,
+   1360,
+   346
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037950864"
+ },
+ {
+  "layer": 141,
+  "name": "Metronome",
+  "color_id": 1,
+  "text": "METRO N90/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1434,
+   262,
+   1500,
+   294
+  ],
+  "witness_box": [
+   1490,
+   263,
+   1500,
+   273
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037951120"
+ },
+ {
+  "layer": 142,
+  "name": "Session Record",
+  "color_id": 5,
+  "text": "SESSION N102/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1694,
+   188,
+   1760,
+   220
+  ],
+  "witness_box": [
+   1750,
+   189,
+   1760,
+   199
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037954192"
+ },
+ {
+  "layer": 143,
+  "name": "Master Fader",
+  "color_id": 5,
+  "text": "MASTER CC14/C1 \u2588 127",
+  "prototype": "vertical_fader",
+  "label_box": [
+   1169,
+   877,
+   1211,
+   915
+  ],
+  "witness_box": [
+   1166,
+   783,
+   1262,
+   1013
+  ],
+  "motion_box": [
+   1166,
+   783,
+   1262,
+   1013
+  ],
+  "raw_key": "144115188075859632"
+ },
+ {
+  "layer": 144,
+  "name": "Crossfader",
+  "color_id": 5,
+  "text": "X-FADE CC15/C1 \u2588 127",
+  "prototype": "crossfader",
+  "label_box": [
+   1483,
+   949,
+   1527,
+   1003
+  ],
+  "witness_box": [
+   1479,
+   946,
+   1715,
+   1006
+  ],
+  "motion_box": [
+   1479,
+   946,
+   1715,
+   1006
+  ],
+  "raw_key": "144115188075859888"
+ },
+ {
+  "layer": 145,
+  "name": "Cue Level",
+  "color_id": 5,
+  "text": "CUE CC47/C1 \u2199 001",
+  "prototype": "small_rotary",
+  "label_box": [
+   1180,
+   730,
+   1248,
+   759
+  ],
+  "witness_box": [
+   1203,
+   685,
+   1225,
+   707
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075868080"
+ },
+ {
+  "layer": 146,
+  "name": "Master Select",
+  "color_id": 4,
+  "text": "MASTER N80/C1",
+  "prototype": "master_select",
+  "label_box": [
+   1181,
+   590,
+   1247,
+   626
+  ],
+  "witness_box": [
+   1237,
+   591,
+   1247,
+   601
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037948560"
+ },
+ {
+  "layer": 147,
+  "name": "Bank Lock",
+  "color_id": 5,
+  "text": "BANKLCK N103/C1",
+  "prototype": "small_button",
+  "label_box": [
+   1694,
+   841,
+   1760,
+   873
+  ],
+  "witness_box": [
+   1750,
+   842,
+   1760,
+   852
+  ],
+  "motion_box": null,
+  "raw_key": "72057594037954448"
+ },
+ {
+  "layer": 148,
+  "name": "Tempo Knob",
+  "color_id": 3,
+  "text": "TEMPO CC13/C1 \u2191 053",
+  "prototype": "small_rotary",
+  "label_box": [
+   1693,
+   337,
+   1761,
+   366
+  ],
+  "witness_box": [
+   1716,
+   292,
+   1738,
+   314
+  ],
+  "motion_box": null,
+  "raw_key": "144115188075859376"
+ }
+]

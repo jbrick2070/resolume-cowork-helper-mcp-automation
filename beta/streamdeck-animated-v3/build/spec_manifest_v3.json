@@ -1,0 +1,4308 @@
+{
+ "canvas": [
+  1920,
+  1080
+ ],
+ "fps": 30,
+ "palette": {
+  "1": [
+   232,
+   60,
+   46
+  ],
+  "2": [
+   60,
+   208,
+   90
+  ],
+  "3": [
+   245,
+   170,
+   34
+  ],
+  "4": [
+   40,
+   200,
+   220
+  ],
+  "5": [
+   90,
+   120,
+   255
+  ]
+ },
+ "controls": [
+  {
+   "layer": 1,
+   "name": "Grid 5 Track 1",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G1-5 N0/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L001_Grid_5_Track_1__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L001_Grid_5_Track_1__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    138,
+    450,
+    244,
+    494
+   ],
+   "position_x": -769.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 2,
+   "name": "Grid 5 Track 2",
+   "prototype": "grid_pad",
+   "color_id": 3,
+   "text": "G2-5 N1/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L002_Grid_5_Track_2__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L002_Grid_5_Track_2__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    268,
+    450,
+    374,
+    494
+   ],
+   "position_x": -639.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 3,
+   "name": "Grid 5 Track 3",
+   "prototype": "grid_pad",
+   "color_id": 2,
+   "text": "G3-5 N2/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L003_Grid_5_Track_3__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L003_Grid_5_Track_3__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    398,
+    450,
+    504,
+    494
+   ],
+   "position_x": -509.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 4,
+   "name": "Grid 5 Track 4",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G4-5 N3/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L004_Grid_5_Track_4__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L004_Grid_5_Track_4__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    528,
+    450,
+    634,
+    494
+   ],
+   "position_x": -379.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 5,
+   "name": "Grid 5 Track 5",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G5-5 N4/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L005_Grid_5_Track_5__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L005_Grid_5_Track_5__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    658,
+    450,
+    764,
+    494
+   ],
+   "position_x": -249.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 6,
+   "name": "Grid 5 Track 6",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G6-5 N5/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L006_Grid_5_Track_6__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L006_Grid_5_Track_6__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    787,
+    450,
+    893,
+    494
+   ],
+   "position_x": -120.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 7,
+   "name": "Grid 5 Track 7",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G7-5 N6/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L007_Grid_5_Track_7__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L007_Grid_5_Track_7__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    917,
+    450,
+    1023,
+    494
+   ],
+   "position_x": 10.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 8,
+   "name": "Grid 5 Track 8",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G8-5 N7/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L008_Grid_5_Track_8__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L008_Grid_5_Track_8__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1047,
+    450,
+    1153,
+    494
+   ],
+   "position_x": 140.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 9,
+   "name": "Grid 4 Track 1",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G1-4 N8/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L009_Grid_4_Track_1__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L009_Grid_4_Track_1__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    138,
+    390,
+    244,
+    434
+   ],
+   "position_x": -769.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 10,
+   "name": "Grid 4 Track 2",
+   "prototype": "grid_pad",
+   "color_id": 3,
+   "text": "G2-4 N9/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L010_Grid_4_Track_2__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L010_Grid_4_Track_2__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    268,
+    390,
+    374,
+    434
+   ],
+   "position_x": -639.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 11,
+   "name": "Grid 4 Track 3",
+   "prototype": "grid_pad",
+   "color_id": 2,
+   "text": "G3-4 N10/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L011_Grid_4_Track_3__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L011_Grid_4_Track_3__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    398,
+    390,
+    504,
+    434
+   ],
+   "position_x": -509.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 12,
+   "name": "Grid 4 Track 4",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G4-4 N11/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L012_Grid_4_Track_4__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L012_Grid_4_Track_4__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    528,
+    390,
+    634,
+    434
+   ],
+   "position_x": -379.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 13,
+   "name": "Grid 4 Track 5",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G5-4 N12/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L013_Grid_4_Track_5__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L013_Grid_4_Track_5__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    658,
+    390,
+    764,
+    434
+   ],
+   "position_x": -249.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 14,
+   "name": "Grid 4 Track 6",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G6-4 N13/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L014_Grid_4_Track_6__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L014_Grid_4_Track_6__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    787,
+    390,
+    893,
+    434
+   ],
+   "position_x": -120.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 15,
+   "name": "Grid 4 Track 7",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G7-4 N14/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L015_Grid_4_Track_7__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L015_Grid_4_Track_7__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    917,
+    390,
+    1023,
+    434
+   ],
+   "position_x": 10.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 16,
+   "name": "Grid 4 Track 8",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G8-4 N15/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L016_Grid_4_Track_8__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L016_Grid_4_Track_8__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1047,
+    390,
+    1153,
+    434
+   ],
+   "position_x": 140.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 17,
+   "name": "Grid 3 Track 1",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G1-3 N16/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L017_Grid_3_Track_1__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L017_Grid_3_Track_1__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    138,
+    329,
+    244,
+    373
+   ],
+   "position_x": -769.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 18,
+   "name": "Grid 3 Track 2",
+   "prototype": "grid_pad",
+   "color_id": 3,
+   "text": "G2-3 N17/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L018_Grid_3_Track_2__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L018_Grid_3_Track_2__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    268,
+    329,
+    374,
+    373
+   ],
+   "position_x": -639.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 19,
+   "name": "Grid 3 Track 3",
+   "prototype": "grid_pad",
+   "color_id": 2,
+   "text": "G3-3 N18/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L019_Grid_3_Track_3__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L019_Grid_3_Track_3__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    398,
+    329,
+    504,
+    373
+   ],
+   "position_x": -509.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 20,
+   "name": "Grid 3 Track 4",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G4-3 N19/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L020_Grid_3_Track_4__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L020_Grid_3_Track_4__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    528,
+    329,
+    634,
+    373
+   ],
+   "position_x": -379.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 21,
+   "name": "Grid 3 Track 5",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G5-3 N20/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L021_Grid_3_Track_5__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L021_Grid_3_Track_5__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    658,
+    329,
+    764,
+    373
+   ],
+   "position_x": -249.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 22,
+   "name": "Grid 3 Track 6",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G6-3 N21/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L022_Grid_3_Track_6__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L022_Grid_3_Track_6__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    787,
+    329,
+    893,
+    373
+   ],
+   "position_x": -120.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 23,
+   "name": "Grid 3 Track 7",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G7-3 N22/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L023_Grid_3_Track_7__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L023_Grid_3_Track_7__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    917,
+    329,
+    1023,
+    373
+   ],
+   "position_x": 10.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 24,
+   "name": "Grid 3 Track 8",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G8-3 N23/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L024_Grid_3_Track_8__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L024_Grid_3_Track_8__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1047,
+    329,
+    1153,
+    373
+   ],
+   "position_x": 140.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 25,
+   "name": "Grid 2 Track 1",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G1-2 N24/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L025_Grid_2_Track_1__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L025_Grid_2_Track_1__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    138,
+    269,
+    244,
+    313
+   ],
+   "position_x": -769.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 26,
+   "name": "Grid 2 Track 2",
+   "prototype": "grid_pad",
+   "color_id": 3,
+   "text": "G2-2 N25/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L026_Grid_2_Track_2__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L026_Grid_2_Track_2__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    268,
+    269,
+    374,
+    313
+   ],
+   "position_x": -639.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 27,
+   "name": "Grid 2 Track 3",
+   "prototype": "grid_pad",
+   "color_id": 2,
+   "text": "G3-2 N26/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L027_Grid_2_Track_3__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L027_Grid_2_Track_3__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    398,
+    269,
+    504,
+    313
+   ],
+   "position_x": -509.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 28,
+   "name": "Grid 2 Track 4",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G4-2 N27/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L028_Grid_2_Track_4__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L028_Grid_2_Track_4__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    528,
+    269,
+    634,
+    313
+   ],
+   "position_x": -379.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 29,
+   "name": "Grid 2 Track 5",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G5-2 N28/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L029_Grid_2_Track_5__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L029_Grid_2_Track_5__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    658,
+    269,
+    764,
+    313
+   ],
+   "position_x": -249.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 30,
+   "name": "Grid 2 Track 6",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G6-2 N29/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L030_Grid_2_Track_6__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L030_Grid_2_Track_6__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    787,
+    269,
+    893,
+    313
+   ],
+   "position_x": -120.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 31,
+   "name": "Grid 2 Track 7",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G7-2 N30/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L031_Grid_2_Track_7__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L031_Grid_2_Track_7__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    917,
+    269,
+    1023,
+    313
+   ],
+   "position_x": 10.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 32,
+   "name": "Grid 2 Track 8",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G8-2 N31/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L032_Grid_2_Track_8__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L032_Grid_2_Track_8__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1047,
+    269,
+    1153,
+    313
+   ],
+   "position_x": 140.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 33,
+   "name": "Grid 1 Track 1",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G1-1 N32/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L033_Grid_1_Track_1__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L033_Grid_1_Track_1__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    138,
+    209,
+    244,
+    253
+   ],
+   "position_x": -769.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 34,
+   "name": "Grid 1 Track 2",
+   "prototype": "grid_pad",
+   "color_id": 3,
+   "text": "G2-1 N33/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L034_Grid_1_Track_2__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L034_Grid_1_Track_2__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    268,
+    209,
+    374,
+    253
+   ],
+   "position_x": -639.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 35,
+   "name": "Grid 1 Track 3",
+   "prototype": "grid_pad",
+   "color_id": 2,
+   "text": "G3-1 N34/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L035_Grid_1_Track_3__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L035_Grid_1_Track_3__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    398,
+    209,
+    504,
+    253
+   ],
+   "position_x": -509.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 36,
+   "name": "Grid 1 Track 4",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G4-1 N35/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L036_Grid_1_Track_4__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L036_Grid_1_Track_4__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    528,
+    209,
+    634,
+    253
+   ],
+   "position_x": -379.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 37,
+   "name": "Grid 1 Track 5",
+   "prototype": "grid_pad",
+   "color_id": 1,
+   "text": "G5-1 N36/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L037_Grid_1_Track_5__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L037_Grid_1_Track_5__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    658,
+    209,
+    764,
+    253
+   ],
+   "position_x": -249.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 38,
+   "name": "Grid 1 Track 6",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G6-1 N37/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L038_Grid_1_Track_6__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L038_Grid_1_Track_6__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    787,
+    209,
+    893,
+    253
+   ],
+   "position_x": -120.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 39,
+   "name": "Grid 1 Track 7",
+   "prototype": "grid_pad",
+   "color_id": 5,
+   "text": "G7-1 N38/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L039_Grid_1_Track_7__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L039_Grid_1_Track_7__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    917,
+    209,
+    1023,
+    253
+   ],
+   "position_x": 10.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 40,
+   "name": "Grid 1 Track 8",
+   "prototype": "grid_pad",
+   "color_id": 4,
+   "text": "G8-1 N39/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/grid_pad/L040_Grid_1_Track_8__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/grid_pad/L040_Grid_1_Track_8__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1047,
+    209,
+    1153,
+    253
+   ],
+   "position_x": 140.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 41,
+   "name": "Scene Launch 1",
+   "prototype": "scene_pad",
+   "color_id": 2,
+   "text": "SCENE1 N82/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/scene_pad/L041_Scene_Launch_1__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/scene_pad/L041_Scene_Launch_1__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1181,
+    209,
+    1247,
+    253
+   ],
+   "position_x": 254.0,
+   "position_y": -309.0
+  },
+  {
+   "layer": 42,
+   "name": "Scene Launch 2",
+   "prototype": "scene_pad",
+   "color_id": 2,
+   "text": "SCENE2 N83/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/scene_pad/L042_Scene_Launch_2__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/scene_pad/L042_Scene_Launch_2__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1181,
+    269,
+    1247,
+    313
+   ],
+   "position_x": 254.0,
+   "position_y": -249.0
+  },
+  {
+   "layer": 43,
+   "name": "Scene Launch 3",
+   "prototype": "scene_pad",
+   "color_id": 2,
+   "text": "SCENE3 N84/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/scene_pad/L043_Scene_Launch_3__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/scene_pad/L043_Scene_Launch_3__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1181,
+    329,
+    1247,
+    373
+   ],
+   "position_x": 254.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 44,
+   "name": "Scene Launch 4",
+   "prototype": "scene_pad",
+   "color_id": 2,
+   "text": "SCENE4 N85/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/scene_pad/L044_Scene_Launch_4__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/scene_pad/L044_Scene_Launch_4__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1181,
+    390,
+    1247,
+    434
+   ],
+   "position_x": 254.0,
+   "position_y": -128.0
+  },
+  {
+   "layer": 45,
+   "name": "Scene Launch 5",
+   "prototype": "scene_pad",
+   "color_id": 2,
+   "text": "SCENE5 N86/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/scene_pad/L045_Scene_Launch_5__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/scene_pad/L045_Scene_Launch_5__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1181,
+    450,
+    1247,
+    494
+   ],
+   "position_x": 254.0,
+   "position_y": -68.0
+  },
+  {
+   "layer": 46,
+   "name": "Clip Stop 1",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP1 N52/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L046_Clip_Stop_1__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L046_Clip_Stop_1__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    146,
+    518,
+    236,
+    562
+   ],
+   "position_x": -769.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 47,
+   "name": "Clip Stop 2",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP2 N52/C2",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L047_Clip_Stop_2__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L047_Clip_Stop_2__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    276,
+    518,
+    366,
+    562
+   ],
+   "position_x": -639.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 48,
+   "name": "Clip Stop 3",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP3 N52/C3",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L048_Clip_Stop_3__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L048_Clip_Stop_3__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    406,
+    518,
+    496,
+    562
+   ],
+   "position_x": -509.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 49,
+   "name": "Clip Stop 4",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP4 N52/C4",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L049_Clip_Stop_4__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L049_Clip_Stop_4__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    536,
+    518,
+    626,
+    562
+   ],
+   "position_x": -379.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 50,
+   "name": "Clip Stop 5",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP5 N52/C5",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L050_Clip_Stop_5__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L050_Clip_Stop_5__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    666,
+    518,
+    756,
+    562
+   ],
+   "position_x": -249.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 51,
+   "name": "Clip Stop 6",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP6 N52/C6",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L051_Clip_Stop_6__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L051_Clip_Stop_6__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    795,
+    518,
+    885,
+    562
+   ],
+   "position_x": -120.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 52,
+   "name": "Clip Stop 7",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP7 N52/C7",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L052_Clip_Stop_7__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L052_Clip_Stop_7__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    925,
+    518,
+    1015,
+    562
+   ],
+   "position_x": 10.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 53,
+   "name": "Clip Stop 8",
+   "prototype": "clip_stop",
+   "color_id": 1,
+   "text": "STOP8 N52/C8",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/clip_stop/L053_Clip_Stop_8__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/clip_stop/L053_Clip_Stop_8__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1055,
+    518,
+    1145,
+    562
+   ],
+   "position_x": 140.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 54,
+   "name": "Track Select 1",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL1 N51/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L054_Track_Select_1__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L054_Track_Select_1__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    138,
+    590,
+    244,
+    626
+   ],
+   "position_x": -769.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 55,
+   "name": "Track Select 2",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL2 N51/C2",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L055_Track_Select_2__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L055_Track_Select_2__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    268,
+    590,
+    374,
+    626
+   ],
+   "position_x": -639.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 56,
+   "name": "Track Select 3",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL3 N51/C3",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L056_Track_Select_3__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L056_Track_Select_3__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    398,
+    590,
+    504,
+    626
+   ],
+   "position_x": -509.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 57,
+   "name": "Track Select 4",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL4 N51/C4",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L057_Track_Select_4__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L057_Track_Select_4__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    528,
+    590,
+    634,
+    626
+   ],
+   "position_x": -379.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 58,
+   "name": "Track Select 5",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL5 N51/C5",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L058_Track_Select_5__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L058_Track_Select_5__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    658,
+    590,
+    764,
+    626
+   ],
+   "position_x": -249.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 59,
+   "name": "Track Select 6",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL6 N51/C6",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L059_Track_Select_6__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L059_Track_Select_6__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    787,
+    590,
+    893,
+    626
+   ],
+   "position_x": -120.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 60,
+   "name": "Track Select 7",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL7 N51/C7",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L060_Track_Select_7__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L060_Track_Select_7__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    917,
+    590,
+    1023,
+    626
+   ],
+   "position_x": 10.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 61,
+   "name": "Track Select 8",
+   "prototype": "track_select",
+   "color_id": 4,
+   "text": "SEL8 N51/C8",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_select/L061_Track_Select_8__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_select/L061_Track_Select_8__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1047,
+    590,
+    1153,
+    626
+   ],
+   "position_x": 140.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 62,
+   "name": "Record Arm 1",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L062_Record_Arm_1__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L062_Record_Arm_1__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    197,
+    702,
+    235,
+    738
+   ],
+   "position_x": -744.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 63,
+   "name": "Record Arm 2",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C2",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L063_Record_Arm_2__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L063_Record_Arm_2__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    327,
+    702,
+    365,
+    738
+   ],
+   "position_x": -614.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 64,
+   "name": "Record Arm 3",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C3",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L064_Record_Arm_3__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L064_Record_Arm_3__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    457,
+    702,
+    495,
+    738
+   ],
+   "position_x": -484.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 65,
+   "name": "Record Arm 4",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C4",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L065_Record_Arm_4__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L065_Record_Arm_4__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    586,
+    702,
+    624,
+    738
+   ],
+   "position_x": -355.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 66,
+   "name": "Record Arm 5",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C5",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L066_Record_Arm_5__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L066_Record_Arm_5__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    716,
+    702,
+    754,
+    738
+   ],
+   "position_x": -225.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 67,
+   "name": "Record Arm 6",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C6",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L067_Record_Arm_6__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L067_Record_Arm_6__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    846,
+    702,
+    884,
+    738
+   ],
+   "position_x": -95.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 68,
+   "name": "Record Arm 7",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C7",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L068_Record_Arm_7__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L068_Record_Arm_7__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    976,
+    702,
+    1014,
+    738
+   ],
+   "position_x": 35.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 69,
+   "name": "Record Arm 8",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "\u25cf N48/C8",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L069_Record_Arm_8__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L069_Record_Arm_8__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1106,
+    702,
+    1144,
+    738
+   ],
+   "position_x": 165.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 70,
+   "name": "Solo 1",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L070_Solo_1__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L070_Solo_1__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    148,
+    702,
+    186,
+    738
+   ],
+   "position_x": -793.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 71,
+   "name": "Solo 2",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C2",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L071_Solo_2__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L071_Solo_2__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    277,
+    702,
+    315,
+    738
+   ],
+   "position_x": -664.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 72,
+   "name": "Solo 3",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C3",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L072_Solo_3__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L072_Solo_3__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    407,
+    702,
+    445,
+    738
+   ],
+   "position_x": -534.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 73,
+   "name": "Solo 4",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C4",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L073_Solo_4__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L073_Solo_4__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    537,
+    702,
+    575,
+    738
+   ],
+   "position_x": -404.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 74,
+   "name": "Solo 5",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C5",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L074_Solo_5__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L074_Solo_5__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    667,
+    702,
+    705,
+    738
+   ],
+   "position_x": -274.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 75,
+   "name": "Solo 6",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C6",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L075_Solo_6__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L075_Solo_6__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    797,
+    702,
+    835,
+    738
+   ],
+   "position_x": -144.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 76,
+   "name": "Solo 7",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C7",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L076_Solo_7__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L076_Solo_7__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    926,
+    702,
+    964,
+    738
+   ],
+   "position_x": -15.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 77,
+   "name": "Solo 8",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "S N49/C8",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L077_Solo_8__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L077_Solo_8__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1056,
+    702,
+    1094,
+    738
+   ],
+   "position_x": 115.0,
+   "position_y": 180.0
+  },
+  {
+   "layer": 78,
+   "name": "Activator 1",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "1 N50/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L078_Activator_1__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L078_Activator_1__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    148,
+    655,
+    186,
+    691
+   ],
+   "position_x": -793.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 79,
+   "name": "Activator 2",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "2 N50/C2",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L079_Activator_2__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L079_Activator_2__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    277,
+    655,
+    315,
+    691
+   ],
+   "position_x": -664.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 80,
+   "name": "Activator 3",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "3 N50/C3",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L080_Activator_3__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L080_Activator_3__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    407,
+    655,
+    445,
+    691
+   ],
+   "position_x": -534.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 81,
+   "name": "Activator 4",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "4 N50/C4",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L081_Activator_4__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L081_Activator_4__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    537,
+    655,
+    575,
+    691
+   ],
+   "position_x": -404.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 82,
+   "name": "Activator 5",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "5 N50/C5",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L082_Activator_5__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L082_Activator_5__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    667,
+    655,
+    705,
+    691
+   ],
+   "position_x": -274.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 83,
+   "name": "Activator 6",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "6 N50/C6",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L083_Activator_6__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L083_Activator_6__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    797,
+    655,
+    835,
+    691
+   ],
+   "position_x": -144.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 84,
+   "name": "Activator 7",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "7 N50/C7",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L084_Activator_7__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L084_Activator_7__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    926,
+    655,
+    964,
+    691
+   ],
+   "position_x": -15.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 85,
+   "name": "Activator 8",
+   "prototype": "track_button",
+   "color_id": 2,
+   "text": "8 N50/C8",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L085_Activator_8__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L085_Activator_8__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1056,
+    655,
+    1094,
+    691
+   ],
+   "position_x": 115.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 86,
+   "name": "Crossfade A B 1",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L086_Crossfade_A_B_1__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L086_Crossfade_A_B_1__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    197,
+    655,
+    235,
+    691
+   ],
+   "position_x": -744.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 87,
+   "name": "Crossfade A B 2",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C2",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L087_Crossfade_A_B_2__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L087_Crossfade_A_B_2__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    327,
+    655,
+    365,
+    691
+   ],
+   "position_x": -614.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 88,
+   "name": "Crossfade A B 3",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C3",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L088_Crossfade_A_B_3__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L088_Crossfade_A_B_3__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    457,
+    655,
+    495,
+    691
+   ],
+   "position_x": -484.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 89,
+   "name": "Crossfade A B 4",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C4",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L089_Crossfade_A_B_4__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L089_Crossfade_A_B_4__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    586,
+    655,
+    624,
+    691
+   ],
+   "position_x": -355.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 90,
+   "name": "Crossfade A B 5",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C5",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L090_Crossfade_A_B_5__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L090_Crossfade_A_B_5__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    716,
+    655,
+    754,
+    691
+   ],
+   "position_x": -225.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 91,
+   "name": "Crossfade A B 6",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C6",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L091_Crossfade_A_B_6__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L091_Crossfade_A_B_6__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    846,
+    655,
+    884,
+    691
+   ],
+   "position_x": -95.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 92,
+   "name": "Crossfade A B 7",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C7",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L092_Crossfade_A_B_7__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L092_Crossfade_A_B_7__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    976,
+    655,
+    1014,
+    691
+   ],
+   "position_x": 35.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 93,
+   "name": "Crossfade A B 8",
+   "prototype": "track_button",
+   "color_id": 1,
+   "text": "A/B N66/C8",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/track_button/L093_Crossfade_A_B_8__idle.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/track_button/L093_Crossfade_A_B_8__active.mov",
+     "frames": 120,
+     "seconds": 4.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1106,
+    655,
+    1144,
+    691
+   ],
+   "position_x": 165.0,
+   "position_y": 133.0
+  },
+  {
+   "layer": 94,
+   "name": "Track Fader 1",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER1 CC7/C1 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L094_Track_Fader_1__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    148,
+    884,
+    234,
+    908
+   ],
+   "position_x": -769.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 95,
+   "name": "Track Fader 2",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER2 CC7/C2 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L095_Track_Fader_2__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    278,
+    884,
+    364,
+    908
+   ],
+   "position_x": -639.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 96,
+   "name": "Track Fader 3",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER3 CC7/C3 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L096_Track_Fader_3__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    408,
+    884,
+    494,
+    908
+   ],
+   "position_x": -509.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 97,
+   "name": "Track Fader 4",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER4 CC7/C4 \u2581 000",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L097_Track_Fader_4__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    538,
+    884,
+    624,
+    908
+   ],
+   "position_x": -379.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 98,
+   "name": "Track Fader 5",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER5 CC7/C5 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L098_Track_Fader_5__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    668,
+    884,
+    754,
+    908
+   ],
+   "position_x": -249.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 99,
+   "name": "Track Fader 6",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER6 CC7/C6 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L099_Track_Fader_6__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    797,
+    884,
+    883,
+    908
+   ],
+   "position_x": -120.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 100,
+   "name": "Track Fader 7",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER7 CC7/C7 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L100_Track_Fader_7__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    927,
+    884,
+    1013,
+    908
+   ],
+   "position_x": 10.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 101,
+   "name": "Track Fader 8",
+   "prototype": "vertical_fader",
+   "color_id": 3,
+   "text": "FADER8 CC7/C8 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L101_Track_Fader_8__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1057,
+    884,
+    1143,
+    908
+   ],
+   "position_x": 140.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 102,
+   "name": "Track Knob 1",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK1 CC48/C1 \u2192 107",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L102_Track_Knob_1__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    141,
+    124,
+    241,
+    224
+   ],
+   "position_x": -769.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 103,
+   "name": "Track Knob 2",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK2 CC49/C1 \u2196 042",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L103_Track_Knob_2__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    271,
+    124,
+    371,
+    224
+   ],
+   "position_x": -639.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 104,
+   "name": "Track Knob 3",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK3 CC50/C1 \u2190 024",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L104_Track_Knob_3__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    401,
+    124,
+    501,
+    224
+   ],
+   "position_x": -509.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 105,
+   "name": "Track Knob 4",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK4 CC51/C1 \u2196 034",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L105_Track_Knob_4__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    531,
+    124,
+    631,
+    224
+   ],
+   "position_x": -379.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 106,
+   "name": "Track Knob 5",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK5 CC52/C1 \u2196 039",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L106_Track_Knob_5__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    661,
+    124,
+    761,
+    224
+   ],
+   "position_x": -249.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 107,
+   "name": "Track Knob 6",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK6 CC53/C1 \u2190 031",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L107_Track_Knob_6__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    790,
+    124,
+    890,
+    224
+   ],
+   "position_x": -120.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 108,
+   "name": "Track Knob 7",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK7 CC54/C1 \u2197 093",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L108_Track_Knob_7__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    920,
+    124,
+    1020,
+    224
+   ],
+   "position_x": 10.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 109,
+   "name": "Track Knob 8",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "TRACK8 CC55/C1 \u2191 073",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L109_Track_Knob_8__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1050,
+    124,
+    1150,
+    224
+   ],
+   "position_x": 140.0,
+   "position_y": -366.0
+  },
+  {
+   "layer": 110,
+   "name": "Device Knob 1",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV1 CC16/C1 \u2197 077",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L110_Device_Knob_1__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1295,
+    441,
+    1379,
+    525
+   ],
+   "position_x": 377.0,
+   "position_y": -57.0
+  },
+  {
+   "layer": 111,
+   "name": "Device Knob 2",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV2 CC17/C1 \u2192 107",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L111_Device_Knob_2__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1425,
+    441,
+    1509,
+    525
+   ],
+   "position_x": 507.0,
+   "position_y": -57.0
+  },
+  {
+   "layer": 112,
+   "name": "Device Knob 3",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV3 CC18/C1 \u2192 099",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L112_Device_Knob_3__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1555,
+    441,
+    1639,
+    525
+   ],
+   "position_x": 637.0,
+   "position_y": -57.0
+  },
+  {
+   "layer": 113,
+   "name": "Device Knob 4",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV4 CC19/C1 \u2198 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L113_Device_Knob_4__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1685,
+    441,
+    1769,
+    525
+   ],
+   "position_x": 767.0,
+   "position_y": -57.0
+  },
+  {
+   "layer": 114,
+   "name": "Device Knob 5",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV5 CC20/C1 \u2196 038",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L114_Device_Knob_5__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1294,
+    562,
+    1380,
+    648
+   ],
+   "position_x": 377.0,
+   "position_y": 65.0
+  },
+  {
+   "layer": 115,
+   "name": "Device Knob 6",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV6 CC21/C1 \u2197 094",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L115_Device_Knob_6__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1424,
+    562,
+    1510,
+    648
+   ],
+   "position_x": 507.0,
+   "position_y": 65.0
+  },
+  {
+   "layer": 116,
+   "name": "Device Knob 7",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV7 CC22/C1 \u2191 056",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L116_Device_Knob_7__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1554,
+    562,
+    1640,
+    648
+   ],
+   "position_x": 637.0,
+   "position_y": 65.0
+  },
+  {
+   "layer": 117,
+   "name": "Device Knob 8",
+   "prototype": "rotary",
+   "color_id": 3,
+   "text": "DEV8 CC23/C1 \u2191 058",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/rotary/L117_Device_Knob_8__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1684,
+    562,
+    1770,
+    648
+   ],
+   "position_x": 767.0,
+   "position_y": 65.0
+  },
+  {
+   "layer": 118,
+   "name": "Play",
+   "prototype": "small_button",
+   "color_id": 2,
+   "text": "PLAY N91/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L118_Play__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L118_Play__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1434,
+    168,
+    1500,
+    220
+   ],
+   "position_x": 507.0,
+   "position_y": -346.0
+  },
+  {
+   "layer": 119,
+   "name": "Stop",
+   "prototype": "secondary_text",
+   "color_id": 4,
+   "text": "STOP N92/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/secondary_text/L119_Stop__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/secondary_text/L119_Stop__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1429,
+    230,
+    1505,
+    248
+   ],
+   "position_x": 507.0,
+   "position_y": -301.0
+  },
+  {
+   "layer": 120,
+   "name": "Record",
+   "prototype": "small_button",
+   "color_id": 1,
+   "text": "RECORD N93/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L120_Record__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L120_Record__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1564,
+    168,
+    1630,
+    220
+   ],
+   "position_x": 637.0,
+   "position_y": -346.0
+  },
+  {
+   "layer": 121,
+   "name": "Tap Tempo",
+   "prototype": "small_button",
+   "color_id": 1,
+   "text": "TAP N99/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L121_Tap_Tempo__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L121_Tap_Tempo__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1564,
+    262,
+    1630,
+    294
+   ],
+   "position_x": 637.0,
+   "position_y": -262.0
+  },
+  {
+   "layer": 122,
+   "name": "Nudge Minus",
+   "prototype": "small_button",
+   "color_id": 1,
+   "text": "NUDGE- N100/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L122_Nudge_Minus__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L122_Nudge_Minus__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1434,
+    335,
+    1500,
+    367
+   ],
+   "position_x": 507.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 123,
+   "name": "Nudge Plus",
+   "prototype": "small_button",
+   "color_id": 1,
+   "text": "NUDGE+ N101/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L123_Nudge_Plus__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L123_Nudge_Plus__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1564,
+    335,
+    1630,
+    367
+   ],
+   "position_x": 637.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 124,
+   "name": "Pan Mode",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "PAN N87/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L124_Pan_Mode__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L124_Pan_Mode__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1294,
+    188,
+    1360,
+    220
+   ],
+   "position_x": 367.0,
+   "position_y": -336.0
+  },
+  {
+   "layer": 125,
+   "name": "Stop All Clips",
+   "prototype": "stop_all",
+   "color_id": 1,
+   "text": "STOPALL N81/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/stop_all/L125_Stop_All_Clips__idle.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/stop_all/L125_Stop_All_Clips__fire.mov",
+     "frames": 210,
+     "seconds": 7.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1181,
+    518,
+    1247,
+    562
+   ],
+   "position_x": 254.0,
+   "position_y": 0.0
+  },
+  {
+   "layer": 126,
+   "name": "Bank Up",
+   "prototype": "bank_polygon",
+   "color_id": 5,
+   "text": "U N94/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/bank_polygon/L126_Bank_Up__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/bank_polygon/L126_Bank_Up__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1363,
+    822,
+    1401,
+    854
+   ],
+   "position_x": 422.0,
+   "position_y": 298.0
+  },
+  {
+   "layer": 127,
+   "name": "Bank Down",
+   "prototype": "bank_polygon",
+   "color_id": 5,
+   "text": "D N95/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/bank_polygon/L127_Bank_Down__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/bank_polygon/L127_Bank_Down__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1363,
+    860,
+    1401,
+    892
+   ],
+   "position_x": 422.0,
+   "position_y": 336.0
+  },
+  {
+   "layer": 128,
+   "name": "Bank Right",
+   "prototype": "bank_polygon",
+   "color_id": 5,
+   "text": "R N96/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/bank_polygon/L128_Bank_Right__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/bank_polygon/L128_Bank_Right__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1408,
+    841,
+    1446,
+    873
+   ],
+   "position_x": 467.0,
+   "position_y": 317.0
+  },
+  {
+   "layer": 129,
+   "name": "Bank Left",
+   "prototype": "bank_polygon",
+   "color_id": 5,
+   "text": "L N97/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/bank_polygon/L129_Bank_Left__idle.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    },
+    "fire": {
+     "file": "media/clips_spec/bank_polygon/L129_Bank_Left__fire.mov",
+     "frames": 150,
+     "seconds": 5.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1318,
+    841,
+    1356,
+    873
+   ],
+   "position_x": 377.0,
+   "position_y": 317.0
+  },
+  {
+   "layer": 130,
+   "name": "Shift",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "SHIFT N98/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L130_Shift__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L130_Shift__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1564,
+    841,
+    1630,
+    873
+   ],
+   "position_x": 637.0,
+   "position_y": 317.0
+  },
+  {
+   "layer": 131,
+   "name": "Device Left",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "DEVICE< N58/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L131_Device_Left__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L131_Device_Left__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1304,
+    680,
+    1370,
+    712
+   ],
+   "position_x": 377.0,
+   "position_y": 156.0
+  },
+  {
+   "layer": 132,
+   "name": "Device Right",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "DEVICE> N59/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L132_Device_Right__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L132_Device_Right__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1434,
+    680,
+    1500,
+    712
+   ],
+   "position_x": 507.0,
+   "position_y": 156.0
+  },
+  {
+   "layer": 133,
+   "name": "Bank Left Button",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "BANK< N60/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L133_Bank_Left_Button__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L133_Bank_Left_Button__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1564,
+    680,
+    1630,
+    712
+   ],
+   "position_x": 637.0,
+   "position_y": 156.0
+  },
+  {
+   "layer": 134,
+   "name": "Bank Right Button",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "BANK> N61/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L134_Bank_Right_Button__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L134_Bank_Right_Button__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1694,
+    680,
+    1760,
+    712
+   ],
+   "position_x": 767.0,
+   "position_y": 156.0
+  },
+  {
+   "layer": 135,
+   "name": "Device On Off",
+   "prototype": "small_button",
+   "color_id": 2,
+   "text": "ON/OFF N62/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L135_Device_On_Off__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L135_Device_On_Off__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1304,
+    746,
+    1370,
+    778
+   ],
+   "position_x": 377.0,
+   "position_y": 222.0
+  },
+  {
+   "layer": 136,
+   "name": "Device Lock",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "LOCK N63/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L136_Device_Lock__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L136_Device_Lock__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1434,
+    746,
+    1500,
+    778
+   ],
+   "position_x": 507.0,
+   "position_y": 222.0
+  },
+  {
+   "layer": 137,
+   "name": "Clip Device View",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "CLIP/DEV N64/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L137_Clip_Device_View__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L137_Clip_Device_View__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1564,
+    746,
+    1630,
+    778
+   ],
+   "position_x": 637.0,
+   "position_y": 222.0
+  },
+  {
+   "layer": 138,
+   "name": "Detail View",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "DETAIL N65/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L138_Detail_View__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L138_Detail_View__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1694,
+    746,
+    1760,
+    778
+   ],
+   "position_x": 767.0,
+   "position_y": 222.0
+  },
+  {
+   "layer": 139,
+   "name": "Sends Mode",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "SENDS N88/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L139_Sends_Mode__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L139_Sends_Mode__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1294,
+    262,
+    1360,
+    294
+   ],
+   "position_x": 367.0,
+   "position_y": -262.0
+  },
+  {
+   "layer": 140,
+   "name": "User Mode",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "USER N89/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L140_User_Mode__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L140_User_Mode__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1294,
+    335,
+    1360,
+    367
+   ],
+   "position_x": 367.0,
+   "position_y": -189.0
+  },
+  {
+   "layer": 141,
+   "name": "Metronome",
+   "prototype": "small_button",
+   "color_id": 1,
+   "text": "METRO N90/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L141_Metronome__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L141_Metronome__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1434,
+    262,
+    1500,
+    294
+   ],
+   "position_x": 507.0,
+   "position_y": -262.0
+  },
+  {
+   "layer": 142,
+   "name": "Session Record",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "SESSION N102/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L142_Session_Record__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L142_Session_Record__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1694,
+    168,
+    1760,
+    220
+   ],
+   "position_x": 767.0,
+   "position_y": -346.0
+  },
+  {
+   "layer": 143,
+   "name": "Master Fader",
+   "prototype": "vertical_fader",
+   "color_id": 5,
+   "text": "MASTER CC14/C1 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/vertical_fader/L143_Master_Fader__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1171,
+    884,
+    1257,
+    908
+   ],
+   "position_x": 254.0,
+   "position_y": 356.0
+  },
+  {
+   "layer": 144,
+   "name": "Crossfader",
+   "prototype": "crossfader",
+   "color_id": 5,
+   "text": "X-FADE CC15/C1 \u2588 127",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/crossfader/L144_Crossfader__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1585,
+    949,
+    1609,
+    1003
+   ],
+   "position_x": 637.0,
+   "position_y": 436.0
+  },
+  {
+   "layer": 145,
+   "name": "Cue Level",
+   "prototype": "small_rotary",
+   "color_id": 5,
+   "text": "CUE CC47/C1 \u2199 001",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/small_rotary/L145_Cue_Level__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1168,
+    684,
+    1264,
+    780
+   ],
+   "position_x": 256.0,
+   "position_y": 192.0
+  },
+  {
+   "layer": 146,
+   "name": "Master Select",
+   "prototype": "master_select",
+   "color_id": 4,
+   "text": "MASTER N80/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/master_select/L146_Master_Select__idle.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/master_select/L146_Master_Select__active.mov",
+     "frames": 90,
+     "seconds": 3.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1181,
+    590,
+    1247,
+    626
+   ],
+   "position_x": 254.0,
+   "position_y": 68.0
+  },
+  {
+   "layer": 147,
+   "name": "Bank Lock",
+   "prototype": "small_button",
+   "color_id": 5,
+   "text": "BANKLCK N103/C1",
+   "tier": "A",
+   "states": {
+    "idle": {
+     "file": "media/clips_spec/small_button/L147_Bank_Lock__idle.mov",
+     "frames": 180,
+     "seconds": 6.0,
+     "seam_ok": true
+    },
+    "active": {
+     "file": "media/clips_spec/small_button/L147_Bank_Lock__active.mov",
+     "frames": 60,
+     "seconds": 2.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1694,
+    841,
+    1760,
+    873
+   ],
+   "position_x": 767.0,
+   "position_y": 317.0
+  },
+  {
+   "layer": 148,
+   "name": "Tempo Knob",
+   "prototype": "small_rotary",
+   "color_id": 3,
+   "text": "TEMPO CC13/C1 \u2191 053",
+   "tier": "B",
+   "states": {
+    "static": {
+     "file": "media/clips_spec/small_rotary/L148_Tempo_Knob__static.mov",
+     "frames": 30,
+     "seconds": 1.0,
+     "seam_ok": true
+    }
+   },
+   "tile_rect": [
+    1703,
+    279,
+    1751,
+    327
+   ],
+   "position_x": 767.0,
+   "position_y": -237.0
+  }
+ ]
+}
