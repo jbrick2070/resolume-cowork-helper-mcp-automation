@@ -1,12 +1,13 @@
-# Electric Zentropa screen baseline
+# APC40MKII Electric Zentropa ScreenPulse v1
 
-This snapshot preserves the screen-safe state observed on 2026-07-21. It is a baseline for continued work, not a finished controller release.
+**ScreenPulse** is the music-driven, screen-first APC40 visual baseline preserved on 2026-07-21. It is designed to look its best on the composition monitor or a large display while music is playing.
 
-## Screen baseline v1
+## Matched shipping pair
 
-- Composition: `compositions/APC40_Electric_Zentropa_SCREEN_BASELINE_v1.avc`
-- MIDI preset: `controllers/APC 40 MK II - Electric Zentropa SCREEN BASELINE v1.xml`
-- Good for: the on-screen APC40 twin and playback, with the bed and chassis background continuously visible.
+- Composition: `compositions/APC40MKII_ELECTRIC_ZENTROPA_SCREENPULSE_v1.avc`
+- MIDI preset: `controllers/APC40MKII_ELECTRIC_ZENTROPA_SCREENPULSE_v1.xml`
+- Ship both files together. Their identical filename stem and internal names are intentional.
+- Good for: music-driven on-screen APC40 visuals, with the bed and chassis background continuously visible.
 - Known limitation: the physical APC40 button LEDs do not remain latched after release.
 - The MIDI preset is an exact snapshot of the active 204-shortcut preset, apart from its new internal name.
 

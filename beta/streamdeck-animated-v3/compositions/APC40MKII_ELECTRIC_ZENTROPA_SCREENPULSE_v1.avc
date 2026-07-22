@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Composition name="Composition" uniqueId="1784183990045" numDecks="3" currentDeckIndex="0" numLayers="152" numColumns="2" compositionIsRelative="0">
 	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="27" microVersion="1" revision="15990"/>
-	<CompositionInfo name="APC40_Electric_Zentropa_SCREEN_BASELINE_v1" description="" width="1920" height="1080">
+	<CompositionInfo name="APC40MKII_ELECTRIC_ZENTROPA_SCREENPULSE_v1" description="" width="1920" height="1080">
 		<DeckInfo name="Text Animator" id="1784407300980" closed="0"/>
 		<DeckInfo name="empty" id="1784407300986" closed="0"/>
 		<DeckInfo name="empty" id="1784407300992" closed="0"/>
 	</CompositionInfo>
 	<Params name="Params">
-		<Param name="Name" T="STRING" default="" value="APC40_Electric_Zentropa_SCREEN_BASELINE_v1"/>
+		<Param name="Name" T="STRING" default="" value="APC40MKII_ELECTRIC_ZENTROPA_SCREENPULSE_v1"/>
 		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999966437958">
 			<PhaseSourceStatic name="PhaseSourceStatic"/>
 		</ParamRange>
 		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
-		<Param name="MidiShortcutPreset" T="STRING" default="" value="APC 40 MK II - Electric Zentropa SCREEN BASELINE v1"/>
+		<Param name="MidiShortcutPreset" T="STRING" default="" value="APC40MKII_ELECTRIC_ZENTROPA_SCREENPULSE_v1"/>
 		<Param name="OscShortcutPreset" T="STRING" default="" value="OutputAllMessages"/>
 	</Params>
 	<CompositionView name="CompositionView">

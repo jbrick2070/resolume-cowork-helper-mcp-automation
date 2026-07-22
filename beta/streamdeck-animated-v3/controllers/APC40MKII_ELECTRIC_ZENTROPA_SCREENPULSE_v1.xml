@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MidiShortcutPreset presetId="-2036841794" name="APC 40 MK II - Electric Zentropa SCREEN BASELINE v1">
+<MidiShortcutPreset presetId="-2036841794" name="APC40MKII_ELECTRIC_ZENTROPA_SCREENPULSE_v1">
 	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="27" microVersion="1" revision="15990"/>
 	<ShortcutManager name="MIDIShortcutManagerShortcuts">
 		<Shortcut name="Shortcut" uniqueId="1784669636086" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
