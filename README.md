@@ -209,13 +209,34 @@ are the most welcome PR of all.
 
 ## Electric Zentropa
 
-`beta/streamdeck-animated-v3/compositions/` ships two finished builds of the
-APC40 mkII visual twin, "Electric Zentropa":
+`beta/streamdeck-animated-v3/` ships three named, matched editions of the APC40
+mkII visual twin, **Electric Zentropa**:
 
-- **APC40_Electric_Zentropa.avc** - animated. Opens fully lit and auto-playing,
-  with the knob rings and grid pads reacting to Avenue's audio FFT.
-- **APC40_Electric_Zentropa_Static.avc** - the same board held calm and fully
-  lit, every reactive range pinned to full so nothing dances.
+- **ButtonGlow Baseline v1** - the controller-first rollback with the good sine
+  motion, lit buttons, continuously visible chassis, and known-good 148-control
+  mappings.
+- **ButtonPulse FFT v1** - ButtonGlow plus spatial FFT on the 120 visible
+  ON/pressed clips. Bass lives toward the bottom/left, mids through the center,
+  and highs toward the top/right; the background and continuous controls are
+  left alone.
+- **ScreenPulse v1** - the music-driven, screen-first edition with the chassis
+  always visible. Its physical button LEDs are not intended to stay latched.
+
+The older `APC40_Electric_Zentropa.avc` and static source builds remain in the
+composition directory as development history.
+
+### Matched MIDI presets
+
+Each working edition is an identically named `.avc` + `.xml` pair. Copy the
+chosen XML from `beta/streamdeck-animated-v3/controllers/` into the Resolume
+Avenue `Shortcuts/MIDI` folder, restart Avenue so it registers the preset, and
+then open the matching composition. Enable the APC40 mkII as both MIDI input
+and output and select the exact matching preset name.
+
+ButtonGlow and ButtonPulse retain the known-good A/B mappings on all eight
+tracks: press clip 1 in Toggle mode with connected-state LED feedback. Detailed
+file names, intended uses, and limitations are in
+[`beta/streamdeck-animated-v3/BASELINES.md`](beta/streamdeck-animated-v3/BASELINES.md).
 
 Under `beta/streamdeck-animated-v3/wire/` is **APC40_FFT_Driver.wire**, a
 Resolume Wire patch that splits the external/composition FFT into eight bands
