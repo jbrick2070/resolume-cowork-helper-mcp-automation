@@ -209,39 +209,16 @@ are the most welcome PR of all.
 
 ## Electric Zentropa
 
-`beta/streamdeck-animated-v3/` ships three named, matched editions of the APC40
-mkII visual twin, **Electric Zentropa**:
+In the stable release folders (`compositions/` and `controllers/`), you will find the **Lost Buttons** edition of the Electric Zentropa UI (`APC40MKII_Electric_Zentropa_Lost_Buttons.avc` and `.xml`). 
 
-- **AUDIOBEDS_NO_TOGGLES** - The audio-reactive version with FFT-driven beds, but native toggle behaviors are disabled.
-- **TOGGLES_NO_BEDS** - The robust controller-first layout. Perfect toggle logic for all 148 single-color buttons with constant chassis visibility, but no audio-reactive beds.
-- **AUDIOBEDS_AND_TOGGLES** - The ultimate hybrid. Combines the full FFT-reactive beds with perfectly mapped button toggles.
-
-In the stable release folders (`compositions/` and `controllers/`), you will find the **Lost Buttons** edition (`APC40MKII_Electric_Zentropa_Lost_Buttons.avc` and `.xml`). This edition maps all physical buttons to `connectnextclip` for rock-solid on-screen UI reliability, intentionally sacrificing physical button LED toggle states.
+This edition maps all physical Note buttons to `connectnextclip` for rock-solid on-screen UI reliability, intentionally sacrificing physical button LED toggle states in exchange for bulletproof performance. All Continuous Controllers (Faders and Knobs) retain their pristine absolute/relative behaviors.
 
 ![Electric Zentropa Lost Buttons Interface](docs/Zentropa_Lost_Buttons_Preview_2.jpg)
 ![Electric Zentropa Lost Buttons Mapping](docs/Zentropa_Lost_Buttons_Preview_1.jpg)
 
-The older `APC40_Electric_Zentropa.avc` and static source builds remain in the
-composition directory as development history.
+### Installing the Preset
 
-### Matched MIDI presets
-
-Each working edition is an identically named `.avc` + `.xml` pair. Copy the
-chosen XML from `beta/streamdeck-animated-v3/controllers/` into the Resolume
-Avenue `Shortcuts/MIDI` folder, restart Avenue so it registers the preset, and
-then open the matching composition. Enable the APC40 mkII as both MIDI input
-and output and select the exact matching preset name.
-
-The matched presets retain the known-good A/B mappings on all eight
-tracks: press clip 1 in Toggle mode with connected-state LED feedback. Detailed
-file names, intended uses, and limitations are in
-[`beta/streamdeck-animated-v3/BASELINES.md`](beta/streamdeck-animated-v3/BASELINES.md).
-
-Under `beta/streamdeck-animated-v3/wire/` is **APC40_FFT_Driver.wire**, a
-Resolume Wire patch that splits the external/composition FFT into eight bands
-and drives the physical APC40's ring meters (CC48-55, Volume Style) and row-5
-pad shades over MIDI. Wire is a paid Resolume product; its demo watermark makes
-the patch preview-only until licensed.
+This edition is an identically named `.avc` + `.xml` pair. Copy the XML from `controllers/` into the Resolume Avenue `Shortcuts/MIDI` folder, restart Avenue so it registers the preset, and then open the matching composition. Enable the APC40 mkII as both MIDI input and output, and select `APC40MKII_Electric_Zentropa_Lost_Buttons` from the shortcuts dropdown.
 
 ## Dedication
 
