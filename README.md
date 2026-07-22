@@ -214,7 +214,7 @@ In the stable release folders (`compositions/` and `controllers/`), you will fin
 1. **Lost Buttons** (`APC40MKII_Electric_Zentropa_Lost_Buttons`)
    This edition maps all physical Note buttons to `connectnextclip` for rock-solid on-screen UI reliability, intentionally sacrificing physical button LED toggle states in exchange for bulletproof performance. 
 
-2. **Pulsing Buttons** (`APC40MKII_Electric_Zentropa_Pulsing_Buttons`)
+2. **Button True Toggles** (`APC40MKII_Electric_Zentropa_Button_True_Toggles`)
    This edition retains Resolume's native toggle mapping. It features the fully engineered LED feedback with precise colors matching the on-screen grid, at the cost of potential desyncs with the on-screen UI during heavy usage.
 
 In both editions, all Continuous Controllers (Faders and Knobs) retain their pristine absolute/relative behaviors.
