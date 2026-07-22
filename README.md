@@ -209,16 +209,22 @@ are the most welcome PR of all.
 
 ## Electric Zentropa
 
-In the stable release folders (`compositions/` and `controllers/`), you will find the **Lost Buttons** edition of the Electric Zentropa UI (`APC40MKII_Electric_Zentropa_Lost_Buttons.avc` and `.xml`). 
+In the stable release folders (`compositions/` and `controllers/`), you will find two matched editions of the Electric Zentropa UI:
 
-This edition maps all physical Note buttons to `connectnextclip` for rock-solid on-screen UI reliability, intentionally sacrificing physical button LED toggle states in exchange for bulletproof performance. All Continuous Controllers (Faders and Knobs) retain their pristine absolute/relative behaviors.
+1. **Lost Buttons** (`APC40MKII_Electric_Zentropa_Lost_Buttons`)
+   This edition maps all physical Note buttons to `connectnextclip` for rock-solid on-screen UI reliability, intentionally sacrificing physical button LED toggle states in exchange for bulletproof performance. 
+
+2. **Pulsing Buttons** (`APC40MKII_Electric_Zentropa_Pulsing_Buttons`)
+   This edition retains Resolume's native toggle mapping. It features the fully engineered LED feedback with precise colors matching the on-screen grid, at the cost of potential desyncs with the on-screen UI during heavy usage.
+
+In both editions, all Continuous Controllers (Faders and Knobs) retain their pristine absolute/relative behaviors.
 
 ![Electric Zentropa Lost Buttons Interface](docs/Zentropa_Lost_Buttons_Preview_2.jpg)
 ![Electric Zentropa Lost Buttons Mapping](docs/Zentropa_Lost_Buttons_Preview_1.jpg)
 
-### Installing the Preset
+### Installing the Presets
 
-This edition is an identically named `.avc` + `.xml` pair. Copy the XML from `controllers/` into the Resolume Avenue `Shortcuts/MIDI` folder, restart Avenue so it registers the preset, and then open the matching composition. Enable the APC40 mkII as both MIDI input and output, and select `APC40MKII_Electric_Zentropa_Lost_Buttons` from the shortcuts dropdown.
+Each edition is an identically named `.avc` + `.xml` pair. Copy the XML from `controllers/` into the Resolume Avenue `Shortcuts/MIDI` folder, restart Avenue so it registers the preset, and then open the matching `.avc` composition. Enable the APC40 mkII as both MIDI input and output, and select the corresponding preset from the shortcuts dropdown.
 
 ## Dedication
 
