@@ -108,11 +108,15 @@ clicking. Five installs-and-pastes:
 2. **Claude** - either the Claude desktop app (Cowork mode) or Claude Code
    (the terminal version) from claude.com. If a terminal scares you, use
    the desktop app - same brain.
-3. **A Resolume MCP server** - this is the adapter that lets the agent see
-   and drive Resolume. Search "Resolume MCP" on GitHub or the Resolume
-   forum and follow its install steps; in Claude you then add it under
-   Settings > Connectors (desktop) or `claude mcp add` (Code). One-time
-   setup, roughly ten minutes.
+3. **The official Resolume Arena/Avenue and Wire MCP servers** - these
+   adapters ship with Resolume 7.26+ and let Claude see and drive Resolume.
+   In Claude Desktop, open Settings > Extensions > Advanced settings >
+   Install Extension, then choose the bundled
+   `resolume_arena_mcp_server.mcpb` (Arena/Avenue) and, if you use Wire,
+   `resolume_wire_mcp_server.mcpb` from the program's `mcp` folder. On
+   macOS, you can double-click the same `.mcpb` bundles. Follow
+   [Resolume's official MCP setup guide](https://resolume.com/support/en/mcp-servers)
+   for the exact file locations. One-time setup, roughly ten minutes.
 4. Start Resolume with any composition open, even an empty one.
 5. Open `prompts/01-first-contact.md` from this kit, copy everything below
    the line, paste it to Claude, and watch it read your rig out loud.
