@@ -227,6 +227,23 @@ In both editions, all Continuous Controllers (Faders and Knobs) retain their pri
 ![Electric Zentropa performance interface](docs/Electric_Zentropa_Interface.png)
 ![Electric Zentropa animated controller mapping](docs/Electric_Zentropa_Animated_Mapping.jpg)
 
+### Electric Zentropa in Motion
+
+These compressed 720p H.264 demos retain their AAC stereo audio, so you can
+see and hear the controller surface react in performance.
+
+**Demo 1 - Performance interface**
+
+https://github.com/user-attachments/assets/ee7890c9-cb91-4c9e-bf00-fe257dc55bb1
+
+**Demo 2 - Animated mapping**
+
+https://github.com/user-attachments/assets/a11cd356-343e-4407-bb1f-489c4fece759
+
+**Demo 3 - Full controller response**
+
+https://github.com/user-attachments/assets/cd932d0e-1d80-4dd5-ad71-44f53244eb99
+
 ### Installing the Presets
 
 Each edition is an identically named `.avc` + `.xml` pair. Copy the XML from `controllers/` into the Resolume Avenue `Shortcuts/MIDI` folder, restart Avenue so it registers the preset, and then open the matching `.avc` composition. Enable the APC40 mkII as both MIDI input and output, and select the corresponding preset from the shortcuts dropdown.
