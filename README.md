@@ -11,18 +11,19 @@ experimental FFT-reactive compositions under `beta/`.
 
 ## What this is
 
-Three things, in Resolume's own terms:
+Four things, in Resolume's own terms:
 
 1. **A verified controller visual twin.** `APC40_Visual_QA_148.avc` mirrors
    every physical control without external media. Its matching preset makes
    buttons toggle, faders travel, knobs rotate, and hardware LEDs follow the
    APC40 mkII's actual color capabilities.
-2. **Experimental performance instruments.** The earlier audio-reactive and
+2. **The Electric Zentropa performance suites.** A gorgeous, ready-to-play interface built entirely from native Resolume sources. Choose between **Lost Buttons** for bulletproof on-screen UI reliability, or **True Button Toggles** to bring the controller's physical grid to life with full RGB LED colors.
+3. **Experimental performance instruments.** The earlier audio-reactive and
    Orbit compositions, their controller presets, FFT manifests, and custom
    FFGL plugins remain available under `beta/` and the supporting folders.
    They are useful building material, but their controller pairings are not
    part of the verified stable release.
-3. **The prompts and protocols that made both.** Nine copy-paste prompts
+4. **The prompts and protocols that made both.** Nine copy-paste prompts
    so an agent does the same against YOUR composition and YOUR hardware,
    plus the crash-tested rules for letting an agent drive Avenue at all.
 
