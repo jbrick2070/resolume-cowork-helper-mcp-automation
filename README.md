@@ -218,6 +218,9 @@ mkII visual twin, **Electric Zentropa**:
 
 In the stable release folders (`compositions/` and `controllers/`), you will find the **Lost Buttons** edition (`APC40MKII_Electric_Zentropa_Lost_Buttons.avc` and `.xml`). This edition maps all physical buttons to `connectnextclip` for rock-solid on-screen UI reliability, intentionally sacrificing physical button LED toggle states.
 
+![Electric Zentropa Lost Buttons Interface](docs/Zentropa_Lost_Buttons_Preview_2.jpg)
+![Electric Zentropa Lost Buttons Mapping](docs/Zentropa_Lost_Buttons_Preview_1.jpg)
+
 The older `APC40_Electric_Zentropa.avc` and static source builds remain in the
 composition directory as development history.
 
