@@ -224,8 +224,8 @@ In the stable release folders (`compositions/` and `controllers/`), you will fin
 
 In both editions, all Continuous Controllers (Faders and Knobs) retain their pristine absolute/relative behaviors.
 
-![Electric Zentropa Lost Buttons Interface](docs/Zentropa_Lost_Buttons_Preview_2.jpg)
-![Electric Zentropa Lost Buttons Mapping](docs/Zentropa_Lost_Buttons_Preview_1.jpg)
+![Electric Zentropa performance interface](docs/Electric_Zentropa_Interface.png)
+![Electric Zentropa animated controller mapping](docs/Electric_Zentropa_Animated_Mapping.jpg)
 
 ### Installing the Presets
 
