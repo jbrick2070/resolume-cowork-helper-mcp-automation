@@ -49,6 +49,7 @@ apc40mkii-kit/
   compositions/ APC40_Visual_QA_148.avc - verified 148-control APC40 twin
   controllers/  APC 40 MK II - Visual QA.xml - verified 203-shortcut preset
   beta/         older audio-reactive + Orbit compositions and controller presets
+                lexicon/ - the wordplay instrument: 40 pads = 40 words (untested)
   docs/         CONTROL_LOGIC.md          - THE control law: safety rails + knob design
                 CONTROLLER_VISUAL_TWIN_PLAYBOOK.md - reusable build guide + lessons learned
                 APC40_Standard_Layout.md  - beta performance-layout design
@@ -148,6 +149,39 @@ Every such cell is marked `custom_source` with a native `fallback` - the set
 plays without them. The audio-reactive and Orbit `.avc` files and their controller
 presets are retained under `beta/`; they are not claimed as end-to-end
 controller-verified builds. Prompt 06 documents the plugin build path.
+
+### Coming next: Res React Lexicon — the controller as a sentence machine
+
+What if every pad were a word?
+
+`beta/lexicon/` turns the whole APC40 mkII into a typographic instrument. The five pad
+rows are the five slots of a sentence, stacked in the same order they appear on screen,
+so the grid reads like the output:
+
+```
+THE ARCHIVE          <- top pad row     Subject
+MISREADS             <-                 Verb
+A BORROWED NAME      <-                 Object
+::                   <-                 Mark
+— — — — — — — —      <- bottom pad row  Field
+```
+
+8 subjects x 8 verbs x 8 objects = **512 grammatical sentences**, x 8 marks, over 8
+typographic grounds. Every combination parses. Track Select fires a whole sentence; the
+scene buttons drop a single grammar slot out of it; the faders are how present each slot
+is. Every one of the 40 pads carries its own eight dials, and dial 1 runs Text Block Size
+across 0.5-10 — a small turn takes one word from a line of text to the entire screen.
+Field rides the bass and Mark rides the highs, while the three word rows stay deliberately
+static, because the sentence has to stay readable.
+
+It is **100% native Text Block**. Zero video files, zero FFGL, zero Wire, nothing to
+install — 5 layers, 8 columns, 40 clips, 98 shortcuts, one composition that opens anywhere.
+
+**Not verified yet.** It was built and played through the API on Avenue 7.27.1, but the
+hardware has not been in the loop — no pad physically pressed, no LED colour confirmed on
+the unit. The first-test checklist is in
+[`beta/lexicon/README.md`](beta/lexicon/README.md). It stays in `beta/` until it survives
+a real set.
 
 ## Make your OWN pack (the actual point)
 

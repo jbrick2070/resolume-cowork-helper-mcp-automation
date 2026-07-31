@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MidiShortcutPreset presetId="2026073101" name="APC 40 MK II - Lexicon v1">
+	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="27" microVersion="0" revision="14395" />
+	<ShortcutManager name="MIDIShortcutManagerShortcuts">
+		<!-- GRID: 5 rows x 8 columns = the sentence. Top row Subject, then Verb, Object,
+		     Mark; bottom row Field. Row colour matches the on-screen colour of that slot. -->
+		<Shortcut name="Shortcut" uniqueId="1785400000001" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037936272" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000002" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037936528" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000003" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037936784" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000004" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037937040" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000005" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037937296" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000006" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037937552" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000007" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037937808" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000008" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037938064" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094488" />
+				<Value first="Connected &amp; previewing" second="0.023622047244094488" />
+				<Value first="Disconnected" second="0.023622047244094488" />
+				<Value first="Empty" second="0.023622047244094488" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.023622047244094488" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000009" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037934224" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000010" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037934480" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000011" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037934736" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000012" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037934992" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000013" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037935248" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000014" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037935504" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000015" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037935760" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000016" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037936016" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.06299212598425197" />
+				<Value first="Connected &amp; previewing" second="0.06299212598425197" />
+				<Value first="Disconnected" second="0.07086614173228346" />
+				<Value first="Empty" second="0.07086614173228346" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.07086614173228346" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000017" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037932176" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000018" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037932432" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000019" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037932688" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000020" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037932944" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000021" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037933200" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000022" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037933456" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000023" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037933712" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000024" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037933968" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.28346456692913385" />
+				<Value first="Connected &amp; previewing" second="0.28346456692913385" />
+				<Value first="Disconnected" second="0.29133858267716534" />
+				<Value first="Empty" second="0.29133858267716534" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.29133858267716534" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000025" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037930128" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000026" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037930384" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000027" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037930640" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000028" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037930896" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000029" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037931152" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000030" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037931408" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000031" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037931664" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000032" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037931920" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.4094488188976378" />
+				<Value first="Connected &amp; previewing" second="0.4094488188976378" />
+				<Value first="Disconnected" second="0.41732283464566927" />
+				<Value first="Empty" second="0.41732283464566927" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.41732283464566927" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000033" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037928080" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000034" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/2/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037928336" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000035" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/3/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037928592" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000036" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/4/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037928848" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000037" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/5/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037929104" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000038" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/6/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037929360" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000039" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/7/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037929616" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000040" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/8/connect" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037929872" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="0.3464566929133858" />
+				<Value first="Connected &amp; previewing" second="0.3464566929133858" />
+				<Value first="Disconnected" second="0.3543307086614173" />
+				<Value first="Empty" second="0.3543307086614173" />
+				<Value first="Off" second="0" />
+				<Value first="Previewing" second="0.3543307086614173" />
+			</NamedValues>
+		</Shortcut>
+		<!-- TRACK SELECT 1-8 = fire a whole sentence (column 1-8) -->
+		<Shortcut name="Shortcut" uniqueId="1785400000041" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/1/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/1/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/1/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941136" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000042" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/2/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/2/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/2/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941137" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000043" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/3/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/3/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/3/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941138" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000044" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/4/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/4/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/4/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941139" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000045" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/5/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/5/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/5/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941140" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000046" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/6/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/6/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/6/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941141" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000047" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/7/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/7/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/7/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941142" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000048" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/columns/8/connect" translationType="1" allowedTranslationTypes="35" />
+			<ShortcutPath name="OutputPath" path="/composition/columns/8/connect" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/columns/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/columns/8/connected" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037941143" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Connected" second="1" />
+				<Value first="Disconnected" second="0.5" />
+				<Value first="Empty" second="0" />
+			</NamedValues>
+		</Shortcut>
+		<!-- SCENE LAUNCH 1-5 = drop that grammar slot out (layer clear), aligned with the rows -->
+		<Shortcut name="Shortcut" uniqueId="1785400000049" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037949072" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="0.0078740157480314959537" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000050" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037949328" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="0.0078740157480314959537" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000051" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037949584" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="0.0078740157480314959537" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000052" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037949840" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="0.0078740157480314959537" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000053" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037950096" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="0.0078740157480314959537" />
+			</NamedValues>
+		</Shortcut>
+		<!-- CLIP STOP row = composition FX toggles (all bypassed on load) -->
+		<Shortcut name="Shortcut" uniqueId="1785400000054" paramNodeName="RangedParam[bool]" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/huerotate/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/huerotate/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<RawInputMessage key="72057594037941392" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094488" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000055" paramNodeName="RangedParam[bool]" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/shiftrgb/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/shiftrgb/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<RawInputMessage key="72057594037941393" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094488" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000056" paramNodeName="RangedParam[bool]" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/lorezeffect/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/lorezeffect/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<RawInputMessage key="72057594037941394" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094488" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000057" paramNodeName="RangedParam[bool]" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/invertrgb/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/invertrgb/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<RawInputMessage key="72057594037941395" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094488" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000058" paramNodeName="RangedParam[bool]" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/mirrorquad/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/mirrorquad/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<RawInputMessage key="72057594037941396" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094488" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000059" paramNodeName="RangedParam[bool]" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<RawInputMessage key="72057594037941397" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094488" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<!-- ACTIVATOR = mute a grammar slot, SOLO = isolate it -->
+		<Shortcut name="Shortcut" uniqueId="1785400000060" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037940369" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.16535433070866143" />
+				<Value first="On" second="0.055118110236220472" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000061" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037940370" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.16535433070866143" />
+				<Value first="On" second="0.055118110236220472" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000062" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037940371" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.16535433070866143" />
+				<Value first="On" second="0.055118110236220472" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000063" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037940372" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.16535433070866143" />
+				<Value first="On" second="0.055118110236220472" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000064" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/bypassed" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037940368" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.16535433070866143" />
+				<Value first="On" second="0.055118110236220472" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000065" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037940625" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.007874015748031496" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000066" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037940626" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.007874015748031496" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000067" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037940627" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.007874015748031496" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000068" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037940628" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.007874015748031496" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000069" paramNodeName="" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/solo" translationType="1" allowedTranslationTypes="3" />
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/soloed" translationType="1" allowedTranslationTypes="-1" />
+			<RawInputMessage key="72057594037940624" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.007874015748031496" />
+				<Value first="On" second="0.10236220472440945" />
+			</NamedValues>
+		</Shortcut>
+		<!-- FADERS 1-5 = how present each grammar slot is. 8 = crossfade-free master trim -->
+		<Shortcut name="Shortcut" uniqueId="1785400000070" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075857840" value="1" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000071" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075857841" value="1" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000072" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075857842" value="1" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000073" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075857843" value="1" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000074" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/video/opacity" translationType="1" allowedTranslationTypes="11" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075857844" value="1" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000075" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/master" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/master" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075859632" value="1" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000076" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075859888" value="0.5" numSteps="128" />
+		</Shortcut>
+		<!-- DEVICE KNOBS 1-4 = composition FX. 5-8 = glow per grammar slot -->
+		<Shortcut name="Shortcut" uniqueId="1785400000077" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/huerotate/effect/huerotate" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/huerotate/effect/huerotate" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075860144" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000078" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/shiftrgb/effect/distance" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/shiftrgb/effect/distance" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075860400" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000079" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/lorezeffect/effect/pixelsize" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/lorezeffect/effect/pixelsize" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075860656" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000080" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/lorezeffect/effect/bitreduction" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/lorezeffect/effect/bitreduction" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075860912" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000081" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075861168" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000082" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075861424" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000083" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075861680" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000084" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/video/effects/bloom/effect/brightness" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075861936" value="0" numSteps="128" />
+		</Shortcut>
+		<!-- TRACK KNOBS 1-8 = the selected clip's own dials (canonical translationType 4) -->
+		<Shortcut name="Shortcut" uniqueId="1785400000085" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link1" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link1" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075868336" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000086" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link2" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link2" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075868592" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000087" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link3" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link3" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075868848" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000088" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link4" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link4" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075869104" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000089" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link5" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link5" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075869360" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000090" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link6" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link6" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075869616" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000091" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link7" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link7" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075869872" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000092" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/dashboard/link8" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/dashboard/link8" translationType="4" allowedTranslationTypes="7"/>
+			<ShortcutPath name="InputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="" translationType="1" allowedTranslationTypes="-1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0" max="1"/>
+			<RawInputMessage key="144115188075870128" value="0" numSteps="128"/>
+		</Shortcut>
+		<!-- TRANSPORT -->
+		<Shortcut name="Shortcut" uniqueId="1785400000093" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/transport/position" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/selectedclip/transport/position" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<RawInputMessage key="144115188075868080" value="0" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000094" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037953424" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="1" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000095" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/tempocontroller/resync" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/resync" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037951376" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="1" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000096" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/disconnectall" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/disconnectall" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="1" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000097" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/connectnextcolumn" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/connectnextcolumn" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037952656" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="1" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1785400000098" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/connectprevcolumn" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/connectprevcolumn" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037952912" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0" />
+				<Value first="On" second="1" />
+			</NamedValues>
+		</Shortcut>
+	</ShortcutManager>
+</MidiShortcutPreset>
