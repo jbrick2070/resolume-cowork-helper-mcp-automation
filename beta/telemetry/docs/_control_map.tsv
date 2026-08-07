@@ -1,0 +1,150 @@
+control	kind	num	channel	action
+grid READOUT c1	NOTE	32	1	connect clip L5 C1
+grid READOUT c2	NOTE	33	1	connect clip L5 C2
+grid READOUT c3	NOTE	34	1	connect clip L5 C3
+grid READOUT c4	NOTE	35	1	connect clip L5 C4
+grid READOUT c5	NOTE	36	1	connect clip L5 C5
+grid READOUT c6	NOTE	37	1	connect clip L5 C6
+grid READOUT c7	NOTE	38	1	connect clip L5 C7
+grid READOUT c8	NOTE	39	1	connect clip L5 C8
+grid STAMP c1	NOTE	24	1	connect clip L4 C1
+grid STAMP c2	NOTE	25	1	connect clip L4 C2
+grid STAMP c3	NOTE	26	1	connect clip L4 C3
+grid STAMP c4	NOTE	27	1	connect clip L4 C4
+grid STAMP c5	NOTE	28	1	connect clip L4 C5
+grid STAMP c6	NOTE	29	1	connect clip L4 C6
+grid STAMP c7	NOTE	30	1	connect clip L4 C7
+grid STAMP c8	NOTE	31	1	connect clip L4 C8
+grid NEEDLE c1	NOTE	16	1	connect clip L3 C1
+grid NEEDLE c2	NOTE	17	1	connect clip L3 C2
+grid NEEDLE c3	NOTE	18	1	connect clip L3 C3
+grid NEEDLE c4	NOTE	19	1	connect clip L3 C4
+grid NEEDLE c5	NOTE	20	1	connect clip L3 C5
+grid NEEDLE c6	NOTE	21	1	connect clip L3 C6
+grid NEEDLE c7	NOTE	22	1	connect clip L3 C7
+grid NEEDLE c8	NOTE	23	1	connect clip L3 C8
+grid TRACE c1	NOTE	8	1	connect clip L2 C1
+grid TRACE c2	NOTE	9	1	connect clip L2 C2
+grid TRACE c3	NOTE	10	1	connect clip L2 C3
+grid TRACE c4	NOTE	11	1	connect clip L2 C4
+grid TRACE c5	NOTE	12	1	connect clip L2 C5
+grid TRACE c6	NOTE	13	1	connect clip L2 C6
+grid TRACE c7	NOTE	14	1	connect clip L2 C7
+grid TRACE c8	NOTE	15	1	connect clip L2 C8
+grid PAPER c1	NOTE	0	1	connect clip L1 C1
+grid PAPER c2	NOTE	1	1	connect clip L1 C2
+grid PAPER c3	NOTE	2	1	connect clip L1 C3
+grid PAPER c4	NOTE	3	1	connect clip L1 C4
+grid PAPER c5	NOTE	4	1	connect clip L1 C5
+grid PAPER c6	NOTE	5	1	connect clip L1 C6
+grid PAPER c7	NOTE	6	1	connect clip L1 C7
+grid PAPER c8	NOTE	7	1	connect clip L1 C8
+track select 1	NOTE	51	1	connect column 1
+track select 2	NOTE	51	2	connect column 2
+track select 3	NOTE	51	3	connect column 3
+track select 4	NOTE	51	4	connect column 4
+track select 5	NOTE	51	5	connect column 5
+track select 6	NOTE	51	6	connect column 6
+track select 7	NOTE	51	7	connect column 7
+track select 8	NOTE	51	8	connect column 8
+scene launch 1	NOTE	82	1	clear layer 5 (READOUT)
+scene launch 2	NOTE	83	1	clear layer 4 (STAMP)
+scene launch 3	NOTE	84	1	clear layer 3 (NEEDLE)
+scene launch 4	NOTE	85	1	clear layer 2 (TRACE)
+scene launch 5	NOTE	86	1	clear layer 1 (PAPER)
+stop all clips	NOTE	81	1	disconnect all (power down)
+master select	NOTE	80	1	connect TEST CARD (L5 C8)
+clip stop trk1	NOTE	52	1	toggle comp FX huerotate
+clip stop trk2	NOTE	52	2	toggle comp FX shiftrgb
+clip stop trk3	NOTE	52	3	toggle comp FX lorezeffect
+clip stop trk4	NOTE	52	4	toggle comp FX invertrgb
+clip stop trk5	NOTE	52	5	toggle comp FX mirrorquad
+clip stop trk6	NOTE	52	6	toggle comp FX twitcheffect
+clip stop trk7	NOTE	52	7	toggle comp FX shiftglitch
+clip stop trk8	NOTE	52	8	toggle comp FX vignette
+activator trk1	NOTE	50	1	bypass layer 1
+activator trk2	NOTE	50	2	bypass layer 2
+activator trk3	NOTE	50	3	bypass layer 3
+activator trk4	NOTE	50	4	bypass layer 4
+activator trk5	NOTE	50	5	bypass layer 5
+activator trk6	NOTE	50	6	toggle layer 2 Bloom (TRACE LAMP)
+activator trk7	NOTE	50	7	toggle layer 4 Bloom (STAMP LAMP)
+activator trk8	NOTE	50	8	toggle layer 5 Bloom (READOUT LAMP)
+solo trk1	NOTE	49	1	solo layer 1
+solo trk2	NOTE	49	2	solo layer 2
+solo trk3	NOTE	49	3	solo layer 3
+solo trk4	NOTE	49	4	solo layer 4
+solo trk5	NOTE	49	5	solo layer 5
+solo trk6	NOTE	49	6	connect verdict stamp L4 C1 [mirror]
+solo trk7	NOTE	49	7	connect verdict stamp L4 C3 [mirror]
+solo trk8	NOTE	49	8	connect verdict stamp L4 C5 [mirror]
+record arm trk1	NOTE	48	1	connect next clip on layer 1
+record arm trk2	NOTE	48	2	connect next clip on layer 2
+record arm trk3	NOTE	48	3	connect next clip on layer 3
+record arm trk4	NOTE	48	4	connect next clip on layer 4
+record arm trk5	NOTE	48	5	connect next clip on layer 5
+record arm trk6	NOTE	48	6	connect force-state L2 C6 [mirror]
+record arm trk7	NOTE	48	7	connect force-state L2 C7 [mirror]
+record arm trk8	NOTE	48	8	connect force-state L2 C8 [mirror]
+crossfade A/B trk1	NOTE	66	1	connect diagonal L1 C1 [mirror]
+crossfade A/B trk2	NOTE	66	2	connect diagonal L2 C2 [mirror]
+crossfade A/B trk3	NOTE	66	3	connect diagonal L3 C3 [mirror]
+crossfade A/B trk4	NOTE	66	4	connect diagonal L4 C4 [mirror]
+crossfade A/B trk5	NOTE	66	5	connect diagonal L5 C5 [mirror]
+crossfade A/B trk6	NOTE	66	6	connect diagonal L1 C6 [mirror]
+crossfade A/B trk7	NOTE	66	7	connect diagonal L2 C7 [mirror]
+crossfade A/B trk8	NOTE	66	8	connect diagonal L3 C8 [mirror]
+pan	NOTE	87	1	connect TONE (L1 C6) [mirror]
+sends	NOTE	88	1	connect BARS (L1 C7) [mirror]
+user	NOTE	89	1	connect SNOW (L1 C8) [mirror]
+metronome	NOTE	90	1	connect PILOT strobe (L4 C8) [mirror]
+play	NOTE	91	1	resync
+stop	NOTE	92	1	composition bypass (SCREEN DARK)
+record	NOTE	93	1	connect SLATE (L5 C6) [mirror]
+session rec	NOTE	102	1	connect DATA CARD (L3 C6) [mirror]
+tap tempo	NOTE	99	1	tempo tap
+up	NOTE	94	1	previous column (feed paper back)
+down	NOTE	95	1	next column (feed paper on)
+nudge -	NOTE	100	1	previous column [mirror of up]
+nudge +	NOTE	101	1	next column [mirror of down]
+right	NOTE	96	1	next deck (next instrument)
+left	NOTE	97	1	previous deck (previous instrument)
+bank <	NOTE	60	1	previous deck [mirror of left]
+bank >	NOTE	61	1	next deck [mirror of right]
+shift	NOTE	98	1	connect SIGNAL LOST (L5 C7) [mirror]
+bank	NOTE	103	1	connect CLEAN SHEET (L1 C1) [mirror]
+device <	NOTE	58	1	connect next clip on layer 3 [mirror]
+device >	NOTE	59	1	connect next clip on layer 4 [mirror]
+device on/off	NOTE	62	1	toggle comp FX bloom
+device lock	NOTE	63	1	toggle comp FX wavewarp
+clip/dev view	NOTE	64	1	toggle comp FX tunnel
+detail view	NOTE	65	1	connect CAL DIAL (L3 C8) [mirror]
+track fader 1	CC	7	1	layer 1 opacity
+track fader 2	CC	7	2	layer 2 opacity
+track fader 3	CC	7	3	layer 3 opacity
+track fader 4	CC	7	4	layer 4 opacity
+track fader 5	CC	7	5	layer 5 opacity
+track fader 6	CC	7	6	clip opacity trim TONE (L1 C6)
+track fader 7	CC	7	7	clip opacity trim BARS (L1 C7)
+track fader 8	CC	7	8	clip opacity trim SNOW (L1 C8)
+master fader	CC	14	1	composition master
+crossfader	CC	15	1	crossfader phase
+device knob 1	CC	16	1	comp hue rotate
+device knob 2	CC	17	1	comp RGB shift distance
+device knob 3	CC	18	1	comp pixel size
+device knob 4	CC	19	1	comp bit reduction
+device knob 5	CC	20	1	TRACE lamp brightness
+device knob 6	CC	21	1	NEEDLE lamp brightness
+device knob 7	CC	22	1	STAMP lamp brightness
+device knob 8	CC	23	1	READOUT lamp brightness
+track knob 1	CC	48	1	selected clip dashboard link 1
+track knob 2	CC	49	1	selected clip dashboard link 2
+track knob 3	CC	50	1	selected clip dashboard link 3
+track knob 4	CC	51	1	selected clip dashboard link 4
+track knob 5	CC	52	1	selected clip dashboard link 5
+track knob 6	CC	53	1	selected clip dashboard link 6
+track knob 7	CC	54	1	selected clip dashboard link 7
+track knob 8	CC	55	1	selected clip dashboard link 8
+cue level	CC	47	1	selected clip transport position
+tempo	CC	13	1	RELATIVE: rotate CAL DIAL (L3 C8 transform)
+footswitch	CC	64	1	THE STOMP: hold for RGB split (spring to 0)
