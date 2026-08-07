@@ -1,0 +1,121 @@
+deckIndex	deck	layerIndex	row	col	column	label	size	text
+0	Test Card	0	Carrier	0	Burst	Full Bars	0.833	▓▒░▓▒░▓▒░▓
+0	Test Card	1	Sweep	0	Burst	Line	1.042	————————
+0	Test Card	2	Tone	0	Burst	Zeroes	1.300	0 0 0 0 0 0 0 0
+0	Test Card	3	Pulse	0	Burst	Tick	1.900	#
+0	Test Card	4	Ident	0	Burst	CH 01	1.100	CH 01
+0	Test Card	0	Carrier	1	Burst	Half Bars	0.833	▓░▓░▓░▓░▓░
+0	Test Card	1	Sweep	1	Burst	Rise	1.667	/ / / / / / / /
+0	Test Card	2	Tone	1	Burst	Binary	1.300	0 1 0 1 0 0 1 0
+0	Test Card	3	Pulse	1	Burst	Tock	1.900	# #
+0	Test Card	4	Ident	1	Burst	Test Card	1.100	TEST CARD F
+0	Test Card	0	Carrier	2	Burst	Grid	2.600	# # # # #
+0	Test Card	1	Sweep	2	Burst	Fall	1.667	\ \ \ \ \ \ \ \
+0	Test Card	2	Tone	2	Burst	KHz	1.300	4 4 1  4 4 1
+0	Test Card	3	Pulse	2	Burst	Sync	1.900	+ +
+0	Test Card	4	Ident	2	Burst	Colour	1.100	COLOUR 4:3
+0	Test Card	0	Carrier	3	Burst	Checker	1.316	▓ ░ ▓ ░ ▓
+0	Test Card	1	Sweep	3	Burst	Zigzag	1.700	/\/\/\/\
+0	Test Card	2	Tone	3	Burst	Sine	1.300	0 ( 0 ) 0 ( 0 )
+0	Test Card	3	Pulse	3	Burst	Blip	1.900	( )
+0	Test Card	4	Ident	3	Burst	Tone Id	1.100	1 KHZ TONE
+0	Test Card	0	Carrier	4	Burst	Dot Field	1.250	·  ·  ·  ·  ·  
+0	Test Card	1	Sweep	4	Burst	Fence	1.667	| | | | | | | |
+0	Test Card	2	Tone	4	Burst	Count	1.300	1 2 3 4 5 6 7 8
+0	Test Card	3	Pulse	4	Burst	Spike	1.900	/ \
+0	Test Card	4	Ident	4	Burst	Clock	1.100	06:00:00
+0	Test Card	0	Carrier	5	Burst	Cross	1.923	+  +  +  +  +
+0	Test Card	1	Sweep	5	Burst	Rail	1.667	= = = = = = = =
+0	Test Card	2	Tone	5	Burst	Level	1.300	- 12 - 18 - 24
+0	Test Card	3	Pulse	5	Burst	Twin	1.900	0 0
+0	Test Card	4	Ident	5	Burst	Hold	1.100	PLEASE HOLD
+0	Test Card	0	Carrier	6	Burst	Ramp	1.389	░░▒▒▓▓
+0	Test Card	1	Sweep	6	Burst	Under	1.667	_ _ _ _ _ _ _ _
+0	Test Card	2	Tone	6	Burst	Hex	1.300	0 F 0 F 0 F
+0	Test Card	3	Pulse	6	Burst	Frame	1.900	( # )
+0	Test Card	4	Ident	6	Burst	Trade	1.100	TRADE TEST
+0	Test Card	0	Carrier	7	Burst	Burst	2.600	(((  )))
+0	Test Card	1	Sweep	7	Burst	Long Dash	1.042	— — — — — — 
+0	Test Card	2	Tone	7	Burst	Null	1.300	0 0 . . 0 0 . .
+0	Test Card	3	Pulse	7	Burst	Dot	1.900	·
+0	Test Card	4	Ident	7	Burst	Align	1.100	ALIGN  +  0
+1	On Air	0	Carrier	0	Peak	Heavy Bars	0.833	▓▓▓▓▓▓▓▓▓▓
+1	On Air	1	Sweep	0	Peak	Fast Line	0.833	——————————
+1	On Air	2	Tone	0	Peak	All On	1.300	1 1 1 1 1 1 1 1
+1	On Air	3	Pulse	0	Peak	Hit	1.900	# #
+1	On Air	4	Ident	0	Peak	On Air	1.100	ON AIR
+1	On Air	0	Carrier	1	Peak	Strobe Grid	1.923	# # # # # # #
+1	On Air	1	Sweep	1	Peak	Double Rise	1.700	// // // // //
+1	On Air	2	Tone	1	Peak	Burst 8	1.300	8 8 8 8 8 8 8 8
+1	On Air	3	Pulse	1	Peak	Slam	1.900	# # #
+1	On Air	4	Ident	1	Peak	Live	1.100	LIVE
+1	On Air	0	Carrier	2	Peak	Weave	1.923	/ \ / \ / \ /
+1	On Air	1	Sweep	2	Peak	Double Fall	1.700	\\ \\ \\ \\
+1	On Air	2	Tone	2	Peak	Rush	1.300	1 2 4 8 1 2 4 8
+1	On Air	3	Pulse	2	Peak	Rapid	1.900	+ + + +
+1	On Air	4	Ident	2	Peak	Rec	1.100	REC
+1	On Air	0	Carrier	3	Peak	Lattice	1.923	+ # + # + # +
+1	On Air	1	Sweep	3	Peak	Saw	1.700	/\/\/\/\/\
+1	On Air	2	Tone	3	Peak	Clip	1.300	0 DB 0 DB 0 DB
+1	On Air	3	Pulse	3	Peak	Flash	1.900	( ( ) )
+1	On Air	4	Ident	3	Peak	Take 1	1.100	TAKE 1
+1	On Air	0	Carrier	4	Peak	Rain	1.786	\ \ \ \ \ \ \ 
+1	On Air	1	Sweep	4	Peak	Picket	1.471	| | | | | | | | |
+1	On Air	2	Tone	4	Peak	Overmod	1.300	+ 6 + 6 + 6
+1	On Air	3	Pulse	4	Peak	Jag	1.900	/ \ /
+1	On Air	4	Ident	4	Peak	Network	1.100	NETWORK FEED
+1	On Air	0	Carrier	5	Peak	Wall	0.694	▓▒░▓▒░▓▒░▓▒░
+1	On Air	1	Sweep	5	Peak	Hot Rail	1.471	= = = = = = = = =
+1	On Air	2	Tone	5	Peak	Carrier	1.300	( ( 0 ) ) ( ( 0 ) )
+1	On Air	3	Pulse	5	Peak	Deuce	1.900	0 0 0
+1	On Air	4	Ident	5	Peak	Satellite	1.100	VIA SATELLITE
+1	On Air	0	Carrier	6	Peak	Mesh	1.667	( ) ( ) ( ) ( )
+1	On Air	1	Sweep	6	Peak	Score	1.471	_ _ _ _ _ _ _ _ _
+1	On Air	2	Tone	6	Peak	Crc	1.300	F F F F F F
+1	On Air	3	Pulse	6	Peak	Bracket	1.900	( # # )
+1	On Air	4	Ident	6	Peak	Peak	1.100	PEAK  + 6 DB
+1	On Air	0	Carrier	7	Peak	Surge	1.190	▓▒▓▒▓▒▓
+1	On Air	1	Sweep	7	Peak	Streak	1.250	—— —— ——
+1	On Air	2	Tone	7	Peak	Payload	1.300	0 1 1 0 1 0 0 1
+1	On Air	3	Pulse	7	Peak	Ring	1.900	( ( ( ) ) )
+1	On Air	4	Ident	7	Peak	Cue	1.100	CUE  CUE  CUE
+2	Dead Air	0	Carrier	0	Off	Thin Snow	1.389	· · · · · · 
+2	Dead Air	1	Sweep	0	Off	Flatline	1.700	———
+2	Dead Air	2	Tone	0	Off	Zero	1.300	0
+2	Dead Air	3	Pulse	0	Off	Last Tick	1.900	#
+2	Dead Air	4	Ident	0	Off	Sign Off	1.100	SIGN OFF
+2	Dead Air	0	Carrier	1	Off	Sparse	2.083	·   ·   ·
+2	Dead Air	1	Sweep	1	Off	Slow Rise	1.700	/   /   /
+2	Dead Air	2	Tone	1	Off	Null Duo	1.300	0   0
+2	Dead Air	3	Pulse	1	Off	Echo	1.900	(   )
+2	Dead Air	4	Ident	1	Off	Signal Lost	1.100	SIGNAL LOST
+2	Dead Air	0	Carrier	2	Off	Thin Grid	2.600	#   #   #
+2	Dead Air	1	Sweep	2	Off	Slow Fall	1.700	\   \   \
+2	Dead Air	2	Tone	2	Off	Faint	1.300	. 0 .
+2	Dead Air	3	Pulse	2	Off	Stray	1.900	+
+2	Dead Air	4	Ident	2	Off	Stand By	1.100	PLEASE STAND BY
+2	Dead Air	0	Carrier	3	Off	Loose Weave	2.600	/   \   /
+2	Dead Air	1	Sweep	3	Off	Wave Out	1.700	/\   /\
+2	Dead Air	2	Tone	3	Off	Countdown	1.300	3   2   1
+2	Dead Air	3	Pulse	3	Off	Skip	1.900	/ 
+2	Dead Air	4	Ident	3	Off	No Signal	1.100	NO SIGNAL
+2	Dead Air	0	Carrier	4	Off	Ash	1.667	░ ░ ░ ░
+2	Dead Air	1	Sweep	4	Off	Last Post	1.700	|   |   |
+2	Dead Air	2	Tone	4	Off	Minus	1.300	- 40 DB
+2	Dead Air	3	Pulse	4	Off	Spark	1.900	· ·
+2	Dead Air	4	Ident	4	Off	Close Down	1.100	CLOSEDOWN 01:30
+2	Dead Air	0	Carrier	5	Off	Ember Grid	2.600	+   +   +
+2	Dead Air	1	Sweep	5	Off	Cold Rail	1.700	=   =   =
+2	Dead Air	2	Tone	5	Off	Residue	1.300	0 . . . 0
+2	Dead Air	3	Pulse	5	Off	Lone Zero	1.900	0
+2	Dead Air	4	Ident	5	Off	Anthem	1.100	ANTHEM …
+2	Dead Air	0	Carrier	6	Off	Last Bars	1.316	▓▒░ ░▒▓
+2	Dead Air	1	Sweep	6	Off	Sub	1.700	_   _   _
+2	Dead Air	2	Tone	6	Off	Hum 50	1.300	5 0 HZ
+2	Dead Air	3	Pulse	6	Off	Fossil	1.900	( 0 )
+2	Dead Air	4	Ident	6	Off	Static	1.100	TRANSMISSION ENDED
+2	Dead Air	0	Carrier	7	Off	Blank	2.600	·
+2	Dead Air	1	Sweep	7	Off	Tail	1.700	— · —
+2	Dead Air	2	Tone	7	Off	Off Tone	1.300	0 …
+2	Dead Air	3	Pulse	7	Off	Nothing	1.900	…
+2	Dead Air	4	Ident	7	Off	Goodnight	1.100	GOODNIGHT
