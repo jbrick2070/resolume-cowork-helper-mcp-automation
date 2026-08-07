@@ -1,0 +1,134 @@
+# Res React Lexicon II - source term list, exactly as supplied 2026-08-05.
+# One term per line. Lines beginning '#' are comments.
+# Lines beginning '-' are EXCLUDED from the build (see EXCLUDE_REASON below).
+# build_lexicon2.py reads this file and asserts the 120-pad grid uses every
+# included term exactly once. Nothing else in the pack hardcodes the wording.
+#
+# EXCLUDE_REASON aids   : supplied list said "minus any that mention AIDS".
+# EXCLUDE_REASON dupe   : identical or contained in another term already on the grid.
+
+A blooming lilac in early light. Scene brightens slowly.
+A map of ideas
+A MOVIE / BRUCE CONNER / THE END
+A – turn – ME – turn – RI – turn – C …
+Abuse of power comes as no surprise
+Adieu.
+-aids	AIDS
+AMBITION BITES THE NAILS OF SUCCESS
+America
+ARM THE UNEMPLOYED
+Around three in the morning
+Attention viewers! This film is an experiment in the cinematic communication of real events: without the help of intertitles; without the help of a story; without the help of theatre. This experimental work aims at creating a truly international language of cinema based on its absolute separation from the language of theatre and literature.
+AVOID CONFLICT
+Avez-vous déjà mis la moëlle de l’épée dans le poêle de l’aimée ?
+Bains de gros thé pour grains de beauté sans trop de bengué.
+beLIEve → LIE
+BELIEVE EVERYTHING
+Belle, belle comme une fleur de verre.
+-dupe	Call your mom
+Call your mother
+CELEBRITY IS A JOB
+CHEAT
+CONSUME LATER
+CRY MORE OFTEN
+DEATH IS A CAREER MOVE
+DEATH IS INEVITABLE
+Du musst Caligari werden
+duck / hormone / chrome
+Eight years later
+ENJOY THE SURFACE
+ENTRANCE / EXIT
+Esquivons les ecchymoses des Esquimaux aux mots exquis.
+EVERY ARTIST IS A CANNIBAL
+EVERYTHING YOU KNOW IS WRONG
+EVOLUTION IS OVER
+For some reason she is embarrassed about her reverie.
+FRAGMENTATION
+G.P.O. / Cheaper Parcel Post
+GUILT IS NOT OF GOD
+HATE
+HEAT IS LIFE
+Here our story should really end, for in actual life, the forlorn old man would have little to look forward to but death. The author took pity on him, however, and provided quite an improbable epilogue.
+housing is a human right
+I will not make any more boring art.
+I’d like to teach the world to sing
+I’m not trying to sell you anything.
+IGNORANCE IS BLISS
+In spring
+incision
+IT COULD NEVER HAPPEN HERE
+It is the consumer who is consumed.
+IT’S YOUR WORLD, YOU CAN CHANGE IT
+It's the real thing
+L’aspirant habite Javel et moi j’avais l’habite en spirale.
+L’enfant qui tète est un souffleur de chair chaude et n’aime pas le chou-fleur de serre-chaude.
+Les dents des femmes sont des objets si charmants …
+LIE
+LOVE
+MAKE FRIENDS
+Money creates taste
+Nous sommes à jamais perdus dans le désert de l’éternèbre.
+-dupe	Oh! Mother will be pleased
+On demande des moustiques domestiques (demi-stock) pour la cure d’azote sur la Côte d’Azur.
+Once upon a time
+PANIC IS ATTITUDE
+Parmi nos articles de quincaillerie paresseuse, nous recommandons le robinet qui s’arrête de couler quand on ne l’écoute pas.
+PEACE IS A LUXURY
+POST EARLY
+PRINCIPE / DÉVELOPPEMENT / PREUVE
+Private property created crime
+Protect me from what I want
+qu’on ne devrait les voir qu’en rêve ou à l’instant de l’amour.
+Qu’elle est belle.
+Qu’elle était belle.
+R U A VIDIOT?
+RACE
+REASON OVER PASSION / LA RAISON AVANT LA PASSION
+REBELLION IS PACKAGED
+RELIGION IS A CLUB
+SAILBOAT
+SCIENCE HAS FAILED
+screen
+SELL
+SERVICE NOT INCLUDED
+Shake thy Wonder Maker
+Si je te donne un sou, me donneras-tu une paire de ciseaux ?
+-aids	SILENCE=DEATH
+Sixteen years before
+space
+SPEED
+splice
+STARVE
+STEAL
+SUBLIMINAL
+Suddenly…
+SUPERFICIALITY IS GOD
+TASTE IS THE ENEMY OF ART
+Television delivers people to an advertiser.
+THE FUTURE IS A FANTASY
+The mediator between the head and the hands must be the heart.
+This is a glimpse of the video landscape of tomorrow…
+This is a newsprint photo / of a photograph / of a videotape.
+This Is Not America
+This Is Not America’s Flag
+THIS IS NOT AN ADVERTISEMENT
+This is the title of this film. The rest will look just like this.
+This song of the Man and his Wife is of no place and every place. You might hear it anywhere at any time.
+TREAD SOFTLY
+USA WHERE LIBERTY IS A STATUE
+vanishing points → points vanishing
+Vous ne rêvez pas.
+Wander through large quiet rooms.
+WATCH MORE TV
+WE ARE THE TARGET OF THE SINGLES MARKET
+We Will Rock You
+WHO CARES
+WIN
+Yesterday, Today, Tomorrow. A Film Poem Dedicated to the October Celebrations.
+-aids	YOU ARE NOT IMMUNE
+You are the owners of the Soviet land / in your hands lies a sixth part of the world
+You are the product of TV.
+You who eat the meat of reindeer / dipping it into warm blood
+You with your grapes / you with your rice
+You, who suckle at your mother’s breast / and you, hale 100-year-old
+Your oldest fears are your worst ones?!!!? ! Oh! Mother will be pleased

@@ -1,0 +1,201 @@
+deckIndex	deck	layerIndex	row	columnIndex	column	size	posY	lines	src	text
+0	Master	0	Field	0	This Is Not	0.7000	0.0	2	REASON OVER PASSION / LA RAISON AVANT LA PASSION	REASON OVER PASSION / LA RAISON AVANT LA PASSION
+0	Master	1	Subject	0	This Is Not	1.3500	-270.0	1	America	AMERICA
+0	Master	2	Verb	0	This Is Not	1.2000	-50.0	1	EVERYTHING YOU KNOW IS WRONG	IS
+0	Master	3	Object	0	This Is Not	1.2000	140.0	1	This Is Not America’s Flag	AMERICA’S FLAG
+0	Master	4	Mark	0	This Is Not	2.0000	330.0	1	A MOVIE / BRUCE CONNER / THE END	THE END
+0	Master	0	Field	1	Prime Time	0.7368	0.0	2	A blooming lilac in early light. Scene brightens slowly.	A blooming lilac in early light. Scene brightens slowly.
+0	Master	1	Subject	1	Prime Time	1.3500	-270.0	1	Television delivers people to an advertiser.	TELEVISION
+0	Master	2	Verb	1	Prime Time	1.2000	-50.0	1	This Is Not America	IS NOT
+0	Master	3	Object	1	Prime Time	1.2000	140.0	1	USA WHERE LIBERTY IS A STATUE	A STATUE
+0	Master	4	Mark	1	Prime Time	2.0000	330.0	1	RACE	RACE
+0	Master	0	Field	2	Cathedral	0.6364	0.0	2	For some reason she is embarrassed about her reverie.	For some reason she is embarrassed about her reverie.
+0	Master	1	Subject	2	Cathedral	1.3500	-270.0	1	EVERY ARTIST IS A CANNIBAL	EVERY ARTIST
+0	Master	2	Verb	2	Cathedral	1.2000	-50.0	1	ADDED	WATCHED
+0	Master	3	Object	2	Cathedral	1.2000	140.0	1	EVERY ARTIST IS A CANNIBAL	A CANNIBAL
+0	Master	4	Mark	2	Cathedral	1.0435	275.0	2	PRINCIPE / DÉVELOPPEMENT / PREUVE	PRINCIPE / DÉVELOPPEMENT / PREUVE
+0	Master	0	Field	3	Reel Change	0.8485	0.0	1	Wander through large quiet rooms.	Wander through large quiet rooms.
+0	Master	1	Subject	3	Reel Change	1.3500	-270.0	1	HEAT IS LIFE	HEAT
+0	Master	2	Verb	3	Reel Change	1.2000	-50.0	1	Protect me from what I want	PROTECT ME FROM
+0	Master	3	Object	3	Reel Change	1.2000	140.0	1	HEAT IS LIFE	LIFE
+0	Master	4	Mark	3	Reel Change	1.0000	330.0	1	G.P.O. / Cheaper Parcel Post	G.P.O. / Cheaper Parcel Post
+0	Master	0	Field	4	La Nuit	0.6512	0.0	2	This is a newsprint photo / of a photograph / of a videotape.	This is a newsprint photo / of a photograph / of a videotape.
+0	Master	1	Subject	4	La Nuit	1.3500	-270.0	1	ARM THE UNEMPLOYED	THE UNEMPLOYED
+0	Master	2	Verb	4	La Nuit	1.2000	-50.0	1	IT’S YOUR WORLD, YOU CAN CHANGE IT	CAN CHANGE
+0	Master	3	Object	4	La Nuit	1.2000	140.0	1	Call your mother	YOUR MOTHER
+0	Master	4	Mark	4	La Nuit	1.0769	330.0	1	IT COULD NEVER HAPPEN HERE	IT COULD NEVER HAPPEN HERE
+0	Master	0	Field	5	Lilac	0.7000	0.0	2	This is the title of this film. The rest will look just like this.	This is the title of this film. The rest will look just like this.
+0	Master	1	Subject	5	Lilac	1.3500	-270.0	1	USA WHERE LIBERTY IS A STATUE	LIBERTY
+0	Master	2	Verb	5	Lilac	1.2000	-50.0	1	Shake thy Wonder Maker	SHAKE
+0	Master	3	Object	5	Lilac	1.2000	140.0	1	Protect me from what I want	WHAT I WANT
+0	Master	4	Mark	5	Lilac	1.4737	330.0	1	DEATH IS INEVITABLE	DEATH IS INEVITABLE
+0	Master	0	Field	6	Raison	0.8000	0.0	1	I’d like to teach the world to sing	I’d like to teach the world to sing
+0	Master	1	Subject	6	Raison	1.3500	-270.0	1	Qu’elle est belle.	ELLE
+0	Master	2	Verb	6	Raison	1.2000	-50.0	1	Call your mother	CALL
+0	Master	3	Object	6	Raison	1.2000	140.0	1	Shake thy Wonder Maker	THY WONDER MAKER
+0	Master	4	Mark	6	Raison	1.6471	330.0	1	EVOLUTION IS OVER	EVOLUTION IS OVER
+0	Master	0	Field	7	Test Card	0.6512	0.0	2	This is a glimpse of the video landscape of tomorrow…	This is a glimpse of the video landscape of tomorrow…
+0	Master	1	Subject	7	Test Card	1.3500	-270.0	1	Your oldest fears are your worst ones?!!!? ! Oh! Mother will be pleased	YOUR OLDEST FEARS
+0	Master	2	Verb	7	Test Card	1.2000	-50.0	1	ARM THE UNEMPLOYED	ARM
+0	Master	3	Object	7	Test Card	1.2000	140.0	1	IT’S YOUR WORLD, YOU CAN CHANGE IT	YOUR WORLD
+0	Master	4	Mark	7	Test Card	1.8667	330.0	1	ENTRANCE / EXIT	ENTRANCE / EXIT
+1	Ad Break	0	Field	0	Prime Time	2.1538	0.0	1	WATCH MORE TV	WATCH MORE TV
+1	Ad Break	1	Subject	0	Prime Time	1.3500	-270.0	1	Television delivers people to an advertiser.	TELEVISION
+1	Ad Break	2	Verb	0	Prime Time	1.2000	-50.0	1	ADDED	WATCHES
+1	Ad Break	3	Object	0	Prime Time	1.2000	140.0	1	Television delivers people to an advertiser.	PEOPLE
+1	Ad Break	4	Mark	0	Prime Time	1.0435	275.0	2	I will not make any more boring art.	I will not make any more boring art.
+1	Ad Break	0	Field	1	Ad Break	2.1538	0.0	1	CONSUME LATER	CONSUME LATER
+1	Ad Break	1	Subject	1	Ad Break	1.3500	-270.0	1	Money creates taste	MONEY
+1	Ad Break	2	Verb	1	Ad Break	1.2000	-50.0	1	ADDED	SELLS
+1	Ad Break	3	Object	1	Ad Break	1.2000	140.0	1	Television delivers people to an advertiser.	AN ADVERTISER
+1	Ad Break	4	Mark	1	Ad Break	2.0000	330.0	1	LIE	LIE
+1	Ad Break	0	Field	2	Home Shopping	1.5556	0.0	1	BELIEVE EVERYTHING	BELIEVE EVERYTHING
+1	Ad Break	1	Subject	2	Home Shopping	1.3500	-270.0	1	It is the consumer who is consumed.	THE CONSUMER
+1	Ad Break	2	Verb	2	Home Shopping	1.2000	-50.0	1	Television delivers people to an advertiser.	DELIVERS
+1	Ad Break	3	Object	2	Home Shopping	1.2000	140.0	1	Money creates taste	TASTE
+1	Ad Break	4	Mark	2	Home Shopping	2.0000	330.0	1	Your oldest fears are your worst ones?!!!? ! Oh! Mother will be pleased	?!!!? !
+1	Ad Break	0	Field	3	Laugh Track	1.6471	0.0	1	ENJOY THE SURFACE	ENJOY THE SURFACE
+1	Ad Break	1	Subject	3	Laugh Track	1.3500	-270.0	1	CELEBRITY IS A JOB	CELEBRITY
+1	Ad Break	2	Verb	3	Laugh Track	1.2000	-50.0	1	Money creates taste	CREATES
+1	Ad Break	3	Object	3	Laugh Track	1.2000	140.0	1	It's the real thing	THE REAL THING
+1	Ad Break	4	Mark	3	Laugh Track	2.0000	330.0	1	R U A VIDIOT?	R U A VIDIOT?
+1	Ad Break	0	Field	4	Infomercial	0.7179	0.0	1	WE ARE THE TARGET OF THE SINGLES MARKET	WE ARE THE TARGET OF THE SINGLES MARKET
+1	Ad Break	1	Subject	4	Infomercial	1.3500	-270.0	1	WE ARE THE TARGET OF THE SINGLES MARKET	THE SINGLES MARKET
+1	Ad Break	2	Verb	4	Infomercial	1.2000	-50.0	1	AMBITION BITES THE NAILS OF SUCCESS	BITES
+1	Ad Break	3	Object	4	Infomercial	1.2000	140.0	1	CELEBRITY IS A JOB	A JOB
+1	Ad Break	4	Mark	4	Infomercial	1.4000	330.0	1	SERVICE NOT INCLUDED	SERVICE NOT INCLUDED
+1	Ad Break	0	Field	5	Ratings	0.8000	0.0	1	It is the consumer who is consumed.	It is the consumer who is consumed.
+1	Ad Break	1	Subject	5	Ratings	1.3500	-270.0	1	AMBITION BITES THE NAILS OF SUCCESS	AMBITION
+1	Ad Break	2	Verb	5	Ratings	1.2000	-50.0	1	ADDED	INTERRUPTS
+1	Ad Break	3	Object	5	Ratings	1.2000	140.0	1	AMBITION BITES THE NAILS OF SUCCESS	THE NAILS OF SUCCESS
+1	Ad Break	4	Mark	5	Ratings	1.0000	330.0	1	THIS IS NOT AN ADVERTISEMENT	THIS IS NOT AN ADVERTISEMENT
+1	Ad Break	0	Field	6	Vidiot	0.7778	0.0	1	I’m not trying to sell you anything.	I’m not trying to sell you anything.
+1	Ad Break	1	Subject	6	Vidiot	1.3500	-270.0	1	REBELLION IS PACKAGED	REBELLION
+1	Ad Break	2	Verb	6	Vidiot	1.2000	-50.0	1	ADDED	SPONSORS
+1	Ad Break	3	Object	6	Vidiot	1.2000	140.0	1	ENJOY THE SURFACE	THE SURFACE
+1	Ad Break	4	Mark	6	Vidiot	1.7500	330.0	1	We Will Rock You	We Will Rock You
+1	Ad Break	0	Field	7	Sign Off	1.0769	0.0	1	You are the product of TV.	You are the product of TV.
+1	Ad Break	1	Subject	7	Sign Off	1.3500	-270.0	1	EVERYTHING YOU KNOW IS WRONG	EVERYTHING YOU KNOW
+1	Ad Break	2	Verb	7	Sign Off	1.2000	-50.0	1	EVERYTHING YOU KNOW IS WRONG	IS
+1	Ad Break	3	Object	7	Sign Off	1.2000	140.0	1	EVERYTHING YOU KNOW IS WRONG	WRONG
+1	Ad Break	4	Mark	7	Sign Off	1.4737	330.0	1	It's the real thing	It's the real thing
+2	The Sermon	0	Field	0	Commandment	2.0000	0.0	1	AVOID CONFLICT	AVOID CONFLICT
+2	The Sermon	1	Subject	0	Commandment	1.3500	-270.0	1	TASTE IS THE ENEMY OF ART	TASTE
+2	The Sermon	2	Verb	0	Commandment	1.2000	-50.0	1	TASTE IS THE ENEMY OF ART	IS
+2	The Sermon	3	Object	0	Commandment	1.2000	140.0	1	TASTE IS THE ENEMY OF ART	THE ENEMY OF ART
+2	The Sermon	4	Mark	0	Commandment	2.0000	330.0	1	SUPERFICIALITY IS GOD	GOD
+2	The Sermon	0	Field	1	Truism	2.2000	0.0	1	MAKE FRIENDS	MAKE FRIENDS
+2	The Sermon	1	Subject	1	Truism	1.3500	-270.0	1	SUPERFICIALITY IS GOD	SUPERFICIALITY
+2	The Sermon	2	Verb	1	Truism	1.2000	-50.0	1	GUILT IS NOT OF GOD	IS NOT
+2	The Sermon	3	Object	1	Truism	1.2000	140.0	1	PEACE IS A LUXURY	A LUXURY
+2	The Sermon	4	Mark	1	Truism	2.0000	330.0	1	LOVE	LOVE
+2	The Sermon	0	Field	2	Confession	2.0000	0.0	1	CRY MORE OFTEN	CRY MORE OFTEN
+2	The Sermon	1	Subject	2	Confession	1.3500	-270.0	1	PANIC IS ATTITUDE	PANIC
+2	The Sermon	2	Verb	2	Confession	1.2000	-50.0	1	SCIENCE HAS FAILED	HAS FAILED
+2	The Sermon	3	Object	2	Confession	1.2000	140.0	1	RELIGION IS A CLUB	A CLUB
+2	The Sermon	4	Mark	2	Confession	2.0000	330.0	1	HATE	HATE
+2	The Sermon	0	Field	3	Warning	2.2000	0.0	1	TREAD SOFTLY	TREAD SOFTLY
+2	The Sermon	1	Subject	3	Warning	1.3500	-270.0	1	PEACE IS A LUXURY	PEACE
+2	The Sermon	2	Verb	3	Warning	1.2000	-50.0	1	Abuse of power comes as no surprise	COMES AS
+2	The Sermon	3	Object	3	Warning	1.2000	140.0	1	IGNORANCE IS BLISS	BLISS
+2	The Sermon	4	Mark	3	Warning	2.0000	330.0	1	WIN	WIN
+2	The Sermon	0	Field	4	Blessing	2.2000	0.0	1	POST EARLY	POST EARLY
+2	The Sermon	1	Subject	4	Blessing	1.3500	-270.0	1	RELIGION IS A CLUB	RELIGION
+2	The Sermon	2	Verb	4	Blessing	1.2000	-50.0	1	Private property created crime	CREATED
+2	The Sermon	3	Object	4	Blessing	1.2000	140.0	1	Abuse of power comes as no surprise	NO SURPRISE
+2	The Sermon	4	Mark	4	Blessing	2.0000	330.0	1	SELL	SELL
+2	The Sermon	0	Field	5	Curse	2.2000	0.0	1	STARVE	STARVE
+2	The Sermon	1	Subject	5	Curse	1.3500	-270.0	1	IGNORANCE IS BLISS	IGNORANCE
+2	The Sermon	2	Verb	5	Curse	1.2000	-50.0	1	ADDED	BELIEVES IN
+2	The Sermon	3	Object	5	Curse	1.2000	140.0	1	DEATH IS A CAREER MOVE	A CAREER MOVE
+2	The Sermon	4	Mark	5	Curse	2.0000	330.0	1	STEAL	STEAL
+2	The Sermon	0	Field	6	Litany	2.2000	0.0	1	SPEED	SPEED
+2	The Sermon	1	Subject	6	Litany	1.3500	-270.0	1	GUILT IS NOT OF GOD	GUILT
+2	The Sermon	2	Verb	6	Litany	1.2000	-50.0	1	ADDED	FORGIVES
+2	The Sermon	3	Object	6	Litany	1.2000	140.0	1	THE FUTURE IS A FANTASY	A FANTASY
+2	The Sermon	4	Mark	6	Litany	2.0000	330.0	1	CHEAT	CHEAT
+2	The Sermon	0	Field	7	Amen	1.1667	0.0	1	housing is a human right	housing is a human right
+2	The Sermon	1	Subject	7	Amen	1.3500	-270.0	1	THE FUTURE IS A FANTASY	THE FUTURE
+2	The Sermon	2	Verb	7	Amen	1.2000	-50.0	1	ADDED	WANTS
+2	The Sermon	3	Object	7	Amen	1.2000	140.0	1	Private property created crime	CRIME
+2	The Sermon	4	Mark	7	Amen	2.0000	330.0	1	WHO CARES	WHO CARES
+3	The Reel	0	Field	0	Attention	2.2000	0.0	1	splice	splice
+3	The Reel	1	Subject	0	Attention	1.3500	-270.0	1	Attention viewers! This film is an experiment in the cinematic communication of real events: without the help of intertitles; without the help of a story; without the help of theatre. This experimental work aims at creating a truly international language of cinema based on its absolute separation from the language of theatre and literature.	THIS FILM
+3	The Reel	2	Verb	0	Attention	1.2000	-50.0	1	Here our story should really end, for in actual life, the forlorn old man would have little to look forward to but death. The author took pity on him, however, and provided quite an improbable epilogue.	PROVIDED
+3	The Reel	3	Object	0	Attention	1.2000	140.0	1	The mediator between the head and the hands must be the heart.	THE HEART
+3	The Reel	4	Mark	0	Attention	2.0000	330.0	1	A MOVIE / BRUCE CONNER / THE END	THE END
+3	The Reel	0	Field	1	Kino Eye	2.2000	0.0	1	incision	incision
+3	The Reel	1	Subject	1	Kino Eye	1.3500	-270.0	1	This song of the Man and his Wife is of no place and every place. You might hear it anywhere at any time.	THE MAN AND HIS WIFE
+3	The Reel	2	Verb	1	Kino Eye	1.2000	-50.0	1	Here our story should really end, for in actual life, the forlorn old man would have little to look forward to but death. The author took pity on him, however, and provided quite an improbable epilogue.	TOOK PITY ON
+3	The Reel	3	Object	1	Kino Eye	1.1200	140.0	1	You are the owners of the Soviet land / in your hands lies a sixth part of the world	A SIXTH PART OF THE WORLD
+3	The Reel	4	Mark	1	Kino Eye	1.7500	330.0	1	Once upon a time	Once upon a time
+3	The Reel	0	Field	2	October	2.2000	0.0	1	screen	screen
+3	The Reel	1	Subject	2	October	1.3500	-270.0	1	Here our story should really end, for in actual life, the forlorn old man would have little to look forward to but death. The author took pity on him, however, and provided quite an improbable epilogue.	THE FORLORN OLD MAN
+3	The Reel	2	Verb	2	October	1.2000	-50.0	1	The mediator between the head and the hands must be the heart.	MUST BE
+3	The Reel	3	Object	2	October	1.2000	140.0	1	Here our story should really end, for in actual life, the forlorn old man would have little to look forward to but death. The author took pity on him, however, and provided quite an improbable epilogue.	AN IMPROBABLE EPILOGUE
+3	The Reel	4	Mark	2	October	2.0000	330.0	1	Suddenly…	Suddenly…
+3	The Reel	0	Field	3	Intertitle	2.2000	0.0	1	space	space
+3	The Reel	1	Subject	3	Intertitle	1.3500	-270.0	1	Here our story should really end, for in actual life, the forlorn old man would have little to look forward to but death. The author took pity on him, however, and provided quite an improbable epilogue.	THE AUTHOR
+3	The Reel	2	Verb	3	Intertitle	1.2000	-50.0	1	This song of the Man and his Wife is of no place and every place. You might hear it anywhere at any time.	MIGHT HEAR
+3	The Reel	3	Object	3	Intertitle	1.2000	140.0	1	Attention viewers! This film is an experiment in the cinematic communication of real events: without the help of intertitles; without the help of a story; without the help of theatre. This experimental work aims at creating a truly international language of cinema based on its absolute separation from the language of theatre and literature.	THE LANGUAGE OF THEATRE
+3	The Reel	4	Mark	3	Intertitle	1.6471	330.0	1	Eight years later	Eight years later
+3	The Reel	0	Field	4	Caligari	2.1538	0.0	1	FRAGMENTATION	FRAGMENTATION
+3	The Reel	1	Subject	4	Caligari	1.1304	-270.0	2	You who eat the meat of reindeer / dipping it into warm blood	YOU WHO EAT THE MEAT OF REINDEER
+3	The Reel	2	Verb	4	Caligari	1.2000	-50.0	1	ADDED	REWOUND
+3	The Reel	3	Object	4	Caligari	1.2000	140.0	1	You who eat the meat of reindeer / dipping it into warm blood	WARM BLOOD
+3	The Reel	4	Mark	4	Caligari	1.4000	330.0	1	Sixteen years before	Sixteen years before
+3	The Reel	0	Field	5	Sunrise	2.2000	0.0	1	SUBLIMINAL	SUBLIMINAL
+3	The Reel	1	Subject	5	Sunrise	1.3500	-270.0	1	You with your grapes / you with your rice	YOU WITH YOUR GRAPES
+3	The Reel	2	Verb	5	Sunrise	1.2000	-50.0	1	ADDED	PROJECTED
+3	The Reel	3	Object	5	Sunrise	1.1667	140.0	1	Yesterday, Today, Tomorrow. A Film Poem Dedicated to the October Celebrations.	THE OCTOBER CELEBRATIONS
+3	The Reel	4	Mark	5	Sunrise	1.0370	330.0	1	Around three in the morning	Around three in the morning
+3	The Reel	0	Field	6	Splice	2.2000	0.0	1	SAILBOAT	SAILBOAT
+3	The Reel	1	Subject	6	Splice	1.1304	-270.0	2	You are the owners of the Soviet land / in your hands lies a sixth part of the world	THE OWNERS OF THE SOVIET LAND
+3	The Reel	2	Verb	6	Splice	1.2000	-50.0	1	ADDED	SPLICED
+3	The Reel	3	Object	6	Splice	1.2000	140.0	1	Yesterday, Today, Tomorrow. A Film Poem Dedicated to the October Celebrations.	A FILM POEM
+3	The Reel	4	Mark	6	Splice	2.0000	330.0	1	In spring	In spring
+3	The Reel	0	Field	7	The End	2.0000	0.0	1	A map of ideas	A map of ideas
+3	The Reel	1	Subject	7	The End	1.3500	-270.0	1	You, who suckle at your mother’s breast / and you, hale 100-year-old	YOU, WHO SUCKLE
+3	The Reel	2	Verb	7	The End	1.2000	-50.0	1	ADDED	DISSOLVED INTO
+3	The Reel	3	Object	7	The End	1.2000	140.0	1	Attention viewers! This film is an experiment in the cinematic communication of real events: without the help of intertitles; without the help of a story; without the help of theatre. This experimental work aims at creating a truly international language of cinema based on its absolute separation from the language of theatre and literature.	REAL EVENTS
+3	The Reel	4	Mark	7	The End	1.1667	330.0	1	Du musst Caligari werden	Du musst Caligari werden
+4	La Nuit	0	Field	0	Rrose	0.6512	0.0	2	Avez-vous déjà mis la moëlle de l’épée dans le poêle de l’aimée ?	Avez-vous déjà mis la moëlle de l’épée dans le poêle de l’aimée ?
+4	La Nuit	1	Subject	0	Rrose	1.3500	-270.0	1	Les dents des femmes sont des objets si charmants …	LES DENTS DES FEMMES
+4	La Nuit	2	Verb	0	Rrose	1.2000	-50.0	1	Les dents des femmes sont des objets si charmants …	SONT
+4	La Nuit	3	Object	0	Rrose	1.2000	140.0	1	Les dents des femmes sont des objets si charmants …	DES OBJETS SI CHARMANTS
+4	La Nuit	4	Mark	0	Rrose	2.0000	330.0	1	Adieu.	Adieu.
+4	La Nuit	0	Field	1	Esquimaux	0.6364	0.0	2	Bains de gros thé pour grains de beauté sans trop de bengué.	Bains de gros thé pour grains de beauté sans trop de bengué.
+4	La Nuit	1	Subject	1	Esquimaux	1.3500	-270.0	1	L’aspirant habite Javel et moi j’avais l’habite en spirale.	L’ASPIRANT
+4	La Nuit	2	Verb	1	Esquimaux	1.2000	-50.0	1	Qu’elle est belle.	EST
+4	La Nuit	3	Object	1	Esquimaux	1.2000	140.0	1	L’aspirant habite Javel et moi j’avais l’habite en spirale.	JAVEL
+4	La Nuit	4	Mark	1	Esquimaux	1.5556	330.0	1	Vous ne rêvez pas.	Vous ne rêvez pas.
+4	La Nuit	0	Field	2	Javel	0.6667	0.0	2	Esquivons les ecchymoses des Esquimaux aux mots exquis.	Esquivons les ecchymoses des Esquimaux aux mots exquis.
+4	La Nuit	1	Subject	2	Javel	1.3500	-270.0	1	L’enfant qui tète est un souffleur de chair chaude et n’aime pas le chou-fleur de serre-chaude.	L’ENFANT QUI TÈTE
+4	La Nuit	2	Verb	2	Javel	1.2000	-50.0	1	Qu’elle était belle.	ÉTAIT
+4	La Nuit	3	Object	2	Javel	1.1304	140.0	2	L’enfant qui tète est un souffleur de chair chaude et n’aime pas le chou-fleur de serre-chaude.	LE CHOU-FLEUR DE SERRE-CHAUDE
+4	La Nuit	4	Mark	2	Javel	1.5556	330.0	1	Qu’elle est belle.	Qu’elle est belle.
+4	La Nuit	0	Field	3	Serre-Chaude	0.6512	0.0	3	L’enfant qui tète est un souffleur de chair chaude et n’aime pas le chou-fleur de serre-chaude.	L’enfant qui tète est un souffleur de chair chaude et n’aime pas le chou-fleur de serre-chaude.
+4	La Nuit	1	Subject	3	Serre-Chaude	1.3500	-270.0	1	Parmi nos articles de quincaillerie paresseuse, nous recommandons le robinet qui s’arrête de couler quand on ne l’écoute pas.	LE ROBINET
+4	La Nuit	2	Verb	3	Serre-Chaude	1.2000	-50.0	1	L’aspirant habite Javel et moi j’avais l’habite en spirale.	HABITE
+4	La Nuit	3	Object	3	Serre-Chaude	1.0769	140.0	1	On demande des moustiques domestiques (demi-stock) pour la cure d’azote sur la Côte d’Azur.	DES MOUSTIQUES DOMESTIQUES
+4	La Nuit	4	Mark	3	Serre-Chaude	2.0000	330.0	1	beLIEve → LIE	beLIEve
+4	La Nuit	0	Field	4	Côte d’Azur	0.7000	0.0	3	On demande des moustiques domestiques (demi-stock) pour la cure d’azote sur la Côte d’Azur.	On demande des moustiques domestiques (demi-stock) pour la cure d’azote sur la Côte d’Azur.
+4	La Nuit	1	Subject	4	Côte d’Azur	1.3500	-270.0	1	Avez-vous déjà mis la moëlle de l’épée dans le poêle de l’aimée ?	LA MOËLLE DE L’ÉPÉE
+4	La Nuit	2	Verb	4	Côte d’Azur	1.2000	-50.0	1	Si je te donne un sou, me donneras-tu une paire de ciseaux ?	DONNE
+4	La Nuit	3	Object	4	Côte d’Azur	1.2000	140.0	1	Si je te donne un sou, me donneras-tu une paire de ciseaux ?	UNE PAIRE DE CISEAUX
+4	La Nuit	4	Mark	4	Côte d’Azur	1.7500	330.0	1	vanishing points → points vanishing	vanishing points
+4	La Nuit	0	Field	5	Quincaillerie	0.6364	0.0	3	Parmi nos articles de quincaillerie paresseuse, nous recommandons le robinet qui s’arrête de couler quand on ne l’écoute pas.	Parmi nos articles de quincaillerie paresseuse, nous recommandons le robinet qui s’arrête de couler quand on ne l’écoute pas.
+4	La Nuit	1	Subject	5	Quincaillerie	1.3500	-270.0	1	Nous sommes à jamais perdus dans le désert de l’éternèbre.	LE DÉSERT
+4	La Nuit	2	Verb	5	Quincaillerie	1.2000	-50.0	1	L’enfant qui tète est un souffleur de chair chaude et n’aime pas le chou-fleur de serre-chaude.	TÈTE
+4	La Nuit	3	Object	5	Quincaillerie	1.1304	140.0	2	Esquivons les ecchymoses des Esquimaux aux mots exquis.	LES ECCHYMOSES DES ESQUIMAUX
+4	La Nuit	4	Mark	5	Quincaillerie	1.2174	330.0	1	duck / hormone / chrome	duck / hormone / chrome
+4	La Nuit	0	Field	6	Belle	0.6829	0.0	2	Si je te donne un sou, me donneras-tu une paire de ciseaux ?	Si je te donne un sou, me donneras-tu une paire de ciseaux ?
+4	La Nuit	1	Subject	6	Belle	1.3500	-270.0	1	Qu’elle est belle.	ELLE
+4	La Nuit	2	Verb	6	Belle	1.2000	-50.0	1	On demande des moustiques domestiques (demi-stock) pour la cure d’azote sur la Côte d’Azur.	DEMANDE
+4	La Nuit	3	Object	6	Belle	1.2000	140.0	1	Bains de gros thé pour grains de beauté sans trop de bengué.	GRAINS DE BEAUTÉ
+4	La Nuit	4	Mark	6	Belle	1.0370	275.0	2	A – turn – ME – turn – RI – turn – C …	A – turn – ME – turn – RI – turn – C …
+4	La Nuit	0	Field	7	Éternèbre	0.7368	0.0	2	L’aspirant habite Javel et moi j’avais l’habite en spirale.	L’aspirant habite Javel et moi j’avais l’habite en spirale.
+4	La Nuit	1	Subject	7	Éternèbre	1.3500	-270.0	1	Belle, belle comme une fleur de verre.	UNE FLEUR DE VERRE
+4	La Nuit	2	Verb	7	Éternèbre	1.2000	-50.0	1	L’enfant qui tète est un souffleur de chair chaude et n’aime pas le chou-fleur de serre-chaude.	N’AIME PAS
+4	La Nuit	3	Object	7	Éternèbre	1.1667	140.0	1	Nous sommes à jamais perdus dans le désert de l’éternèbre.	LE DÉSERT DE L’ÉTERNÈBRE
+4	La Nuit	4	Mark	7	Éternèbre	1.4000	330.0	1	qu’on ne devrait les voir qu’en rêve ou à l’instant de l’amour.	l’instant de l’amour
