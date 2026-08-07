@@ -8,6 +8,7 @@ These files are useful experiments, not the verified stable release.
 | `compositions/Res React Orbit Gen.avc` | `controllers/APC 40 MK II - Orbit v1.xml` |
 | `lexicon/compositions/Res React Lexicon.avc` | `lexicon/controllers/APC 40 MK II - Lexicon v1.xml` |
 | `lexicon-ii/compositions/Res React Lexicon II.avc` | `lexicon-ii/controllers/APC 40 MK II - Lexicon v2.xml` |
+| `telemetry/compositions/Res React Telemetry.avc` | `telemetry/controllers/APC 40 MK II - Telemetry v1.xml` |
 
 **One APC40, every composition.** The TEMPO knob is the global FFT gain, UP and DOWN walk the scenes,
 RIGHT and LEFT walk the decks, and RECORD and the footswitch are blackout, in every composition here except
@@ -30,6 +31,14 @@ become a channel dial. **Opened once, never played:** on 2026-10-23 it loaded in
 Avenue 7.28.1 and all five decks rendered for the [gallery](../gallery/README.md), but no
 shortcut, pad or knob has been tested. It is here for the curious, not for a show; see
 `lexicon-ii/README.md`.
+
+`telemetry/` is "The Measuring Room" — five fictional instruments (EKG,
+seismograph, VU array, polygraph, Geiger counter) that all measure the room's
+audio; the FFT is the subject, not the garnish. 200 native-generator pads drawn
+in block-element raster typography, and the first performance preset in the kit
+to map **all 149 physical controls** — footswitch and relative tempo encoder
+included. **Completely untested, same weight of disclaimer as lexicon-ii**; see
+`telemetry/README.md`.
 
 `library-hand/` is **The Library And The Hand**, a procedural pack cut from a
 feasibility script about GUSTO, a proposed robot that fetches, flips, mixes and
