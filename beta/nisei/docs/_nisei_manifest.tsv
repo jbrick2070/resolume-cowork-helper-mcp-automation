@@ -1,0 +1,121 @@
+deckIndex	deck	layerIndex	row	col	column	label	size	text
+0	Little Tokyo	0	Ground	0	Promise	Year One	2.400	1 8 8 4
+0	Little Tokyo	1	Archive	0	Promise	First St	1.471	EAST FIRST STREET
+0	Little Tokyo	2	Voice	0	Promise	Home	1.190	WE MADE OUR HOME HERE
+0	Little Tokyo	3	Signal	0	Promise	Dai Ichi	1.800	DAI ICHI
+0	Little Tokyo	4	Title	0	Promise	Little Tokyo	1.000	LITTLE TOKYO
+0	Little Tokyo	0	Ground	1	Promise	Terminal	1.667	TERMINAL ISLAND
+0	Little Tokyo	1	Archive	1	Promise	San Pedro	1.500	SAN PEDRO HARBOR
+0	Little Tokyo	2	Voice	1	Promise	Boats	0.758	FRESH FROM THE BOATS EACH MORNING
+0	Little Tokyo	3	Signal	1	Promise	Harbor	1.800	HARBOR
+0	Little Tokyo	4	Title	1	Promise	Terminal Is	1.000	TERMINAL ISLAND
+0	Little Tokyo	0	Ground	2	Promise	City Market	2.273	CITY MARKET
+0	Little Tokyo	1	Archive	2	Promise	Seventh	1.316	SEVENTH AND CENTRAL
+0	Little Tokyo	2	Voice	2	Promise	Wholesale	0.962	PRODUCE FOR THE WHOLE CITY
+0	Little Tokyo	3	Signal	2	Promise	Market	1.800	MARKET
+0	Little Tokyo	4	Title	2	Promise	Produce Row	1.000	PRODUCE ROW
+0	Little Tokyo	0	Ground	3	Promise	Issei	2.400	I S S E I
+0	Little Tokyo	1	Archive	3	Promise	Boyle Hts	1.500	BOYLE HEIGHTS
+0	Little Tokyo	2	Voice	3	Promise	Together	1.042	ISSEI AND NISEI TOGETHER
+0	Little Tokyo	3	Signal	3	Promise	Kazoku	1.800	KAZOKU
+0	Little Tokyo	4	Title	3	Promise	Family	1.000	FAMILY
+0	Little Tokyo	0	Ground	4	Promise	Founded	2.400	1 9 3 4
+0	Little Tokyo	1	Archive	4	Promise	August 13	1.500	AUGUST 13
+0	Little Tokyo	2	Voice	4	Promise	Solidarity	1.200	ETHNIC SOLIDARITY
+0	Little Tokyo	3	Signal	4	Promise	Matsuri	1.800	MATSURI
+0	Little Tokyo	4	Title	4	Promise	Nisei Week	1.000	NISEI WEEK
+0	Little Tokyo	0	Ground	5	Promise	Obon	2.400	O B O N
+0	Little Tokyo	1	Archive	5	Promise	First Block	1.316	FIRST STREET CLOSED
+0	Little Tokyo	2	Voice	5	Promise	Ondo	1.000	ONDO DANCING FOR ALL AGES
+0	Little Tokyo	3	Signal	5	Promise	Odori	1.800	ODORI
+0	Little Tokyo	4	Title	5	Promise	Ondo	1.000	ONDO
+0	Little Tokyo	0	Ground	6	Promise	Nihonmachi	2.400	NIHONMACHI
+0	Little Tokyo	1	Archive	6	Promise	Sawtelle	1.500	SAWTELLE
+0	Little Tokyo	2	Voice	6	Promise	Garden	1.200	A GARDEN IN THE CITY
+0	Little Tokyo	3	Signal	6	Promise	Hana	1.800	HANA
+0	Little Tokyo	4	Title	6	Promise	Japantown	1.000	JAPANTOWN
+0	Little Tokyo	0	Ground	7	Promise	Nisei	2.400	N I S E I
+0	Little Tokyo	1	Archive	7	Promise	Los Angeles	1.500	LOS ANGELES
+0	Little Tokyo	2	Voice	7	Promise	Americans	1.200	WE WERE AMERICANS
+0	Little Tokyo	3	Signal	7	Promise	Yakusoku	1.800	YAKUSOKU
+0	Little Tokyo	4	Title	7	Promise	The Promise	1.000	THE PROMISE
+1	Executive Order	0	Ground	0	Endure	Feb 19	2.273	FEB 19 1942
+1	Executive Order	1	Archive	0	Endure	EO 9066	1.250	EXECUTIVE ORDER 9066
+1	Executive Order	2	Voice	0	Endure	Any All	1.200	ANY OR ALL PERSONS
+1	Executive Order	3	Signal	0	Endure	Order	1.800	ORDER
+1	Executive Order	4	Title	0	Endure	The Order	1.000	THE ORDER
+1	Executive Order	0	Ground	1	Endure	April	2.400	APRIL 1942
+1	Executive Order	1	Archive	1	Endure	Def Command	1.087	WESTERN DEFENSE COMMAND
+1	Executive Order	2	Voice	1	Endure	Instruct	0.521	INSTRUCTIONS TO ALL PERSONS OF JAPANESE ANCESTRY
+1	Executive Order	3	Signal	1	Endure	Notice	1.800	NOTICE
+1	Executive Order	4	Title	1	Endure	The Notice	1.000	THE NOTICE
+1	Executive Order	0	Ground	2	Endure	120000	2.273	1 2 0 0 0 0
+1	Executive Order	1	Archive	2	Endure	Control Stn	1.190	CIVIL CONTROL STATION
+1	Executive Order	2	Voice	2	Endure	Noon	0.781	EVACUATED BY TWELVE O CLOCK NOON
+1	Executive Order	3	Signal	2	Endure	Evacuate	1.800	EVACUATE
+1	Executive Order	4	Title	2	Endure	Exclusion	1.000	CIVILIAN EXCLUSION
+1	Executive Order	0	Ground	3	Endure	Santa Anita	2.273	SANTA ANITA
+1	Executive Order	1	Archive	3	Endure	Asm Center	1.500	ASSEMBLY CENTER
+1	Executive Order	2	Voice	3	Endure	Risk	0.862	AT THE SOLE RISK OF THE OWNER
+1	Executive Order	3	Signal	3	Endure	Report	1.800	REPORT
+1	Executive Order	4	Title	3	Endure	Assembly	1.000	ASSEMBLY
+1	Executive Order	0	Ground	4	Endure	Manzanar	2.400	MANZANAR
+1	Executive Order	1	Archive	4	Endure	WRA	1.042	WAR RELOCATION AUTHORITY
+1	Executive Order	2	Voice	4	Endure	Dreams	0.758	ONLY IN DREAMS A WORLD OF FREEDOM
+1	Executive Order	3	Signal	4	Endure	Fence	1.800	FENCE
+1	Executive Order	4	Title	4	Endure	The Camp	1.000	THE CAMP
+1	Executive Order	0	Ground	5	Endure	Heart Mtn	1.786	HEART MOUNTAIN
+1	Executive Order	1	Archive	5	Endure	Guard Tower	1.500	GUARD TOWER
+1	Executive Order	2	Voice	5	Endure	Guns	0.781	WHY WERE THE GUNS POINTED INWARD
+1	Executive Order	3	Signal	5	Endure	Wire	1.800	BARBED WIRE
+1	Executive Order	4	Title	5	Endure	The Fence	1.000	THE FENCE
+1	Executive Order	0	Ground	6	Endure	Tule Lake	2.400	TULE LAKE
+1	Executive Order	1	Archive	6	Endure	Seg Center	1.389	SEGREGATION CENTER
+1	Executive Order	2	Voice	6	Endure	Never Asked	0.758	THEY NEVER ASKED JUST PUT US AWAY
+1	Executive Order	3	Signal	6	Endure	Senryu	1.800	SENRYU
+1	Executive Order	4	Title	6	Endure	Poetry	1.000	POETRY
+1	Executive Order	0	Ground	7	Endure	Minidoka	2.400	MINIDOKA
+1	Executive Order	1	Archive	7	Endure	442nd	0.893	442ND REGIMENTAL COMBAT TEAM
+1	Executive Order	2	Voice	7	Endure	Barbed Wire	0.568	BEYOND THE BARBED WIRE A GLOW OF NEON LIGHTS
+1	Executive Order	3	Signal	7	Endure	Gaman	1.800	GAMAN
+1	Executive Order	4	Title	7	Endure	Go Broke	1.000	GO FOR BROKE
+2	Nisei Week	0	Ground	0	Celebrate	Dec 1944	2.273	DEC 18 1944
+2	Nisei Week	1	Archive	0	Celebrate	Rescission	1.500	RESCISSION ORDER
+2	Nisei Week	2	Voice	0	Celebrate	Gates Open	1.200	THE GATES OPENED
+2	Nisei Week	3	Signal	0	Celebrate	Return	1.800	RETURN
+2	Nisei Week	4	Title	0	Celebrate	The Return	1.000	THE RETURN
+2	Nisei Week	0	Ground	1	Celebrate	1949	2.400	1 9 4 9
+2	Nisei Week	1	Archive	1	Celebrate	Revival	1.500	LITTLE TOKYO
+2	Nisei Week	2	Voice	1	Celebrate	Revived	1.200	NISEI WEEK REVIVED
+2	Nisei Week	3	Signal	1	Celebrate	Rebuild	1.800	REBUILD
+2	Nisei Week	4	Title	1	Celebrate	Rebuilt	1.000	REBUILT
+2	Nisei Week	0	Ground	2	Celebrate	Aug 1988	2.273	AUG 10 1988
+2	Nisei Week	1	Archive	2	Celebrate	Civil Lib	1.316	CIVIL LIBERTIES ACT
+2	Nisei Week	2	Voice	2	Celebrate	Prejudice	0.926	RACE PREJUDICE WAR HYSTERIA
+2	Nisei Week	3	Signal	2	Celebrate	Redress	1.800	REDRESS
+2	Nisei Week	4	Title	2	Celebrate	Justice	1.000	PERSONAL JUSTICE DENIED
+2	Nisei Week	0	Ground	3	Celebrate	HR 442	2.400	H R 4 4 2
+2	Nisei Week	1	Archive	3	Celebrate	Congress	1.500	100TH CONGRESS
+2	Nisei Week	2	Voice	3	Celebrate	Injustice	0.962	A GRAVE INJUSTICE WAS DONE
+2	Nisei Week	3	Signal	3	Celebrate	Gomen	1.800	GOMEN NASAI
+2	Nisei Week	4	Title	3	Celebrate	The Apology	1.000	THE APOLOGY
+2	Nisei Week	0	Ground	4	Celebrate	Feb 19	2.400	FEB 19
+2	Nisei Week	1	Archive	4	Celebrate	Day of Rem	1.389	DAY OF REMEMBRANCE
+2	Nisei Week	2	Voice	4	Celebrate	Never Again	1.200	NEVER AGAIN
+2	Nisei Week	3	Signal	4	Celebrate	Remember	1.800	REMEMBER
+2	Nisei Week	4	Title	4	Celebrate	Remember	1.000	REMEMBER
+2	Nisei Week	0	Ground	5	Celebrate	Ondo Beat	2.400	O N D O
+2	Nisei Week	1	Archive	5	Celebrate	Village Plz	1.136	JAPANESE VILLAGE PLAZA
+2	Nisei Week	2	Voice	5	Celebrate	Celebrate	0.833	CELEBRATE HERITAGE AND CULTURE
+2	Nisei Week	3	Signal	5	Celebrate	Dance	1.800	MATSURI
+2	Nisei Week	4	Title	5	Celebrate	Festival	1.000	NISEI WEEK
+2	Nisei Week	0	Ground	6	Celebrate	Generations	1.316	SANSEI YONSEI GOSEI
+2	Nisei Week	1	Archive	6	Celebrate	JANM	0.758	JAPANESE AMERICAN NATIONAL MUSEUM
+2	Nisei Week	2	Voice	6	Celebrate	Next Gen	1.200	THE NEXT GENERATION
+2	Nisei Week	3	Signal	6	Celebrate	Tsuzuku	1.800	TSUZUKU
+2	Nisei Week	4	Title	6	Celebrate	Continuity	1.000	CONTINUITY
+2	Nisei Week	0	Ground	7	Celebrate	2026	2.400	2 0 2 6
+2	Nisei Week	1	Archive	7	Celebrate	Home	1.500	LITTLE TOKYO
+2	Nisei Week	2	Voice	7	Celebrate	Kodomo	1.200	KODOMO NO TAME NI
+2	Nisei Week	3	Signal	7	Celebrate	Omedeto	1.800	OMEDETO
+2	Nisei Week	4	Title	7	Celebrate	Okaeri	1.000	OKAERI
