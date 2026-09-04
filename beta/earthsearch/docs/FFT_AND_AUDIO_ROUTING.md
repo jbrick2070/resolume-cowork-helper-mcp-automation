@@ -85,7 +85,7 @@ this episode's soundtrack** with `build/calibrate_fft.ps1`.
 
 | Band | Range | Gain | Span of output range actually used |
 |---|---|---|---|
-| LOW | 0.00–0.30 | 27 dB | ~23 % |
+| LOW | 0.00–0.30 | 30 dB | ~23 % at 27 dB; raised to 30 when LOW took on two more parameters |
 | MID | 0.32–0.62 | 30 dB | ~70 % |
 | HIGH | 0.58–0.82 | 30–36 dB | ~86 % |
 
@@ -112,16 +112,22 @@ and room tone; high carries consonants and tape brightness.
 Eight composition-rack parameters, eleven on the generative overlays, and three
 on the SCOPE readout.
 
-| Effect | Parameter | Band | Why |
-|---|---|---|---|
-| BLOOM | Amount | MID | Speech lifts the analogue glow. Floor 0.14 keeps it alive in silence so it reads as a lamp, not a gate. |
-| ECHO | Feedback | LOW | The score's low end lengthens the feedback tail. Ceiling 0.66 — above ~0.75 Trails smears the faces the story depends on. |
-| DRIFT | Hue Rotate | MID | Voice drifts the palette by at most ~16° of hue. Felt, never seen as a rainbow. |
-| WAVE | Height | MID | Mid energy breathes the frame, under the point where faces distort. |
-| FRINGE | Distance | HIGH | Consonants put a broadcast fringe on edges. |
-| RIPPLE | Amplitude Both | HIGH | Surface shimmer, kept tiny so text stays readable. |
-| ITERATE | StartOpacity | MID | How strongly the recursive copies register — the holographic element, held well below full. |
-| BIT CRUSH | Dither | HIGH | The closest thing in the chain to analogue signal texture. |
+| Effect | Parameter | Band | Floor → ceiling | Why |
+|---|---|---|---|---|
+| BLOOM | Amount | MID | 0.14 → 0.44 | Speech lifts the analogue glow. Floor 0.14 keeps the glow alive in silence so it reads as a lamp, not a gate. |
+| ECHO | Feedback | LOW | 0.42 → 0.66 | The Radiophonic score's low end lengthens the feedback tail. Ceiling 0.66: above ~0.75 Trails smears the faces the story depends on. |
+| DRIFT | Hue Rotate | LOW | 0 → 0.03 | The Radiophonic score, not the voice, drifts the palette - and by at most ~11 degrees of hue. Felt, never seen as a rainbow. |
+| WAVE | Height | LOW | 0.03 → 0.075 | Music breathes the frame as a slow swell. Width goes to 0.35 so it is one long wavelength rather than ripples. |
+| FRINGE | Distance | HIGH | 0.015 → 0.07 | Sibilance and incidental highs put a broadcast fringe on edges. |
+| RIPPLE | Amplitude Both | HIGH | 0.02 → 0.085 | Highs shimmer the surface. Tiny, so text and faces stay readable. |
+| ITERATE | StartOpacity | MID | 0.28 → 0.42 | Speech modulates how strongly the recursive copies register - the holographic element, held well below full. |
+| BIT CRUSH | Dither | HIGH | 0.1 → 0.42 | Highs move the dither, which is the closest thing in the chain to analogue signal texture. Deliberately NOT the wrapper Opacity: every effect's dry/wet stays on its bank's dashboard link, or CLEAN could not reach it. |
+
+**Voice is light; music is colour and space.** An earlier draft had BLOOM,
+DRIFT, WAVE and ITERATE all on MID, so glow, hue, bulge and a doubled image
+pulsed together on every spoken line — and the hue one was the worst of it,
+because it moved skin tone while people were talking. DRIFT and WAVE moved to
+LOW, where the Radiophonic score lives.
 
 ---
 

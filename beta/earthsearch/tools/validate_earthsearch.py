@@ -98,6 +98,42 @@ def main():
     check("no effect dry/wet is FFT-driven (CLEAN must reach all of them)",
           not dw_fft, "%d" % len(dw_fft))
 
+    # ---- the fixes that came out of the review round -------------------
+    # Each of these guards a bug that shipped in an earlier draft and was
+    # caught either by a reviewer or by asking the running application.
+    print("\n=== regressions guarded ===")
+    check("colours are ABGR-packed, which is Resolume's real layout",
+          S.PALETTE["phosphor"] == 0xFFA8FF38,
+          "phosphor 0x%X -> loads as #38FFA8" % S.PALETTE["phosphor"])
+    check("no blend-mode cycling anywhere",
+          "blendmode" not in preset_raw,
+          "a 50-option ParamChoice, walked blind, passes 'to White'")
+    check("no control can clear a master",
+          "/composition/layers/1/clear" not in preset_raw
+          and "/composition/layers/2/clear" not in preset_raw)
+    check("GRAIN carries a wet ceiling",
+          '<ValueRange name="startStop" min="0" max="0.12"' in comp_raw,
+          "at full it is television snow")
+    check("crossfader opens hard on A, not at centre",
+          '<ParamRange name="Phase" T="DOUBLE" default="0" value="-1">'
+          in comp_raw,
+          "Phase runs -1..1; a home of 0 is a 50/50 double exposure")
+    check("the crossfader snaps are normalised 0 / 0.5 / 1",
+          preset_raw.count('<ValueRange min="0.5" max="0.5" />') == 1)
+    check("the FLARE washes are radial, not half-frame ramps",
+          comp_raw.count('<ParamChoice name="Type" T="INT32" default="0" '
+                         'value="2" storeChoices="0" />') == 5)
+    check("captions are broadcast idents, not narrative",
+          all(t not in comp_raw
+              for t in ("TELSON", "ANGEL 1", "CHALLENGER", "END OF TRANS")))
+    check("no dead effect: every rack entry loads a real value or a ceiling",
+          all(e[3] or len(e) > 4 or e[2] in ("HueRotate", "InvertRGB",
+                                             "ShiftRGB", "Trails", "Blur",
+                                             "Freeze", "MirrorQuad",
+                                             "Displace", "StopMotion",
+                                             "PolarKaleido", "WarpSpeed")
+              for e in S.COMP_RACK))
+
     print("\n=== dashboard / CLEAN ===")
     links = collections.Counter(
         re.findall(r'PhaseSourceDashboardLink[^>]*linkId="/link(\d+)"',
@@ -108,9 +144,13 @@ def main():
           sum(links[str(n)] for n in S.LINK_BANK) == len(S.COMP_RACK),
           "%d of %d" % (sum(links[str(n)] for n in S.LINK_BANK),
                         len(S.COMP_RACK)))
-    check("all five overlay layers are on link6", links["6"] == 5,
-          "%s" % links["6"])
-    check("the scope is on link7", links["7"] == 1)
+    for link_no in sorted(set(S.LAYER_LINK.values())):
+        want = sum(1 for v in S.LAYER_LINK.values() if v == link_no)
+        check("link%d carries %d layer opacit%s" % (link_no, want,
+                                                    "y" if want == 1 else "ies"),
+              links[str(link_no)] == want, "%s" % links[str(link_no)])
+    check("CLEAN reaches every link that puts something on screen",
+          set(S.CLEAN_LINKS) >= set(S.LINK_BANK) | set(S.LAYER_LINK.values()))
 
     print("\n=== preset ===")
     shortcuts = list(preset.iter("Shortcut"))
@@ -127,9 +167,28 @@ def main():
               if re.match(r"/composition/layers/[12]/clips/", p)) == 2,
           "2 = the two START BOTH shortcuts")
     keys = [sc.find("RawInputMessage").get("key") for sc in shortcuts]
-    dup = {k: n for k, n in collections.Counter(keys).items() if n > 1}
-    check("multi-shortcut keys are only the intended ones",
-          len(dup) == 5, "%d controls carry more than one shortcut" % len(dup))
+    m = M.build_map(S)
+    # Several shortcuts sharing one MIDI key is the mechanism behind one-button
+    # START BOTH and one-button CLEAN, so the check is not "are there
+    # duplicates" but "are the duplicates exactly the four controls that are
+    # supposed to have them".
+    dup_keys = {k for k, n in collections.Counter(keys).items() if n > 1}
+    dup_controls = set()
+    for sc in shortcuts:
+        if sc.find("RawInputMessage").get("key") in dup_keys:
+            dup_controls.add(sc.find(
+                "ShortcutPath[@name='InputPath']").get("path").rsplit(
+                    "/", 1)[0])
+    by_phys = collections.Counter(
+        s2["physical"] for s2 in m
+        if (M.note_key(s2["channel"], s2["note"]) if s2["kind"] == "note"
+            else M.cc_key(s2["channel"], s2["cc"])) in
+        {int(k) for k in dup_keys})
+    expected = {"PLAY n91", "STOP ALL CLIPS n81", "BANK LOCK n103",
+                "CUE LEVEL CC47"}
+    check("multi-shortcut controls are exactly the intended four",
+          set(by_phys) == expected,
+          "%s" % sorted(by_phys))
 
     print("\n=== coverage ===")
     m = M.build_map(S)

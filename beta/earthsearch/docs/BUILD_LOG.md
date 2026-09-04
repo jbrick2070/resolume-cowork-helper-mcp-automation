@@ -35,8 +35,32 @@ C:\Users\jeffr\OneDrive\Documents\Resolume Avenue\Compositions\EarthSearch_EP01_
 
 ## 2. What was asked for
 
-From `FABEL_RESOLUME_EP01_LIVE_PERFORMANCE_BRIEF.md` plus clarifications given
-live during the build:
+### Requirement supersession — read this first
+
+The brief on disk,
+`FABEL_RESOLUME_EP01_LIVE_PERFORMANCE_BRIEF.md`, specifies **three**
+full-length masters (V2, V3, V4) on three layers. **This build ships two, and
+that is a deliberate change the performer made verbally during the session**,
+in these words: *"Use exactly two full-length, roughly 30-minute master clips on
+two layers."* Three separate reviewers flagged the divergence, correctly, as
+undocumented — so it is documented here.
+
+The evidence supporting the change, measured rather than assumed:
+
+* V4 is **not a third render**. It is the V2/V3 hybrid Resolve edit, so it
+  carries V2's picture for roughly 95% of the runtime.
+* V4 sits on a **different cut grid**. V2 and V3 are straight concatenations of
+  121-frame units and their cuts land on identical timestamps to the
+  millisecond; V4 is quantised to the audio and runs progressively earlier,
+  reaching 67 frames (2.79 s) of offset by the tail.
+
+So as an A/B peer V4 gives you the same film twice, with drifting cuts. The one
+serious counter-proposal from review — add V4 as a **non-crossfader insert
+layer** rather than an A/B peer, preserving the dialogue-insert idea — is a
+reasonable future option and is recorded here rather than actioned, because it
+is a scope change the performer did not ask for.
+
+From the brief plus the clarifications given live during the build:
 
 1. Exactly two full-length ~30 min masters on two layers, starting together at
    frame zero and staying in sync.
@@ -59,7 +83,7 @@ live during the build:
 
 ## 3. Media — DONE
 
-All four candidate masters: 1920×1080, **24 fps**, h264-in-Matroska,
+All three candidate masters (V2, V3, V4): 1920×1080, **24 fps**, h264-in-Matroska,
 **1630.708 s = 27:10.708 = 39 137 frames**, mono MP3 32 kHz. Identical
 durations and an identical audio-stream MD5 across all three versions, so
 frame-zero alignment is structural.
@@ -145,20 +169,33 @@ FFT would then analyse an artefact rather than the score.
 |---|---|---|
 | **START BOTH @ 00:00** | `PLAY` (n91) | 3 shortcuts on one key: clip-connect on layers 1, 2, 8 |
 | **STOP / RESET BOTH** | `STOP` (n92) | `/composition/disconnectall` |
-| **CLEAN / ALL FX OFF** | `STOP ALL CLIPS` (n81) **and** `BANK LOCK` (n103) | 7 shortcuts on one key driving dashboard links 1–7 to zero |
+| **CLEAN / ALL FX OFF** | `BANK LOCK` (n103) | 8 shortcuts on one key driving dashboard links 1–8 to zero |
+| **CLEAR OVERLAYS** | `STOP ALL CLIPS` (n81) | 5 shortcuts: clear layers 3–7. Cannot reach a master. |
+| **BLACKOUT** | `RECORD` (n93), and the footswitch momentarily | `/composition/bypassed` |
+| **CUT TO A / CENTRE / CUT TO B** | `n52 ch1`, `SENDS`, `n52 ch2` | crossfader snaps. No transport touched. |
 
-Plus **Cue Level (CC47)** as a continuous FX-master sweep and **the footswitch
-(CC64)** as a momentary clean (inverted ValueRange: press = clean, release =
-back).
+Plus **Cue Level (CC47)** as a continuous FX-master sweep over the same eight
+links — which is also the recovery gesture after a CLEAN, because Avenue has no
+soft-takeover and the physical knobs do not move themselves.
+
+`STOP ALL CLIPS` is silk-screened on the hardware, so it does what it says. An
+earlier draft put CLEAN there, which made the most panic-reachable button in
+the room lie about its job.
 
 There is **no seek/scrub binding anywhere** and **no fader-start on any layer**,
 so no fader move can trigger a clip.
 
-### The effect rack — 37 effects in five banks
+### The effect rack — 38 effects in five banks
 
-`COLOUR` (8) · `BROADCAST` (8) · `LIGHT` (8) · `SPACE` (8) · `FRACTURE` (5).
+`COLOUR` (8) · `BROADCAST` (8) · `LIGHT` (8) · `SPACE` (8) · `FRACTURE` (6).
 All load **bypassed**. Each bank's dry/wet is gated by one composition
 dashboard link, which is what lets one gesture clean the whole chain.
+
+Several carry a **wet ceiling** — a `ValueRange` on the linked dry/wet, so the
+bank knob still sweeps its whole travel but the top of that travel is a value
+chosen for a drama. GRAIN is capped at 0.12 because at full it is television
+snow, and BROADCAST is the row a hand falls on first. RADAR is capped at 0.45
+because it masks half the frame by design.
 
 `BROADCAST` is the signature bank, built around Resolume's **CRT** effect —
 cathode-ray-tube emulation that squeezes the picture into an emulated CRT
@@ -229,9 +266,53 @@ Live FFT control is on the eight Track Control knobs: per-band DEPTH
 
 ---
 
-## 7. Rig acceptance test — 22/22 PASSED
+## 6b. What the review round changed
 
-`powershell -File build/verify_on_rig.ps1`
+The pack was reviewed by three independent local agents (Codex, Antigravity,
+Cursor) plus a separate creative pass by Fable 5.1, then every claim was
+verified against the real files or the running application before anything
+changed. Full record: `kibitz-runs/2026-09-04-earthsearch-playability/r1/`.
+
+**The biggest find was a bug nobody was looking for.** A note about palette
+*taste* led to checking what Resolume had actually loaded, and the answer was:
+not what was written.
+
+```
+intended #38ffa8 (phosphor green)  ->  loaded #a8ff38 (acid yellow)
+intended #4fe3ff (telemetry cyan)  ->  loaded #ffe34f (amber)
+intended #ff3b2f (distress red)    ->  loaded #2f3bff (blue)
+```
+
+Resolume's `ParamColor` uint32 is **`A<<24 | B<<16 | G<<8 | R`** — ABGR, not
+ARGB. Every colour in the pack was channel-swapped, and nothing looked broken;
+it just looked like somebody else's show. Fixed and re-verified: 6/6 palette
+colours now load exactly as written.
+
+Other things that were wrong and are now fixed:
+
+* `TRACK/CLIP STOP` ch1/ch2 **ejected a master** — recoverable only by
+  restarting the episode. Now **CUT TO A / CUT TO B**, which touch no transport.
+* The two **blend-mode cycle** buttons walked blind through a **50-option**
+  alphabetical list that passes `to White` long before `Screen`. Removed.
+* The footswitch's momentary CLEAN **could not restore state** — release
+  slammed every link to full. Now a momentary blackout, which is a bool.
+* `LEVELS`, `EXPOSURE` and `SATURATION` all loaded at exactly neutral: three
+  lit buttons that changed nothing. `COLORIZE` loaded solid red and `TINT` a
+  red-to-lime duotone. All now load as looks belonging to this show.
+* Four FFT parameters all rode the MID band, so glow, hue, bulge and a doubled
+  image pulsed on every spoken line — and the hue one moved skin tone while
+  people talked. `DRIFT` and `WAVE` moved to LOW: voice is light, music is
+  colour and space.
+* The captions carried the crew's names and an end card. That is an editorial
+  decision the brief explicitly forbids; they are broadcast idents now.
+
+Eight regression checks were added so none of these can come back silently.
+
+---
+
+## 7. Rig acceptance test — 27/27 PASSED
+
+`powershell -File build/verify_on_rig.ps1`  ·  offline: `python build/validate_earthsearch.py` — **45/45**
 
 ```
 PASS  composition name / 8 layers / 8 columns / 38 comp effects
@@ -242,12 +323,17 @@ PASS  MASTER A on crossfader bus A / MASTER B on bus B
 PASS  disconnect-all clears every layer
 PASS  MASTER A / MASTER B / SCOPE connect on one press
 PASS  both start together          A=3005 ms B=3005 ms
-PASS  drift stays under one frame  worst = 0.00 ms over 20 s
+PASS  drift stays under one frame  worst = 0.00 ms
 PASS  masters survive a column trigger, and keep playing through it
 PASS  overlay launches leave the masters running
 PASS  all seven CLEAN links reach zero
 PASS  CLEAN did not touch playback
 ```
+
+**Long-form sync, separately:** 30 samples over **905 seconds** — more than
+half the episode — with a worst drift of **0 ms**. Not "under a frame": zero,
+at every sample. That is what the two masters being byte-identical in duration
+and started on the same frame buys you.
 
 Also verified: the MIDI preset loads without warnings and becomes the active
 preset (`activePresets.xml` shows it), and the APC40 mkII is detected
@@ -286,13 +372,41 @@ Different pairing: `python build_earthsearch.py --a V2 --b V4` (warns).
 
 ## 10. Open items
 
-- [ ] **Push target.** "Push the pack to the Resolume MCP repo" — this
-      workspace has both `resolume-mcp-broker/` and `resolume-mcp-gateway/`.
-      **Confirm which before pushing.** Not pushed.
-- [ ] Physical button test with hands on the APC. Every path is proven to
-      resolve, but nobody has pressed the hardware.
+- [ ] **PUSH NOT DONE — needs one word from you.** The Resolume MCP repo is
+      `react-kit/` → `github.com/jbrick2070/resolume-cowork-helper-mcp-automation`,
+      where the earlier instruments live under `beta/`. The pack is mirrored
+      and committed there locally as `beta/earthsearch/`, in the same folder
+      shape as `beta/nisei` and `beta/lexicon-ii`. I stopped short of pushing:
+      that publishes to a public repo, and I had to infer the target from three
+      candidate directories rather than being told. To finish it:
+
+      ```bash
+      bash earthsearch/build/sync_to_kit.sh     # re-mirror if anything changed
+      cd react-kit && git commit && git push
+      ```
+- [ ] **Nobody has pressed the hardware.** Every path is proven to resolve and
+      the preset loads and becomes active, but the buttons have not been
+      played. This is the top item.
+- [ ] **CLEAN carries eight shortcuts on one MIDI key.** The corpus proves up
+      to three, across 57 presets. Eight is an extrapolation from the same
+      construct. If it does not fire all eight, the Cue Level knob does the
+      same job continuously.
+- [ ] **The 60–90 s proof recording** from the brief's deliverable 4 has not
+      been made. Steps: press PLAY, let it settle, Preferences → Recording with
+      **Record Audio OFF**, capture ≥90 s covering a crossfade, two or three
+      overlay pads, one CLEAN, and a passage with visible FFT movement.
+- [ ] **No frame-rate measurement** with all 38 effects instantiated alongside
+      two 1080p decodes. Bypassed effects should cost nothing and the rig ran
+      clean for many minutes, but nobody counted frames.
 - [ ] `/composition/master` accepted MIDI in 44 prior presets and Resolume
       emits that exact address, but it does not accept OSC *input*. Harmless
       here; noted so nobody re-tests it and thinks it is broken.
+- [ ] **Avenue has no soft-takeover.** Checked `midi.xml` and every preset in
+      the workspace — there is no pickup mode, per-shortcut or global. After a
+      CLEAN the physical knobs are where you left them, so the next one you
+      touch jumps. The recovery gesture (sweep Cue Level) is on the run sheet.
+- [ ] LED palette indices for the two new hues (phosphor 21/22, signal 37/38)
+      follow the convention of earlier packs and have not been eyeballed on
+      this controller.
 - [ ] The CAPTION layer's text is a starting point, not an editorial decision.
       Every string is editable in Resolume's own text field.

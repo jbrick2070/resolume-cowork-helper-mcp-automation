@@ -603,25 +603,30 @@
 				<Value first="Previewing" second="0.047244094488188976" />
 			</NamedValues>
 		</Shortcut>
-		<!-- EJECT LAYER -->
-		<Shortcut name="Shortcut" uniqueId="1788400900041" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/clear" translationType="1" allowedTranslationTypes="11" />
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/clear" translationType="1" allowedTranslationTypes="11" />
+		<!-- A / B -->
+		<Shortcut name="Shortcut" uniqueId="1788400900041" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<ValueRange min="0" max="0" />
 			<RawInputMessage key="72057594037941392" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
-				<Value first="On" second="0.007874015748031496" />
+				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900042" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/clear" translationType="1" allowedTranslationTypes="11" />
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/clear" translationType="1" allowedTranslationTypes="11" />
+		<Shortcut name="Shortcut" uniqueId="1788400900042" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<ValueRange min="1" max="1" />
 			<RawInputMessage key="72057594037941393" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
-				<Value first="On" second="0.007874015748031496" />
+				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
+		<!-- EJECT OVERLAY -->
 		<Shortcut name="Shortcut" uniqueId="1788400900043" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11" />
@@ -1111,8 +1116,8 @@
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900093" paramNodeName="RangedParam[bool]" behaviour="4">
-			<ShortcutPath name="InputPath" path="/composition/video/effects/sparkles/bypassed" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/video/effects/sparkles/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/video/effects/vignette/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/vignette/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037943952" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.007874015748031496" />
@@ -1120,8 +1125,8 @@
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900094" paramNodeName="RangedParam[bool]" behaviour="4">
-			<ShortcutPath name="InputPath" path="/composition/video/effects/heat/bypassed" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/video/effects/heat/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/video/effects/kuwahara/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/kuwahara/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037944208" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.007874015748031496" />
@@ -1265,8 +1270,17 @@
 				<Value first="On" second="0.0" />
 			</NamedValues>
 		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1788400900110" paramNodeName="RangedParam[bool]" behaviour="4">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/stopmotion/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/stopmotion/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<RawInputMessage key="72057594037950864" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.007874015748031496" />
+				<Value first="On" second="0.0" />
+			</NamedValues>
+		</Shortcut>
 		<!-- SAFETY - START -->
-		<Shortcut name="Shortcut" uniqueId="1788400900110" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900111" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
@@ -1281,7 +1295,7 @@
 				<Value first="Previewing" second="0.007874015748031496" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900111" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900112" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
@@ -1296,7 +1310,7 @@
 				<Value first="Previewing" second="0.007874015748031496" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900112" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900113" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
@@ -1312,7 +1326,7 @@
 			</NamedValues>
 		</Shortcut>
 		<!-- SAFETY - STOP -->
-		<Shortcut name="Shortcut" uniqueId="1788400900113" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900114" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/disconnectall" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/disconnectall" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037951632" value="0" numSteps="128" />
@@ -1321,8 +1335,54 @@
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
+		<!-- SAFETY - CLEAR OVERLAYS -->
+		<Shortcut name="Shortcut" uniqueId="1788400900115" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.0" />
+				<Value first="On" second="1.0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1788400900116" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.0" />
+				<Value first="On" second="1.0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1788400900117" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.0" />
+				<Value first="On" second="1.0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1788400900118" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/6/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/6/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.0" />
+				<Value first="On" second="1.0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1788400900119" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/layers/7/clear" translationType="1" allowedTranslationTypes="11" />
+			<ShortcutPath name="OutputPath" path="/composition/layers/7/clear" translationType="1" allowedTranslationTypes="11" />
+			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.0" />
+				<Value first="On" second="1.0" />
+			</NamedValues>
+		</Shortcut>
 		<!-- SAFETY - BLACKOUT -->
-		<Shortcut name="Shortcut" uniqueId="1788400900114" paramNodeName="RangedParam[bool]" behaviour="4">
+		<Shortcut name="Shortcut" uniqueId="1788400900120" paramNodeName="RangedParam[bool]" behaviour="4">
 			<ShortcutPath name="InputPath" path="/composition/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037951888" value="0" numSteps="128" />
@@ -1332,85 +1392,96 @@
 			</NamedValues>
 		</Shortcut>
 		<!-- SAFETY - CLEAN -->
-		<Shortcut name="Shortcut" uniqueId="1788400900115" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900121" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900116" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900122" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900117" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900123" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900118" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900124" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900119" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900125" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900120" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900126" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900121" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900127" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037948816" value="0" numSteps="128" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
+			<NamedValues>
+				<Value first="Off" second="0.0" />
+				<Value first="On" second="1.0" />
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1788400900128" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link8" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link8" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<ValueRange min="0" max="0" />
+			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
 		<!-- MIXER -->
-		<Shortcut name="Shortcut" uniqueId="1788400900122" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900129" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/select" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/select" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037948560" value="0" numSteps="128" />
@@ -1419,26 +1490,20 @@
 				<Value first="On" second="0.007874015748031496" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900123" paramNodeName="ParamChoice[unsigned long long]" behaviour="131082" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/video/mixer/blendmode" translationType="1" allowedTranslationTypes="11" />
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/mixer/blendmode" translationType="1" allowedTranslationTypes="11" />
+		<!-- A / B -->
+		<Shortcut name="Shortcut" uniqueId="1788400900130" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<ValueRange min="0.5" max="0.5" />
 			<RawInputMessage key="72057594037950608" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
-				<Value first="On" second="0.007874015748031496" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900124" paramNodeName="ParamChoice[unsigned long long]" behaviour="131082" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/video/mixer/blendmode" translationType="1" allowedTranslationTypes="11" />
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/mixer/blendmode" translationType="1" allowedTranslationTypes="11" />
-			<RawInputMessage key="72057594037950864" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="0.007874015748031496" />
+				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
 		<!-- TEMPO -->
-		<Shortcut name="Shortcut" uniqueId="1788400900125" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900131" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/tempocontroller/resync" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/resync" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037951120" value="0" numSteps="128" />
@@ -1447,7 +1512,7 @@
 				<Value first="On" second="1.0" />
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900126" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900132" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037953424" value="0" numSteps="128" />
@@ -1457,7 +1522,7 @@
 			</NamedValues>
 		</Shortcut>
 		<!-- MIXER -->
-		<Shortcut name="Shortcut" uniqueId="1788400900127" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900133" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/1/connected" translationType="1" allowedTranslationTypes="-1" />
@@ -1472,345 +1537,233 @@
 				<Value first="Previewing" second="0.0" />
 			</NamedValues>
 		</Shortcut>
-		<!-- SAFETY - CLEAN -->
-		<Shortcut name="Shortcut" uniqueId="1788400900128" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="1.0" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900129" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="1.0" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900130" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="1.0" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900131" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="1.0" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900132" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="1.0" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900133" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="1.0" />
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900134" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="0" max="0" />
-			<RawInputMessage key="72057594037954448" value="0" numSteps="128" />
-			<NamedValues>
-				<Value first="Off" second="0.0" />
-				<Value first="On" second="1.0" />
-			</NamedValues>
-		</Shortcut>
 		<!-- LAYER LEVEL -->
-		<Shortcut name="Shortcut" uniqueId="1788400900135" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900134" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/1/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/1/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857840" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900136" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900135" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/2/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/2/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857841" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900137" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900136" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/3/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/3/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857842" value="0" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900138" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900137" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/4/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/4/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857843" value="0" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900139" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900138" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/5/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/5/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857844" value="0" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900140" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900139" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/6/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/6/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857845" value="0" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900141" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900140" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/7/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/7/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857846" value="0" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900142" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900141" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/layers/8/master" translationType="1" allowedTranslationTypes="11" />
 			<ShortcutPath name="OutputPath" path="/composition/layers/8/master" translationType="1" allowedTranslationTypes="11" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075857847" value="0" numSteps="128" />
 		</Shortcut>
 		<!-- MASTER -->
-		<Shortcut name="Shortcut" uniqueId="1788400900143" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900142" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/master" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/master" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075859632" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900144" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900143" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/crossfader/phase" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075859888" value="0" numSteps="128" />
 		</Shortcut>
 		<!-- BANK INTENSITY -->
-		<Shortcut name="Shortcut" uniqueId="1788400900145" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900144" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075860144" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900146" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900145" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075860400" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900147" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900146" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075860656" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900148" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900147" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075860912" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900149" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900148" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075861168" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900150" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900149" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075861424" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900151" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900150" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075861680" value="1" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900152" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900151" paramNodeName="" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link8" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link8" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075861936" value="1" numSteps="128" />
 		</Shortcut>
 		<!-- LIVE FFT CONTROL -->
-		<Shortcut name="Shortcut" uniqueId="1788400900153" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900152" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/trails/effect/feedback/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/trails/effect/feedback/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075868336" value="0.5" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900154" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900153" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/trails/effect/feedback/behaviour/fallback" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/trails/effect/feedback/behaviour/fallback" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075868592" value="0.5" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900155" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900154" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/bloom/effect/amount/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/bloom/effect/amount/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075868848" value="0.5" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900156" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900155" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/bloom/effect/amount/behaviour/fallback" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/bloom/effect/amount/behaviour/fallback" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075869104" value="0.5" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900157" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900156" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/shiftrgb/effect/distance/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/shiftrgb/effect/distance/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075869360" value="0.5" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900158" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900157" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/shiftrgb/effect/distance/behaviour/fallback" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/shiftrgb/effect/distance/behaviour/fallback" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075869616" value="0.5" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900159" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900158" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/huerotate/effect/huerotate/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/huerotate/effect/huerotate/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075869872" value="0.5" numSteps="128" />
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900160" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900159" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/video/effects/wavewarp/effect/height/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/video/effects/wavewarp/effect/height/behaviour/gain" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<RawInputMessage key="144115188075870128" value="0.5" numSteps="128" />
 		</Shortcut>
 		<!-- FX MASTER -->
-		<Shortcut name="Shortcut" uniqueId="1788400900161" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900160" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
+			<Subtarget type="5" optionIndex="-1" />
+			<ValueRange min="0" max="1" />
+			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1788400900161" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="1" />
 			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900162" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="1" />
 			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900163" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="1" />
 			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900164" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="1" />
 			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900165" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="1" />
 			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900166" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="1" />
 			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1788400900167" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/dashboard/link8" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/dashboard/link8" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
 			<ValueRange min="0" max="1" />
 			<RawInputMessage key="144115188075868080" value="1" numSteps="128" />
 		</Shortcut>
+		<!-- SAFETY - BLACKOUT -->
 		<Shortcut name="Shortcut" uniqueId="1788400900168" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link1" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/bypassed" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/bypassed" translationType="1" allowedTranslationTypes="1" />
 			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="1" max="0" />
-			<RawInputMessage key="144115188075872432" value="1" numSteps="128" />
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900169" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link2" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="1" max="0" />
-			<RawInputMessage key="144115188075872432" value="1" numSteps="128" />
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900170" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link3" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="1" max="0" />
-			<RawInputMessage key="144115188075872432" value="1" numSteps="128" />
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900171" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link4" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="1" max="0" />
-			<RawInputMessage key="144115188075872432" value="1" numSteps="128" />
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900172" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link5" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="1" max="0" />
-			<RawInputMessage key="144115188075872432" value="1" numSteps="128" />
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900173" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link6" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="1" max="0" />
-			<RawInputMessage key="144115188075872432" value="1" numSteps="128" />
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1788400900174" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/dashboard/link7" translationType="1" allowedTranslationTypes="1" />
-			<Subtarget type="5" optionIndex="-1" />
-			<ValueRange min="1" max="0" />
-			<RawInputMessage key="144115188075872432" value="1" numSteps="128" />
+			<ValueRange min="0" max="1" />
+			<RawInputMessage key="144115188075872432" value="0" numSteps="128" />
 		</Shortcut>
 		<!-- TEMPO -->
-		<Shortcut name="Shortcut" uniqueId="1788400900175" paramNodeName="" behaviour="16392" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
+		<Shortcut name="Shortcut" uniqueId="1788400900169" paramNodeName="" behaviour="16392" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
 			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempo" translationType="1" allowedTranslationTypes="1" />
 			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempo" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="144115188075859376" value="0" numSteps="128" />

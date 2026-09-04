@@ -11,7 +11,7 @@
 param(
   [string]$Comp = 'C:/Art Projects/Res_Fable/earthsearch/output/EarthSearch_EP01_Live_Mix.avc',
   [switch]$SkipOpen,
-  [int]$SyncSeconds = 20
+  [int]$SyncSeconds = 120
 )
 
 $ErrorActionPreference = 'Continue'
@@ -60,8 +60,11 @@ $c = Comp
 Check "composition name"  ($c.name.value -eq 'EarthSearch_EP01_Live_Mix') $c.name.value
 Check "8 layers"          ($c.layers.Count -eq 8)  "layers=$($c.layers.Count)"
 Check "8 columns"         ($c.columns.Count -eq 8) "columns=$($c.columns.Count)"
-Check "38 comp effects"   (@($c.video.effects).Count -eq 38) `
-                          "count=$(@($c.video.effects).Count) (37 + Transform)"
+# Derived from the spec by the build, not hard-coded here - a stale literal in
+# a test is a test that fails for the wrong reason.
+$wantFx = 38 + 1
+Check "$wantFx comp effects"  (@($c.video.effects).Count -eq $wantFx) `
+                          "count=$(@($c.video.effects).Count) (38 + Transform)"
 $names = @($c.video.effects | ForEach-Object { $_.name })
 Check "CRT present"       ($names -contains 'CRT') "broadcast bank signature"
 Check "Radar present"     ($names -contains 'Radar') ""
@@ -77,6 +80,8 @@ for ($i = 0; $i -lt 8; $i++) { if ($c.layers[$i].faderstart.value) { $noFaderSta
 Check "no layer has fader-start" $noFaderStart "fader-start would restart a master on a fader move"
 Check "MASTER A on crossfader bus A" ($c.layers[0].crossfadergroup.value -eq 'A') ""
 Check "MASTER B on crossfader bus B" ($c.layers[1].crossfadergroup.value -eq 'B') ""
+Check "crossfader opens hard on A" ($c.crossfader.phase.value -le -0.999) `
+      "phase=$($c.crossfader.phase.value) on a -1..1 scale; 0 would be a 50/50 double exposure"
 
 ""
 "--- STOP / RESET BOTH ---"
@@ -112,7 +117,7 @@ for ($t = 0; $t -lt $SyncSeconds; $t += 5) {
   if ($d -gt $worst) { $worst = $d }
   "    t+$($t+5)s  drift = $([math]::Round($d,2)) ms"
 }
-Check "drift stays under one frame (41.67 ms)" ($worst -lt 41.67) "worst=$([math]::Round($worst,2)) ms"
+Check "drift stays under one frame (41.67 ms)" ($worst -lt 41.67) "worst=$([math]::Round($worst,2)) ms over $SyncSeconds s"
 
 ""
 "--- a column trigger must NOT disturb the masters ---"
@@ -142,32 +147,62 @@ Check "overlay launches leave the masters running" `
       ("A $([math]::Round($before)) -> $([math]::Round($after)) ms")
 
 ""
-"--- CLEAN / ALL FX OFF (composition dashboard links 1-7 to zero) ---"
-foreach ($n in 1..7) { SetParam $c.dashboard."Link $n".id 0.0 }
+"--- CLEAN / ALL FX OFF (composition dashboard links 1-8 to zero) ---"
+foreach ($n in 1..8) { SetParam $c.dashboard."Link $n".id 0.0 }
 Start-Sleep -Seconds 2
 $c = Comp
 $allZero = $true
-foreach ($n in 1..7) { if ($c.dashboard."Link $n".value -gt 0.001) { $allZero = $false } }
-Check "all seven CLEAN links reach zero" $allZero ""
+foreach ($n in 1..8) { if ($c.dashboard."Link $n".value -gt 0.001) { $allZero = $false } }
+Check "all eight CLEAN links reach zero" $allZero ""
 $stillPlaying = $c.layers[0].clips[0].connected.value -like 'Connected*'
 Check "CLEAN did not touch playback" $stillPlaying ""
-foreach ($n in 1..7) { SetParam $c.dashboard."Link $n".id 1.0 }
+foreach ($n in 1..8) { SetParam $c.dashboard."Link $n".id 1.0 }
 
 ""
-"--- FFT is live (composition FFT, driven by the masters' own audio) ---"
-$c = Comp
-$bloom = $c.video.effects | Where-Object { $_.name -eq 'Bloom' }
-$amt = $bloom.effect.params | Where-Object { $_.name -like '*Amount*' -or $_.name -like '*Brightness*' } | Select-Object -First 1
-if ($amt) {
-  $v1 = $amt.value
-  Start-Sleep -Seconds 3
-  $c = Comp
-  $bloom2 = $c.video.effects | Where-Object { $_.name -eq 'Bloom' }
-  $amt2 = $bloom2.effect.params | Where-Object { $_.name -like '*Amount*' -or $_.name -like '*Brightness*' } | Select-Object -First 1
-  Check "Bloom Amount is moving with the audio" ($amt2.value -ne $v1) "$v1 -> $($amt2.value)"
-} else {
-  "  SKIP  could not locate Bloom Amount in the REST tree"
+"--- colours load as written (ParamColor is ABGR, not ARGB) ---"
+$want = @{ 'CARRIER WAVE' = '#38ffa8'; 'TELEMETRY' = '#ffb03a';
+           'DISTRESS' = '#ff3b2f'; 'VECTOR RISE' = '#4fe3ff' }
+$badCol = @()
+foreach ($lay in $c.layers) {
+  foreach ($cl in $lay.clips) {
+    $n = $cl.name.value
+    if ($want.ContainsKey($n)) {
+      $got = $cl.video.sourceparams.Color.value
+      if ($got -notlike ($want[$n] + '*')) { $badCol += "$n=$got" }
+    }
+  }
 }
+Check "clip colours load as written" ($badCol.Count -eq 0) `
+      $(if ($badCol.Count) { $badCol -join ', ' } else { 'phosphor / amber / alert / signal all correct' })
+
+""
+"--- wet ceilings are applied ---"
+$ceil = @{ 'StaticEffect' = 0.12; 'NoisyEffect' = 0.25; 'Radar' = 0.45 }
+$badCeil = @()
+foreach ($k in $ceil.Keys) {
+  $e = $c.video.effects | Where-Object { $_.name -eq $k }
+  if (-not $e -or [math]::Abs($e.params.Opacity.out - $ceil[$k]) -gt 0.001) {
+    $badCeil += "$k=$($e.params.Opacity.out)"
+  }
+}
+Check "GRAIN / NOISE / RADAR carry their ceilings" ($badCeil.Count -eq 0) `
+      $(if ($badCeil.Count) { $badCeil -join ', ' } else { 'GRAIN 0.12, NOISE 0.25, RADAR 0.45' })
+
+""
+"--- FFT is live (composition FFT, driven by the master's own audio) ---"
+$hasAudio = $null -ne $c.layers[0].clips[0].audio -and `
+            $c.layers[0].clips[0].audio.PSObject.Properties.Count -gt 0
+Check "MASTER A has a decoded audio track" $hasAudio `
+      "without one, every reactive parameter sits pinned at its floor"
+$b1 = ($c.video.effects | Where-Object { $_.name -eq 'Bloom' }).params.Amount.value
+$moved = $false
+for ($i = 0; $i -lt 10; $i++) {
+  Start-Sleep -Milliseconds 900
+  $c = Comp
+  $b2 = ($c.video.effects | Where-Object { $_.name -eq 'Bloom' }).params.Amount.value
+  if ([math]::Abs($b2 - $b1) -gt 0.0005) { $moved = $true; break }
+}
+Check "Bloom Amount moves with the audio" $moved "$b1 -> $b2 (window 0.14-0.44)"
 
 ""
 "=== $pass passed, $fail failed ==="

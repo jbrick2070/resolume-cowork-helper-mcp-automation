@@ -80,6 +80,20 @@ def pcolor(t, name, value, default=4294967295):
             % (ind, esc(name), default, value, value))
 
 
+def pchoice(t, name, value, default=0):
+    """A ParamChoice on a generator source.
+
+    Needed because several generator parameters that look numeric are choices,
+    not ranges - Gradient's Type is the one that mattered here. Emitting a
+    ParamRange for one is not an error you get told about: Resolume drops the
+    element and the stock default stands, which is how five full-frame washes
+    stayed linear while the spec comment claimed they were radial.
+    """
+    ind = "\t" * t
+    return ('%s<ParamChoice name="%s" T="INT32" default="%d" value="%d" '
+            'storeChoices="0" />' % (ind, esc(name), default, int(value)))
+
+
 def ptext(t, name, value):
     ind = "\t" * t
     return ('%s<ParamText name="%s" T="STRING" default="Resolume" '
@@ -92,7 +106,8 @@ def ptext(t, name, value):
                                 esc(value), ind, ind))
 
 
-def dashboard_link(t, name, default, value, link_no, link_name):
+def dashboard_link(t, name, default, value, link_no, link_name,
+                   value_range=None):
     """A ParamRange driven by a composition dashboard link.
 
     Rig-verified shape from "Res Fable Live Gen SPECIMEN.avc". One link can be
@@ -100,11 +115,18 @@ def dashboard_link(t, name, default, value, link_no, link_name):
     CLEAN control possible without inventing a shortcut species.
     """
     ind = "\t" * t
+    # A startStop range caps how far the link can drive this parameter. The
+    # bank knob still sweeps its whole travel; the top of that travel is a
+    # value chosen for a drama rather than for a demo. Same construct as the
+    # FFT floors. Without it, GRAIN at bank 1.0 is television snow.
+    vr = ("" if value_range is None else
+          '\n%s\t<ValueRange name="startStop" min="0" max="%s" />'
+          % (ind, num(value_range)))
     return ('%s<ParamRange name="%s" T="DOUBLE" default="%s" value="%s">\n'
             '%s\t<PhaseSourceDashboardLink name="PhaseSourceDashboardLink" '
-            'phase="%s" linkId="/link%d" linkName="%s" />\n'
+            'phase="%s" linkId="/link%d" linkName="%s" />%s\n'
             '%s</ParamRange>' % (ind, esc(name), default, value, ind, value,
-                                 link_no, esc(link_name), ind))
+                                 link_no, esc(link_name), vr, ind))
 
 
 def fft_prange(t, name, default, band, gain_db, fallback_ms, floor, ceiling):
@@ -188,7 +210,8 @@ def mixer(t, mixer_name, blend=None):
 # --------------------------------------------------------------------------
 # Effects
 # --------------------------------------------------------------------------
-def effect_pass(t, label, eff_key, values, link_no, fft_params=None):
+def effect_pass(t, label, eff_key, values, link_no, fft_params=None,
+                wet_max=None):
     """One composition-rack effect.
 
     Loads BYPASSED, so the composition opens on the untouched picture. Its
@@ -211,6 +234,12 @@ def effect_pass(t, label, eff_key, values, link_no, fft_params=None):
             band, gain, fall, floor, ceil = fft_params[pname]
             inner.append(fft_prange(t + 3, pname, num(values.get(pname, floor)),
                                     band, gain, fall, floor, ceil))
+        elif pname in ("Use Color", "Weighted", "GreysKeep", "Invert",
+                       "Black BG", "Frozen solid"):
+            inner.append(pbool(t + 3, pname, bool(values[pname]),
+                               default="0"))
+        elif "Color" in pname or pname in ("Black To", "White To"):
+            inner.append(pcolor(t + 3, pname, values[pname]))
         else:
             inner.append(prange(t + 3, pname, num(values[pname]),
                                 num(values[pname])))
@@ -226,7 +255,8 @@ def effect_pass(t, label, eff_key, values, link_no, fft_params=None):
     body.append('%s\t<Params name="Params">' % ind)
     body.append(pbool(t + 2, "Bypassed", True, alt="Bypass"))
     body.append(dashboard_link(t + 2, "Opacity", "1", "1", link_no,
-                               S.COMP_DASHBOARD[link_no - 1][1]))
+                               S.COMP_DASHBOARD[link_no - 1][1],
+                               value_range=wet_max))
     body.append('%s\t</Params>' % ind)
     if inner:
         body.append('%s\t<RenderPass name="%s" type="%s" uniqueTypeId="%s" '
@@ -425,8 +455,20 @@ def clip_generator(t, name, gen_type, values, fft_params, layer_index,
             p.append(ptext(t + 6, pname, val))
         elif "Color" in pname:
             p.append(pcolor(t + 6, pname, val))
-        elif pname in ("Mirror", "Animated"):
-            p.append(pbool(t + 6, pname, bool(val), default="1"))
+        elif (pname in ("Type", "Mode", "Style", "Blend", "Alignment")
+              and isinstance(val, int)):
+            # Guarded on int: LineScape's Direction is a real ParamRange in
+            # degrees, and Sine Wave's Waves is a range too.
+            p.append(pchoice(t + 6, pname, val))
+        elif pname in ("Mirror", "Animated", "Show Knots", "Button",
+                       "Black BG", "Reverse"):
+            # Resolume types these as ParamBoolean. Emitting a ParamRange for
+            # one is not an error you get told about - the element is simply
+            # dropped and the stock default stands, which is how the three
+            # LineScape clips kept their knots.
+            p.append(pbool(t + 6, pname, bool(val),
+                           default="1" if pname in ("Mirror", "Show Knots")
+                           else "0"))
         else:
             p.append(prange(t + 6, pname, num(val), num(val)))
     for pname, (band, gain, fall, floor, ceil) in fft_params.items():
@@ -496,10 +538,10 @@ def layer(index, name, blend, opacity, color_id, kind, master_level,
     # Overlay and scope layers put their opacity on a dashboard link so CLEAN
     # can take them off screen in the same gesture that dries the FX rack. The
     # two masters keep a plain static opacity: CLEAN must never touch picture.
-    if kind == S.KIND_OVERLAY:
-        p.append(dashboard_link(t + 3, "Opacity", "0.5", "1", 6, "OVERLAYS"))
-    elif kind == S.KIND_SCOPE:
-        p.append(dashboard_link(t + 3, "Opacity", "0.5", "1", 7, "SCOPE"))
+    if kind in (S.KIND_OVERLAY, S.KIND_SCOPE):
+        link_no = S.LAYER_LINK[index + 1]
+        p.append(dashboard_link(t + 3, "Opacity", "0.5", "1", link_no,
+                                S.COMP_DASHBOARD[link_no - 1][1]))
     else:
         p.append(prange(t + 3, "Opacity", "0.5", num(opacity)))
     p.append(prange(t + 3, "Width", str(S.WIDTH), str(S.WIDTH)))
@@ -603,10 +645,12 @@ def build(version_a, version_b, use_dxv=False, allow_missing=False):
     p.append('\t\t<RenderPass name="RenderPassChain">')
     p.append(transform_pass(3))
     link_of_bank = {b: n for n, b in S.LINK_BANK.items()}
-    for (bank, label, eff_key, values) in S.COMP_RACK:
+    for entry in S.COMP_RACK:
+        bank, label, eff_key, values = entry[:4]
+        wet_max = entry[4] if len(entry) > 4 else None
         p.append(effect_pass(3, label, eff_key, values,
                              link_of_bank[bank],
-                             fft_by_effect.get(label)))
+                             fft_by_effect.get(label), wet_max=wet_max))
     p.append('\t\t</RenderPass>')
     p.append('\t</VideoTrack>')
 
@@ -617,7 +661,13 @@ def build(version_a, version_b, use_dxv=False, allow_missing=False):
 
     p.append('\t<CrossFader name="CrossFader">')
     p.append('\t\t<Params name="Params">')
-    p.append(prange(3, "Phase", "0", "0"))
+    # Phase runs -1..1 with 0 at DEAD CENTRE, so a home of 0 opens the show on
+    # a 50/50 double exposure of both renders - which is not what any of the
+    # documentation said, and would have been the very first frame anybody
+    # saw. -1 is hard on A. (The physical crossfader is a pot and Resolume
+    # cannot see where it sits until it moves, so the run sheet also says to
+    # park it left before pressing PLAY.)
+    p.append(prange(3, "Phase", "0", "-1"))
     p.append('\t\t</Params>')
     p.append('\t\t<AudioTrack name="AudioTrack">')
     p.append('\t\t\t<AudioEffectChain name="AudioEffectChain" />')
@@ -686,12 +736,18 @@ def build(version_a, version_b, use_dxv=False, allow_missing=False):
     p.append('\t<Notes name="Notes">')
     p.append('\t\t<Note text_size_multiplier="2" text_color_index="4" '
              'text="%s" />' % esc(
-                 "EarthSearch EP01. PLAY (n91) starts BOTH masters at 00:00. "
-                 "STOP ALL CLIPS (n81) stops and resets both. Cue Level knob "
-                 "to zero is CLEAN / ALL FX OFF. The 5x8 pad grid addresses "
-                 "the five generative overlay layers only - no pad can touch "
-                 "either master. FFT is Composition FFT, so it follows the "
-                 "programme audio in the masters with no routing."))
+                 "EarthSearch EP01.  PLAY starts BOTH masters at 00:00 - it is "
+                 "start-from-zero, not a mid-show repair.  STOP stops and "
+                 "resets both.  BANK LOCK is CLEAN / ALL FX OFF, and Cue "
+                 "Level sweeps the same thing (and is how you come back from "
+                 "it, because Avenue has no soft-takeover).  RECORD and the "
+                 "footswitch are blackout.  CUT TO A / CUT TO B, above the "
+                 "master strips, change version without touching a "
+                 "transport.  The 5x8 pad grid addresses the five generative "
+                 "overlay layers ONLY - no pad can reach either master, and "
+                 "every layer ignores column triggers.  FFT is Composition "
+                 "FFT, so it follows the programme audio inside MASTER A with "
+                 "no routing at all."))
     p.append('\t</Notes>')
     p.append('</Composition>')
     p.append('')

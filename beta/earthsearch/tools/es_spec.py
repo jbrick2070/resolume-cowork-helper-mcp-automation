@@ -160,22 +160,41 @@ VERSION_ROLE = {
 #
 # ParamColor stores ARGB packed into one uint32.
 # --------------------------------------------------------------------------
-def argb(a, r, g, b):
-    return (a << 24) | (r << 16) | (g << 8) | b
+def abgr(a, r, g, b):
+    """Pack a colour the way Resolume actually stores one.
+
+    ParamColor's uint32 is A<<24 | B<<16 | G<<8 | R - blue and red are the
+    other way round from the ARGB you would expect. This was not in any doc;
+    it was caught by writing the palette, loading the composition, and asking
+    the running application what colour it thought each clip was:
+
+        intended #38ffa8 (phosphor green)  ->  loaded #a8ff38 (acid yellow)
+        intended #4fe3ff (telemetry cyan)  ->  loaded #ffe34f (amber)
+        intended #ff3b2f (distress red)    ->  loaded #2f3bff (blue)
+
+    Every colour in the pack was wrong until this was fixed, and nothing about
+    the composition looked broken - it just looked like somebody else's show.
+    build/harvest_osc_paths.py and the sourceparams in the REST tree are how to
+    re-check it.
+    """
+    return (a << 24) | (b << 16) | (g << 8) | r
 
 
 PALETTE = {
-    "void":      argb(255, 0x05, 0x07, 0x0C),   # deep space black-blue
-    "phosphor":  argb(255, 0x38, 0xFF, 0xA8),   # ANGEL terminal green
-    "amber":     argb(255, 0xFF, 0xB0, 0x3A),   # CRT amber
-    "signal":    argb(255, 0x4F, 0xE3, 0xFF),   # telemetry cyan
-    "bone":      argb(255, 0xE8, 0xEE, 0xF2),   # bone white
-    "alert":     argb(255, 0xFF, 0x3B, 0x2F),   # distress red
-    "indigo":    argb(255, 0x1B, 0x2A, 0x6B),   # deep indigo
-    "rust":      argb(255, 0xB4, 0x5A, 0x28),   # oxidised hull
-    "black":     argb(255, 0x00, 0x00, 0x00),
-    "clear":     argb(0, 0, 0, 0),
+    "void":      abgr(255, 0x05, 0x07, 0x0C),   # deep space black-blue
+    "phosphor":  abgr(255, 0x38, 0xFF, 0xA8),   # ANGEL terminal green
+    "amber":     abgr(255, 0xFF, 0xB0, 0x3A),   # CRT amber
+    "signal":    abgr(255, 0x4F, 0xE3, 0xFF),   # telemetry cyan
+    "bone":      abgr(255, 0xE8, 0xEE, 0xF2),   # bone white
+    "alert":     abgr(255, 0xFF, 0x3B, 0x2F),   # distress red
+    "indigo":    abgr(255, 0x1B, 0x2A, 0x6B),   # deep indigo
+    "rust":      abgr(255, 0xB4, 0x5A, 0x28),   # oxidised hull
+    "black":     abgr(255, 0x00, 0x00, 0x00),
+    "clear":     abgr(0, 0, 0, 0),
 }
+
+# Short alias, used all through the rack and the overlay tables below.
+P = PALETTE
 
 # --------------------------------------------------------------------------
 # Magic uniqueTypeIds - load-bearing. A wrong id makes Resolume silently drop
@@ -214,17 +233,21 @@ BLEND_CHOICE_DEFAULT = "67464114"
 # names, so their slugs are crt and warpspeed - no collision.
 EFFECT_LIBRARY = {
     # --- COLOUR ----------------------------------------------------------
-    "Tint":          ("Tint",          "A179", []),
-    "Colorize":      ("Colorize",      "A103", ["GreysTolerance", "Contrast"]),
+    "Tint":          ("Tint",          "A179", ["Black To", "White To"]),
+    "Colorize":      ("Colorize",      "A103", ["Color", "GreysTolerance",
+                                                "Contrast"]),
     "HueRotate":     ("HueRotate",     "A128", ["Hue Rotate"]),
-    "Levels":        ("Levels",        "A141", []),
-    "Exposure":      ("Exposure",      "A134", []),
-    "Saturation":    ("Saturation",    "A110", []),
+    "Levels":        ("Levels",        "A141", ["Base", "Midpoint",
+                                                "Ratio"]),
+    "Exposure":      ("Exposure",      "A134", ["Exposure"]),
+    "Saturation":    ("Saturation",    "A110", ["Saturation"]),
     "Posterize":     ("Posterize",     "A109", []),
     "InvertRGB":     ("InvertRGB",     "A105", []),
     # --- BROADCAST -------------------------------------------------------
     "CRT":           ("WireEffect",
-                      "c_be77e0d5-1404-4399-b8ae-7cdd64cba5ab", []),
+                      "c_be77e0d5-1404-4399-b8ae-7cdd64cba5ab",
+                      ["Columns", "Rows", "Shift", "Vignette", "Fisheye",
+                       "Spread", "Brightness", "Bloom Amount"]),
     "StaticEffect":  ("StaticEffect",  "MSTF", []),
     "NoisyEffect":   ("NoisyEffect",   "A185", []),
     "DotScreen":     ("DotScreen",     "A176", []),
@@ -241,6 +264,8 @@ EFFECT_LIBRARY = {
     "Blur":          ("Blur",          "A140", []),
     "Sparkles":      ("Sparkles",      "A188", ["Size"]),
     "Heat":          ("Heat",          "A107", []),
+    "Vignette":      ("Vignette",      "sy77", ["Roundness", "Size",
+                                                "Softness"]),
     "Freeze":        ("Freeze",        "A132", []),
     "Iterate":       ("Iterate",       "sy13", ["TransformStrength",
                                                 "Iterations", "StartOpacity",
@@ -263,9 +288,12 @@ EFFECT_LIBRARY = {
                                                 "Pos Frequency",
                                                 "Max RGB Shift",
                                                 "RGB Frequency"]),
-    "EdgeDetection": ("EdgeDetection", "MEDG", []),
+    "EdgeDetection": ("EdgeDetection", "MEDG", ["Multiplier", "Use Color",
+                                                "Color"]),
     "Triangulate":   ("Triangulate",   "A182", []),
     "Radar":         ("Radar",         "J004", []),
+    "StopMotion":    ("StopMotion",    "MSTP", []),
+    "Kuwahara":      ("Kuwahara",      "8166473902393820", []),
 }
 
 # Generator sources. uniqueTypeIds confirmed against the live /sources catalog
@@ -328,7 +356,17 @@ def param_slug(effect_name, param):
 # television, that one effect does more work than any amount of colour grading,
 # and it is why this bank sits on the top pad row where a hand falls first.
 #
-# (bank, control label, effect key, {param: value})
+# A fifth field, `wet_max`, caps how wet an effect can get when its bank link
+# is fully up. It becomes a <ValueRange name="startStop"> on the effect's
+# dry/wet Opacity - the same construct the FFT floors use - so the bank knob
+# still sweeps 0..1 but the top of that sweep is a value chosen for a drama
+# rather than for a demo.
+#
+# It exists because of one measurement: with no ceiling, GRAIN at bank 1.0 is
+# television snow over the whole picture, and BROADCAST is the row a hand falls
+# on first. Effects that are safe at full simply omit it.
+#
+# (bank, control label, effect key, {param: value}[, wet_max])
 # --------------------------------------------------------------------------
 BANK_COLOUR = "COLOUR"
 BANK_BROADCAST = "BROADCAST"
@@ -339,39 +377,64 @@ BANK_ORDER = [BANK_COLOUR, BANK_BROADCAST, BANK_LIGHT, BANK_SPACE,
               BANK_FRACTURE]
 
 COMP_RACK = [
-    (BANK_COLOUR, "TINT",       "Tint",       {}),
-    (BANK_COLOUR, "COLORIZE",   "Colorize",   {"Contrast": 0.5,
-                                               "GreysTolerance": 0.3}),
+    # Asking the running rig what these load at at their stock defaults was
+    # sobering: Tint arrives as a RED-to-LIME duotone, Colorize as solid red,
+    # and Levels / Exposure / Saturation all sit exactly at neutral - three
+    # buttons that would light up and change nothing. All five now load as
+    # looks belonging to this show.
+    (BANK_COLOUR, "TINT",       "Tint",       {"Black To": P["void"],
+                                               "White To": P["amber"]}, 0.55),
+    (BANK_COLOUR, "COLORIZE",   "Colorize",   {"Color": P["amber"],
+                                               "Contrast": 0.5,
+                                               "GreysTolerance": 0.3}, 0.60),
     (BANK_COLOUR, "DRIFT",      "HueRotate",  {"Hue Rotate": 0.0}),
-    (BANK_COLOUR, "LEVELS",     "Levels",     {}),
-    (BANK_COLOUR, "EXPOSURE",   "Exposure",   {}),
-    (BANK_COLOUR, "SATURATION", "Saturation", {}),
-    (BANK_COLOUR, "POSTERIZE",  "Posterize",  {}),
+    (BANK_COLOUR, "LEVELS",     "Levels",     {"Base": 0.56, "Midpoint": 0.5,
+                                               "Ratio": 0.5}),
+    (BANK_COLOUR, "EXPOSURE",   "Exposure",   {"Exposure": 0.42}),
+    (BANK_COLOUR, "SATURATION", "Saturation", {"Saturation": 0.34}),
+    (BANK_COLOUR, "POSTERIZE",  "Posterize",  {}, 0.70),
     (BANK_COLOUR, "NEGATIVE",   "InvertRGB",  {}),
 
-    (BANK_BROADCAST, "CRT",        "CRT",          {}),
-    (BANK_BROADCAST, "GRAIN",      "StaticEffect", {}),
-    (BANK_BROADCAST, "NOISE",      "NoisyEffect",  {}),
-    (BANK_BROADCAST, "DOT SCREEN", "DotScreen",    {}),
-    (BANK_BROADCAST, "RASTER",     "Raster",       {}),
+    # The signature row, and the one that needed ceilings most. CRT's real
+    # parameters (Columns / Rows / Shift / Fisheye / Spread / Bloom) came off
+    # the running rig; the stock patch is a demo tube at 340x115. 768x576 is
+    # PAL, which is the set this serial would have been watched on.
+    (BANK_BROADCAST, "CRT",        "CRT",          {"Columns": 768.0,
+                                                    "Rows": 576.0,
+                                                    "Shift": 100.0,
+                                                    "Vignette": 22.0,
+                                                    "Fisheye": 8.0,
+                                                    "Spread": 55.0,
+                                                    "Brightness": 52.0,
+                                                    "Bloom Amount": 40.0}),
+    (BANK_BROADCAST, "GRAIN",      "StaticEffect", {}, 0.12),
+    (BANK_BROADCAST, "NOISE",      "NoisyEffect",  {}, 0.25),
+    (BANK_BROADCAST, "DOT SCREEN", "DotScreen",    {}, 0.35),
+    (BANK_BROADCAST, "RASTER",     "Raster",       {}, 0.40),
     (BANK_BROADCAST, "BIT CRUSH",  "LoRezEffect",  {"Pixel Size": 0.055,
-                                                    "Bit Reduction": 0.14}),
-    (BANK_BROADCAST, "RGB DELAY",  "DelayRGB",     {}),
+                                                    "Bit Reduction": 0.14},
+     0.60),
+    (BANK_BROADCAST, "RGB DELAY",  "DelayRGB",     {}, 0.50),
     (BANK_BROADCAST, "FRINGE",     "ShiftRGB",     {}),
 
     (BANK_LIGHT, "BLOOM",   "Bloom",      {"Threshold": 0.72, "Size": 0.30}),
     (BANK_LIGHT, "ECHO",    "Trails",     {}),
     (BANK_LIGHT, "RAYS",    "RadialBlur", {"Steps": 0.40, "Distance": 0.10}),
     (BANK_LIGHT, "BLUR",    "Blur",       {}),
-    (BANK_LIGHT, "SPARKLE", "Sparkles",   {"Size": 0.30}),
-    (BANK_LIGHT, "HEAT",    "Heat",       {}),
+    # Sparkles ("get your glitter going") and Heat (thermal false colour, which
+    # deletes skin) were both wrong for a drama. Vignette and Kuwahara do the
+    # job the brief actually describes: a filmic edge, and a smoothing that
+    # settles the AI renders' shimmer into something painterly.
+    (BANK_LIGHT, "EDGE FALL", "Vignette", {"Roundness": 0.55, "Size": 0.62,
+                                           "Softness": 0.80}),
+    (BANK_LIGHT, "GOUACHE", "Kuwahara",   {}, 0.55),
     (BANK_LIGHT, "HOLD",    "Freeze",     {}),
     (BANK_LIGHT, "ITERATE", "Iterate",    {"TransformStrength": 0.12,
                                            "Iterations": 0.20,
                                            "OpacityChange": 0.35,
                                            "Scale": 0.48}),
 
-    (BANK_SPACE, "WAVE",        "WaveWarp",     {"Width": 0.10,
+    (BANK_SPACE, "WAVE",        "WaveWarp",     {"Width": 0.35,
                                                  "Speed": 0.08}),
     (BANK_SPACE, "RIPPLE",      "Ripples",      {"Frequency H": 0.30,
                                                  "Frequency V": 0.30,
@@ -382,20 +445,31 @@ COMP_RACK = [
     (BANK_SPACE, "WARPSPEED",   "WarpSpeed",    {}),
     (BANK_SPACE, "MIRROR QUAD", "MirrorQuad",   {}),
     (BANK_SPACE, "POLAR",       "PolarKaleido", {}),
-    (BANK_SPACE, "ZOOM",        "InfiniteZoom", {"Zoom": 0.5}),
+    (BANK_SPACE, "ZOOM",        "InfiniteZoom", {"Zoom": 0.08}, 0.60),
 
-    (BANK_FRACTURE, "TEAR",   "ShiftGlitch",   {"Frequency": 0.22,
+    # Size 0.28 tore a 28% slab half a frame sideways. 0.06 is a VHS tracking
+    # error, which is the period and survives a dialogue scene.
+    (BANK_FRACTURE, "TEAR",   "ShiftGlitch",   {"Frequency": 0.15,
                                                 "Vertical": 0.10,
-                                                "Horizontal": 0.50,
-                                                "Size": 0.28}),
+                                                "Horizontal": 0.30,
+                                                "Size": 0.06}),
     (BANK_FRACTURE, "TWITCH", "TwitchEffect",  {"Global Twitch": 0.32,
                                                 "Max Pos Y": 0.05,
                                                 "Pos Frequency": 0.20,
                                                 "Max RGB Shift": 0.10,
                                                 "RGB Frequency": 0.20}),
-    (BANK_FRACTURE, "EDGE",   "EdgeDetection", {}),
-    (BANK_FRACTURE, "FACET",  "Triangulate",   {}),
-    (BANK_FRACTURE, "RADAR",  "Radar",         {}),
+    (BANK_FRACTURE, "EDGE",   "EdgeDetection", {"Use Color": 1,
+                                                "Color": P["phosphor"],
+                                                "Multiplier": 0.25}, 0.75),
+    (BANK_FRACTURE, "FACET",  "Triangulate",   {}, 0.55),
+    # Radar masks half the frame for half a sweep, so it is a face-hider by
+    # design. Capped low and flagged on the run sheet as a between-scenes move.
+    (BANK_FRACTURE, "RADAR",  "Radar",         {}, 0.45),
+    # Stop Motion holds and drops frames - the exact stutter of a 1981 outside
+    # broadcast losing lock. Added late, after two reviewers independently
+    # pointed out that a blend-mode cycle button was unsafe and its seat was
+    # better spent on a treatment that belongs to this show.
+    (BANK_FRACTURE, "STUTTER", "StopMotion",   {}),
 ]
 
 
@@ -454,7 +528,7 @@ LAYERS = [
     (3, "STARFIELD", "Screen", 0.00, 4, KIND_OVERLAY, 0, True),
     (4, "GRID",      "Add",    0.00, 3, KIND_OVERLAY, 0, True),
     (5, "CAPTION",   "Alpha",  0.00, 1, KIND_OVERLAY, 0, True),
-    (6, "FLARE",     "Add",    0.00, 2, KIND_OVERLAY, 0, True),
+    (6, "FLARE",     "Screen", 0.00, 2, KIND_OVERLAY, 0, True),
     (7, "SCOPE",     "Add",    0.00, 3, KIND_SCOPE,   0, True),
 ]
 NUM_LAYERS = len(LAYERS)
@@ -512,50 +586,49 @@ DECK_NAME = "EarthSearch EP01"
 # (layer index0, column1..8, clip name, generator type, {param: value},
 #  {param: (band, gain_db, fallback_ms, floor, ceiling)} FFT bindings)
 # --------------------------------------------------------------------------
-P = PALETTE
 
 OVERLAY_CLIPS = {
     # ---- layer 3  SIGNAL - oscilloscope and radiophonic traces (Add) -----
     2: [
         ("CARRIER WAVE",   "SineWave", {"Color": P["phosphor"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.12, "Frequency": 0.10,
+                                        "Line Width": 0.12, "Frequency": 1.2,
                                         "Amplitude": 0.16, "Waves": 1.0,
-                                        "Main Speed": 0.30}, {}),
+                                        "Main Speed": 1.2}, {}),
         ("VOICE PRINT",    "SineWave", {"Color": P["signal"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.10, "Frequency": 0.22,
+                                        "Line Width": 0.10, "Frequency": 2.4,
                                         "Amplitude": 0.10, "Waves": 2.0,
-                                        "Main Speed": 0.45},
+                                        "Main Speed": 2.0},
          {"Amplitude": ("mid", 30.0, 700, 0.06, 0.34)}),
         ("TELEMETRY",      "SineWave", {"Color": P["amber"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.06, "Frequency": 0.55,
+                                        "Line Width": 0.06, "Frequency": 6.5,
                                         "Amplitude": 0.07, "Waves": 4.0,
-                                        "Main Speed": 0.80}, {}),
+                                        "Main Speed": 4.0}, {}),
         ("ANGEL ONE",      "SineWave", {"Color": P["phosphor"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.09, "Frequency": 0.33,
+                                        "Line Width": 0.09, "Frequency": 3.0,
                                         "Amplitude": 0.13, "Waves": 3.0,
-                                        "Modulation Depth": 3.0,
-                                        "Main Speed": 0.55}, {}),
+                                        "Modulation Depth": 1.4,
+                                        "Main Speed": 2.4}, {}),
         ("ANGEL TWO",      "SineWave", {"Color": P["signal"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.09, "Frequency": 0.41,
+                                        "Line Width": 0.09, "Frequency": 4.2,
                                         "Amplitude": 0.13, "Waves": 3.0,
-                                        "Modulation Depth": 5.0,
-                                        "Main Speed": 0.62}, {}),
+                                        "Modulation Depth": 2.6,
+                                        "Main Speed": 3.1}, {}),
         ("DISTRESS",       "SineWave", {"Color": P["alert"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.16, "Frequency": 0.08,
+                                        "Line Width": 0.16, "Frequency": 0.9,
                                         "Amplitude": 0.22, "Waves": 1.0,
-                                        "Main Speed": 0.18},
+                                        "Main Speed": 1.0},
          {"Line Width": ("low", 27.0, 1200, 0.10, 0.30)}),
         ("DEEP SIGNAL",    "SineWave", {"Color": P["indigo"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.20, "Frequency": 0.04,
+                                        "Line Width": 0.20, "Frequency": 0.5,
                                         "Amplitude": 0.30, "Waves": 1.0,
-                                        "Main Speed": 0.10}, {}),
+                                        "Main Speed": 1.0}, {}),
         ("INTERFERENCE",   "Lines",    {"Color": P["bone"],
                                         "Fuzzyness": 0.70, "Width": 0.06,
                                         "Amount": 24.0, "Rotation": 0.0,
@@ -564,11 +637,13 @@ OVERLAY_CLIPS = {
     ],
     # ---- layer 4  STARFIELD - deep space (Screen) ------------------------
     3: [
+        # Size 0.10 on Grid 8 is sixty-four visible discs - bubbles, not a
+        # starfield. Stars are points.
         ("STARFIELD",      "Metaballs", {"Color": P["bone"],
                                          "BG Color": P["clear"],
-                                         "Size": 0.10, "Fuzzyness": 0.04,
-                                         "Speed": 0.18, "Radius": 0.75,
-                                         "Distance": 0.80, "Grid": 8.0}, {}),
+                                         "Size": 0.02, "Fuzzyness": 0.02,
+                                         "Speed": 0.10, "Radius": 0.95,
+                                         "Distance": 0.90, "Grid": 10.0}, {}),
         ("NEBULA",         "Metaballs", {"Color": P["indigo"],
                                          "BG Color": P["clear"],
                                          "Size": 0.75, "Fuzzyness": 0.45,
@@ -608,7 +683,16 @@ OVERLAY_CLIPS = {
     ],
     # ---- layer 5  GRID - wireframe navigation (Add) ----------------------
     4: [
-        ("NAV GRID",       "LineScape", {"Color": P["phosphor"]}, {}),
+        # LineScape has Tilt / Height / Jagginess / Wobble / Attenuation /
+        # Line Width / Show Knots. Writing only Color left NAV GRID, TERRAIN
+        # and APPROACH as three copies of the same stock landscape, knots and
+        # all. They are three different places now.
+        ("NAV GRID",       "LineScape", {"Color": P["phosphor"],
+                                         "Tilt": 30.0, "Height": 6.0,
+                                         "Jagginess": 0.0, "Wobble": 0.0,
+                                         "Attenuation": 250.0,
+                                         "Line Width": 1.2,
+                                         "Show Knots": 0}, {}),
         ("HORIZON",        "Lines",     {"Color": P["phosphor"],
                                          "Fuzzyness": 0.20, "Width": 0.03,
                                          "Amount": 9.0, "Rotation": 0.0,
@@ -618,78 +702,143 @@ OVERLAY_CLIPS = {
                                          "Amount": 40.0, "Rotation": 0.0,
                                          "Position": 0.5},
          {"Position": ("mid", 28.0, 900, 0.35, 0.65)}),
-        ("TERRAIN",        "LineScape", {"Color": P["signal"]}, {}),
+        ("TERRAIN",        "LineScape", {"Color": P["signal"],
+                                         "Tilt": 22.0, "Height": 13.0,
+                                         "Jagginess": 0.45, "Wobble": 0.30,
+                                         "Attenuation": 140.0,
+                                         "Line Width": 0.6,
+                                         "Show Knots": 0}, {}),
+        # Checkered has Num X / Num Y; writing only colours left both of these
+        # as the stock 32x18 board.
+        # Num X/Y run to 100000. Eight by five is forty 240-pixel squares -
+        # a quilt over the picture, not instrumentation. 64x36 is 30-pixel
+        # graph paper, which is what a navigation chart looks like.
         ("CHART",          "Checkered", {"Color 1": P["clear"],
-                                         "Color 2": P["indigo"]}, {}),
+                                         "Color 2": P["indigo"],
+                                         "Num X": 64.0, "Num Y": 36.0}, {}),
         ("VECTOR RISE",    "Lines",     {"Color": P["signal"],
                                          "Fuzzyness": 0.30, "Width": 0.04,
-                                         "Amount": 14.0, "Rotation": 0.25,
+                                         "Amount": 14.0, "Rotation": 35.0,
                                          "Position": 0.5}, {}),
-        ("SECTOR",         "Checkered", {"Color 1": P["clear"],
-                                         "Color 2": P["phosphor"]}, {}),
-        ("APPROACH",       "LineScape", {"Color": P["amber"]}, {}),
+        # A second checkerboard was a green chessboard over the drama. With
+        # HORIZON horizontal and VECTOR RISE at 35 degrees, a vertical rule
+        # completes the navigation set instead.
+        ("SECTOR",         "Lines",     {"Color": P["phosphor"],
+                                         "Fuzzyness": 0.15, "Width": 0.02,
+                                         "Amount": 12.0, "Rotation": 90.0,
+                                         "Position": 0.5}, {}),
+        ("APPROACH",       "LineScape", {"Color": P["amber"],
+                                         "Direction": 180.0, "Tilt": 42.0,
+                                         "Height": 4.0, "Jagginess": 0.0,
+                                         "Wobble": 0.0, "Attenuation": 300.0,
+                                         "Line Width": 2.0,
+                                         "Show Knots": 0}, {}),
     ],
     # ---- layer 6  CAPTION - system captions (Alpha) ----------------------
+    #
+    # Deliberately NOT narrative. An earlier draft carried the crew's names and
+    # an end-of-episode card; two independent reviewers both called that an
+    # editorial decision made on the performer's behalf, which the brief
+    # explicitly forbids, and they were right. These are broadcast idents -
+    # they carry the 1981 transmission register without asserting anything
+    # about the story. Every string is still editable in Resolume's own text
+    # field in two clicks.
+    #
+    # UNITS, learned the hard way by reading the parameters back off the
+    # running rig: Text Animator's Size runs 0.5..10 and its Position X/Y are
+    # PIXELS on a +/-32768 scale, not a normalised 0..1. The first draft wrote
+    # Size 0.26 and positions of +/-0.35, so every caption was clamped to the
+    # minimum size and stacked a third of a pixel from dead centre - eight pads
+    # that all put the same illegible smudge over the middle of somebody's
+    # face. Titles are centred and large; the four telemetry idents sit in the
+    # corners where instrument readouts belong.
     5: [
         ("CAP EARTHSEARCH", "TextGenerator", {"Text": "EARTHSEARCH",
                                               "Color": P["phosphor"],
                                               "Outline Color": P["clear"],
-                                              "Size": 0.55, "Opacity": 1.0,
+                                              "Size": 2.0, "Opacity": 1.0,
+                                              "Position X": 0.0,
                                               "Position Y": 0.0}, {}),
         ("CAP EPISODE ONE", "TextGenerator", {"Text": "EPISODE ONE",
                                               "Color": P["bone"],
                                               "Outline Color": P["clear"],
-                                              "Size": 0.35, "Opacity": 1.0,
-                                              "Position Y": 0.0}, {}),
-        ("CAP ANGEL 1",     "TextGenerator", {"Text": "ANGEL 1",
+                                              "Size": 1.2, "Opacity": 1.0,
+                                              "Position X": 0.0,
+                                              "Position Y": 150.0}, {}),
+        ("CAP CARRIER",     "TextGenerator", {"Text": "AUDIO CARRIER",
                                               "Color": P["phosphor"],
                                               "Outline Color": P["clear"],
-                                              "Size": 0.30, "Opacity": 1.0,
-                                              "Position X": -0.35,
-                                              "Position Y": -0.35}, {}),
-        ("CAP ANGEL 2",     "TextGenerator", {"Text": "ANGEL 2",
+                                              "Size": 0.55, "Opacity": 1.0,
+                                              "Position X": -580.0,
+                                              "Position Y": -400.0}, {}),
+        ("CAP LOCK",        "TextGenerator", {"Text": "TRANSMISSION LOCK",
                                               "Color": P["signal"],
                                               "Outline Color": P["clear"],
-                                              "Size": 0.30, "Opacity": 1.0,
-                                              "Position X": 0.35,
-                                              "Position Y": -0.35}, {}),
-        ("CAP CHALLENGER",  "TextGenerator", {"Text": "CHALLENGER",
+                                              "Size": 0.55, "Opacity": 1.0,
+                                              "Position X": 580.0,
+                                              "Position Y": -400.0}, {}),
+        ("CAP IDENT",       "TextGenerator", {"Text": "SIGNAL IDENT",
                                               "Color": P["amber"],
                                               "Outline Color": P["clear"],
-                                              "Size": 0.34, "Opacity": 1.0,
-                                              "Position Y": 0.35}, {}),
+                                              "Size": 0.55, "Opacity": 1.0,
+                                              "Position X": -580.0,
+                                              "Position Y": 400.0}, {}),
         ("CAP SYSTEM",      "BlockTextGenerator", {"Text": "SYSTEM READY",
                                                    "Color": P["phosphor"],
                                                    "Outline Color": P["clear"],
-                                                   "Size": 0.5,
+                                                   "Size": 1.0,
                                                    "Scale": 0.8}, {}),
-        ("CAP CREW",        "TextGenerator", {"Text": "TELSON  SHARNA  "
-                                                      "ASTRA  DARV",
+        ("CAP BEARING",     "TextGenerator", {"Text": "BEARING  0 0 0",
                                               "Color": P["bone"],
                                               "Outline Color": P["clear"],
-                                              "Size": 0.26, "Opacity": 1.0,
-                                              "Position Y": 0.40}, {}),
-        ("CAP END",         "TextGenerator", {"Text": "END OF TRANSMISSION",
-                                              "Color": P["alert"],
-                                              "Outline Color": P["clear"],
-                                              "Size": 0.32,
-                                              "Opacity": 1.0}, {}),
+                                              "Size": 0.55, "Opacity": 1.0,
+                                              "Position X": 580.0,
+                                              "Position Y": 400.0}, {}),
+        ("CAP CARRIER LOST", "TextGenerator", {"Text": "CARRIER LOST",
+                                               "Color": P["alert"],
+                                               "Outline Color": P["clear"],
+                                               "Size": 1.6, "Opacity": 1.0,
+                                               "Position X": 0.0,
+                                               "Position Y": 0.0}, {}),
     ],
     # ---- layer 7  FLARE - light accents (Add) ----------------------------
     6: [
-        ("AMBER WASH",     "Gradient",   {"Color 1": P["amber"],
-                                          "Color 2": P["clear"],
-                                          "Dither": 0.3}, {}),
-        ("PHOSPHOR WASH",  "Gradient",   {"Color 1": P["phosphor"],
-                                          "Color 2": P["clear"],
-                                          "Dither": 0.3}, {}),
-        ("SIGNAL WASH",    "Gradient",   {"Color 1": P["signal"],
-                                          "Color 2": P["clear"],
-                                          "Dither": 0.3}, {}),
-        ("BONE FLASH",     "SolidColor", {"Color": P["bone"]}, {}),
-        ("RED ALERT",      "SolidColor", {"Color": P["alert"]}, {}),
+        # Type 2 is RADIAL, and Type is a ParamChoice - without it these were
+        # linear ramps, i.e. half-frame washes that whiten one side of the
+        # picture and whoever is standing on it. Clear in the centre, colour at
+        # the edge, so the light arrives from outside the frame and never
+        # covers a face. Dither runs 0..32, so the old 0.3 was 1% and did
+        # nothing; Size runs 0..2.
+        ("AMBER WASH",     "Gradient",   {"Color 1": P["clear"],
+                                          "Color 2": P["amber"],
+                                          "Type": 2, "Size": 0.7,
+                                          "Dither": 8.0}, {}),
+        ("PHOSPHOR WASH",  "Gradient",   {"Color 1": P["clear"],
+                                          "Color 2": P["phosphor"],
+                                          "Type": 2, "Size": 0.7,
+                                          "Dither": 8.0}, {}),
+        ("SIGNAL WASH",    "Gradient",   {"Color 1": P["clear"],
+                                          "Color 2": P["signal"],
+                                          "Type": 2, "Size": 0.7,
+                                          "Dither": 8.0}, {}),
+        # Full-frame SolidColor on a light-blend layer is a white-out waiting
+        # for one fader tap, and the brief forbids exactly that. Both are
+        # radial gradients now: light that arrives from the edges and never
+        # covers a face.
+        ("BONE WASH",      "Gradient",   {"Color 1": P["clear"],
+                                          "Color 2": P["bone"],
+                                          "Type": 2, "Size": 0.7,
+                                          "Dither": 8.0}, {}),
+        ("RED ALERT",      "Gradient",   {"Color 1": P["clear"],
+                                          "Color 2": P["alert"],
+                                          "Type": 2, "Size": 0.7,
+                                          "Dither": 8.0}, {}),
         ("TAPE GRAIN",     "StaticGenerator", {}, {}),
-        ("PLASMA",         "FFGLGenerator",   {"Level": 0.45, "Period": 0.40,
+        # FPLS is Resolume's React Pulsar - the CP1919 stacked-ridgeline pulsar
+        # plot. A deep-space signal drawn as ridgelines is about as
+        # EarthSearch as a generator gets; it was only ever called PLASMA
+        # because that is what the id looked like.
+        ("PULSAR",         "FFGLGenerator",   {"Level": 0.45, "Period": 0.40,
                                                "Stack": 0.5, "Beam": 0.4,
                                                "Dispersion": 0.25,
                                                "Glow": 0.35},
@@ -708,12 +857,12 @@ OVERLAY_CLIPS = {
     7: [
         ("FFT SCOPE",      "SineWave", {"Color": P["phosphor"],
                                         "BG Color": P["clear"],
-                                        "Line Width": 0.08, "Frequency": 0.20,
+                                        "Line Width": 0.08, "Frequency": 1.5,
                                         "Amplitude": 0.10, "Waves": 2.0,
-                                        "Mirror": 1, "Main Speed": 0.35},
+                                        "Mirror": 1, "Main Speed": 1.6},
          {"Amplitude": ("mid",  32.0,  350, 0.04, 0.42),
           "Line Width": ("low",  27.0,  600, 0.05, 0.20),
-          "Frequency":  ("high", 34.0,  300, 0.15, 0.55)}),
+          "Frequency":  ("high", 34.0,  300, 1.0, 6.0)}),
     ],
 }
 
@@ -770,20 +919,26 @@ FFT_MAP = [
     ("BLOOM",  "Bloom",     "Amount",      "mid",  30.0, 1200, 0.14, 0.44,
      "Speech lifts the analogue glow. Floor 0.14 keeps the glow alive in "
      "silence so it reads as a lamp, not a gate."),
-    ("ECHO",   "Trails",    "Feedback",    "low",  27.0, 1600, 0.42, 0.66,
+    ("ECHO",   "Trails",    "Feedback",    "low",  30.0, 1600, 0.42, 0.66,
      "The Radiophonic score's low end lengthens the feedback tail. Ceiling "
      "0.66: above ~0.75 Trails smears the faces the story depends on."),
-    ("DRIFT",  "HueRotate", "Hue Rotate",  "mid",  30.0, 1100, 0.0, 0.045,
-     "Voice drifts the palette by at most ~16 degrees of hue. Felt, never "
-     "seen as a rainbow."),
-    ("WAVE",   "WaveWarp",  "Height",      "mid",  26.0,  900, 0.03, 0.095,
-     "Mid energy breathes the frame. Ceiling 0.095 stays under the point "
-     "where faces distort."),
+    # DRIFT and WAVE were both on MID in an earlier draft. With BLOOM and
+    # ITERATE also on MID that put four things - glow, hue, bulge and a
+    # doubled image - all pulsing on every spoken line, which is karaoke, and
+    # the hue one was the worst of it because it moved skin tone while people
+    # talked. Voice is LIGHT; music is COLOUR and SPACE. LOW now carries three
+    # parameters, so its gain goes up to 30 dB.
+    ("DRIFT",  "HueRotate", "Hue Rotate",  "low",  30.0, 1400, 0.0, 0.030,
+     "The Radiophonic score, not the voice, drifts the palette - and by at "
+     "most ~11 degrees of hue. Felt, never seen as a rainbow."),
+    ("WAVE",   "WaveWarp",  "Height",      "low",  30.0, 1200, 0.03, 0.075,
+     "Music breathes the frame as a slow swell. Width goes to 0.35 so it is "
+     "one long wavelength rather than ripples."),
     ("FRINGE", "ShiftRGB",  "Distance",    "high", 36.0,  500, 0.015, 0.070,
      "Sibilance and incidental highs put a broadcast fringe on edges."),
     ("RIPPLE", "Ripples",   "Amplitude Both", "high", 30.0, 700, 0.02, 0.085,
      "Highs shimmer the surface. Tiny, so text and faces stay readable."),
-    ("ITERATE", "Iterate",  "StartOpacity", "mid",  30.0,  800, 0.28, 0.58,
+    ("ITERATE", "Iterate",  "StartOpacity", "mid",  30.0,  800, 0.28, 0.42,
      "Speech modulates how strongly the recursive copies register - the "
      "holographic element, held well below full."),
     ("BIT CRUSH", "LoRezEffect", "Dither", "high", 34.0, 600, 0.10, 0.42,
@@ -825,11 +980,18 @@ COMP_DASHBOARD = [
     (3, "LIGHT",     "dry/wet of every effect in the LIGHT bank"),
     (4, "SPACE",     "dry/wet of every effect in the SPACE bank"),
     (5, "FRACTURE",  "dry/wet of every effect in the FRACTURE bank"),
-    (6, "OVERLAYS",  "video opacity of all five generative overlay layers"),
+    (6, "OVERLAYS",  "video opacity of SIGNAL, STARFIELD, GRID and FLARE"),
     (7, "SCOPE",     "video opacity of the live FFT readout layer"),
-    (8, "SPARE",     "unassigned macro, free for the performer"),
+    (8, "CAPTIONS",  "video opacity of the CAPTION layer, on its own so text "
+                     "can be pulled out without touching the other overlays"),
 ]
 LINK_BANK = {1: BANK_COLOUR, 2: BANK_BROADCAST, 3: BANK_LIGHT,
              4: BANK_SPACE, 5: BANK_FRACTURE}
-# The links CLEAN drives to zero in one gesture.
-CLEAN_LINKS = [1, 2, 3, 4, 5, 6, 7]
+# The links CLEAN drives to zero in one gesture. All eight: five effect banks,
+# the four overlay layers, the scope, and the captions. Nothing on screen that
+# this instrument added survives a CLEAN.
+CLEAN_LINKS = [1, 2, 3, 4, 5, 6, 7, 8]
+
+# Which dashboard link owns each layer's opacity. CAPTION is deliberately on
+# its own link: text is the overlay you most often want to pull out by itself.
+LAYER_LINK = {3: 6, 4: 6, 5: 6, 6: 8, 7: 6, 8: 7}

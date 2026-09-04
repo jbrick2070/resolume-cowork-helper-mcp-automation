@@ -163,17 +163,35 @@ def build_map(spec):
     # ------------------------------------------------------ per-track rows --
     layer_names = [l[1] for l in S.LAYERS]
 
-    # Clip Stop: eject the matching layer. On layers 1-2 this stops a master;
-    # it is on the row a VJ expects "stop" to be, and START BOTH is how you
-    # bring them back together.
-    for ch in range(1, 9):
+    # Clip Stop row. Channels 1 and 2 sit above the two master strips, and an
+    # earlier draft mapped them to /composition/layers/{1,2}/clear - which
+    # ejects a master mid-show and can only be recovered by restarting the
+    # whole episode. Three independent reviewers flagged it; they were right,
+    # and it is gone. Those two seats now do what a hand above the master
+    # strips actually wants: a HARD CUT to one version or the other. Nothing
+    # on this row touches a transport any more.
+    # These three write NORMALISED positions: a shortcut ValueRange is 0..1
+    # over the parameter's own range, so on a -1..1 crossfader 0 is hard A,
+    # 0.5 is centre and 1 is hard B. Writing -1 here would work only by
+    # clamping, which is the kind of accident that survives until it doesn't.
+    m.append(_sc(
+        "CUT TO A", "TRACK/CLIP STOP n52 ch1", "note",
+        "/composition/crossfader/phase", "ccrange", note=52, channel=1,
+        group="A / B", value_range=("0", "0"), init="0",
+        note_text="hard cut to MASTER A. Touches no transport.",
+        led={"Off": LED_OFF, "On": 127}))
+    m.append(_sc(
+        "CUT TO B", "TRACK/CLIP STOP n52 ch2", "note",
+        "/composition/crossfader/phase", "ccrange", note=52, channel=2,
+        group="A / B", value_range=("1", "1"), init="0",
+        note_text="hard cut to MASTER B. Touches no transport.",
+        led={"Off": LED_OFF, "On": 127}))
+    for ch in range(3, 9):
         m.append(_sc(
             "Eject %s" % layer_names[ch - 1], "TRACK/CLIP STOP n52 ch%d" % ch,
             "note", "/composition/layers/%d/clear" % ch, "action11",
-            note=52, channel=ch, group="Eject layer",
-            note_text=("stops %s. Use START BOTH to restart both masters "
-                       "together." % layer_names[ch - 1]) if ch <= 2 else
-                      "drops whatever %s is showing" % layer_names[ch - 1],
+            note=52, channel=ch, group="Eject overlay",
+            note_text="drops whatever %s is showing" % layer_names[ch - 1],
             led={"Off": LED_OFF, "On": 1}))
 
     # Track Select: put a layer under the Track knobs / layer dashboard.
@@ -212,7 +230,7 @@ def build_map(spec):
                 notes=None, group=None):
         out = []
         items = bank(bank_name)
-        for i, (_b, label, key, _v) in enumerate(items):
+        for i, (_b, label, key, _v) in enumerate([e[:4] for e in items]):
             if notes is not None:
                 nn, cc_ = notes[i], 1
             else:
@@ -235,8 +253,10 @@ def build_map(spec):
                  notes=[58, 59, 60, 61, 62, 63, 64, 65])
     m += fx_rows(S.BANK_SPACE, "n%d",
                  notes=[87, 94, 95, 96, 97, 100, 101, 102])
+    # FRACTURE is six: five on the Scene Launch rail beside the grid, and the
+    # sixth on USER, the seat the blend-mode cycle used to occupy.
     m += fx_rows(S.BANK_FRACTURE, "SCENE LAUNCH n%d",
-                 notes=[82, 83, 84, 85, 86])
+                 notes=[82, 83, 84, 85, 86, 89])
 
     # -------------------------------------------------------------- safety --
     # THE THREE SEPARATED CONTROLS. Physically apart from each other and from
@@ -264,6 +284,20 @@ def build_map(spec):
         note_text="ejects every layer and resets both masters to 00:00",
         led={"Off": LED_OFF, "On": 127}))
 
+    # STOP ALL CLIPS is silk-screened on the hardware, so it has to do
+    # something a performer reading that label would expect. It clears the five
+    # overlay layers - which is exactly what "stop all clips" means here - and
+    # cannot reach a master. An earlier draft put CLEAN on this button, which
+    # made the most panic-reachable control in the room lie about its job.
+    for layer_n in (3, 4, 5, 6, 7):
+        m.append(_sc(
+            "CLEAR OVERLAYS (%s)" % layer_names[layer_n - 1],
+            "STOP ALL CLIPS n81", "note",
+            "/composition/layers/%d/clear" % layer_n, "action11", note=81,
+            group="SAFETY - clear overlays",
+            note_text="drops all overlay content. The masters keep running.",
+            led={"Off": LED_OFF, "On": 127}))
+
     m.append(_sc(
         "BLACKOUT", "RECORD n93 (red)",
         "note", "/composition/bypassed", "boolparam", note=93,
@@ -279,9 +313,9 @@ def build_map(spec):
     # either master's transport.
     for link in S.CLEAN_LINKS:
         m.append(_sc(
-            "CLEAN / ALL FX OFF (link %d)" % link, "STOP ALL CLIPS n81",
+            "CLEAN / ALL FX OFF (link %d)" % link, "BANK LOCK n103",
             "note", "/composition/dashboard/link%d" % link, "ccrange",
-            note=81, group="SAFETY - clean", value_range=("0", "0"),
+            note=103, group="SAFETY - clean", value_range=("0", "0"),
             init="0",
             note_text="drives %s to zero" % S.COMP_DASHBOARD[link - 1][1],
             led={"Off": LED_OFF, "On": 127}))
@@ -290,18 +324,25 @@ def build_map(spec):
     m.append(_sc("Select composition", "MASTER n80", "note",
                  "/composition/select", "selectcomp", note=80,
                  group="Mixer", led={"Off": 0, "On": 1}))
-    m.append(_sc("MASTER A blend mode", "SENDS n88", "note",
-                 "/composition/layers/1/video/mixer/blendmode", "cycle",
-                 note=88, group="Mixer",
-                 note_text="cycles A's blend - Alpha for a dissolve, Add or "
-                           "Screen for a light composite",
-                 led={"Off": 0, "On": 1}))
-    m.append(_sc("MASTER B blend mode", "USER n89", "note",
-                 "/composition/layers/2/video/mixer/blendmode", "cycle",
-                 note=89, group="Mixer",
-                 note_text="cycles B's blend - this is how you get the "
-                           "additive and light blends the brief asks for",
-                 led={"Off": 0, "On": 1}))
+    # NO BLEND-MODE CYCLING ANYWHERE. An earlier draft put a cycle shortcut on
+    # each master's Blend Mode. The live rig says that ParamChoice carries
+    # FIFTY options in alphabetical order: Alpha sits at index 11, and stepping
+    # forward from it walks through B&W, Burn, Cube, Cut and Darken, and passes
+    # "to White" before it ever reaches Screen. On a controller with no display
+    # that is a blind walk through destructive modes on a live full-frame
+    # output. Both masters are pinned to Alpha; additive and light composites
+    # come from the overlay layers, which is where they belong.
+    # A shortcut ValueRange is NORMALISED 0..1 over the parameter's own range,
+    # not expressed in its units - Resolume's own SPECIMEN preset maps this
+    # -1..1 crossfader with min="0" max="1". So 0.5 is the centre. Written as
+    # ("0","0") this button was a second CUT TO A, which is exactly the kind of
+    # control that is worse than no control.
+    m.append(_sc("CENTRE (50 / 50)", "SENDS n88", "note",
+                 "/composition/crossfader/phase", "ccrange", note=88,
+                 group="A / B", value_range=("0.5", "0.5"), init="0",
+                 note_text="park the crossfade dead centre - a true double "
+                           "exposure of the same moment in two renders",
+                 led={"Off": LED_OFF, "On": 127}))
     m.append(_sc("Tempo resync", "METRONOME n90", "note",
                  "/composition/tempocontroller/resync", "action1", note=90,
                  group="Tempo", led={"Off": LED_OFF, "On": 127}))
@@ -319,16 +360,11 @@ def build_map(spec):
                  led={"Connected": 1, "Connected & previewing": 1,
                       "Disconnected": 0, "Previewing": 0,
                       "Empty": LED_OFF, "Off": LED_OFF}))
-    # A second CLEAN, deliberately duplicated at the opposite corner of the
-    # surface. A panic control you can only reach from one place is a panic
-    # control you will miss.
-    for link in S.CLEAN_LINKS:
-        m.append(_sc(
-            "CLEAN (2nd) link %d" % link, "BANK LOCK n103", "note",
-            "/composition/dashboard/link%d" % link, "ccrange", note=103,
-            group="SAFETY - clean", value_range=("0", "0"), init="0",
-            note_text="identical to n81, second position",
-            led={"Off": LED_OFF, "On": 127}))
+    # CLEAN lives on BANK LOCK alone. An earlier draft duplicated it onto STOP
+    # ALL CLIPS for reachability, but that button is silk-screened with a
+    # promise it would not have kept, and a panic control that lies is worse
+    # than one you have to reach for. The continuous equivalent is always
+    # under the other hand: Cue Level sweeps the same eight links.
 
     # -------------------------------------------------------------- faders --
     # Layer MASTER, not layer opacity: opacity on the overlay and scope layers
@@ -371,9 +407,15 @@ def build_map(spec):
         label, key, param = S.FFT_BAND_ANCHOR[band]
         base = ("/composition/video/effects/%s/effect/%s"
                 % (S.slug(key), S.param_slug(key, param)))
-        fft_knobs.append(("%s DEPTH" % band.upper(), base + "/behaviour/gain",
-                          "how hard the %s band drives %s" % (band, label)))
-        fft_knobs.append(("%s RELEASE" % band.upper(),
+        # Named after the parameter each knob actually moves, not after the
+        # band. A knob labelled "LOW DEPTH" implies it governs everything on
+        # the low band; it does not - it governs one anchor parameter, and
+        # saying so is the difference between a control map and a promise.
+        fft_knobs.append(("%s DEPTH (%s band)" % (label, band),
+                          base + "/behaviour/gain",
+                          "how hard the %s band drives %s, and only %s"
+                          % (band, label, label)))
+        fft_knobs.append(("%s RELEASE (%s band)" % (label, band),
                           base + "/behaviour/fallback",
                           "how slowly %s falls back after a peak" % label))
     for key, param, why in (("HueRotate", "Hue Rotate", "colour-drift depth"),
@@ -398,16 +440,23 @@ def build_map(spec):
                      note_text="fully anticlockwise is the same clean image "
                                "the CLEAN buttons give you"))
 
-    # Footswitch -> MOMENTARY clean. Inverted ValueRange, which is rig-proven:
-    # presets in this workspace already carry min > max ranges. Pressed sends
-    # 127 -> 0 (clean), released sends 0 -> 1 (everything back).
-    for link in S.CLEAN_LINKS:
-        m.append(_sc("Footswitch momentary CLEAN (link %d)" % link,
-                     "FOOTSWITCH CC64", "cc",
-                     "/composition/dashboard/link%d" % link, "ccrange",
-                     cc=64, group="FX master", value_range=("1", "0"),
-                     init="1",
-                     note_text="hold for a clean image, release to return"))
+    # Footswitch -> MOMENTARY BLACKOUT.
+    #
+    # An earlier draft made this a momentary CLEAN across the dashboard links.
+    # Three reviewers independently caught the same bug, and they were right: a
+    # MIDI shortcut has no memory, so releasing the switch could not restore
+    # the performer's mix - it would slam every bank, every overlay and the
+    # scope to FULL. Mid-show that is a full-stack flash, which is the one
+    # thing the brief explicitly forbids.
+    #
+    # Blackout has no such problem. It is a bool, so press-on / release-off is
+    # the whole of its state, and hands-free black for a scene change is what a
+    # foot actually wants.
+    m.append(_sc("Footswitch momentary BLACKOUT", "FOOTSWITCH CC64", "cc",
+                 "/composition/bypassed", "ccrange", cc=64,
+                 value_range=("0", "1"), init="0", group="SAFETY - blackout",
+                 note_text="hold for black, release for picture. Playback "
+                           "continues underneath either way."))
 
     # Tempo knob is a RELATIVE encoder - behaviour 16392. Binding it as an
     # absolute CC would make the value jump on the first touch.

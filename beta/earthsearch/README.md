@@ -1,8 +1,8 @@
 # EarthSearch EP01 — two masters, one instrument
 
 > **STATUS: BUILT AND RIG-VERIFIED — 2026-09-04.**
-> 34/34 offline checks, 22/22 live checks against Resolume Avenue 7.27.1 with
-> the APC40 mkII connected, including `drift = 0.00 ms over 20 s`.
+> 45/45 offline checks, 27/27 live checks against Resolume Avenue 7.27.1 with
+> the APC40 mkII connected, including `0 ms drift across 905 seconds`.
 > Not yet played by hand — see *What still needs a human* below.
 
 The fifth instrument, and the first one that is not a clip launcher.
@@ -38,7 +38,7 @@ back. Most of the design is about making that impossible rather than unlikely.
 | The 5×8 pad grid | addresses the five **generative overlay** layers only. There is no pad on the surface that can reach a master. |
 | Every layer | sets *Ignore Column Trigger*. No column action — from the preset or from a mis-click in Resolume's own UI — can connect, eject or restart anything. Rig-tested. |
 | The preset | contains no seek binding, no `connectnextclip`, no column connect, no deck change, and no fader-start. The generator refuses to write one that does. |
-| Starting | is one button carrying three clip-connect shortcuts on a single MIDI key. Measured at **0.00 ms drift over 20 s**. |
+| Starting | is one button carrying three clip-connect shortcuts on a single MIDI key. Measured at **0 ms drift across 905 seconds**. |
 
 ---
 
@@ -60,9 +60,12 @@ independently; 3–7 bring in the overlays; 8 is the scope.
 
 ---
 
-## 37 effects, five banks
+## 38 effects, five banks
 
-`COLOUR` · `BROADCAST` · `LIGHT` · `SPACE` · `FRACTURE`, all loading bypassed.
+`COLOUR` · `BROADCAST` · `LIGHT` · `SPACE` · `FRACTURE`, all loading bypassed,
+and fourteen of them carrying a **wet ceiling** so the bank knob's full travel
+is already a value chosen for a drama. GRAIN is capped at 0.12 because at full
+it is television snow, and BROADCAST is the row a hand falls on first.
 
 **BROADCAST is the signature bank**, built on Resolume's **CRT** emulation —
 it squeezes the picture into an emulated cathode-ray resolution and lights one
@@ -99,7 +102,7 @@ layer as the readout.
 
 ## Everything on the surface has a job
 
-**175 shortcuts across 149 physical controls. Nothing unmapped.**
+**169 shortcuts across 149 physical controls. Nothing unmapped.**
 See [`docs/APC40_CONTROL_MAP.md`](docs/APC40_CONTROL_MAP.md).
 
 ---
@@ -107,10 +110,17 @@ See [`docs/APC40_CONTROL_MAP.md`](docs/APC40_CONTROL_MAP.md).
 ## Verified against the running application, not inferred
 
 Resolume's REST API and OSC output were used to settle every uncertain
-construct against the live application. That is also how a real bug was caught:
-**Bloom's parameter is `amount`, not `brightness`** as an older preset in this
-workspace claims — the parameter was renamed between Resolume versions, so the
-old preset is evidence about an old Resolume.
+construct against the live application. That is how three real bugs were
+caught that nothing else would have found:
+
+* **`ParamColor`'s uint32 is ABGR, not ARGB.** Every colour in the pack was
+  channel-swapped — phosphor green loaded as acid yellow, distress red as blue.
+  Nothing looked broken; it just looked like somebody else's show.
+* **Bloom's parameter is `amount`, not `brightness`** as an older preset in
+  this repo claims. It was renamed between Resolume versions, so the old preset
+  is evidence about an old Resolume.
+* **The crossfader `Phase` runs −1..1**, so the home of `0` this shipped with
+  opened the show on a 50/50 double exposure while every document said pure A.
 
 `reference/` carries all 109 Avenue 7.27.1 video effects with their true XML
 type names, uniqueTypeIds and parameters, harvested by adding every one of them
@@ -147,13 +157,13 @@ cd tools
 python build_earthsearch.py        # the .avc
 python gen_preset_earthsearch.py   # the MIDI preset
 python make_control_map_doc.py     # the layout card
-python validate_earthsearch.py     # 34 offline checks
+python validate_earthsearch.py     # 45 offline checks
 ```
 
 Against a running Resolume (Webserver REST on 8080, OSC 7000/7001):
 
 ```bash
-powershell -File tools/verify_on_rig.ps1   # 22 live checks incl. sync drift
+powershell -File tools/verify_on_rig.ps1   # 27 live checks incl. sync drift
 python tools/harvest_osc_paths.py          # ask Resolume for its OSC addresses
 ```
 
@@ -165,7 +175,7 @@ python tools/harvest_osc_paths.py          # ask Resolume for its OSC addresses
   preset loads and becomes active, but the buttons have not been played.
 * **LED palette indices** are inherited from earlier packs in this repo and
   have not been eyeballed on the APC for *this* preset.
-* **No frame-rate measurement** was taken with all 37 effects instantiated
+* **No frame-rate measurement** was taken with all 38 effects instantiated
   (bypassed) alongside two 1080p decodes.
 * **The CAPTION layer's text** is a starting point, not an editorial decision.
   Editable in Resolume's own text field in two clicks.
