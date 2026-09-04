@@ -1,0 +1,574 @@
+﻿{
+    "audio":  [
+
+              ],
+    "video":  [
+                  {
+                      "idstring":  "c_35de2952-eebe-4238-ac4a-2e9864da6621",
+                      "name":  "Abstract Field",
+                      "description":  "Abstract Noise Texture based on Wire\u0027s Fractal Noise node.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502466570,
+                                          "name":  "Big Sweepers"
+                                      },
+                                      {
+                                          "id":  1788502466571,
+                                          "name":  "Dot Dot Dot"
+                                      },
+                                      {
+                                          "id":  1788502466572,
+                                          "name":  "In \u0026 Out Fader"
+                                      },
+                                      {
+                                          "id":  1788502466573,
+                                          "name":  "Smoke Storm"
+                                      },
+                                      {
+                                          "id":  1788502466584,
+                                          "name":  "Thin Lines"
+                                      },
+                                      {
+                                          "id":  1788502466611,
+                                          "name":  "Wavey"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "SPOUT_Avenue - Composition",
+                      "name":  "Avenue - Composition",
+                      "description":  "Spout Server",
+                      "category":  "Spout Servers",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "6980259688",
+                      "name":  "Blank",
+                      "description":  "An empty(blank) clip. Useful to insert empty moments in an Autopilot sequence.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "736772465707583394",
+                      "name":  "Checkered",
+                      "description":  "A checkerboard pattern with adjustable rows, columns and colors.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464350,
+                                          "name":  "Doe Maar"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "FEEDBACK_SRC",
+                      "name":  "Feedback",
+                      "description":  "Creates a feedback loop of the composition output. It continuously reuses the previous frame as part of the next one, similar to pointing a camera at its own screen. Make sure to tone down the opacity and work with content with a alpha channel to make the most of this source.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "c_f09dc2f3-f565-4c1e-b425-55917c9cf8d0",
+                      "name":  "Geometry Pattern Maker",
+                      "description":  "This patch is inspired by many of the simple shape geometry I have seen time and time again throughout my life as an artist. This patch has given me a respect for and a special understanding of shapes. The simplest forms can be beautiful and inspiring to make new what was once old to; make those things work for your deck. I hope you enjoy this patch and tinkering with it as much as I have enjoyed making it.",
+                      "category":  "Wire Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502466772,
+                                          "name":  "Anger"
+                                      },
+                                      {
+                                          "id":  1788502466773,
+                                          "name":  "Bass Ball"
+                                      },
+                                      {
+                                          "id":  1788502466774,
+                                          "name":  "Doorway"
+                                      },
+                                      {
+                                          "id":  1788502466775,
+                                          "name":  "Green"
+                                      },
+                                      {
+                                          "id":  1788502466776,
+                                          "name":  "Hexing"
+                                      },
+                                      {
+                                          "id":  1788502466777,
+                                          "name":  "Neon Cross"
+                                      },
+                                      {
+                                          "id":  1788502466778,
+                                          "name":  "Pentagon - Audio Reactive"
+                                      },
+                                      {
+                                          "id":  1788502466779,
+                                          "name":  "Purple Cheveron"
+                                      },
+                                      {
+                                          "id":  1788502466780,
+                                          "name":  "Purple people eater"
+                                      },
+                                      {
+                                          "id":  1788502466781,
+                                          "name":  "Tech Pentagon"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "aa610151-b466-4abd-8f53-4e2484e4e144",
+                      "name":  "Golden Flicker Reel",
+                      "description":  "Audio-reactive gold/ember reel mandala for the Golden Flicker soundtrack. Bass=core bloom, Mids=blade length, Highs=ember dots. Drive Bass/Mids/Highs via Dashboard or the Resolume webserver REST API; Perlin fallback keeps it alive when idle. Palette: gold #E7A51E, ember #E1391F, warm black #0a0705.",
+                      "category":  "Wire Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "A401",
+                      "name":  "Gradient",
+                      "description":  "Generates a horizontal, vertical, radial or angular gradient with either 2 colors or a palette.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464351,
+                                          "name":  "Banding Test - Gray"
+                                      },
+                                      {
+                                          "id":  1788502464352,
+                                          "name":  "Banding Test - Green"
+                                      },
+                                      {
+                                          "id":  1788502464353,
+                                          "name":  "Delta Sun"
+                                      },
+                                      {
+                                          "id":  1788502464354,
+                                          "name":  "Dutch Sky"
+                                      },
+                                      {
+                                          "id":  1788502464355,
+                                          "name":  "Smooth Edges"
+                                      },
+                                      {
+                                          "id":  1788502464356,
+                                          "name":  "Vignette"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "DirectShow_\\\\?\\usb#vid_30c9\u0026pid_00f8\u0026mi_00#6\u00263ad2d465\u00260\u00260000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global_Integrated Camera",
+                      "name":  "Integrated Camera",
+                      "description":  "Capture Device Description",
+                      "category":  "Capture Devices",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "P204",
+                      "name":  "Line Scape",
+                      "description":  "A wavey line scape with adjustable wobble and jagginess.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464359,
+                                          "name":  "Dancing In The Dark"
+                                      },
+                                      {
+                                          "id":  1788502464360,
+                                          "name":  "Harp Strings"
+                                      },
+                                      {
+                                          "id":  1788502464361,
+                                          "name":  "Lasers"
+                                      },
+                                      {
+                                          "id":  1788502464362,
+                                          "name":  "Line Wobble"
+                                      },
+                                      {
+                                          "id":  1788502464363,
+                                          "name":  "Sand Dunes"
+                                      },
+                                      {
+                                          "id":  1788502464364,
+                                          "name":  "Water Fall"
+                                      },
+                                      {
+                                          "id":  1788502464365,
+                                          "name":  "Waving Ribbons"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "P201",
+                      "name":  "Lines",
+                      "description":  "A lines pattern with adjustable width, color, rotation and sharpness.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464357,
+                                          "name":  "45 Degree Pan"
+                                      },
+                                      {
+                                          "id":  1788502464358,
+                                          "name":  "Neon Up"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "844752396506092017",
+                      "name":  "Metaballs",
+                      "description":  "Metaballs are soft, blobby shapes that blend into each other when they get close, like drops of water merging.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464366,
+                                          "name":  "Gummy"
+                                      },
+                                      {
+                                          "id":  1788502464367,
+                                          "name":  "Micro encounters"
+                                      },
+                                      {
+                                          "id":  1788502464368,
+                                          "name":  "Red cells"
+                                      },
+                                      {
+                                          "id":  1788502464369,
+                                          "name":  "Virus"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "DirectShow__OBS Virtual Camera",
+                      "name":  "OBS Virtual Camera",
+                      "description":  "Capture Device Description",
+                      "category":  "Capture Devices",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "FPLS",
+                      "name":  "React Pulsar",
+                      "description":  "1967 - the lighthouse in the noise. CP1919 stacked ridgelines, stateless.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "FAVM",
+                      "name":  "React Video Musi",
+                      "description":  "1977 - Atari Video Music: the first consumer music visualizer, diamonds on your hi-fi.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "8642267115",
+                      "name":  "Rings",
+                      "description":  "A multi-layered ring shape with multiple styles.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464370,
+                                          "name":  "3 Some"
+                                      },
+                                      {
+                                          "id":  1788502464371,
+                                          "name":  "Animate"
+                                      },
+                                      {
+                                          "id":  1788502464372,
+                                          "name":  "FireFlies"
+                                      },
+                                      {
+                                          "id":  1788502464373,
+                                          "name":  "Flappy Bird"
+                                      },
+                                      {
+                                          "id":  1788502464374,
+                                          "name":  "Light House"
+                                      },
+                                      {
+                                          "id":  1788502464375,
+                                          "name":  "Near Misses"
+                                      },
+                                      {
+                                          "id":  1788502464376,
+                                          "name":  "Radar"
+                                      },
+                                      {
+                                          "id":  1788502464377,
+                                          "name":  "Saw"
+                                      },
+                                      {
+                                          "id":  1788502464378,
+                                          "name":  "Sparkles"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "7946640550597690042",
+                      "name":  "Shaper",
+                      "description":  "Shaper",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464379,
+                                          "name":  "Identity Crisis"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "9011349750094602",
+                      "name":  "Sine Wave",
+                      "description":  "Generates a modulatable sine wave shape with control over many parameters such as frequency and modulation depth.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464380,
+                                          "name":  "Curvacious"
+                                      },
+                                      {
+                                          "id":  1788502464381,
+                                          "name":  "Dancing windows"
+                                      },
+                                      {
+                                          "id":  1788502464382,
+                                          "name":  "Habichuelas"
+                                      },
+                                      {
+                                          "id":  1788502464383,
+                                          "name":  "Hair dance"
+                                      },
+                                      {
+                                          "id":  1788502464384,
+                                          "name":  "In the clouds"
+                                      },
+                                      {
+                                          "id":  1788502464385,
+                                          "name":  "Kisses"
+                                      },
+                                      {
+                                          "id":  1788502464386,
+                                          "name":  "Lava lamp"
+                                      },
+                                      {
+                                          "id":  1788502464387,
+                                          "name":  "Phantom signal"
+                                      },
+                                      {
+                                          "id":  1788502464388,
+                                          "name":  "River"
+                                      },
+                                      {
+                                          "id":  1788502464389,
+                                          "name":  "Rorschach"
+                                      },
+                                      {
+                                          "id":  1788502464390,
+                                          "name":  "Spain"
+                                      },
+                                      {
+                                          "id":  1788502464391,
+                                          "name":  "Waterflow"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "A403",
+                      "name":  "Solid Color",
+                      "description":  "Generates a clip with a single color.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "884102460919",
+                      "name":  "Spiral",
+                      "description":  "Time to hypnotize your audience!",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464392,
+                                          "name":  "Minimal"
+                                      },
+                                      {
+                                          "id":  1788502464393,
+                                          "name":  "Outerscope"
+                                      },
+                                      {
+                                          "id":  1788502464394,
+                                          "name":  "Propeller"
+                                      },
+                                      {
+                                          "id":  1788502464395,
+                                          "name":  "Radial emissions"
+                                      },
+                                      {
+                                          "id":  1788502464396,
+                                          "name":  "Revolutions"
+                                      },
+                                      {
+                                          "id":  1788502464397,
+                                          "name":  "Sea dizyness"
+                                      },
+                                      {
+                                          "id":  1788502464398,
+                                          "name":  "Solar eclipse"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "MSTS",
+                      "name":  "Static",
+                      "description":  "A Static Noise Generator.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "MSTR",
+                      "name":  "Stroboscope",
+                      "description":  "A strobe generator with adjustable frequency.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464399,
+                                          "name":  "Fast"
+                                      },
+                                      {
+                                          "id":  1788502464400,
+                                          "name":  "Heartbeat"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "9114371295504994",
+                      "name":  "Test Card",
+                      "description":  "Test Card",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "11421072728336491440",
+                      "name":  "Text Animator",
+                      "description":  "Creates an animated text clip. Allows for the animation of characters, lines, words or the entire text block.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502464401,
+                                          "name":  "Countdown from 10 with fade"
+                                      },
+                                      {
+                                          "id":  1788502464402,
+                                          "name":  "Countdown from 10"
+                                      },
+                                      {
+                                          "id":  1788502464403,
+                                          "name":  "Dangle"
+                                      },
+                                      {
+                                          "id":  1788502464404,
+                                          "name":  "Flickr"
+                                      },
+                                      {
+                                          "id":  1788502464405,
+                                          "name":  "One Shot"
+                                      },
+                                      {
+                                          "id":  1788502464406,
+                                          "name":  "Type On \u0026 Off"
+                                      },
+                                      {
+                                          "id":  1788502464407,
+                                          "name":  "Wave"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "3600113141201236715",
+                      "name":  "Text Block",
+                      "description":  "Draws your text to the screen. Great for labels, names or mid-show poetry.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "c_7312a083-7086-48df-9619-081fb81b456a",
+                      "name":  "Tunnelines",
+                      "description":  "Generates a fluid circular tunnel.",
+                      "category":  "Video Sources",
+                      "presets":  [
+                                      {
+                                          "id":  1788502466627,
+                                          "name":  "Doughnut"
+                                      },
+                                      {
+                                          "id":  1788502466628,
+                                          "name":  "Left \u0026 Right"
+                                      },
+                                      {
+                                          "id":  1788502466629,
+                                          "name":  "Nauseating"
+                                      },
+                                      {
+                                          "id":  1788502466630,
+                                          "name":  "Spinnin"
+                                      },
+                                      {
+                                          "id":  1788502466631,
+                                          "name":  "Spiraling Heart"
+                                      },
+                                      {
+                                          "id":  1788502466632,
+                                          "name":  "Wormhole"
+                                      }
+                                  ]
+                  },
+                  {
+                      "idstring":  "COMPOSITION_ROUTER_SRC",
+                      "name":  "Video Router",
+                      "description":  "Reroutes the output from any other layer or group to the Video Router, allowing you to patch video signals between layers. Useful for creating modular setups without duplicating content. Defaults to rerouting the layer below.",
+                      "category":  "Video Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "d64d4439-1cf7-44aa-80dc-c52095441c10",
+                      "name":  "aa",
+                      "description":  "A Wire video Source needs to have at least one texture output node. \nPatch Category needs to be set to \"Source\" in the patch settings.",
+                      "category":  "Wire Sources",
+                      "presets":  [
+
+                                  ]
+                  },
+                  {
+                      "idstring":  "c46149fa-4299-4595-9413-8e8615d83b96",
+                      "name":  "ndi",
+                      "description":  "A Wire video Source needs to have at least one texture output node. \nPatch Category needs to be set to \"Source\" in the patch settings.",
+                      "category":  "Wire Sources",
+                      "presets":  [
+
+                                  ]
+                  }
+              ]
+}

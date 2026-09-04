@@ -1,0 +1,740 @@
+{
+ "c_c7106a57-878e-429a-ae83-313d07e6d943": {
+  "display": "Acuarela",
+  "xml_type": "WireEffect",
+  "uniqueTypeId": "c_c7106a57-878e-429a-ae83-313d07e6d943",
+  "params": []
+ },
+ "A124": {
+  "display": "Bendoscope",
+  "xml_type": "Bendoscope",
+  "uniqueTypeId": "A124",
+  "params": []
+ },
+ "6980402605": {
+  "display": "Bloom",
+  "xml_type": "Bloom",
+  "uniqueTypeId": "6980402605",
+  "params": []
+ },
+ "A139": {
+  "display": "Blow",
+  "xml_type": "Blow",
+  "uniqueTypeId": "A139",
+  "params": []
+ },
+ "A140": {
+  "display": "Blur",
+  "xml_type": "Blur",
+  "uniqueTypeId": "A140",
+  "params": []
+ },
+ "A102": {
+  "display": "Bright.Contrast",
+  "xml_type": "BrightnessContrast",
+  "uniqueTypeId": "A102",
+  "params": []
+ },
+ "c_be77e0d5-1404-4399-b8ae-7cdd64cba5ab": {
+  "display": "CRT",
+  "xml_type": "WireEffect",
+  "uniqueTypeId": "c_be77e0d5-1404-4399-b8ae-7cdd64cba5ab",
+  "params": []
+ },
+ "RhCk": {
+  "display": "ChromaKey",
+  "xml_type": "ChromaKey",
+  "uniqueTypeId": "RhCk",
+  "params": []
+ },
+ "A125": {
+  "display": "Circles",
+  "xml_type": "Circles",
+  "uniqueTypeId": "A125",
+  "params": []
+ },
+ "A103": {
+  "display": "Colorize",
+  "xml_type": "Colorize",
+  "uniqueTypeId": "A103",
+  "params": [
+   {
+    "name": "Color",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4278190335"
+   }
+  ]
+ },
+ "A166": {
+  "display": "Crop",
+  "xml_type": "Crop",
+  "uniqueTypeId": "A166",
+  "params": []
+ },
+ "A101": {
+  "display": "Add Subtract",
+  "xml_type": "AddSubtract",
+  "uniqueTypeId": "A101",
+  "params": []
+ },
+ "A120": {
+  "display": "Auto Mask",
+  "xml_type": "AutoMask",
+  "uniqueTypeId": "A120",
+  "params": []
+ },
+ "A143": {
+  "display": "Color Pass",
+  "xml_type": "ColorPass",
+  "uniqueTypeId": "A143",
+  "params": []
+ },
+ "A117": {
+  "display": "Cube Tiles",
+  "xml_type": "CubeTiles",
+  "uniqueTypeId": "A117",
+  "params": []
+ },
+ "A152": {
+  "display": "Delay RGB",
+  "xml_type": "DelayRGB",
+  "uniqueTypeId": "A152",
+  "params": []
+ },
+ "A176": {
+  "display": "Dot Screen",
+  "xml_type": "DotScreen",
+  "uniqueTypeId": "A176",
+  "params": []
+ },
+ "372541077550622327": {
+  "display": "Drop Shadow",
+  "xml_type": "DropShadow",
+  "uniqueTypeId": "372541077550622327",
+  "params": [
+   {
+    "name": "Color",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4278190080"
+   }
+  ]
+ },
+ "MEDG": {
+  "display": "Edge Detection",
+  "xml_type": "EdgeDetection",
+  "uniqueTypeId": "MEDG",
+  "params": [
+   {
+    "name": "Color",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294967295"
+   }
+  ]
+ },
+ "A123": {
+  "display": "Fish Eye",
+  "xml_type": "FishEye",
+  "uniqueTypeId": "A123",
+  "params": []
+ },
+ "c_5f16e905-6ba4-4789-a0a4-f1bfcfb60ba3": {
+  "display": "Grid Cloner",
+  "xml_type": "WireEffect",
+  "uniqueTypeId": "c_5f16e905-6ba4-4789-a0a4-f1bfcfb60ba3",
+  "params": [
+   {
+    "name": "Background",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "6881041"
+   }
+  ]
+ },
+ "A128": {
+  "display": "Hue Rotate",
+  "xml_type": "HueRotate",
+  "uniqueTypeId": "A128",
+  "params": []
+ },
+ "P205": {
+  "display": "Infinite Zoom",
+  "xml_type": "InfiniteZoom",
+  "uniqueTypeId": "P205",
+  "params": [
+   {
+    "name": "Zoom",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "0.050000000000000002776"
+   }
+  ]
+ },
+ "A105": {
+  "display": "Invert RGB",
+  "xml_type": "InvertRGB",
+  "uniqueTypeId": "A105",
+  "params": []
+ },
+ "A156": {
+  "display": "Keystone Crop",
+  "xml_type": "KeystoneCrop",
+  "uniqueTypeId": "A156",
+  "params": []
+ },
+ "A155": {
+  "display": "Keystone Mask",
+  "xml_type": "KeystoneMask",
+  "uniqueTypeId": "A155",
+  "params": []
+ },
+ "9611534302831352414": {
+  "display": "Linear Cloner",
+  "xml_type": "LinearCloner",
+  "uniqueTypeId": "9611534302831352414",
+  "params": []
+ },
+ "844752394952286288": {
+  "display": "Meta Shape",
+  "xml_type": "MetaShape",
+  "uniqueTypeId": "844752394952286288",
+  "params": [
+   {
+    "name": "Margin",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "0.125"
+   }
+  ]
+ },
+ "A180": {
+  "display": "Mirror Quad",
+  "xml_type": "MirrorQuad",
+  "uniqueTypeId": "A180",
+  "params": []
+ },
+ "A191": {
+  "display": "Particle System",
+  "xml_type": "ParticleSystem",
+  "uniqueTypeId": "A191",
+  "params": [
+   {
+    "name": "X Vel Min",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "-0.0020000000000000000416"
+   },
+   {
+    "name": "X Vel Max",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "0.0020000000000000000416"
+   },
+   {
+    "name": "Y Vel Min",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "-0.0020000000000000000416"
+   },
+   {
+    "name": "Y Vel Max",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "0.0020000000000000000416"
+   }
+  ]
+ },
+ "877671240945447219": {
+  "display": "Pixel Blur",
+  "xml_type": "PixelBlur",
+  "uniqueTypeId": "877671240945447219",
+  "params": []
+ },
+ "A130": {
+  "display": "Pixel High Pass",
+  "xml_type": "PixelHighPass",
+  "uniqueTypeId": "A130",
+  "params": []
+ },
+ "A148": {
+  "display": "Point Grid",
+  "xml_type": "PointGrid",
+  "uniqueTypeId": "A148",
+  "params": []
+ },
+ "15777305184926876320": {
+  "display": "Radial Cloner",
+  "xml_type": "RadialCloner",
+  "uniqueTypeId": "15777305184926876320",
+  "params": []
+ },
+ "FANA": {
+  "display": "React Anamorphic",
+  "xml_type": "FFGLEffect",
+  "uniqueTypeId": "FANA",
+  "params": []
+ },
+ "FGTE": {
+  "display": "React Gate",
+  "xml_type": "FFGLEffect",
+  "uniqueTypeId": "FGTE",
+  "params": []
+ },
+ "725725449995": {
+  "display": "Dilate",
+  "xml_type": "Dilate",
+  "uniqueTypeId": "725725449995",
+  "params": []
+ },
+ "A131": {
+  "display": "Displace",
+  "xml_type": "Displace",
+  "uniqueTypeId": "A131",
+  "params": []
+ },
+ "A129": {
+  "display": "Distortion",
+  "xml_type": "Distortion",
+  "uniqueTypeId": "A129",
+  "params": []
+ },
+ "725733762308": {
+  "display": "Dither",
+  "xml_type": "Dither",
+  "uniqueTypeId": "725733762308",
+  "params": []
+ },
+ "A134": {
+  "display": "Exposure",
+  "xml_type": "Exposure",
+  "uniqueTypeId": "A134",
+  "params": []
+ },
+ "A104": {
+  "display": "Flip",
+  "xml_type": "Flip",
+  "uniqueTypeId": "A104",
+  "params": []
+ },
+ "sy08": {
+  "display": "Fragment",
+  "xml_type": "Fragment",
+  "uniqueTypeId": "sy08",
+  "params": []
+ },
+ "A132": {
+  "display": "Freeze",
+  "xml_type": "Freeze",
+  "uniqueTypeId": "A132",
+  "params": []
+ },
+ "sy06": {
+  "display": "Goo",
+  "xml_type": "Goo",
+  "uniqueTypeId": "sy06",
+  "params": []
+ },
+ "A413": {
+  "display": "Grid",
+  "xml_type": "Grid",
+  "uniqueTypeId": "A413",
+  "params": [
+   {
+    "name": "Color",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294967295"
+   }
+  ]
+ },
+ "77461104669389": {
+  "display": "Hatched",
+  "xml_type": "Hatched",
+  "uniqueTypeId": "77461104669389",
+  "params": [
+   {
+    "name": "Color1",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294967295"
+   },
+   {
+    "name": "Color2",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4278190080"
+   }
+  ]
+ },
+ "A107": {
+  "display": "Heat",
+  "xml_type": "Heat",
+  "uniqueTypeId": "A107",
+  "params": []
+ },
+ "sy13": {
+  "display": "Iterate",
+  "xml_type": "Iterate",
+  "uniqueTypeId": "sy13",
+  "params": []
+ },
+ "HTje": {
+  "display": "JuiceEditor",
+  "xml_type": "FFGLEffect",
+  "uniqueTypeId": "HTje",
+  "params": []
+ },
+ "sy02": {
+  "display": "Kaleidoscope",
+  "xml_type": "Kaleidoscope",
+  "uniqueTypeId": "sy02",
+  "params": []
+ },
+ "A137": {
+  "display": "Keystone",
+  "xml_type": "Keystone",
+  "uniqueTypeId": "A137",
+  "params": []
+ },
+ "8166473902393820": {
+  "display": "Kuwahara",
+  "xml_type": "Kuwahara",
+  "uniqueTypeId": "8166473902393820",
+  "params": []
+ },
+ "c_374f5d67-85db-4fa7-afd8-d86621b6926e": {
+  "display": "LUT",
+  "xml_type": "WireEffect",
+  "uniqueTypeId": "c_374f5d67-85db-4fa7-afd8-d86621b6926e",
+  "params": [
+   {
+    "name": "LUT 3D",
+    "tag": "ParamLUT3DFile",
+    "T": "FILE",
+    "default": ""
+   }
+  ]
+ },
+ "A141": {
+  "display": "Levels",
+  "xml_type": "Levels",
+  "uniqueTypeId": "A141",
+  "params": []
+ },
+ "A142": {
+  "display": "LoRez",
+  "xml_type": "LoRezEffect",
+  "uniqueTypeId": "A142",
+  "params": []
+ },
+ "A108": {
+  "display": "Mirror",
+  "xml_type": "Mirror",
+  "uniqueTypeId": "A108",
+  "params": []
+ },
+ "A185": {
+  "display": "Noisy",
+  "xml_type": "NoisyEffect",
+  "uniqueTypeId": "A185",
+  "params": []
+ },
+ "A190": {
+  "display": "PolarKaleido",
+  "xml_type": "PolarKaleido",
+  "uniqueTypeId": "A190",
+  "params": []
+ },
+ "A181": {
+  "display": "Polkadot",
+  "xml_type": "Polkadot",
+  "uniqueTypeId": "A181",
+  "params": []
+ },
+ "A109": {
+  "display": "Posterize",
+  "xml_type": "Posterize",
+  "uniqueTypeId": "A109",
+  "params": []
+ },
+ "J004": {
+  "display": "Radar",
+  "xml_type": "Radar",
+  "uniqueTypeId": "J004",
+  "params": []
+ },
+ "sy03": {
+  "display": "RadialBlur",
+  "xml_type": "RadialBlur",
+  "uniqueTypeId": "sy03",
+  "params": []
+ },
+ "872041778225": {
+  "display": "Raster",
+  "xml_type": "Raster",
+  "uniqueTypeId": "872041778225",
+  "params": []
+ },
+ "sy99": {
+  "display": "Recolor",
+  "xml_type": "Recolour",
+  "uniqueTypeId": "sy99",
+  "params": []
+ },
+ "872460957307": {
+  "display": "Reveal",
+  "xml_type": "Reveal",
+  "uniqueTypeId": "872460957307",
+  "params": []
+ },
+ "sy05": {
+  "display": "Ripples",
+  "xml_type": "Ripples",
+  "uniqueTypeId": "sy05",
+  "params": []
+ },
+ "A110": {
+  "display": "Saturation",
+  "xml_type": "Saturation",
+  "uniqueTypeId": "A110",
+  "params": []
+ },
+ "c_91031d74-c9cb-4506-9fad-6fcbb8752975": {
+  "display": "SearchLight",
+  "xml_type": "WireEffect",
+  "uniqueTypeId": "c_91031d74-c9cb-4506-9fad-6fcbb8752975",
+  "params": []
+ },
+ "883261715311": {
+  "display": "Shaper",
+  "xml_type": "Shaper",
+  "uniqueTypeId": "883261715311",
+  "params": [
+   {
+    "name": "Color",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294967295"
+   },
+   {
+    "name": "Outline Color",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294955037"
+   }
+  ]
+ },
+ "89209435418021": {
+  "display": "Sharpen",
+  "xml_type": "Sharpen",
+  "uniqueTypeId": "89209435418021",
+  "params": []
+ },
+ "A136": {
+  "display": "Slide",
+  "xml_type": "Slide",
+  "uniqueTypeId": "A136",
+  "params": []
+ },
+ "A159": {
+  "display": "Snow",
+  "xml_type": "Snow",
+  "uniqueTypeId": "A159",
+  "params": []
+ },
+ "A189": {
+  "display": "Snowy",
+  "xml_type": "Snowy",
+  "uniqueTypeId": "A189",
+  "params": [
+   {
+    "name": "Size",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "0.5"
+   }
+  ]
+ },
+ "A188": {
+  "display": "Sparkles",
+  "xml_type": "Sparkles",
+  "uniqueTypeId": "A188",
+  "params": [
+   {
+    "name": "Size",
+    "tag": "ParamRange",
+    "T": "DOUBLE",
+    "default": "0.5"
+   }
+  ]
+ },
+ "884101299715": {
+  "display": "Sphere",
+  "xml_type": "Sphere",
+  "uniqueTypeId": "884101299715",
+  "params": [
+   {
+    "name": "ColorValue",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294967295"
+   }
+  ]
+ },
+ "MSTF": {
+  "display": "Static",
+  "xml_type": "StaticEffect",
+  "uniqueTypeId": "MSTF",
+  "params": []
+ },
+ "sy69": {
+  "display": "Stripper",
+  "xml_type": "Stripper",
+  "uniqueTypeId": "sy69",
+  "params": []
+ },
+ "MSTX": {
+  "display": "Strobe",
+  "xml_type": "Strobe",
+  "uniqueTypeId": "MSTX",
+  "params": [
+   {
+    "name": "Color",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294967295"
+   }
+  ]
+ },
+ "c_5b6f83f8-6d96-4aef-a332-ec4d016e80b7": {
+  "display": "Strokes",
+  "xml_type": "WireEffect",
+  "uniqueTypeId": "c_5b6f83f8-6d96-4aef-a332-ec4d016e80b7",
+  "params": [
+   {
+    "name": "Resource",
+    "tag": "ParamImageFile",
+    "T": "FILE",
+    "default": "Resource\\Strokes_Brush.png"
+   }
+  ]
+ },
+ "A126": {
+  "display": "Suckr",
+  "xml_type": "Suckr",
+  "uniqueTypeId": "A126",
+  "params": []
+ },
+ "P202": {
+  "display": "Terrain",
+  "xml_type": "Terrain",
+  "uniqueTypeId": "P202",
+  "params": []
+ },
+ "A106": {
+  "display": "Threshold",
+  "xml_type": "Threshold",
+  "uniqueTypeId": "A106",
+  "params": [
+   {
+    "name": "Color 1",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4294967295"
+   },
+   {
+    "name": "Color 2",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4278190080"
+   }
+  ]
+ },
+ "A113": {
+  "display": "Tile",
+  "xml_type": "TileEffect",
+  "uniqueTypeId": "A113",
+  "params": []
+ },
+ "A179": {
+  "display": "Tint",
+  "xml_type": "Tint",
+  "uniqueTypeId": "A179",
+  "params": [
+   {
+    "name": "Black To",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4278190335"
+   },
+   {
+    "name": "White To",
+    "tag": "ParamColor",
+    "T": "COLOR",
+    "default": "4278255563"
+   }
+  ]
+ },
+ "A111": {
+  "display": "Trails",
+  "xml_type": "Trails",
+  "uniqueTypeId": "A111",
+  "params": []
+ },
+ "17122039101699797593": {
+  "display": "Transform",
+  "xml_type": "TransformEffect",
+  "uniqueTypeId": "17122039101699797593",
+  "params": []
+ },
+ "A182": {
+  "display": "Triangulate",
+  "xml_type": "Triangulate",
+  "uniqueTypeId": "A182",
+  "params": []
+ },
+ "sy04": {
+  "display": "Tunnel",
+  "xml_type": "Tunnel",
+  "uniqueTypeId": "sy04",
+  "params": []
+ },
+ "A122": {
+  "display": "Twisted",
+  "xml_type": "Twisted",
+  "uniqueTypeId": "A122",
+  "params": []
+ },
+ "A183": {
+  "display": "Twitch",
+  "xml_type": "TwitchEffect",
+  "uniqueTypeId": "A183",
+  "params": []
+ },
+ "9332865597739610": {
+  "display": "Vibrance",
+  "xml_type": "Vibrance",
+  "uniqueTypeId": "9332865597739610",
+  "params": []
+ },
+ "sy88": {
+  "display": "VideoWall",
+  "xml_type": "VideoWall",
+  "uniqueTypeId": "sy88",
+  "params": []
+ },
+ "sy77": {
+  "display": "Vignette",
+  "xml_type": "Vignette",
+  "uniqueTypeId": "sy77",
+  "params": []
+ },
+ "c_d6ae9f13-8177-4423-a808-18173a3db933": {
+  "display": "WarpSpeed",
+  "xml_type": "WireEffect",
+  "uniqueTypeId": "c_d6ae9f13-8177-4423-a808-18173a3db933",
+  "params": []
+ }
+}
