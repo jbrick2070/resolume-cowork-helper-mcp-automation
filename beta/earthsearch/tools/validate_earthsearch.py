@@ -123,9 +123,19 @@ def main():
     check("the FLARE washes are radial, not half-frame ramps",
           comp_raw.count('<ParamChoice name="Type" T="INT32" default="0" '
                          'value="2" storeChoices="0" />') == 5)
-    check("captions are broadcast idents, not narrative",
-          all(t not in comp_raw
-              for t in ("TELSON", "ANGEL 1", "CHALLENGER", "END OF TRANS")))
+    # The captions carry the crew and the ship at the performer's explicit
+    # request. What is guarded now is not the absence of story text - that
+    # decision is theirs - but that the geometry stays legible: roughly 25
+    # characters fit across the frame at Size 1, so nothing may be written
+    # wider than the frame, and Text Animator clamps below Size 0.5.
+    caps = S.OVERLAY_CLIPS[5]
+    too_wide = [c[0] for c in caps
+                if c[1] == "TextGenerator"
+                and len(c[2]["Text"]) / 25.0 * 1920 * c[2]["Size"] > 1860]
+    check("no caption is written wider than the frame", not too_wide,
+          ", ".join(too_wide) if too_wide else "widest is EARTHSEARCH at ~1690 px")
+    check("no caption is below Text Animator's minimum size",
+          all(c[2].get("Size", 1) >= 0.5 for c in caps))
     check("no dead effect: every rack entry loads a real value or a ceiling",
           all(e[3] or len(e) > 4 or e[2] in ("HueRotate", "InvertRGB",
                                              "ShiftRGB", "Trails", "Blur",

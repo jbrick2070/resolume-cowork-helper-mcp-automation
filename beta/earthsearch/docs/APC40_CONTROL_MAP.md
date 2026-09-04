@@ -49,7 +49,7 @@ Physical row 1 is the bottom row. Each row is one layer; each column is one clip
 
 | col | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |---|---|---|---|---|---|---|---|---|
-| clip | CAP EARTHSEARCH | CAP EPISODE ONE | CAP CARRIER | CAP LOCK | CAP IDENT | CAP SYSTEM | CAP BEARING | CAP CARRIER LOST |
+| clip | CAP EARTHSEARCH | CAP EPISODE ONE | CAP ANGEL 1 | CAP ANGEL 2 | CAP CHALLENGER | CAP SYSTEM | CAP CREW | CAP END |
 | note | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 |
 
 **Row 3 — layer 5 `GRID`** (Add blend, amber)

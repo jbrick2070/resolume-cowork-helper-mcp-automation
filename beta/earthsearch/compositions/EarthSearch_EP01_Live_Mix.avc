@@ -2962,7 +2962,7 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1788400000292" layerIndex="5" columnIndex="2">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="CAP CARRIER" value="CAP CARRIER" />
+				<Param name="Name" T="STRING" default="CAP ANGEL 1" value="CAP ANGEL 1" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="1" storeChoices="0" />
 			</Params>
@@ -3020,9 +3020,9 @@
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1788400000296" baseType="Generator">
 							<Params name="Params">
-								<ParamText name="Text" T="STRING" default="Resolume" value="AUDIO CARRIER">
+								<ParamText name="Text" T="STRING" default="Resolume" value="ANGEL 1">
 									<Params name="Params">
-										<Param name="Lines" T="STRING" default="Resolume" value="AUDIO CARRIER" />
+										<Param name="Lines" T="STRING" default="Resolume" value="ANGEL 1" />
 									</Params>
 								</ParamText>
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4289265464" channelmode="2" paletteEnabled="0" color="4289265464" interpolated="0" />
@@ -3371,7 +3371,7 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1788400000317" layerIndex="5" columnIndex="3">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="CAP LOCK" value="CAP LOCK" />
+				<Param name="Name" T="STRING" default="CAP ANGEL 2" value="CAP ANGEL 2" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="1" storeChoices="0" />
 			</Params>
@@ -3429,9 +3429,9 @@
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1788400000321" baseType="Generator">
 							<Params name="Params">
-								<ParamText name="Text" T="STRING" default="Resolume" value="TRANSMISSION LOCK">
+								<ParamText name="Text" T="STRING" default="Resolume" value="ANGEL 2">
 									<Params name="Params">
-										<Param name="Lines" T="STRING" default="Resolume" value="TRANSMISSION LOCK" />
+										<Param name="Lines" T="STRING" default="Resolume" value="ANGEL 2" />
 									</Params>
 								</ParamText>
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4294959951" channelmode="2" paletteEnabled="0" color="4294959951" interpolated="0" />
@@ -3786,7 +3786,7 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1788400000342" layerIndex="5" columnIndex="4">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="CAP IDENT" value="CAP IDENT" />
+				<Param name="Name" T="STRING" default="CAP CHALLENGER" value="CAP CHALLENGER" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="1" storeChoices="0" />
 			</Params>
@@ -3844,9 +3844,9 @@
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1788400000346" baseType="Generator">
 							<Params name="Params">
-								<ParamText name="Text" T="STRING" default="Resolume" value="SIGNAL IDENT">
+								<ParamText name="Text" T="STRING" default="Resolume" value="CHALLENGER">
 									<Params name="Params">
-										<Param name="Lines" T="STRING" default="Resolume" value="SIGNAL IDENT" />
+										<Param name="Lines" T="STRING" default="Resolume" value="CHALLENGER" />
 									</Params>
 								</ParamText>
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4282036479" channelmode="2" paletteEnabled="0" color="4282036479" interpolated="0" />
@@ -3857,10 +3857,10 @@
 								<ParamRange name="Opacity" T="DOUBLE" default="1.0" value="1.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="-580.0" value="-580.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="400.0" value="400.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="-400.0" value="-400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -4614,7 +4614,7 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1788400000392" layerIndex="5" columnIndex="6">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="CAP BEARING" value="CAP BEARING" />
+				<Param name="Name" T="STRING" default="CAP CREW" value="CAP CREW" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="1" storeChoices="0" />
 			</Params>
@@ -4672,9 +4672,9 @@
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1788400000396" baseType="Generator">
 							<Params name="Params">
-								<ParamText name="Text" T="STRING" default="Resolume" value="BEARING  0 0 0">
+								<ParamText name="Text" T="STRING" default="Resolume" value="TELSON  SHARNA  ASTRA  DARV">
 									<Params name="Params">
-										<Param name="Lines" T="STRING" default="Resolume" value="BEARING  0 0 0" />
+										<Param name="Lines" T="STRING" default="Resolume" value="TELSON  SHARNA  ASTRA  DARV" />
 									</Params>
 								</ParamText>
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4294110952" channelmode="2" paletteEnabled="0" color="4294110952" interpolated="0" />
@@ -4685,7 +4685,7 @@
 								<ParamRange name="Opacity" T="DOUBLE" default="1.0" value="1.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="580.0" value="580.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="400.0" value="400.0">
@@ -5070,7 +5070,7 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1788400000417" layerIndex="5" columnIndex="7">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="CAP CARRIER LOST" value="CAP CARRIER LOST" />
+				<Param name="Name" T="STRING" default="CAP END" value="CAP END" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="1" storeChoices="0" />
 			</Params>
@@ -5128,14 +5128,14 @@
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1788400000421" baseType="Generator">
 							<Params name="Params">
-								<ParamText name="Text" T="STRING" default="Resolume" value="CARRIER LOST">
+								<ParamText name="Text" T="STRING" default="Resolume" value="END OF TRANSMISSION">
 									<Params name="Params">
-										<Param name="Lines" T="STRING" default="Resolume" value="CARRIER LOST" />
+										<Param name="Lines" T="STRING" default="Resolume" value="END OF TRANSMISSION" />
 									</Params>
 								</ParamText>
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4281285631" channelmode="2" paletteEnabled="0" color="4281285631" interpolated="0" />
 								<ParamColor name="Outline Color" T="COLOR" default="4294967295" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.6" value="1.6">
+								<ParamRange name="Size" T="DOUBLE" default="1.1" value="1.1">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Opacity" T="DOUBLE" default="1.0" value="1.0">

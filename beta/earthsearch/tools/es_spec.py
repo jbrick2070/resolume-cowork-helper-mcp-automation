@@ -734,72 +734,90 @@ OVERLAY_CLIPS = {
                                          "Line Width": 2.0,
                                          "Show Knots": 0}, {}),
     ],
-    # ---- layer 6  CAPTION - system captions (Alpha) ----------------------
+    # ---- layer 6  CAPTION - the ship and her crew (Alpha) ----------------
     #
-    # Deliberately NOT narrative. An earlier draft carried the crew's names and
-    # an end-of-episode card; two independent reviewers both called that an
-    # editorial decision made on the performer's behalf, which the brief
-    # explicitly forbids, and they were right. These are broadcast idents -
-    # they carry the 1981 transmission register without asserting anything
-    # about the story. Every string is still editable in Resolume's own text
-    # field in two clicks.
+    # These names are the PERFORMER'S choice, asked for explicitly. An earlier
+    # draft had them, three reviewers objected that shipping story text was an
+    # editorial decision made on the performer's behalf, and they were right
+    # about the principle - so they were pulled and replaced with neutral
+    # broadcast idents. The performer then asked for the names back, which
+    # settles it: the objection was to me choosing, not to the text existing.
     #
-    # UNITS, learned the hard way by reading the parameters back off the
-    # running rig: Text Animator's Size runs 0.5..10 and its Position X/Y are
-    # PIXELS on a +/-32768 scale, not a normalised 0..1. The first draft wrote
-    # Size 0.26 and positions of +/-0.35, so every caption was clamped to the
-    # minimum size and stacked a third of a pixel from dead centre - eight pads
-    # that all put the same illegible smudge over the middle of somebody's
-    # face. Titles are centred and large; the four telemetry idents sit in the
-    # corners where instrument readouts belong.
+    # Every string is still editable in Resolume's own text field in two
+    # clicks. TELSON, SHARNA, ASTRA, DARV and CHALLENGER are all spelled as
+    # the production documents spell them.
+    #
+    # LAYOUT. Text Animator fits roughly 25 characters across the frame at
+    # Size 1, and Position X/Y are PIXELS from centre (+Y down), not a
+    # normalised 0..1 - the first draft wrote Size 0.26 and positions of
+    # +/-0.35, so every caption was clamped to minimum size and stacked a
+    # third of a pixel from dead centre, eight pads putting the same
+    # illegible smudge over the middle of a face. Widths below are computed
+    # from that 25-character rule and checked against the 1920-wide frame:
+    #
+    #   top row     ANGEL 1  .  CHALLENGER  .  ANGEL 2      the ship's systems
+    #   centre      EARTHSEARCH / EPISODE ONE / END OF TRANSMISSION
+    #   bottom      TELSON  SHARNA  ASTRA  DARV             the crew
+    #
+    # Nothing in the top or bottom row crosses the middle third, so a caption
+    # can be up during dialogue without sitting on somebody's face.
     5: [
+        # 11 chars at 2.0 = ~1690 px on a 1920 frame.
         ("CAP EARTHSEARCH", "TextGenerator", {"Text": "EARTHSEARCH",
                                               "Color": P["phosphor"],
                                               "Outline Color": P["clear"],
                                               "Size": 2.0, "Opacity": 1.0,
                                               "Position X": 0.0,
                                               "Position Y": 0.0}, {}),
+        # 11 chars at 1.2 = ~1015 px, sat below the title.
         ("CAP EPISODE ONE", "TextGenerator", {"Text": "EPISODE ONE",
                                               "Color": P["bone"],
                                               "Outline Color": P["clear"],
                                               "Size": 1.2, "Opacity": 1.0,
                                               "Position X": 0.0,
                                               "Position Y": 150.0}, {}),
-        ("CAP CARRIER",     "TextGenerator", {"Text": "AUDIO CARRIER",
+        # 7 chars at 0.55 = ~296 px; at X -580 it spans -728..-432, well
+        # inside the left half.
+        ("CAP ANGEL 1",     "TextGenerator", {"Text": "ANGEL 1",
                                               "Color": P["phosphor"],
                                               "Outline Color": P["clear"],
                                               "Size": 0.55, "Opacity": 1.0,
                                               "Position X": -580.0,
                                               "Position Y": -400.0}, {}),
-        ("CAP LOCK",        "TextGenerator", {"Text": "TRANSMISSION LOCK",
+        ("CAP ANGEL 2",     "TextGenerator", {"Text": "ANGEL 2",
                                               "Color": P["signal"],
                                               "Outline Color": P["clear"],
                                               "Size": 0.55, "Opacity": 1.0,
                                               "Position X": 580.0,
                                               "Position Y": -400.0}, {}),
-        ("CAP IDENT",       "TextGenerator", {"Text": "SIGNAL IDENT",
+        # 10 chars at 0.55 = ~423 px, centred between the two Angels.
+        ("CAP CHALLENGER",  "TextGenerator", {"Text": "CHALLENGER",
                                               "Color": P["amber"],
                                               "Outline Color": P["clear"],
                                               "Size": 0.55, "Opacity": 1.0,
-                                              "Position X": -580.0,
-                                              "Position Y": 400.0}, {}),
+                                              "Position X": 0.0,
+                                              "Position Y": -400.0}, {}),
         ("CAP SYSTEM",      "BlockTextGenerator", {"Text": "SYSTEM READY",
                                                    "Color": P["phosphor"],
                                                    "Outline Color": P["clear"],
                                                    "Size": 1.0,
                                                    "Scale": 0.8}, {}),
-        ("CAP BEARING",     "TextGenerator", {"Text": "BEARING  0 0 0",
+        # 28 chars at 0.55 = ~1185 px, centred along the bottom.
+        ("CAP CREW",        "TextGenerator", {"Text": "TELSON  SHARNA  "
+                                                      "ASTRA  DARV",
                                               "Color": P["bone"],
                                               "Outline Color": P["clear"],
                                               "Size": 0.55, "Opacity": 1.0,
-                                              "Position X": 580.0,
+                                              "Position X": 0.0,
                                               "Position Y": 400.0}, {}),
-        ("CAP CARRIER LOST", "TextGenerator", {"Text": "CARRIER LOST",
-                                               "Color": P["alert"],
-                                               "Outline Color": P["clear"],
-                                               "Size": 1.6, "Opacity": 1.0,
-                                               "Position X": 0.0,
-                                               "Position Y": 0.0}, {}),
+        # 19 chars at 1.1 = ~1605 px. At the 1.6 an earlier draft used it
+        # would have been ~2335 px and run off both sides.
+        ("CAP END",         "TextGenerator", {"Text": "END OF TRANSMISSION",
+                                              "Color": P["alert"],
+                                              "Outline Color": P["clear"],
+                                              "Size": 1.1, "Opacity": 1.0,
+                                              "Position X": 0.0,
+                                              "Position Y": 0.0}, {}),
     ],
     # ---- layer 7  FLARE - light accents (Add) ----------------------------
     6: [
