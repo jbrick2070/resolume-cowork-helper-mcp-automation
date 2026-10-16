@@ -284,6 +284,8 @@ td code{color:var(--d);font-size:11px}
 <input id="q" placeholder="Search controls, paths, clips..." size="34"></div>
 <div class="wrap"><div class="board" id="board"></div></div>
 <div id="info">Click any control.</div>
+<h2 style="font-size:12px;letter-spacing:.12em;color:var(--d);margin:14px 0 6px">COMPOSITION &middot; <span id="dname"></span></h2>
+<div class="wrap"><table id="grid"></table></div>
 <table><thead><tr><th>Control</th><th>Does</th><th>Path</th></tr></thead><tbody id="rows"></tbody></table>
 <div class="foot">Read-only cheat sheet generated from the preset and composition files; nothing here talks to Resolume.
 Pad colours approximate the APC40's LED palette. Board-as-grid idea after Rieger Gerg&#337;'s ROGGER (MIT).</div>
@@ -345,7 +347,13 @@ function hl(key){document.querySelectorAll(".c.sel").forEach(e=>e.classList.remo
  const e=document.querySelector(`.c[data-k="${key}"]`);if(e)e.classList.add("sel")}
 function pick(key){SEL=key;hl(key);const L=M.controls[key]||[];
  document.getElementById("info").innerHTML=`<b>${nm(key)}</b> <code>${key}</code><br>`+L.map(s=>`&bull; ${esc(lab(s))} <code>${esc(s.path)}${s.range?" ["+s.range.join("..")+"]":""}</code>`).join("<br>")}
-function table(){const q=document.getElementById("q").value.toLowerCase();const tb=document.getElementById("rows");tb.innerHTML="";
+function grid(){const dk=decks[D];const g=document.getElementById("grid");document.getElementById("dname").textContent=dk.name;
+ const cols=Math.max(0,...Object.keys(dk.columns).map(Number),...Object.keys(dk.clips).map(k=>+k.split(",")[1]));
+ const lays=(comp.layers||[]).length;if(!cols||!lays){g.innerHTML="<tr><td>(no clips)</td></tr>";return}
+ let h="<tr><th></th>"+Array.from({length:cols},(_,i)=>`<th>${i+1} ${esc(dk.columns[i+1]||"")}</th>`).join("")+"</tr>";
+ for(let l=lays;l>=1;l--){h+=`<tr><th>${l} ${esc(comp.layers[l-1]||"")}</th>`;for(let c=1;c<=cols;c++){const x=dk.clips[`${l},${c}`];h+=`<td>${x?esc(x[0]||x[1])+(x[1]&&x[0]!==x[1]?`<br><code>${esc(x[1])}</code>`:""):""}</td>`}h+="</tr>"}
+ g.innerHTML=h}
+function table(){grid();const q=document.getElementById("q").value.toLowerCase();const tb=document.getElementById("rows");tb.innerHTML="";
  Object.keys(M.controls).sort((a,b)=>nm(a).localeCompare(nm(b),undefined,{numeric:true})).forEach(key=>{
   M.controls[key].forEach(s=>{const row=[nm(key),lab(s),s.path].join(" ").toLowerCase();if(q&&!row.includes(q))return;
    const tr=document.createElement("tr");tr.innerHTML=`<td>${nm(key)}</td><td>${esc(lab(s))}</td><td><code>${esc(s.path)}</code></td>`;
@@ -434,13 +442,101 @@ def run_all(root):
     return made
 
 
+def run_dirs(avc_dir, preset_dir, out_dir):
+    """Every .avc in avc_dir -> one page in out_dir, paired with its preset
+    from preset_dir (exact name, else the single name that extends it).
+    Comps whose preset is missing still get a page: board empty, grid full."""
+    presets = {}
+    pdirs = preset_dir if isinstance(preset_dir, list) else [preset_dir]
+    adirs = avc_dir if isinstance(avc_dir, list) else [avc_dir]
+    for p in [x for d in pdirs for x in glob.glob(os.path.join(d, "**", "*.xml"),
+                                                  recursive=True)]:
+        try:
+            r = ET.parse(p).getroot()
+        except ET.ParseError:
+            continue
+        if r.tag == "MidiShortcutPreset":
+            presets[r.get("name")] = p
+    os.makedirs(out_dir, exist_ok=True)
+    rows = []
+    skip = ("harvest", "backups", "__pycache__", ".git", "_dryrun", "_partial")
+    found = []
+    for d in adirs:
+        for x in glob.glob(os.path.join(d, "**", "*.avc"), recursive=True):
+            if not any(("%s%s" % (os.sep, k)) in x or ("/%s" % k) in x
+                       for k in skip):
+                found.append((d, x))
+    seen = set()
+    for base, avc in sorted(found, key=lambda t: t[1].lower()):
+        try:
+            info = read_avc(avc)
+        except ET.ParseError as exc:
+            rows.append((os.path.basename(avc), None, None, "unreadable"))
+            continue
+        want = info["preset"] or ""
+        pp = presets.get(want)
+        if not pp and want:
+            c = [p for n, p in presets.items() if n and n.startswith(want)]
+            pp = c[0] if len(c) == 1 else None
+        stem = os.path.splitext(os.path.basename(avc))[0]
+        rel = os.path.relpath(os.path.dirname(avc), base)
+        where = os.path.basename(os.path.normpath(base)) + (
+            "" if rel == "." else "/" + rel.replace(os.sep, "/"))
+        fn = re.sub(r"[^A-Za-z0-9]+", "_", stem).strip("_")
+        if fn.lower() in seen:
+            fn = re.sub(r"[^A-Za-z0-9]+", "_", where + "_" + stem).strip("_")
+        seen.add(fn.lower())
+        out = os.path.join(out_dir, fn + ".html")
+        if pp:
+            model = build_model(pp, avc)
+        else:
+            model = {"preset": want or "(none)", "preset_file": None,
+                     "comp": info, "controls": {}, "count": 0}
+        write_html(model, out, title=stem)
+        nd = len(info["decks"])
+        nc = sum(len(d["clips"]) for d in info["decks"])
+        rows.append((stem, want, os.path.basename(out),
+                     "%s - %d decks, %d clips%s" % (where, nd, nc, "" if pp
+                                                    else " - preset not found")))
+    idx = ["<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>"
+           "<meta name='viewport' content='width=device-width,initial-scale=1'>"
+           "<title>Composition maps</title><style>body{font:14px system-ui;"
+           "background:#0b0c0e;color:#e9edf3;padding:24px 16px;max-width:1000px;"
+           "margin:auto}a{color:#ffb03a}td{padding:4px 8px;border-bottom:1px "
+           "solid #2a2e35}small,.d{color:#8d939c}table{border-collapse:collapse;"
+           "width:100%}@media (prefers-color-scheme: light){body{background:"
+           "#f4f2ee;color:#16181b}a{color:#b4570a}td{border-color:#d3cfc7}}"
+           "</style></head><body><h1>Composition maps</h1><p class='d'>%d "
+           "compositions. Generated from the files; nothing talks to Resolume."
+           "</p><table>"]
+    idx[0] = idx[0].replace("%d ", str(len(rows)) + " ", 1)
+    for stem, want, out, note in rows:
+        idx.append("<tr><td>%s</td><td class='d'>%s</td><td class='d'>%s</td>"
+                   "</tr>" % ("<a href='%s'>%s</a>" % (html.escape(out),
+                                                        html.escape(stem))
+                              if out else html.escape(stem),
+                              html.escape(want or ""), html.escape(note)))
+    idx.append("</table></body></html>")
+    with open(os.path.join(out_dir, "index.html"), "w",
+              encoding="utf-8") as f:
+        f.write(chr(10).join(idx))
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("preset", nargs="?")
     ap.add_argument("--avc")
     ap.add_argument("--out")
     ap.add_argument("--all")
+    ap.add_argument("--avc-dir", action="append")
+    ap.add_argument("--preset-dir", action="append")
+    ap.add_argument("--out-dir")
     a = ap.parse_args()
+    if a.avc_dir:
+        for r in run_dirs(a.avc_dir, a.preset_dir, a.out_dir):
+            print("%-40s %-44s %s" % (r[0][:40], (r[1] or "")[:44], r[3]))
+        return
     if a.all:
         for name, pre, out in run_all(a.all):
             print("%-34s %-40s %s" % (name, pre, out))
