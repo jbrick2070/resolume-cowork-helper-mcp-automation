@@ -1,0 +1,362 @@
+{
+ "sources": {
+  "Geometry Pattern Maker": {
+   "Bloom Mode": {
+    "set": "Luma Is Alpha",
+    "index": 23,
+    "col": 3
+   },
+   "Shape Types": {
+    "set": "Square",
+    "index": 1,
+    "col": 3
+   },
+   "Inner C Wrapping 3": {
+    "set": "Ping Pong",
+    "index": 1,
+    "col": 3
+   },
+   "Inner L Wrapping 2": {
+    "set": "Ping Pong",
+    "index": 1,
+    "col": 3
+   },
+   "In Curv Space": {
+    "set": "Quadratic In",
+    "index": 1,
+    "col": 3
+   },
+   "Out C  Wrapping": {
+    "set": "Ping Pong",
+    "index": 1,
+    "col": 3
+   },
+   "Outer L Wrapping": {
+    "set": "Ping Pong",
+    "index": 1,
+    "col": 3
+   },
+   "Out Curv Space": {
+    "set": "Quadratic In",
+    "index": 1,
+    "col": 3
+   }
+  },
+  "Gradient": {
+   "Method": {
+    "set": "Palette",
+    "index": 1,
+    "col": 4
+   },
+   "Mode": {
+    "set": "Stepped",
+    "index": 1,
+    "col": 4
+   },
+   "Type": {
+    "set": "Vertical",
+    "index": 1,
+    "col": 4
+   }
+  },
+  "Metaballs": {
+   "Blend": {
+    "set": "Average",
+    "index": 1,
+    "col": 7
+   }
+  },
+  "Shaper": {
+   "Noise Type": {
+    "set": "Grain",
+    "index": 0,
+    "col": 9
+   }
+  },
+  "Sine Wave": {
+   "Mode": {
+    "set": "Fill",
+    "index": 1,
+    "col": 10
+   },
+   "Direction": {
+    "set": "Vertical",
+    "index": 1,
+    "col": 10
+   }
+  },
+  "Spiral": {
+   "Direction": {
+    "set": "Anti-clockwise",
+    "index": 1,
+    "col": 12
+   },
+   "Control Mode": {
+    "set": "Detailed",
+    "index": 1,
+    "col": 12
+   }
+  },
+  "Static": {
+   "Mode": {
+    "set": "Two-tone",
+    "index": 2,
+    "col": 13
+   }
+  },
+  "Text Animator": {
+   "Alignment": {
+    "set": "Center",
+    "index": 1,
+    "col": 16
+   },
+   "AlignmentVertically": {
+    "set": "Bottom",
+    "index": 2,
+    "col": 16
+   },
+   "Range": {
+    "set": "All",
+    "index": 0,
+    "col": 16
+   },
+   "Order": {
+    "set": "Back to front",
+    "index": 1,
+    "col": 16
+   }
+  },
+  "Text Block": {
+   "Alignment": {
+    "set": "Right",
+    "index": 2,
+    "col": 17
+   },
+   "AlignmentVertically": {
+    "set": "Bottom",
+    "index": 2,
+    "col": 17
+   }
+  }
+ },
+ "effects": {
+  "CRT": {
+   "Color Left": {
+    "set": "G",
+    "index": 1
+   },
+   "Color Middle": {
+    "set": "B",
+    "index": 2
+   },
+   "Color Right": {
+    "set": "R",
+    "index": 0
+   },
+   "Display Mode": {
+    "set": "Native",
+    "index": 1
+   }
+  },
+  "Colorize": {
+   "Mode": {
+    "set": "Palette",
+    "index": 1
+   }
+  },
+  "Dilate": {
+   "Mode": {
+    "set": "Dark",
+    "index": 1
+   },
+   "Shape": {
+    "set": "Circle",
+    "index": 1
+   }
+  },
+  "Displace": {
+   "Mode": {
+    "set": "Wrap",
+    "index": 1
+   }
+  },
+  "Dither": {
+   "Mode": {
+    "set": "4x",
+    "index": 1
+   }
+  },
+  "Grid Cloner": {
+   "Order": {
+    "set": "Center",
+    "index": 0
+   }
+  },
+  "Linear Cloner": {
+   "Delay Order": {
+    "set": "Old To New",
+    "index": 1
+   },
+   "Delay Fill": {
+    "set": "Transparent",
+    "index": 1
+   }
+  },
+  "Meta Shape": {
+   "Shape 1": {
+    "set": "Hexagon",
+    "index": 2
+   },
+   "Shape 2": {
+    "set": "Circle",
+    "index": 0
+   },
+   "Color": {
+    "set": "Original",
+    "index": 3
+   },
+   "Mode": {
+    "set": "Fill",
+    "index": 0
+   }
+  },
+  "Particle System": {
+   "Spawn Mode": {
+    "set": "Manual",
+    "index": 1
+   }
+  },
+  "Radial Cloner": {
+   "Delay Order": {
+    "set": "Old To New",
+    "index": 1
+   },
+   "Delay Fill": {
+    "set": "Transparent",
+    "index": 1
+   }
+  },
+  "Reveal": {
+   "Texture": {
+    "set": "Color",
+    "index": 1
+   },
+   "Scaling": {
+    "set": "Up",
+    "index": 2
+   },
+   "Order": {
+    "set": "Normal",
+    "index": 0
+   },
+   "Seed": {
+    "set": "Audio",
+    "index": 1
+   }
+  },
+  "Shape Mask": {
+   "Shape": {
+    "set": "Circle",
+    "index": 1
+   }
+  },
+  "Shaper": {
+   "Noise Type": {
+    "set": "Grain",
+    "index": 0
+   }
+  },
+  "Shift RGB": {
+   "Mode": {
+    "set": "Shift Y",
+    "index": 1
+   }
+  },
+  "Sparkles": {
+   "Texture": {
+    "set": "Input",
+    "index": 1
+   },
+   "Spawn Mode": {
+    "set": "Manual",
+    "index": 1
+   }
+  },
+  "Sphere": {
+   "NoiseType": {
+    "set": "Value",
+    "index": 1
+   },
+   "ColorMode": {
+    "set": "Interpolate",
+    "index": 2
+   },
+   "ThresholdMode": {
+    "set": "Greyscale",
+    "index": 1
+   }
+  },
+  "Static": {
+   "Mode": {
+    "set": "Two-tone",
+    "index": 2
+   }
+  },
+  "Stingy Sphere": {
+   "Input": {
+    "set": "External",
+    "index": 2
+   }
+  },
+  "Strokes": {
+   "Frequency Mode": {
+    "set": "BPM",
+    "index": 1
+   },
+   "Size Mode": {
+    "set": "Brightness",
+    "index": 1
+   }
+  },
+  "Text Animator": {
+   "Alignment": {
+    "set": "Center",
+    "index": 1
+   },
+   "AlignmentVertically": {
+    "set": "Bottom",
+    "index": 2
+   },
+   "Range": {
+    "set": "All",
+    "index": 0
+   },
+   "Order": {
+    "set": "Back to front",
+    "index": 1
+   }
+  },
+  "Text Block": {
+   "Alignment": {
+    "set": "Right",
+    "index": 2
+   },
+   "AlignmentVertically": {
+    "set": "Bottom",
+    "index": 2
+   }
+  },
+  "Threshold": {
+   "Alpha": {
+    "set": "Combine",
+    "index": 1
+   }
+  },
+  "Trails": {
+   "Mode": {
+    "set": "Luma",
+    "index": 1
+   }
+  }
+ }
+}

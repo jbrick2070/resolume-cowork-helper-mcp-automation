@@ -1,0 +1,387 @@
+{
+ "critique:hydrogen-line": {
+  "verdict": "Hydrogen Line is a disciplined, dictionary-clean deck with a real palette and a real register, but its honest scope twitches on every hi-hat in all eight columns, its hero typewriter will not visibly type, a periodic stroboscope is standing in for the one-shot 72-second signal, and No Carrier and Dawn Chorus each stack two full-frame fields that fight; fix those four, swap the near-zero Solid Color fillers for Blank, and it is ready to open on the rig.",
+  "issues": [
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "SCOPE Frequency is bound to the high band (floor 2, ceiling 8, gain 8, release 250 ms) in all eight columns: the sine re-wraps from 2 to 8 cycles on every hi-hat, so the one honest 1:1 readout accordions and twitches four to eight times a bar in every scene. The bible says highs touch GRAIN only and the scope follows level, nothing else.",
+    "fix": "Delete the Frequency FFT binding from the layer-8 Chart Pen Scope clip in every column and hold Frequency at 3; keep Amplitude (mid, 0.03-0.3) and Line Width (low, 0.03-0.09)."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "problem": "Wow Typewriter sets Animated true, Range Characters, Order Front to back, Delay 90, but leaves the animation start state at its defaults (Opacity 1.0, Scale 1.0, Animated Position 0,0, Rotation 0), so each character interpolates from a state identical to its resting state and nothing visibly types on; the deck's hero red line simply appears.",
+    "fix": "Add \"Opacity\": 0 to the params (the start-state opacity the Type On & Off preset uses); optionally \"Scale\": 0.85 so each glyph settles in."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "problem": "72 Second Rise is a Stroboscope: it is periodic and cannot produce one 72-second rise and fall, so the room gets a repeating full-frame chart-paper fade-flash at 30% sitting on the deck's only red moment, washing the H-alpha edge and the 6EQUJ5 line on every cycle.",
+    "fix": "Replace with Gradient: Method 2 Colors, Color 1 #e8e6dfff, Color 2 #00000000, Type Radial, Mode Smooth, Dither 0, opacity 0.25, no FFT; the performer rides the layer-4 fader up and back over the 72 seconds (or a clip-opacity timeline if the builder supports one)."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "problem": "Dead Air Static (full-frame boiling static at 0.9, tinted to #8c9096) sits under Stepped Hiss on L7 (a second full-frame static at 0.4, untinted, with Stop Motion): two full-frame fields fighting. The 60 fps boil erases the two-frames-a-second step that is the column's whole idea, the untinted L7 peaks on Add push highlights to paper white across the frame, and the margin-grey scope on L8 is swallowed by the hiss.",
+    "fix": "Move the Stop Motion (Frequency 0.12, Frame Count 0.08, Black BG false) onto L1 Dead Air Static and set its opacity to 0.7; make L7 C7 the plain Paper Tooth (Static Grayscale, no effect, opacity 0.06); set L8 C7 Color back to #e8e6dfff so the readout survives the hiss."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "problem": "Dish Mesh Hex (24 nested hexagon outlines from Inner Scale 0.08 to Outer Scale 2.3 at opacity 0.7 with Bloom) and VLF Curl on L3 (a full-frame Spiral at 0.8) are two concentric full-frame line patterns on the same centre; they moire and fight, and the 'single minimal blue spiral' has nowhere to be.",
+    "fix": "Hollow the mesh: Line Ammount 24 -> 8, Inner Scale 0.08 -> 0.55, opacity 0.7 -> 0.5, so the hexagons are a dish rim in the outer band and the spiral owns the centre."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "problem": "Unlit Hut (Solid Color #2a3340 at 0.05) in C1, C2, C3, C4 and C7, Lamp Off (Solid Color #d9a441 at 0.03) in L4 C1 and C7, Lost Beam Ghost (L3 C7 at 0.04) and First Light Rim (L4 C8 at 0.06) are invisible clips: each adds a 3-6% full-frame tint on Add that lifts the sensor-bias black and softens dot-field contrast while showing nothing. The bible calls every one of these cells Blank.",
+    "fix": "Source Blank (Black BG false) in each of those cells; Blank is in the dictionary, is a real clip so no column has a hole, and adds nothing to the frame."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "problem": "Paper Log is a 40-character two-line Text Block string ('96 FT PAPER PER DAY\\nCHART SPEED 1 IN/MIN'): it breaks the 22-character limit and depends on an embedded newline surviving the build, which is unverified on the rig. It also uses a different position convention (X -200, Y 400, Line Width 1400) from the Text Animator notes in the other columns, so the margin baseline shifts between C2 and C3.",
+    "fix": "Text Animator, Text \"96 FT PAPER PER DAY\" (19 chars), Font OCR A Extended, Style Regular, Color #6f7378ff, Size 0.8, Alignment Left, AlignmentVertically Bottom, Position X -820, Position Y 440, Animated false; hold CHART SPEED 1 IN/MIN for a text-swap or a second deck."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "problem": "Pulsar Log is a 32-character three-line Text Block string ('CP 1919+21\\nPERIOD 1.3373 S\\nLGM-1'): over 22 characters and dependent on two embedded newlines, unverified on the rig, with the same shifted baseline as C3.",
+    "fix": "Text Animator, Text \"CP 1919+21\" (10 chars), Font OCR A Extended, Style Regular, Color #6f7378ff, Size 0.8, Alignment Left, AlignmentVertically Bottom, Position X -820, Position Y 440, Animated false; PERIOD 1.3373 S and LGM-1 are the best candidates for a pad text-swap."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "problem": "H-Alpha Wash runs the reserved red at opacity 0.28; the bible fixes the Wow Signal AURA at Add 8% so the red reads as a whisper that happens once. At 28% a radial red edge under a 30% paper strobe, a tall paper ridge and centred red text is a red vignette, not an event.",
+    "fix": "Opacity 0.28 -> 0.10 (edge-only radial, which lands near the bible's 8% average)."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "problem": "Graph Paper is a 96 x 54 Checkered field (transparent / chart paper) at 0.05: that is a 20-pixel checkerboard of filled squares, not ruling; it reads as a halftone screen, will moire against an LED pitch or projector scaling, and is a third field under a column that already has a noise bed and a pen trace.",
+    "fix": "Source Lines: Amount 48, Width 0.006, Fuzzyness 0, Rotation 90, Position 0.5, Color #e8e6dfff, opacity 0.05 (vertical time-divisions under the horizontally scrolling pen)."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "problem": "One Pixel Dot is Shaper Scale 0.03, roughly a 30-pixel disc at 1080p, bigger than the C1 foreshadow dot (0.02) and nowhere near the 'LESS THAN ONE PIXEL' the bible promises (Scale 0.01). It also lives on LIGHT (row 4), while the bible's 'Exposure to dot' moment tells the performer to pull faders 1, 2 and 4 to zero and tap the row-3 FIGURE pad, which would kill the dot.",
+    "fix": "Scale 0.03 -> 0.01; and rewrite the moment to 'pull faders 1, 2 and 3 to zero, tap the row-4 LIGHT pad' so the choreography matches where the dot actually is."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "problem": "Beam Afterimage binds Rings Size to the low band with floor 0.6, ceiling 1.1, gain 8: the three rings nearly double in radius on every kick and snap back in 600 ms, and with Trails Lighten 0.7 each kick smears a concentric blue zoom-flash. The bible wants the beam pattern 'always thin' and animated 'slowly outward', lows as a push not a flash. L3 C2 Beam Pattern does the same (0.5 -> 0.9).",
+    "fix": "FFT Size floor 0.7, ceiling 0.85, release 900 (a 20% breath); in L3 C2 floor 0.55, ceiling 0.7, release 900."
+   }
+  ]
+ },
+ "critique:loss-of-signal": {
+  "verdict": "A disciplined, genuinely composed radio room (the limb crossing the scene set, one tally lamp, the scope as the picture are all good taste and every param is dictionary-clean), but the build as configured will betray it: its aura and grain rows are blended into invisibility, its sunrise is a looping 87% whiteout, its Dead Air silence cannot be triggered, and its countdown runs at half speed, so fix the two layer blends and the four narrative beats before anything is judged on the rig.",
+  "issues": [
+   {
+    "layer": 6,
+    "column": 5,
+    "problem": "Far Side Violet will be invisible. Layer 6 is built as Overlay (resolume_build/pack.py LAYER_BLENDS {6:'Overlay'}), and Overlay over a 4-6% bed can only reach 2*base*blend (about 0.06), i.e. it can only darken, so the 12% violet wash, the deck's single use of the reserved aura colour and the visual sign that the voice is not on the roster, never appears; the bible asked for Add.",
+    "fix": "Carry the wash on the Screen-blended FIGURE instead: Violet Throat (L3 C5) BG Color #00000000 -> #5b3c8a1f (12% alpha, whole-frame tint under the wave); or build this pack with layer_blends={6:'Add'} (pack.py accepts the override) and keep this clip at opacity 0.12."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "problem": "Hiss 2.2k, and every other GRAIN clip in the deck, is invisible on the room. Layer 7 is Overlay in the builder; grayscale Static at 10% over a 0.05 bed gives out = 0.05 + 0.1*(0.1*noise - 0.05), a swing of +/-0.005 (one LSB), so the 2.2 kHz hiss, Alarm Static (C6) and Newsreel Film (C8) only faintly texture the green text and scope and never read as carrier hiss.",
+    "fix": "Build this pack with layer_blends={7:'Screen'} and drop the Static clips to opacity 0.06 (Alarm Static and Newsreel Film 0.08); Screen at 6% over black reads as hiss where Overlay reads as nothing. While there, Newsreel Film Mode 'Color' -> 'Grayscale', because once it is visible, random-hue LoRez blocks are the one colour in the deck that is not in the palette."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "problem": "AOS Sunrise is a looping whiteout, not one flash. A full-frame #f4efe6 Stroboscope at opacity 0.85 on an Add layer with Fade on and Frequency 0.02 cycles to 87% white every period and erases the grid, Trace Returning, Limb Sunlit, EAGLE, HOUSTON and the scope each time; with Fade on the frame is over 40% white half the time.",
+    "fix": "opacity 0.85 -> 0.4 and Frequency 0.02 -> 0.01 so the sunrise is a slow 40% wash the text and scope survive; the single hard flash on the AOS bar belongs to the bank-B Strobe button, not a looping generator, and the moment text should say so."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "problem": "The Dead Air moment cannot be built. 'Scene Launch 4 lands with only BED and SCOPE, then the row pads bring in the ECG, the Heart, the Heartbeat Lamp and the count' relies on per-clip Ignore Column Trigger, which neither Resolume nor this builder has: pack.py sets the layer-level flag on layer 8 only and hard-caps the grid at 8x8 (clips outside 1..8 are dropped), so Scene Launch 4 fires Flat ECG, The Heart, Heartbeat Lamp and 45 MIN OF DEAD AIR together and the full phrase of silence never happens.",
+    "fix": "Keep the four clips in C4 and rewrite the moment: fire Scene Launch 4, immediately clear layers 2-5 from the APC (layer clip-stop), hold the phrase on BED + SCOPE, then re-tap the row 2/3/4/5 pads in order; note in the build sheet that the clips arrive with the scene unless cleared."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "problem": "Countdown Ten counts at the wrong speed. Range Characters with Delay 1000 types one character per second including the nine spaces, so a digit lands every 2 s and '10' arrives as '1' then '0': twenty seconds of count, not 'one digit a beat' as the moment demands.",
+    "fix": "Range 'Characters' -> 'Words', Delay 1000 -> 500 (60000/BPM; 500 at 120 BPM) so each number fades in on a beat; keep Order Front to back, Opacity 0, Animated true."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "problem": "The BED reacts to hi-hats. Newsreel Sky binds Dither 2->8 to the high band, which the fft philosophy forbids twice over (highs touch GRAIN opacity only; the environment does not dance), and on a 20-level gradient from #0b0d0f to #1f2022 a dither swing on every hat is a visible banding shimmer across the whole frame.",
+    "fix": "Remove the binding (fft {}) and leave Dither static at 4."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "problem": "Violet Throat is a FIGURE that is just another field. Mode Fill with Mirror on, Amplitude 0.25 and Trails Feedback 0.8 produces a solid violet slab across the middle half of the frame that persists in the feedback; it fights the full-frame Tunnelines corridor on layer 2 and the 12% wash, making Whistling the busiest column in the deck, and the #8c62c9 text has almost no contrast where it crosses the slab.",
+    "fix": "Mode 'Fill' -> 'Line', Line Width 0.2 -> 0.08, Amplitude 0.25 -> 0.18, Trails Feedback 0.8 -> 0.65: a drawn throat with a short smear, with the room tint carried by BG Color #5b3c8a1f per the layer-6 fix."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "problem": "The deck assumes two opposite Y conventions. Transform Position Y -420 is described as 'top-right corner' and Text Position Y -380 with Top alignment as the top-left transcript, while Metaballs Position Y -0.3 is described as 'low in the frame'. Resolume's Transform and Text Position Y are Y-up, so the tally lamp (C1-C6) and all eight text lines land within 170 px of the bottom edge, inside the scope's lower third, and with the scope's Amplitude ceiling 0.25 (+/-270 px) the trace swings through the words.",
+    "fix": "Tally Transform Position Y -420 -> +420 on C1-C6 (Master Alarm -410 -> +410) and Text Position Y -380 -> +380 on all eight text clips, keeping AlignmentVertically Top; then confirm on the rig that Sine Wave Position 0.8 is the lower third (use 0.2 if Position 0 is the bottom) so the scope owns that band alone."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "Downlink Scope snaps on every hat, in all eight columns. Frequency bound to the high band 1->6 with gain 8 and a 250 ms release compresses the trace from one cycle to six and springs it back several times a second: an accordion jitter, not a scope following a signal, and the one element that is supposed to be the honest readout becomes the twitchiest thing on screen.",
+    "fix": "On every Downlink Scope: Frequency ceiling 6 -> 2.5, release 250 -> 600; or move the high band to Fuzzyness (floor 0.05, ceiling 0.3, release 400) so hats read as noise on the trace, keeping Amplitude on mid and Line Width on low."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "problem": "Newsreel Rain is sub-pixel. Lines Width is a fraction of the line pitch (range 0-2, default 0.3 at Amount 5); at Amount 40 the pitch is 48 px, so Width 0.01 is a half-pixel line that Fuzzyness 0.3 blurs away: forty green lines at 70% that alias into a shimmer or vanish. Alarm Trace (C6, 45 px pitch, fft floor 0.01) and Trace Tightening (C3, fft floor 0.01) hit the same sub-pixel floor on every trough.",
+    "fix": "Newsreel Rain Width 0.01 -> 0.06, Fuzzyness 0.3 -> 0.15; Alarm Trace Width 0.02 -> 0.04 with fft floor 0.01 -> 0.02; Trace Tightening fft floor 0.01 -> 0.015."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "problem": "Far Side Corridor lurches. Tunnelines Zoom bound to the low band 0.8->1.6 (gain 6, 900 ms release) doubles the corridor's scale on every kick, a scale snap on the body layer where the bible asked for 'Zoom slow' and reserves the low band for amplitude-type parameters.",
+    "fix": "Zoom fft floor 0.8 -> 0.85, ceiling 1.6 -> 1.05, release 900 -> 2000; the inward pull on the kick comes from the bank-B knob with Tunnel lit, as the moment already says."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "problem": "Splashdown Wire's line break will probably not survive the build. The Text Block carries a literal newline and resolume_build/avc.py esc() emits it raw inside an XML attribute, where conforming parsers normalise it to a space, so 'SPLASHDOWN, 1652 GMT THE LOOP IS QUIET' becomes one 38-character line wrapped wherever Line Width 1400 happens to break it; the project's own notes list newlines as rig-unverified.",
+    "fix": "In resolume_build/avc.py esc(), add .replace('\\n', '&#10;') so the break survives attribute normalisation and verify once on the rig; failing that, Text -> 'SPLASHDOWN, 1652 GMT' as a single 20-character line in the same transcript position as the other seven columns."
+   }
+  ]
+ },
+ "critique:german-bight": {
+  "verdict": "German Bight is the most disciplined deck in the pack and every name, option and value is dictionary-clean, but the two motions it is built around (the ten-second sweep and the Fl(2) character) do not exist in the spec, the Rockall rock is painted in the exact hex its fog bed peaks at, the SCOPE's Frequency binding will scramble on every hi-hat, and four washes sit at two to three times the bible's own percentages, so it reads warmer, busier and more kick-driven than the long-wave room it describes.",
+  "issues": [
+   {
+    "layer": 1,
+    "column": 7,
+    "problem": "Rockall Fog Bank is tinted Black To #0e141a, White To #8c979c, and the FIGURE on layer 3 (Rockall Rock) is Color #8c979c with Outline Color #8c979c: the rock's only value is the fog bank's brightest value, so a full-frame animated field in fog grey has a fog-grey shape sitting in it. The FIGURE is just another field; the palette promises the figure is lighter than the sea it sits on.",
+    "fix": "Tint \"White To\" #8c979cff -> #5f6f78ff (swell grey) so the bank peaks at body and the fog-grey rock reads one step lighter; keep the rock's Color and Outline Color at #8c979cff."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "Bridge Barograph (all eight columns) binds Sine Wave Frequency to the high band, floor 2 ceiling 8, release 250 ms. Changing Frequency re-periods the entire trace, so every hi-hat redraws the line with a different wavelength: the honest readout scrambles instead of reading. The bible allows the SCOPE to follow the signal 1:1 on its gain, not its period.",
+    "fix": "Remove the Frequency binding and fix Frequency 3 in all eight columns; if the hats need a trace, bind Fuzzyness instead: high, gain 8, release 250, floor 0.05, ceiling 0.25."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "problem": "Rockall Rain binds Lines Amount (the line COUNT) to the high band 60 -> 90 with a 300 ms release. Each count change re-spaces the whole field, so the rain jumps sideways on every hat instead of thickening; it is a snap, and it is the one hi-hat binding in the deck that moves geometry.",
+    "fix": "Fix Amount at 70 and remove its binding; bind Fuzzyness high, gain 6, release 300, floor 0.5, ceiling 0.8, exactly as Dogger Rain (layer 7 column 4) already does."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "problem": "Lighthouse Wedge (and Utsire Wedge, Bight Beam, Fog Lamp in columns 3, 5, 7) has a static Rings Rotation (-90, -45, 20, 135) and nothing turns it; SearchLight is a drifting soft spot, not a rotation. Fl(2) W 10s never happens, and the Sailing By moment, where the sweep is 'the only motion in the room', has no motion. The four different static angles are a workaround that makes the lamp jump on every column change.",
+    "fix": "At build, drive Rings \"Rotation\" with a 10 s looping Timeline -180 -> 180 (or clip Transform Rotation Z on the same loop); this spec format cannot carry it, so log it as a build-time add. Set the static Rotation to -90 in all four columns so the lamp does not jump between scenes, and keep SearchLight for the blur only."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "problem": "Gale Card sets all four lines in gale red #a8323a and sits over a 20% red Solid wash on layer 6: red type on a red room, exactly the 'blood not storm cone' the palette warns against. The bible reserves gale red for the one line SEVERE GALE 9, and a Text Block has a single Color, so the per-line red it asks for is impossible.",
+    "fix": "Color #a8323aff -> #e9e4d8ff (card white); the red lives in the layer 6 wash and nowhere else. Line lengths (16/20/19/22) are all within 22 and the \\n breaks use the &#10; path Lexicon II verified on the rig."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "problem": "Gale Red Wash is Solid Color #a8323a at opacity 0.2 on the default Add blend; the bible and the palette both specify 6%. At 20% every grey in the column lifts to maroon and this is the wash that turns the gale card into blood.",
+    "fix": "opacity 0.2 -> 0.06."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "problem": "Gale Flash (and Dogger Flash 0.08, Fastnet Flash 0.12 in columns 4 and 6) is a free-running Stroboscope at Frequency 0.1, a rate nobody has measured on this rig, flashing the full frame in lamp colour at 25-30% continuously. The published character is two flashes then eight seconds of dark; a free-running strobe cannot rest, and if 0.1 maps to anything above one flash per five seconds it is a strobe in the deck whose philosophy says a kick never reads as a flash.",
+    "fix": "Static value Frequency 0.1 -> 0.02 (verify on the rig that it fires slower than once per 5 s; raise only until it does) in columns 2, 4, 6; at build, put Frequency on a 10 s Timeline (0.5 for 1 s, 0 for 9 s) for the Fl(2) pattern, per the bible's layer 4 note."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "problem": "Peak Barograph binds Amplitude to the low band with ceiling 0.5, Mirror on, Position 0.5: on every kick the mirrored wave spans the full frame height, and Trails Feedback 0.85 Lighten holds that smear for seconds. It covers the six pulse arcs and the deck's title card GERMAN BIGHT, HUMBER at -380. Two full-frame things fighting at the deck's peak.",
+    "fix": "Amplitude ceiling 0.5 -> 0.32 (floor 0.2 stays), Trails Feedback 0.85 -> 0.7."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "problem": "Lamp Pulse Ring binds Size to the low band 0.7 -> 1.3 with a 700 ms release (same pattern in columns 2, 3, 5, 6): a ring that nearly doubles in diameter on every kick and snaps back before the next is a kick-pump, not the ten-second lighthouse pulse the bible builds on a four-bar Timeline. The lighthouse is supposed to be 'heard more than seen'.",
+    "fix": "Size binding floor 0.85 ceiling 1.05, release 1400 (the EarthSearch ORBIT RINGS precedent, 0.82-1.02 at 1400) in all five columns; the real build drops the FFT and puts Size on the four-bar Timeline."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "problem": "Fog Vignette is a Radial gradient with swell grey in the CENTRE and bed at the edge, opacity 0.22, on the default Add blend. Adding near-black at the edge does nothing; adding grey at the centre lifts it. So the column whose 'why' says the vignette is closing harder has the brightest centre in the deck.",
+    "fix": "opacity 0.22 -> 0.12 (it is a horizon lift, match the others), and leave the closing to the bank-A Vignette effect the bible assigns to this moment."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "Bridge Barograph (all columns) binds Amplitude to mids with ceiling 0.2, Mirror off, at Position 0.9: a 0.2 swing around 0.9 runs 0.7-1.1, so the readout clips off the frame edge on loud mids and climbs a third of the frame into the +380 text band (columns 1, 4, 6, 8) and the Line Scape floor. The one honest element should stay on the bottom edge.",
+    "fix": "Amplitude ceiling 0.2 -> 0.1 in all eight columns (floor 0.03 stays); Line Width binding 0.03-0.09 is fine."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "problem": "Dawn Under Lamp is a Vertical gradient lamp #ffe8a3 to clear at opacity 0.2; the bible says 6%. Stacked on the 0.2 pre-dawn wash on layer 6, Fair Isle becomes a flat warm fog, and the palette says the lamp is LIGHT only, 'the one warm thing for thirty miles': a 20% warm wash is a second warm thing.",
+    "fix": "opacity 0.2 -> 0.06."
+   }
+  ]
+ },
+ "critique:the-sitters": {
+  "verdict": "A disciplined, well-composed deck whose palette, text, and dictionary hygiene all hold; its real failures are feasibility gaps the stock schema cannot express (no Multiply for layer 6, no Play Once/Eject for the Knock, a Text Animator whose typed-on overdub will not animate as written) plus a few FFT bindings that pump or snap where the bible asked for breath.",
+  "issues": [
+   {
+    "layer": 5,
+    "column": 7,
+    "problem": "Cold She Says will not type on. In Text Animator the params after Animated (Opacity, Scale, Animated Position, Rotation...) are the per-character START state; with Opacity 1 and Scale 1 every character begins identical to its end state, so Delay 120 does nothing and the overdub appears as a static line. Separately, Alignment Center with Position X -420 puts the centre of a ~1100-1300 px line 420 px left of frame centre, pushing its left end to or past the left edge of a 1920 frame.",
+    "fix": "Set Opacity 0 (animated start state) so characters fade in front-to-back over the Delay 120 stagger; set Alignment Left and Position X -820 so the line starts ~140 px in from the left edge at Position Y -340."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "EVP Needle (identical in all eight columns) binds Sine Wave Frequency to the high band, floor 2 ceiling 12, gain 8, release 250 ms. A 10-unit jump in spatial frequency on every hi-hat redraws the line from 2 to 12 cycles across the frame and snaps back in a quarter second: a jittering squiggle, not a needle. The bible routes highs to GRAIN opacity and ember dots only.",
+    "fix": "Delete the Frequency binding and leave Frequency 3; if the hats must touch the needle, bind Line Width instead (already bound to low) or set Frequency floor 3 ceiling 5 with release 600."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "problem": "EVP Needle (all columns) Amplitude bound mid, floor 0.03 ceiling 0.3, gain 10. At Position 0.9 a 0.3 amplitude swings roughly 300 px up from the bottom edge and clips off the bottom, so on every mid hit the 'bottom edge' needle rises straight through the two-line text sitting at Position Y 380 in Join Hands, The Table and Trumpet Lifts, and smears over the ring in column 2.",
+    "fix": "Amplitude ceiling 0.12, gain 8 (floor 0.03 unchanged); the needle then lives in the bottom ~130 px under the text."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "problem": "The Knock is a plain Stroboscope at Frequency 0.08, Fade off, full-frame bone at 35%, with no transport in the spec. As written it free-runs: a hard bone flash every couple of seconds regardless of the music or the pad, which is exactly the strobe the bible forbids ('answered by hand, never more than once a bar'). The bible's Play Once + Eject + 120 ms trim is not expressible in this clip schema.",
+    "fix": "Builder must write clip transport: Play Once, Eject on end, clip duration 120 ms, triggered by the row-4 pad; until the schema carries that, this cell should be a Blank (Black BG false) so the column does not strobe on scene launch."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "problem": "Knock Once Yes sets Spacing X 30 on the whole Text Block, so the question 'KNOCK ONCE FOR YES' is tracked out identically to the answer 'Y E S' and the contrast between a line that is read and a line spelled on a board is lost; at Size 1.4 Baskerville an 18-character line plus 17x30 tracking also risks wrapping inside Line Width 1400. Table Tilted (layer 5 column 4) has the same fault.",
+    "fix": "Spacing X 4 and spell the answer with literal spaces: Text 'KNOCK ONCE FOR YES\\nY    E    S' (four spaces between letters); likewise column 4 Text 'TABLE TILTED 11:47\\nG    O    O    D    B    Y    E' with Spacing X 4."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "problem": "Sepia Vignette is backwards. Radial gradient from transparent centre to opaque #6b4a2e edge at 35%: in Alpha the edges become 0.65 x parlour black + 0.35 x sepia = ~#31231a, i.e. the edges get LIGHTER than the bed, a reverse vignette; in Add it only lifts the edges further. The bible's Multiply blend, which makes this read as a vignette, is not in the clip spec. Knock Vignette (layer 6 column 3, edge #3a2616ff) has the same fault.",
+    "fix": "Color 2 #120e0bff (parlour black edge) so the gradient closes the room in Alpha, and have the builder set layer 6 blend to Multiply; apply the same Color 2 to column 3."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "problem": "Trumpet Glow is a full-frame three-leaf Spiral at Zoom 1.2, Distortion 30, opacity 0.5 with Zoom bound low 1.0 to 1.5 at gain 8 release 400: a candle-coloured field that zoom-pumps on every kick directly under the Mirror Quad cathedral (layer 2) and the bloomed triangles (layer 3). The LIGHT layer has become a second BODY field and the busiest column of the deck now has three full-frame rotating structures fighting; the lamp itself is absent at the peak.",
+    "fix": "Replace with the lamp: Metaballs Grid 2, Blend Minimal, Size 0.1, Distance 0.4, Radius 0.4, Fuzzyness 0.95, Speed 0.3, Position X -0.4, Position Y 0.3, Color #f2b65a, BG #00000000, Bloom as in column 5, Size FFT low floor 0.08 ceiling 0.18; if the spiral must stay, Zoom FFT release 1200 ceiling 1.3, Distortion 0, opacity 0.3."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "problem": "Trumpet Lifts binds Outer Scale low floor 1.1 ceiling 1.6 at gain 9 release 400 ms. A nested seven-triangle set that scales 45% on every kick and snaps back in 400 ms is a zoom pump, not a trumpet rising; the bible gives scale and rotation to the low-mid 2-second envelope so they breathe rather than kick.",
+    "fix": "Outer Scale floor 1.2 ceiling 1.4, gain 7, release 1200 (band low-mid if the builder supports it), so the bell swells over a bar instead of jumping per kick."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "problem": "Damask Weave binds Checkered Num X high 64 to 96 at gain 6 release 300. Tile count is an integer: every hi-hat re-tiles the whole grid and it snaps back, which reads as a flickering moire across the frame even at 5%. The bible says highs touch GRAIN opacity only.",
+    "fix": "Delete the Num X binding and leave Num X 64; if hats must touch the weave, bind the clip opacity high floor 0.03 ceiling 0.07 instead."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "problem": "No Body is Solid Color #cfd6cc at opacity 0.03, and the same placeholder pattern is used for No Lamp (layer 4 column 7, #2b6cff at 0.03) and Damask Gone (layer 2 column 8, #6b4a2e at 0.05). Three near-invisible solids still render, and in Add or Alpha a 3% bone fill lifts the blacks of the deck's darkest column by ~#060606, exactly where the bible wants only hiss, needle and voice. The dictionary has Blank, which is what the bible specifies for these cells.",
+    "fix": "Source Blank with Black BG false (opacity 1) for layer 3 column 7, layer 4 column 7 and layer 2 column 8."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "problem": "Lamp Comes Up is a full-frame Stroboscope in #f2b65a at opacity 0.6, Fade on. At the pulse peak the entire frame goes to ~#916d36 (Alpha) or brighter (Add): the brightest moment in the deck lands in the quietest column, washing the centred BREAK THE CIRCLE NOW text and killing the parlour black the column is built on. The opening gutter (column 1) does the same thing at 0.18.",
+    "fix": "Opacity 0.25 (Frequency 0.05, Fade on unchanged); the lamp comes up as a breath, not a wash."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "problem": "Lamp Gutter binds Stroboscope Frequency to the high band, floor 0.04 ceiling 0.15, gain 6: hi-hats accelerate a full-frame amber pulse by ~4x, so the opening column's light flickers with the hats. The bible restricts highs to GRAIN opacity and ember dots and says a kick 'never reads as a flash'; this LIGHT layer is also a field over the whole room rather than a flame at the lamp.",
+    "fix": "Delete the Frequency binding and leave Frequency 0.06, Fade on; drop opacity to 0.12 so the gutter sits under the Metaballs throw instead of over it."
+   }
+  ]
+ },
+ "critique:hour-of-saturn": {
+  "verdict": "The thinking is the strongest in the pack (palette discipline, the Kamea-as-Checkered trick, the Engravers/Bodoni split, explicit blanks) but the light is undercooked: no strobe is on the bar, column 4 stacks two red fields that turn the reserved verdigris salmon, highs leak into the walls, the scope climbs into the seal, and the one type-on does not type; fix the LIGHT and AURA rows and the FFT ceilings and it plays as written.",
+  "issues": [
+   {
+    "layer": 4,
+    "column": 4,
+    "problem": "Red Gel Cut is a horizontal Stepped red-to-transparent gradient at 0.7: a second full-frame gel, not the Lamp. Stacked on L6's 35% red wash under Resolume's default Add blend, the left half of the frame saturates to solid Argento red and the verdigris Kamea that straddles the cut goes salmon on one side; the one colour the gel cannot make is exactly what gets made. Column 4 is two red fields fighting.",
+    "fix": "Type Horizontal -> Radial, opacity 0.7 -> 0.4, add Transform (Position X -520, Position Y 0, Scale 80) so it is the C1 lamp pool moved to the gel side; let L6 alone carry the gel."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "problem": "The bible specifies Multiply for the red gel and Screen for blue, but the clip spec carries no blend mode, so the AURA layer lands on the default Add and a 35% #c1121f solid lifts the crypt black to a flat red fog (~#42060b) instead of tinting what is lit. The blacks the whole deck depends on go muddy in C4 and C7, and the same applies to the blue washes in C5/C6.",
+    "fix": "Set the L6 layer blend to Multiply for the whole deck (a gel subtracts light; one layer cannot be both Multiply and Screen); keep Red Gel Wash 0.35 here and 0.22 in C7, raise Blue Gel Wash (C5) 0.25 -> 0.45 and Gels Meet (C6) 0.3 -> 0.45 so blue reads under Multiply. The blue counter-light already lives on L4."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "problem": "Hour Blade is a free-running Stroboscope at Frequency 0.06, Fade off, full-frame chalk at 0.7: a repeating whiteout for as long as the column is live, neither on the bar nor rate-limited, and not the 120 ms Play Once / Eject blade the bible calls for. Every flash blows the verdigris Kamea and the bone sigils to white.",
+    "fix": "Clip transport Play Once + Eject on end with a 120 ms clip length so one pad press is one blade (set Frequency 1.0 so it is lit for its whole life); at minimum BPM-sync Frequency to 4 beats and drop opacity 0.7 -> 0.5."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "problem": "Blue Gel Flash binds Stroboscope Frequency to the mids (0.06 -> 0.16, 600 ms), so the flash rate wanders with level and never lands on the downbeat the Argento cut depends on. L4C6 Blue On The Bar does the same (0.1 -> 0.22) despite its name, and both are full-frame Add flashes at 0.7 / 0.6 that turn verdigris to cyan on every hit. L4C7 Lamp Guttering free-runs at the 0.5 default, a metronome rather than a flame.",
+    "fix": "Remove the Frequency FFT on C5 and C6 and BPM-sync Frequency to 4 beats (one flash per bar), Fade on; opacity C5 0.7 -> 0.4, C6 0.6 -> 0.4. C7 Frequency 0.5 -> 0.12."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "problem": "Highs are bound to the BED's Dither here and in C4, C5, C7 (4 -> 14), to BODY edge softness in L2C3 (Out Edge S 2), to the lamp's Dither in L4C3 and the AURA's in L6C6. The bible gives highs to GRAIN only and says the environment does not dance; on an 18-level near-black gradient a hi-hat-pumped dither is a crawling shimmer across the back wall. L2C4 also binds an integer count (Line Ammount 10 -> 18) to a 700 ms mid envelope, so lines pop in and out on every transient.",
+    "fix": "Delete the Dither FFT on L1 C2/C4/C5/C7, L4C3 and L6C6 (Dither static 8; L6C6 static 4); delete the Out Edge S 2 FFT on L2C3 (static 0.006); L2C4 Line Ammount release 700 -> 2000 ms, ceiling 18 -> 14."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "problem": "Contracting Web binds Rings Size on the low band from 0.5 to 1.4 at gain 10: a near-3x expansion of all 24 rings on every kick with a 400 ms release. That is a snap, and the opposite of contraction; the bible wants the web closing over eight bars on a Timeline with the kick as a push.",
+    "fix": "FFT Size floor 0.55, ceiling 0.75, gain 7. Put the eight-bar contraction on the clip Timeline (Size 1.2 -> 0.4) if the build supports envelopes; otherwise leave Size at 0.6 and let Bloom on the bank-A knob do the pull."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "problem": "Spiral is a frame-filling generator; at 0.8 with Trails Lighten 0.85 the reserved verdigris smears into a full-frame field under the 24-ring web, the blue strobe and the red-blue AURA. The FIGURE becomes another BED and the peak column has three fields fighting.",
+    "fix": "Add Shape Mask (Shape Circle, Scale 40, Feather 40) as the first effect so the spiral is a seal-sized disc at centre; Trails Feedback 0.85 -> 0.65; opacity 0.8 -> 0.6."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "In every column the scope sits at Position 0.9 with Amplitude FFT ceiling 0.3, so a loud mid swings the trace from y 0.6 up into the circle and seal while clipping the bottom half off the frame. Frequency on highs from 0.5 to 6 (12x) with a 250 ms release makes the line a nervous squiggle on every hat; a scope reads amplitude honestly, it does not change timebase with level.",
+    "fix": "Amplitude ceiling 0.3 -> 0.12 (floor 0.03) on all eight scopes; Frequency ceiling 6 -> 3, release 250 -> 400, gain 8 -> 6."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "problem": "I Conjure Thee has Animated on, Range Characters, Delay 150, but no animated-state parameter differs from the rest state (Text Animator's animated Opacity and Scale are left at their 1.0 defaults), so each character animates from itself to itself and the line appears in one go. The deck's only type-on does not type on.",
+    "fix": "Text Animator Opacity (the animated-state opacity, listed after Delay) 1 -> 0 so each character fades in over the delay; keep Delay 150 and Order Front to back (or start from the Type On & Off preset)."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "problem": "Every title card (C1-C7) is AlignmentVertically Center with Position Y -380, assuming screen-down Y; Resolume's Y axis is positive-up, so the cards would land ~380 px below centre on top of the SCOPE at 0.9, and the bible says Top. The same sign decides whether L3C5's Kamea at (-480, -270) sits inside the quadrant Mirror Quad samples; if it does not, the fourfold seal is empty.",
+    "fix": "AlignmentVertically Center -> Top and Position Y -380 -> 0 on C1-C7, then inset 60 px once the sign is confirmed on one cell. For L3C5 confirm the seal is visible on the rig; if not, Transform Position Y -270 -> 270 (or Mirror Quad Flip Y true)."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "problem": "Register Grid is Checkered 64x36, a checkerboard of 30 px bone cells, not a ruled sheet. At 6% Add it is a static texture (grain is supposed to move) that moires with the nine nested bone squares and the Edge-Detected Kamea, and it breaks the one-source GRAIN row every other column keeps.",
+    "fix": "Source Static, Mode Color, opacity 0.1 to match the row. If a ruled sheet is wanted instead: Solid Color #00000000 with a Grid effect (Width 0.01, Size X 0.03, Size Y 0.053, Color #d8c9a8) at opacity 0.06."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "problem": "All five Geometry Pattern Maker clips (C1-C5) collapse Inner Scale and Intersect Scale to 0 while leaving Mask Intersect true. If that flag masks the outer lines by the intersect shape, a zero-size intersect masks everything and the BODY row is dark for five columns. Unverified on the rig, and a free fix either way.",
+    "fix": "Mask Intersect true -> false on L2 C1-C5; with inner and intersect collapsed and transparent there is nothing left to mask."
+   }
+  ]
+ }
+}

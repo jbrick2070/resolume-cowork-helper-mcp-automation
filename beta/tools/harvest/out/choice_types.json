@@ -1,0 +1,405 @@
+{
+ "sources": {
+  "Geometry Pattern Maker": {
+   "Bloom Mode": {
+    "T": "INT32",
+    "by": "?22",
+    "default": "21"
+   },
+   "Shape Types": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Inner C Wrapping 3": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Inner L Wrapping 2": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "In Curv Space": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Out C  Wrapping": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Outer L Wrapping": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Out Curv Space": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Gradient": {
+   "Method": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Type": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Metaballs": {
+   "Blend": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Shaper": {
+   "Noise Type": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   }
+  },
+  "Sine Wave": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Direction": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Spiral": {
+   "Direction": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Control Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Static": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   }
+  },
+  "Text Animator": {
+   "Alignment": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "0"
+   },
+   "AlignmentVertically": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "1"
+   },
+   "Range": {
+    "T": "UINT8",
+    "by": "?3",
+    "default": "0"
+   },
+   "Order": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Text Block": {
+   "Alignment": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "1"
+   },
+   "AlignmentVertically": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "1"
+   }
+  }
+ },
+ "effects": {
+  "CRT": {
+   "Color Left": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Color Middle": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   },
+   "Color Right": {
+    "T": "INT32",
+    "by": "index",
+    "default": "2"
+   },
+   "Display Mode": {
+    "T": "INT32",
+    "by": "?0",
+    "default": "1"
+   }
+  },
+  "Colorize": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Dilate": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Shape": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Displace": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Dither": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Grid Cloner": {
+   "Order": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   }
+  },
+  "Linear Cloner": {
+   "Delay Order": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Delay Fill": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Meta Shape": {
+   "Shape 1": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   },
+   "Shape 2": {
+    "T": "INT32",
+    "by": "index",
+    "default": "3"
+   },
+   "Color": {
+    "T": "INT32",
+    "by": "index",
+    "default": "2"
+   },
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "2"
+   }
+  },
+  "Particle System": {
+   "Spawn Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Radial Cloner": {
+   "Delay Order": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Delay Fill": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Reveal": {
+   "Texture": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Scaling": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   },
+   "Order": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   },
+   "Seed": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Shape Mask": {
+   "Shape": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Shaper": {
+   "Noise Type": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   }
+  },
+  "Shift RGB": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Sparkles": {
+   "Texture": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Spawn Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Sphere": {
+   "NoiseType": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "ColorMode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   },
+   "ThresholdMode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Static": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "1"
+   }
+  },
+  "Stingy Sphere": {
+   "Input": {
+    "T": "INT32",
+    "by": "?1",
+    "default": "0"
+   }
+  },
+  "Strokes": {
+   "Frequency Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   },
+   "Size Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Text Animator": {
+   "Alignment": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "0"
+   },
+   "AlignmentVertically": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "1"
+   },
+   "Range": {
+    "T": "UINT8",
+    "by": "?3",
+    "default": "0"
+   },
+   "Order": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Text Block": {
+   "Alignment": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "1"
+   },
+   "AlignmentVertically": {
+    "T": "UINT8",
+    "by": "index",
+    "default": "1"
+   }
+  },
+  "Threshold": {
+   "Alpha": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  },
+  "Trails": {
+   "Mode": {
+    "T": "INT32",
+    "by": "index",
+    "default": "0"
+   }
+  }
+ }
+}

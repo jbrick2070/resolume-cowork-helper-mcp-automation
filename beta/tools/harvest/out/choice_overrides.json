@@ -1,0 +1,23 @@
+{
+ "Range|All,Lines,Words,Characters": {
+  "All": 3,
+  "Lines": 2,
+  "Words": 1,
+  "Characters": 0
+ },
+ "Bloom Mode|50 Add,50 Burn,50 Difference,50 Distance,50 Dodge,50 Lighten,50 Mask,50 Multiply,50 Overlay,50 Subtract,Add,Alpha,BlackAndWhite,Burn,Cut,Darken,Difference,Difference I,Displace,Dodge,Exclusion,Hard Light,Lighten,Luma Is Alpha,Luma Key,Luma Key I,Multiply,Overlay,RGB,Screen,Soft Light,To Black,To White": {
+  "Hard Light": 20,
+  "Lighten": 21,
+  "Luma Is Alpha": 22,
+  "Luma Key": 23,
+  "Luma Key I": 24,
+  "RGB": 25,
+  "To Black": 26,
+  "To White": 27,
+  "Multiply": 28,
+  "Overlay": 29,
+  "Screen": 30,
+  "Soft Light": 31,
+  "Exclusion": 32
+ }
+}

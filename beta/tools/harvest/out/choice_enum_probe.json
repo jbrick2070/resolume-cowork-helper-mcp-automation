@@ -1,0 +1,296 @@
+{
+ "Rings|Style|default=0": {
+  "Fill": [
+   0,
+   "Fill"
+  ],
+  "Stroke": [
+   1,
+   "Stroke"
+  ],
+  "Alternate": [
+   2,
+   "Alternate"
+  ]
+ },
+ "Rings|Style|default=2": {
+  "Fill": [
+   0,
+   "Fill"
+  ],
+  "Stroke": [
+   1,
+   "Stroke"
+  ],
+  "Alternate": [
+   2,
+   "Alternate"
+  ]
+ },
+ "Text Animator|Range|default=3": {
+  "All": [
+   0,
+   "Characters"
+  ],
+  "Lines": [
+   1,
+   "Words"
+  ],
+  "Words": [
+   2,
+   "Lines"
+  ],
+  "Characters": [
+   3,
+   "All"
+  ]
+ },
+ "Text Animator|Order|default=0": {
+  "Front to back": [
+   0,
+   "Front to back"
+  ],
+  "Back to front": [
+   1,
+   "Back to front"
+  ],
+  "Random": [
+   2,
+   "Random"
+  ]
+ },
+ "Geometry Pattern Maker|Bloom Mode|default=22": {
+  "50 Add": [
+   0,
+   "50 Add"
+  ],
+  "50 Burn": [
+   1,
+   "50 Burn"
+  ],
+  "50 Difference": [
+   2,
+   "50 Difference"
+  ],
+  "50 Distance": [
+   3,
+   "50 Distance"
+  ],
+  "50 Dodge": [
+   4,
+   "50 Dodge"
+  ],
+  "50 Lighten": [
+   5,
+   "50 Lighten"
+  ],
+  "50 Mask": [
+   6,
+   "50 Mask"
+  ],
+  "50 Multiply": [
+   7,
+   "50 Multiply"
+  ],
+  "50 Overlay": [
+   8,
+   "50 Overlay"
+  ],
+  "50 Subtract": [
+   9,
+   "50 Subtract"
+  ],
+  "Add": [
+   10,
+   "Add"
+  ],
+  "Alpha": [
+   11,
+   "Alpha"
+  ],
+  "BlackAndWhite": [
+   12,
+   "BlackAndWhite"
+  ],
+  "Burn": [
+   13,
+   "Burn"
+  ],
+  "Cut": [
+   14,
+   "Cut"
+  ],
+  "Darken": [
+   15,
+   "Darken"
+  ],
+  "Difference": [
+   16,
+   "Difference"
+  ],
+  "Difference I": [
+   17,
+   "Difference I"
+  ],
+  "Displace": [
+   18,
+   "Displace"
+  ],
+  "Dodge": [
+   19,
+   "Dodge"
+  ],
+  "Exclusion": [
+   20,
+   "Hard Light"
+  ],
+  "Hard Light": [
+   21,
+   "Lighten"
+  ],
+  "Lighten": [
+   22,
+   "Luma Is Alpha"
+  ],
+  "Luma Is Alpha": [
+   23,
+   "Luma Key"
+  ],
+  "Luma Key": [
+   24,
+   "Luma Key I"
+  ],
+  "Luma Key I": [
+   25,
+   "RGB"
+  ],
+  "Multiply": [
+   26,
+   "To Black"
+  ],
+  "Overlay": [
+   27,
+   "To White"
+  ],
+  "RGB": [
+   28,
+   "Multiply"
+  ],
+  "Screen": [
+   29,
+   "Overlay"
+  ],
+  "Soft Light": [
+   30,
+   "Screen"
+  ],
+  "To Black": [
+   31,
+   "Soft Light"
+  ],
+  "To White": [
+   32,
+   "Exclusion"
+  ]
+ },
+ "Metaballs|Blend|default=0": {
+  "Minimal": [
+   0,
+   "Minimal"
+  ],
+  "Average": [
+   1,
+   "Average"
+  ]
+ },
+ "Gradient|Type|default=0": {
+  "Horizontal": [
+   0,
+   "Horizontal"
+  ],
+  "Vertical": [
+   1,
+   "Vertical"
+  ],
+  "Radial": [
+   2,
+   "Radial"
+  ],
+  "Angular": [
+   3,
+   "Angular"
+  ]
+ },
+ "Static|Mode|default=1": {
+  "Color": [
+   0,
+   "Color"
+  ],
+  "Grayscale": [
+   1,
+   "Grayscale"
+  ],
+  "Two-tone": [
+   2,
+   "Two-tone"
+  ]
+ },
+ "Sine Wave|Direction|default=0": {
+  "Horizontal": [
+   0,
+   "Horizontal"
+  ],
+  "Vertical": [
+   1,
+   "Vertical"
+  ]
+ },
+ "Spiral|Control Mode|default=0": {
+  "Even": [
+   0,
+   "Even"
+  ],
+  "Detailed": [
+   1,
+   "Detailed"
+  ]
+ },
+ "Shaper|Noise Type|default=1": {
+  "Grain": [
+   0,
+   "Grain"
+  ],
+  "Hatched": [
+   1,
+   "Hatched"
+  ]
+ },
+ "Text Animator|Alignment|default=0": {
+  "Left": [
+   0,
+   "Left"
+  ],
+  "Center": [
+   1,
+   "Center"
+  ],
+  "Right": [
+   2,
+   "Right"
+  ]
+ },
+ "Text Animator|AlignmentVertically|default=1": {
+  "Top": [
+   0,
+   "Top"
+  ],
+  "Center": [
+   1,
+   "Center"
+  ],
+  "Bottom": [
+   2,
+   "Bottom"
+  ]
+ }
+}

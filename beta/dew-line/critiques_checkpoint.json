@@ -1,0 +1,233 @@
+{
+ "critique:sit-and-wait": {
+  "verdict": "Disciplined and honest: every source, effect, parameter and value is in the dictionary and in range, the palette never slips, the text corpus is clean and the FFT restraint mostly holds, but the deck has not been checked against the frame - seven of eight headers run off the right edge, the bottom-strip scope leaves the frame on every mid hit, and The Rush stacks a full-frame rust body, a 40 percent flickering mosaic and a strobe into one column so the peak reads as mud rather than a strike.",
+  "issues": [
+   {
+    "layer": 5,
+    "column": 2,
+    "problem": "Text Animator fits about 25 characters across a 1920 frame at Size 1 (rig-verified, ~77 px per char), so TWELVE DAYS WITHOUT at Size 0.85 is ~1240 px wide; centred at Position X 520 it spans roughly -100 to +1140 and loses ~180 px off the right edge. Same arithmetic clips RUSH IN 0.3 SEC (1.1 at X 520), TREMOR 02:14:07, LISTEN WITH FEET, PLUCK. LISTEN., ROTATE AND WRAP and CONTACT LOST (1.3 at X 440); only SIT. WAIT. fits.",
+    "fix": "On all eight layer-5 clips set Alignment to \"Right\" and Position X to 860 (keep Position Y -400): every header then ends on the same 100 px right margin like a strip-chart header regardless of length."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "Sine Wave at Position 0.86 with the Amplitude FFT ceiling at 0.3 (gain 9, 150 ms release) swings the mirrored trace across 0.56 to 1.16, so the bottom lobe leaves the frame on every mid hit; and the Line Width ceiling 0.18 is 4.5x the resting 0.04, so each kick turns the pen line into a band. Same on the Position 0.85 scopes in columns 3, 4, 5, 6 and 7.",
+    "fix": "On the six bottom-strip scope clips (columns 1, 3, 4, 5, 6, 7) set the Amplitude FFT ceiling to 0.12 and the Line Width FFT ceiling to 0.09; leave the centred clips in columns 2 and 8 at 0.3 where they have room."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "problem": "Pen Skids Grain is Static Two-tone at opacity 0.4 through LoRez Pixel Size 0.1: per-frame random black/white blocks twice the size of column 1's, at 40 percent, over the whole frame. That is a second strobe sitting on top of the 0.45 Stroboscope on layer 4 - two flashing full-frame things in the one column that is supposed to be a single strike.",
+    "fix": "Opacity 0.25, LoRez Pixel Size 0.03 (keep Bit Reduction 0, Dither 0): the skid reads as a coarser, heavier grain rather than a flickering mosaic."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "problem": "Rust Body Rush is a Shaper at Scale 0.9, Outline 0.5 (max) and opacity 1 - near the source's default full size, so it is a rust field, not a figure. And Shaper has no translation of its own: the Transform is a fixed offset, so Trails Feedback 0.92 only smears the animating grain in place. There is no streak and no rush; the why describes motion the clip cannot produce.",
+    "fix": "Scale 0.5, opacity 0.9, remove the Trails effect, keep Transform Position X 180 / Position Y 240; let the layer-2 Displace and the strobe carry the rush. If a real streak is wanted, swap the source to Metaballs (Grid 1, Color #b03a22ff, Size 0.2, Radius 0.6, Speed 4, Fuzzyness 0.1) under the same Trails - the only dictionary source that moves by itself."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "problem": "Drum Paper Grid is Checkered 64x36 - a checkerboard, not ruled paper - and at layer opacity 0.1 times Color 2 alpha 0x30 (19 percent) it is about 2 percent ash: invisible. The cell is effectively empty, and if it were visible it would be the wrong metaphor.",
+    "fix": "Source Lines: Amount 24, Width 0.015, Rotation 0 (90 if they render vertical), Position 0.5, Fuzzyness 0, Color #d0d0c8ff, Color 2 unused; opacity 0.12. Ruled drum paper for the pen to write on."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "problem": "Spider Downstairs is Metaballs Grid 1 at Size 0.03 with Fuzzyness 0.3: this repo uses Size 0.02 for a starfield, so this is one star-sized soft smudge at 0.8 opacity under 12 percent grain - it will not read as the spider. Radius 0.3 at Speed 0.05 also carries her slowly round an orbit, contradicting \"she does not move\".",
+    "fix": "Size 0.07, Fuzzyness 0.08, Radius 0 (keep Position X -0.55, Position Y -0.5, Speed 0.05): one hard rust point anchored low-left."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "problem": "Funnel Spun adds Twisted (Twirl 0.35, Radius 0.5) to the Tunnelines BED, turning it into a radial vortex directly under a full-frame single-leaf Spiral on layer 2 and a five-clone Radial Cloner ring on layer 3 - three concentric swirls sharing one centre. The BED and BODY are fighting over the same gesture and the figure ring disappears into it.",
+    "fix": "Remove the Twisted effect from Funnel Spun (keep Zoom 1, Frequency 0.45, Line Width 0.007 and its FFT); the funnel stays the quiet ground and the Spiral alone does the swathing."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "problem": "Swathing Spiral binds Distortion to the lows from floor 5 to ceiling 20 at gain 6 - a 4x bend of the entire spiral on every kick. The bible says lows are structural tension of a few percent with a 300-600 ms release; this is the whole web lurching to the beat.",
+    "fix": "Distortion FFT floor 6, ceiling 10, release 500 (keep the Speed-on-mids binding at 0.5-1.4)."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "problem": "Sodium Lamp Timer binds Dither to the highs (2-14) on the LIGHT layer: the bible gives the highs to silk alone and calls the lamp \"steady, no reaction\", and the Dither sweep will visibly shimmer the whole amber wash on every hat. Type Vertical is also a top-half wash, not the cone the layer note asks for.",
+    "fix": "Delete the Dither FFT and set Dither 6; change Type to Radial and add a Transform effect with Position Y -700, Scale 160 so the radial pool enters from the top edge as a lamp cone."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "problem": "The FIGURE row alternates prey (col 3 Metaballs), spider (col 4 Shaper), prey (col 5 Metaballs), spider (col 6 Shaper), so the spider vanishes during Pluck the Line - the one column that is her own action - and the eye cannot track either body across the hunt.",
+    "fix": "Layer 3 column 5 becomes Shaper: Scale 0.35, Noise Type Hatched, Noise Amount 0.15, Noise Speed 0.2, Color #b03a22ff, Outline 0.35, Outline Color #b03a22ff, Transform Position X 380 / Position Y -160 (same bearing as column 4, she has not moved), Noise Amount FFT highs 0.1-0.4; put the answer in the thread by raising layer 2 column 5's Fuzzyness FFT ceiling to 0.35."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "problem": "Lamp Off Quiet (also Lamp Off Tremor col 3 and Lamp Off Husk col 8) is a Gradient at opacity 0.05 whose visible colour has alpha 0x0a - about 0.2 percent - a full-frame render for nothing, where the bible explicitly says Blank in every stillness column.",
+    "fix": "Source Blank with Black BG false, opacity 1 (Blank is transparent) on columns 2, 3 and 8; the cell stays filled and the dark stays honest without a phantom gradient."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "problem": "Bruise Vignette puts the ultraviolet at the edges at opacity 0.22 times alpha 0xb0 (69 percent), about 15 percent - the same strength as the column-2 UV wash. The bible has the band arriving with Twelve Days; here it is already present, so the arrival reads as no change.",
+    "fix": "Opacity 0.06 (keep Color 2 #2b1a3eb0, Radial), so column 1 only hints at the band and column 2's 15 percent wash lands as an arrival."
+   }
+  ]
+ },
+ "critique:goose-summer": {
+  "verdict": "The tenderest and best-written deck in the pack, and the right place for the room to breathe, but it was designed in the head and not on the linen: three of its eight LIGHT layers are rig-verified solid-white slabs (Lines Width above 1/Amount), the text and the scope are near-isoluminant with the light ground on five columns, and the figure is the same cream as the field in half the deck, so fix the three Lines widths and the two contrast decisions first and this becomes the deck people remember.",
+  "issues": [
+   {
+    "layer": 2,
+    "column": 6,
+    "problem": "Sixty Threads Up: Lines Amount 60 gives a pitch of 1/60 = 0.0167 and Width 0.02 is above it. MORNING_REPORT.md (rig-verified) records that Lines Width above the pitch renders solid white and that 0.008 at 60 lines is the sweet spot. So the 'sixty hairline threads' are a full-frame Lantern wall at opacity 1 on Add over Offing: the Tiptoe column opens as a whiteout, and the Bank C Displace will displace a slab.",
+    "fix": "Width 0.02 -> 0.005 (30% of pitch, thinner than the 0.008 sweet spot because these are meant to be hairlines). Keep the Fuzzyness binding (0.15-0.45 on highs) as is."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "problem": "Threads In Wind: Amount 48 gives a pitch of 0.0208. Width 0.015 is already 72% duty, so at rest these are fat white pickets with thin dark slits, not threads; worse, the low-band FFT on Width has ceiling 0.035, which is 1.7x the pitch, so every kick renders the layer solid Lantern - a full-frame flash on the beat, exactly the VU-meter flash the fft_philosophy forbids, on the column the balloon moment lives on.",
+    "fix": "Width 0.015 -> 0.006; FFT Width floor 0.012 -> 0.005, ceiling 0.035 -> 0.011 (both under the 0.0208 pitch), keep band low, gain 7, release 500. Wave Warp can stay as written (all params in dictionary range)."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "problem": "Silk Rigging: Amount 100 gives a pitch of 0.01 and Width 0.03 is 3x that, so the source renders solid; Mirror Quad of a solid is a solid; at opacity 0.9 on Add over the 70% Morning gradient the Beagle column is a white wall with the Lighthouse strobing on top of it during the eight-bar fade. Even at a legal width, 100 lines with Fuzzyness 0.7-0.85 would smear into a fog, not a lattice you can read as rigging.",
+    "fix": "Amount 100 -> 60, Width 0.03 -> 0.005, Fuzzyness 0.7 -> 0.4 with the FFT floor 0.5 -> 0.3 and ceiling 0.85 -> 0.55, opacity 0.9 -> 0.8. Keep Rotation 78 and Mirror Quad; that is the crossing lattice."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "problem": "Sac Log One (and every note on C2-C5): Pencil #8ea2af over the 65-75% Lantern ground is near-isoluminant - relative luminance about 0.35 against about 0.30, a contrast of roughly 1.1:1 at the centre and under 2:1 even at the Lamp edge - and the L2 Line Scape sheet on Add sits exactly behind the lower-left margin, lifting the ground further. The 0.1 hairline Nursery Ink outline is the only thing making the words legible; 'readable on a wall at 2am' fails. The bible itself asks for 'dark on light' on this deck and Pencil is not dark.",
+    "fix": "On C1-C5 set Color #8ea2afff -> #3a2a24ff (Nursery Ink, in palette) and Outline Width 0.1 -> 0. If Pencil must stay, Outline Width 0.1 -> 0.35. Leave C6-C8 as written: Pencil on Offing is about 6.7:1 and reads cleanly."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "Pencil Heartbeat x8: the same isoluminance kills the scope on the light columns - Pencil at 40% over the Lantern ground is about 1.1:1, so under Alpha it is invisible and under Add it is a faint pale lift; the 'dark on light' trace the bible promises does not exist on C1-C5. Separately, the Frequency binding 1.5 -> 6 on highs with a 160 ms release rescales the whole trace horizontally on every hi-hat, which reads as a snap rather than a heartbeat, and from Position 0.18 the Amplitude ceiling 0.28 reaches 0.46 of the frame height, straight through the margin-note band (about 0.20-0.32 from the bottom) if Sine Wave Position 0 is the bottom edge.",
+    "fix": "C1-C5: Color -> #3a2a24ff and opacity 0.4 -> 0.6 (C6-C7 keep Pencil, C8 keeps Morning). All columns: Frequency FFT ceiling 6 -> 3; Amplitude FFT ceiling 0.28 -> 0.12 and Position 0.18 -> 0.08 so the peaks stay below the note under either axis convention."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "problem": "The Mother: a Shaper at Scale 1.7 covers most of the frame, and its Lantern fill at 60% alpha sits on an Add layer over a 75% Lantern ground, so inside the body the sum clips to white. The Walkers (Lantern on Screen) and the Warmed Dew vanish the moment they cross into her, and the plate whites out at the deck's emotional peak - the opposite of 'stop her pad and leave the children'.",
+    "fix": "Color #efe6d399 -> #d9a35b40 (Lamp at 25% alpha: a warm veil with the Lamp outline 0.12 still carrying the edge), Scale 1.7 -> 1.1 so the children have ground to walk on around her. Goo and the Noise Amount binding stay."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "problem": "Sac Dew is Lantern Metaballs, Minimal blend, Grid 20, directly over The Huddle which is Lantern Metaballs, Minimal blend, Grid 12 - same colour, same shape, same blend family, one on top of the other. The three hundred hatchlings are indistinguishable from the dew; the FIGURE is just a denser patch of the field, and the 'climb from 4 to 20' in the moments notes is a climb into camouflage.",
+    "fix": "Sac Dew Color #efe6d3ff -> #d9a35b99 (Lamp at 60% alpha) so the dew is faint and warm and the huddle stays bright cream; Size FFT ceiling 0.022 -> 0.018."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "problem": "Warmed Dew is Grid 16 Lantern with Bloom Amount 0.5 over The Walkers, which are also Grid 16 Lantern. The field gets the halo and the figure does not, so the dew outshines the spiderlings; and Bloom on 256 Lantern points on an Add layer pushes an already 75% light ground toward clipping under the Mother.",
+    "fix": "Color #efe6d3ff -> #d9a35bcc, Bloom Amount 0.5 -> 0.25, Threshold 0.5 -> 0.7. If the halo is wanted on the children instead, move this Bloom to The Walkers (the Bank B knob is the performer's Bloom anyway) and leave the dew unbloomed."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "problem": "Sky Field Lines: Rings Size 2.6 with Spacing 0.5 puts the innermost ring at 2.6 and the seventh at 5.6 (the parameter range tops at 4). With Gap 320 each ring is a 40-degree arc, and at those radii the arcs fall outside the frame under any plausible unit (a frame corner is about 1.0 ring units from centre), so the clip renders as nothing or a single stray curve at one side. Line Width 0.015 is about one pixel at 0.6 opacity under 25% grain.",
+    "fix": "Size 2.6 -> 0.5, Spacing 0.5 -> 0.15 (rings span 0.5-1.4 and cross the frame), Line Width 0.015 -> 0.04 with the FFT floor 0.012 -> 0.03 and ceiling 0.03 -> 0.06, Gap 320 -> 300. Keep Rotation Step 47 alternating."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "problem": "Tiptoe Dispersal: Position Y -0.25 is described as 'high in frame, abdomens to the wind'. The sister pack (dead-air, 'The Heart', Metaballs Position Y -0.3) describes the same sign as 'low in the frame', and Resolume's normalised generator axes are GL-style (+Y up), unlike Text Block's pixel offsets which es_spec.py verifies as +Y down. One of the two decks has it upside down, and this is the one whose story needs the spiderlings at the top of the fence post. Same sign in C7 Sailing On Nothing (-0.3).",
+    "fix": "Position Y -0.25 -> +0.25 (C6) and -0.3 -> +0.3 (C7); confirm with one clip on the rig before the build. Leave the Text Block Position Y values (+260/+300) alone - those are pixels, +Y down, verified."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "problem": "Landfall Unknown turns the spiderlings Lantern on a column where the rigging (L2), the lighthouse (L4) and the Morning wash are all Lantern or near it, so the figure disappears into its own gossamer. And the low-band binding on Radius 0.85 -> 1.0 moves every one of the 400 bodies 15% outward on each kick and back over 600 ms - a position move on the FIGURE, the one thing the fft_philosophy says never happens ('the spider decides where she is').",
+    "fix": "Color #efe6d3ff -> #d9a35bff (Lamp, as in C6 and C7: the warm bodies stay warm all the way to landfall). Replace the Radius binding with Fuzzyness, band high, gain 7, release 400, floor 0.1, ceiling 0.3; Radius stays fixed at 1."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "problem": "Lighthouse: Stroboscope Frequency 0.1 at opacity 0.6, full-frame Lantern on Add over the dark sky. Frequency is a normalised 0-1 whose 'Fast' preset lives near 1, so 0.1 is plausibly several flashes a second - twice the rate of First Light Pulse and nearly twice its opacity. A lighthouse turns once every few seconds; this one will strobe through the eight-bar fade in which every other fader comes down, and SearchLight Frequency 0.3 adds a second unrelated sweep rate on top.",
+    "fix": "Frequency 0.1 -> 0.02, opacity 0.6 -> 0.4, SearchLight Frequency 0.3 -> 0.12 so the sweep and the pulse share one slow period. Check the Hz mapping of Stroboscope Frequency on the rig once; C7 Sky Swell (0.06 at 0.2) and C1 First Light Pulse (0.05 at 0.35) ride on the same answer."
+   }
+  ]
+ },
+ "critique:orb-plate-1889": {
+  "verdict": "A disciplined, genuinely tasteful deck whose palette, text restraint, FFT philosophy and plate register all hold, but it is undone by one structural choice: the BODY swaps primitives column to column instead of accumulating, so the finished orb is never on screen and the Dew Load hero moment floats as a dot screen off the threads; move the radii onto the wasted LIGHT cells and the deck becomes exactly what the bible describes.",
+  "issues": [
+   {
+    "layer": 5,
+    "column": 1,
+    "problem": "All eight title-block clips sit at Position Y 400. Resolume's coordinate system is Y-up with 0,0 at centre, so +400 lands the text 140 px from the TOP of a 1080 frame: the whole deck's 'bottom-left like a title block, never centred' rule is broken on every column.",
+    "fix": "Set Position Y to -400 on all eight Text Animator clips (L5 C1–C8); keep Position X -820 and Alignment Left so the block sits 140 px in from the bottom-left corner."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "problem": "LIGHT holds four do-nothing fillers (C1, C3, C5 = 5% plate solids; C2, C4 = a 6%-alpha gradient at 6% opacity, which is 0.4% of a level, below one 8-bit step) while the BODY swaps primitives: the thirty radii vanish at C4 and never return, so Hub, Dry Spiral and Capture Spiral are each shown without the radii a web hangs on. The orb is never a web, only a sequence of isolated figures.",
+    "fix": "On L4 C4, C5 and C6 put the radii: source Lines (Fuzzyness 0.05, Amount 1, Width 0.012, Rotation 90, Position 0.5, Color #d8d2c0ff) + effect Radial Cloner (Clones 15, Start Radius 0, End Radius 0, Start Scale 100, End Scale 100, Start Rotation 0, End Rotation 360, Fan 100, Fan Offset 0, Master Rotation 6), opacity 0.6; this retires Glue Droplets on C6 (silk dots on silk at Size 0.02 were invisible anyway). Make the remaining fillers on C1–C3 source Blank (it is in the dictionary) instead of sub-visible solids and gradients."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "problem": "Dew Load is a 20x20 Metaballs grid with Speed 0: a regular lattice of 400 dots laid over a spiral reads as a halftone screen, not water on thread, because none of the dots land on a radius or a spiral turn. Feasibility too: Size 0.025 with Fuzzyness 0.7 smears each bead to almost nothing and Bloom Threshold 0.4 then finds nothing to bloom, so the deck's one cold note risks rendering as a faint grey haze.",
+    "fix": "Make the dew the radii themselves beading cold: source Lines (Fuzzyness 0.08, Amount 1, Width 0.014, Rotation 90, Position 0.5, Color #a4d6e8ff) + Radial Cloner (same values as L2C3) + Bloom (Amount 0.5, Threshold 0.3, Knee 0.2, Iterations 2, Size 0.3, Gaussian 0.6); FFT Fuzzyness band high gain 8 release 450 floor 0.05 ceiling 0.3 so the beads swell on the highs; opacity 0.8. The silk spiral on L2C7 then hangs on cold, lit radii, which is 'dew outweighs the web' drawn literally."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "problem": "Y Frame Triangle is six nested triangles out to Outer Scale 2.2 with Bloom Add: a full-frame tunnel with Repeat-wrapped colour bands that fights the BED, and it cannot read as a Y because Line Ammount's floor is 6, so Geometry Pattern Maker can never draw a single shape. The spider on L3C2 at (-200,-60) is also nowhere near the junction of this figure, whose centre is 0,0.",
+    "fix": "Replace with source Lines (Fuzzyness 0.05, Amount 1, Width 0.012, Rotation 90, Position 0.5, Color #d8d2c0ff) + Radial Cloner (Clones 3, Start Radius 0, End Radius 0, Start Scale 100, End Scale 100, End Rotation 360, Fan 100, Master Rotation 30): three hairlines through the hub, the Y and its frame threads one step before the thirty radii; keep the Bloom FFT off (Lines has none). Move Spider At Y (L3C2) Transform to Position X 0, Position Y 0 so she sits on the junction."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "problem": "Spider At Stem is placed at Transform Y -216 'at bridge-line height', which assumes Sine Wave Position 0 is the bottom (0.3 = 20% below centre). The SCOPE clips put their line at Position 0.94 and call it 'bottom strip', which assumes 0 is the top. The two clips cannot both be right; under the scope's convention the bridge line is in the upper third (correct for a real bridge line, which is the top thread of an orb) and the spider is 432 px below it.",
+    "fix": "Set Spider At Stem Transform Position Y to +216 (Resolume Y-up) so she sits on the bridge line; verify Sine Wave Position direction on the rig once, then apply the same sign to L3C3 (Y +190) and L3C5 (Y -300) if the convention flips."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "problem": "Spiral Under Dew binds Zoom low-band floor 0.78 ceiling 0.84: the envelope pushes Zoom UP on the kick, which zooms the spiral in (arms spread, web swells toward the viewer) while the why claims 'tightening toward the hub on the kick'. Capture Spiral (C6) has the same inversion at 0.8→0.84.",
+    "fix": "Invert the travel: floor 0.84, ceiling 0.78 on C7 and floor 0.84, ceiling 0.80 on C6 so the kick pulls the orb inward; if the follower only maps upward, delete both Zoom bindings and let the Bank C Suckr knob do the tightening as the bible's moments already specify."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "problem": "Dry Spiral and Capture Spiral (C6) bind Spiral Speed to mids (0.03→0.12 and 0.04→0.15, a 3x swing). Speed on this source IS rotation, so the orb visibly spins faster with the mix, which the bible forbids in the same paragraph that allows it ('the rotation of any orb never reacts, a web does not spin to a beat'). A plate engraving that spins is wrong in register regardless.",
+    "fix": "Delete the Speed FFT on L2C5 and L2C6 and set Speed to 0.02 on both (matching C7), so the spiral barely drifts and nothing on the BODY rotates to the music."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "problem": "Every Thread Scope clip binds Amplitude mid-band 0.02→0.25 at gain 10, release 200 on a line parked at Position 0.94. Amplitude 0.25 is a quarter of the frame height, so on a loud chorus the 'bottom strip' thrashes 270 px upward straight through the title block at -400, breaking the one rule the bible calls inviolable (words readable at 2am). Frequency 0.3→3 on 180 ms release will also snap the wave count tenfold.",
+    "fix": "On all eight L8 clips set Amplitude ceiling 0.08 (floor 0.02), Line Width ceiling 0.06, and Frequency ceiling 1.5 with release 250; the scope stays a strip under the text and still reads the room."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "problem": "Drafting Grid is a Checkered 96x54 with one transparent colour at 5%: that is a 20 px checkerboard, not graph paper (graph paper is lines), and a fine hard-edged checker is the worst possible pattern for a projector, aliasing into moiré with any scaling. It also breaks the GRAIN layer's own discipline (Static Grayscale at 6% everywhere else).",
+    "fix": "Replace with source Lines (Fuzzyness 0.1, Amount 27, Width 0.006, Rotation 0, Position 0.5, Color #d8d2c0ff) at opacity 0.04 so the sheet reads as ruled drafting paper; or simply use Static Grayscale at opacity 0.06 like C1, C2 and C5. Apply Fuzzyness floor 0.1 to Engraver Hatch (L7C4) for the same anti-aliasing reason."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "problem": "Dawn Strobe is a full-frame silk Stroboscope at opacity 0.25 stacked on L1C8's radial North Light sun and L6C8's ochre-to-slate vertical gradient: three suns in the quietest column. At the pulse peak a 25% silk Add lifts the whole plate by about 54 levels, collapsing the contrast of the hairline torn arcs and foxed grain the column exists to show.",
+    "fix": "Set Dawn Strobe opacity to 0.1 and keep Frequency 0.05 with Fade on; the L1 gradient remains the sun and the strobe becomes the breath of light over the hedge rather than a second light source."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "problem": "Three Torn Radii uses Rings Size 0.9 with Spacing 0.5, putting the three arcs at roughly 0.9, 1.4 and 1.9 frame units: the second clips the frame corners and the third is entirely off screen, so the 'three arcs' are one arc. (They are also spiral turns, not radii, since Rings draws circumference, which is fine but the name lies.)",
+    "fix": "Set Size 0.3 and Spacing 0.25 so the arcs sit at 0.3, 0.55 and 0.8 and all three 160-degree remnants are on the plate; keep Gap 200, Rotation -30, Rotation Step 120."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "problem": "The spider is Shaper with a transparent fill (#00000000) and Outline 0.06 at Scale 0.14: a thin ochre ring that silk hairlines pass straight through, so she reads as a reticle, not a body on the web. With no fill the Hatched Noise has nothing to hatch, so Spider Home's Noise Amount FFT (0.05→0.2 on highs) is bound to an invisible property.",
+    "fix": "Set Shaper Color to #0c1113ff (Plate) on all seven spider clips so she occludes the thread she sits on and the hatching has a surface; keep Outline 0.06 and Outline Color #c08a3eff. On L3C6 raise the Noise Amount ceiling to 0.3 so the shiver is visible against the dark fill."
+   }
+  ]
+ }
+}

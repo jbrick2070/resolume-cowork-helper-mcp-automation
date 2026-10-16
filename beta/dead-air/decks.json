@@ -1,0 +1,8614 @@
+[
+ {
+  "deck": "Hydrogen Line",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Star Noise Floor",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 2,
+     "Amplitude": 0.2,
+     "Density": 0.15
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#050608ff",
+       "White To": "#6f7378ff"
+      }
+     }
+    ],
+    "opacity": 0.65,
+    "why": "The 2.725 K hiss as sparse grey dots on sensor-bias black, drifting glacially; in Dark Run this is all there is."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Paper Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 24,
+     "Width": 0.02,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#e8e6dfff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Faint chart-paper ruling; hi-hats only soften the lines into hiss, nothing else moves."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Faint First Dot",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.02,
+     "Noise Type": "Grain",
+     "Noise Amount": 0,
+     "Noise Speed": 0,
+     "Color": "#6f7378ff",
+     "Outline": 0,
+     "Outline Color": "#6f737800"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "Bible says Blank; a near-invisible grey dot foreshadows the pale blue dot of Deep Field."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; the pen lamp is not yet lit and nothing lifts the sensor-bias black."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "Freq Readout",
+    "source": "Text Animator",
+    "params": {
+     "Text": "1420.405 MHZ",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#6f7378ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Position X": -820,
+     "Position Y": 440,
+     "Animated": false,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The hydrogen line frequency as bottom-left teletype telemetry in margin grey."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; no colour in the hut yet and nothing added to the frame."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Paper Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "The chart paper's tooth at six percent."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#6f7378ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "The honest readout: one chart-pen line at the bottom edge, in margin grey while the run is dark."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Star Noise Drift",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 2,
+     "Amplitude": 0.25,
+     "Density": 0.2
+    },
+    "fft": {
+     "Density": {
+      "band": "mid",
+      "gain": 6,
+      "release": 1500,
+      "floor": 0.15,
+      "ceiling": 0.35
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#050608ff",
+       "White To": "#6f7378ff"
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Same star-noise floor, a touch denser; low-mids breathe the dot density on a slow envelope."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Paper Ruling Push",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 32,
+     "Width": 0.02,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#e8e6dfff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 0.015,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "opacity": 0.45,
+    "why": "The ruling thickens on every kick, a quarter-inch of scruff on the paper."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Beam Pattern",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.6,
+     "Spacing": 1.2,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#5a7bd6ff",
+     "Color 2": "#5a7bd6ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 900,
+      "floor": 0.55,
+      "ceiling": 0.7
+     }
+    },
+    "effects": [],
+    "why": "Three thin deep-field-blue rings as the dish beam pattern, breathed slowly outward by the lows instead of a timeline."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Dish Beacon",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.08,
+     "Fade": true,
+     "Color 1": "#d9a441ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.25,
+    "why": "The amber dish beacon, one soft flash every couple of bars, transparent in the off phase."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "Scruff Note",
+    "source": "Text Animator",
+    "params": {
+     "Text": "NOTHING, THEN SCRUFF",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#6f7378ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Position X": -820,
+     "Position Y": 440,
+     "Animated": false,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The margin annotation of the first hint, bottom-left and never centred."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; still no colour in the hut."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Paper Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Chart paper tooth, unchanged."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "Same scope, now in chart paper as the pen starts to draw."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Buff Noise Floor",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 2,
+     "Amplitude": 0.2,
+     "Density": 0.15
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#050608ff",
+       "White To": "#5e5a4eff"
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "The same floor tinted toward buff paper so the desk under the pen lamp feels warm."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Pen Trace",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 4,
+     "Main Speed": 2,
+     "Modulator": 3,
+     "Modulation Depth": 1,
+     "Modulator Speed": 1,
+     "Amplitude": 0.1,
+     "Position": 0.5,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 0.08,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Feedback": 0.5,
+       "Mode": "Alpha"
+      }
+     }
+    ],
+    "why": "The chart recorder pen scrolling across the paper; a kick pushes the pen and the ink lingers."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Pen Lamp Disc",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.08,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.05,
+     "Noise Speed": 0.15,
+     "Color": "#d9a441ff",
+     "Outline": 0.02,
+     "Outline Color": "#d9a44180"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "One small amber disc, the pen lamp, with a trace of grain noise standing in for the slow wobble."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Lamp Pool",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a441ff",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "A warm radial pool of lamp light fading to nothing at the edges, the one warm thing in the hut."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "Paper Log",
+    "source": "Text Animator",
+    "params": {
+     "Text": "96 FT PAPER PER DAY",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#6f7378ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Position X": -820,
+     "Position Y": 440,
+     "Animated": false,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "One line of clerical wonder in the margin on the same baseline as the other columns; CHART SPEED 1 IN/MIN is held for a text-swap or a second deck."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; the lamp pool on LIGHT does the warming, this cell adds nothing."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Graph Paper",
+    "source": "Lines",
+    "params": {
+     "Amount": 48,
+     "Width": 0.006,
+     "Fuzzyness": 0,
+     "Rotation": 90,
+     "Position": 0.5,
+     "Color": "#e8e6dfff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Forty-eight hairline vertical time-divisions under the horizontally scrolling pen, the chart ruling as ruling and not a screen."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "The honest pen at the bottom edge, chart paper."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Star Noise Breath",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 2,
+     "Amplitude": 0.2,
+     "Density": 0.2
+    },
+    "fft": {
+     "Density": {
+      "band": "mid",
+      "gain": 6,
+      "release": 1500,
+      "floor": 0.15,
+      "ceiling": 0.35
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#050608ff",
+       "White To": "#6f7378ff"
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Star-noise floor breathing on low-mids under the pulsar stack."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "CP1919 Ridgeline",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 12,
+     "Direction": 0,
+     "Position Y": 6,
+     "Speed": 0.3,
+     "Height": 5,
+     "Jagginess": 0.5,
+     "Wobble": 0.1,
+     "Attenuation": 250,
+     "Line Width": 0.15,
+     "Fuzzyness": 0.2,
+     "Color": "#e8e6dfff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 10,
+      "release": 400,
+      "floor": 3,
+      "ceiling": 9
+     }
+    },
+    "effects": [
+     {
+      "effect": "Bloom",
+      "params": {
+       "Amount": 0.35,
+       "Threshold": 0.7,
+       "Knee": 0.1,
+       "Iterations": 2,
+       "Size": 0.2,
+       "Gaussian": 0.5
+      }
+     }
+    ],
+    "why": "The stacked pulsar plot in chart paper, the deck's spine; each kick pushes the ridge up and the paper is allowed a little glow."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Beam Arcs",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 5,
+     "Size": 0.7,
+     "Spacing": 1,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 40,
+     "Rotation": 0,
+     "Rotation Step": 25,
+     "Rotation Alternate": true,
+     "Color 1": "#5a7bd6ff",
+     "Color 2": "#5a7bd6ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 500,
+      "floor": 0.02,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [],
+    "why": "The beam pattern opened into alternating arcs, a radar sweep frozen; lows thicken the stroke."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Pulsar Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#e8e6dfff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "A hard chart-paper flash tuned near the 1.337 second period, held from the pad under the ridgeline."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "Pulsar Log",
+    "source": "Text Animator",
+    "params": {
+     "Text": "CP 1919+21",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#6f7378ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Position X": -820,
+     "Position Y": 440,
+     "Animated": false,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The pulsar's designation as margin telemetry on the shared baseline; PERIOD 1.3373 S and LGM-1 are the best candidates for a pad text-swap."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; the pulse is too regular to be natural and the room stays grey."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Paper Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Paper tooth a touch stronger under the flashes."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "The honest pen, chart paper."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Star Noise Swell",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 2,
+     "Amplitude": 0.3,
+     "Density": 0.25
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 6,
+      "release": 800,
+      "floor": 0.2,
+      "ceiling": 0.45
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#050608ff",
+       "White To": "#6f7378ff"
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "The floor swells on the lows as the signal arrives, a tide rather than a flash."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Wow Ridge Stack",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 6,
+     "Direction": 0,
+     "Position Y": 4,
+     "Speed": 0.4,
+     "Height": 7,
+     "Jagginess": 0.7,
+     "Wobble": 0.15,
+     "Attenuation": 220,
+     "Line Width": 0.15,
+     "Fuzzyness": 0.15,
+     "Color": "#e8e6dfff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 11,
+      "release": 400,
+      "floor": 4,
+      "ceiling": 11
+     }
+    },
+    "effects": [],
+    "why": "The ridgeline taller and more jagged, the intensity column 6EQUJ5 climbing off the chart."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Beam Afterimage",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.8,
+     "Spacing": 1.2,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#5a7bd6ff",
+     "Color 2": "#5a7bd6ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 900,
+      "floor": 0.7,
+      "ceiling": 0.85
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Feedback": 0.7,
+       "Mode": "Lighten"
+      }
+     }
+    ],
+    "why": "The beam pattern breathing about 20% outward on the lows, slow release, leaving thin blue afterimages instead of a zoom flash."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "72 Second Rise",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e8e6dfff",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.25,
+    "why": "A still radial chart-paper wash, bright centre fading to nothing; the performer rides the layer-4 fader up and back over the 72 seconds (or a clip-opacity timeline if the builder supports one) so the rise and fall happens once, not on a strobe cycle."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "Wow Typewriter",
+    "source": "Text Animator",
+    "params": {
+     "Text": "WOW! 6EQUJ5",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#b3162bff",
+     "Size": 1.6,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0,
+     "Opacity": 0,
+     "Scale": 0.85
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The deck's only red and only centred text, typed on character by character from an invisible start state (Opacity 0, Scale 0.85) so each glyph settles in, retriggered from the pad."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "H-Alpha Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#b3162b00",
+     "Color 2": "#b3162bff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "656 nm hydrogen-alpha as an edge-only radial wash with a clear centre, at ten percent so it lands near the bible's 8% whisper; the one place the reserved red exists."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Printout Lines",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 90,
+     "Width": 0.015,
+     "Rotation": 90,
+     "Position": 0.5,
+     "Color": "#e8e6dfff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Dense printout lines as the Big Ear teletype texture; highs blur them into hiss."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "The honest pen stays chart paper even under the red."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Developing Plate",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 3,
+     "Amplitude": 0.35,
+     "Density": 0.6
+    },
+    "fft": {
+     "Density": {
+      "band": "mid",
+      "gain": 6,
+      "release": 1500,
+      "floor": 0.45,
+      "ceiling": 0.7
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#050608ff",
+       "White To": "#9aa0abff"
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "The same dot field at four times the density, a plate of three thousand galaxies that the performer's Trails knob will develop."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Knotted Horizon",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 25,
+     "Direction": 0,
+     "Position Y": 10,
+     "Speed": 0.15,
+     "Height": 4,
+     "Jagginess": 0.3,
+     "Wobble": 0.05,
+     "Attenuation": 200,
+     "Line Width": 0.12,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e6dfff",
+     "Show Knots": true
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 8,
+      "release": 500,
+      "floor": 2,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The spine flattens toward a horizon and the knots show, point sources on the plot."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Galaxy Cores",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.2,
+     "Distance": 0.5,
+     "Radius": 0.6,
+     "Fuzzyness": 0.9,
+     "Speed": 0.2,
+     "Position X": 0,
+     "Position Y": 0,
+     "Color": "#5a7bd6ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 500,
+      "floor": 0.15,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Feedback": 0.8,
+       "Mode": "Lighten"
+      }
+     }
+    ],
+    "why": "A few soft deep-field-blue cores drifting slowly and accumulating like an eleven-day exposure."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "One Pixel Dot",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.01,
+     "Noise Type": "Grain",
+     "Noise Amount": 0,
+     "Noise Speed": 0,
+     "Color": "#e8e6dfff",
+     "Outline": 0,
+     "Outline Color": "#e8e6df00"
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The pale blue dot in chart paper at Scale 0.01, under a pixel wide at 1080p, on the LIGHT row: for the Exposure to dot moment pull faders 1, 2 and 3 to zero and tap the row-4 LIGHT pad so only this is lit."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "Dot Caption",
+    "source": "Text Animator",
+    "params": {
+     "Text": "LOOK AGAIN AT THAT DOT",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#6f7378ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Position X": -820,
+     "Position Y": 440,
+     "Animated": false,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The margin note that makes the whole room look at one pixel."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Deep Field Blue",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#5a7bd6ff",
+     "Color 2": "#050608ff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "A vertical deep-field-blue grade, the first colour allowed in the hut since the red left."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Moth Dust",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 5,
+     "Amplitude": 0.3,
+     "Density": 0.8
+    },
+    "fft": {
+     "Density": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0.6,
+      "ceiling": 0.95
+     }
+    },
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Fine grey dust that only the hi-hats stir."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "The honest pen, chart paper."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Dead Air Static",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#050608ff",
+       "White To": "#8c9096ff"
+      }
+     },
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.12,
+       "Frame Count": 0.08,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "The carrier is gone and the whole picture is hiss, tinted down and held to a couple of frames a second by Stop Motion so the static steps instead of boils; the one static field in the column."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Flatline",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0,
+     "Main Speed": 1,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0,
+     "Position": 0.5,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Bible says Blank; a dead flat pen line across the centre that never reacts, against the live scope below."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; the beam pattern is gone and nothing ghosts it."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; the lamp is off."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "No Carrier Line",
+    "source": "Text Animator",
+    "params": {
+     "Text": "NO CARRIER",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#6f7378ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Position X": -820,
+     "Position Y": 440,
+     "Animated": false,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The modem's last words in the margin, read and not shaken."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; no colour, the hiss is the room."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Paper Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Chart paper tooth at six percent, unchanged; the stepped hiss lives on L1 now."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "The honest pen stays chart paper so the readout survives the hiss; still follows the music 1:1 with the carrier lost."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Pre-Dawn Sky",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#050608ff",
+     "Color 2": "#2a3340ff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Vertical"
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0,
+      "ceiling": 8
+     }
+    },
+    "effects": [],
+    "why": "Night at the top, pre-dawn blue-grey at the horizon; highs add a breath of dither grain to the sky."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Dish Mesh Hex",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Lighten",
+     "Shape Types": "Hexagon",
+     "Shape Rounding": 0,
+     "Line Ammount": 8,
+     "Inner X": 0,
+     "Inner Y": 0,
+     "Intersect X": 0,
+     "Intersect Y": 0,
+     "Mask Intersect": true,
+     "Outer X": 0,
+     "Outer Y": 0,
+     "Inner Scale": 0.55,
+     "Intersect Scale": 0.5,
+     "Outer Scale": 2.3,
+     "Gloabal rot": 0,
+     "Innter Color 1": "#e8e6dfff",
+     "Inner color 2": "#e8e6df80",
+     "inner Edge S": 0.004,
+     "inner Edge S 2": 0.003,
+     "Outer Color 1": "#e8e6dfff",
+     "Outer Color 2": "#5a7bd6ff",
+     " Out Edge S": 0.004,
+     "Out Edge S 2": 0.003
+    },
+    "fft": {
+     "Bloom": {
+      "band": "mid",
+      "gain": 8,
+      "release": 600,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Eight hexagon outlines held to the outer band, the dish rim seen at first light; the centre is left empty for the VLF spiral. Mids lift the glow."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "VLF Curl",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1.2,
+     "Detail": 1,
+     "Speed": 0.1,
+     "Zoom": 0.8,
+     "Leafs": 1,
+     "Distortion": 0,
+     "Fuzzyness": 0.2,
+     "Ramification": 0,
+     "Button": false,
+     "Color": "#5a7bd6ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Speed": {
+      "band": "mid",
+      "gain": 8,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "A single minimal blue spiral, the dawn chorus spectrogram curl, turning a little faster when the mids rise."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Bible says Blank; the dawn is in the sky grade and the spiral, not a rim."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Last Annotation",
+    "source": "Text Animator",
+    "params": {
+     "Text": "LISTENING, NOT SENDING",
+     "Font": "OCR A Extended",
+     "Style": "Regular",
+     "Color": "#e8e6dfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Position X": -820,
+     "Position Y": 440,
+     "Animated": false,
+     "Glow In": 0,
+     "Glow Out": 0,
+     "Outline Width": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The closing line, the only column where the text is chart paper."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Pre-Dawn Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#2a3340ff",
+     "Color 2": "#050608ff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.22,
+    "why": "A radial pre-dawn blue-grey grade, the first sky of the night."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Paper Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Chart paper tooth, the clean deck to the end."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Chart Pen Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 2,
+     "Modulator": 2,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#e8e6dfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "why": "The honest pen, chart paper, drawing the dawn."
+   }
+  ]
+ },
+ {
+  "deck": "Loss Of Signal",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Console Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 16,
+     "Num Y": 9,
+     "Color 1": "#0b0d0fff",
+     "Color 2": "#14191dff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The room's 16x9 grid at 4% contrast on dead-air black, the console floor that never moves."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Voice Loop Trace",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.2,
+     "Amount": 12,
+     "Width": 0.02,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#1f8a55ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 8,
+      "release": 1500,
+      "floor": 0.1,
+      "ceiling": 0.45
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Twelve thin horizontal loop-trace lines in P39 green whose softness breathes slowly with the low-mids."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Limb Far West",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.9,
+     "Noise Type": "Grain",
+     "Noise Amount": 0,
+     "Noise Speed": 0.1,
+     "Color": "#d7d2c400",
+     "Outline": 0.02,
+     "Outline Color": "#d7d2c4ff"
+    },
+    "fft": {
+     "Outline": {
+      "band": "low",
+      "gain": 6,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.045
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -840
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The lunar limb as a thin teletype circle pushed to the left edge, first step of its crossing over the scene set."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Tally Lamp",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.08,
+     "Fade": false,
+     "Color 1": "#e3a21aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 5,
+       "Scale H": 9,
+       "Position X": 820,
+       "Position Y": -420
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "One small amber square in the top-right corner flashing slowly, the tally lamp on the bar."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "Go For TLI",
+    "source": "Text Animator",
+    "params": {
+     "Text": "GO FOR TLI",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#35d07fff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Position X": -780,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The capcom call left-justified like a transcript line in phosphor green, kept off the limb and the scope."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Room Dark Edge",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#00000000",
+     "Color 2": "#0b0d0f99",
+     "Mode": "Smooth",
+     "Dither": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Explicit Blank in the bible, so a nearly invisible radial darkening fills the cell without changing the room."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Hiss 2.2k",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.15,
+       "Frame Count": 0.1,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.1,
+    "why": "Grayscale noise at 10% stepped by Stop Motion so the carrier hiss ticks instead of boils."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#35d07fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The honest readout: one phosphor-green trace full width along the lower third, the downlink carrier following the signal."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Console Grid Live",
+    "source": "Checkered",
+    "params": {
+     "Num X": 16,
+     "Num Y": 9,
+     "Color 1": "#0b0d0fff",
+     "Color 2": "#161b1fff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Same room grid a hair brighter because the loop is busy and every console is lit."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Carrier Wave",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.05,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 1.5,
+     "Main Speed": 3,
+     "Modulator": 4,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.2,
+     "Position": 0.5,
+     "Color": "#1f8a55ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Modulation Depth": {
+      "band": "mid",
+      "gain": 8,
+      "release": 1500,
+      "floor": 0.4,
+      "ceiling": 2.2
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Three mirrored carrier lines whose modulation deepens with the low-mids, the voice loop as a living waveform."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Limb West",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.9,
+     "Noise Type": "Grain",
+     "Noise Amount": 0,
+     "Noise Speed": 0.1,
+     "Color": "#d7d2c400",
+     "Outline": 0.02,
+     "Outline Color": "#d7d2c4ff"
+    },
+    "fft": {
+     "Outline": {
+      "band": "low",
+      "gain": 6,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.045
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -500
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The limb one step further into the room, outline thickening faintly on the kick."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Tally Lamp",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.08,
+     "Fade": false,
+     "Color 1": "#e3a21aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 5,
+       "Scale H": 9,
+       "Position X": 820,
+       "Position Y": -420
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The same tally lamp keeps the bar across the first three scenes."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "Capcom Flight",
+    "source": "Text Animator",
+    "params": {
+     "Text": "CAPCOM, FLIGHT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#35d07fff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Position X": -780,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The loop's call sign in the transcript position, same green, same size, so the room stays one room."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Console Dusk",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1a2024ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Bible Blank: console grey at 5% in Overlay is a cell filled with nothing you can see."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Hiss 2.2k",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.15,
+       "Frame Count": 0.1,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.1,
+    "why": "Carrier hiss stays constant while the loop talks."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#35d07fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Identical scope, the picture of a radio room."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Console Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 16,
+     "Num Y": 9,
+     "Color 1": "#0b0d0fff",
+     "Color 2": "#14191dff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Back to the 4% grid; the room holds its breath for the count."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Trace Tightening",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 12,
+     "Width": 0.015,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#1f8a55ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.05
+     },
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 8,
+      "release": 1500,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The loop trace drawn thinner and pushed by the kick, tension under the countdown."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Limb Near Centre",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.9,
+     "Noise Type": "Grain",
+     "Noise Amount": 0,
+     "Noise Speed": 0.1,
+     "Color": "#d7d2c400",
+     "Outline": 0.02,
+     "Outline Color": "#d7d2c4ff"
+    },
+    "fft": {
+     "Outline": {
+      "band": "low",
+      "gain": 6,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.045
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -170
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The Moon almost in front of the room as the spacecraft goes behind it."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Tally Counting",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.12,
+     "Fade": false,
+     "Color 1": "#e3a21aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 5,
+       "Scale H": 9,
+       "Position X": 820,
+       "Position Y": -420
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The tally lamp a touch faster, counting with the capcom."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "Countdown Ten",
+    "source": "Text Animator",
+    "params": {
+     "Text": "10 9 8 7 6 5 4 3 2 1",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#35d07fff",
+     "Size": 1.1,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Position X": -780,
+     "Position Y": -380,
+     "Animated": true,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 1000,
+     "Opacity": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The rig's own countdown idea rebuilt stock: characters fade in front to back one per second when the row-5 pad retriggers it."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Room Dark Edge",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#00000000",
+     "Color 2": "#0b0d0f99",
+     "Mode": "Smooth",
+     "Dither": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Bible Blank, filled with a near-invisible vignette so the grid has no hole."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Hiss 2.2k",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.15,
+       "Frame Count": 0.1,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.1,
+    "why": "Stepped hiss, unchanged, the last normal thing before LOS."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#35d07fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Identical scope; it is about to become the only thing moving."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Dead Air Black",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0d0fff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Dead Air is Solid Color bed and nothing else: the grid goes away with the carrier."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Flat ECG",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0,
+     "Main Speed": 8,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.02,
+     "Position": 0.3,
+     "Color": "#1f8a55ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "A flat green line scrolling fast above the heart, deliberately unbound so it stays flat while the Metaball swells; hand-fired from the row-2 pad."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "The Heart",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.18,
+     "Distance": 0.5,
+     "Radius": 0.3,
+     "Fuzzyness": 0.6,
+     "Speed": 0.05,
+     "Position X": 0,
+     "Position Y": -0.3,
+     "Color": "#d7d2c4ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 10,
+      "release": 400,
+      "floor": 0.15,
+      "ceiling": 0.35
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "One soft teletype Metaball low in the frame that swells on the sub band, the heart of the room in dead air."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Heartbeat Lamp",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.1,
+     "Fade": true,
+     "Color 1": "#e3a21aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.25,
+    "why": "The Heartbeat preset done by hand: a full-frame amber pulse with Fade on at a quarter opacity so the OFF phase is clear, not black."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "Dead Air Count",
+    "source": "Text Animator",
+    "params": {
+     "Text": "45 MIN OF DEAD AIR",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#35d07fff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Position X": -780,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The loop keeps counting into silence; the line is there for the pad, not the scene launch."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Nothing On Loop",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#00000000",
+     "Color 2": "#0b0d0f80",
+     "Mode": "Smooth",
+     "Dither": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit Blank before the violet arrives; an almost nothing cell."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "No Hiss",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0d0fff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Explicit Blank: the hiss stops with the carrier, so this is bed black at 4% in Overlay, invisible."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#35d07fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Dead Air lands with only BED and SCOPE; this is the one thing still moving."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Grid Blue Cast",
+    "source": "Checkered",
+    "params": {
+     "Num X": 16,
+     "Num Y": 9,
+     "Color 1": "#0b0d0fff",
+     "Color 2": "#141822ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The room grid returns with a faint blue-violet cast in the grey, something off about the light."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Far Side Corridor",
+    "source": "Tunnelines",
+    "params": {
+     "Color 1": "#1f8a55ff",
+     "Color 2": "#00000000",
+     "Line Width": 0.008,
+     "Zoom": 0.9,
+     "Vertical": 0.05,
+     "Frequency": 0.5,
+     "Horizontal": 0.05
+    },
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 6,
+      "release": 900,
+      "floor": 0.8,
+      "ceiling": 1.6
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 6,
+      "release": 600,
+      "floor": 0.35,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Wormhole-style thin green tunnel lines that pull inward on the lows and thicken with hiss, the far side as a corridor."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Violet Throat",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 4,
+     "Mode": "Fill",
+     "Line Width": 0.2,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2,
+     "Main Speed": 2,
+     "Modulator": 7,
+     "Modulation Depth": 2,
+     "Modulator Speed": 3,
+     "Amplitude": 0.25,
+     "Position": 0.45,
+     "Color": "#5b3c8aff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 0.15,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Feedback": 0.8,
+       "Mode": "Alpha"
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "A filled, mirrored, heavily modulated violet waveform smeared by Trails: the whistling given a body that does not belong in Houston."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Tally Wrong",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": true,
+     "Color 1": "#e3a21aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 5,
+       "Scale H": 9,
+       "Position X": 820,
+       "Position Y": -420
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The tally lamp flutters off the bar with Fade on, answering a transmission nobody sent."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "Whistling Sound",
+    "source": "Text Animator",
+    "params": {
+     "Text": "THAT WHISTLING SOUND",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#8c62c9ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Position X": -780,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The only column where the transcript goes violet, because something else is on the loop."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Far Side Violet",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#5b3c8aff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "The reserved aura colour finally used, 12% violet wash over the whole room."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Hiss Thickening",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.15,
+       "Frame Count": 0.1,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.12,
+    "why": "The hiss comes back a little louder than it left."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#35d07fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The scope stays honest green even while the text turns violet."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Grid Lit",
+    "source": "Checkered",
+    "params": {
+     "Num X": 16,
+     "Num Y": 9,
+     "Color 1": "#0b0d0fff",
+     "Color 2": "#1a2024ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Console grey at full 4% contrast; every light in the room is on for the alarm."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Alarm Trace",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 24,
+     "Width": 0.02,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#1f8a55ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.01,
+      "ceiling": 0.06
+     },
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 8,
+      "release": 1200,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Shift Glitch",
+      "params": {
+       "Frequency": 0.5,
+       "Vertical": 0.2,
+       "Horizontal": 0.4,
+       "Size": 0.3,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The loop trace doubled to 24 lines and torn by Shift Glitch, the 1202 program alarm on the display."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Limb Jittering",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.9,
+     "Noise Type": "Hatched",
+     "Noise Amount": 0.15,
+     "Noise Speed": 0.8,
+     "Color": "#d7d2c400",
+     "Outline": 0.02,
+     "Outline Color": "#d7d2c4ff"
+    },
+    "fft": {
+     "Noise Amount": {
+      "band": "mid",
+      "gain": 8,
+      "release": 600,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 170
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The limb past centre with hatched noise shaking its edge on the mids; the Moon is still there but the picture is not clean."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Master Alarm",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.5,
+     "Fade": false,
+     "Color 1": "#e3a21aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 7,
+       "Scale H": 12.5,
+       "Position X": 800,
+       "Position Y": -410
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The tally lamp grown into a master-alarm square flashing hard and fast, the peak of the deck."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "Alarm 1202",
+    "source": "Text Animator",
+    "params": {
+     "Text": "ALARM 1202",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#35d07fff",
+     "Size": 1.3,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Position X": -780,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The alarm code larger than any other line, still the same green, still left-justified."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Room Dark Edge",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#00000000",
+     "Color 2": "#0b0d0f99",
+     "Mode": "Smooth",
+     "Dither": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Bible Blank: the violet is gone, the room is Houston again."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Alarm Static",
+    "source": "Static",
+    "params": {
+     "Mode": "Two-tone"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.4,
+       "Frame Count": 0.15,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.14,
+    "why": "Two-tone noise stepping faster, hiss turned to crackle under the alarm."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#35d07fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Identical scope under the alarm, the only steady readout in the room."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Grid Sunrise",
+    "source": "Checkered",
+    "params": {
+     "Num X": 16,
+     "Num Y": 9,
+     "Color 1": "#0b0d0fff",
+     "Color 2": "#1a2024ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The grid at console grey, about to be overrun by the white flash."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Trace Returning",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.3,
+     "Amount": 12,
+     "Width": 0.025,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#1f8a55ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 8,
+      "release": 1500,
+      "floor": 0.15,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Bloom",
+      "params": {
+       "Amount": 0.5,
+       "Threshold": 0.3,
+       "Knee": 0.2,
+       "Iterations": 2,
+       "Size": 0.4,
+       "Gaussian": 0.5
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The twelve-line loop trace back on the display with Bloom, the carrier glowing as it reacquires."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Limb Sunlit",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.9,
+     "Noise Type": "Grain",
+     "Noise Amount": 0,
+     "Noise Speed": 0.1,
+     "Color": "#f4efe600",
+     "Outline": 0.03,
+     "Outline Color": "#f4efe6ff"
+    },
+    "fft": {
+     "Outline": {
+      "band": "low",
+      "gain": 6,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 500
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The limb far right in sunrise white with a thicker edge, the spacecraft coming round into the light."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "AOS Sunrise",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.02,
+     "Fade": true,
+     "Color 1": "#f4efe6ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.85,
+    "why": "One long near-white full-frame flash with Fade on at a frequency near zero, acquisition of signal as a sunrise; nothing else in the deck is this bright."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "Eagle Houston",
+    "source": "Text Animator",
+    "params": {
+     "Text": "EAGLE, HOUSTON",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#35d07fff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Position X": -780,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The voice that answers, on the roster after all, in the transcript position."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Sunrise Haze",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#f4efe626",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Bible Blank, filled with a barely-there warm centre glow that reads as afterimage of the flash."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Hiss Fading",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.15,
+       "Frame Count": 0.1,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.08,
+    "why": "The hiss thinning as the carrier locks."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#35d07fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Identical scope; the downlink carrier is back and the trace proves it."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Newsreel Sky",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#0b0d0fff",
+     "Color 2": "#1f2022ff",
+     "Mode": "Smooth",
+     "Dither": 4
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 500,
+      "floor": 2,
+      "ceiling": 8
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Horizontal gradient from bed black to teletype at 10%, the newsreel's grey sky, with only its dither breathing on the highs."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Newsreel Rain",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.3,
+     "Amount": 40,
+     "Width": 0.01,
+     "Rotation": 90,
+     "Position": 0.5,
+     "Color": "#1f8a55ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 7,
+      "release": 1200,
+      "floor": 0.2,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.7,
+    "why": "Forty thin vertical lines in loop-trace green at 70%, rain on the recovery footage."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "The Splash",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.6,
+     "Spacing": 0.4,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#d7d2c4ff",
+     "Color 2": "#d7d2c4ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 10,
+      "release": 600,
+      "floor": 0.4,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Feedback": 0.85,
+       "Mode": "Alpha"
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "Three stroked teletype rings expanding on the lows and persisting through Trails, the capsule hitting the water."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Lamp Off",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#00000000",
+     "Color 2": "#e3a21a14",
+     "Mode": "Smooth",
+     "Dither": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Bible Blank: the tally lamp is dark at splashdown, so this is an amber ghost at 5% nobody will see."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Splashdown Wire",
+    "source": "Text Block",
+    "params": {
+     "Text": "SPLASHDOWN, 1652 GMT\nTHE LOOP IS QUIET",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#d7d2c4ff",
+     "Size": 1,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Line Width": 1400,
+     "Position X": -80,
+     "Position Y": -380
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Two teletype-paper lines in a block, the wire-service close to the transcript."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Newsreel Grey",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Vertical",
+     "Color 1": "#d7d2c4ff",
+     "Color 2": "#0b0d0fff",
+     "Mode": "Smooth",
+     "Dither": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Vertical teletype-to-bed wash at 6%, the only aura colour outside Whistling, grey like old film."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Newsreel Film",
+    "source": "Static",
+    "params": {
+     "Mode": "Color"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Stop Motion",
+      "params": {
+       "Frequency": 0.3,
+       "Frame Count": 0.2,
+       "Black BG": false
+      }
+     },
+     {
+      "effect": "LoRez",
+      "params": {
+       "Pixel Size": 0.08,
+       "Bit Reduction": 0.2,
+       "Dither": 0.3
+      }
+     }
+    ],
+    "opacity": 0.14,
+    "why": "Colour static at 14% stepped and pixelated, film grain and weave done the stock way instead of a gate plugin."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Downlink Scope",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 6,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.8,
+     "Color": "#d7d2c4ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.25
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 1,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The same scope recoloured teletype paper for the newsreel, the only variation it is allowed."
+   }
+  ]
+ },
+ {
+  "deck": "The Sitters",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Candle Throw",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.5,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 1,
+     "Speed": 0.05,
+     "Position X": -0.4,
+     "Position Y": 0.3,
+     "Color": "#b07a34",
+     "BG Color": "#120e0bff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.45,
+      "ceiling": 0.62
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "One soft candle glow pushed to the north-west over parlour black, breathing on the sub: in Lights Down the flame's throw is the whole room."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Vesica Damask",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0,
+     "Bloom Mode": "Lighten",
+     "Shape Types": "Vesica",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 8,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.6,
+     "Gloabal rot": 0,
+     "Outer rot 2": 0.02,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#6b4a2e",
+     "Outer Color 2": "#2e1d10",
+     " Out Edge S": 0.004,
+     "Out Edge S 2": 0.004
+    },
+    "fft": {
+     "Outer Scale": {
+      "band": "low",
+      "gain": 6,
+      "release": 1500,
+      "floor": 1.5,
+      "ceiling": 1.75
+     }
+    },
+    "effects": [],
+    "opacity": 0.4,
+    "why": "Eight thin vesica outlines in daguerreotype sepia, outer only, swelling very slowly on the lows: the wallpaper you never quite see."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Muslin Faint",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Average",
+     "Size": 0.25,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 0.9,
+     "Speed": 0.15,
+     "Position X": 0,
+     "Position Y": 0,
+     "Color": "#cfd6cc",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.2,
+      "ceiling": 0.32
+     }
+    },
+    "effects": [],
+    "opacity": 0.55,
+    "why": "Two barely-there ectoplasm blobs, cold grey in a warm room, so the first thing that does not belong is already present at the opening."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Lamp Gutter",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.06,
+     "Fade": true,
+     "Color 1": "#f2b65a",
+     "Color 2": "#00000000"
+    },
+    "fft": {
+     "Frequency": {
+      "band": "high",
+      "gain": 6,
+      "release": 600,
+      "floor": 0.04,
+      "ceiling": 0.15
+     }
+    },
+    "effects": [],
+    "opacity": 0.18,
+    "why": "A slow faded candle-colour flicker standing in for the film reel's gutter; hiss makes the lamp stutter a little faster as it is turned down."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "Lamp Down Please",
+    "source": "Text Block",
+    "params": {
+     "Text": "LAMP DOWN, PLEASE\nIS ANYONE THERE",
+     "Font": "Baskerville Old Face",
+     "Style": "Regular",
+     "Color": "#e9e1cf",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 4,
+     "Spacing Y": 20,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The medium's protocol voice in bone Baskerville at the top of frame: the first instruction and the first question."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Sepia Vignette",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#6b4a2e00",
+     "Color 2": "#6b4a2eff",
+     "Mode": "Smooth",
+     "Dither": 2
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "Transparent centre, sepia edge: a daguerreotype vignette that closes the room around the candle without touching the flame."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Cylinder Hiss",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Grayscale noise at eight percent is the wax cylinder's surface hiss under everything, the stock stand-in for the React Gate grain."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#9c8c74",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The EVP recorder's needle in moth dust along the bottom edge, the one honest readout that follows the signal 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Lamp Down Radial",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#9c6a2c",
+     "Color 2": "#120e0b",
+     "Mode": "Smooth",
+     "Dither": 3
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "A still candle-to-parlour-black radial: the lamp is down and the room has settled, so the environment stops moving while hands are joined."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Ring Of Sitters",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.05,
+     "Bloom Mode": "Lighten",
+     "Shape Types": "Circle",
+     "Shape Rounding": 1,
+     "Line Ammount": 12,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.4,
+     "Gloabal rot": 0,
+     "Outer rot 2": 0.03,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#6b4a2e",
+     "Outer Color 2": "#2e1d10",
+     " Out Edge S": 0.004,
+     "Out Edge S 2": 0.004
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Twelve concentric sepia circles turning very slowly: the ring of joined hands around the table, the circle that must not be broken."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Muslin Rises",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Average",
+     "Size": 0.3,
+     "Distance": 0.5,
+     "Radius": 0.6,
+     "Fuzzyness": 0.8,
+     "Speed": 0.3,
+     "Position X": 0,
+     "Position Y": 0,
+     "Color": "#cfd6cc",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Opacity": 1,
+       "Feedback": 0.85,
+       "Mode": "Alpha"
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "The bible's muslin exactly, with Trails so the ectoplasm smears behind itself as it rises once the circle is closed."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Flame Core",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.12,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 0.95,
+     "Speed": 0.2,
+     "Position X": -0.4,
+     "Position Y": 0.3,
+     "Color": "#f2b65a",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 0.1,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Bloom",
+      "params": {
+       "Opacity": 1,
+       "Amount": 0.6,
+       "Threshold": 0.4,
+       "Knee": 0.2,
+       "Iterations": 3,
+       "Size": 0.4,
+       "Gaussian": 0.6
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "A single bloomed candle-colour ball at the lamp's position whose size follows the bass: the Golden Flicker Reel's core bloom rebuilt from stock."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "Sitters Join Hands",
+    "source": "Text Block",
+    "params": {
+     "Text": "SITTERS JOIN HANDS\nDO NOT BREAK THE RING",
+     "Font": "Baskerville Old Face",
+     "Style": "Regular",
+     "Color": "#e9e1cf",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400,
+     "Position X": 0,
+     "Position Y": 380,
+     "Spacing X": 4,
+     "Spacing Y": 20,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The second instruction and the rule, at the bottom of frame so the muslin above it is unobstructed."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Daguerreotype Wash",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#6b4a2e"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Flat sepia at thirty percent over the whole frame makes everything look already photographed."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Damask Weave",
+    "source": "Checkered",
+    "params": {
+     "Num X": 64,
+     "Num Y": 36,
+     "Color 1": "#00000000",
+     "Color 2": "#e9e1cf"
+    },
+    "fft": {
+     "Num X": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 64,
+      "ceiling": 96
+     }
+    },
+    "effects": [],
+    "opacity": 0.05,
+    "why": "A fine bone grid at five percent reads as the weave of the tablecloth; hi-hats tighten the mesh and nothing else."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#9c8c74",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Same recorder needle, same moth dust, same bottom edge: the readout never changes between scenes."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Candle Flinch",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.45,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 1,
+     "Speed": 0.08,
+     "Position X": -0.4,
+     "Position Y": 0.3,
+     "Color": "#a87030",
+     "BG Color": "#120e0bff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.4,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The candle throw with a faster, harder sub envelope so each kick is a push on the light, the room flinching with the knock."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Table Top Square",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0,
+     "Bloom Mode": "Lighten",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.05,
+     "Line Ammount": 10,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.5,
+     "Gloabal rot": 0,
+     "Outer rot 2": 0,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#6b4a2e",
+     "Outer Color 2": "#2e1d10",
+     " Out Edge S": 0.004,
+     "Out Edge S 2": 0.004
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.45,
+    "why": "Ten nested sepia squares, hard-cornered and still: the table top seen from above, the wood that is about to be knocked on."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Knock Ripples",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 6,
+     "Size": 1,
+     "Spacing": 0.4,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd6cc",
+     "Color 2": "#cfd6cc80"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 10,
+      "release": 400,
+      "floor": 0.8,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Opacity": 1,
+       "Feedback": 0.8,
+       "Mode": "Luma"
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "Six fine ectoplasm rings that expand on the kick and linger through Trails: the knock heard as ripples in the muslin."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "The Knock",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.08,
+     "Fade": false,
+     "Color 1": "#e9e1cf",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "A hard bone flash at a slow rate with a clear OFF phase, the one onset the performer fires by pad, never more than once a bar."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "Knock Once Yes",
+    "source": "Text Block",
+    "params": {
+     "Text": "KNOCK ONCE FOR YES\nY E S",
+     "Font": "Baskerville Old Face",
+     "Style": "Regular",
+     "Color": "#e9e1cf",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 30,
+     "Spacing Y": 40,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The question above the spaced answer; Spacing X tracks the letters out so Y E S reads as a planchette crossing a board."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Knock Vignette",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#6b4a2e00",
+     "Color 2": "#3a2616ff",
+     "Mode": "Smooth",
+     "Dither": 4
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "A darker sepia vignette with a touch of dither closes the edges harder now that something has answered."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Cylinder Hiss Up",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The cylinder hiss a touch louder than the opening, the recorder leaning in."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#9c8c74",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The needle that will jump when the knock lands, the only element allowed to answer the signal 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Table Candle",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#a06a2a",
+     "Color 2": "#120e0b",
+     "Mode": "Smooth",
+     "Dither": 6
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "A grainier still candle radial for the long tilt: the environment does not dance while the table does."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Tilted Table",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 9,
+     "Width": 0.02,
+     "Rotation": 101,
+     "Position": 0.5,
+     "Color": "#6b4a2e"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 8,
+      "release": 1200,
+      "floor": 0.1,
+      "ceiling": 0.35
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Nine thin sepia lines fixed eleven degrees off vertical, the table already tilted at 11:47; low-mids soften their edges like the room breathing."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Muslin Thickens",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Average",
+     "Size": 0.3,
+     "Distance": 0.45,
+     "Radius": 0.7,
+     "Fuzzyness": 0.7,
+     "Speed": 0.4,
+     "Position X": 0,
+     "Position Y": 0,
+     "Color": "#cfd6cc",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.25,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "More blobs, slightly sharper, swelling on the lows: the ectoplasm has mass now and pushes against the tilt."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Table Edge Lit",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.3,
+     "Amount": 2,
+     "Width": 0.015,
+     "Rotation": 101,
+     "Position": 0.5,
+     "Color": "#f2b65a"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.04
+     }
+    },
+    "effects": [],
+    "opacity": 0.7,
+    "why": "Two candle-colour hairlines on the same eleven-degree tilt as the BODY lines, the table edge catching the flame, thickening on the bass."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "Table Tilted",
+    "source": "Text Block",
+    "params": {
+     "Text": "TABLE TILTED 11:47\nG O O D B Y E",
+     "Font": "Baskerville Old Face",
+     "Style": "Regular",
+     "Color": "#e9e1cf",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400,
+     "Position X": 0,
+     "Position Y": 380,
+     "Spacing X": 30,
+     "Spacing Y": 40,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The log entry over the spaced farewell, tracked out so G O O D B Y E crosses the board letter by letter."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Sepia Smoke",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 2,
+     "Amplitude": 0.5,
+     "Density": 0.3
+    },
+    "fft": {
+     "Density": {
+      "band": "mid",
+      "gain": 6,
+      "release": 1500,
+      "floor": 0.2,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Opacity": 1,
+       "Black To": "#120e0bff",
+       "White To": "#6b4a2eff"
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Grey field tinted parlour-black to sepia, a slow smoke grade whose density opens on the low-mids: the only AURA that moves, and only with the room's breath."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Tilted Weave",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.2,
+     "Amount": 80,
+     "Width": 0.02,
+     "Rotation": 101,
+     "Position": 0.5,
+     "Color": "#6b4a2e"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Eighty dense sepia lines on the same tilt as everything else, a tablecloth weave that has slid with the table."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#9c8c74",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The needle stays level while the table tilts; the recorder is the only thing in the room not on the table."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Lamp Bloom",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.6,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 1,
+     "Speed": 0.1,
+     "Position X": -0.4,
+     "Position Y": 0.3,
+     "Color": "#c08436",
+     "BG Color": "#120e0bff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.72
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The candle throw at its widest and warmest so far, breathing on the sub, because the lamp is what the moths are drawn to."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Lamp Shade Facets",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.1,
+     "Bloom Mode": "Lighten",
+     "Shape Types": "Hexagon",
+     "Shape Rounding": 0.1,
+     "Line Ammount": 14,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.3,
+     "Gloabal rot": 0,
+     "Outer rot 2": 0.04,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#6b4a2e",
+     "Outer Color 2": "#2e1d10",
+     " Out Edge S": 0.004,
+     "Out Edge S 2": 0.004
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Kaleidoscope",
+      "params": {
+       "Opacity": 1,
+       "Angles": 0.25,
+       "Rotation": 0,
+       "Zoom": 0.5,
+       "Input Rotation": 0,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Nested hexagons folded through a Kaleidoscope: the lamp's glass shade seen through its own facets, the damask refracted."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Moths At Lamp",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 12,
+     "Blend": "Minimal",
+     "Size": 0.04,
+     "Distance": 0.3,
+     "Radius": 0.6,
+     "Fuzzyness": 0.2,
+     "Speed": 6,
+     "Position X": -0.2,
+     "Position Y": 0.15,
+     "Color": "#e9e1cf",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Opacity": 1,
+       "Feedback": 0.75,
+       "Mode": "Alpha"
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Twelve fast bone points pulled toward the lamp corner, each leaving a short dust trail; the pad re-spawns them every bar as the bible asks."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Lamp And Glass",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.4,
+     "Radius": 0.4,
+     "Fuzzyness": 0.95,
+     "Speed": 0.3,
+     "Position X": -0.4,
+     "Position Y": 0.3,
+     "Color": "#f2b65a",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 0.08,
+      "ceiling": 0.18
+     }
+    },
+    "effects": [
+     {
+      "effect": "Bloom",
+      "params": {
+       "Opacity": 1,
+       "Amount": 0.7,
+       "Threshold": 0.35,
+       "Knee": 0.2,
+       "Iterations": 3,
+       "Size": 0.5,
+       "Gaussian": 0.6
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Two bloomed candle balls at the lamp, the flame and its reflection in the glass, swelling on the bass for the moths to cross."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "Smell Of Violets",
+    "source": "Text Block",
+    "params": {
+     "Text": "A SMELL OF VIOLETS",
+     "Font": "Baskerville Old Face",
+     "Style": "Regular",
+     "Color": "#e9e1cf",
+     "Size": 1.5,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 4,
+     "Spacing Y": 0,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "One line, top of frame, the sitters noticing the scent while they watch the moths; the figure below stays clear."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Lamp Sepia Wash",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#6b4a2e"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "The standard daguerreotype wash, thirty percent, so the moth scene keeps the same photographed brown as the rest of the seance."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Moth Dust",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 5,
+     "Amplitude": 0.3,
+     "Density": 0.8
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.1,
+    "why": "High-octave dense field at ten percent is the dust off the moths' wings; hi-hats brighten it and nothing else."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#9c8c74",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The needle under the moths, unchanged."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Candle At Full",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#b4803a",
+     "Color 2": "#120e0b",
+     "Mode": "Smooth",
+     "Dither": 4
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The brightest candle radial of the deck for the peak, still and steady so the trumpet and the cathedral read against it."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Damask Cathedral",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.2,
+     "Bloom Mode": "Lighten",
+     "Shape Types": "Chevron",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 20,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.8,
+     "Gloabal rot": 0,
+     "Outer rot 2": 0.03,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#6b4a2e",
+     "Outer Color 2": "#f2b65a",
+     " Out Edge S": 0.004,
+     "Out Edge S 2": 0.004
+    },
+    "fft": {
+     "Bloom": {
+      "band": "mid",
+      "gain": 8,
+      "release": 1200,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Mirror Quad",
+      "params": {
+       "Opacity": 1,
+       "Flip X": false,
+       "Flip Y": false
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Twenty gilded chevrons folded by Mirror Quad into gothic arches, the damask becoming a cathedral on the drop, its bloom opening on the low-mids."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Trumpet Lifts",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Lighten",
+     "Shape Types": "Triangle",
+     "Shape Rounding": 0.1,
+     "Line Ammount": 7,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.3,
+     "Gloabal rot": 0,
+     "Outer rot 2": 0,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#cfd6cc",
+     "Outer Color 2": "#f2b65a",
+     " Out Edge S": 0.006,
+     "Out Edge S 2": 0.006
+    },
+    "fft": {
+     "Outer Scale": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 1.1,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Bloom",
+      "params": {
+       "Opacity": 1,
+       "Amount": 0.5,
+       "Threshold": 0.5,
+       "Knee": 0.1,
+       "Iterations": 2,
+       "Size": 0.3,
+       "Gaussian": 0.5
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "Seven nested triangles in ectoplasm and candle, the spirit trumpet's bell, swelling outward on the bass as it lifts off the table."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Trumpet Glow",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1,
+     "Detail": 1,
+     "Speed": 0.4,
+     "Zoom": 1.2,
+     "Leafs": 3,
+     "Distortion": 30,
+     "Fuzzyness": 0.4,
+     "Ramification": 0,
+     "Button": false,
+     "Button Size": 1,
+     "Button Fuzzyness": 0.1,
+     "Color": "#f2b65a",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 1,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "A soft three-leaf candle spiral turning behind the trumpet, the lamp's light wheeling as the thing in the air moves; the lows zoom it in."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "Glass Spells Leave",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE TRUMPET LIFTS\nGLASS SPELLS L-E-A-V-E",
+     "Font": "Baskerville Old Face",
+     "Style": "Regular",
+     "Color": "#e9e1cf",
+     "Size": 1.3,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400,
+     "Position X": 0,
+     "Position Y": 380,
+     "Spacing X": 4,
+     "Spacing Y": 20,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The peak's two events logged at the bottom of frame, the order to leave spelled out under the lifting trumpet."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Candle Sweep",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Angular",
+     "Color 1": "#f2b65a66",
+     "Color 2": "#6b4a2e00",
+     "Mode": "Smooth",
+     "Dither": 2
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.25,
+    "why": "An angular sweep from faint candle to transparent sepia, a gilded wash that lifts the peak a shade above the other candle columns."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Hiss Rising",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Cylinder hiss held at ten percent under the peak so the texture bridges into Class A."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#9c8c74",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The needle at the peak, still honest, still moth dust."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Cold Spot NW",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.5,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 1,
+     "Speed": 0.03,
+     "Position X": -0.55,
+     "Position Y": 0.4,
+     "Color": "#122a55",
+     "BG Color": "#120e0bff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 6,
+      "release": 900,
+      "floor": 0.45,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The candle is gone; one darkened cold-spot blue glow in the north-west corner over parlour black, breathing slowly on the sub, the thing that answered."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Cylinder Wave",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.06,
+     "Fuzzyness": 0.5,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2,
+     "Main Speed": 2,
+     "Modulator": 4,
+     "Modulation Depth": 1.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.15,
+     "Position": 0.5,
+     "Color": "#e9e1cf",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 0.08,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Three fuzzy bone sine lines, the wax cylinder's waveform played back, its amplitude the voice's level on the lows."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "No Body",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#cfd6cc"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "The voice has no body: a near-invisible ectoplasm fill fills the cell so the grid has no hole."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "No Lamp",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#2b6cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "No lamp in Class A: a three-percent cold fill holds the cell without adding light."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "Cold She Says",
+    "source": "Text Animator",
+    "params": {
+     "Text": "COLD, SHE SAYS. COLD.",
+     "Font": "Lucida Console",
+     "Style": "Regular",
+     "Color": "#2b6cff",
+     "Size": 1,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": -420,
+     "Position Y": -340,
+     "Spacing X": 6,
+     "Spacing Y": 0,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0.15,
+     "Animated": true,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 120,
+     "Opacity": 1,
+     "Scale": 1
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The 1971 overdub typed character by character in cold-spot blue, up in the north-west corner where the cold is; the only column in typewriter."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Cold Wash",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#2b6cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The reserved ice blue used once, at ten percent, so its rarity is the scare."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Cylinder Hiss Main",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "Static at eighteen percent is the main texture of Class A: with faders down only the hiss, the needle and the voice remain."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#2b6cff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The same needle recoloured cold-spot blue for the one column where the recorder is the whole picture."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Parlour Black",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#120e0b"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The candle gradient is gone: flat parlour black, the room a minute after the lamp went out."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Damask Gone",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#6b4a2e"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "The bible's Blank: a five-percent sepia fill holds the cell with no structure left in the room."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Last Of Muslin",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.05,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 0.9,
+     "Speed": 0.1,
+     "Position X": -0.4,
+     "Position Y": 0.3,
+     "Color": "#cfd6cc",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 6,
+      "release": 900,
+      "floor": 0.04,
+      "ceiling": 0.07
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "One tiny soft ectoplasm point up where the lamp was, the last of the muslin, barely breathing before it goes."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Lamp Comes Up",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.05,
+     "Fade": true,
+     "Color 1": "#f2b65a",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "A slow faded candle pulse with a clear OFF phase: the lamp being turned back up, breath by breath."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Break The Circle",
+    "source": "Text Block",
+    "params": {
+     "Text": "BREAK THE CIRCLE NOW\nSHE HAS GONE BACK",
+     "Font": "Baskerville Old Face",
+     "Style": "Regular",
+     "Color": "#e9e1cf",
+     "Size": 1.5,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing X": 4,
+     "Spacing Y": 24,
+     "Outline Width": 0,
+     "Glow In": 0,
+     "Glow Out": 0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The last instruction dead centre, the one column where nothing stands in the middle of the room to be covered."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Cold To Black",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Vertical",
+     "Color 1": "#2b6cff",
+     "Color 2": "#120e0b",
+     "Mode": "Smooth",
+     "Dither": 2
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Cold spot to parlour black at six percent for the last beat, the second and final use of the reserved blue."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "End Of Groove",
+    "source": "Static",
+    "params": {
+     "Mode": "Two-tone"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "Two-tone static at twenty percent, harsher than the grayscale hiss: the cylinder at the end of its groove."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "EVP Needle",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 2,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#e9e1cf",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.12
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The needle in bone for the close, the recorder still running after everyone has let go."
+   }
+  ]
+ },
+ {
+  "deck": "Hour Of Saturn",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Crypt Wall Red",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#0a0908",
+     "Color 2": "#1c0608",
+     "Mode": "Smooth",
+     "Dither": 6
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Crypt black warming to near-black red across the back wall, opaque so the gels have nothing to reflect off but geometry."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Circle Sigils",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Shape Types": "Circle",
+     "Line Ammount": 10,
+     "Bloom": 0,
+     "Shape Rounding": 0,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.4,
+     "Gloabal rot": 0.02,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#d8c9a8",
+     "Outer Color 2": "#00000000",
+     "Out Edge S 2": 0.006
+    },
+    "fft": {
+     "Outer Scale": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 1.3,
+      "ceiling": 1.7
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Concentric bone circle-sigils tiling the floor, outer ring only, turning once a minute; the kick pushes them outward like a tide."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Chalk Circle Drawn",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 1.6,
+     "Spacing": 0.3,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 30,
+     "Rotation": -90,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#efe9dc",
+     "Color 2": "#efe9dc"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.07
+     }
+    },
+    "effects": [],
+    "why": "One chalk circle nine feet across with a 30-degree opening at the top, still being drawn; the line thickens with the pulse."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Lamp From The Left",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#c1121f",
+     "Color 2": "#00000000",
+     "Mode": "Stepped",
+     "Dither": 4
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -520,
+       "Position Y": 0,
+       "Scale": 80
+      }
+     }
+    ],
+    "opacity": 0.4,
+    "why": "The Lamp of the Art as a hard-stepped red disc pushed to the left edge, lit from the wrong side of the room."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "Primo Tempo",
+    "source": "Text Block",
+    "params": {
+     "Text": "PRIMO TEMPO",
+     "Font": "Bodoni MT",
+     "Style": "Bold",
+     "Color": "#efe9dc",
+     "Size": 1.6,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 40,
+     "Spacing Y": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The Rome 1977 intertitle in Bodoni caps tracked wide, chalk, held at the top so it never sits on the circle."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Dark Room",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit blank: no gel yet, a near-invisible crypt-black overlay that keeps the grid whole."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Rome Print",
+    "source": "Static",
+    "params": {
+     "Mode": "Color"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Colour static at ten percent, the Rome print lab's grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#d8c9a8",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "The bone oscilloscope at the bottom edge, the only element allowed to look like music."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Wall Struck",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#1c0608",
+     "Color 2": "#0a0908",
+     "Mode": "Smooth",
+     "Dither": 8
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 500,
+      "floor": 4,
+      "ceiling": 14
+     }
+    },
+    "effects": [],
+    "why": "The red creeps to the other side of the wall as the hour strikes; hi-hats roughen the print banding."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Hex Sigil Tiles",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Shape Types": "Hexagon",
+     "Line Ammount": 12,
+     "Bloom": 0,
+     "Shape Rounding": 0,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.5,
+     "Gloabal rot": 0.05,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#d8c9a8",
+     "Outer Color 2": "#00000000",
+     "Out Edge S 2": 0.006
+    },
+    "fft": {
+     "Outer Scale": {
+      "band": "low",
+      "gain": 9,
+      "release": 400,
+      "floor": 1.4,
+      "ceiling": 1.9
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "The bible's hexagon sigil tiles in bone, twelve lines, slow global rotation; the kick drives them outward."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Kamea Of Saturn",
+    "source": "Checkered",
+    "params": {
+     "Num X": 3,
+     "Num Y": 3,
+     "Color 1": "#4f8a6b",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 20,
+       "Scale H": 35.5,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "why": "The three-by-three square of Saturn in verdigris, scaled by Transform to a small true square at the centre of the circle."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Hour Blade",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.06,
+     "Fade": false,
+     "Color 1": "#efe9dc",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.7,
+    "why": "A hard chalk flash with no fade, the hour as a blade; OFF phase transparent so the room stays."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "First Hour Card",
+    "source": "Text Block",
+    "params": {
+     "Text": "SATURDAY, FIRST HOUR\nHOUR OF SATURN",
+     "Font": "Engravers MT",
+     "Style": "Regular",
+     "Color": "#efe9dc",
+     "Size": 1.1,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 10,
+     "Spacing Y": 12
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The planetary hour named in Engravers MT, two short chalk lines at the top of the frame."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Dark Room Struck",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit blank for the hour; the gels are not yet swapped in."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Print Roughened",
+    "source": "Static",
+    "params": {
+     "Mode": "Two-tone"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "Two-tone static at twenty percent for the one bar the hour sounds, the print roughened."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d8c9a8",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "Same bone scope, lifted a hair for the strike."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Seal Vignette",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#0a0908",
+     "Color 2": "#1c0608",
+     "Mode": "Smooth",
+     "Dither": 6
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Dark centre, faint red rim: the room closes around the seal."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Square Seal Tiles",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Shape Types": "Square",
+     "Line Ammount": 9,
+     "Bloom": 0,
+     "Shape Rounding": 0,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.5,
+     "Gloabal rot": 0,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#d8c9a8",
+     "Outer Color 2": "#00000000",
+     "Out Edge S 2": 0.006
+    },
+    "fft": {
+     "Out Edge S 2": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0.003,
+      "ceiling": 0.012
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Nine nested bone squares, still, echoing the Kamea; highs soften the line edges like chalk dust."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "First Seal Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 3,
+     "Num Y": 3,
+     "Color 1": "#4f8a6b",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 24,
+       "Scale H": 42.7,
+       "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Edge Detection",
+      "params": {
+       "Use Color": true,
+       "Color": "#4f8a6b",
+       "Amount": 1,
+       "Multiplier": 0.4
+      }
+     }
+    ],
+    "why": "The Kamea drawn as a verdigris line grid: Edge Detection reduces the tiles to their rules, the seal written rather than filled."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Lamp Of The Art",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#c1121f",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 6
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 2,
+      "ceiling": 12
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 480,
+       "Position Y": 0,
+       "Scale": 90
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "The lamp has moved to the right side of the room, a soft red pool; hiss dithers its edge."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "Kamea Numbers",
+    "source": "Text Block",
+    "params": {
+     "Text": "4 9 2\n3 5 7\n8 1 6",
+     "Font": "Engravers MT",
+     "Style": "Regular",
+     "Color": "#efe9dc",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 60,
+     "Spacing Y": 10
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The square that sums to fifteen every way, read as three chalk lines above the seal."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Dark Room Seal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit blank; the seal is lit by the lamp alone."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Register Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 64,
+     "Num Y": 36,
+     "Color 1": "#d8c9a8",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A fine bone registration grid at six percent, the print lab's ruled sheet under the seal."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#d8c9a8",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "Same bone scope at the bottom edge."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Red Gel Wall",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#1c0608",
+     "Color 2": "#0a0908",
+     "Mode": "Smooth",
+     "Dither": 6
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 500,
+      "floor": 4,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "why": "Near-black red on the lamp side of the wall, crypt black on the other; the first gel is in."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Hex Under Red",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Shape Types": "Hexagon",
+     "Line Ammount": 12,
+     "Bloom": 0,
+     "Shape Rounding": 0,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.5,
+     "Gloabal rot": 0.08,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#d8c9a8",
+     "Outer Color 2": "#00000000",
+     "Out Edge S 2": 0.006
+    },
+    "fft": {
+     "Line Ammount": {
+      "band": "mid",
+      "gain": 8,
+      "release": 700,
+      "floor": 10,
+      "ceiling": 18
+     }
+    },
+    "effects": [],
+    "opacity": 0.32,
+    "why": "The hexagon sigils turn faster under the red gel and the mids pack more lines into them."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Kamea Tilted",
+    "source": "Checkered",
+    "params": {
+     "Num X": 3,
+     "Num Y": 3,
+     "Color 1": "#4f8a6b",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 20,
+       "Scale H": 35.5,
+       "Rotation Z": 12
+      }
+     }
+    ],
+    "why": "The verdigris square tilted twelve degrees, the only colour the red gel cannot make, so it looks older than the light."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Red Gel Cut",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#c1121f",
+     "Color 2": "#00000000",
+     "Mode": "Stepped",
+     "Dither": 8
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.7,
+    "why": "A hard stepped cut: half the frame Argento red, half clear, dithered on the edge, the lamp on one side of the room."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "Non Aprire",
+    "source": "Text Block",
+    "params": {
+     "Text": "NON APRIRE",
+     "Font": "Bodoni MT",
+     "Style": "Bold",
+     "Color": "#efe9dc",
+     "Size": 1.8,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 40,
+     "Spacing Y": 0
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The Italian intertitle, DO NOT OPEN, Bodoni caps tracked wide, chalk never red."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Red Gel Wash",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#c1121f"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "Gel red overlay at thirty-five percent, the whole room under the first gel."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Rome Print Red",
+    "source": "Static",
+    "params": {
+     "Mode": "Color"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The print grain continues under the red gel."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#d8c9a8",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "Same bone scope; it stays bone under the red gel."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Blue Gel Wall",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#0a0908",
+     "Color 2": "#060a1c",
+     "Mode": "Smooth",
+     "Dither": 6
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 500,
+      "floor": 4,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "why": "The far colour swaps to near-black blue on the opposite side: the lamp has changed sides of the room."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Pentagon Kaleido",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Shape Types": "Pentagon",
+     "Line Ammount": 12,
+     "Bloom": 0,
+     "Shape Rounding": 0,
+     "Mask Intersect": true,
+     "Inner Scale": 0,
+     "Intersect Scale": 0,
+     "Outer Scale": 1.5,
+     "Gloabal rot": -0.08,
+     "Innter Color 1": "#00000000",
+     "Inner color 2": "#00000000",
+     "Outer Color 1": "#d8c9a8",
+     "Outer Color 2": "#00000000",
+     "Out Edge S 2": 0.006
+    },
+    "fft": {
+     "Outer Scale": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 1.3,
+      "ceiling": 1.8
+     }
+    },
+    "effects": [
+     {
+      "effect": "Kaleidoscope",
+      "params": {
+       "Angles": 0.25,
+       "Zoom": 0.5,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Pentagon sigils counter-rotating under the second gel, kaleidoscoped to four as the bible's blue-gel moment asks."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Kamea Fourfold",
+    "source": "Checkered",
+    "params": {
+     "Num X": 3,
+     "Num Y": 3,
+     "Color 1": "#4f8a6b",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 14,
+       "Scale H": 25,
+       "Position X": -480,
+       "Position Y": -270
+      }
+     },
+     {
+      "effect": "Mirror Quad",
+      "params": {
+       "Flip X": false,
+       "Flip Y": false
+      }
+     }
+    ],
+    "why": "The Kamea moved into the top-left quadrant and mirrored four ways, the seal multiplied to four and no further."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Blue Gel Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.1,
+     "Fade": true,
+     "Color 1": "#1f4fbf",
+     "Color 2": "#00000000"
+    },
+    "fft": {
+     "Frequency": {
+      "band": "mid",
+      "gain": 7,
+      "release": 600,
+      "floor": 0.06,
+      "ceiling": 0.16
+     }
+    },
+    "effects": [],
+    "opacity": 0.7,
+    "why": "Gel blue pulsing with a fade, roughly one flash per bar, quickening as the mids build."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "Red Then Blue",
+    "source": "Text Block",
+    "params": {
+     "Text": "LAMP OF THE ART\nRED GEL, THEN BLUE",
+     "Font": "Engravers MT",
+     "Style": "Regular",
+     "Color": "#efe9dc",
+     "Size": 1.1,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 10,
+     "Spacing Y": 12
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The recipe's stage direction in Engravers MT, two chalk lines above the mirrored seal."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blue Gel Wash",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1f4fbf"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.25,
+    "why": "Gel blue overlay at twenty-five percent, the counter-light from the wrong side."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Rome Print Blue",
+    "source": "Static",
+    "params": {
+     "Mode": "Color"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The print grain continues under the blue gel."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#d8c9a8",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "Same bone scope; it stays bone under the blue gel."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Two Gels Meet",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#1c0608",
+     "Color 2": "#060a1c",
+     "Mode": "Smooth",
+     "Dither": 6
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Near-black red to near-black blue across the wall, the two gels meeting in the middle of the room for the first time."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Contracting Web",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 24,
+     "Size": 0.6,
+     "Spacing": 0.1,
+     "Line Width": 0.025,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#d8c9a8",
+     "Color 2": "#d8c9a8"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 10,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Bloom",
+      "params": {
+       "Amount": 0.5,
+       "Threshold": 0.5,
+       "Size": 0.3,
+       "Iterations": 2
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Twenty-four thin bone rings that swell with every kick and bloom toward white, the web pulling at the seal."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Seal Turning",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1.5,
+     "Speed": 0.12,
+     "Zoom": 0.6,
+     "Leafs": 3,
+     "Distortion": 15,
+     "Fuzzyness": 0.05,
+     "Ramification": 0.4,
+     "Button": false,
+     "Color": "#4f8a6b",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 8,
+      "release": 450,
+      "floor": 0.5,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Feedback": 0.85,
+       "Mode": "Lighten"
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "The verdigris seal set turning and branching, trailing, the one animated figure: the recipe is working."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Blue On The Bar",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.14,
+     "Fade": true,
+     "Color 1": "#1f4fbf",
+     "Color 2": "#00000000"
+    },
+    "fft": {
+     "Frequency": {
+      "band": "mid",
+      "gain": 7,
+      "release": 600,
+      "floor": 0.1,
+      "ceiling": 0.22
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Gel blue strobing on the bar while the red moves to AURA, one source per clip."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "I Conjure Thee",
+    "source": "Text Animator",
+    "params": {
+     "Text": "I CONJURE THEE",
+     "Font": "Perpetua Titling MT",
+     "Style": "Bold",
+     "Color": "#efe9dc",
+     "Size": 1.6,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 20,
+     "Animated": true,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 150
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The only Text Animator in the deck: the conjuration typed on letter by letter in Perpetua Titling, chalk."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Gels Meet",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Horizontal",
+     "Color 1": "#c1121f",
+     "Color 2": "#1f4fbf",
+     "Mode": "Smooth",
+     "Dither": 4
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 400,
+      "floor": 2,
+      "ceiling": 10
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Gel red to gel blue at thirty percent, red and blue meeting in the middle of the frame only here."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Print Peak Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Color"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The print grain a touch rougher at the peak."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#d8c9a8",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "Same bone scope at the peak."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Last Ember Wall",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Type": "Radial",
+     "Color 1": "#1c0608",
+     "Color 2": "#0a0908",
+     "Mode": "Smooth",
+     "Dither": 10
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 500,
+      "floor": 4,
+      "ceiling": 14
+     }
+    },
+    "effects": [],
+    "why": "The last near-black red pooled at the centre, crypt black closing in from the edges."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Bare Circle",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 1.2,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#d8c9a8",
+     "Color 2": "#d8c9a8"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "One bare bone circle, closed, the web gone; its line breathes with the pulse."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Verdigris Point",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.02,
+     "Noise Type": "Grain",
+     "Noise Amount": 0,
+     "Noise Speed": 0,
+     "Color": "#4f8a6b",
+     "Outline": 0,
+     "Outline Color": "#4f8a6b"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 7,
+      "release": 500,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "why": "A single verdigris point at the centre that stays when the lamp goes, swelling only slightly with the kick."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Lamp Guttering",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.5,
+     "Fade": true,
+     "Color 1": "#c1121f",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Shape Mask",
+      "params": {
+       "Shape": "Circle",
+       "Feather": 160,
+       "Scale": 45,
+       "Position X": 0.6,
+       "Position Y": 0.15,
+       "Invert": false
+      }
+     }
+    ],
+    "opacity": 0.25,
+    "why": "The lamp guttering: a fast faded red flicker masked to a soft off-centre circle at low opacity, the flicker-reel substitute."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "Non Guardare",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE LAMP IS GOING OUT\nNON GUARDARE",
+     "Font": "Engravers MT",
+     "Style": "Regular",
+     "Color": "#efe9dc",
+     "Size": 1,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": -380,
+     "Spacing X": 10,
+     "Spacing Y": 12
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The warning and its Italian echo, DO NOT LOOK, in chalk above the dying lamp."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Red Wash Fading",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#c1121f"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.22,
+    "why": "The red gel wash held but dimmer than in Red Gel; the light is leaving the room."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Print Dying",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Greyscale static as the colour drains from the print."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#b5a688",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "Same scope in a dimmer bone as the lamp goes."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Crypt Black",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "why": "Solid crypt black, the gels gone, nothing left on the wall."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Empty Circle",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit blank: the circle is empty, a near-invisible black so the grid has no hole."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Nothing Remains",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit blank: the seal and the point have gone."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Lamp Out",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit blank: the lamp is out."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Licence Fine",
+    "source": "Text Block",
+    "params": {
+     "Text": "LICENCE TO DEPART\nFINE",
+     "Font": "Bodoni MT",
+     "Style": "Bold",
+     "Color": "#efe9dc",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing X": 40,
+     "Spacing Y": 30
+    },
+    "fft": {},
+    "effects": [],
+    "why": "The closing intertitle dead centre because nothing else is in the room: LICENCE TO DEPART with FINE beneath it."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Dark Room Fine",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0a0908"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Explicit blank; no gel over the end card."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Print Tail",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "The faintest greyscale grain, the reel running out behind FINE."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Carpenter Pulse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 1,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 1,
+     "Amplitude": 0.06,
+     "Position": 0.92,
+     "Color": "#d8c9a8",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.3
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 350,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Frequency": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.5,
+      "ceiling": 6
+     }
+    },
+    "effects": [],
+    "why": "Same bone scope, dropped to the very bottom edge under FINE."
+   }
+  ]
+ },
+ {
+  "deck": "German Bight",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Night Swell",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 20,
+     "Direction": 0,
+     "Position Y": 5,
+     "Speed": 0.3,
+     "Height": 4,
+     "Jagginess": 0.2,
+     "Wobble": 0.1,
+     "Attenuation": 220,
+     "Line Width": 0.15,
+     "Fuzzyness": 0.1,
+     "Color": "#5f6f78ff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 8,
+      "release": 1200,
+      "floor": 3,
+      "ceiling": 7
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The North Sea as a slow wireframe floor; the sub band is a tide, never a flash."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Horizon Line",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 1,
+     "Width": 0.02,
+     "Rotation": 0,
+     "Position": 0.33,
+     "Color": "#5f6f78ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "One still horizon so the lighthouse sweep is the only motion in the room."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Lamp Pulse Ring",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.9,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#8c979cff",
+     "Color 2": "#8c979cff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 1400,
+      "floor": 0.85,
+      "ceiling": 1.05
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "A single fog ring swelling a hair on the lows, slow release: the lighthouse heard more than seen. Build: drop the FFT and put Size on the four-bar Timeline."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Lighthouse Wedge",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 2.6,
+     "Spacing": 0.3,
+     "Line Width": 0.2,
+     "Style": "Fill",
+     "Gap": 330,
+     "Rotation": -90,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#ffe8a3ff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "SearchLight",
+      "params": {
+       "Opacity": 1,
+       "Size": 0.7,
+       "Blur": 0.6,
+       "Frequency": 0.1,
+       "Invert": false
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "The lamp wedge, SearchLight for blur only. Build: drive Rings Rotation with a 10 s looping Timeline -180 to 180 for Fl(2) W 10s; static -90 in all four wedge columns so the lamp never jumps."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "At 0048 Long Wave",
+    "source": "Text Animator",
+    "params": {
+     "Text": "AT 0048, LONG WAVE",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 1.2,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The time and the band, low on the card, under the sea."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Horizon Vignette",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#5f6f78ff",
+     "Color 2": "#0e141aff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.15,
+    "why": "A faint lift at the horizon and long-wave black at the edges closes the room."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Long Wave Hiss",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "198 kHz hiss as grey noise; no film grain in this deck."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.9,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The bridge-radar green readout pinned to the bottom edge, the one honest element; period fixed, hats fuzz the trace, never re-period it."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Gale Swell",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 24,
+     "Direction": 0,
+     "Position Y": 5,
+     "Speed": 0.5,
+     "Height": 8,
+     "Jagginess": 0.5,
+     "Wobble": 0.3,
+     "Attenuation": 200,
+     "Line Width": 0.15,
+     "Fuzzyness": 0.15,
+     "Color": "#5f6f78ff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 10,
+      "release": 900,
+      "floor": 6,
+      "ceiling": 12
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The sea rising and jagged; the kick pushes the swell higher."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Stacked Swell",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.2,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 1,
+     "Main Speed": 2,
+     "Modulator": 4,
+     "Modulation Depth": 2,
+     "Modulator Speed": 1,
+     "Amplitude": 0.25,
+     "Position": 0.5,
+     "Color": "#5f6f78ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9,
+      "release": 500,
+      "floor": 0.15,
+      "ceiling": 0.45
+     },
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 6,
+      "release": 1500,
+      "floor": 0.1,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Wave Warp",
+      "params": {
+       "Opacity": 0.7,
+       "Mode": 0,
+       "Height": 0.12,
+       "Width": 0.25,
+       "Angle": 1,
+       "Speed": 0.25,
+       "Pin edges?": true,
+       "Black BG": false
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "Doubled line width, warped and stacking with the lows: the barograph in a gale."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Gale Pulse Rings",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 4,
+     "Size": 1.2,
+     "Spacing": 0.5,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#8c979cff",
+     "Color 2": "#8c979cff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 10,
+      "release": 1400,
+      "floor": 0.85,
+      "ceiling": 1.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Opacity": 1,
+       "Feedback": 0.75,
+       "Mode": "Lighten"
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "Four pulses leaving ghosts, swelling slowly on the lows, the lighthouse heard more than seen. Build: Size on the four-bar Timeline."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Gale Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.02,
+     "Fade": true,
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "The published character as a slow faded lamp flash with a long OFF phase. Rig: verify 0.02 fires slower than once per 5 s, raise only until it does. Build: Frequency on a 10 s Timeline, 0.5 for 1 s then 0 for 9 s, for Fl(2)."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "Gale Card",
+    "source": "Text Block",
+    "params": {
+     "Text": "SOUTHWEST 5 TO 7\nSEVERE GALE 9, LATER\nROUGH OR VERY ROUGH\nGOOD OCCASIONALLY POOR",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 0.85,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1800,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing Y": 10
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The only Text Block: wind, weather, sea, visibility in card white landing on the hit; the gale red lives in the layer 6 wash and nowhere else."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Gale Red Wash",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#a8323aff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Storm cone red over the room at the bible's 6%: a warning, not blood."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Gale Hiss",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The hiss thickens with the gale."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Same readout, lifted a touch off the bottom edge for the gale; period fixed, hats fuzz the trace."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Utsire Swell",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 22,
+     "Direction": 0,
+     "Position Y": 5,
+     "Speed": 0.3,
+     "Height": 6,
+     "Jagginess": 0.35,
+     "Wobble": 0.15,
+     "Attenuation": 220,
+     "Line Width": 0.15,
+     "Fuzzyness": 0.1,
+     "Color": "#5f6f78ff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 8,
+      "release": 1200,
+      "floor": 4,
+      "ceiling": 9
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The litany begins; a steadier sea than the gale, still breathing on the sub."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Barograph Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.08,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 1,
+     "Main Speed": 1,
+     "Modulator": 3,
+     "Modulation Depth": 1.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.15,
+     "Position": 0.5,
+     "Color": "#5f6f78ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 8,
+      "release": 500,
+      "floor": 0.1,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The swell line and the barograph in one thin grey trace."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Twin Pulse",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 2,
+     "Size": 1,
+     "Spacing": 0.8,
+     "Line Width": 0.025,
+     "Style": "Stroke",
+     "Gap": 0,
+     "Rotation": 0,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#8c979cff",
+     "Color 2": "#8c979cff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 1400,
+      "floor": 0.85,
+      "ceiling": 1.05
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Two fog rings for Viking and North Utsire, swelling slowly, the count starting. Build: Size on the four-bar Timeline."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Utsire Wedge",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 2.6,
+     "Spacing": 0.3,
+     "Line Width": 0.2,
+     "Style": "Fill",
+     "Gap": 330,
+     "Rotation": -90,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#ffe8a3ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The lamp wedge, same -90 rest angle as column 1 so it does not jump. Build: Rings Rotation on the 10 s looping Timeline -180 to 180."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "Viking Utsire",
+    "source": "Text Animator",
+    "params": {
+     "Text": "VIKING, NORTH UTSIRE",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 1.05,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "First sea area, card white, high on the card off the figure."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Utsire Vignette",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#5f6f78ff",
+     "Color 2": "#0e141aff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.15,
+    "why": "The horizon lift and dark edge of the opening, carried into the litany."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Long Wave Hiss",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Steady long-wave hiss under the reading."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.9,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The same green readout, unchanged, bottom edge."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Dogger Swell",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 20,
+     "Direction": 0,
+     "Position Y": 8,
+     "Speed": 0.3,
+     "Height": 5,
+     "Jagginess": 0.3,
+     "Wobble": 0.1,
+     "Attenuation": 240,
+     "Line Width": 0.15,
+     "Fuzzyness": 0.1,
+     "Color": "#5f6f78ff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "A lower, shallower bank for the Dogger: the floor sits further down the frame."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Dogger Trace",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.08,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 1.5,
+     "Main Speed": 1.5,
+     "Modulator": 5,
+     "Modulation Depth": 1.2,
+     "Modulator Speed": 1,
+     "Amplitude": 0.12,
+     "Position": 0.55,
+     "Color": "#5f6f78ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "A tighter three-wave trace, the barograph reading a shorter sea."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Drifting Buoys",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.04,
+     "Distance": 0.5,
+     "Radius": 0.6,
+     "Fuzzyness": 0.05,
+     "Speed": 0.12,
+     "Position X": 0,
+     "Position Y": 0,
+     "Color": "#8c979cff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 6,
+      "release": 400,
+      "floor": 0.035,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "A few fog points drifting slowly across: the buoys on the card."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Dogger Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.02,
+     "Fade": true,
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.25,
+    "why": "The light vessel's character, slow and faded, long OFF phase. Rig: verify 0.02 fires slower than once per 5 s. Build: Frequency on a 10 s Timeline, 0.5 for 1 s then 0 for 9 s."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "Dogger Fisher",
+    "source": "Text Animator",
+    "params": {
+     "Text": "DOGGER, FISHER",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Second sea area, low on the card so the buoys own the middle."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Harbour Lights",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#a8323aff",
+     "Color 2": "#4caf7dff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Horizontal"
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0,
+      "ceiling": 4
+     }
+    },
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Port red left, starboard green right at 10%; hi-hats dither it like hiss."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Dogger Rain",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.6,
+     "Amount": 60,
+     "Width": 0.02,
+     "Rotation": 90,
+     "Position": 0.5,
+     "Color": "#8c979cff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0.5,
+      "ceiling": 0.8
+     }
+    },
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Rain later: vertical soft lines swap in for the hiss, never both at once."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.9,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The same green readout, bottom edge."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Bight Swell",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 26,
+     "Direction": 0,
+     "Position Y": 5,
+     "Speed": 0.35,
+     "Height": 7,
+     "Jagginess": 0.4,
+     "Wobble": 0.2,
+     "Attenuation": 200,
+     "Line Width": 0.18,
+     "Fuzzyness": 0.1,
+     "Color": "#5f6f78ff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 10,
+      "release": 900,
+      "floor": 5,
+      "ceiling": 11
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The peak sea: steeper tilt, thicker line, the biggest push on the lows."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Peak Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 1,
+     "Main Speed": 2,
+     "Modulator": 4,
+     "Modulation Depth": 2.5,
+     "Modulator Speed": 1.5,
+     "Amplitude": 0.3,
+     "Position": 0.5,
+     "Color": "#5f6f78ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 10,
+      "release": 500,
+      "floor": 0.2,
+      "ceiling": 0.32
+     }
+    },
+    "effects": [
+     {
+      "effect": "Trails",
+      "params": {
+       "Opacity": 1,
+       "Feedback": 0.7,
+       "Mode": "Lighten"
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The swell at its tallest without swallowing the arcs or the title band; the pen leaves a shorter trace behind it."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Bight Pulse Arcs",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 6,
+     "Size": 1.4,
+     "Spacing": 0.35,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 40,
+     "Rotation": 0,
+     "Rotation Step": 30,
+     "Rotation Alternate": true,
+     "Color 1": "#8c979cff",
+     "Color 2": "#8c979cff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 10,
+      "release": 1400,
+      "floor": 0.85,
+      "ceiling": 1.05
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Six fog rings opened into stepped arcs, swelling slowly: the pulse at full reach. Build: Size on the four-bar Timeline."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Bight Beam",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 3,
+     "Spacing": 0.3,
+     "Line Width": 0.2,
+     "Style": "Fill",
+     "Gap": 320,
+     "Rotation": -90,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#ffe8a3ff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "SearchLight",
+      "params": {
+       "Opacity": 1,
+       "Size": 0.8,
+       "Blur": 0.6,
+       "Frequency": 0.12,
+       "Invert": false
+      }
+     }
+    ],
+    "opacity": 0.75,
+    "why": "A slightly wider, brighter wedge at the peak, SearchLight for blur only, -90 rest angle. Build: Rings Rotation on the 10 s looping Timeline -180 to 180."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "German Bight",
+    "source": "Text Animator",
+    "params": {
+     "Text": "GERMAN BIGHT, HUMBER",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 1.05,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The title sea area, high on the card above the arcs."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Bight Harbour",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#a8323aff",
+     "Color 2": "#4caf7dff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Horizontal"
+    },
+    "fft": {
+     "Dither": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0,
+      "ceiling": 4
+     }
+    },
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Port and starboard a touch stronger at the peak; highs dither it."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Peak Hiss",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Hiss back in for the peak, a shade louder."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.9,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The same green readout, bottom edge."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Fastnet Swell",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 22,
+     "Direction": 20,
+     "Position Y": 6,
+     "Speed": 0.3,
+     "Height": 5,
+     "Jagginess": 0.3,
+     "Wobble": 0.1,
+     "Attenuation": 230,
+     "Line Width": 0.15,
+     "Fuzzyness": 0.1,
+     "Color": "#5f6f78ff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 8,
+      "release": 1200,
+      "floor": 3.5,
+      "ceiling": 8
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The comedown sea running a little diagonal, the swell easing."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Fastnet Lines",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 4,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.08,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 0.8,
+     "Main Speed": 1.5,
+     "Modulator": 6,
+     "Modulation Depth": 1,
+     "Modulator Speed": 1,
+     "Amplitude": 0.18,
+     "Position": 0.5,
+     "Color": "#5f6f78ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.015,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Four quieter waves; the lows thicken the pen rather than lift the sea."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Vessel Arcs",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 1.1,
+     "Spacing": 0.6,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 180,
+     "Rotation": 0,
+     "Rotation Step": 90,
+     "Rotation Alternate": true,
+     "Color 1": "#8c979cff",
+     "Color 2": "#8c979cff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8,
+      "release": 1400,
+      "floor": 0.85,
+      "ceiling": 1.05
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "Alternating half-arcs swelling slowly, the light vessel's marks on the chart. Build: Size on the four-bar Timeline."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Fastnet Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.02,
+     "Fade": true,
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Fastnet's character as a faded lamp flash, long OFF phase. Rig: verify 0.02 fires slower than once per 5 s. Build: Frequency on a 10 s Timeline, 0.5 for 1 s then 0 for 9 s."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "Lundy Fastnet",
+    "source": "Text Animator",
+    "params": {
+     "Text": "LUNDY, FASTNET",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Sea area low on the card, the litany walking west."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Fastnet Harbour",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#a8323aff",
+     "Color 2": "#4caf7dff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Port and starboard lights, the frame still sailing."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Long Wave Hiss",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Steady hiss for the comedown."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.9,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The same green readout, bottom edge."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Rockall Fog Bank",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 3,
+     "Amplitude": 0.3,
+     "Density": 0.4
+    },
+    "fft": {
+     "Density": {
+      "band": "mid",
+      "gain": 6,
+      "release": 1500,
+      "floor": 0.3,
+      "ceiling": 0.55
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Opacity": 1,
+       "Black To": "#0e141aff",
+       "White To": "#5f6f78ff"
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "The wireframe sea gives way to a fog bank tinted long-wave black to swell grey, peaking at body so the fog-grey rock reads one step lighter; low-mids thicken it slowly."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Fog Swell",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.4,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 0.6,
+     "Main Speed": 1,
+     "Modulator": 2,
+     "Modulation Depth": 1,
+     "Modulator Speed": 1,
+     "Amplitude": 0.08,
+     "Position": 0.5,
+     "Color": "#5f6f78ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "A faint, fuzzy swell half-lost in the fog; fader 2 is meant to drop here."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Rockall Rock",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Hatched",
+     "Noise Amount": 0.4,
+     "Noise Speed": 0.1,
+     "Color": "#8c979cff",
+     "Outline": 0.05,
+     "Outline Color": "#8c979cff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Opacity": 1,
+       "Scale W": 100,
+       "Scale H": 60
+      }
+     }
+    ],
+    "opacity": 1,
+    "why": "A hatched fog shape squashed to 60% height: the rock that is not a sea area."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Fog Lamp",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 2.2,
+     "Spacing": 0.3,
+     "Line Width": 0.2,
+     "Style": "Fill",
+     "Gap": 335,
+     "Rotation": -90,
+     "Rotation Step": 0,
+     "Rotation Alternate": false,
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#ffe8a3ff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Blur",
+      "params": {
+       "Opacity": 1,
+       "Blur": 0.5,
+       "Blur X Distance": 0.1,
+       "Blur Y Distance": 0.1,
+       "Quality": 0.3,
+       "Gaussian": 0.5
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "The wedge diffused by fog, same -90 rest angle: the lamp seen through weather. Build: Rings Rotation on the 10 s looping Timeline -180 to 180."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "Rockall Malin",
+    "source": "Text Animator",
+    "params": {
+     "Text": "ROCKALL, MALIN",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 1.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": -380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "Last full sea area, high on the card above the rock."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Fog Vignette",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#5f6f78ff",
+     "Color 2": "#0e141aff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "A horizon lift matched to the others; the closing of the room is the bank-A Vignette effect the bible assigns to this moment, not this layer."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Rockall Rain",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.65,
+     "Amount": 70,
+     "Width": 0.015,
+     "Rotation": 90,
+     "Position": 0.5,
+     "Color": "#8c979cff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 6,
+      "release": 300,
+      "floor": 0.5,
+      "ceiling": 0.8
+     }
+    },
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Rain in the fog; hi-hats soften the lines in place like Dogger Rain, never re-space them, never hiss and rain together."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.9,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The same green readout, the only thing admitting there is music."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Dawn Flat Sea",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 20,
+     "Direction": 0,
+     "Position Y": 5,
+     "Speed": 0.2,
+     "Height": 0.5,
+     "Jagginess": 0,
+     "Wobble": 0,
+     "Attenuation": 250,
+     "Line Width": 0.12,
+     "Fuzzyness": 0.1,
+     "Color": "#5f6f78ff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The sea gone flat at dawn; no sub drive, the tide has stopped."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Flat Trace",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.01,
+     "Fuzzyness": 0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0,
+     "Main Speed": 1,
+     "Modulator": 0,
+     "Modulation Depth": 0,
+     "Modulator Speed": 1,
+     "Amplitude": 0.01,
+     "Position": 0.5,
+     "Color": "#5f6f78ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "The bible's Blank: a nearly invisible flat trace so the grid has no hole."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Fog Ghost",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#8c979cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The bible's Blank: a 4% fog lift, nearly invisible, no hole in the grid."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Dawn Under Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffe8a3ff",
+     "Color 2": "#0e141a00",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Lamp colour fading to clear at the bible's 6%: first light under the lighthouse, light only, no flash, no second warm thing."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Losing Identity",
+    "source": "Text Animator",
+    "params": {
+     "Text": "LOSING ITS IDENTITY",
+     "Font": "Gill Sans MT",
+     "Style": "Regular",
+     "Color": "#e9e4d8ff",
+     "Size": 1.1,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 380,
+     "Animated": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1,
+    "why": "The last line of the night, low on the card, pressed on the last beat."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Pre-Dawn Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3a4a55ff",
+     "Color 2": "#0e141aff",
+     "Mode": "Smooth",
+     "Dither": 0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "Pre-dawn blue-grey over long-wave black: the room opening to morning."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Dawn Hiss",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "The hiss fading as the broadcast closes."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Bridge Barograph",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.04,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3,
+     "Main Speed": 3,
+     "Modulator": 2,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 1,
+     "Amplitude": 0.05,
+     "Position": 0.92,
+     "Color": "#4caf7dff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.1
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     },
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 1,
+    "why": "The same green readout, dropped to the very bottom edge for dawn."
+   }
+  ]
+ }
+]

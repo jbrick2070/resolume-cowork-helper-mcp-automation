@@ -1,0 +1,9285 @@
+{
+ "sources": {
+  "Abstract Field": {
+   "xml_name": "AbstractField",
+   "presets": [
+    "Big Sweepers",
+    "Dot Dot Dot",
+    "In & Out Fader",
+    "Smoke Storm",
+    "Thin Lines",
+    "Wavey"
+   ],
+   "params": [
+    [
+     "Octaves",
+     "range",
+     1.0,
+     6.0,
+     2.0
+    ],
+    [
+     "Amplitude",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Density",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Blank": {
+   "xml_name": "Blank",
+   "presets": [],
+   "params": [
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Checkered": {
+   "xml_name": "Checkered",
+   "presets": [
+    "Doe Maar"
+   ],
+   "params": [
+    [
+     "Num X",
+     "range",
+     1.0,
+     100000.0,
+     32.0
+    ],
+    [
+     "Num Y",
+     "range",
+     1.0,
+     100000.0,
+     18.0
+    ],
+    [
+     "Color 1",
+     "color",
+     "#000000ff"
+    ],
+    [
+     "Color 2",
+     "color",
+     "#ffffffff"
+    ]
+   ]
+  },
+  "Geometry Pattern Maker": {
+   "xml_name": "GeometryPatternMaker",
+   "presets": [
+    "Anger",
+    "Bass Ball",
+    "Doorway",
+    "Green",
+    "Hexing",
+    "Neon Cross",
+    "Pentagon - Audio Reactive",
+    "Purple Cheveron",
+    "Purple people eater",
+    "Tech Pentagon"
+   ],
+   "params": [
+    [
+     "Bloom",
+     "range",
+     0.0,
+     1.0,
+     0.38271600008010864
+    ],
+    [
+     "Bloom Mode",
+     "choice",
+     [
+      "50 Add",
+      "50 Burn",
+      "50 Difference",
+      "50 Distance",
+      "50 Dodge",
+      "50 Lighten",
+      "50 Mask",
+      "50 Multiply",
+      "50 Overlay",
+      "50 Subtract",
+      "Add",
+      "Alpha",
+      "BlackAndWhite",
+      "Burn",
+      "Cut",
+      "Darken",
+      "Difference",
+      "Difference I",
+      "Displace",
+      "Dodge",
+      "Exclusion",
+      "Hard Light",
+      "Lighten",
+      "Luma Is Alpha",
+      "Luma Key",
+      "Luma Key I",
+      "Multiply",
+      "Overlay",
+      "RGB",
+      "Screen",
+      "Soft Light",
+      "To Black",
+      "To White"
+     ],
+     "Lighten"
+    ],
+    [
+     "Shape Types",
+     "choice",
+     [
+      "Triangle",
+      "Square",
+      "Pentagon",
+      "Hexagon",
+      "Cross",
+      "Chevron",
+      "Vesica",
+      "Circle"
+     ],
+     "Triangle"
+    ],
+    [
+     "Shape Rounding",
+     "range",
+     0.0,
+     1.0,
+     0.45689699053764343
+    ],
+    [
+     "Line Ammount",
+     "range",
+     6.0,
+     30.0,
+     15.0
+    ],
+    [
+     "Inner X",
+     "range",
+     -1.0,
+     1.0,
+     0.1336210072040558
+    ],
+    [
+     "Inner Y",
+     "range",
+     -1.0,
+     1.0,
+     -0.2844829857349396
+    ],
+    [
+     "Intersect X",
+     "range",
+     -1.0,
+     1.0,
+     0.03448300063610077
+    ],
+    [
+     "Intersect Y",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Mask Intersect",
+     "bool",
+     true
+    ],
+    [
+     "Outer X",
+     "range",
+     -1.0,
+     1.0,
+     -0.125
+    ],
+    [
+     "Outer Y",
+     "range",
+     -1.0,
+     1.0,
+     0.03448300063610077
+    ],
+    [
+     "Inner Scale",
+     "range",
+     0.0,
+     0.75,
+     0.39278000593185425
+    ],
+    [
+     "Intersect Scale",
+     "range",
+     0.0,
+     1.5,
+     0.6821119785308838
+    ],
+    [
+     "Outer Scale",
+     "range",
+     1.0,
+     2.5,
+     1.5
+    ],
+    [
+     "Intersect Rot",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Gloabal rot",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Innter Color 1",
+     "color",
+     "#00fbffff"
+    ],
+    [
+     "Inner color 2",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Inner C Wrapping 3",
+     "choice",
+     [
+      "Repeat",
+      "Ping Pong",
+      "Clamp"
+     ],
+     "Repeat"
+    ],
+    [
+     "inner Edge S",
+     "range",
+     0.0010000000474974513,
+     0.05000000074505806,
+     0.017799999564886093
+    ],
+    [
+     "inner Edge S 2",
+     "range",
+     0.0010000000474974513,
+     0.05000000074505806,
+     0.005900000222027302
+    ],
+    [
+     "Inner L Wrapping 2",
+     "choice",
+     [
+      "Repeat",
+      "Ping Pong",
+      "Clamp"
+     ],
+     "Repeat"
+    ],
+    [
+     "Inner Shift",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Inner rot",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "In  Color Skew",
+     "range",
+     0.0,
+     1.0,
+     0.21767200529575348
+    ],
+    [
+     "In Line Skew",
+     "range",
+     0.0,
+     1.0,
+     0.22857099771499634
+    ],
+    [
+     "In Curv Space",
+     "choice",
+     [
+      "Linear",
+      "Quadratic In",
+      "Quadratic Out",
+      "Quadratic In/Out",
+      "Sine In",
+      "Sine Out",
+      "Sine In/Out",
+      "Circular In",
+      "Circular Out",
+      "Circular In/Out",
+      "Exponential In",
+      "Exponential Out",
+      "Exponential In/Out",
+      "Elastic In",
+      "Elastic Out",
+      "Elastic In/Out",
+      "Back In",
+      "Back Out",
+      "Back In/Out",
+      "Bounce In",
+      "Bounce Out",
+      "Bounce In/Out"
+     ],
+     "Linear"
+    ],
+    [
+     "In Space Skew",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Outer Color 1",
+     "color",
+     "#03b3ffff"
+    ],
+    [
+     "Outer Color 2",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Out C  Wrapping",
+     "choice",
+     [
+      "Repeat",
+      "Ping Pong",
+      "Clamp"
+     ],
+     "Repeat"
+    ],
+    [
+     " Out Edge S",
+     "range",
+     0.0010000000474974513,
+     0.05000000074505806,
+     0.010081999935209751
+    ],
+    [
+     "Out Edge S 2",
+     "range",
+     0.0010000000474974513,
+     0.05000000074505806,
+     0.01080000028014183
+    ],
+    [
+     "Outer L Wrapping",
+     "choice",
+     [
+      "Repeat",
+      "Ping Pong",
+      "Clamp"
+     ],
+     "Repeat"
+    ],
+    [
+     "Outer Shift",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Outer rot 2",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Out Color Skew",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Out Line Skew",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Out Curv Space",
+     "choice",
+     [
+      "Linear",
+      "Quadratic In",
+      "Quadratic Out",
+      "Quadratic In/Out",
+      "Sine In",
+      "Sine Out",
+      "Sine In/Out",
+      "Circular In",
+      "Circular Out",
+      "Circular In/Out",
+      "Exponential In",
+      "Exponential Out",
+      "Exponential In/Out",
+      "Elastic In",
+      "Elastic Out",
+      "Elastic In/Out",
+      "Back In",
+      "Back Out",
+      "Back In/Out",
+      "Bounce In",
+      "Bounce Out",
+      "Bounce In/Out"
+     ],
+     "Linear"
+    ],
+    [
+     "Out Space Skew",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Golden Flicker Reel": {
+   "xml_name": "GoldenFlickerReel",
+   "presets": [],
+   "params": [
+    [
+     "Bass",
+     "range",
+     0.0,
+     1.0,
+     0.2199999988079071
+    ],
+    [
+     "Mids",
+     "range",
+     0.0,
+     1.0,
+     0.14000000059604645
+    ],
+    [
+     "Highs",
+     "range",
+     0.0,
+     1.0,
+     0.07999999821186066
+    ]
+   ]
+  },
+  "Gradient": {
+   "xml_name": "Gradient",
+   "presets": [
+    "Banding Test - Gray",
+    "Banding Test - Green",
+    "Delta Sun",
+    "Dutch Sky",
+    "Smooth Edges",
+    "Vignette"
+   ],
+   "params": [
+    [
+     "Method",
+     "choice",
+     [
+      "2 Colors",
+      "Palette"
+     ],
+     "2 Colors"
+    ],
+    [
+     "Color 1",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Color 2",
+     "color",
+     "#ff8000ff"
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Smooth",
+      "Stepped"
+     ],
+     "Smooth"
+    ],
+    [
+     "Dither",
+     "range",
+     0.0,
+     32.0,
+     0.0
+    ],
+    [
+     "Type",
+     "choice",
+     [
+      "Horizontal",
+      "Vertical",
+      "Radial",
+      "Angular"
+     ],
+     "Horizontal"
+    ]
+   ]
+  },
+  "Line Scape": {
+   "xml_name": "Line Scape",
+   "presets": [
+    "Dancing In The Dark",
+    "Harp Strings",
+    "Lasers",
+    "Line Wobble",
+    "Sand Dunes",
+    "Water Fall",
+    "Waving Ribbons"
+   ],
+   "params": [
+    [
+     "Tilt",
+     "range",
+     0.0,
+     90.0,
+     1.0
+    ],
+    [
+     "Direction",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     0.0,
+     35.0,
+     0.0
+    ],
+    [
+     "Speed",
+     "range",
+     -3.0,
+     3.0,
+     1.0
+    ],
+    [
+     "Height",
+     "range",
+     0.0,
+     23.0,
+     15.0
+    ],
+    [
+     "Jagginess",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Wobble",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Attenuation",
+     "range",
+     10.0,
+     300.0,
+     100.0
+    ],
+    [
+     "Line Width",
+     "range",
+     0.1,
+     4.0,
+     0.30000001192092896
+    ],
+    [
+     "Fuzzyness",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Show Knots",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Lines": {
+   "xml_name": "Lines",
+   "presets": [
+    "45 Degree Pan",
+    "Neon Up"
+   ],
+   "params": [
+    [
+     "Fuzzyness",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Amount",
+     "range",
+     1.0,
+     100.0,
+     5.0
+    ],
+    [
+     "Width",
+     "range",
+     0.0,
+     2.0,
+     0.3
+    ],
+    [
+     "Rotation",
+     "range",
+     0.0,
+     360.0,
+     0.0
+    ],
+    [
+     "Position",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ]
+   ]
+  },
+  "Metaballs": {
+   "xml_name": "Metaballs",
+   "presets": [
+    "Gummy",
+    "Micro encounters",
+    "Red cells",
+    "Virus"
+   ],
+   "params": [
+    [
+     "Grid",
+     "range",
+     1.0,
+     20.0,
+     2.0
+    ],
+    [
+     "Blend",
+     "choice",
+     [
+      "Minimal",
+      "Average"
+     ],
+     "Minimal"
+    ],
+    [
+     "Size",
+     "range",
+     0.01,
+     0.99,
+     0.6
+    ],
+    [
+     "Distance",
+     "range",
+     0.01,
+     0.99,
+     0.5
+    ],
+    [
+     "Radius",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Fuzzyness",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     15.0,
+     1.0
+    ],
+    [
+     "Position X",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "BG Color",
+     "color",
+     "#00000000"
+    ]
+   ]
+  },
+  "React Pulsar": {
+   "xml_name": "React Pulsar",
+   "presets": [],
+   "params": [
+    [
+     "Level",
+     "range",
+     0.0,
+     1.0,
+     0.6000000238418579
+    ],
+    [
+     "Flux",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Period",
+     "range",
+     0.0,
+     1.0,
+     0.44999998807907104
+    ],
+    [
+     "Stack",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Beam",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Dispersion",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Glow",
+     "range",
+     0.0,
+     1.0,
+     0.3499999940395355
+    ]
+   ]
+  },
+  "React Video Musi": {
+   "xml_name": "React Video Musi",
+   "presets": [],
+   "params": [
+    [
+     "Level",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Pattern",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Chunk",
+     "range",
+     0.0,
+     1.0,
+     0.4000000059604645
+    ],
+    [
+     "Cycle",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Solid",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Rings": {
+   "xml_name": "Rings",
+   "presets": [
+    "3 Some",
+    "Animate",
+    "FireFlies",
+    "Flappy Bird",
+    "Light House",
+    "Near Misses",
+    "Radar",
+    "Saw",
+    "Sparkles"
+   ],
+   "params": [
+    [
+     "Num Rings",
+     "range",
+     1.0,
+     50.0,
+     10.0
+    ],
+    [
+     "Size",
+     "range",
+     0.05,
+     4.0,
+     1.0
+    ],
+    [
+     "Spacing",
+     "range",
+     0.1,
+     3.0,
+     0.3
+    ],
+    [
+     "Line Width",
+     "range",
+     0.01,
+     3.0,
+     0.2
+    ],
+    [
+     "Style",
+     "choice",
+     [
+      "Fill",
+      "Stroke",
+      "Alternate"
+     ],
+     "Alternate"
+    ],
+    [
+     "Gap",
+     "range",
+     0.0,
+     360.0,
+     60.0
+    ],
+    [
+     "Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Rotation Step",
+     "range",
+     0.0,
+     180.0,
+     60.0
+    ],
+    [
+     "Rotation Alternate",
+     "bool",
+     true
+    ],
+    [
+     "Color 1",
+     "color",
+     "#ff38a1ff"
+    ],
+    [
+     "Color 2",
+     "color",
+     "#00f8faff"
+    ]
+   ]
+  },
+  "Shaper": {
+   "xml_name": "ShaperGenerator",
+   "presets": [
+    "Identity Crisis"
+   ],
+   "params": [
+    [
+     "Scale",
+     "range",
+     0.01,
+     4.0,
+     1.0
+    ],
+    [
+     "Noise Type",
+     "choice",
+     [
+      "Grain",
+      "Hatched"
+     ],
+     "Hatched"
+    ],
+    [
+     "Noise Amount",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Noise Speed",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Outline",
+     "range",
+     0.0,
+     0.5,
+     0.1
+    ],
+    [
+     "Outline Color",
+     "color",
+     "#1dd0ffff"
+    ]
+   ]
+  },
+  "Sine Wave": {
+   "xml_name": "SineWave",
+   "presets": [
+    "Curvacious",
+    "Dancing windows",
+    "Habichuelas",
+    "Hair dance",
+    "In the clouds",
+    "Kisses",
+    "Lava lamp",
+    "Phantom signal",
+    "River",
+    "Rorschach",
+    "Spain",
+    "Waterflow"
+   ],
+   "params": [
+    [
+     "Waves",
+     "range",
+     1.0,
+     32.0,
+     2.0
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Line",
+      "Fill"
+     ],
+     "Line"
+    ],
+    [
+     "Line Width",
+     "range",
+     0.01,
+     1.0,
+     0.2
+    ],
+    [
+     "Fuzzyness",
+     "range",
+     0.0,
+     1.0,
+     0.08
+    ],
+    [
+     "Direction",
+     "choice",
+     [
+      "Horizontal",
+      "Vertical"
+     ],
+     "Horizontal"
+    ],
+    [
+     "Mirror",
+     "bool",
+     true
+    ],
+    [
+     "Frequency",
+     "range",
+     0.0,
+     20.0,
+     0.0
+    ],
+    [
+     "Main Speed",
+     "range",
+     1.0,
+     20.0,
+     1.0
+    ],
+    [
+     "Modulator",
+     "range",
+     0.0,
+     20.0,
+     4.0
+    ],
+    [
+     "Modulation Depth",
+     "range",
+     0.0,
+     3.0,
+     2.0
+    ],
+    [
+     "Modulator Speed",
+     "range",
+     1.0,
+     20.0,
+     1.0
+    ],
+    [
+     "Amplitude",
+     "range",
+     0.0,
+     1.0,
+     0.2
+    ],
+    [
+     "Position",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "BG Color",
+     "color",
+     "#00000000"
+    ]
+   ]
+  },
+  "Solid Color": {
+   "xml_name": "SolidColor",
+   "presets": [],
+   "params": [
+    [
+     "Color",
+     "color",
+     "#ff0000ff"
+    ]
+   ]
+  },
+  "Spiral": {
+   "xml_name": "Spiral",
+   "presets": [
+    "Minimal",
+    "Outerscope",
+    "Propeller",
+    "Radial emissions",
+    "Revolutions",
+    "Sea dizyness",
+    "Solar eclipse"
+   ],
+   "params": [
+    [
+     "Direction",
+     "choice",
+     [
+      "Clockwise",
+      "Anti-clockwise"
+     ],
+     "Clockwise"
+    ],
+    [
+     "Control Mode",
+     "choice",
+     [
+      "Even",
+      "Detailed"
+     ],
+     "Even"
+    ],
+    [
+     "Spread Even",
+     "range",
+     0.0,
+     10.0,
+     1.0
+    ],
+    [
+     "Detail",
+     "range",
+     1.0,
+     4.0,
+     1.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     3.0,
+     1.0
+    ],
+    [
+     "Zoom",
+     "range",
+     0.1,
+     4.0,
+     1.0
+    ],
+    [
+     "Leafs",
+     "range",
+     1.0,
+     5.0,
+     1.0
+    ],
+    [
+     "Distortion",
+     "range",
+     0.0,
+     100.0,
+     1.0
+    ],
+    [
+     "Fuzzyness",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Ramification",
+     "range",
+     0.0,
+     2.0,
+     0.0
+    ],
+    [
+     "Button",
+     "bool",
+     false
+    ],
+    [
+     "Button Size",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Button Fuzzyness",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "BG Color",
+     "color",
+     "#00000000"
+    ]
+   ]
+  },
+  "Static": {
+   "xml_name": "StaticGenerator",
+   "presets": [],
+   "params": [
+    [
+     "Mode",
+     "choice",
+     [
+      "Color",
+      "Grayscale",
+      "Two-tone"
+     ],
+     "Grayscale"
+    ]
+   ]
+  },
+  "Stroboscope": {
+   "xml_name": "StroboscopeGenerator",
+   "presets": [
+    "Fast",
+    "Heartbeat"
+   ],
+   "params": [
+    [
+     "Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Fade",
+     "bool",
+     false
+    ],
+    [
+     "Color 1",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Color 2",
+     "color",
+     "#000000ff"
+    ]
+   ]
+  },
+  "Test Card": {
+   "xml_name": "TestCard",
+   "presets": [],
+   "params": [
+    [
+     "Show Time",
+     "bool",
+     true
+    ],
+    [
+     "Show Wipe",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Text Animator": {
+   "xml_name": "TextGenerator",
+   "presets": [
+    "Countdown from 10 with fade",
+    "Countdown from 10",
+    "Dangle",
+    "Flickr",
+    "One Shot",
+    "Type On & Off",
+    "Wave"
+   ],
+   "params": [
+    [
+     "Text",
+     "text",
+     "Resolume"
+    ],
+    [
+     "Font",
+     "choice",
+     [
+      "Agency FB",
+      "Algerian",
+      "Arial",
+      "Arial Rounded MT Bold",
+      "Bahnschrift",
+      "Barlow Condensed",
+      "Baskerville Old Face",
+      "Bauhaus 93",
+      "Bell MT",
+      "Berlin Sans FB",
+      "Berlin Sans FB Demi",
+      "Bernard MT Condensed",
+      "Blackadder ITC",
+      "Bodoni MT",
+      "Book Antiqua",
+      "Bookman Old Style",
+      "Bookshelf Symbol 7",
+      "Bradley Hand ITC",
+      "Britannic Bold",
+      "Broadway",
+      "Brush Script MT",
+      "Calibri",
+      "Californian FB",
+      "Calisto MT",
+      "Cambria",
+      "Cambria Math",
+      "Candara",
+      "Cascadia Code",
+      "Cascadia Mono",
+      "Castellar",
+      "Caveat",
+      "Centaur",
+      "Century",
+      "Century Gothic",
+      "Century Schoolbook",
+      "Chiller",
+      "Colonna MT",
+      "Comic Sans MS",
+      "Consolas",
+      "Constantia",
+      "Cooper Black",
+      "Copperplate Gothic Bold",
+      "Copperplate Gothic Light",
+      "Corbel",
+      "Cormorant Infant",
+      "Courier New",
+      "Curlz MT",
+      "Dubai",
+      "Ebrima",
+      "Edwardian Script ITC",
+      "Elephant",
+      "Engravers MT",
+      "Eras Bold ITC",
+      "Eras Demi ITC",
+      "Eras Light ITC",
+      "Eras Medium ITC",
+      "Felix Titling",
+      "Footlight MT Light",
+      "Forte",
+      "Franklin Gothic Book",
+      "Franklin Gothic Demi",
+      "Franklin Gothic Demi Cond",
+      "Franklin Gothic Heavy",
+      "Franklin Gothic Medium",
+      "Franklin Gothic Medium Cond",
+      "Freestyle Script",
+      "French Script MT",
+      "Gabriola",
+      "Gadugi",
+      "Garamond",
+      "Georgia",
+      "Gigi",
+      "Gill Sans MT",
+      "Gill Sans MT Condensed",
+      "Gill Sans MT Ext Condensed Bold",
+      "Gill Sans Ultra Bold",
+      "Gill Sans Ultra Bold Condensed",
+      "Gloucester MT Extra Condensed",
+      "Goudy Old Style",
+      "Goudy Stout",
+      "Haettenschweiler",
+      "Harlow Solid Italic",
+      "Harrington",
+      "High Tower Text",
+      "Impact",
+      "Imprint MT Shadow",
+      "Informal Roman",
+      "Ink Free",
+      "Inter",
+      "Javanese Text",
+      "Jokerman",
+      "Juice ITC",
+      "Kristen ITC",
+      "Kunstler Script",
+      "Leelawadee",
+      "Leelawadee UI",
+      "Lucida Bright",
+      "Lucida Calligraphy",
+      "Lucida Console",
+      "Lucida Fax",
+      "Lucida Handwriting",
+      "Lucida Sans",
+      "Lucida Sans Typewriter",
+      "Lucida Sans Unicode",
+      "MS Gothic",
+      "MS Outlook",
+      "MS PGothic",
+      "MS Reference Sans Serif",
+      "MS Reference Specialty",
+      "MS UI Gothic",
+      "MT Extra",
+      "MV Boli",
+      "Magneto",
+      "Maiandra GD",
+      "Malgun Gothic",
+      "Marlett",
+      "Matura MT Script Capitals",
+      "Microsoft Himalaya",
+      "Microsoft JhengHei",
+      "Microsoft JhengHei UI",
+      "Microsoft New Tai Lue",
+      "Microsoft PhagsPa",
+      "Microsoft Sans Serif",
+      "Microsoft Tai Le",
+      "Microsoft Uighur",
+      "Microsoft YaHei",
+      "Microsoft YaHei UI",
+      "Microsoft Yi Baiti",
+      "MingLiU-ExtB",
+      "MingLiU_HKSCS-ExtB",
+      "MingLiU_MSCS-ExtB",
+      "Mistral",
+      "Moba_Fanta",
+      "Moba_Fira",
+      "Moba_Font",
+      "Modern No. 20",
+      "Mongolian Baiti",
+      "Monotype Corsiva",
+      "Montserrat",
+      "Myanmar Text",
+      "NSimSun",
+      "Niagara Engraved",
+      "Niagara Solid",
+      "Nirmala Text",
+      "Nirmala UI",
+      "Noto Sans",
+      "Noto Serif",
+      "OCR A Extended",
+      "Old English Text MT",
+      "Onyx",
+      "Open Sans",
+      "PMingLiU-ExtB",
+      "Palace Script MT",
+      "Palatino Linotype",
+      "Papyrus",
+      "Parchment",
+      "Perpetua",
+      "Perpetua Titling MT",
+      "Playbill",
+      "Poor Richard",
+      "Pristina",
+      "Rage Italic",
+      "Ravie",
+      "Roboto",
+      "Roboto Black",
+      "Roboto Condensed",
+      "Rockwell",
+      "Rockwell Condensed",
+      "Rockwell Extra Bold",
+      "Sans Serif Collection",
+      "Script MT Bold",
+      "Segoe Fluent Icons",
+      "Segoe MDL2 Assets",
+      "Segoe Print",
+      "Segoe Script",
+      "Segoe UI",
+      "Segoe UI Emoji",
+      "Segoe UI Historic",
+      "Segoe UI Symbol",
+      "Segoe UI Variable",
+      "Showcard Gothic",
+      "SimSun",
+      "SimSun-ExtB",
+      "SimSun-ExtG",
+      "Sitka",
+      "Snap ITC",
+      "Stencil",
+      "Sylfaen",
+      "Symbol",
+      "Tahoma",
+      "Tempus Sans ITC",
+      "Times New Roman",
+      "Trebuchet MS",
+      "Tw Cen MT",
+      "Tw Cen MT Condensed",
+      "Tw Cen MT Condensed Extra Bold",
+      "Verdana",
+      "Viner Hand ITC",
+      "Vivaldi",
+      "Vladimir Script",
+      "Webdings",
+      "Wide Latin",
+      "Wingdings",
+      "Wingdings 2",
+      "Wingdings 3",
+      "Yu Gothic",
+      "Yu Gothic UI",
+      "Zilla Slab"
+     ],
+     "Arial"
+    ],
+    [
+     "Style",
+     "choice",
+     [
+      "Black",
+      "Bold",
+      "Bold Italic",
+      "Italic",
+      "Narrow",
+      "Narrow Bold",
+      "Narrow Bold Italic",
+      "Narrow Italic",
+      "Regular"
+     ],
+     "Bold"
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Size",
+     "range",
+     0.5,
+     10.0,
+     1.0
+    ],
+    [
+     "Alignment",
+     "choice",
+     [
+      "Left",
+      "Center",
+      "Right"
+     ],
+     "Left"
+    ],
+    [
+     "AlignmentVertically",
+     "choice",
+     [
+      "Top",
+      "Center",
+      "Bottom"
+     ],
+     "Center"
+    ],
+    [
+     "Position X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Spacing X",
+     "range",
+     -20.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Spacing Y",
+     "range",
+     -100.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Outline Color",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Outline Width",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow In",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow Out",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Animated",
+     "bool",
+     false
+    ],
+    [
+     "Range",
+     "choice",
+     [
+      "All",
+      "Lines",
+      "Words",
+      "Characters"
+     ],
+     "Characters"
+    ],
+    [
+     "Order",
+     "choice",
+     [
+      "Front to back",
+      "Back to front",
+      "Random"
+     ],
+     "Front to back"
+    ],
+    [
+     "Delay",
+     "range",
+     0.0,
+     2000.0,
+     100.0
+    ],
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     10.0,
+     1.0
+    ],
+    [
+     "Animated Position X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Animated Position Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Rotation",
+     "range",
+     -3.141592025756836,
+     3.141592025756836,
+     0.0
+    ],
+    [
+     "Anchor X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Anchor Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Animated Outline Width",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Animated Glow In",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Animated Glow Out",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Text Block": {
+   "xml_name": "BlockTextGenerator",
+   "presets": [],
+   "params": [
+    [
+     "Text",
+     "text",
+     "Resolume"
+    ],
+    [
+     "Font",
+     "choice",
+     [
+      "Agency FB",
+      "Algerian",
+      "Arial",
+      "Arial Rounded MT Bold",
+      "Bahnschrift",
+      "Barlow Condensed",
+      "Baskerville Old Face",
+      "Bauhaus 93",
+      "Bell MT",
+      "Berlin Sans FB",
+      "Berlin Sans FB Demi",
+      "Bernard MT Condensed",
+      "Blackadder ITC",
+      "Bodoni MT",
+      "Book Antiqua",
+      "Bookman Old Style",
+      "Bookshelf Symbol 7",
+      "Bradley Hand ITC",
+      "Britannic Bold",
+      "Broadway",
+      "Brush Script MT",
+      "Calibri",
+      "Californian FB",
+      "Calisto MT",
+      "Cambria",
+      "Cambria Math",
+      "Candara",
+      "Cascadia Code",
+      "Cascadia Mono",
+      "Castellar",
+      "Caveat",
+      "Centaur",
+      "Century",
+      "Century Gothic",
+      "Century Schoolbook",
+      "Chiller",
+      "Colonna MT",
+      "Comic Sans MS",
+      "Consolas",
+      "Constantia",
+      "Cooper Black",
+      "Copperplate Gothic Bold",
+      "Copperplate Gothic Light",
+      "Corbel",
+      "Cormorant Infant",
+      "Courier New",
+      "Curlz MT",
+      "Dubai",
+      "Ebrima",
+      "Edwardian Script ITC",
+      "Elephant",
+      "Engravers MT",
+      "Eras Bold ITC",
+      "Eras Demi ITC",
+      "Eras Light ITC",
+      "Eras Medium ITC",
+      "Felix Titling",
+      "Footlight MT Light",
+      "Forte",
+      "Franklin Gothic Book",
+      "Franklin Gothic Demi",
+      "Franklin Gothic Demi Cond",
+      "Franklin Gothic Heavy",
+      "Franklin Gothic Medium",
+      "Franklin Gothic Medium Cond",
+      "Freestyle Script",
+      "French Script MT",
+      "Gabriola",
+      "Gadugi",
+      "Garamond",
+      "Georgia",
+      "Gigi",
+      "Gill Sans MT",
+      "Gill Sans MT Condensed",
+      "Gill Sans MT Ext Condensed Bold",
+      "Gill Sans Ultra Bold",
+      "Gill Sans Ultra Bold Condensed",
+      "Gloucester MT Extra Condensed",
+      "Goudy Old Style",
+      "Goudy Stout",
+      "Haettenschweiler",
+      "Harlow Solid Italic",
+      "Harrington",
+      "High Tower Text",
+      "Impact",
+      "Imprint MT Shadow",
+      "Informal Roman",
+      "Ink Free",
+      "Inter",
+      "Javanese Text",
+      "Jokerman",
+      "Juice ITC",
+      "Kristen ITC",
+      "Kunstler Script",
+      "Leelawadee",
+      "Leelawadee UI",
+      "Lucida Bright",
+      "Lucida Calligraphy",
+      "Lucida Console",
+      "Lucida Fax",
+      "Lucida Handwriting",
+      "Lucida Sans",
+      "Lucida Sans Typewriter",
+      "Lucida Sans Unicode",
+      "MS Gothic",
+      "MS Outlook",
+      "MS PGothic",
+      "MS Reference Sans Serif",
+      "MS Reference Specialty",
+      "MS UI Gothic",
+      "MT Extra",
+      "MV Boli",
+      "Magneto",
+      "Maiandra GD",
+      "Malgun Gothic",
+      "Marlett",
+      "Matura MT Script Capitals",
+      "Microsoft Himalaya",
+      "Microsoft JhengHei",
+      "Microsoft JhengHei UI",
+      "Microsoft New Tai Lue",
+      "Microsoft PhagsPa",
+      "Microsoft Sans Serif",
+      "Microsoft Tai Le",
+      "Microsoft Uighur",
+      "Microsoft YaHei",
+      "Microsoft YaHei UI",
+      "Microsoft Yi Baiti",
+      "MingLiU-ExtB",
+      "MingLiU_HKSCS-ExtB",
+      "MingLiU_MSCS-ExtB",
+      "Mistral",
+      "Moba_Fanta",
+      "Moba_Fira",
+      "Moba_Font",
+      "Modern No. 20",
+      "Mongolian Baiti",
+      "Monotype Corsiva",
+      "Montserrat",
+      "Myanmar Text",
+      "NSimSun",
+      "Niagara Engraved",
+      "Niagara Solid",
+      "Nirmala Text",
+      "Nirmala UI",
+      "Noto Sans",
+      "Noto Serif",
+      "OCR A Extended",
+      "Old English Text MT",
+      "Onyx",
+      "Open Sans",
+      "PMingLiU-ExtB",
+      "Palace Script MT",
+      "Palatino Linotype",
+      "Papyrus",
+      "Parchment",
+      "Perpetua",
+      "Perpetua Titling MT",
+      "Playbill",
+      "Poor Richard",
+      "Pristina",
+      "Rage Italic",
+      "Ravie",
+      "Roboto",
+      "Roboto Black",
+      "Roboto Condensed",
+      "Rockwell",
+      "Rockwell Condensed",
+      "Rockwell Extra Bold",
+      "Sans Serif Collection",
+      "Script MT Bold",
+      "Segoe Fluent Icons",
+      "Segoe MDL2 Assets",
+      "Segoe Print",
+      "Segoe Script",
+      "Segoe UI",
+      "Segoe UI Emoji",
+      "Segoe UI Historic",
+      "Segoe UI Symbol",
+      "Segoe UI Variable",
+      "Showcard Gothic",
+      "SimSun",
+      "SimSun-ExtB",
+      "SimSun-ExtG",
+      "Sitka",
+      "Snap ITC",
+      "Stencil",
+      "Sylfaen",
+      "Symbol",
+      "Tahoma",
+      "Tempus Sans ITC",
+      "Times New Roman",
+      "Trebuchet MS",
+      "Tw Cen MT",
+      "Tw Cen MT Condensed",
+      "Tw Cen MT Condensed Extra Bold",
+      "Verdana",
+      "Viner Hand ITC",
+      "Vivaldi",
+      "Vladimir Script",
+      "Webdings",
+      "Wide Latin",
+      "Wingdings",
+      "Wingdings 2",
+      "Wingdings 3",
+      "Yu Gothic",
+      "Yu Gothic UI",
+      "Zilla Slab"
+     ],
+     "Arial"
+    ],
+    [
+     "Style",
+     "choice",
+     [
+      "Black",
+      "Bold",
+      "Bold Italic",
+      "Italic",
+      "Narrow",
+      "Narrow Bold",
+      "Narrow Bold Italic",
+      "Narrow Italic",
+      "Regular"
+     ],
+     "Bold"
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Size",
+     "range",
+     0.5,
+     10.0,
+     1.0
+    ],
+    [
+     "Alignment",
+     "choice",
+     [
+      "Left",
+      "Center",
+      "Right"
+     ],
+     "Center"
+    ],
+    [
+     "AlignmentVertically",
+     "choice",
+     [
+      "Top",
+      "Center",
+      "Bottom"
+     ],
+     "Center"
+    ],
+    [
+     "Line Width",
+     "range",
+     10.0,
+     32768.0,
+     1920.0
+    ],
+    [
+     "Position X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Rotation",
+     "range",
+     -3.141592025756836,
+     3.141592025756836,
+     0.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     10.0,
+     1.0
+    ],
+    [
+     "Spacing X",
+     "range",
+     -20.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Spacing Y",
+     "range",
+     -100.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Outline Color",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Outline Width",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow In",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow Out",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Tunnelines": {
+   "xml_name": "Tunnelines",
+   "presets": [
+    "Doughnut",
+    "Left & Right",
+    "Nauseating",
+    "Spinnin",
+    "Spiraling Heart",
+    "Wormhole"
+   ],
+   "params": [
+    [
+     "Color 1",
+     "color",
+     "#ff2222ff"
+    ],
+    [
+     "Color 2",
+     "color",
+     "#0054a5ff"
+    ],
+    [
+     "Line Width",
+     "range",
+     0.0,
+     0.10000000149011612,
+     0.009999999776482582
+    ],
+    [
+     "Zoom",
+     "range",
+     0.0,
+     5.0,
+     1.5
+    ],
+    [
+     "Vertical",
+     "range",
+     0.0,
+     1.0,
+     0.07999999821186066
+    ],
+    [
+     "Frequency",
+     "range",
+     0.0,
+     3.0,
+     0.07999999821186066
+    ],
+    [
+     "Horizontal",
+     "range",
+     0.0,
+     1.0,
+     0.09000000357627869
+    ]
+   ]
+  }
+ },
+ "effects": {
+  "Acuarela": {
+   "xml_name": "Acuarela",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Gain",
+     "range",
+     0.0,
+     1.0,
+     0.009999999776482582
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     40.0,
+     4.0
+    ],
+    [
+     "Detail",
+     "range",
+     0.0,
+     8.0,
+     4.0
+    ],
+    [
+     "Strength",
+     "range",
+     0.0,
+     1.0,
+     0.3222222328186035
+    ],
+    [
+     "Density",
+     "range",
+     0.0,
+     100.0,
+     4.0
+    ],
+    [
+     "Gain X",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Gain Y",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Reset",
+     "ParamEvent",
+     null
+    ]
+   ]
+  },
+  "Add Subtract": {
+   "xml_name": "AddSubtract",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "R",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "G",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "B",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Bendoscope": {
+   "xml_name": "Bendoscope",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Divisions",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Bloom": {
+   "xml_name": "Bloom",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Amount",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.9
+    ],
+    [
+     "Knee",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Iterations",
+     "range",
+     1.0,
+     5.0,
+     2.0
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Gaussian",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Blow": {
+   "xml_name": "Blow",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "X",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Y",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Width",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Height",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Blur": {
+   "xml_name": "Blur",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Blur",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Blur X Distance",
+     "range",
+     0.0,
+     1.0,
+     0.05000000074505806
+    ],
+    [
+     "Blur Y Distance",
+     "range",
+     0.0,
+     1.0,
+     0.05000000074505806
+    ],
+    [
+     "Quality",
+     "range",
+     0.0,
+     1.0,
+     0.15000000596046448
+    ],
+    [
+     "Gaussian",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ]
+   ]
+  },
+  "Bright.Contrast": {
+   "xml_name": "BrightnessContrast",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Brightness",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Contrast",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "CRT": {
+   "xml_name": "CRT",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Columns",
+     "range",
+     1.0,
+     720.0,
+     340.0
+    ],
+    [
+     "Rows",
+     "range",
+     1.0,
+     240.0,
+     115.0
+    ],
+    [
+     "Shift",
+     "range",
+     0.0,
+     100.0,
+     100.0
+    ],
+    [
+     "Vignette",
+     "range",
+     0.0,
+     100.0,
+     0.0
+    ],
+    [
+     "Fisheye",
+     "range",
+     0.0,
+     100.0,
+     0.0
+    ],
+    [
+     "Spread",
+     "range",
+     0.0,
+     100.0,
+     50.0
+    ],
+    [
+     "Brightness",
+     "range",
+     1.0,
+     100.0,
+     50.0
+    ],
+    [
+     "Bloom Amount",
+     "range",
+     0.0,
+     100.0,
+     100.0
+    ],
+    [
+     "Bloom Width",
+     "range",
+     0.0,
+     300.0,
+     50.0
+    ],
+    [
+     "Bloom Height",
+     "range",
+     0.0,
+     300.0,
+     50.0
+    ],
+    [
+     "Between Slots",
+     "range",
+     0.0,
+     2.0,
+     1.0
+    ],
+    [
+     "Left/Right",
+     "range",
+     0.0,
+     5.0,
+     1.0
+    ],
+    [
+     "Top/Bottom",
+     "range",
+     0.0,
+     5.0,
+     1.0
+    ],
+    [
+     "Color Left",
+     "choice",
+     [
+      "R",
+      "G",
+      "B"
+     ],
+     "R"
+    ],
+    [
+     "Power Left",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Tilt Left",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Color Middle",
+     "choice",
+     [
+      "R",
+      "G",
+      "B"
+     ],
+     "G"
+    ],
+    [
+     "Power Middle",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Tilt Middle",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Color Right",
+     "choice",
+     [
+      "R",
+      "G",
+      "B"
+     ],
+     "B"
+    ],
+    [
+     "Power Right",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Tilt Right",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Height Scale",
+     "range",
+     1.0,
+     10.0,
+     4.0
+    ],
+    [
+     "Display Mode",
+     "choice",
+     [
+      "Fit to Output",
+      "Native"
+     ],
+     "Fit to Output"
+    ]
+   ]
+  },
+  "ChromaKey": {
+   "xml_name": "ChromaKey",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Show Mask",
+     "bool",
+     false
+    ],
+    [
+     "Key Hue",
+     "range",
+     0.0,
+     1.0,
+     0.4401114284992218
+    ],
+    [
+     "Hue Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Hue Softness",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "White Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "White Softness",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Black Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Black Softness",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Spill Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Spill Softness",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Edge Shrink",
+     "range",
+     0.0,
+     1.0,
+     0.125
+    ],
+    [
+     "Edge Blur",
+     "range",
+     0.0,
+     1.0,
+     0.125
+    ]
+   ]
+  },
+  "Circles": {
+   "xml_name": "Circles",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Color Pass": {
+   "xml_name": "ColorPass",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Hue 1",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Hue 2",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Colorize": {
+   "xml_name": "Colorize",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Color",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Color",
+      "Palette"
+     ],
+     "Color"
+    ],
+    [
+     "Weighted",
+     "bool",
+     true
+    ],
+    [
+     "GreysKeep",
+     "bool",
+     false
+    ],
+    [
+     "GreysTolerance",
+     "range",
+     0.0,
+     1.0,
+     0.3
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Contrast",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ]
+   ]
+  },
+  "Crop": {
+   "xml_name": "Crop",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Left",
+     "range",
+     0.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Right",
+     "range",
+     0.0,
+     32768.0,
+     1920.0
+    ],
+    [
+     "Top",
+     "range",
+     0.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Bottom",
+     "range",
+     0.0,
+     32768.0,
+     1080.0
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Cube Tiles": {
+   "xml_name": "CubeTiles",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Resolution",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Zoom",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Amount",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Randomize",
+     "ParamEvent",
+     null
+    ],
+    [
+     "Rotate X",
+     "range",
+     0.0,
+     1.0,
+     0.6000000238418579
+    ],
+    [
+     "Rotate Y",
+     "range",
+     0.0,
+     1.0,
+     0.6000000238418579
+    ],
+    [
+     "Rotate Z",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Num Cubes",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Delay RGB": {
+   "xml_name": "DelayRGB",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "R delay",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "G delay",
+     "range",
+     0.0,
+     1.0,
+     0.15
+    ],
+    [
+     "B delay",
+     "range",
+     0.0,
+     1.0,
+     0.3
+    ]
+   ]
+  },
+  "Dilate": {
+   "xml_name": "Dilate",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Spread",
+     "range",
+     0.0,
+     1.0,
+     0.15000000596046448
+    ],
+    [
+     "Size",
+     "range",
+     1.0,
+     10.0,
+     3.0
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Light",
+      "Dark"
+     ],
+     "Light"
+    ],
+    [
+     "Shape",
+     "choice",
+     [
+      "Rectangle",
+      "Circle",
+      "Triangle",
+      "Cross"
+     ],
+     "Rectangle"
+    ]
+   ]
+  },
+  "Displace": {
+   "xml_name": "Displace",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "X factor",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Y factor",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Smooth",
+     "bool",
+     false
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Clamp",
+      "Wrap",
+      "Transparent"
+     ],
+     "Clamp"
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Distortion": {
+   "xml_name": "Distortion",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Distort",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Radius",
+     "range",
+     0.0,
+     1.0,
+     0.55
+    ]
+   ]
+  },
+  "Dither": {
+   "xml_name": "Dither",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "2x",
+      "4x",
+      "8x"
+     ],
+     "2x"
+    ]
+   ]
+  },
+  "Dot Screen": {
+   "xml_name": "DotScreen",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Saturation",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Angle",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Drop Shadow": {
+   "xml_name": "DropShadow",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Distance",
+     "range",
+     0.0,
+     100.0,
+     10.0
+    ],
+    [
+     "Angle",
+     "range",
+     -180.0,
+     180.0,
+     45.0
+    ],
+    [
+     "Color",
+     "color",
+     "#000000ff"
+    ],
+    [
+     "Spread",
+     "range",
+     0.0,
+     0.005,
+     0.00125
+    ],
+    [
+     "Strength",
+     "range",
+     1.0,
+     32.0,
+     8.0
+    ]
+   ]
+  },
+  "Edge Detection": {
+   "xml_name": "EdgeDetection",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Mode",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Multiplier",
+     "range",
+     0.0,
+     1.0,
+     0.2
+    ],
+    [
+     "Use Color",
+     "bool",
+     false
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Amount",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "Exposure": {
+   "xml_name": "Exposure",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Exposure",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Fish Eye": {
+   "xml_name": "FishEye",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "FishEye",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Flip": {
+   "xml_name": "Flip",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Horizontal",
+     "bool",
+     true
+    ],
+    [
+     "Vertical",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Fragment": {
+   "xml_name": "Fragment",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Fragments",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Distance",
+     "range",
+     0.0,
+     1.0,
+     0.33000001311302185
+    ],
+    [
+     "Rotation",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "FragRotationX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "FragRotationY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "FragRotationZ",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "FragScale",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "CompositeOpacity",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Black BG",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Freeze": {
+   "xml_name": "Freeze",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "X",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Y",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Frozen solid",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Goo": {
+   "xml_name": "Goo",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Resolution",
+     "range",
+     4.0,
+     128.0,
+     32.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     1.0,
+     0.14000000059604645
+    ],
+    [
+     "MaxDistortionX",
+     "range",
+     0.0,
+     1.0,
+     0.14
+    ],
+    [
+     "MaxDistortionY",
+     "range",
+     0.0,
+     1.0,
+     0.14
+    ],
+    [
+     "MaxDistortionZ",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Grid": {
+   "xml_name": "Grid",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Width",
+     "range",
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     "Size X",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Size Y",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Fuzzyness",
+     "range",
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ]
+   ]
+  },
+  "Grid Cloner": {
+   "xml_name": "GridCloner",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Columns",
+     "range",
+     1.0,
+     10.0,
+     4.0
+    ],
+    [
+     "Rows",
+     "range",
+     1.0,
+     10.0,
+     4.0
+    ],
+    [
+     "Input Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Input Scale",
+     "range",
+     0.0,
+     200.0,
+     20.0
+    ],
+    [
+     "Width",
+     "range",
+     0.0,
+     2.0,
+     1.2000000476837158
+    ],
+    [
+     "Height",
+     "range",
+     0.0,
+     2.0,
+     0.699999988079071
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     500.0,
+     100.0
+    ],
+    [
+     "Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Vertical Shift",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Horiztonal Shift",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Random Shift",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Order",
+     "choice",
+     [
+      "Center",
+      "Top Right"
+     ],
+     "Top Right"
+    ],
+    [
+     "Delay",
+     "bool",
+     false
+    ],
+    [
+     "Background",
+     "color",
+     "#11ff6800"
+    ]
+   ]
+  },
+  "Hatched": {
+   "xml_name": "Hatched",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Density",
+     "range",
+     1.0,
+     8.0,
+     4.0
+    ],
+    [
+     "Levels",
+     "range",
+     2.0,
+     6.0,
+     6.0
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Color1",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Color2",
+     "color",
+     "#000000ff"
+    ]
+   ]
+  },
+  "Heat": {
+   "xml_name": "Heat",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Heat",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Hue Rotate": {
+   "xml_name": "HueRotate",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Hue Scale",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Hue Rotate",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Sat. Scale",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Infinite Zoom": {
+   "xml_name": "InfiniteZoom",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Rotation Speed",
+     "range",
+     -2.0,
+     2.0,
+     0.0
+    ],
+    [
+     "Zoom",
+     "range",
+     -0.2,
+     0.2,
+     0.04999999999999999
+    ],
+    [
+     "Range",
+     "range",
+     0.0,
+     20.0,
+     3.0
+    ],
+    [
+     "Alpha",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Num Slices",
+     "range",
+     2.0,
+     30.0,
+     10.0
+    ],
+    [
+     "Reset",
+     "ParamEvent",
+     null
+    ]
+   ]
+  },
+  "Invert RGB": {
+   "xml_name": "InvertRGB",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "R",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "G",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "B",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "A",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Iterate": {
+   "xml_name": "Iterate",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "TransformStrength",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Iterations",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "StartOpacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "OpacityChange",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "TranslateX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "TranslateY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "TranslateZ",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "RotateX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "RotateY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "RotateZ",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DOpacityChange",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DTranslateX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DTranslateY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DTranslateZ",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DRotateX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DRotateY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DRotateZ",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "DScale",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "BlendMode",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "GRotateX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "GRotateY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "GRotateZ",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Kaleidoscope": {
+   "xml_name": "Kaleidoscope",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Angles",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Rotation",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Zoom",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Input Rotation",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Keystone": {
+   "xml_name": "Keystone",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Top Left X",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Top Left Y",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Top Right X",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Top Right Y",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Bot. Right X",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Bot. Right Y",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Bot. Left X",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Bot. Left Y",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Show Grid",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Keystone Crop": {
+   "xml_name": "KeystoneCrop",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Top Left X",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Top Left Y",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Top Right X",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Top Right Y",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Bot. Right X",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Bot. Right Y",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Bot. Left X",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Bot. Left Y",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Show Grid",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Keystone Mask": {
+   "xml_name": "KeystoneMask",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Top Left X",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Top Left Y",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Top Right X",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Top Right Y",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Bot. Right X",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Bot. Right Y",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Bot. Left X",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Bot. Left Y",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Show Grid",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Kuwahara": {
+   "xml_name": "Kuwahara",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Radius",
+     "range",
+     1.0,
+     25.0,
+     5.0
+    ]
+   ]
+  },
+  "LUT": {
+   "xml_name": "LUT",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "LUT 3D",
+     "ParamFile",
+     ""
+    ]
+   ]
+  },
+  "Levels": {
+   "xml_name": "Levels",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Base",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Midpoint",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Ratio",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Linear Cloner": {
+   "xml_name": "LinearCloner",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Clones",
+     "range",
+     1.0,
+     50.0,
+     25.0
+    ],
+    [
+     "Tails",
+     "range",
+     1.0,
+     8.0,
+     2.0
+    ],
+    [
+     "Center",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Tail Length",
+     "range",
+     -1.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Start Scale",
+     "range",
+     0.0,
+     100.0,
+     50.0
+    ],
+    [
+     "Start Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "End Scale",
+     "range",
+     0.0,
+     100.0,
+     0.0
+    ],
+    [
+     "End Rotation",
+     "range",
+     0.0,
+     360.0,
+     90.0
+    ],
+    [
+     "Distribution",
+     "range",
+     0.0,
+     100.0,
+     50.0
+    ],
+    [
+     "Distortion",
+     "range",
+     -100.0,
+     100.0,
+     45.0
+    ],
+    [
+     "Reverse",
+     "bool",
+     false
+    ],
+    [
+     "Tail Rotation",
+     "range",
+     0.0,
+     100.0,
+     0.0
+    ],
+    [
+     "Master Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Delay Enabled",
+     "bool",
+     false
+    ],
+    [
+     "Delay Amount",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Delay Order",
+     "choice",
+     [
+      "New To Old",
+      "Old To New",
+      "Bounce",
+      "Bounce Tail",
+      "Random"
+     ],
+     "New To Old"
+    ],
+    [
+     "Delay Fill",
+     "choice",
+     [
+      "Repeat",
+      "Transparent"
+     ],
+     "Repeat"
+    ]
+   ]
+  },
+  "LoRez": {
+   "xml_name": "LoRezEffect",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Pixel Size",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Bit Reduction",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Dither",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Mask": {
+   "xml_name": null,
+   "params": [
+    [
+     "Image",
+     "ParamFile",
+     ""
+    ],
+    [
+     "Resize",
+     "choice",
+     [
+      "Fill",
+      "Fit",
+      "Stretch"
+     ],
+     "Stretch"
+    ],
+    [
+     "Channel",
+     "choice",
+     [
+      "Luminance",
+      "Red",
+      "Green",
+      "Blue",
+      "Alpha"
+     ],
+     "Luminance"
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Meta Shape": {
+   "xml_name": "MetaShape",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Resolution",
+     "range",
+     4.0,
+     512.0,
+     18.0
+    ],
+    [
+     "Shape 1",
+     "choice",
+     [
+      "Circle",
+      "Rectangle",
+      "Hexagon",
+      "Cross"
+     ],
+     "Rectangle"
+    ],
+    [
+     "Shape 2",
+     "choice",
+     [
+      "Circle",
+      "Rectangle",
+      "Hexagon",
+      "Cross"
+     ],
+     "Cross"
+    ],
+    [
+     "Color",
+     "choice",
+     [
+      "White",
+      "Greyscale",
+      "Sampled",
+      "Original"
+     ],
+     "Sampled"
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Fill",
+      "Outline",
+      "Outline Scaled"
+     ],
+     "Outline Scaled"
+    ],
+    [
+     "Scale",
+     "bool",
+     false
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Margin",
+     "range",
+     0.0,
+     0.95,
+     0.12499999999999999
+    ]
+   ]
+  },
+  "Mirror": {
+   "xml_name": "Mirror",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "X",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Y",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "In / Out",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Flip X",
+     "bool",
+     false
+    ],
+    [
+     "Flip Y",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Mirror Quad": {
+   "xml_name": "MirrorQuad",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Flip X",
+     "bool",
+     false
+    ],
+    [
+     "Flip Y",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Noisy": {
+   "xml_name": "NoisyEffect",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Noise",
+     "range",
+     0.0,
+     1.0,
+     0.125
+    ],
+    [
+     "Noise X",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Noise Y",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Noise S",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Noise C",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Resolution",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Interpolate",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Particle System": {
+   "xml_name": "ParticleSystem",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Particles",
+     "range",
+     0.0,
+     256.0,
+     64.0
+    ],
+    [
+     "Lifetime",
+     "range",
+     0.0,
+     10.0,
+     3.5
+    ],
+    [
+     "Spawn Mode",
+     "choice",
+     [
+      "Auto",
+      "Manual"
+     ],
+     "Auto"
+    ],
+    [
+     "X Pos",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Y Pos",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Z Pos",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "X Vel Min",
+     "range",
+     -0.02,
+     0.02,
+     -0.0019999999999999983
+    ],
+    [
+     "X Vel Max",
+     "range",
+     -0.02,
+     0.02,
+     0.0019999999999999983
+    ],
+    [
+     "Y Vel Min",
+     "range",
+     -0.02,
+     0.02,
+     -0.0019999999999999983
+    ],
+    [
+     "Y Vel Max",
+     "range",
+     -0.02,
+     0.02,
+     0.0019999999999999983
+    ],
+    [
+     "Z Vel Min",
+     "range",
+     -0.02,
+     0.02,
+     0.0
+    ],
+    [
+     "Z Vel Max",
+     "range",
+     -0.02,
+     0.02,
+     0.0
+    ],
+    [
+     "Rotate Min",
+     "range",
+     -5.0,
+     5.0,
+     0.0
+    ],
+    [
+     "Rotate Max",
+     "range",
+     -5.0,
+     5.0,
+     0.0
+    ],
+    [
+     "Scale Min",
+     "range",
+     0.0,
+     0.25,
+     0.1
+    ],
+    [
+     "Scale Max",
+     "range",
+     0.0,
+     0.25,
+     0.15
+    ],
+    [
+     "Scale Delta",
+     "range",
+     0.0,
+     1.0,
+     0.93
+    ],
+    [
+     "Opacity Delta",
+     "range",
+     0.0,
+     1.0,
+     0.93
+    ],
+    [
+     "Inherit Vel",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Gravity",
+     "range",
+     -0.002,
+     0.002,
+     0.0
+    ],
+    [
+     "Wind",
+     "range",
+     -0.002,
+     0.002,
+     0.0
+    ],
+    [
+     "Friction",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Pixel Blur": {
+   "xml_name": "PixelBlur",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Blur",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Distance X",
+     "range",
+     0.0,
+     250.0,
+     20.0
+    ],
+    [
+     "Distance Y",
+     "range",
+     0.0,
+     250.0,
+     20.0
+    ],
+    [
+     "Interval",
+     "range",
+     1.0,
+     6.0,
+     2.0
+    ],
+    [
+     "Gaussian",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ]
+   ]
+  },
+  "Pixel High Pass": {
+   "xml_name": "PixelHighPass",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "R",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "G",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "B",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Point Grid": {
+   "xml_name": "PointGrid",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Smooth Start",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ],
+    [
+     "Space",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Resolution",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Rotate X",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Rotate Y",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Rotate Z",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "PolarKaleido": {
+   "xml_name": "PolarKaleido",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Rings",
+     "range",
+     1.0,
+     16.0,
+     1.0
+    ],
+    [
+     "Parts",
+     "range",
+     1.0,
+     16.0,
+     1.0
+    ],
+    [
+     "Angle",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Polkadot": {
+   "xml_name": "Polkadot",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Dot Size",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Posterize": {
+   "xml_name": "Posterize",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Posterize",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Radar": {
+   "xml_name": "Radar",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Angle",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Trail Length",
+     "range",
+     0.0,
+     0.9900000095367432,
+     0.75
+    ],
+    [
+     "Fade",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Show Grid",
+     "bool",
+     true
+    ],
+    [
+     "Grid Scale",
+     "range",
+     0.07999999821186066,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Radial Cloner": {
+   "xml_name": "RadialCloner",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Clones",
+     "range",
+     1.0,
+     50.0,
+     8.0
+    ],
+    [
+     "Start Radius",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Start Scale",
+     "range",
+     0.0,
+     100.0,
+     25.0
+    ],
+    [
+     "Start Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "End Radius",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "End Scale",
+     "range",
+     0.0,
+     100.0,
+     100.0
+    ],
+    [
+     "End Rotation",
+     "range",
+     0.0,
+     360.0,
+     360.0
+    ],
+    [
+     "Fan",
+     "range",
+     0.0,
+     100.0,
+     100.0
+    ],
+    [
+     "Fan Offset",
+     "range",
+     0.0,
+     100.0,
+     0.0
+    ],
+    [
+     "Master Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Delay Enabled",
+     "bool",
+     false
+    ],
+    [
+     "Delay Amount",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Delay Order",
+     "choice",
+     [
+      "New To Old",
+      "Old To New",
+      "Bounce",
+      "Random"
+     ],
+     "New To Old"
+    ],
+    [
+     "Delay Fill",
+     "choice",
+     [
+      "Repeat",
+      "Transparent"
+     ],
+     "Repeat"
+    ]
+   ]
+  },
+  "RadialBlur": {
+   "xml_name": "RadialBlur",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Steps",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Distance",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Rotation",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "High Quality",
+     "bool",
+     false
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Raster": {
+   "xml_name": "Raster",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Modulo X",
+     "range",
+     1.0,
+     100.0,
+     2.0
+    ],
+    [
+     "Modulo Y",
+     "range",
+     1.0,
+     100.0,
+     2.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "React Anamorphic": {
+   "xml_name": "React Anamorphic",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Streak",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.699999988079071
+    ],
+    [
+     "Squeeze",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Fringe",
+     "range",
+     0.0,
+     1.0,
+     0.3499999940395355
+    ],
+    [
+     "Breathe",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Mix",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "React Gate": {
+   "xml_name": "React Gate",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Weave",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Judder",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Dust",
+     "range",
+     0.0,
+     1.0,
+     0.3499999940395355
+    ],
+    [
+     "Flicker",
+     "range",
+     0.0,
+     1.0,
+     0.4000000059604645
+    ],
+    [
+     "Era",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Grain",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Mix",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "React Scanline": {
+   "xml_name": "React Scanline",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Lines",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Displace",
+     "range",
+     0.0,
+     1.0,
+     0.3499999940395355
+    ],
+    [
+     "Thickness",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Glow",
+     "range",
+     0.0,
+     1.0,
+     0.4000000059604645
+    ],
+    [
+     "Mix",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "Recolor": {
+   "xml_name": "Recolour",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Palette",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Floor",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Ceiling",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Cycle Phase",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Cycle Speed",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Use Alpha",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Reveal": {
+   "xml_name": "Reveal",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Phase",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "X",
+     "range",
+     1.0,
+     80.0,
+     8.0
+    ],
+    [
+     "Y",
+     "range",
+     1.0,
+     80.0,
+     8.0
+    ],
+    [
+     "Border",
+     "range",
+     0.0,
+     20.0,
+     3.0
+    ],
+    [
+     "Texture",
+     "choice",
+     [
+      "Full",
+      "Color"
+     ],
+     "Full"
+    ],
+    [
+     "Stretch",
+     "bool",
+     false
+    ],
+    [
+     "Fade",
+     "bool",
+     true
+    ],
+    [
+     "Scaling",
+     "choice",
+     [
+      "None",
+      "Centre",
+      "Up",
+      "Right",
+      "Corner"
+     ],
+     "Centre"
+    ],
+    [
+     "Order",
+     "choice",
+     [
+      "Normal",
+      "Random"
+     ],
+     "Random"
+    ],
+    [
+     "Seed",
+     "choice",
+     [
+      "Normal",
+      "Audio"
+     ],
+     "Normal"
+    ],
+    [
+     "Black BG",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Ripples": {
+   "xml_name": "Ripples",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Frequency H",
+     "range",
+     0.0,
+     1.0,
+     0.2
+    ],
+    [
+     "Amplitude H",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Frequency V",
+     "range",
+     0.0,
+     1.0,
+     0.2
+    ],
+    [
+     "Amplitude V",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Amplitude Both",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Phase",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Saturation": {
+   "xml_name": "Saturation",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Saturation",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "SearchLight": {
+   "xml_name": "SearchLight",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.6000000238418579
+    ],
+    [
+     "Blur",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Frequency",
+     "range",
+     0.0,
+     2.0,
+     0.7699999809265137
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Shape Mask": {
+   "xml_name": "ShapeMask",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Shape",
+     "choice",
+     [
+      "Square",
+      "Circle",
+      "Triangle",
+      "Pentagon",
+      "Hexagon",
+      "Octagon",
+      "Hexagram"
+     ],
+     "Square"
+    ],
+    [
+     "Feather",
+     "range",
+     0.0,
+     300.0,
+     4.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     200.0,
+     60.0
+    ],
+    [
+     "Rotation",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Position X",
+     "range",
+     -2.0,
+     2.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     -2.0,
+     2.0,
+     0.0
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Shaper": {
+   "xml_name": "Shaper",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.01,
+     4.0,
+     1.0
+    ],
+    [
+     "Noise Type",
+     "choice",
+     [
+      "Grain",
+      "Hatched"
+     ],
+     "Hatched"
+    ],
+    [
+     "Noise Amount",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Noise Speed",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Outline",
+     "range",
+     0.0,
+     0.5,
+     0.1
+    ],
+    [
+     "Outline Color",
+     "color",
+     "#1dd0ffff"
+    ]
+   ]
+  },
+  "Sharpen": {
+   "xml_name": "Sharpen",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Strength",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Distance",
+     "range",
+     1.0,
+     25.0,
+     1.0
+    ]
+   ]
+  },
+  "Shift Glitch": {
+   "xml_name": "ShiftGlitch",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Frequency",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Vertical",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Horizontal",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Shift RGB": {
+   "xml_name": "ShiftRGB",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Distance",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Shift X",
+      "Shift Y",
+      "Rotate X",
+      "Rotate Y",
+      "Rotate Z",
+      "Zoom"
+     ],
+     "Shift X"
+    ],
+    [
+     "R",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "G",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "B",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Slide": {
+   "xml_name": "Slide",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "X",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Y",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Snow": {
+   "xml_name": "Snow",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Amount",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     1.0,
+     0.4
+    ],
+    [
+     "Textured",
+     "range",
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     "View Y",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "View X",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Snowy": {
+   "xml_name": "Snowy",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Size",
+     "range",
+     1.0,
+     2.0,
+     1.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.2,
+     5.0,
+     1.0
+    ],
+    [
+     "Amount",
+     "range",
+     1.0,
+     200.0,
+     10.0
+    ],
+    [
+     "Spread",
+     "range",
+     0.005,
+     0.5,
+     0.25
+    ],
+    [
+     "Threshold",
+     "range",
+     0.25,
+     1.0,
+     0.5
+    ],
+    [
+     "Show Image",
+     "bool",
+     true
+    ],
+    [
+     "Smart Edges",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Solid Color": {
+   "xml_name": "SolidColorEffect",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Color",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Show Image",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Sparkles": {
+   "xml_name": "Sparkles",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Texture",
+     "choice",
+     [
+      "Sparkle",
+      "Input"
+     ],
+     "Sparkle"
+    ],
+    [
+     "Spawn Mode",
+     "choice",
+     [
+      "Auto",
+      "Manual"
+     ],
+     "Auto"
+    ],
+    [
+     "Size",
+     "range",
+     1.0,
+     2.0,
+     1.0
+    ],
+    [
+     "Color",
+     "range",
+     0.0,
+     0.999,
+     0.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.2,
+     5.0,
+     1.0
+    ],
+    [
+     "Amount",
+     "range",
+     1.0,
+     2500.0,
+     10.0
+    ],
+    [
+     "Spread",
+     "range",
+     0.005,
+     0.5,
+     0.25
+    ],
+    [
+     "Threshold",
+     "range",
+     64.0,
+     255.0,
+     128.0
+    ],
+    [
+     "Move",
+     "bool",
+     true
+    ],
+    [
+     "Show Image",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Sphere": {
+   "xml_name": "Sphere",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.3
+    ],
+    [
+     "Resolution",
+     "range",
+     0.0,
+     1.0,
+     0.6
+    ],
+    [
+     "Extrusion",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "NoisePhase",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "NoiseType",
+     "choice",
+     [
+      "Gradient",
+      "Value",
+      "Fractal"
+     ],
+     "Gradient"
+    ],
+    [
+     "ColorValue",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "ColorMode",
+     "choice",
+     [
+      "Add",
+      "Multiply",
+      "Interpolate"
+     ],
+     "Multiply"
+    ],
+    [
+     "ColorContrast",
+     "range",
+     1.0,
+     10.0,
+     1.5
+    ],
+    [
+     "ThresholdValue",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "ThresholdMode",
+     "choice",
+     [
+      "Color",
+      "Greyscale",
+      "Transparent"
+     ],
+     "Color"
+    ],
+    [
+     "Zoom",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Rotation X",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Rotation Y",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Rotation Z",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Static": {
+   "xml_name": "StaticEffect",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Color",
+      "Grayscale",
+      "Two-tone"
+     ],
+     "Grayscale"
+    ]
+   ]
+  },
+  "Stingy Sphere": {
+   "xml_name": "StingySphere",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Sphere size",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Extrusion",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "FFT",
+     "bool",
+     false
+    ],
+    [
+     "Input",
+     "choice",
+     [
+      "Local",
+      "Composition",
+      "External"
+     ],
+     "Composition"
+    ],
+    [
+     "Fallback",
+     "range",
+     100.0,
+     2000.0,
+     1000.0
+    ],
+    [
+     "Gain",
+     "range",
+     -2.0,
+     24.0,
+     0.0
+    ],
+    [
+     "Noise",
+     "bool",
+     false
+    ],
+    [
+     "Noise Amount",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Light",
+     "bool",
+     false
+    ],
+    [
+     "Light Flat",
+     "bool",
+     false
+    ],
+    [
+     "Min Light",
+     "range",
+     0.0,
+     1.0,
+     0.2
+    ],
+    [
+     "Saturate",
+     "bool",
+     false
+    ],
+    [
+     "Saturate Amount",
+     "range",
+     0.0,
+     1.0,
+     0.2
+    ],
+    [
+     "Wired",
+     "bool",
+     false
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Zoom",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Resolution",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Rotate X",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Rotate Y",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Rotate Z",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Stop Motion": {
+   "xml_name": "StopMotion",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Frame Count",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Stripper": {
+   "xml_name": "Stripper",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Number",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Mode",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Direction",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Direction Spread",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "MovementType",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "SpeedSpread",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "GlobalWidth",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "MinWidth",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "MaxWidth",
+     "range",
+     0.0,
+     1.0,
+     0.4
+    ],
+    [
+     "Feather",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Red",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Green",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Blue",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Alpha",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "Strobe": {
+   "xml_name": "Strobe",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Fade",
+     "bool",
+     false
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ]
+   ]
+  },
+  "Strokes": {
+   "xml_name": "Strokes",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Amount",
+     "range",
+     1.0,
+     5000.0,
+     1024.0
+    ],
+    [
+     "Edges Only",
+     "bool",
+     false
+    ],
+    [
+     "Frequency Mode",
+     "choice",
+     [
+      "Hz",
+      "BPM"
+     ],
+     "Hz"
+    ],
+    [
+     "Frequency",
+     "range",
+     0.0,
+     360.0,
+     60.0
+    ],
+    [
+     "Size Mode",
+     "choice",
+     [
+      "Random",
+      "Brightness"
+     ],
+     "Random"
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Variation",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Swirl",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Flow",
+     "range",
+     -1.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Feedback",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Reset",
+     "ParamEvent",
+     null
+    ],
+    [
+     "Resource",
+     "ParamFile",
+     "Resource\\Strokes_Brush.png"
+    ],
+    [
+     "Rotation",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Suckr": {
+   "xml_name": "Suckr",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Suck",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Terrain": {
+   "xml_name": "Terrain",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Tilt",
+     "range",
+     0.0,
+     90.0,
+     1.0
+    ],
+    [
+     "Direction",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     0.0,
+     35.0,
+     8.0
+    ],
+    [
+     "Height",
+     "range",
+     0.0,
+     23.0,
+     15.0
+    ],
+    [
+     "Wobble",
+     "range",
+     0.0,
+     0.02,
+     0.0
+    ],
+    [
+     "Speed",
+     "range",
+     -3.0,
+     3.0,
+     1.0
+    ],
+    [
+     "Jagginess",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Attenuation",
+     "range",
+     10.0,
+     300.0,
+     100.0
+    ],
+    [
+     "Texture Rep",
+     "range",
+     0.0,
+     12.0,
+     0.0
+    ],
+    [
+     "Additive",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Text Animator": {
+   "xml_name": "TextEffect",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Text",
+     "text",
+     "Resolume"
+    ],
+    [
+     "Font",
+     "choice",
+     [
+      "Agency FB",
+      "Algerian",
+      "Arial",
+      "Arial Rounded MT Bold",
+      "Bahnschrift",
+      "Barlow Condensed",
+      "Baskerville Old Face",
+      "Bauhaus 93",
+      "Bell MT",
+      "Berlin Sans FB",
+      "Berlin Sans FB Demi",
+      "Bernard MT Condensed",
+      "Blackadder ITC",
+      "Bodoni MT",
+      "Book Antiqua",
+      "Bookman Old Style",
+      "Bookshelf Symbol 7",
+      "Bradley Hand ITC",
+      "Britannic Bold",
+      "Broadway",
+      "Brush Script MT",
+      "Calibri",
+      "Californian FB",
+      "Calisto MT",
+      "Cambria",
+      "Cambria Math",
+      "Candara",
+      "Cascadia Code",
+      "Cascadia Mono",
+      "Castellar",
+      "Caveat",
+      "Centaur",
+      "Century",
+      "Century Gothic",
+      "Century Schoolbook",
+      "Chiller",
+      "Colonna MT",
+      "Comic Sans MS",
+      "Consolas",
+      "Constantia",
+      "Cooper Black",
+      "Copperplate Gothic Bold",
+      "Copperplate Gothic Light",
+      "Corbel",
+      "Cormorant Infant",
+      "Courier New",
+      "Curlz MT",
+      "Dubai",
+      "Ebrima",
+      "Edwardian Script ITC",
+      "Elephant",
+      "Engravers MT",
+      "Eras Bold ITC",
+      "Eras Demi ITC",
+      "Eras Light ITC",
+      "Eras Medium ITC",
+      "Felix Titling",
+      "Footlight MT Light",
+      "Forte",
+      "Franklin Gothic Book",
+      "Franklin Gothic Demi",
+      "Franklin Gothic Demi Cond",
+      "Franklin Gothic Heavy",
+      "Franklin Gothic Medium",
+      "Franklin Gothic Medium Cond",
+      "Freestyle Script",
+      "French Script MT",
+      "Gabriola",
+      "Gadugi",
+      "Garamond",
+      "Georgia",
+      "Gigi",
+      "Gill Sans MT",
+      "Gill Sans MT Condensed",
+      "Gill Sans MT Ext Condensed Bold",
+      "Gill Sans Ultra Bold",
+      "Gill Sans Ultra Bold Condensed",
+      "Gloucester MT Extra Condensed",
+      "Goudy Old Style",
+      "Goudy Stout",
+      "Haettenschweiler",
+      "Harlow Solid Italic",
+      "Harrington",
+      "High Tower Text",
+      "Impact",
+      "Imprint MT Shadow",
+      "Informal Roman",
+      "Ink Free",
+      "Inter",
+      "Javanese Text",
+      "Jokerman",
+      "Juice ITC",
+      "Kristen ITC",
+      "Kunstler Script",
+      "Leelawadee",
+      "Leelawadee UI",
+      "Lucida Bright",
+      "Lucida Calligraphy",
+      "Lucida Console",
+      "Lucida Fax",
+      "Lucida Handwriting",
+      "Lucida Sans",
+      "Lucida Sans Typewriter",
+      "Lucida Sans Unicode",
+      "MS Gothic",
+      "MS Outlook",
+      "MS PGothic",
+      "MS Reference Sans Serif",
+      "MS Reference Specialty",
+      "MS UI Gothic",
+      "MT Extra",
+      "MV Boli",
+      "Magneto",
+      "Maiandra GD",
+      "Malgun Gothic",
+      "Marlett",
+      "Matura MT Script Capitals",
+      "Microsoft Himalaya",
+      "Microsoft JhengHei",
+      "Microsoft JhengHei UI",
+      "Microsoft New Tai Lue",
+      "Microsoft PhagsPa",
+      "Microsoft Sans Serif",
+      "Microsoft Tai Le",
+      "Microsoft Uighur",
+      "Microsoft YaHei",
+      "Microsoft YaHei UI",
+      "Microsoft Yi Baiti",
+      "MingLiU-ExtB",
+      "MingLiU_HKSCS-ExtB",
+      "MingLiU_MSCS-ExtB",
+      "Mistral",
+      "Moba_Fanta",
+      "Moba_Fira",
+      "Moba_Font",
+      "Modern No. 20",
+      "Mongolian Baiti",
+      "Monotype Corsiva",
+      "Montserrat",
+      "Myanmar Text",
+      "NSimSun",
+      "Niagara Engraved",
+      "Niagara Solid",
+      "Nirmala Text",
+      "Nirmala UI",
+      "Noto Sans",
+      "Noto Serif",
+      "OCR A Extended",
+      "Old English Text MT",
+      "Onyx",
+      "Open Sans",
+      "PMingLiU-ExtB",
+      "Palace Script MT",
+      "Palatino Linotype",
+      "Papyrus",
+      "Parchment",
+      "Perpetua",
+      "Perpetua Titling MT",
+      "Playbill",
+      "Poor Richard",
+      "Pristina",
+      "Rage Italic",
+      "Ravie",
+      "Roboto",
+      "Roboto Black",
+      "Roboto Condensed",
+      "Rockwell",
+      "Rockwell Condensed",
+      "Rockwell Extra Bold",
+      "Sans Serif Collection",
+      "Script MT Bold",
+      "Segoe Fluent Icons",
+      "Segoe MDL2 Assets",
+      "Segoe Print",
+      "Segoe Script",
+      "Segoe UI",
+      "Segoe UI Emoji",
+      "Segoe UI Historic",
+      "Segoe UI Symbol",
+      "Segoe UI Variable",
+      "Showcard Gothic",
+      "SimSun",
+      "SimSun-ExtB",
+      "SimSun-ExtG",
+      "Sitka",
+      "Snap ITC",
+      "Stencil",
+      "Sylfaen",
+      "Symbol",
+      "Tahoma",
+      "Tempus Sans ITC",
+      "Times New Roman",
+      "Trebuchet MS",
+      "Tw Cen MT",
+      "Tw Cen MT Condensed",
+      "Tw Cen MT Condensed Extra Bold",
+      "Verdana",
+      "Viner Hand ITC",
+      "Vivaldi",
+      "Vladimir Script",
+      "Webdings",
+      "Wide Latin",
+      "Wingdings",
+      "Wingdings 2",
+      "Wingdings 3",
+      "Yu Gothic",
+      "Yu Gothic UI",
+      "Zilla Slab"
+     ],
+     "Arial"
+    ],
+    [
+     "Style",
+     "choice",
+     [
+      "Black",
+      "Bold",
+      "Bold Italic",
+      "Italic",
+      "Narrow",
+      "Narrow Bold",
+      "Narrow Bold Italic",
+      "Narrow Italic",
+      "Regular"
+     ],
+     "Bold"
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Size",
+     "range",
+     0.5,
+     10.0,
+     1.0
+    ],
+    [
+     "Alignment",
+     "choice",
+     [
+      "Left",
+      "Center",
+      "Right"
+     ],
+     "Left"
+    ],
+    [
+     "AlignmentVertically",
+     "choice",
+     [
+      "Top",
+      "Center",
+      "Bottom"
+     ],
+     "Center"
+    ],
+    [
+     "Position X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Spacing X",
+     "range",
+     -20.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Spacing Y",
+     "range",
+     -100.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Outline Color",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Outline Width",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow In",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow Out",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Animated",
+     "bool",
+     false
+    ],
+    [
+     "Range",
+     "choice",
+     [
+      "All",
+      "Lines",
+      "Words",
+      "Characters"
+     ],
+     "Characters"
+    ],
+    [
+     "Order",
+     "choice",
+     [
+      "Front to back",
+      "Back to front",
+      "Random"
+     ],
+     "Front to back"
+    ],
+    [
+     "Delay",
+     "range",
+     0.0,
+     2000.0,
+     100.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     10.0,
+     1.0
+    ],
+    [
+     "Animated Position X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Animated Position Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Rotation",
+     "range",
+     -3.141592025756836,
+     3.141592025756836,
+     0.0
+    ],
+    [
+     "Anchor X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Anchor Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Animated Outline Width",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Animated Glow In",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Animated Glow Out",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Text Block": {
+   "xml_name": "TextBlock",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Text",
+     "text",
+     "Resolume"
+    ],
+    [
+     "Font",
+     "choice",
+     [
+      "Agency FB",
+      "Algerian",
+      "Arial",
+      "Arial Rounded MT Bold",
+      "Bahnschrift",
+      "Barlow Condensed",
+      "Baskerville Old Face",
+      "Bauhaus 93",
+      "Bell MT",
+      "Berlin Sans FB",
+      "Berlin Sans FB Demi",
+      "Bernard MT Condensed",
+      "Blackadder ITC",
+      "Bodoni MT",
+      "Book Antiqua",
+      "Bookman Old Style",
+      "Bookshelf Symbol 7",
+      "Bradley Hand ITC",
+      "Britannic Bold",
+      "Broadway",
+      "Brush Script MT",
+      "Calibri",
+      "Californian FB",
+      "Calisto MT",
+      "Cambria",
+      "Cambria Math",
+      "Candara",
+      "Cascadia Code",
+      "Cascadia Mono",
+      "Castellar",
+      "Caveat",
+      "Centaur",
+      "Century",
+      "Century Gothic",
+      "Century Schoolbook",
+      "Chiller",
+      "Colonna MT",
+      "Comic Sans MS",
+      "Consolas",
+      "Constantia",
+      "Cooper Black",
+      "Copperplate Gothic Bold",
+      "Copperplate Gothic Light",
+      "Corbel",
+      "Cormorant Infant",
+      "Courier New",
+      "Curlz MT",
+      "Dubai",
+      "Ebrima",
+      "Edwardian Script ITC",
+      "Elephant",
+      "Engravers MT",
+      "Eras Bold ITC",
+      "Eras Demi ITC",
+      "Eras Light ITC",
+      "Eras Medium ITC",
+      "Felix Titling",
+      "Footlight MT Light",
+      "Forte",
+      "Franklin Gothic Book",
+      "Franklin Gothic Demi",
+      "Franklin Gothic Demi Cond",
+      "Franklin Gothic Heavy",
+      "Franklin Gothic Medium",
+      "Franklin Gothic Medium Cond",
+      "Freestyle Script",
+      "French Script MT",
+      "Gabriola",
+      "Gadugi",
+      "Garamond",
+      "Georgia",
+      "Gigi",
+      "Gill Sans MT",
+      "Gill Sans MT Condensed",
+      "Gill Sans MT Ext Condensed Bold",
+      "Gill Sans Ultra Bold",
+      "Gill Sans Ultra Bold Condensed",
+      "Gloucester MT Extra Condensed",
+      "Goudy Old Style",
+      "Goudy Stout",
+      "Haettenschweiler",
+      "Harlow Solid Italic",
+      "Harrington",
+      "High Tower Text",
+      "Impact",
+      "Imprint MT Shadow",
+      "Informal Roman",
+      "Ink Free",
+      "Inter",
+      "Javanese Text",
+      "Jokerman",
+      "Juice ITC",
+      "Kristen ITC",
+      "Kunstler Script",
+      "Leelawadee",
+      "Leelawadee UI",
+      "Lucida Bright",
+      "Lucida Calligraphy",
+      "Lucida Console",
+      "Lucida Fax",
+      "Lucida Handwriting",
+      "Lucida Sans",
+      "Lucida Sans Typewriter",
+      "Lucida Sans Unicode",
+      "MS Gothic",
+      "MS Outlook",
+      "MS PGothic",
+      "MS Reference Sans Serif",
+      "MS Reference Specialty",
+      "MS UI Gothic",
+      "MT Extra",
+      "MV Boli",
+      "Magneto",
+      "Maiandra GD",
+      "Malgun Gothic",
+      "Marlett",
+      "Matura MT Script Capitals",
+      "Microsoft Himalaya",
+      "Microsoft JhengHei",
+      "Microsoft JhengHei UI",
+      "Microsoft New Tai Lue",
+      "Microsoft PhagsPa",
+      "Microsoft Sans Serif",
+      "Microsoft Tai Le",
+      "Microsoft Uighur",
+      "Microsoft YaHei",
+      "Microsoft YaHei UI",
+      "Microsoft Yi Baiti",
+      "MingLiU-ExtB",
+      "MingLiU_HKSCS-ExtB",
+      "MingLiU_MSCS-ExtB",
+      "Mistral",
+      "Moba_Fanta",
+      "Moba_Fira",
+      "Moba_Font",
+      "Modern No. 20",
+      "Mongolian Baiti",
+      "Monotype Corsiva",
+      "Montserrat",
+      "Myanmar Text",
+      "NSimSun",
+      "Niagara Engraved",
+      "Niagara Solid",
+      "Nirmala Text",
+      "Nirmala UI",
+      "Noto Sans",
+      "Noto Serif",
+      "OCR A Extended",
+      "Old English Text MT",
+      "Onyx",
+      "Open Sans",
+      "PMingLiU-ExtB",
+      "Palace Script MT",
+      "Palatino Linotype",
+      "Papyrus",
+      "Parchment",
+      "Perpetua",
+      "Perpetua Titling MT",
+      "Playbill",
+      "Poor Richard",
+      "Pristina",
+      "Rage Italic",
+      "Ravie",
+      "Roboto",
+      "Roboto Black",
+      "Roboto Condensed",
+      "Rockwell",
+      "Rockwell Condensed",
+      "Rockwell Extra Bold",
+      "Sans Serif Collection",
+      "Script MT Bold",
+      "Segoe Fluent Icons",
+      "Segoe MDL2 Assets",
+      "Segoe Print",
+      "Segoe Script",
+      "Segoe UI",
+      "Segoe UI Emoji",
+      "Segoe UI Historic",
+      "Segoe UI Symbol",
+      "Segoe UI Variable",
+      "Showcard Gothic",
+      "SimSun",
+      "SimSun-ExtB",
+      "SimSun-ExtG",
+      "Sitka",
+      "Snap ITC",
+      "Stencil",
+      "Sylfaen",
+      "Symbol",
+      "Tahoma",
+      "Tempus Sans ITC",
+      "Times New Roman",
+      "Trebuchet MS",
+      "Tw Cen MT",
+      "Tw Cen MT Condensed",
+      "Tw Cen MT Condensed Extra Bold",
+      "Verdana",
+      "Viner Hand ITC",
+      "Vivaldi",
+      "Vladimir Script",
+      "Webdings",
+      "Wide Latin",
+      "Wingdings",
+      "Wingdings 2",
+      "Wingdings 3",
+      "Yu Gothic",
+      "Yu Gothic UI",
+      "Zilla Slab"
+     ],
+     "Arial"
+    ],
+    [
+     "Style",
+     "choice",
+     [
+      "Black",
+      "Bold",
+      "Bold Italic",
+      "Italic",
+      "Narrow",
+      "Narrow Bold",
+      "Narrow Bold Italic",
+      "Narrow Italic",
+      "Regular"
+     ],
+     "Bold"
+    ],
+    [
+     "Color",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Size",
+     "range",
+     0.5,
+     10.0,
+     1.0
+    ],
+    [
+     "Alignment",
+     "choice",
+     [
+      "Left",
+      "Center",
+      "Right"
+     ],
+     "Center"
+    ],
+    [
+     "AlignmentVertically",
+     "choice",
+     [
+      "Top",
+      "Center",
+      "Bottom"
+     ],
+     "Center"
+    ],
+    [
+     "Line Width",
+     "range",
+     10.0,
+     32768.0,
+     1920.0
+    ],
+    [
+     "Position X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Rotation",
+     "range",
+     -3.141592025756836,
+     3.141592025756836,
+     0.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     10.0,
+     1.0
+    ],
+    [
+     "Spacing X",
+     "range",
+     -20.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Spacing Y",
+     "range",
+     -100.0,
+     200.0,
+     0.0
+    ],
+    [
+     "Outline Color",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "Outline Width",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow In",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow Out",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Threshold": {
+   "xml_name": "Threshold",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Smoothness",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Color 1",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Color 2",
+     "color",
+     "#000000ff"
+    ],
+    [
+     "Alpha",
+     "choice",
+     [
+      "Original",
+      "Combine",
+      "Replace"
+     ],
+     "Original"
+    ]
+   ]
+  },
+  "Tile": {
+   "xml_name": "TileEffect",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Tile X",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Tile Y",
+     "range",
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     "Skew X",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Skew Y",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Rotation Angle",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Tilt Shift": {
+   "xml_name": "TiltShift",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Blur",
+     "range",
+     0.0,
+     1.0,
+     0.8999999761581421
+    ],
+    [
+     "Position",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Focus",
+     "range",
+     0.0,
+     1.0,
+     0.4000000059604645
+    ],
+    [
+     "Falloff",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Saturation",
+     "range",
+     0.0,
+     1.0,
+     0.699999988079071
+    ],
+    [
+     "Vignette",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ]
+   ]
+  },
+  "Tint": {
+   "xml_name": "Tint",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Black To",
+     "color",
+     "#ff0000ff"
+    ],
+    [
+     "White To",
+     "color",
+     "#ccff00ff"
+    ]
+   ]
+  },
+  "Trails": {
+   "xml_name": "Trails",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Feedback",
+     "range",
+     0.0,
+     1.0,
+     0.9
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Alpha",
+      "Luma",
+      "Lighten"
+     ],
+     "Alpha"
+    ]
+   ]
+  },
+  "Transform": {
+   "xml_name": "Transform",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Position X",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Position Y",
+     "range",
+     -32768.0,
+     32768.0,
+     0.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     1000.0,
+     100.0
+    ],
+    [
+     "Scale W",
+     "range",
+     0.0,
+     1000.0,
+     100.0
+    ],
+    [
+     "Scale H",
+     "range",
+     0.0,
+     1000.0,
+     100.0
+    ],
+    [
+     "Rotation X",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Rotation Y",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Rotation Z",
+     "range",
+     -180.0,
+     180.0,
+     0.0
+    ],
+    [
+     "Anchor X",
+     "range",
+     -16384.0,
+     16384.0,
+     0.0
+    ],
+    [
+     "Anchor Y",
+     "range",
+     -16384.0,
+     16384.0,
+     0.0
+    ],
+    [
+     "Anchor Z",
+     "range",
+     -16384.0,
+     16384.0,
+     0.0
+    ]
+   ]
+  },
+  "Triangulate": {
+   "xml_name": "Triangulate",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     1.0,
+     0.125
+    ],
+    [
+     "Levels",
+     "range",
+     1.0,
+     10.0,
+     4.0
+    ],
+    [
+     "Flip Direction",
+     "bool",
+     true
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Tunnel": {
+   "xml_name": "Tunnel",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Position",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Twist",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Kaleidoscope",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Rotation",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "TurnH",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "TurnV",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "WobbleH",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "WobbleV",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Twisted": {
+   "xml_name": "Twisted",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Twirl",
+     "range",
+     0.0,
+     1.0,
+     0.6000000238418579
+    ],
+    [
+     "Radius",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Twitch": {
+   "xml_name": "TwitchEffect",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Global Twitch",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Max Pos X",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Max Pos Y",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Pos Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Max Scale",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Scale Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Max Opacity",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Opacity Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Max Light",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Light Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Max RGB Shift",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "RGB Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Max Blur",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Blur Frequency",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "UV Map": {
+   "xml_name": "UVMap",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Image",
+     "ParamFile",
+     ""
+    ],
+    [
+     "Flip U",
+     "bool",
+     false
+    ],
+    [
+     "Flip V",
+     "bool",
+     false
+    ],
+    [
+     "Offset X",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Offset Y",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Filter Strength",
+     "range",
+     0.0,
+     1.0,
+     0.25
+    ],
+    [
+     "Filter Color",
+     "color",
+     "#00000000"
+    ],
+    [
+     "Black Is Transparent",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Vibrance": {
+   "xml_name": "Vibrance",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Vibrance",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "VideoWall": {
+   "xml_name": "VideoWall",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Screens",
+     "range",
+     0.0,
+     1.0,
+     0.3
+    ],
+    [
+     "Zoom",
+     "range",
+     0.0,
+     1.0,
+     0.3
+    ],
+    [
+     "RotateX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "RotateY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "RotateZ",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "PanX",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "PanY",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "SubscreenSize",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "SubscreenMode",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "GapSize",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "BrightnessVary",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Vignette": {
+   "xml_name": "Vignette",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Roundness",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Size",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Softness",
+     "range",
+     0.0,
+     1.0,
+     0.9599999785423279
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "WarpSpeed": {
+   "xml_name": "WarpSpeed",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Vignette",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Fade",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Rotate",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Center X",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Center Y",
+     "range",
+     -1.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Wave Warp": {
+   "xml_name": "WaveWarp",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Mode",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Height",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Width",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Angle",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Pin edges?",
+     "bool",
+     true
+    ],
+    [
+     "Black BG",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Auto Mask": {
+   "xml_name": "AutoMask",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Channel",
+     "choice",
+     [
+      "Luminance",
+      "Red",
+      "Green",
+      "Blue"
+     ],
+     "Luminance"
+    ],
+    [
+     "Contrast",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ]
+   ]
+  },
+  "Background Removal": {
+   "xml_name": "BackgroundRemoval",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Refine Edge",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Soft Edge",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Fill Holes",
+     "bool",
+     true
+    ],
+    [
+     "Hard Mask",
+     "bool",
+     false
+    ],
+    [
+     "Filter Specks",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Temporal Smoothness",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Alpha",
+      "Mask"
+     ],
+     "Alpha"
+    ],
+    [
+     "Invert",
+     "bool",
+     false
+    ],
+    [
+     "Model Quality",
+     "choice",
+     [
+      "Low",
+      "Medium",
+      "High"
+     ],
+     "Medium"
+    ]
+   ]
+  },
+  "Depth Blur": {
+   "xml_name": "DepthBlur",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Depth",
+     "range",
+     0.0,
+     1.0,
+     0.20000000298023224
+    ],
+    [
+     "Width",
+     "range",
+     0.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Radius",
+     "range",
+     0.0,
+     32.0,
+     12.0
+    ],
+    [
+     "Scale Near",
+     "range",
+     0.0,
+     2.0,
+     1.0
+    ],
+    [
+     "Scale Far",
+     "range",
+     0.0,
+     2.0,
+     1.0
+    ],
+    [
+     "Quality",
+     "range",
+     0.0,
+     1.0,
+     0.30000001192092896
+    ],
+    [
+     "Depth Aware",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Boost",
+     "range",
+     0.0,
+     10.0,
+     2.0
+    ],
+    [
+     "Threshold",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Power",
+     "range",
+     1.0,
+     8.0,
+     2.0
+    ],
+    [
+     "Model Quality",
+     "choice",
+     [
+      "Low",
+      "Medium",
+      "High"
+     ],
+     "Low"
+    ],
+    [
+     "Transparency",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Depth Displace": {
+   "xml_name": "DepthDisplace",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Depth",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Thickness",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Min",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Max",
+     "range",
+     0.0,
+     1.0,
+     0.4000000059604645
+    ],
+    [
+     "Falloff",
+     "range",
+     0.5,
+     4.0,
+     1.0
+    ],
+    [
+     "Detail",
+     "range",
+     2.0,
+     64.0,
+     10.0
+    ],
+    [
+     "Speed",
+     "range",
+     0.0,
+     2.0,
+     0.30000001192092896
+    ],
+    [
+     "Model Quality",
+     "choice",
+     [
+      "Low",
+      "Medium",
+      "High"
+     ],
+     "Low"
+    ]
+   ]
+  },
+  "Depth Estimation": {
+   "xml_name": "DepthEstimation",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Model Quality",
+     "choice",
+     [
+      "Low",
+      "Medium",
+      "High"
+     ],
+     "Low"
+    ],
+    [
+     "Temporal Filter",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Transparency",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Depth Field": {
+   "xml_name": "DepthField",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Depth",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Thickness",
+     "range",
+     0.0010000000474974513,
+     0.5,
+     0.10000000149011612
+    ],
+    [
+     "Soft Edge",
+     "range",
+     0.0,
+     12.0,
+     1.0
+    ],
+    [
+     "Jitter",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Color",
+     "color",
+     "#66e6ffff"
+    ],
+    [
+     "Chroma",
+     "range",
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     "Glow",
+     "range",
+     0.0,
+     8.0,
+     2.0
+    ],
+    [
+     "Enabled",
+     "bool",
+     true
+    ],
+    [
+     "Negative",
+     "bool",
+     false
+    ],
+    [
+     "Desaturate",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Brightness",
+     "range",
+     0.0,
+     2.0,
+     0.5
+    ],
+    [
+     "Model Quality",
+     "choice",
+     [
+      "Low",
+      "Medium",
+      "High"
+     ],
+     "Low"
+    ],
+    [
+     "Transparency",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Depth Pixelation": {
+   "xml_name": "DepthPixelation",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Depth",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Thickness",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Min",
+     "range",
+     1.0,
+     64.0,
+     1.0
+    ],
+    [
+     "Max",
+     "range",
+     1.0,
+     256.0,
+     40.0
+    ],
+    [
+     "Falloff",
+     "range",
+     0.5,
+     4.0,
+     1.0
+    ],
+    [
+     "Model Quality",
+     "choice",
+     [
+      "Low",
+      "Medium",
+      "High"
+     ],
+     "Low"
+    ],
+    [
+     "Transparency",
+     "bool",
+     true
+    ]
+   ]
+  },
+  "Depth Shift": {
+   "xml_name": "DepthShift",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "X",
+     "range",
+     -1.0,
+     1.0,
+     0.10000000149011612
+    ],
+    [
+     "Y",
+     "range",
+     -1.0,
+     1.0,
+     -0.10000000149011612
+    ],
+    [
+     "Wrap",
+     "choice",
+     [
+      "Clamp",
+      "Repeat",
+      "Mirror Repeat"
+     ],
+     "Clamp"
+    ],
+    [
+     "Scale",
+     "range",
+     0.0,
+     1.0,
+     0.75
+    ],
+    [
+     "Steps",
+     "range",
+     1.0,
+     128.0,
+     10.0
+    ],
+    [
+     "Power",
+     "range",
+     0.0,
+     1.0,
+     0.5
+    ],
+    [
+     "Mode",
+     "choice",
+     [
+      "Multiply",
+      "Tint",
+      "Fill"
+     ],
+     "Multiply"
+    ],
+    [
+     "Close",
+     "color",
+     "#ffffffff"
+    ],
+    [
+     "Far",
+     "color",
+     "#3c3c3cff"
+    ],
+    [
+     "Edges",
+     "bool",
+     false
+    ],
+    [
+     "Model Quality",
+     "choice",
+     [
+      "Low",
+      "Medium",
+      "High Quality"
+     ],
+     "Low"
+    ]
+   ]
+  },
+  "JuiceEditor": {
+   "xml_name": "JuiceEditor",
+   "params": [
+    [
+     "Opacity",
+     "range",
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     "Auto reload",
+     "bool",
+     true
+    ]
+   ]
+  }
+ }
+}

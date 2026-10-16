@@ -1,0 +1,20 @@
+REPAIR The Sitters L2 C5/Kaleidoscope: Kaleidoscope has no parameter 'Opacity' - dropped
+REPAIR The Sitters L2 C6/Mirror Quad: Mirror Quad has no parameter 'Opacity' - dropped
+REPAIR The Sitters L3 C2/Trails: Trails has no parameter 'Opacity' - dropped
+REPAIR The Sitters L3 C3/Trails: Trails has no parameter 'Opacity' - dropped
+REPAIR The Sitters L3 C5/Trails: Trails has no parameter 'Opacity' - dropped
+REPAIR The Sitters L3 C6/Bloom: Bloom has no parameter 'Opacity' - dropped
+REPAIR The Sitters L4 C2/Bloom: Bloom has no parameter 'Opacity' - dropped
+REPAIR The Sitters L4 C5/Bloom: Bloom has no parameter 'Opacity' - dropped
+REPAIR The Sitters L6 C4/Tint: Tint has no parameter 'Opacity' - dropped
+REPAIR German Bight L1 C7/Tint: Tint has no parameter 'Opacity' - dropped
+REPAIR German Bight L2 C2/Wave Warp: Wave Warp has no parameter 'Opacity' - dropped
+REPAIR German Bight L2 C5/Trails: Trails has no parameter 'Opacity' - dropped
+REPAIR German Bight L3 C2/Trails: Trails has no parameter 'Opacity' - dropped
+REPAIR German Bight L3 C7/Transform: Transform has no parameter 'Opacity' - dropped
+REPAIR German Bight L4 C1/SearchLight: SearchLight has no parameter 'Opacity' - dropped
+REPAIR German Bight L4 C5/SearchLight: SearchLight has no parameter 'Opacity' - dropped
+REPAIR German Bight L4 C7/Blur: Blur has no parameter 'Opacity' - dropped
+composition: {'layers': 8, 'decks': 5, 'clips': 320, 'comp_effects': 34, 'fft_nodes': 645, 'bytes': 1667707}
+preset: 164 shortcuts on 149 physical controls; unmapped: none; multi: {'PLAY n91': 2, 'STOP n92': 5, 'BANK LOCK n103': 8, 'CUE LEVEL CC47': 4}
+repairs: 17

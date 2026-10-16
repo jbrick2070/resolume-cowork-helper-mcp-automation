@@ -1,0 +1,250 @@
+{
+ "Depth Blur": {
+  "id": 1792148592134,
+  "is_user_removable": true,
+  "name": "DepthBlur",
+  "display_name": "Depth Blur",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148592133,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148592137,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148592136,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Depth": {
+    "id": 1792148592121,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.20000000298023224,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Width": {
+    "id": 1792148592122,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.10000000149011612,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Radius": {
+    "id": 1792148592123,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 32.0,
+    "in": 0.0,
+    "out": 32.0,
+    "value": 12.0,
+    "view": {
+     "suffix": " px",
+     "display_units": "pixels"
+    }
+   },
+   "Scale Near": {
+    "id": 1792148592124,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 2.0,
+    "in": 0.0,
+    "out": 2.0,
+    "value": 1.0,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Scale Far": {
+    "id": 1792148592125,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 2.0,
+    "in": 0.0,
+    "out": 2.0,
+    "value": 1.0,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Quality": {
+    "id": 1792148592126,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.30000001192092896,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Depth Aware": {
+    "id": 1792148592127,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.75,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Boost": {
+    "id": 1792148592128,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 10.0,
+    "in": 0.0,
+    "out": 10.0,
+    "value": 2.0,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Threshold": {
+    "id": 1792148592129,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Power": {
+    "id": 1792148592130,
+    "valuetype": "ParamRange",
+    "min": 1.0,
+    "max": 8.0,
+    "in": 1.0,
+    "out": 8.0,
+    "value": 2.0,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Model Quality": {
+    "id": 1792148592131,
+    "valuetype": "ParamChoice",
+    "value": "Low",
+    "index": 0,
+    "options": [
+     "Low",
+     "Medium",
+     "High"
+    ],
+    "view": {
+     "suffix": "",
+     "display_units": "integer",
+     "control_type": "choice_combobox"
+    }
+   },
+   "Transparency": {
+    "valuetype": "ParamBoolean",
+    "id": 1792148592132,
+    "value": true,
+    "view": {
+     "suffix": ""
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,1640 @@
+{
+ "Threshold": {
+  "id": 1792148588524,
+  "is_user_removable": true,
+  "name": "Threshold",
+  "display_name": "Threshold",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148588523,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148588527,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148588526,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Threshold": {
+    "id": 1792148588502,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "Smoothness": {
+    "id": 1792148588503,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Color 1": {
+    "id": 1792148588504,
+    "valuetype": "ParamColor",
+    "value": "#ffffffff",
+    "palette": [
+     "#000000ff",
+     "#ff0000ff",
+     "#00ff00ff",
+     "#ffff00ff",
+     "#7f7f7fff",
+     "#0000ffff",
+     "#ff00ffff",
+     "#00ffffff",
+     "#ffffffff"
+    ],
+    "view": {
+     "suffix": ""
+    }
+   },
+   "Color 2": {
+    "id": 1792148588513,
+    "valuetype": "ParamColor",
+    "value": "#000000ff",
+    "palette": [
+     "#000000ff",
+     "#ff0000ff",
+     "#00ff00ff",
+     "#ffff00ff",
+     "#7f7f7fff",
+     "#0000ffff",
+     "#ff00ffff",
+     "#00ffffff",
+     "#ffffffff"
+    ],
+    "view": {
+     "suffix": ""
+    }
+   },
+   "Alpha": {
+    "id": 1792148588522,
+    "valuetype": "ParamChoice",
+    "value": "Original",
+    "index": 0,
+    "options": [
+     "Original",
+     "Combine",
+     "Replace"
+    ]
+   }
+  }
+ },
+ "Tile": {
+  "id": 1792148588644,
+  "is_user_removable": true,
+  "name": "TileEffect",
+  "display_name": "Tile",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148588643,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148588647,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148588646,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Tile X": {
+    "id": 1792148588637,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.1
+   },
+   "Tile Y": {
+    "id": 1792148588638,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.1
+   },
+   "Skew X": {
+    "id": 1792148588639,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "Skew Y": {
+    "id": 1792148588640,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "Rotation Angle": {
+    "id": 1792148588641,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Black BG": {
+    "valuetype": "ParamBoolean",
+    "id": 1792148588642,
+    "value": false
+   }
+  }
+ },
+ "Tilt Shift": {
+  "id": 1792148588764,
+  "is_user_removable": true,
+  "name": "TiltShift",
+  "display_name": "Tilt Shift",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148588763,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148588767,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148588766,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Blur": {
+    "id": 1792148588757,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.8999999761581421,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Position": {
+    "id": 1792148588758,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Focus": {
+    "id": 1792148588759,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.4000000059604645,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Falloff": {
+    "id": 1792148588760,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Saturation": {
+    "id": 1792148588761,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.699999988079071,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   },
+   "Vignette": {
+    "id": 1792148588762,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5,
+    "view": {
+     "suffix": "",
+     "display_units": "real"
+    }
+   }
+  }
+ },
+ "Tint": {
+  "id": 1792148588896,
+  "is_user_removable": true,
+  "name": "Tint",
+  "display_name": "Tint",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148588895,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148588899,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148588898,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Black To": {
+    "id": 1792148588877,
+    "valuetype": "ParamColor",
+    "value": "#ff0000ff",
+    "palette": [
+     "#000000ff",
+     "#ff0000ff",
+     "#00ff00ff",
+     "#ffff00ff",
+     "#7f7f7fff",
+     "#0000ffff",
+     "#ff00ffff",
+     "#00ffffff",
+     "#ffffffff"
+    ],
+    "view": {
+     "suffix": ""
+    }
+   },
+   "White To": {
+    "id": 1792148588886,
+    "valuetype": "ParamColor",
+    "value": "#ccff00ff",
+    "palette": [
+     "#000000ff",
+     "#ff0000ff",
+     "#00ff00ff",
+     "#ffff00ff",
+     "#7f7f7fff",
+     "#0000ffff",
+     "#ff00ffff",
+     "#00ffffff",
+     "#ffffffff"
+    ],
+    "view": {
+     "suffix": ""
+    }
+   }
+  }
+ },
+ "Trails": {
+  "id": 1792148589012,
+  "is_user_removable": true,
+  "name": "Trails",
+  "display_name": "Trails",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148589011,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148589015,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148589014,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Feedback": {
+    "id": 1792148589009,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.9
+   },
+   "Mode": {
+    "id": 1792148589010,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 0,
+    "options": [
+     "Alpha",
+     "Luma",
+     "Lighten"
+    ]
+   }
+  }
+ },
+ "Transform": {
+  "id": 1792148589141,
+  "is_user_removable": true,
+  "name": "Transform",
+  "display_name": "Transform",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148589140,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148589144,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148589143,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Position X": {
+    "id": 1792148589128,
+    "valuetype": "ParamRange",
+    "min": -32768.0,
+    "max": 32768.0,
+    "in": -32768.0,
+    "out": 32768.0,
+    "value": 0.0,
+    "view": {
+     "suffix": "",
+     "step": 1.0,
+     "display_units": "real",
+     "control_type": "spinner"
+    }
+   },
+   "Position Y": {
+    "id": 1792148589129,
+    "valuetype": "ParamRange",
+    "min": -32768.0,
+    "max": 32768.0,
+    "in": -32768.0,
+    "out": 32768.0,
+    "value": 0.0,
+    "view": {
+     "suffix": "",
+     "step": 1.0,
+     "display_units": "real",
+     "control_type": "spinner"
+    }
+   },
+   "Scale": {
+    "id": 1792148589125,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1000.0,
+    "in": 0.0,
+    "out": 1000.0,
+    "value": 100.0,
+    "view": {
+     "suffix": " %",
+     "step": 1.0,
+     "multiplier": 1.0,
+     "display_units": "percent",
+     "control_type": "slider"
+    }
+   },
+   "Scale W": {
+    "id": 1792148589126,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1000.0,
+    "in": 0.0,
+    "out": 1000.0,
+    "value": 100.0,
+    "view": {
+     "suffix": " %",
+     "step": 1.0,
+     "multiplier": 1.0,
+     "display_units": "percent",
+     "control_type": "slider"
+    }
+   },
+   "Scale H": {
+    "id": 1792148589127,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1000.0,
+    "in": 0.0,
+    "out": 1000.0,
+    "value": 100.0,
+    "view": {
+     "suffix": " %",
+     "step": 1.0,
+     "multiplier": 1.0,
+     "display_units": "percent",
+     "control_type": "slider"
+    }
+   },
+   "Rotation X": {
+    "id": 1792148589130,
+    "valuetype": "ParamRange",
+    "min": -180.0,
+    "max": 180.0,
+    "in": -180.0,
+    "out": 180.0,
+    "value": 0.0,
+    "view": {
+     "suffix": " \u00b0",
+     "step": 1.0,
+     "display_units": "degrees",
+     "control_type": "slider"
+    }
+   },
+   "Rotation Y": {
+    "id": 1792148589131,
+    "valuetype": "ParamRange",
+    "min": -180.0,
+    "max": 180.0,
+    "in": -180.0,
+    "out": 180.0,
+    "value": 0.0,
+    "view": {
+     "suffix": " \u00b0",
+     "step": 1.0,
+     "display_units": "degrees",
+     "control_type": "slider"
+    }
+   },
+   "Rotation Z": {
+    "id": 1792148589132,
+    "valuetype": "ParamRange",
+    "min": -180.0,
+    "max": 180.0,
+    "in": -180.0,
+    "out": 180.0,
+    "value": 0.0,
+    "view": {
+     "suffix": " \u00b0",
+     "step": 1.0,
+     "display_units": "degrees",
+     "control_type": "slider"
+    }
+   },
+   "Anchor X": {
+    "id": 1792148589133,
+    "valuetype": "ParamRange",
+    "min": -16384.0,
+    "max": 16384.0,
+    "in": -16384.0,
+    "out": 16384.0,
+    "value": 0.0,
+    "view": {
+     "suffix": "",
+     "step": 1.0,
+     "control_type": "slider"
+    }
+   },
+   "Anchor Y": {
+    "id": 1792148589134,
+    "valuetype": "ParamRange",
+    "min": -16384.0,
+    "max": 16384.0,
+    "in": -16384.0,
+    "out": 16384.0,
+    "value": 0.0,
+    "view": {
+     "suffix": "",
+     "step": 1.0,
+     "control_type": "slider"
+    }
+   },
+   "Anchor Z": {
+    "id": 1792148589135,
+    "valuetype": "ParamRange",
+    "min": -16384.0,
+    "max": 16384.0,
+    "in": -16384.0,
+    "out": 16384.0,
+    "value": 0.0,
+    "view": {
+     "suffix": "",
+     "step": 1.0,
+     "control_type": "slider"
+    }
+   }
+  }
+ },
+ "Triangulate": {
+  "id": 1792148589259,
+  "is_user_removable": true,
+  "name": "Triangulate",
+  "display_name": "Triangulate",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148589258,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148589262,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148589261,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Scale": {
+    "id": 1792148589254,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.125
+   },
+   "Levels": {
+    "id": 1792148589255,
+    "valuetype": "ParamRange",
+    "min": 1.0,
+    "max": 10.0,
+    "in": 1.0,
+    "out": 10.0,
+    "value": 4.0,
+    "view": {
+     "suffix": "",
+     "step": 1.0
+    }
+   },
+   "Flip Direction": {
+    "valuetype": "ParamBoolean",
+    "id": 1792148589256,
+    "value": true
+   },
+   "Threshold": {
+    "id": 1792148589257,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   }
+  }
+ },
+ "Tunnel": {
+  "id": 1792148589383,
+  "is_user_removable": true,
+  "name": "Tunnel",
+  "display_name": "Tunnel",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148589382,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148589386,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148589385,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Position": {
+    "id": 1792148589372,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Speed": {
+    "id": 1792148589373,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "Twist": {
+    "id": 1792148589374,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "Kaleidoscope": {
+    "id": 1792148589375,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0,
+    "view": {
+     "suffix": "",
+     "step": 0.25
+    }
+   },
+   "Rotation": {
+    "id": 1792148589376,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "TurnH": {
+    "id": 1792148589377,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "TurnV": {
+    "id": 1792148589378,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.5
+   },
+   "WobbleH": {
+    "id": 1792148589379,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "WobbleV": {
+    "id": 1792148589380,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Black BG": {
+    "valuetype": "ParamBoolean",
+    "id": 1792148589381,
+    "value": false
+   }
+  }
+ },
+ "Twisted": {
+  "id": 1792148589500,
+  "is_user_removable": true,
+  "name": "Twisted",
+  "display_name": "Twisted",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148589499,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148589503,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148589502,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Twirl": {
+    "id": 1792148589496,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.6000000238418579
+   },
+   "Radius": {
+    "id": 1792148589497,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.25
+   },
+   "Black BG": {
+    "valuetype": "ParamBoolean",
+    "id": 1792148589498,
+    "value": false
+   }
+  }
+ },
+ "Twitch": {
+  "id": 1792148589637,
+  "is_user_removable": true,
+  "name": "TwitchEffect",
+  "display_name": "Twitch",
+  "bypassed": {
+   "valuetype": "ParamBoolean",
+   "id": 1792148589636,
+   "value": false
+  },
+  "mixer": {
+   "Blend Mode": {
+    "id": 1792148589640,
+    "valuetype": "ParamChoice",
+    "value": "Alpha",
+    "index": 1,
+    "options": [
+     "Add",
+     "Alpha",
+     "B&W",
+     "Burn",
+     "Cube",
+     "Cut",
+     "Darken",
+     "Depth",
+     "Difference",
+     "Difference I",
+     "Displace",
+     "Dissolve",
+     "Dodge",
+     "Exclusion",
+     "Hard Light",
+     "JitterBug",
+     "jj",
+     "Lighten",
+     "LoRez",
+     "Luma Is Alpha",
+     "Luma Key",
+     "Luma Key I",
+     "Meta Mix",
+     "Multiply",
+     "Multi Task",
+     "Noisy",
+     "Overlay",
+     "Parts",
+     "PiP",
+     "Push Down",
+     "Push Left",
+     "Push Right",
+     "Push Up",
+     "RGB",
+     "Rotate X",
+     "Rotate Y",
+     "Screen",
+     "Shift RGB",
+     "Side by Side",
+     "Soft Light",
+     "Static",
+     "Subtract",
+     "Tile",
+     "TimeSwitcher",
+     "to Black",
+     "to Color",
+     "to White",
+     "Twitch",
+     "Video Bumper",
+     "Wipe Ellipse",
+     "Zoom In",
+     "Zoom Out"
+    ],
+    "view": {
+     "suffix": "",
+     "control_type": "choice_combobox"
+    }
+   }
+  },
+  "params": {
+   "Opacity": {
+    "id": 1792148589639,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0,
+    "view": {
+     "suffix": " %",
+     "multiplier": 100.0,
+     "display_units": "percent",
+     "control_type": "slider_color_opacity"
+    }
+   },
+   "Global Twitch": {
+    "id": 1792148589613,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 1.0
+   },
+   "Max Pos X": {
+    "id": 1792148589614,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Max Pos Y": {
+    "id": 1792148589615,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Pos Frequency": {
+    "id": 1792148589616,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Max Scale": {
+    "id": 1792148589617,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Scale Frequency": {
+    "id": 1792148589618,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Max Opacity": {
+    "id": 1792148589623,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Opacity Frequency": {
+    "id": 1792148589624,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Max Light": {
+    "id": 1792148589619,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Light Frequency": {
+    "id": 1792148589620,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Max RGB Shift": {
+    "id": 1792148589621,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "RGB Frequency": {
+    "id": 1792148589622,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Max Blur": {
+    "id": 1792148589625,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Blur Frequency": {
+    "id": 1792148589626,
+    "valuetype": "ParamRange",
+    "min": 0.0,
+    "max": 1.0,
+    "in": 0.0,
+    "out": 1.0,
+    "value": 0.0
+   },
+   "Black BG": {
+    "valuetype": "ParamBoolean",
+    "id": 1792148589627,
+    "value": false
+   }
+  }
+ }
+}

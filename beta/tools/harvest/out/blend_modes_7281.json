@@ -1,0 +1,498 @@
+{
+ "50 Add": [
+  "67464319",
+  [
+   "Add50",
+   "Add50",
+   "A028"
+  ]
+ ],
+ "50 Burn": [
+  "16314607437323243866",
+  [
+   "Burn50",
+   "Burn50",
+   "705960281808"
+  ]
+ ],
+ "50 Difference": [
+  "6394760891007958696",
+  [
+   "Difference50",
+   "Difference50",
+   "11200149355288527328"
+  ]
+ ],
+ "50 Distance": [
+  "3338934070432746840",
+  [
+   "Distance50",
+   "Distance50",
+   "1733075512523947448"
+  ]
+ ],
+ "50 Dodge": [
+  "17130567545925232883",
+  [
+   "Dodge50",
+   "Dodge50",
+   "73360504593284"
+  ]
+ ],
+ "50 Lighten": [
+  "67464320",
+  [
+   "Lighten50",
+   "Lighten50",
+   "A029"
+  ]
+ ],
+ "50 Mask": [
+  "67464414",
+  [
+   "Mask50",
+   "Mask50",
+   "A032"
+  ]
+ ],
+ "50 Multiply": [
+  "6636386410879718504",
+  [
+   "Multiply50",
+   "Multiply50",
+   "11705435360910491801"
+  ]
+ ],
+ "50 Overlay": [
+  "5741738327302791165",
+  [
+   "Overlay50",
+   "Overlay50",
+   "868216417627416039"
+  ]
+ ],
+ "50 Subtract": [
+  "67464621",
+  [
+   "Subtract50",
+   "Subtract50",
+   "A057"
+  ]
+ ],
+ "Add": [
+  null,
+  [
+   "Add",
+   "Add",
+   "A005"
+  ]
+ ],
+ "Alpha": [
+  "67464115",
+  [
+   "Alpha",
+   "Alpha",
+   "A006"
+  ]
+ ],
+ "B&W": [
+  "67464614",
+  [
+   "BlackAndWhite",
+   "BlackAndWhite",
+   "A050"
+  ]
+ ],
+ "Burn": [
+  "67464216",
+  [
+   "Burn",
+   "Burn",
+   "A016"
+  ]
+ ],
+ "Cube": [
+  "67464314",
+  [
+   "CubeMixer",
+   "CubeMixer",
+   "A023"
+  ]
+ ],
+ "Cut": [
+  "67464521",
+  [
+   "Cut",
+   "Cut",
+   "A048"
+  ]
+ ],
+ "Darken": [
+  "67464210",
+  [
+   "Darken",
+   "Darken",
+   "A010"
+  ]
+ ],
+ "Depth": [
+  "5954083622537477352",
+  [
+   "Depth",
+   "WireMixer",
+   "c_b5574d1a-3d7b-4245-ba0c-b6e81a5d51c7"
+  ]
+ ],
+ "Difference": [
+  "67464211",
+  [
+   "Difference",
+   "Difference",
+   "A011"
+  ]
+ ],
+ "Difference I": [
+  "67464219",
+  [
+   "DifferenceI",
+   "DifferenceI",
+   "A019"
+  ]
+ ],
+ "Displace": [
+  "67464519",
+  [
+   "DisplaceMixer",
+   "DisplaceMixer",
+   "A046"
+  ]
+ ],
+ "Dissolve": [
+  "7454613968837547479",
+  [
+   "Dissolve",
+   "Dissolve",
+   "7403200754121641"
+  ]
+ ],
+ "Dodge": [
+  "67464215",
+  [
+   "Dodge",
+   "Dodge",
+   "A015"
+  ]
+ ],
+ "Exclusion": [
+  "1877941436173209344",
+  [
+   "Exclusion",
+   "Exclusion",
+   "760142988989056954"
+  ]
+ ],
+ "Hard Light": [
+  "67464218",
+  [
+   "HardLight",
+   "HardLight",
+   "A018"
+  ]
+ ],
+ "JitterBug": [
+  "67464619",
+  [
+   "JitterBug",
+   "JitterBug",
+   "A055"
+  ]
+ ],
+ "jj": [
+  "13567107167407668218",
+  [
+   "jj",
+   "WireMixer",
+   "8373c6cd-49db-417f-8fbf-c8724ecd740c"
+  ]
+ ],
+ "Lighten": [
+  "67464116",
+  [
+   "Lighten",
+   "Lighten",
+   "A007"
+  ]
+ ],
+ "LoRez": [
+  "67464421",
+  [
+   "LoRez",
+   "LoRez",
+   "A039"
+  ]
+ ],
+ "Luma Is Alpha": [
+  "67464117",
+  [
+   "LumaIsAlpha",
+   "LumaIsAlpha",
+   "A008"
+  ]
+ ],
+ "Luma Key": [
+  "67464118",
+  [
+   "LumaKey",
+   "LumaKey",
+   "A009"
+  ]
+ ],
+ "Luma Key I": [
+  "67464311",
+  [
+   "LumaKeyI",
+   "LumaKeyI",
+   "A020"
+  ]
+ ],
+ "Meta Mix": [
+  "67464518",
+  [
+   "MetaMix",
+   "MetaMix",
+   "A045"
+  ]
+ ],
+ "Multiply": [
+  "67464213",
+  [
+   "Multiply",
+   "Multiply",
+   "A013"
+  ]
+ ],
+ "Multi Task": [
+  "67464520",
+  [
+   "MultiTask",
+   "MultiTask",
+   "A047"
+  ]
+ ],
+ "Noisy": [
+  "67464620",
+  [
+   "NoisyMixer",
+   "NoisyMixer",
+   "A056"
+  ]
+ ],
+ "Overlay": [
+  "560198290202542303",
+  [
+   "Overlay",
+   "Overlay",
+   "85110912423038"
+  ]
+ ],
+ "Parts": [
+  "67464515",
+  [
+   "Parts",
+   "Parts",
+   "A042"
+  ]
+ ],
+ "PiP": [
+  "11578734023814684981",
+  [
+   "PiP",
+   "WireMixer",
+   "c_8eaab53f-07a6-45f4-81ae-86de1b68e7ff"
+  ]
+ ],
+ "Push Down": [
+  "67464110",
+  [
+   "PushDown",
+   "PushDown",
+   "A001"
+  ]
+ ],
+ "Push Left": [
+  "67464111",
+  [
+   "PushLeft",
+   "PushLeft",
+   "A002"
+  ]
+ ],
+ "Push Right": [
+  "67464112",
+  [
+   "PushRight",
+   "PushRight",
+   "A003"
+  ]
+ ],
+ "Push Up": [
+  "67464113",
+  [
+   "PushUp",
+   "PushUp",
+   "A004"
+  ]
+ ],
+ "RGB": [
+  "67464415",
+  [
+   "MixRGB",
+   "MixRGB",
+   "A033"
+  ]
+ ],
+ "Rotate X": [
+  "67464315",
+  [
+   "RotateX",
+   "RotateX",
+   "A024"
+  ]
+ ],
+ "Rotate Y": [
+  "67464316",
+  [
+   "RotateY",
+   "RotateY",
+   "A025"
+  ]
+ ],
+ "Screen": [
+  "67464212",
+  [
+   "Screen",
+   "Screen",
+   "A012"
+  ]
+ ],
+ "Shift RGB": [
+  "67464418",
+  [
+   "ShiftRGBMixer",
+   "ShiftRGBMixer",
+   "A036"
+  ]
+ ],
+ "Side by Side": [
+  "67464615",
+  [
+   "SideBySide",
+   "SideBySide",
+   "A051"
+  ]
+ ],
+ "Soft Light": [
+  "67464217",
+  [
+   "SoftLight",
+   "SoftLight",
+   "A017"
+  ]
+ ],
+ "Static": [
+  "67464419",
+  [
+   "StaticMixer",
+   "StaticMixer",
+   "A037"
+  ]
+ ],
+ "Subtract": [
+  "67464214",
+  [
+   "Subtract",
+   "Subtract",
+   "A014"
+  ]
+ ],
+ "Tile": [
+  "67464514",
+  [
+   "Tile",
+   "Tile",
+   "A041"
+  ]
+ ],
+ "TimeSwitcher": [
+  "67464412",
+  [
+   "TimeSwitcher",
+   "TimeSwitcher",
+   "A030"
+  ]
+ ],
+ "to Black": [
+  "67464513",
+  [
+   "MixToBlack",
+   "MixToBlack",
+   "A040"
+  ]
+ ],
+ "to Color": [
+  "12785955881799075068",
+  [
+   "MixToColor",
+   "MixToColor",
+   "11576745208393680544"
+  ]
+ ],
+ "to White": [
+  "67464420",
+  [
+   "MixToWhite",
+   "MixToWhite",
+   "A038"
+  ]
+ ],
+ "Twitch": [
+  "67475122",
+  [
+   "TwitchMixer",
+   "TwitchMixer",
+   "A184"
+  ]
+ ],
+ "Video Bumper": [
+  "10742028716445483240",
+  [
+   "VideoBumper",
+   "WireMixer",
+   "c_1a7100ec-0ccc-46d3-b645-466ce32466f2"
+  ]
+ ],
+ "Wipe Ellipse": [
+  "67464317",
+  [
+   "WipeEllipse",
+   "WipeEllipse",
+   "A026"
+  ]
+ ],
+ "Zoom In": [
+  "67464312",
+  [
+   "ZoomIn",
+   "ZoomIn",
+   "A021"
+  ]
+ ],
+ "Zoom Out": [
+  "67464313",
+  [
+   "ZoomOut",
+   "ZoomOut",
+   "A022"
+  ]
+ ]
+}

@@ -1,0 +1,492 @@
+{
+ "pack_name": "Dead Air",
+ "comp_name": "Dead Air Listening Posts",
+ "tagline": "Five rooms where someone is listening to the dark, and the dark, occasionally, replies.",
+ "decks": [
+  {
+   "name": "Hydrogen Line",
+   "slug": "hydrogen-line",
+   "theme": "space",
+   "world": "The night shift at a listening post, 1967 to 1995 but always three in the morning: a hut, a chart recorder drawing ninety-six feet of paper a day, a P1 phosphor tube, and a sky that is pure hiss at 2.725 kelvin until it is not. The light is sensor-bias grey, buff paper and one pen lamp; chart-paper white is the only thing allowed to glow, and hydrogen-alpha red arrives once, for seventy-two seconds. The wonder is clerical: a quarter-inch of scruff that repeats every 1.337 seconds, WOW! in a margin, three thousand galaxies developing on a plate; the dread is that the pulse is too regular to be natural. Register: teletype telemetry in OCR A Extended, bottom-left and never centred, right ascension and declination, LISTENING, NOT SENDING.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#050608",
+     "why": "Long-exposure dark with a faint blue sensor bias, not pure black, so the Add-blend star noise and the Static of No Carrier have something to sit on."
+    },
+    {
+     "role": "body",
+     "hex": "#e8e6df",
+     "why": "Chart paper: the CP1919 ridgelines, the pen trace and the dawn dish mesh; warm white, never pure, so Bloom does not clip it to nothing. The one colour allowed to glow."
+    },
+    {
+     "role": "figure",
+     "hex": "#5a7bd6",
+     "why": "Deep-field blue, the blue of young galaxies: the Rings beam pattern, the Metaballs galaxy cores and the Dawn Chorus spiral, always thin, always below the paper white."
+    },
+    {
+     "role": "light",
+     "hex": "#d9a441",
+     "why": "Dial lamp amber for the pen lamp and the dish beacon flash at low opacity, the one warm thing in the hut, so the post feels staffed at 3 a.m."
+    },
+    {
+     "role": "text",
+     "hex": "#6f7378",
+     "why": "Chart-margin grey for every annotation, small and bottom-left in OCR A Extended, kept below the eye's attention until Wow Signal takes the text red and Dawn Chorus takes it paper white."
+    },
+    {
+     "role": "aura",
+     "hex": "#b3162b",
+     "why": "RESERVED: 656 nm hydrogen-alpha red. It exists only in Wow Signal (AURA Add 8% and the 6EQUJ5 line) and is zero in all seven other columns, so it reads as an event; AURA elsewhere is deep-field blue or pre-dawn blue-grey (#2a3340)."
+    }
+   ],
+   "columns": [
+    "Dark Run",
+    "Scruff",
+    "Chart Recorder",
+    "CP 1919",
+    "Wow Signal",
+    "Deep Field",
+    "No Carrier",
+    "Dawn Chorus"
+   ],
+   "layer_notes": {
+    "1": "Abstract Field, Dot Dot Dot preset, Density 0.15, Amplitude 0.2, margin grey at 12%: the star-noise floor, drifting at glacial speed; in Dark Run it is all there is; Deep Field is the same preset at Density 0.6, the plate that Trails will develop; No Carrier swaps to Static (Grayscale) at full, the whole picture; Dawn Chorus is Gradient Vertical pre-dawn blue-grey #2a3340 to bed.",
+    "2": "React Pulsar (Level 0.6, Period 0.35, Stack 0.7, Dispersion 0.2, Glow 0.1) in chart paper: the CP1919 stacked ridgeline, the deck's spine from CP 1919 to Deep Field; Dark Run and Scruff use Lines (Rotation 0, Amount 24, Width thin, Fuzzyness 0.1) as paper ruling; Chart Recorder is Sine Wave (Line, Fuzzyness 0.3, Amplitude 0.1, Main Speed 2) scrolling as the pen trace; No Carrier is Blank; Dawn Chorus is Line Scape (Height 2, Speed 0.2, Line Width thin) as the dish mesh seen at first light.",
+    "3": "Rings (Num Rings 3, Stroke, Spacing 1.2, Size animated slowly outward) in deep-field blue as the beam pattern in Scruff, CP 1919 and Wow Signal; Chart Recorder is one Shaper disc (Scale 0.08, Noise Amount 0, dial lamp) with a slow Transform wobble as the pen lamp; Deep Field is Metaballs (Grid 4, Size 0.2, Fuzzyness 0.9, Speed 0.2) as galaxy cores, and the column's end state is Shaper at Scale 0.01 in chart paper, the pale blue dot; Dawn Chorus is Spiral (Minimal preset, Leafs 1, Speed 0.1) as the VLF spectrogram curl; Dark Run and No Carrier are Blank.",
+    "4": "Stroboscope dial lamp on bed, Fade on, Frequency BPM-synced to one flash every two bars: the dish beacon; CP 1919 is Stroboscope chart paper on bed, Fade off, Frequency tuned by ear to the 1.337 s period; Wow Signal is Gradient Radial chart paper to bed with a 72-second Timeline on the clip's opacity, rising and falling like the original signal; Dark Run, No Carrier and Dawn Chorus are Blank.",
+    "5": "Text Animator, OCR A Extended, Size 0.8, Alignment Left, Bottom, Position bottom-left like a teletype, margin grey, no animation; Wow Signal is the only column in hydrogen red, Center, Animated on, Range Characters, Order Front to back, Delay 90: the 6EQUJ5 typewriter, retriggered from the pad; Deep Field reads LOOK AGAIN AT THAT DOT; Dawn Chorus is the only column in chart paper.",
+    "6": "Blank (explicit) from Dark Run to CP 1919, there is no colour in the hut; Wow Signal is Solid Color hydrogen alpha, Add, 8%; Deep Field is Gradient Vertical deep-field blue to bed at 15%; No Carrier is Blank; Dawn Chorus is Gradient Radial pre-dawn blue-grey to bed at 20%, the first sky of the night.",
+    "7": "Static (Grayscale) at 6% with bank-C React Gate carrying Grain only, the chart paper's tooth; No Carrier is Static (Grayscale) at 40% with bank-C Stop Motion (Frequency low, Frame Count 2) so the hiss steps at two frames a second; no Golden Flicker Reel anywhere in this deck, it is the clean deck.",
+    "8": "Sine Wave (Line, Horizontal, Line Width 0.02, Amplitude on the live FFT) in chart paper, one line high at the bottom edge, the same geometry as every deck: here it is the chart pen; its gain follows the music 1:1 and nothing else, it is the honest readout."
+   },
+   "moments": [
+    "CP 1919 stack: fire Scene Launch 4, hold the row-4 LIGHT pad (Piano trigger) so the 1.337-second Stroboscope flashes under the React Pulsar ridgeline on row 2, roll the bank-A knob to half with only Trails lit so each flash settles into the stacked plot, then roll it back to zero and the scruff is just ink again.",
+    "Wow Signal: fire Scene Launch 5 and tap the row-5 TEXT pad on the downbeat to retrigger the 6EQUJ5 typewriter in the deck's only red while the row-4 Gradient rises over its seventy-two seconds, hit the Freeze button on the same beat if the room can take the hold, and on the drop tap Invert RGB for one bar so the paper goes black and the ink goes white.",
+    "Exposure to dot: walk Up to Deep Field, fire the row-1 BED pad with the bank-A knob at three-quarters and only Trails lit so Dot Dot Dot accumulates like a plate developing for a full minute, press the Trails button off and on to wipe the plate, then pull faders 1, 2 and 4 to zero, tap the row-3 FIGURE pad for the one-pixel Shaper under LOOK AGAIN AT THAT DOT, and ride the bank-A knob with only Vignette lit until the dot is the only lit thing in the club for sixteen bars."
+   ],
+   "text_corpus": [
+    "1420.405 MHZ",
+    "CP 1919+21",
+    "PERIOD 1.3373 S",
+    "NOTHING, THEN SCRUFF",
+    "96 FT PAPER PER DAY",
+    "CHART SPEED 1 IN/MIN",
+    "LGM-1",
+    "NOT LITTLE GREEN MEN",
+    "WOW! 6EQUJ5",
+    "72 SECONDS, THEN GONE",
+    "BIG EAR, 15 AUG 1977",
+    "CMB 2.725 K",
+    "11.3 DAYS EXPOSURE",
+    "3000 GALAXIES",
+    "LOOK AGAIN AT THAT DOT",
+    "LESS THAN ONE PIXEL",
+    "NO CARRIER",
+    "DAWN CHORUS, VLF",
+    "QUIET SUN",
+    "LISTENING, NOT SENDING"
+   ]
+  },
+  {
+   "name": "Loss Of Signal",
+   "slug": "loss-of-signal",
+   "theme": "fusion",
+   "world": "Mission Control's voice loop at the moment the spacecraft goes behind the Moon: LOS, forty-five minutes of dead air, and the whistling the Apollo 10 crew heard on the far side and nearly did not report. The room is console grey, P39 phosphor green and one amber tally lamp; everything else is the dark the carrier left behind, and in this room the scope is the picture, full width along the lower third. The dread is that the loop keeps counting into silence and the voice that eventually answers may not be on the roster; the wonder is AOS, the sunrise that comes back on schedule as one long white flash. Period register is 1969 Houston in Consolas: teletype paper, capcom cadence, left-justified, hiss at 2.2 kHz.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0b0d0f",
+     "why": "Dead-air black with a blue cast: the Checkered room grid sits on it against console grey #1a2024 at 4% contrast, and in Dead Air it is Solid Color and nothing else."
+    },
+    {
+     "role": "body",
+     "hex": "#1f8a55",
+     "why": "Loop-trace green, the same P39 hue as the text one stop darker: the Lines voice loop, the Sine Wave carrier and the flat ECG, so the words always sit in front of the trace."
+    },
+    {
+     "role": "figure",
+     "hex": "#d7d2c4",
+     "why": "Teletype paper white for the lunar limb crossing the room and the Metaballs heart; the colour of the transcript, used thin."
+    },
+    {
+     "role": "light",
+     "hex": "#e3a21a",
+     "why": "The single tally lamp flashing on the bar; LIGHT only. Acquisition's sunrise is the one exception, a long flash in #f4efe6 white, nothing else in the deck is that bright."
+    },
+    {
+     "role": "text",
+     "hex": "#35d07f",
+     "why": "P39 monitor green, the only living colour; it must stay this exact green in every column so the room is one room, except Whistling, where the text goes violet because something else is on the loop."
+    },
+    {
+     "role": "aura",
+     "hex": "#5b3c8a",
+     "why": "RESERVED: far-side violet, a colour that does not belong in Houston. AURA only, explicit Blank until LOS, 12% in Whistling, Blank again at Acquisition; the visual sign that the voice on the loop is not on the roster."
+    }
+   ],
+   "columns": [
+    "Go For TLI",
+    "The Loop",
+    "LOS In Ten",
+    "Dead Air",
+    "Whistling",
+    "Alarm 1202",
+    "Acquisition",
+    "Splashdown"
+   ],
+   "layer_notes": {
+    "1": "Checkered (Num X 16, Num Y 9) bed on console grey #1a2024 at 4% contrast, the room's grid, scale and position never animated; Dead Air is Solid Color bed and nothing else; Splashdown is Gradient Horizontal bed to teletype at 10%, the newsreel's grey sky.",
+    "2": "Lines (Rotation 0, Amount 12, Width thin, Fuzzyness on low-mids through a 2 s envelope) in loop-trace green: the voice-loop trace; The Loop is Sine Wave (Line, Mirror on, Waves 3, Modulation Depth on low-mids) as the carrier; Dead Air is Sine Wave (Line, Amplitude 0.02, Fuzzyness 0, Main Speed 8, Position 0.8) as the ECG, flat, set Ignore Column Trigger so it arrives by hand; Whistling is Tunnelines (Wormhole preset as start, Zoom slow, Line Width thin) in loop-trace green, the far side as a corridor you are pulled down; Splashdown is Lines (Rotation 90) as rain on the newsreel.",
+    "3": "Shaper (Scale 0.9, Color alpha zero, Outline 0.02 in teletype): a thin circle, the lunar limb, with the clip Transform Position X stepping edge to edge across the eight columns so the Moon crosses the room over the scene set; Dead Air is Metaballs (Grid 1, Size on the sub band 0.15 to 0.35, Fuzzyness 0.6, Position Y -0.3, teletype) as the heart, Ignore Column Trigger; Whistling is Sine Wave (Fill, Mirror on, Modulator 7, Modulation Depth 2) in far-side violet; Splashdown is Rings (Num Rings 3, Stroke, Size expanding) as the splash.",
+    "4": "Stroboscope tally amber on bed, Fade off, Frequency BPM-synced to one flash per bar, squared by the clip Transform: the tally lamp; Dead Air is Stroboscope Heartbeat preset recoloured tally amber, Ignore Column Trigger; Acquisition is Stroboscope Color 1 #f4efe6 on bed, Fade on, Frequency near zero: one long white flash on the bar of AOS, the sunrise; Splashdown is Blank.",
+    "5": "Text Animator, Consolas, Size 0.9, Alignment Left, Bottom, left-justified like a transcript, phosphor green, no animation; LOS In Ten is the one line 10 9 8 7 6 5 4 3 2 1 built from the rig's own Countdown from 10 preset (Animated on, Range Characters, Order Front to back, Delay 1000) and retriggered from the row-5 pad, the only honest way to count down; Whistling is the only column in far-side violet; Splashdown is Text Block, two lines, teletype. A Turin reserve (SLYSHU VAS, MNE ZHARKO, VIZHU PLAMYA, PRIYOM, 20.005 MHZ) sits in the build sheet if the performer ever wants 1961 instead of 1969.",
+    "6": "Explicit Blank from Go For TLI to LOS In Ten and in Dead Air, Alarm 1202 and Acquisition; Whistling is Solid Color far-side violet, Add, 12%; Splashdown is Gradient Vertical teletype to bed at 6%.",
+    "7": "Static (Grayscale) at 10% with bank-C Stop Motion (Frequency low, Frame Count 2) so the 2.2 kHz hiss steps; Dead Air is explicit Blank; Splashdown is Static (Color) at 14% under bank-C React Gate (Era high, Weave 0.4, Dust 0.3): the newsreel, done the way the rig does film, no Golden Flicker Reel.",
+    "8": "Sine Wave on the live FFT in phosphor green, full-width lower third in this deck only, because in a radio room the scope is the picture: it is the downlink carrier and the one thing still moving in Dead Air."
+   },
+   "moments": [
+    "LOS In Ten to Dead Air: fire Scene Launch 3 and tap the row-5 TEXT pad on the downbeat so the count types 10 to 1 one digit a beat, then fire Scene Launch 4 so Dead Air lands with only BED and SCOPE, and let the room hear the silence for a full phrase before you touch a pad.",
+    "Heartbeat: still in Dead Air, press the row-3 FIGURE pad and the row-4 LIGHT pad together so the one Metaball swells on the sub band under the Heartbeat strobe, press row 2 for the flat ECG above it, and on the breakdown hit the Freeze button, whose Y split is set at the half in the build, so the heart's half of the frame holds while the ECG keeps scrolling flat.",
+    "Alarm to sunrise: fire Scene Launch 5 (Whistling) and turn the bank-B knob up with Tunnel lit so the corridor pulls inward under the violet, walk Up once to Alarm 1202 and hit Strobe on the downbeat with Shift Glitch tapped on the hits and the bank-C knob at half for CRT, then walk Up once more to Acquisition and tap Shift RGB on the long white flash only, releasing before it fades, so the sunrise splits into three and the room is clean again."
+   ],
+   "text_corpus": [
+    "GO FOR TLI",
+    "CAPCOM, FLIGHT",
+    "10 9 8 7 6 5 4 3 2 1",
+    "WE ARE IN LOS",
+    "45 MIN OF DEAD AIR",
+    "YOU HEAR THAT?",
+    "THAT WHISTLING SOUND",
+    "OUTER-SPACEY, ISN'T IT",
+    "NOBODY WILL BELIEVE US",
+    "WHO'S ON THIS LOOP?",
+    "DOWNLINK CARRIER LOST",
+    "TAPE RECORDER: ON",
+    "TELEMETRY ONLY",
+    "NO VOICE",
+    "ALARM 1202",
+    "WE'RE GO ON THAT ALARM",
+    "STANDING BY FOR AOS",
+    "EAGLE, HOUSTON",
+    "THE LOOP IS QUIET",
+    "SPLASHDOWN, 1652 GMT"
+   ]
+  },
+  {
+   "name": "The Sitters",
+   "slug": "the-sitters",
+   "theme": "halloween",
+   "world": "A Victorian parlour seance by one candle, run to a strict protocol: lamp down, hands joined, knock once for yes, never break the circle. The light is a single flame that a moth keeps crossing, and everything it does not reach is the brown of a daguerreotype; one cold blue opens in the north-west corner when something answers. The dread is procedural: the table tilts at 11:47, the trumpet lifts, the glass spells L-E-A-V-E, and the wax cylinder plays back a name nobody gave it. Period register is 1872 Hackney in Baskerville Old Face with a 1971 overdub in Lucida Sans Typewriter: Raudive's Class A voices under the hiss, Ouija letters spaced across the board.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#120e0b",
+     "why": "Parlour black, warm, the colour of a room with the lamp turned down a minute ago: the far edge of the candle gradient and the Multiply floor."
+    },
+    {
+     "role": "body",
+     "hex": "#6b4a2e",
+     "why": "Daguerreotype sepia for the damask wallpaper and the AURA Multiply wash in every candle column; it makes everything look already photographed."
+    },
+    {
+     "role": "figure",
+     "hex": "#cfd6cc",
+     "why": "Ectoplasm: cold muslin grey-white for the Metaballs and the moths, the one cool thing in a warm room, so it reads as not belonging."
+    },
+    {
+     "role": "light",
+     "hex": "#f2b65a",
+     "why": "The candle, the only light source: the Golden Flicker Reel flame, the BED's radial centre, and the lamp coming back up at Break Circle."
+    },
+    {
+     "role": "text",
+     "hex": "#e9e1cf",
+     "why": "Bone: old paper and knuckle for the protocol voice in Baskerville Old Face and the spaced Ouija answers; never brighter than the flame."
+    },
+    {
+     "role": "aura",
+     "hex": "#2b6cff",
+     "why": "RESERVED: the cold spot, an ice blue that exists only in Class A (AURA Screen 10%, the typed voice) and the last beat of Break Circle. Its rarity is the scare, and COLD, SHE SAYS. COLD. is this colour."
+    }
+   ],
+   "columns": [
+    "Lights Down",
+    "Join Hands",
+    "Knock Once",
+    "The Table",
+    "Moth To Lamp",
+    "Trumpet Lifts",
+    "Class A",
+    "Break Circle"
+   ],
+   "layer_notes": {
+    "1": "Gradient Radial, candle to parlour black, pushed to the upper left by the clip Transform, breathing on the sub band through a long envelope: the candle's throw is the room, and in Lights Down it is all there is; Class A swaps to Gradient Radial darkened cold spot #122a55 to parlour black centred in the north-west corner; Break Circle is Solid Color parlour black.",
+    "2": "Geometry Pattern Maker (Vesica, Line Ammount 8, Bloom 0, outer only) in daguerreotype at 6%, scaling very slowly: the damask you never quite see; The Table swaps to Lines (Rotation 90, Amount 9, Width thin) with the clip Transform rotating from 0 to 11 degrees over eight bars as the table tilts; Class A is Sine Wave (Phantom signal preset as start, Line, Fuzzyness 0.5, Amplitude 0.15) in bone, the cylinder's waveform; Break Circle is Blank.",
+    "3": "Metaballs (Grid 3, Size 0.3, Fuzzyness 0.8, Speed 0.3) in ectoplasm: the muslin; Moth To Lamp is Metaballs (Grid 12, Size 0.04, Fuzzyness 0.2, Speed 6) in bone, the moths, re-spawned by the pad; Trumpet Lifts is Geometry Pattern Maker (Triangle, outer only, Transform Scale X 0.3) with Position Y rising over four bars, the trumpet; Class A is Blank, the voice has no body; Break Circle is Metaballs Grid 1 at Size 0.05 fading, the last of the muslin.",
+    "4": "Golden Flicker Reel through a tight clip Transform at the candle's position (Bass is the core bloom, the flame; Highs are the ember dots, the moth dust) in Lights Down, Join Hands, The Table, Moth To Lamp and Trumpet Lifts, the rig's one audio-native source used as the one lamp; Knock Once is Stroboscope bone on parlour black, Fade off, the clip's timeline cut to 120 ms and set Play Once and Eject, so one pad press is one knock and nothing lingers; Class A is Blank; Break Circle is Stroboscope candle, Fade on, Frequency 0.05: the lamp coming back up.",
+    "5": "Text Block, Baskerville Old Face, bone, Center, two short lines maximum, the medium's protocol voice; Knock Once and The Table set Spacing X 60 so Y E S, N O and G O O D B Y E read as a planchette crossing a board; Class A is the only column in Text Animator, Lucida Sans Typewriter, cold-spot blue, Animated on, Range Characters, Order Front to back, Delay 120: the Raudive overdub typed over the hiss; Break Circle reads BREAK THE CIRCLE NOW then SHE HAS GONE BACK on two lines.",
+    "6": "Solid Color daguerreotype, Multiply, 30% in every candle column; Class A is Solid Color cold spot, Screen, 10%, the one cold colour used once; Break Circle is Gradient Vertical cold spot to parlour black at 6% for the last beat, then nothing.",
+    "7": "Static (Grayscale) at 8% under bank-C React Gate (Grain 0.4, Dust 0.1) as cylinder hiss; Class A is Static (Grayscale) at 18%, the main texture of the column; Break Circle is Static (Two-tone) at 20% with React Gate Weave and Judder up, the cylinder at the end of its groove.",
+    "8": "Sine Wave on the live FFT in moth dust #9c8c74, almost not there, bottom edge: the EVP recorder's needle, the one honest readout at the table."
+   },
+   "moments": [
+    "Knock Once: fire Scene Launch 3 and answer the kick by hand, one press of the row-4 LIGHT pad per knock and never more than once a bar, so the knocks arrive like answers and not like a strobe, while the row-5 text reads KNOCK ONCE FOR YES above the spaced Y E S.",
+    "Moth To Lamp: fire Scene Launch 5, tap the row-3 FIGURE pad on the one of every bar to re-spawn the moths around the Golden Flicker Reel flame with the bank-A knob at a quarter and Bloom and Trails lit so each moth leaves a ring of dust, then pull the knob to zero on the breakdown and the moths die in two bars.",
+    "The Table to Class A: fire Scene Launch 4 and roll the bank-D knob up with Mirror Quad lit so one glass becomes four and the damask folds into a cathedral on the bass drop, then walk Up three times to Class A, pull faders 1 and 2 to zero so only the Static, the needle and the cold blue voice remain, press the Mirror button so the hiss folds into a face that was not there, and tap Invert RGB for one beat so the parlour goes negative and the name shows through."
+   ],
+   "text_corpus": [
+    "LAMP DOWN, PLEASE",
+    "SITTERS JOIN HANDS",
+    "DO NOT BREAK THE RING",
+    "IS ANYONE THERE",
+    "KNOCK ONCE FOR YES",
+    "Y E S",
+    "N O",
+    "G O O D B Y E",
+    "TABLE TILTED 11:47",
+    "THE TABLE TILTS, LEFT",
+    "GLASS SPELLS L-E-A-V-E",
+    "THE TRUMPET LIFTS",
+    "COLD, SHE SAYS. COLD.",
+    "COLD SPOT NW CORNER",
+    "A SMELL OF VIOLETS",
+    "CYLINDER 14, SIDE B",
+    "RAUDIVE, 1971, 0:17",
+    "REVERSED: MY NAME",
+    "SHE HAS GONE BACK",
+    "BREAK THE CIRCLE NOW"
+   ]
+  },
+  {
+   "name": "Hour Of Saturn",
+   "slug": "hour-of-saturn",
+   "theme": "halloween",
+   "world": "A grimoire read under Giallo light in a Rome print lab, 1977: the circle drawn in chalk, the planetary hour struck, the lamp swapped for a red gel and then a blue one, the way a corridor in Suspiria or a Hammer crypt is lit from the wrong side. The body of the world is geometry, the three-by-three square of Saturn in verdigris and rings that contract, which assembles and then breaks; the gels cut, they never crossfade. The dread is formal: the ritual is a recipe and the recipe is working. Period register is the Key of Solomon in Engravers MT with Italian intertitles in Bodoni MT caps tracked wide (PRIMO TEMPO, NON APRIRE, FINE) and a Carpenter pulse underneath.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0a0908",
+     "why": "Crypt black, dead-flat and warm, so the gels have nothing to reflect off except the geometry; the BED gradient only ever leaves it for a near-black red #1c0608 or near-black blue #060a1c."
+    },
+    {
+     "role": "body",
+     "hex": "#d8c9a8",
+     "why": "Bone for the sigil ring, the contracting rings and the SCOPE: one stop below chalk so the words always sit forward of the geometry."
+    },
+    {
+     "role": "figure",
+     "hex": "#4f8a6b",
+     "why": "RESERVED: verdigris, bronze gone green, for the Seal of Saturn and the single point that stays when the lamp goes. It is the one colour neither gel can produce, so the seal always looks older than the light."
+    },
+    {
+     "role": "light",
+     "hex": "#c1121f",
+     "why": "Argento red, the first gel: the Lamp of the Art on LIGHT and the Multiply wash on AURA, never on text, so the words stay chalk."
+    },
+    {
+     "role": "text",
+     "hex": "#efe9dc",
+     "why": "Chalk, slightly warm so it reads as chalk on stone, not white on screen: the circle and every word, Engravers MT for the grimoire, Bodoni MT Bold caps at Spacing X 40 for the intertitles."
+    },
+    {
+     "role": "aura",
+     "hex": "#1f4fbf",
+     "why": "The second gel, the counter-light from the wrong side of the room; it alternates with red on the bar from Scene Launch 4 and 5, and meets red in the middle of the frame only in Conjuration."
+    }
+   ],
+   "columns": [
+    "Chalk Circle",
+    "Hour Struck",
+    "First Seal",
+    "Red Gel",
+    "Blue Gel",
+    "Conjuration",
+    "The Lamp Goes",
+    "Licence To Go"
+   ],
+   "layer_notes": {
+    "1": "Gradient Linear, crypt black to near-black red #1c0608, Mode Smooth, Dither 6 for print banding, rotated by the clip Transform once every two minutes: the two gels crossing on the back wall; Blue Gel swaps the far colour to near-black blue #060a1c; Licence To Go is Solid Color crypt black.",
+    "2": "Geometry Pattern Maker (Hexagon, Line Ammount 12, Bloom 0, outer only, Gloabal rot slow) in bone at 25%: the circle's tiled sigils; Conjuration swaps to Rings (Num Rings 24, Stroke, Line Width thin) with Size contracting over eight bars on a Timeline; The Lamp Goes is Rings (Num Rings 1, Stroke) in bone, the bare circle; Licence To Go is Blank.",
+    "3": "Checkered (Num X 3, Num Y 3) verdigris on crypt black, clip Transform Scale 0.25 and Rotation one turn per minute: the Kamea of Saturn, the three-by-three square that sums to fifteen every way (the rig has no heptagon and the Seal of Saturn never needed one); Chalk Circle is Rings (Num Rings 1, Stroke) in chalk, the circle being drawn; The Lamp Goes is Shaper (Scale 0.02, Noise Amount 0) in verdigris, a single point that stays; Licence To Go is Blank.",
+    "4": "Gradient Radial, Mode Stepped, gel red to crypt black, pushed off-centre by the clip Transform like a lamp from the wrong side: the Lamp of the Art; Hour Struck is Stroboscope chalk on crypt black, Fade off, the clip cut to 120 ms and set Play Once and Eject, the hour as a blade, with bank-D React Anamorphic; Blue Gel is Stroboscope gel blue, Fade on, BPM-synced to one flash per bar; Conjuration is Stroboscope gel blue on the bar (the red lamp moves to AURA, one source per clip); The Lamp Goes is Golden Flicker Reel through a small clip Transform at the lamp's position, the lamp guttering; Licence To Go is Blank.",
+    "5": "Text Block, Engravers MT, chalk, Center, Top, two short lines; Chalk Circle, Red Gel and Licence To Go carry the Rome 1977 intertitles in Bodoni MT Bold caps at Spacing X 40, tracked wide: PRIMO TEMPO, NON APRIRE, and LICENCE TO DEPART with FINE beneath it; First Seal reads the Kamea 4 9 2 / 3 5 7 / 8 1 6; Conjuration is the only column in Text Animator, Perpetua Titling MT, chalk, Animated on, Range Characters, Delay 150: I CONJURE THEE letter by letter.",
+    "6": "Explicit Blank in Chalk Circle, Hour Struck, First Seal and Licence To Go; Solid Color gel red, Multiply, 35% in Red Gel and The Lamp Goes; Solid Color gel blue, Screen, 25% in Blue Gel; Conjuration is Gradient Horizontal gel red to gel blue, Screen, 30%, the two gels meeting in the middle of the room.",
+    "7": "Static (Color) at 10% under bank-C React Gate (Era 0.8, Weave 0.3, Dust 0.2, Flicker 0.2): the Rome print, cue dots and all, done the way the rig actually does film; Hour Struck is Static (Two-tone) at 20% for the one bar the hour sounds.",
+    "8": "Sine Wave on the live FFT in bone, bottom edge: the Carpenter pulse, the only element allowed to look like music."
+   },
+   "moments": [
+    "The Argento cut: column transition time is zero in this deck and the crossfader is never touched; fire Scene Launch 4 and Scene Launch 5 on alternate downbeats (Red Gel, Blue Gel) so the lamp swaps sides of the room on the bar, with the bank-D knob at a quarter and Kaleidoscope lit so the Kamea multiplies to four under the second gel and no further.",
+    "Hour Struck: fire Scene Launch 2 and press the row-4 LIGHT pad once on the hit with React Anamorphic lit (Streak high, Squeeze up) so the hour sounds like a lens catching steel, never twice in a bar, while Static Two-tone on row 7 roughens the print for exactly that bar.",
+    "Conjuration to FINE: walk Up to Conjuration, hold the row-2 BODY pad and the row-3 FIGURE pad together (Piano trigger) and push the bank-A knob to full with Bloom lit so the contracting rings pull into the seal until the frame whites out, drop the knob so the circle is empty, then walk Up twice through The Lamp Goes, where only the verdigris point and the text remain, to Licence To Go, where the row-5 pad reads LICENCE TO DEPART and, beneath it, FINE."
+   ],
+   "text_corpus": [
+    "SATURDAY, FIRST HOUR",
+    "HOUR OF SATURN",
+    "PRIMO TEMPO",
+    "DRAW THE CIRCLE",
+    "NINE FEET ACROSS",
+    "FACE EAST. BEGIN.",
+    "4 9 2 / 3 5 7 / 8 1 6",
+    "WRITTEN IN VERDIGRIS",
+    "LAMP OF THE ART",
+    "RED GEL, THEN BLUE",
+    "NON APRIRE",
+    "I CONJURE THEE",
+    "BY THE NAMES WRITTEN",
+    "STAND NOT WITHOUT",
+    "NON GUARDARE",
+    "THE LAMP IS GOING OUT",
+    "DEPART IN PEACE",
+    "LICENCE TO DEPART",
+    "ROMA 1977, BOBINA 3",
+    "FINE"
+   ]
+  },
+  {
+   "name": "German Bight",
+   "slug": "german-bight",
+   "theme": "wildcard",
+   "world": "The 0048 shipping forecast after Sailing By: a voice reading sea areas into the dark on 198 kHz long wave for people who may or may not be out there. It is the North Sea at night as a wireframe swell under a lighthouse with a published character, Fl(2) W 10s, two flashes every ten seconds, and a grey that is almost blue with port red and starboard green at the edges. The wonder is liturgical: Viking, North Utsire, Forties, a low losing its identity, and the gale warnings carry real dread without a single horror cue. Period register is BBC Radio 4 in Gill Sans MT, a Met Office card and a light list read in a flat voice, with the bridge radar the only green on board.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0e141a",
+     "why": "Long-wave black, the sea at night with a blue cast: the Line Scape floor's far horizon and the outer edge of every AURA gradient."
+    },
+    {
+     "role": "body",
+     "hex": "#5f6f78",
+     "why": "Swell grey for the wireframe sea and the barograph line: a grey that is nearly blue, never cold enough to be space."
+    },
+    {
+     "role": "figure",
+     "hex": "#8c979c",
+     "why": "Fog, for the pulse rings, the buoy and the Rockall rock: lighter than the sea it sits on, the only deck whose figure is weather."
+    },
+    {
+     "role": "light",
+     "hex": "#ffe8a3",
+     "why": "The lamp: LIGHT only, as a Rings wedge rotating once every ten seconds and as a two-flash Stroboscope character, the one warm thing for thirty miles."
+    },
+    {
+     "role": "text",
+     "hex": "#e9e4d8",
+     "why": "Card white, the Met Office card in Gill Sans MT, slightly yellowed like paper read under a desk lamp; every sea area is this and nothing else."
+    },
+    {
+     "role": "aura",
+     "hex": "#a8323a",
+     "why": "RESERVED: gale red, storm cone not blood. The port side of the harbour gradient at 8%, the Gale Warnings wash at 6%, and the one word SEVERE GALE 9; its starboard partner is the bridge-radar green #4caf7d that only the SCOPE wears."
+    }
+   ],
+   "columns": [
+    "Sailing By",
+    "Gale Warnings",
+    "Viking Utsire",
+    "Dogger Fisher",
+    "German Bight",
+    "Lundy Fastnet",
+    "Rockall Malin",
+    "Fair Isle"
+   ],
+   "layer_notes": {
+    "1": "Line Scape (Tilt 20, Position Y low, Height on the sub band through a slow envelope, Speed 0.3 fixed so the swell never hurries, Line Width thin, Fuzzyness 0.1) in swell grey: the North Sea as wireframe, the deck's whole floor; Rockall Malin swaps to Abstract Field Smoke Storm in fog at Amplitude 0.3, the fog bank; Fair Isle is Line Scape at Height 0.5, the sea gone flat at dawn.",
+    "2": "Sine Wave (Line, Mirror on, Waves 2, Frequency 1, Line Width 0.02) in swell grey: the swell line and the barograph in one; Gale Warnings lets Amplitude and Fuzzyness climb with low-mids and doubles the Line Width; Sailing By is Lines (Rotation 0, Amount 1, Position 0.33) as the horizon; Fair Isle is Blank.",
+    "3": "Rings (Num Rings 1, Stroke, Line Width thin) in fog with Size expanding on a four-bar Timeline, one new ring per four bars: the pulse from the lighthouse; Dogger Fisher is Checkered (Num X 1, Num Y 1) scaled to a small square by the clip Transform and drifting across, the buoy on the card; Rockall Malin is Shaper (Scale 0.5, Noise Type Hatched, Noise Amount 0.4) in fog, squashed to Scale Y 0.6 by the Transform, the rock; Fair Isle is Blank.",
+    "4": "Alternates by column: Rings (start from the Light House preset; Num Rings 1, Style Fill, Gap 330) in lighthouse, rotated by the clip Transform once every ten seconds with bank-B SearchLight for the blur of the sweep, in Sailing By, Viking Utsire, German Bight and Rockall Malin; Stroboscope lighthouse on bed, Fade on, Frequency driven by a 10-second Timeline that fires twice then rests, the published character Fl(2) W 10s, in Gale Warnings, Dogger Fisher and Lundy Fastnet; Fair Isle is Gradient Vertical lighthouse to bed at 6%, dawn under the lamp.",
+    "5": "Text Animator, Gill Sans MT, Size 1.4, Center, card white, one sea area per column in Viking Utsire through Rockall Malin, fired from the row-5 pad on the downbeat so the litany is played, not walked; Gale Warnings is the only Text Block, four short lines (area, wind, weather, visibility) with SEVERE GALE 9 the one line in gale red; Sailing By reads AT 0048, LONG WAVE; Fair Isle reads LOSING ITS IDENTITY, the last line of the night.",
+    "6": "Gradient Horizontal gale red (port, left) to bridge-radar green #4caf7d (starboard, right) at 8% in Dogger Fisher, German Bight and Lundy Fastnet, the harbour lights that say which way the frame is sailing; Gradient Radial bed to swell grey at 15% centred on the horizon in Sailing By, Viking Utsire and Rockall Malin; Gale Warnings is Solid Color gale red, Add, 6%; Fair Isle is Gradient Vertical pre-dawn #3a4a55 to bed at 20%.",
+    "7": "Static (Grayscale) at 10% as long-wave hiss; Dogger Fisher and Rockall Malin swap to Lines (Rotation 90, Amount 60, Width thin, Fuzzyness 0.6) at 5%, rain later, so hiss and rain are a column swap and never two sources on one layer; no film grain in this deck.",
+    "8": "Sine Wave on the live FFT in bridge-radar green #4caf7d, bottom edge, with bank-C Radar available over it: the barograph on the bridge, the only element that admits there is music playing."
+   },
+   "moments": [
+    "Sailing By: fire Scene Launch 1 with every effect button off and the bank-A knob at zero, bring in the row-4 LIGHT pad on the second bar so the lighthouse wedge sweeping once every ten seconds is the only motion in the room, and let it stay that way for as long as you dare.",
+    "Gale Warnings: fire Scene Launch 2, hold the row-2 BODY pad (Piano trigger) and push the bank-B knob with Wave Warp and Ripples lit so the swell line stacks and the red aura rises, and press the row-5 TEXT pad on the hit so SEVERE GALE 9 lands with it.",
+    "The litany to dawn: fire Scene Launch 3 then walk Up one column per phrase of the music, pressing the row-5 TEXT pad on the downbeat of each so the sea areas are played like a count, at Rockall Malin drop faders 2 and 4 so only the rock, the fog and the barograph remain with the bank-A knob riding Vignette closed, and at Fair Isle press the row-5 pad on the last beat so LOSING ITS IDENTITY is the final line of the night."
+   ],
+   "text_corpus": [
+    "THE SHIPPING FORECAST",
+    "AT 0048, LONG WAVE",
+    "NOTICE TO MARINERS",
+    "VIKING, NORTH UTSIRE",
+    "SOUTHWEST 5 TO 7",
+    "SEVERE GALE 9, LATER",
+    "GOOD OCCASIONALLY POOR",
+    "DOGGER, FISHER",
+    "GERMAN BIGHT, HUMBER",
+    "LOW HUMBER 998",
+    "FALLING SLOWLY",
+    "ROUGH OR VERY ROUGH",
+    "LUNDY, FASTNET",
+    "FL(2) W 10S",
+    "LIGHT VESSEL AUTO",
+    "LIGHT UNWATCHED 1980",
+    "ROCKALL, MALIN",
+    "LOSING ITS IDENTITY",
+    "FAIR ISLE, FAEROES",
+    "AND NOW, SAILING BY"
+   ]
+  }
+ ],
+ "effect_wishlist": [
+  {
+   "effect": "Bloom",
+   "role": "Bank A glow: phosphor, candle and gel alike, the knob the performer lives on, kept under a third everywhere except the Conjuration white-out; Tint completes bank A for a single-hue grade when AURA is not enough."
+  },
+  {
+   "effect": "Trails",
+   "role": "Bank A persistence: the stacked pulsar plot, the moth's ring of dust, the beam's afterglow, and the Exposure accumulator at three-quarters; toggling its button off and on wipes the plate."
+  },
+  {
+   "effect": "Vignette",
+   "role": "Bank A, the lamp's throw: a ride, not a fixture (every BED is already dark at its edges), ridden shut for Pale Blue Dot, Rockall Malin and the end of Dead Air."
+  },
+  {
+   "effect": "Tunnel",
+   "role": "Bank B warp: the far-side corridor in Whistling and the pull into the seal in Conjuration; WarpSpeed, Infinite Zoom and Delay RGB share bank B and are only ever opened for two bars."
+  },
+  {
+   "effect": "Wave Warp",
+   "role": "Bank B: the swell under Gale Warnings and the table under the sitters, slow and large; Ripples beside it, on BED only."
+  },
+  {
+   "effect": "SearchLight",
+   "role": "Bank B: the Fresnel blur over the Rings wedge so the sweep reads as a beam through fog; German Bight only."
+  },
+  {
+   "effect": "CRT",
+   "role": "Bank C period/print, left on at 20% in the two space decks: console curvature and scanline on the text and the trace; Dither, Posterize, LoRez and Threshold share bank C for line-printer and three-strip quantise."
+  },
+  {
+   "effect": "Stop Motion",
+   "role": "Bank C: the chart recorder's step, the 2 fps hiss in No Carrier and Loss Of Signal, the 16 fps print; the correct way to make a smooth generator mechanical."
+  },
+  {
+   "effect": "React Gate",
+   "role": "Bank C: the film gate (Weave, Judder, Dust, Flicker, Era, Grain) over Static, the pack's only film look and the Rome 1977 print; it is never an audio gate."
+  },
+  {
+   "effect": "Radar",
+   "role": "Bank C: the bridge screen over the German Bight scope and the dish beam in Hydrogen Line, a rotating wipe with a period."
+  },
+  {
+   "effect": "Mirror Quad",
+   "role": "Bank D symmetry: one glass becomes four, the damask folds into a cathedral, the Kamea into a grid; Mirror sits beside it for the EVP face, and Kaleidoscope, capped at four segments, for the gel multiply."
+  },
+  {
+   "effect": "React Anamorphic",
+   "role": "Bank D: the horizontal lens streak on a Stroboscope flash only, the hour as steel and AOS as sunrise; never on a continuous source."
+  },
+  {
+   "effect": "Shift RGB",
+   "role": "Bank D: print misregistration tapped on the sunrise flash and the gel swap, released before the flash fades, never left on."
+  },
+  {
+   "effect": "Freeze",
+   "role": "Bank D hit row, button only: the heart stops on its half of the frame, Wow Signal held for seventy-two seconds; Invert RGB, Strobe and Shift Glitch share the hit row and are likewise never left on."
+  }
+ ],
+ "fft_philosophy": "Sub and low (20 to 120 Hz) through a fast-attack, 400 ms release envelope drive only amplitude-type parameters (Line Scape Height, React Pulsar Level, Metaballs Size, Sine Wave Amplitude, the BED gradient's breath) so a kick reads as a push or a tide and never as a flash; low-mids (120 to 500 Hz) through a 2-second envelope drive density and rotation (Abstract Field Density, Lines Fuzzyness, Rings and Spiral rotation), the slow structural breathing of the room; highs (6 to 16 kHz) touch GRAIN opacity and the Golden Flicker Reel's ember dots only, so hi-hats become hiss and moth dust and nothing else. One long RMS envelope over several seconds drives AURA opacity and the Vignette size so builds open the room and breakdowns close it; that is the only macro the music gets. Onsets are triggers, not levels: one Stroboscope flash, one candle gutter, one glitch frame, quantised to the beat and rate-limited to once per bar, and most of them are fired by hand on a pad rather than by a threshold, because the performer is the medium and a knock that answers must be answered. These never react at all: TEXT position, scale, opacity or content (words are read, not shaken, and the mids-gate on text proposed by one runner-up is rejected); hue, blend mode, gel or AURA colour (colour is a decision the performer makes with a scene, the music only changes how much light is in the room, never what colour the room is); the BED's scale and position (the environment does not dance); the SCOPE's own gain (it is the honest readout and the one element allowed to follow the signal 1:1); and scene changes.",
+ "wildcard_rationale": "Space and Halloween are both about receiving voices from where no one should be: the pulsar, the far side of the Moon, the parlour, the circle. The shipping forecast is the broadcast that goes the other way, a voice sent into the dark at 0048 on the assumption that someone is out there, which makes it the third kind of listening post and completes the set; its lighthouse is literally a Stroboscope with a published character, and its sea areas are the most Radiophonic text in English, a liturgy of place names and numbers read in the flat BBC register this performer already plays in EarthSearch and Lexicon. As the fifth deck it is the come-down: after the ritual peaks in Hour Of Saturn, the night ends on the North Sea near dawn with a low losing its identity, and its gale warnings carry real dread without a single horror cue. Its text-as-lead-instrument mechanic, one sea area per pad press on the downbeat, is borrowed from the sixth world that would not fit without dropping a Halloween room, Numbers Station, which is documented as the first swap: UVB-76, MDZHB, LINCOLNSHIRE POACHER, SWEDISH RHAPSODY, NAIMINA 74 14 35 74, ENDE ENDE, one five-figure group per column, every strobe hand-tapped, phosphor amber on dial black, ready to replace German Bight the night the performer wants a second found-text deck instead of a dawn."
+}

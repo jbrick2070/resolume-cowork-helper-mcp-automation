@@ -1,0 +1,492 @@
+{
+ "pack_name": "Dew Line",
+ "comp_name": "Dew Line: The Spinningwork",
+ "tagline": "A spider builds an early-warning station out of silk, takes her own scaffold down before dawn, and casts her shadow on every star the net catches.",
+ "decks": [
+  {
+   "name": "Orb Plate 1889",
+   "slug": "orb-plate-1889",
+   "theme": "the web as geometry",
+   "world": "An orb web built from nothing between two hedge stems before sunrise, drawn the way Henry McCook engraved it in 1889 and stamped the way a 1962 drawing office would stamp it: bone thread on slate, every radius numbered, a title block bottom-left that says DO NOT SCALE. The light is the grey half-hour before the sun finds the dew. The wonder is procedural: one animal, one line, forty minutes, a structure whose scaffold she eats as she lays the capture spiral and whose finished work she eats at dawn so the protein can be spun again. Register: Victorian plate engraving, drafting-office revision letters, specimen not taken.",
+   "palette": [
+    {
+     "role": "Plate",
+     "hex": "#0c1113",
+     "why": "BED: slate before sunrise, the engraving plate's ground reversed; warmer than pure black so silk reads as material, not line art"
+    },
+    {
+     "role": "Silk",
+     "hex": "#d8d2c0",
+     "why": "BODY: silk is never white, it is the colour of plate paper; leaves Bloom headroom"
+    },
+    {
+     "role": "Ochre",
+     "hex": "#c08a3e",
+     "why": "FIGURE: drafting ochre, a second ink so the builder reads against her own work; the hand that signs CHECKED A. DIADEMATUS"
+    },
+    {
+     "role": "Dew",
+     "hex": "#a4d6e8",
+     "why": "LIGHT, reserved: the single cold note in the deck, dawn held in a droplet; appears on Dew Load only, every other flash is Silk"
+    },
+    {
+     "role": "Ink",
+     "hex": "#c7b784",
+     "why": "TEXT: field-note ink on foxed paper, fixed bottom-left like a title block, never centred"
+    },
+    {
+     "role": "North Light",
+     "hex": "#1b2733",
+     "why": "AURA: a north window over the drafting table, slate-blue at Multiply; no green in it, green belongs to deck five"
+    }
+   ],
+   "columns": [
+    "Bridge Line",
+    "Y Frame",
+    "Thirty Radii",
+    "The Hub",
+    "Dry Spiral",
+    "Capture Spiral",
+    "Dew Load",
+    "Eaten at Dawn"
+   ],
+   "layer_notes": {
+    "1": "Abstract Field preset Thin Lines, Octaves 1, Amplitude near zero, Plate on black: the hedge in half-light, barely moving; Eaten at Dawn swaps to Gradient Radial Plate to North Light as the sun arrives.",
+    "2": "Rings Style Stroke hairline Silk with Gap and Rotation Step tuned so the gaps stack into radii, Num Rings climbing 1 / 3 / 31 across Bridge Line, Y Frame, Thirty Radii; Rings Num 4 Gap 0 tight for The Hub; Spiral Leafs 1 Detail high Speed near zero, Direction out and Spread wide for Dry Spiral, Direction reversed and Spread tight with a long column transition for Capture Spiral; the finished spiral again on Dew Load; Rings Num 3 Gap 200 on Eaten at Dawn, three torn radii.",
+    "3": "Shaper 8-sided, Outline only, Ochre, small: the spider as a surveyor's mark that walks one radius outward per column by Position only and never scales; sits at the hub for Capture Spiral and Dew Load; absent on Eaten at Dawn.",
+    "4": "Blank until Dew Load, then Metaballs Grid 20 Size tiny Speed 0 Fuzzyness high in Dew, beading every radius at once; Stroboscope Silk on Plate, Frequency very low, Fade long, on Eaten at Dawn as the sun over the hedge.",
+    "5": "Text Animator one line, monospace, Ink, fixed bottom-left like a title block and never centred, per-character reveal with a slow Delay like a pen crossing the page; column 6 stamps SCAFFOLD REMOVED.",
+    "6": "Solid Color North Light at 20% Multiply: the window over the drawing; up one notch on Capture Spiral only.",
+    "7": "Static Grayscale very fine at 6%: the plate grain of a steel engraving; Bank B Hatched and Threshold are this deck's plate discipline.",
+    "8": "Sine Wave Mode Line, Waves 1, hairline, Silk, bottom strip, the same scope clip as every deck: a single thread under tension reading the room."
+   },
+   "moments": [
+    "Walk Up from Bridge Line to The Hub one scene per eight bars with the Bank A knob (Radar plus Trails) at half, so the sweep lays each stage of the orb rather than cutting it in; never jump to The Hub early, she does not.",
+    "Formwork removal: hold Dry Spiral, then press the Capture Spiral column button and let the long transition run with Bank A Trails up, so the dense spiral eats the sparse one from rim to hub while the row-5 TEXT pad stamps SCAFFOLD REMOVED.",
+    "Dew Load into Eaten at Dawn: hit the row-4 LIGHT pad so Metaballs bead every radius at once, ride the Bank C knob (Suckr on the kick) so the orb tightens toward the hub under the weight and comes back to zero with the geometry intact; then stop the row-2 BODY pad first and leave the row-5 TEXT pad lit for four bars so the words outlive the web."
+   ],
+   "text_corpus": [
+    "BRIDGE LINE CAST",
+    "WIND DID FIRST WORK",
+    "Y FRAME. THEN RADII.",
+    "RADIUS 14 OF 32",
+    "HUB LEFT OPEN",
+    "DRY SPIRAL, TEMPORARY",
+    "SCAFFOLD REMOVED",
+    "SHE EATS THE SCAFFOLD",
+    "GLUE DROPLETS 1 PER MM",
+    "DRAGLINE 1.1 GPA",
+    "SAG LIMIT L/360",
+    "DO NOT SCALE DRAWING",
+    "REV C SUPERSEDES B",
+    "SHEET 1 OF 8",
+    "CHECKED A. DIADEMATUS",
+    "SPECIMEN NOT TAKEN",
+    "DEW OUTWEIGHS THE WEB",
+    "SHE DOES NOT MEASURE",
+    "NO TWO WEBS ALIKE",
+    "EATEN AT DAWN"
+   ]
+  },
+  {
+   "name": "Sit and Wait",
+   "slug": "sit-and-wait",
+   "theme": "the hunt, read by vibration",
+   "world": "A funnel web in long grass at three in the morning, seen from inside the funnel: the silk sheet is a drumskin and the spider is downstairs in the retreat, reading it through slits in her legs. A sodium streetlamp on a timer is the only light from above; nothing moves until something lands, and then bearing, amplitude, decision, rush. The dread is that stillness is the trap and she can wait twelve days; the wonder is that she tells wind from rain from prey by frequency alone. Register: 1970s nocturnal field biology, a seismograph pen on a paper drum, the darkest deck of the five.",
+   "palette": [
+    {
+     "role": "Funnel",
+     "hex": "#050407",
+     "why": "BED: absolute dark, the inside of the funnel; the darkest ground in the composition, so the tab switch into this deck reads as a drop"
+    },
+    {
+     "role": "Sheet",
+     "hex": "#6c7073",
+     "why": "BODY: a sheet web is dull grey, not silver; it must never glitter, so Bank B Bloom stays shut in this deck"
+    },
+    {
+     "role": "Rust",
+     "hex": "#b03a22",
+     "why": "FIGURE: the only warm thing on screen is the body; rust, not red"
+    },
+    {
+     "role": "Strike",
+     "hex": "#f3f1e8",
+     "why": "LIGHT: one strobe white, never tinted, hand-played"
+    },
+    {
+     "role": "Ash",
+     "hex": "#d0d0c8",
+     "why": "TEXT: ash-grey monospaced readout, no glow; nothing green here, green belongs to deck five"
+    },
+    {
+     "role": "Contact",
+     "hex": "#ff2a1a",
+     "why": "reserved: one red, used once, the words CONTACT LOST on The Husk and nowhere else"
+    }
+   ],
+   "columns": [
+    "Funnel Mouth",
+    "Twelve Days",
+    "First Tremor",
+    "Triangulate",
+    "Pluck the Line",
+    "The Rush",
+    "Swathe",
+    "The Husk"
+   ],
+   "layer_notes": {
+    "1": "Tunnelines Sheet on Funnel, Line Width thin, Zoom very slow, Vertical nudged so the funnel mouth sits low-left: you are inside the funnel looking out; The Husk swaps to Solid Color Funnel.",
+    "2": "Line Scape Tilt low, Height small, Attenuation high, Show Knots on, Wobble at zero on Funnel Mouth and Twelve Days, then bound to the highs from First Tremor through Triangulate; Sine Wave Line mode Waves 1 Modulation Depth high as the one plucked thread on Pluck the Line; Line Scape Wobble high on The Rush; Spiral Leafs 1 tight Speed up as the swathing on Swathe; Line Scape still and empty on The Husk.",
+    "3": "Metaballs Grid 1 Size small Speed 0.5 in Sheet grey for the thing that landed, First Tremor through The Rush; Shaper 8-sided Rust Outline heavy from Triangulate on, Position jumping radius to radius per column; Shaper Outline only, no fill, on The Husk: a body with nothing in it.",
+    "4": "Gradient Radial sodium amber (#ffb347) cone from the top on Funnel Mouth and Triangulate, the streetlamp on its timer; Stroboscope Strike white on Funnel, Fade short, clip set to play once so each tap is one flash, on Pluck the Line, The Rush and Swathe only; Blank in every stillness column so the dark stays honest.",
+    "5": "Text Animator one line, Ash, top-right like a strip-chart header, no glow; The Husk is CONTACT LOST in Contact red, the deck's one red.",
+    "6": "Solid Color ultraviolet bruise (#2b1a3e) at 15% Multiply on Twelve Days through The Rush, the band the spider sees and you do not; off entirely on Swathe and The Husk.",
+    "7": "Static Two-tone coarse at 12%, heavier than any other deck: night-vision grain; cranks to 40% for one scene on The Rush as the recorder pen skids.",
+    "8": "Sine Wave scope, same clip, Fill mode with Mirror on so it reads as a seismograph of the sheet; on Twelve Days it is the only thing moving."
+   },
+   "moments": [
+    "Sit in Twelve Days with only the row-1 BED and row-2 BODY pads lit and the SCOPE as the single moving thing for longer than feels safe, then fire Scene Launch 3 on a kick and let Line Scape Wobble on the highs say that something landed.",
+    "On Pluck the Line, tap the row-4 Stroboscope pad by hand in a two-then-pause rhythm; the strobe is never clocked and never on the FFT, your finger is the spider's foreleg; at The Rush slam the Bank C knob (Displace) to full on the drop, press Fragment in Bank D once and let go, and pull Bank C back to zero within two bars so the sheet collapses and re-forms.",
+    "The Husk: toggle Freeze in Bank D, then pull every layer fader except TEXT, GRAIN and SCOPE to zero; the room is left with one red word, static and the trace, and you stay there longer than the room expects."
+   ],
+   "text_corpus": [
+    "SIT. WAIT.",
+    "TWELVE DAYS WITHOUT",
+    "SHE IS DOWNSTAIRS",
+    "LEGS ON THE SHEET",
+    "SODIUM LAMP ON TIMER",
+    "TREMOR 02:14:07",
+    "NOT WIND",
+    "NOT RAIN",
+    "SILENCE IS LOAD",
+    "LISTEN WITH FEET",
+    "SLIT SENSILLA OPEN",
+    "FORELEG TAPS TWICE",
+    "PLUCK. LISTEN.",
+    "IT ANSWERS",
+    "RUSH IN 0.3 SEC",
+    "WRAP BEFORE BITE",
+    "ROTATE AND WRAP",
+    "THE SHEET GOES STILL",
+    "HUSK CUT LOOSE",
+    "CONTACT LOST"
+   ]
+  },
+  {
+   "name": "Arachne's Loom",
+   "slug": "arachnes-loom",
+   "theme": "the weavers' myth",
+   "world": "Two weavers who became the stories they told, shown at closing time in a museum: Arachne, Idmon's daughter of Lydia, who wove the gods' crimes without a flaw and was struck with the shuttle, hanged, and told to live; and Kwaku Ananse, who paid the sky god Nyame four captures for every story in the world and keeps them in his web. The light is gallery halogen on bronze and gilt thread on wine-dark warp, with the title card of a BBC Schools 'Myth and Legend' broadcast on 16mm. The dread is the verdict, one madder strobe and a torn cloth; the wonder is the cosmogram, a Rings web whose nodes are stories and whose sweep lights them one at a time. Everything is weave: Checkered is warp and weft, the Pattern Maker is the tapestry, the spider is the shape left when the woman is subtracted, and the tab switch into this deck is a change of century.",
+   "palette": [
+    {
+     "role": "Walnut",
+     "hex": "#140f0c",
+     "why": "BED: dark walnut, not black; a lamp-lit gallery at closing time"
+    },
+    {
+     "role": "Linen",
+     "hex": "#e9dcc0",
+     "why": "ground cloth and TEXT: warmer and brighter than any other deck's silk, so the tab switch is a change of century"
+    },
+    {
+     "role": "Gilt",
+     "hex": "#c9a227",
+     "why": "BODY and LIGHT: gold thread, the warp, the lamplight, the story nodes; the colour of something bought and paid for"
+    },
+    {
+     "role": "Tyrian",
+     "hex": "#5e1c45",
+     "why": "FIGURE: Arachne's father dyed wool purple, so the figure is dyed too, woman and spider alike"
+    },
+    {
+     "role": "Woad",
+     "hex": "#2e4a7a",
+     "why": "AURA and BED on Shuttle Thrown and The Verdict only: the night behind Athena"
+    },
+    {
+     "role": "Madder",
+     "hex": "#a21c2a",
+     "why": "reserved: madder red for the Stroboscope on The Verdict and the word HANG; once per deck"
+    }
+   ],
+   "columns": [
+    "Warp and Weft",
+    "Gods' Crimes",
+    "Shuttle Thrown",
+    "The Verdict",
+    "Hang Forever",
+    "Nyame's Price",
+    "Story Nodes",
+    "Ananse Web"
+   ],
+   "layer_notes": {
+    "1": "Checkered Num X 48 Num Y 27 in Linen and Walnut a hair apart: the cloth ground; Gradient Radial Walnut to Woad behind Shuttle Thrown and The Verdict, the night Athena arrives from; Gradient Radial Walnut to Gilt on Nyame's Price, the gourd of stories.",
+    "2": "Checkered Num 8 by 8 Gilt and Tyrian on Warp and Weft, the loom, flipped by the pad; Geometry Pattern Maker Shape Vesica, Line Ammount 12, inner Gilt outer Tyrian, Bloom low, as the tapestry on Gods' Crimes, Shape Hexagon Line Ammount 24 on Shuttle Thrown and The Verdict, the finished cloth about to be torn; Lines Amount 1 Rotation 0 Gilt on Hang Forever, the thread she hangs from; Pattern Maker Shape Circle Line Ammount 8 on Nyame's Price and Story Nodes; Rings Style Stroke Num 8 Gap 0 with the spoke trick at Rotation Step 45 on Ananse Web, the cosmology diagram.",
+    "3": "Shaper at minimum sides with Scale squashed on one axis, Tyrian fill, Outline heavy: the woman at the loom through The Verdict; the same Shaper at 8 sides, same size, same position, from Hang Forever on, so the cut is the metamorphosis; Spiral Leafs 3 Distortion high Speed slow in Tyrian on Nyame's Price, Ananse climbing down his thread to the sky god.",
+    "4": "Gradient Angular Gilt to Walnut rotating once per 16 bars: lamplight across the cloth; Stroboscope Madder on Walnut, Fade long, The Verdict only; Metaballs Grid 4 Size medium Speed 0 Gilt on Story Nodes, the four captures held up for payment.",
+    "5": "Text Block, two or three short lines stacked from two corpus strings at build time (no embedded newlines), Linen, centred like a catalogue card for the Arachne columns and the Anansi museum labels; Text Animator Gilt one-line capture names on Story Nodes that land on the web; VERDICT: HANG in Madder on The Verdict.",
+    "6": "Solid Color Gilt at 10% Multiply: telecine warmth; Solid Color Woad at 10% Multiply on Shuttle Thrown and The Verdict.",
+    "7": "Static Color coarse at 14%: 16mm telecine dirt; the one deck allowed colour grain.",
+    "8": "Sine Wave scope, same clip as every deck, tinted Linen by the layer colour only: the thread in the shuttle."
+   },
+   "moments": [
+    "Warp and Weft into Gods' Crimes: the two row-2 BODY pads are the shuttle, alternate them on eighth-notes so the Checkered weave flips under your fingers; then on Shuttle Thrown press the Bank A Kaleidoscope-6 button and, four bars later, the Kaleidoscope-12 button with the Bank A knob half open, so the tapestry folds into six then twelve and Athena arrives at twelve.",
+    "The Verdict into Hang Forever: fire Scene Launch 4, hold the row-4 LIGHT pad (Stroboscope Madder, long Fade) while the Text Block reads VERDICT: HANG, press Fragment in Bank D once and let go so the cloth tears for one bar and heals, then fire Scene Launch 5 on the downbeat and the Shaper cuts from woman to octagon with no transition.",
+    "Ananse Web: with the Bank A knob (Radar plus Trails) up, mash the row-5 TEXT pads of Story Nodes and Ananse Web so the four captures land on the web one by one as the beam passes each node; the Rings body is the Ananse cosmology diagram and the sweep is the storyteller."
+   ],
+   "text_corpus": [
+    "IDMON'S DAUGHTER",
+    "HER FATHER DYED WOOL",
+    "WOVE THE GODS' CRIMES",
+    "NO FLAW IN THE CLOTH",
+    "THE SHUTTLE STRUCK HER",
+    "ATHENA TORE IT",
+    "VERDICT: HANG",
+    "LIVE. BUT HANG.",
+    "HER HAIR FELL OUT",
+    "SPIN, FOREVER",
+    "DO NOT TOUCH THE WORK",
+    "NYAME NAMES THE PRICE",
+    "ONINI THE PYTHON",
+    "OSEBO THE LEOPARD",
+    "MMOBORO THE HORNETS",
+    "MMOATIA THE FAIRY",
+    "SKY GOD: RECEIPT",
+    "ALL STORIES ARE HIS",
+    "ANANSESEM",
+    "KWAKU ANANSE"
+   ]
+  },
+  {
+   "name": "Goose Summer",
+   "slug": "goose-summer",
+   "theme": "the nursery and the ballooning",
+   "world": "Inside the egg sac is the quietest room in the world: three hundred eggs in wound silk, lit through from outside like a lamp through linen, with the mother on the outside not eating and not leaving, and in some species the first meal. Then the moult, where a spider leaves an exact ghost of herself and walks out soft; then the spiderlings on tiptoe at the top of a fence post, abdomens to the wind, throwing a line into the sky's electric field and letting go. Darwin found the Beagle's rigging coated in their silk sixty miles from land, and Middle English called the stuff gossamer, goose summer. The light is milk and amber on the only light ground in the instrument, 16mm natural history circa 1979, microscope-close and heavy with grain; the register is a naturalist's tenderness in lower case, and this is the deck you switch to when the room needs to breathe.",
+   "palette": [
+    {
+     "role": "Lantern",
+     "hex": "#efe6d3",
+     "why": "BED on Egg Sac through Ecdysis, the only light ground in the instrument; the same hex becomes the gossamer silk once the ground goes dark"
+    },
+    {
+     "role": "Lamp",
+     "hex": "#d9a35b",
+     "why": "LIGHT and AURA: amber lamp through linen; on a light ground the AURA is Multiply so it darkens the corners instead of washing them"
+    },
+    {
+     "role": "Nursery Ink",
+     "hex": "#3a2a24",
+     "why": "FIGURE: eggs, spiderlings and the exuvia are dark specks on light, like a plate in a 1950s field guide"
+    },
+    {
+     "role": "Pencil",
+     "hex": "#8ea2af",
+     "why": "TEXT and SCOPE: Darwin's pencil, lower case; the only deck where the trace is dark on light"
+    },
+    {
+     "role": "Offing",
+     "hex": "#0f1a22",
+     "why": "BED on Tiptoe and Balloon: the dark outside the sac, the sea at night sixty miles out"
+    },
+    {
+     "role": "Morning",
+     "hex": "#9ec4d8",
+     "why": "reserved: cold morning blue that arrives on Beagle Rigging only, the first open air in the deck"
+    }
+   ],
+   "columns": [
+    "Egg Sac",
+    "Three Hundred",
+    "The Gift",
+    "Moult",
+    "Ecdysis",
+    "Tiptoe",
+    "Balloon",
+    "Beagle Rigging"
+   ],
+   "layer_notes": {
+    "1": "Gradient Radial Lantern centre to Lamp edge, soft, on Egg Sac through Ecdysis; Solid Color Offing on Tiptoe and Balloon; Gradient Vertical Offing to Morning on Beagle Rigging, the sky opening.",
+    "2": "Line Scape Tilt high Height low Wobble slow Fuzzyness high Show Knots off, Lamp on Lantern: the silk sheet of the sac wall on Egg Sac, Moult and Ecdysis; Tunnelines Zoom slow in Lamp on Three Hundred, inside the sac; one large Shaper, Lantern fill, Lamp outline, on The Gift, because in that scene the mother is the structure; Lines Amount 60 hairline Rotation 90 in Lantern on Tiptoe and Balloon, the threads going up; Lines Amount 100 Fuzzyness high in Lantern on Offing for Beagle Rigging, the rigging coated in silk.",
+    "3": "Metaballs Grid 4 rising to 20 by column, Size tiny, Distance tight, Speed 0 then 0.5, Nursery Ink: the clutch, then the huddle, then the walkers; Shaper 8-sided Outline only, no fill, noise high, on Moult and Ecdysis: the exuvia, a body with nothing in it; Metaballs Grid 20 Distance wide Speed 1 on Tiptoe, Balloon and Beagle Rigging as the dispersal.",
+    "4": "Stroboscope Lamp on Lantern, Frequency very low, Fade very long, on Egg Sac: first light, a pulse not a strobe; Metaballs Grid 20 Size tiny Lantern as dew on the sac through Ecdysis; Stroboscope Lantern on Offing, slow Frequency, long Fade, on Beagle Rigging as a lighthouse.",
+    "5": "Text Block, lower case, Pencil, two or three short lines stacked from two corpus strings at build time, lower-left like a note in a margin: Darwin's pencil and the sac log; no glow.",
+    "6": "Solid Color Lamp at 18% Multiply through Ecdysis, darkening the corners of the light ground; Solid Color Morning at 12% Add from Tiptoe on.",
+    "7": "Static Grayscale coarse at 22%: heavy 16mm grain, a lead character in this deck; Abstract Field Dot Dot Dot at 8% on Egg Sac as dust in lamplight.",
+    "8": "Sine Wave scope, same clip, Pencil, faded to 40% so it reads as a heartbeat not a readout; dark on light."
+   },
+   "moments": [
+    "Egg Sac into Three Hundred into The Gift: hold the row-3 FIGURE pad and raise the layer-3 knob slowly so the Metaballs Grid climbs from 4 to 20 behind the Line Scape silk while the Bank B knob (Bloom) warms the lantern; then on The Gift ride the Bank C knob (Suckr) so the small bodies are drawn inward to the mother Shaper on row 2, stop her pad, and leave the children.",
+    "Moult into Ecdysis: fire Scene Launch 4, on the break fire 5 and punch Stop Motion in Bank D; tap the row-3 Shaper pad twice quickly so the retrigger leaves the outline hanging in Bank A Trails as the shed skin, and release Stop Motion exactly when she clears it.",
+    "Balloon into Beagle Rigging: row-2 Lines (sixty hairline threads) with the Bank C knob (Displace, on highs) at half so they shiver, then fire Beagle Rigging and let the lighthouse Stroboscope on row 4 turn while you pull every fader but BED, TEXT and SCOPE down over eight bars; the threads let go one at a time into the morning."
+   ],
+   "text_corpus": [
+    "sac spun in one night",
+    "three hundred inside",
+    "guarded until frost",
+    "quiet please",
+    "she does not leave",
+    "the mother is the meal",
+    "hatch. huddle. wait.",
+    "moult. still soft.",
+    "the old skin stays",
+    "300 small engineers",
+    "tiptoe",
+    "abdomen to the wind",
+    "sky voltage 100 v/m",
+    "silk up, feet off",
+    "they sail on nothing",
+    "never see each other",
+    "gossamer: goose summer",
+    "beagle. 60 miles out.",
+    "rigging coated in silk",
+    "landfall unknown"
+   ]
+  },
+  {
+   "name": "Dew Line Station",
+   "slug": "dew-line-station",
+   "theme": "silk as signal",
+   "world": "A Cold War early-warning radar station whose antenna sweep leaves an orb web as its trace: the DEW Line of 1957 and dew on a web at dawn are the same picture, a net strung across the dark that catches light so you can see what is coming. The dome is a telescope too, and every telescope already contains a spider: the four vanes that hold the secondary mirror cast a cross on every bright star, and surveyors once strung their reticles with a single strand of silk. Louise Bourgeois' Maman stands over the dance floor, nine metres of steel seen from underneath with marble eggs held in the sac; Arabella spun in Skylab in 1973; CP1919 ticks every 1.337 seconds and was not a signal, it was a clock. The light is P7 phosphor, signal white and tape-reel amber on blue-black, 1981 regional continuity with no warmth at all, and the deck ends in a legitimate black, a test card, and a stop.",
+   "palette": [
+    {
+     "role": "Housing",
+     "hex": "#020814",
+     "why": "BED: blue-black of a radar scope housing; the coldest ground in the composition"
+    },
+    {
+     "role": "Phosphor",
+     "hex": "#35e08a",
+     "why": "BODY and SCOPE: P7 green for the sweep, the range rings and the trace; the only green in five decks"
+    },
+    {
+     "role": "Signal",
+     "hex": "#f2f6ff",
+     "why": "FIGURE and TEXT: signal white for returns, dew, the reticle and the idents; the net that catches light"
+    },
+    {
+     "role": "Steel",
+     "hex": "#6b7580",
+     "why": "FIGURE and BODY on Maman only: her stainless, matte, lit from below, cold against the phosphor"
+    },
+    {
+     "role": "Reel",
+     "hex": "#ffcf5a",
+     "why": "LIGHT: tape-reel amber for the sweep's leading edge and the CP1919 pulse"
+    },
+    {
+     "role": "Warn",
+     "hex": "#ff3b30",
+     "why": "reserved: blackout red, NO CONTACT 0300 and the Stroboscope on Blackout only"
+    }
+   ],
+   "columns": [
+    "Carrier",
+    "Sweep",
+    "Silk Crosshair",
+    "Maman",
+    "Eight O'Clock",
+    "Net of Light",
+    "Blackout",
+    "Sign Off"
+   ],
+   "layer_notes": {
+    "1": "Solid Color Housing on Carrier through Eight O'Clock; Gradient Radial Housing to scope-glass teal (#0b2a3a) on Net of Light; Solid Color pure black on Blackout; Test Card on Sign Off, the closedown.",
+    "2": "Rings Style Stroke Num 8 Gap 0 hairline Phosphor on Carrier, Sweep, Eight O'Clock and Net of Light: the range rings the beam leaves, revealed by the Bank A Radar locked to eight beats; Lines Amount 1 Rotation 0 hairline Signal on Silk Crosshair, the vertical strand of the reticle; the Rings spoke trick at Rotation Step 45 in Steel on Maman, eight dotted radii converging overhead, her legs seen from the floor; Blank on Blackout and Sign Off.",
+    "3": "Lines Amount 1 Rotation 90 hairline Signal on Silk Crosshair, crossing the vertical strand on BODY so two layers make one reticle; Shaper 8-sided, enormous, Steel outline thick, Housing fill, Position bottom-centre so it looms from above, on Maman; Rings Num 48 Stroke Gap 356 Rotation Step 45 hairline Signal on Eight O'Clock, eight dotted hands with no face; the same at Rotation Step 90 on Net of Light, the four vanes etched over the web; Blank from Blackout.",
+    "4": "Gradient Angular Reel to Housing, hard edge, rotating with the sweep on Carrier and Sweep: the beam's leading edge; Metaballs Grid 6 Size medium Speed 0 Signal above Maman as the marble eggs; Stroboscope Reel on Housing at 0.75 Hz, Fade short, on Eight O'Clock, the CP1919 period; Metaballs Grid 20 tiny Signal as dew returns on Net of Light; Stroboscope Warn on Blackout only; Blank on Silk Crosshair and Sign Off.",
+    "5": "Text Animator one line, ident sans, Signal, dead centre like a continuity caption; Blackout is NO CONTACT 0300 in Warn; Sign Off is CLOSEDOWN over the Test Card.",
+    "6": "Solid Color scope-glass teal (#0b2a3a) at 14% Add on Carrier through Net of Light; off on Blackout and Sign Off, the test card is its own grade.",
+    "7": "Static Two-tone fine at 10% under the composition CRT: scanlines and a touch of snow; Blackout keeps GRAIN so the black is alive, not off.",
+    "8": "Sine Wave scope, same clip, Phosphor, centred and at full opacity here: the one place the music is allowed to be literal, and the only thing left on Blackout beside the red words."
+   },
+   "moments": [
+    "Carrier into Sweep: the Bank A Radar is locked to eight beats, one revolution per bar, each leg a beat; mash the row-2 BODY pads on the beat so a new ring lands exactly where the beam is, and the eight-legged clock keeps the room's time without a frame of media.",
+    "Maman into Net of Light: fire Scene Launch 4 and the Steel octagon fills the wall from above; bring the Bank B knob (Bloom plus Sparkles) up over eight bars so every marble egg and every dew return grows a four-armed cross, her shadow on every star; on Eight O'Clock the CP1919 Stroboscope on row 4 ticks at 0.75 Hz against the eight-beat sweep, two clocks that do not agree.",
+    "Blackout into Sign Off: hold a real black for a full phrase with only SCOPE and NO CONTACT 0300 in red, then walk the Test Card up, push the Bank B knob (CRT) to full so the tube collapses toward a dot under CLOSEDOWN, and stop the composition; no fade, like 1981 television."
+   ],
+   "text_corpus": [
+    "DEW LINE STATION 7",
+    "ARACHNID CONTINUITY",
+    "SIGNAL BEFORE SOURCE",
+    "PHOSPHOR HOLDS 3 S",
+    "RETICLE: ONE STRAND",
+    "MAMAN: NINE METRES",
+    "MARBLE EGGS, HELD",
+    "THE HOUR IN EIGHTHS",
+    "NOT A SIGNAL. A CLOCK.",
+    "CP1919: 1.337 SEC",
+    "FOUR VANES, ONE MIRROR",
+    "HER SHADOW ON THE STAR",
+    "CARRIER LOST 23:59:59",
+    "ARABELLA DAY 1: NO WEB",
+    "DAY 3: ORB, IRREGULAR",
+    "ANITA DECLINED TO SPIN",
+    "NO CONTACT 0300",
+    "DO NOT ADJUST YOUR SET",
+    "NORMAL SERVICE RESUMES",
+    "CLOSEDOWN"
+   ]
+  }
+ ],
+ "effect_wishlist": [
+  {
+   "effect": "Radar",
+   "role": "Bank A STRUCTURE: the sweep that reveals the web as it is built, BPM-locked to eight beats so one revolution is one bar; the beam is the weaver and the clock, and its period never reacts"
+  },
+  {
+   "effect": "Trails",
+   "role": "Bank A STRUCTURE: silk persistence; the formwork removal in Orb Plate, the swathe in Sit and Wait, the shed skin in Goose Summer"
+  },
+  {
+   "effect": "Kaleidoscope",
+   "role": "Bank A STRUCTURE: two slots at fixed segment counts, six and twelve, on two buttons with dry/wet on the knob; Athena arrives at twelve; never used to fake radii"
+  },
+  {
+   "effect": "CRT",
+   "role": "Bank B TEXTURE: the 1981 bias of the whole composition at a low simmer, pushed to full only for the closedown collapse"
+  },
+  {
+   "effect": "Bloom",
+   "role": "Bank B TEXTURE: dew, eggs, the lantern and the net of light; shut in Sit and Wait because a sheet web must never glitter"
+  },
+  {
+   "effect": "Sparkles",
+   "role": "Bank B TEXTURE: four-armed diffraction spikes on every bright point, Net of Light only; the telescope spider's shadow on every star, done with a stock effect rather than a metaphor"
+  },
+  {
+   "effect": "Hatched",
+   "role": "Bank B TEXTURE: steel-engraving crosshatch, the 1889 plate discipline of Orb Plate"
+  },
+  {
+   "effect": "Threshold",
+   "role": "Bank B TEXTURE: strips greys so the frame is silk-or-black; plate discipline in deck one and the honest black of Blackout"
+  },
+  {
+   "effect": "Suckr",
+   "role": "Bank C TREMOR: tension toward the hub on the kick, the effect that makes the web a structure under load; the Dew Load knob and The Gift"
+  },
+  {
+   "effect": "Displace",
+   "role": "Bank C TREMOR: silk shiver on highs, sag on lows, always returning to zero; slammed once at The Rush"
+  },
+  {
+   "effect": "Goo",
+   "role": "Bank C TREMOR: silk elasticity for the swathe and the sac wall; the lower slots of this bank hold Wave Warp for one vibrating thread"
+  },
+  {
+   "effect": "Fragment",
+   "role": "Bank D STRIKE: pressed once and released, never latched; the torn cloth at The Verdict, the sheet at The Rush"
+  },
+  {
+   "effect": "Stop Motion",
+   "role": "Bank D STRIKE: the moult; freezing the image is the loudest thing this instrument does"
+  },
+  {
+   "effect": "Freeze",
+   "role": "Bank D STRIKE: the husk, stillness before the strike; there is deliberately no Strobe effect in the rack, every flash is a Stroboscope pad under a finger"
+  }
+ ],
+ "fft_philosophy": "Lows (kick, 40-120 Hz) drive structural tension only - Suckr strength, Rings Size and Spacing contracting a few percent, Trails length, Sine Wave Modulation Depth - through an envelope follower with fast attack and a 300-600 ms release, so the web tightens on the kick and relaxes between hits like a load on a structure rather than a flash. Mids (200 Hz-2 kHz) drive the slow motion rates (Spiral Speed, Line Scape Wobble, Abstract Field drift, Metaballs Speed) so a busy mix makes the world breathe faster but never flicker, and highs (6 kHz up) drive the silk alone - Fuzzyness, Displace amount, Bloom and dew brightness - in ranges small enough that silk shivers and never tears. Nothing ever reacts on TEXT (words must be readable on a wall at 2am), nothing moves the FIGURE's position (the spider decides where she is), hue never reacts anywhere, nothing on AURA reacts, column transitions never react, the rotation of any orb never reacts (a web does not spin to a beat), the Radar sweep period never reacts because it is the clock, and strobe frequency is not a signal path at all - every flash is a Stroboscope pad under a finger. The SCOPE layer alone takes the raw unsmoothed spectrum, precisely so that everything else can afford to be slow. Reactivity is a musician's hand on a fader, not a VU meter: smoothed, thresholded, and deliberately missing the obvious beat half the time.",
+ "wildcard_rationale": "The single most unexpected idea is that the web is never drawn, only revealed: the stock Radar effect in Bank A is the spider. Every ring, radius and spiral already exists on its layer, but the composition only shows what the beam has passed over, so the performer builds the orb by letting the sweep rotate while mashing structural pads, and a new ring lands exactly where the beam is. Lock that sweep to eight beats and it becomes the eight-legged clock: one revolution is one bar, each leg is a beat, and the whole composition keeps time visibly without a single frame of media, which is also why the pack is called Dew Line - the 1957 Distant Early Warning radar line and dew on an orb web at dawn are the same picture, a net strung across the dark that catches light so you can see what is coming, which is exactly what a club wall is for. Two smaller wildcards now live inside that one. In Orb Plate 1889, columns five and six are formwork removal: the same Spiral generator with Direction reversed, Spread tightened and Trails up, so the audience watches the dense capture spiral eat the dry scaffold from rim to hub while the title block stamps SCAFFOLD REMOVED, the one gesture that proves the spider is a builder and not a decoration, because she makes a temporary structure, uses it, and takes it down. In Dew Line Station, column six takes the telescope spider literally: the four vanes that hold every reflector's secondary mirror are called the spider by every astronomer who has collimated one, and the cross on every bright star is her shadow, so opening Bloom and Sparkles makes every dew return and marble egg grow a four-armed cross. Read in one breath, the bible says the spider builds a temporary structure, takes it down, and casts her shadow on every star the net catches."
+}
