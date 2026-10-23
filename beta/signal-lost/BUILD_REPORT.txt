@@ -1,0 +1,4 @@
+REPAIR Writers Room L5 C7: text line 'OTR_LedgerFreezeCascade' cut to 22 chars
+composition: {'layers': 8, 'decks': 5, 'clips': 320, 'comp_effects': 34, 'fft_nodes': 489, 'bytes': 1540609}
+preset: 164 shortcuts on 149 physical controls; unmapped: none; multi: {'PLAY n91': 2, 'STOP n92': 5, 'BANK LOCK n103': 8, 'CUE LEVEL CC47': 4}
+repairs: 1

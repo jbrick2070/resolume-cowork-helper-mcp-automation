@@ -43,3 +43,11 @@ Morning After (the panic was printed, not broadcast). It uses a
 silver-gelatin palette, and red appears only where a red pencil drew it. It
 uses 320 stock generators, no media files and no plugins. It was opened on
 Avenue 7.28.1 and every clip was read back: 18/18 checks, 0/320 mismatches.
+
+`signal-lost/` is **Signal Lost - Transmission From Tomorrow**, drawn from the
+ComfyUI-OldTimeRadio pipeline: the set signing on, the writers' room, the cast,
+a VJ journey through the canonical workflow one node per scene with its real
+input and output sockets, and The Shivering Gauge, the episode the pack's README
+opens on. It uses 320 stock generators, no media files and no plugins. It was
+opened on Avenue 7.28.1 and every clip was read back: 18/18 checks, 0/320
+mismatches.

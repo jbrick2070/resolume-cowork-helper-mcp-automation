@@ -1,0 +1,370 @@
+{
+ "pack_name": "Signal Lost",
+ "comp_name": "Signal Lost - Transmission From Tomorrow",
+ "tagline": "Good evening. This is SIGNAL LOST.",
+ "decks": [
+  {
+   "name": "Sign-On",
+   "slug": "sign-on",
+   "theme": "radio",
+   "world": "A cathedral radio warming up in a dark room: cold filaments, then the dial lamp, the band of kilocycle ticks, the needle hunting and locking on 1230, the magic-eye tube closing on a strong signal. Tonight's headline comes off the RSS feed and seeds the script; the theme swells; the ON AIR lamp lights; and the announcer says the only line every episode shares. Midnight bakelite, dial amber, cream paper, magic-eye green, one red lamp.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0b0a14",
+     "why": "Midnight bakelite."
+    },
+    {
+     "role": "body",
+     "hex": "#f4e9c8",
+     "why": "Cream dial glass and script paper."
+    },
+    {
+     "role": "figure",
+     "hex": "#ffb347",
+     "why": "Dial amber: needle, filaments, nodes."
+    },
+    {
+     "role": "light",
+     "hex": "#7fd37f",
+     "why": "Magic-eye green for signal; the ON AIR lamp is the one red."
+    },
+    {
+     "role": "text",
+     "hex": "#f4e9c8",
+     "why": "Cue markup in Courier; captions in Bahnschrift."
+    },
+    {
+     "role": "aura",
+     "hex": "#ffb347",
+     "why": "Amber radials only."
+    }
+   ],
+   "columns": [
+    "Warm Up",
+    "Tuning",
+    "Lock",
+    "Tonight's News",
+    "Theme",
+    "Good Evening",
+    "Act One",
+    "Station Break"
+   ],
+   "text_corpus": [
+    "GOOD EVENING. THIS IS SIGNAL LOST.",
+    "[WARM UP]",
+    "[TUNING]",
+    "1230 KC",
+    "[MUSIC: THEME]",
+    "[ACT 1]",
+    "STATION IDENTIFICATION",
+    "TONIGHT'S HEADLINE",
+    "TRANSMISSION FROM TOMORROW",
+    "ANNOUNCER",
+    "ON AIR",
+    "[PAUSE]"
+   ],
+   "moments": [
+    "Warm up to lock: Scene Launch 1 with every fader low, walk UP one column per bar while raising fader 4 (LIGHT) so the dial lamp comes up with the filaments; the needle locks on column 3.",
+    "Good evening: Scene Launch 6 on the downbeat, tap the row-5 TEXT pad so the caption retypes, and leave the ON AIR lamp on its own slow pulse. Do not touch an effect for a phrase.",
+    "Act one: UP to column 7, bank-C knob to a third with CRT lit so the act card reads as a title card on a print; drop it to zero on the first line of dialogue."
+   ]
+  },
+  {
+   "name": "Writers Room",
+   "slug": "writers-room",
+   "theme": "pipeline",
+   "world": "The script's birth, node by node: OTR_LedgerScriptWriter takes a premise, characters, a plot and a setting and writes the play; the parser pulls [SFX:] [MUSIC:] [BEAT] [PAUSE] [ACT] out of the text; OTR_LedgerFreezeCascade normalizes it for speech and audits visual coverage; then the ledger locks and the script becomes the source of truth for every later node. Nodes are amber boxes on ruled cream paper, wired; the locked ledger turns magic-eye green.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0b0a14",
+     "why": "Midnight."
+    },
+    {
+     "role": "body",
+     "hex": "#ffb347",
+     "why": "Amber nodes and plot lines."
+    },
+    {
+     "role": "figure",
+     "hex": "#f4e9c8",
+     "why": "Cream cards and hatching."
+    },
+    {
+     "role": "light",
+     "hex": "#7fd37f",
+     "why": "Green when a phase freezes."
+    },
+    {
+     "role": "text",
+     "hex": "#f4e9c8",
+     "why": "Widget names in Courier, exactly as the node shows them."
+    },
+    {
+     "role": "aura",
+     "hex": "#7fd37f",
+     "why": "Green only at the lock."
+    }
+   ],
+   "columns": [
+    "Premise",
+    "Characters",
+    "Plot",
+    "Setting",
+    "Cue Markup",
+    "Beat",
+    "Freeze Cascade",
+    "Ledger Locked"
+   ],
+   "text_corpus": [
+    "OTR_LedgerScriptWriter",
+    "source_bank: my_story",
+    "custom_premise",
+    "story_characters",
+    "story_plot",
+    "story_setting",
+    "[SFX:]",
+    "[MUSIC:]",
+    "[BEAT]",
+    "[PAUSE]",
+    "[ACT]",
+    "LEDGER LOCKED"
+   ],
+   "moments": [
+    "Premise to setting: walk UP through columns 1-4 one per phrase; the wires on row 3 wobble on the mids. Keep every effect off so the node boxes read.",
+    "Beat: fire Scene Launch 6 exactly on a dropped beat in the music and let the room hold - the SCOPE goes flat on purpose.",
+    "Freeze to lock: UP to column 7 with bank-A at a quarter and TRAILS lit so the cascade's lines stack; UP again to Ledger Locked on the downbeat and tap BANK LOCK (CLEAN)."
+   ]
+  },
+  {
+   "name": "The Cast",
+   "slug": "cast",
+   "theme": "voices",
+   "world": "Who speaks, and in what tongue. OTR_CastLock binds a Kokoro voice to each name for the whole episode; the announcer gets the ring and the ON AIR lamp; eight languages are eight bands under one switch; the voice pool is a field of soft discs with two lit. Dialogue is two sines in exchange, green and amber, never overlapping. Captions are burned in Bahnschrift over a dark bar and mirror the written line. It ends on the credit roll: written, cast, performed, scored, drawn, cut, on one machine.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0b0a14",
+     "why": "Midnight."
+    },
+    {
+     "role": "body",
+     "hex": "#7fd37f",
+     "why": "Voice A, the Kokoro sine, green."
+    },
+    {
+     "role": "figure",
+     "hex": "#ffb347",
+     "why": "Voice B and the phoneme line, amber."
+    },
+    {
+     "role": "light",
+     "hex": "#7fd37f",
+     "why": "The magic eye for the announcer."
+    },
+    {
+     "role": "text",
+     "hex": "#f4e9c8",
+     "why": "Captions, speaker-labelled."
+    },
+    {
+     "role": "aura",
+     "hex": "#ffb347",
+     "why": "Amber."
+    }
+   ],
+   "columns": [
+    "Cast Lock",
+    "Kokoro",
+    "Announcer",
+    "Eight Languages",
+    "Voice Pool",
+    "Dialogue",
+    "Captions",
+    "Credit Roll"
+   ],
+   "text_corpus": [
+    "OTR_CastLock",
+    "kokoro-onnx",
+    "af_heart",
+    "am_michael",
+    "ANNOUNCER",
+    "EN ES PT IT FR HI JA ZH",
+    "episode_language",
+    "VOICE POOL",
+    "ARCHIVIST",
+    "APPRENTICE",
+    "CAPTIONS MIRROR THE LINE",
+    "ON ONE MACHINE"
+   ],
+   "moments": [
+    "Dialogue: Scene Launch 6 and ride faders 2 and 3 against each other as the voices trade lines; the SCOPE waveform is the master.",
+    "Eight languages: Scene Launch 4 with bank-D at a quarter and GRID CLONE lit so the eight bands tile; tap NEGATIVE once per language if the track has eight hits.",
+    "Credit roll: UP to column 8 on the last chorus, pull every fader but 5 and 7, and let the credits type over crackle; BLACKOUT on the final beat."
+   ]
+  },
+  {
+   "name": "The Graph",
+   "slug": "graph",
+   "theme": "pipeline",
+   "world": "A VJ journey through otr_canonical.json, one node per scene in signal order: ScriptWriter, FreezeCascade, CastLock, Voices, SceneSequencer, Assembler, RenderBatch, MasterAudioMux. Each column is one rounded node on the canvas grid with its real input sockets stacked green down the left edge and its outputs amber down the right, and a wire leaving right toward the next. Until the voices node the wire carries only JSON, a thin line; from there it carries audio and the SCOPE becomes a waveform. The last node is green: the .mp4.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0b0a14",
+     "why": "The canvas."
+    },
+    {
+     "role": "body",
+     "hex": "#ffb347",
+     "why": "Node boxes, amber."
+    },
+    {
+     "role": "figure",
+     "hex": "#7fd37f",
+     "why": "Input sockets, green."
+    },
+    {
+     "role": "light",
+     "hex": "#ffb347",
+     "why": "Output sockets, amber."
+    },
+    {
+     "role": "text",
+     "hex": "#f4e9c8",
+     "why": "Class names and socket names, exact."
+    },
+    {
+     "role": "aura",
+     "hex": "#ffb347",
+     "why": "The wire."
+    }
+   ],
+   "columns": [
+    "ScriptWriter",
+    "FreezeCascade",
+    "CastLock",
+    "Voices",
+    "SceneSequencer",
+    "Assembler",
+    "RenderBatch",
+    "MasterAudioMux"
+   ],
+   "text_corpus": [
+    "OTR_LedgerScriptWriter",
+    "OTR_LedgerFreezeCascade",
+    "OTR_CastLock",
+    "OTR_BatchCharacterVoices",
+    "OTR_SceneSequencer",
+    "OTR_EpisodeAssembler",
+    "OTR_VideoRenderBatch",
+    "OTR_MasterAudioMux",
+    "script_json",
+    "ledger_json",
+    "master_audio_path",
+    "EPISODE.MP4"
+   ],
+   "moments": [
+    "The journey: Scene Launch 1 then UP once per bar through all eight nodes; keep bank-A at a quarter with only TRAILS lit so each wire leaves a trace into the next column.",
+    "Sockets: on any node, tap the row-3 FIGURE pad and row-4 LIGHT pad alternately on the beat so inputs and outputs blink in turn; the kick swells the dots.",
+    "Mux: at column 8 pull faders 1 and 6, leave the green node and the waveform, and tap NEGATIVE for one bar as the file lands."
+   ]
+  },
+  {
+   "name": "Shivering Gauge",
+   "slug": "shivering-gauge",
+   "theme": "wildcard",
+   "world": "The episode itself, drawn as the pack draws everything: a film archivist and an apprentice racing vinegar syndrome through one night in the lab. Storybook-engraving hatching, four developing tanks, two reels, and a gauge whose red needle sits past the line and shivers on the highs. Safelight amber, acetate haze, first light under the door, and the sign-off: this has been SIGNAL LOST. Good night.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0b0a14",
+     "why": "The lab after hours."
+    },
+    {
+     "role": "body",
+     "hex": "#f4e9c8",
+     "why": "Engraving cream."
+    },
+    {
+     "role": "figure",
+     "hex": "#e0432a",
+     "why": "The gauge needle: red, past the line."
+    },
+    {
+     "role": "light",
+     "hex": "#ffb347",
+     "why": "Safelight amber."
+    },
+    {
+     "role": "text",
+     "hex": "#f4e9c8",
+     "why": "Burned captions."
+    },
+    {
+     "role": "aura",
+     "hex": "#ffb347",
+     "why": "Amber haze."
+    }
+   ],
+   "columns": [
+    "Lab After Hours",
+    "Developing Tanks",
+    "The Gauge",
+    "Vinegar",
+    "Reel By Reel",
+    "Shivering",
+    "Dawn",
+    "Sign-Off"
+   ],
+   "text_corpus": [
+    "A FILM LAB, AFTER HOURS",
+    "KEEP THE LIDS ON",
+    "PAST THE RED LINE",
+    "THE SMELL OF VINEGAR",
+    "REEL BY REEL",
+    "IT'S SHIVERING AGAIN",
+    "BY DAWN",
+    "THIS HAS BEEN SIGNAL LOST",
+    "GOOD NIGHT",
+    "ARCHIVIST",
+    "APPRENTICE",
+    "NARRATOR"
+   ],
+   "moments": [
+    "The gauge: Scene Launch 3, hold the row-3 FIGURE pad so the red needle shows only while held; UP to Shivering on the hi-hat run and let the face shake.",
+    "Vinegar: column 4, bank-B knob to a third with WAVE WARP lit so the acetate haze warps the hatching; pull it to zero on the next caption.",
+    "Sign-off: UP to column 8 on the last phrase, fade every fader but 2, 3, 5 and 8, let the carrier drop to hiss, then STOP ALL CLIPS."
+   ]
+  }
+ ],
+ "effect_wishlist": [
+  {
+   "effect": "Trails",
+   "role": "Bank A: the freeze cascade stacking, the carrier's afterglow."
+  },
+  {
+   "effect": "Vignette",
+   "role": "Bank A: the bandpass window closing on the full band."
+  },
+  {
+   "effect": "CRT",
+   "role": "Bank C: engravings and act cards as a print."
+  },
+  {
+   "effect": "Stop Motion",
+   "role": "Bank C: the sequencer's scene changes."
+  },
+  {
+   "effect": "Wave Warp",
+   "role": "Bank B: acetate warping in Vinegar."
+  },
+  {
+   "effect": "Grid Cloner",
+   "role": "Bank D: eight languages tiled."
+  }
+ ],
+ "fft_philosophy": "Radio is sound made visible, so the composition's reactivity is the program line and the voices. Mids drive the SCOPE (VU line or waveform) 1:1 and the magic eye's fan; lows drive only size and width - dial lines, node boxes, timeline blocks, filament size - so a kick is pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. Colour never reacts: amber is work, green is signal and master, cream is paper, red is the ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz Master are deliberately still: the picture holds while the sound does the work.",
+ "wildcard_rationale": "Four decks are the machine: the set signing on, the writers' room, the cast, the filter. The fifth is what the machine made - The Shivering Gauge, the episode the pack's README opens on - drawn the way the pipeline draws its own stills, so the instrument ends by performing its own output."
+}

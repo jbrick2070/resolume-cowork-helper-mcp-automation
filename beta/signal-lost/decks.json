@@ -1,0 +1,7657 @@
+[
+ {
+  "deck": "Sign-On",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Cold Filaments",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.5,
+     "Speed": 0.15,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.06,
+      "ceiling": 0.16
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Valve filaments glowing in the chassis."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Dark Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c866",
+     "Color 2": "#f4e9c866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Filament Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "[WARM UP]",
+    "source": "Text Block",
+    "params": {
+     "Text": "[WARM UP]",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Tuning Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.015,
+      "ceiling": 0.0375
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Station Band",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 30,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f4e9c866"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8.0,
+      "release": 250,
+      "floor": 0.02,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The tuning band: kilocycle ticks along the glass."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "[TUNING]",
+    "source": "Text Block",
+    "params": {
+     "Text": "[TUNING]\n540 - 1600 KC",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Between Stations",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.86,
+     "Color": "#7fd37f66",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.33999999999999997
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Hiss between stations."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Tuning Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.015,
+      "ceiling": 0.0375
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Dial Needle",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.01,
+     "Rotation": 72.0,
+     "Position": 0.5,
+     "Color": "#ffb347ff"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 66.0,
+      "ceiling": 78.0
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The station needle across the band."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.34,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "SIGNAL LOST",
+    "source": "Text Block",
+    "params": {
+     "Text": "SIGNAL LOST\n1230 KC",
+     "Font": "Rockwell",
+     "Style": "Regular",
+     "Color": "#ffb347ff",
+     "Size": 1.1,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The station found on the dial."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#ffb34766",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A tone across the frame."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Carrier Locked",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 6,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The carrier wave: a steady sine until a voice rides it."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 24,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Feed Lines",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#f4e9c866",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.4,
+    "why": "The workflow's wires, bezier-ish, from node to node."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "RSS Reader",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 8,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A ComfyUI node: a rounded box with sockets."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "News Ticker",
+    "source": "Text Block",
+    "params": {
+     "Text": "SCIENCE DAILY:\nTONIGHT'S\nHEADLINE SEEDS THE\nSCRIPT",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Top",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": -460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Tonight's headline on the RSS ticker, typed on."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Magic Eye Wide",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.3,
+     "Spacing": 0.1,
+     "Line Width": 0.2,
+     "Style": "Fill",
+     "Gap": 60.0,
+     "Rotation": 90.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#7fd37fff",
+     "Color 2": "#7fd37fff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 10.0,
+      "ceiling": 120.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Theme Swell",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 4,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 2.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.18,
+     "Position": 0.5,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.18,
+      "ceiling": 0.48
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The theme, composed in the musical style of wherever the story came from."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Eye Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#7fd37f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.26,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "[MUSIC: THEME]",
+    "source": "Text Block",
+    "params": {
+     "Text": "[MUSIC: THEME]",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#7fd37f66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A tone across the frame."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Waveform",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.12,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Tuning Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.015,
+      "ceiling": 0.0375
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Magic Eye",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.22,
+     "Spacing": 0.1,
+     "Line Width": 0.2,
+     "Style": "Fill",
+     "Gap": 60.0,
+     "Rotation": 90.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#7fd37fff",
+     "Color 2": "#7fd37fff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 10.0,
+      "ceiling": 120.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "ON AIR",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.02,
+     "Fade": true,
+     "Color 1": "#e0432aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The ON AIR lamp: the one red in the pack."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "ANNOUNCER: GOOD",
+    "source": "Text Block",
+    "params": {
+     "Text": "ANNOUNCER: GOOD\nEVENING.\nTHIS IS SIGNAL LOST.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 1.1,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The line every episode opens with, burned in and speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#ffb34766",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A tone across the frame."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.1,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Act Card Hatch",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 35.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Act Card",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 6,
+     "Innter Color 1": "#f4e9c8ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A ComfyUI node: a rounded box with sockets."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "[ACT 1]",
+    "source": "Text Animator",
+    "params": {
+     "Text": "[ACT 1]",
+     "Font": "Rockwell",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The act card."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Tuning Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.015,
+      "ceiling": 0.0375
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Dial Needle",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.01,
+     "Rotation": 72.0,
+     "Position": 0.5,
+     "Color": "#ffb347ff"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 66.0,
+      "ceiling": 78.0
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The station needle across the band."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.24,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "ANNOUNCER: WE PAUS",
+    "source": "Text Block",
+    "params": {
+     "Text": "ANNOUNCER: WE PAUSE\nFOR\nSTATION IDENTIFICATION",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Idle Carrier",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.86,
+     "Color": "#7fd37f66",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32999999999999996
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The carrier wave: a steady sine until a voice rides it."
+   }
+  ]
+ },
+ {
+  "deck": "Writers Room",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "ScriptWriter",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 10,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A ComfyUI node: a rounded box with sockets."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Graph Wires",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The workflow's wires, bezier-ish, from node to node."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "OTR_LedgerScriptWr",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_LedgerScriptWriter\nsource_bank: my_story\ncustom_premise:",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node and its three widgets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Three Voices",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.12,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.5,
+     "Speed": 0.15,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.12,
+      "ceiling": 0.22
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "story_characters: three silhouettes as soft discs."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Engraving Hatch",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 35.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.25,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "story_characters:",
+    "source": "Text Block",
+    "params": {
+     "Text": "story_characters:\nTHE ARCHIVIST\nTHE APPRENTICE",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 12,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Plot Line",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 20.0,
+     "Direction": 0.0,
+     "Position Y": 4.0,
+     "Speed": 0.4,
+     "Height": 10.0,
+     "Jagginess": 0.4,
+     "Wobble": 0.1,
+     "Attenuation": 60.0,
+     "Line Width": 0.3,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb347ff",
+     "Show Knots": true
+    },
+    "fft": {
+     "Jagginess": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.3,
+      "ceiling": 0.8
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "story_plot: a rising line with knots at the turns."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The plot line is the figure."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "story_plot:",
+    "source": "Text Block",
+    "params": {
+     "Text": "story_plot:\nONE NIGHT IN THE LAB\nRACING VINEGAR\nSYNDROME",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Shelving",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 30,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Lab Shelves",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.4,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Setting Card",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 6,
+     "Innter Color 1": "#f4e9c866",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "A ComfyUI node: a rounded box with sockets."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.16,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "story_setting:",
+    "source": "Text Block",
+    "params": {
+     "Text": "story_setting:\nA FILM LAB, AFTER\nHOURS\nDEVELOPING TANKS",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The markup is the picture."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The markup is the picture."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "[SFX: TANK LID]",
+    "source": "Text Block",
+    "params": {
+     "Text": "[SFX: TANK LID]\n[MUSIC: STING]\n[BEAT] [PAUSE] [ACT]",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#ffb347ff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The five cue tags the parser reads out of the script."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing moves in a beat."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing moves in a beat."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No glow."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "[BEAT]",
+    "source": "Text Block",
+    "params": {
+     "Text": "[BEAT]",
+     "Font": "Rockwell",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 2.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A beat: the script's held breath."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Held",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.0,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.0,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Flat for the beat."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Cascade",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 60.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 14.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.0,
+     "Attenuation": 120.0,
+     "Line Width": 0.2,
+     "Fuzzyness": 0.0,
+     "Color": "#f4e9c866",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 10.0,
+      "ceiling": 20.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.7,
+    "why": "The freeze cascade: lines falling into place, phase by phase."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "FreezeCascade",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Hexagon",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 12,
+     "Innter Color 1": "#7fd37fff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A ComfyUI node: a rounded box with sockets."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#7fd37f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "OTR_LedgerFreezeCa",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_LedgerFreezeCascade\nPHASE 7: NORMALIZE\nPHASE 8: COVERAGE\nAUDIT",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 24,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Ledger",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 8,
+     "Innter Color 1": "#7fd37fff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A ComfyUI node: a rounded box with sockets."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Padlock Ring",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 2,
+     "Size": 0.2,
+     "Spacing": 0.4,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#7fd37fff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": -180,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The ledger locked: two rings, a shackle."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#7fd37f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "LEDGER LOCKED",
+    "source": "Text Block",
+    "params": {
+     "Text": "LEDGER LOCKED\nSCRIPT IS SOURCE OF\nTRUTH",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#7fd37fff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   }
+  ]
+ },
+ {
+  "deck": "The Cast",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "CastLock",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 9,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A ComfyUI node: a rounded box with sockets."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Bound Voices",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.5,
+     "Speed": 0.15,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.1,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Valve filaments glowing in the chassis."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "OTR_CastLock",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_CastLock\nBINDS A VOICE TO A\nNAME\nFOR THE WHOLE EPISODE",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Waveform",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Kokoro Voice",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 8,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 4.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.2,
+     "Position": 0.5,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.2,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A Kokoro ONNX voice as a dense sine."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Phoneme Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.01,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 2.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.1,
+     "Position": 0.5,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The phoneme stream under the voice."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#7fd37f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "kokoro-onnx",
+    "source": "Text Block",
+    "params": {
+     "Text": "kokoro-onnx\naf_heart - am_michael\n24 KHZ",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Waveform",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.12,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Announcer Mic Ring",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.5,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.015,
+      "ceiling": 0.0375
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Magic Eye",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.18,
+     "Spacing": 0.1,
+     "Line Width": 0.2,
+     "Style": "Fill",
+     "Gap": 60.0,
+     "Rotation": 90.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#7fd37fff",
+     "Color 2": "#7fd37fff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 10.0,
+      "ceiling": 120.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "ON AIR",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.02,
+     "Fade": true,
+     "Color 1": "#e0432aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The ON AIR lamp: the one red in the pack."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "ANNOUNCER: FROM OU",
+    "source": "Text Block",
+    "params": {
+     "Text": "ANNOUNCER: FROM OUR\nSTUDIOS\nTRANSMISSION FROM\nTOMORROW",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#ffb34766",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A tone across the frame."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Script Ruling",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ruled script paper, barely lifted from the night."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Eight Bands",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.06,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#ffb34766"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.05,
+      "ceiling": 0.12
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Eight horizontal bands, one per language."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The bands are the figure."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "EN ES PT IT FR HI ",
+    "source": "Text Block",
+    "params": {
+     "Text": "EN ES PT IT FR HI JA\nZH\nONE episode_language\nSWITCH",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#ffb347ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Waveform",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Voice Pool",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 6,
+     "Blend": "Minimal",
+     "Size": 0.07,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.5,
+     "Speed": 0.15,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.07,
+      "ceiling": 0.17
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The voice pool: many small discs, a few lit."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Chosen Two",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.5,
+     "Speed": 0.15,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.1,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Valve filaments glowing in the chassis."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#7fd37f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "VOICE POOL",
+    "source": "Text Block",
+    "params": {
+     "Text": "VOICE POOL\nGENDER - AGE - ACCENT\nCOVERAGE REPAIR",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed cue markup from the script, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Waveform",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Voice A",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 5,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.16,
+     "Position": 0.42,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.45999999999999996
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The carrier wave: a steady sine until a voice rides it."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Voice B",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 7,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 5.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.58,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.12,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Two voices in exchange, never overlapping lines."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "ARCHIVIST: THE GAU",
+    "source": "Text Block",
+    "params": {
+     "Text": "ARCHIVIST: THE GAUGE\nIS SHIVERING AGAIN.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 1.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Waveform",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.12,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Still Hatch",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 35.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.35,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Caption Bar",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.1,
+     "Rotation": 0.0,
+     "Position": 0.86,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The burned caption's dark bar along the bottom."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No lamp over a still."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "APPRENTICE: HOW LO",
+    "source": "Text Block",
+    "params": {
+     "Text": "APPRENTICE: HOW LONG\nDO WE HAVE?",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 1.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Captions mirror the written line rather than translating it."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Credits only."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Credits only."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Credit Roll",
+    "source": "Text Block",
+    "params": {
+     "Text": "WRITTEN - CAST -\nPERFORMED\nSCORED - DRAWN - CUT\nON ONE MACHINE",
+     "Font": "Rockwell",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The credit roll, typed on line by line."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   }
+  ]
+ },
+ {
+  "deck": "The Graph",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "ScriptWriter",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 9,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_LedgerScriptWriter as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: gate_in"
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: script_text, script_json, news_used"
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "OTR_Ledger",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_Ledger\nScriptWriter\nIN: gate_in\nOUT: script_text\nscript_json",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "JSON On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Before the voices there is only text on the wire: a thin line."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "FreezeCascade",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 11,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_LedgerFreezeCascade as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: script_text, script_json, news_used"
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: script_json, v2_ledger_json"
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "OTR_Ledger",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_Ledger\nFreezeCascade\nIN: script_text\nscript_json\nOUT: script_json\nv2_ledger_json",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "JSON On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Before the voices there is only text on the wire: a thin line."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "CastLock",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 9,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_CastLock as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: script_json"
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: ledger_json"
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "OTR_CastLock",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_CastLock\nIN: script_json\nOUT: ledger_json",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "JSON On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Before the voices there is only text on the wire: a thin line."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Voices",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 11,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_BatchCharacterVoices as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: script_json, ledger_json, gate_in"
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: character_audio, done"
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "OTR_Batch",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_Batch\nCharacterVoices\nIN: script_json\nledger_json\nOUT: character_audio\ndone",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Audio On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "SceneSequencer",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 11,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_SceneSequencer as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: tts_audio_clips, announcer_audio_clips, script_json"
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: scene_audio"
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "OTR_SceneSequencer",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_SceneSequencer\nIN: tts_audio_clips\nannouncer_audio_clips\nOUT: scene_audio",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Audio On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Assembler",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 11,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_EpisodeAssembler as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: scene_audio, music_cue_audio, video_policy_json"
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: episode_audio, output_path, audio_done"
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "OTR_EpisodeAssembl",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_EpisodeAssembler\nIN: scene_audio\nmusic_cue_audio\nOUT: episode_audio\noutput_path",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Audio On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "RenderBatch",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 11,
+     "Innter Color 1": "#ffb347ff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_VideoRenderBatch as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: patched_ledger_json, master_audio_path, image_done"
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: clip_manifest_json"
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "OTR_VideoRenderBat",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_VideoRenderBatch\nIN:\npatched_ledger_json\nmaster_audio_path\nOUT:\nclip_manifest_json",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Audio On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Canvas Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1c1826ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ComfyUI canvas grid."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "MasterAudioMux",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.08,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.3,
+     "Line Ammount": 11,
+     "Innter Color 1": "#7fd37fff",
+     "Inner color 2": "#1c1826ff",
+     "Outer Color 1": "#f4e9c866",
+     "Outer Color 2": "#1c1826ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "OTR_MasterAudioMux as a rounded box; its wire runs on to the next node."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": -0.62,
+     "Position Y": 0.0,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Input sockets on the left: silent_video_path, master_audio_path, audio_done"
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Outputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.35,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.62,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.05,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Output sockets on the right: EPISODE.MP4"
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "OTR_MasterAudioMux",
+    "source": "Text Block",
+    "params": {
+     "Text": "OTR_MasterAudioMux\nIN: silent_video_path\nmaster_audio_path\nOUT: EPISODE.MP4",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#7fd37fff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The node's class name and its wired sockets, as typed in the workflow."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Wire On",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.3,
+     "Height": 6.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.3,
+     "Attenuation": 80.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#ffb34766",
+     "Show Knots": true
+    },
+    "fft": {
+     "Wobble": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 700,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The wire leaving the right edge toward the next node."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Audio On The Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#7fd37fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 48 kHz master's waveform along the bottom."
+   }
+  ]
+ },
+ {
+  "deck": "Shivering Gauge",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Lab Shelves",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.4,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Two Lamps",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.08,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.5,
+     "Speed": 0.15,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.08,
+      "ceiling": 0.18
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Valve filaments glowing in the chassis."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Safelight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "NARRATOR: A FILM L",
+    "source": "Text Block",
+    "params": {
+     "Text": "NARRATOR: A FILM LAB,\nAFTER HOURS.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Tanks",
+    "source": "Checkered",
+    "params": {
+     "Num X": 4,
+     "Num Y": 1,
+     "Color 1": "#1c1826ff",
+     "Color 2": "#f4e9c866"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 40.0
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "Four developing tanks in a row."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Tank Hatch",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.35,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Safelight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.16,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "ARCHIVIST: KEEP TH",
+    "source": "Text Block",
+    "params": {
+     "Text": "ARCHIVIST: KEEP THE\nLIDS\nON. DON'T BREATHE IT.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Gauge Face",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 12,
+     "Size": 0.6,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.01,
+      "ceiling": 0.025
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Gauge Needle",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.01,
+     "Rotation": 110.0,
+     "Position": 0.5,
+     "Color": "#e0432aff"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 104.0,
+      "ceiling": 116.0
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The gauge needle, red: the second place red is allowed."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "APPRENTICE: IT'S P",
+    "source": "Text Block",
+    "params": {
+     "Text": "APPRENTICE: IT'S PAST\nTHE RED LINE.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Acetate Haze",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 3,
+     "Amplitude": 0.4,
+     "Density": 0.5
+    },
+    "fft": {
+     "Density": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 1200,
+      "floor": 0.4,
+      "ceiling": 0.8
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#0b0a14ff",
+       "White To": "#ffb34766"
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Vinegar syndrome: the acetate base hazing and warping."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Warped Hatch",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 20.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "NARRATOR: THE SMEL",
+    "source": "Text Block",
+    "params": {
+     "Text": "NARRATOR: THE SMELL\nOF VINEGAR.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#ffb34766",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A tone across the frame."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Reel",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 20,
+     "Size": 0.5,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.01,
+      "ceiling": 0.025
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -320,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Take-Up Reel",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 20,
+     "Size": 0.5,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c866",
+     "Color 2": "#f4e9c866"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.01,
+      "ceiling": 0.025
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 320,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Dial Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffb34766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "ARCHIVIST: REEL BY",
+    "source": "Text Block",
+    "params": {
+     "Text": "ARCHIVIST: REEL BY\nREEL.\nTHAT'S THE ONLY WAY.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Gauge Face",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 12,
+     "Size": 0.6,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#f4e9c8ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "high",
+      "gain": 10.0,
+      "release": 150,
+      "floor": 0.58,
+      "ceiling": 0.64
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The gauge face shivering on the highs."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Shivering Needle",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.01,
+     "Rotation": 110.0,
+     "Position": 0.5,
+     "Color": "#e0432aff"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 104.0,
+      "ceiling": 116.0
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The station needle across the band."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Flicker",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.6,
+     "Fade": true,
+     "Color 1": "#f4e9c866",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The safelight flickering with the shiver."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "APPRENTICE: IT'S",
+    "source": "Text Block",
+    "params": {
+     "Text": "APPRENTICE: IT'S\nSHIVERING AGAIN.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 1.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.1,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Dawn",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#0b0a14ff",
+     "Color 2": "#1c1826ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "First light under the door."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Lab Shelves",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.15,
+     "Amount": 70,
+     "Width": 0.008,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.3,
+    "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Last Lamp",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 1,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.5,
+     "Speed": 0.15,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.06,
+      "ceiling": 0.16
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Valve filaments glowing in the chassis."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Door Light",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#f4e9c866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.16,
+    "why": "The dial lamp's radial glow."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "NARRATOR: BY DAWN,",
+    "source": "Text Block",
+    "params": {
+     "Text": "NARRATOR: BY DAWN, THE\nREELS WERE SAFE.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f4e9c866",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A tone across the frame."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#ffb347ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line: the honest readout of whatever is on air."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Bakelite",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0b0a14ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Midnight bakelite: the set's cabinet."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Dial Fading",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f4e9c866",
+     "Color 2": "#f4e9c866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The round tuning dial of a cathedral radio."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Dial Needle",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.01,
+     "Rotation": 72.0,
+     "Position": 0.5,
+     "Color": "#ffb347ff"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 66.0,
+      "ceiling": 78.0
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The station needle across the band."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "ON AIR",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.02,
+     "Fade": true,
+     "Color 1": "#e0432aff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "The ON AIR lamp: the one red in the pack."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "ANNOUNCER: THIS HA",
+    "source": "Text Block",
+    "params": {
+     "Text": "ANNOUNCER: THIS HAS\nBEEN\nSIGNAL LOST. GOOD\nNIGHT.",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f4e9c8ff",
+     "Size": 1.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A burned caption, centred at the bottom, speaker-labelled."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Shellac Crackle",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Surface noise: the vintage filter's crackle bed."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Carrier Drops",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.015,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.86,
+     "Color": "#7fd37f66",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32999999999999996
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The carrier fading to hiss."
+   }
+  ]
+ }
+]
