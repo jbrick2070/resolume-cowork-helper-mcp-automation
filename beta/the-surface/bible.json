@@ -1,0 +1,366 @@
+{
+ "pack_name": "The Surface",
+ "comp_name": "The Surface - APC40 mkII + MIDI",
+ "tagline": "Note 0 is bottom-left. Channel is track. Centre is everything.",
+ "decks": [
+  {
+   "name": "The Grid",
+   "slug": "grid",
+   "theme": "hardware",
+   "world": "The 5x8 pad grid drawn on a matte black chassis: note 0 bottom-left, rows of eight, five rows for five layers, the 128-entry RGB velocity palette, the two LED families every pack here speaks (green 21/22, amber 9/10), the Scene Launch column, and the SysEx that puts the controller into Mode 1 - a show requirement, because a power cycle forgets it.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Matte black chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#3ddc84",
+     "why": "Pad green, velocity 21."
+    },
+    {
+     "role": "figure",
+     "hex": "#ffae1a",
+     "why": "Pad amber, velocity 9."
+    },
+    {
+     "role": "light",
+     "hex": "#3ddc84",
+     "why": "LED bleed."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Silkscreen white, protocol values in Consolas."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "MIDI red, only on the wire."
+    }
+   ],
+   "columns": [
+    "Note Zero",
+    "Row Of Eight",
+    "Five Rows",
+    "Velocity Palette",
+    "Green 21",
+    "Amber 9",
+    "Scene Launch",
+    "Mode 1"
+   ],
+   "text_corpus": [
+    "NOTE 0",
+    "n0 - n39",
+    "5 x 8 = 40",
+    "VELOCITY = COLOUR",
+    "ON 21 - DIM 22",
+    "ON 9 - DIM 10",
+    "SCENE LAUNCH n82-n86",
+    "STOP ALL CLIPS n81",
+    "F0 47 7F 29 60 00 04 41",
+    "MODE 1",
+    "0x90",
+    "CHANNEL 1"
+   ],
+   "moments": [
+    "Note zero: Scene Launch 1 and press the real bottom-left pad; the picture is the pad.",
+    "Palette: column 4, tap the row-3 FIGURE pad on the beat so index 9 blinks amber over the 128-cell table.",
+    "Mode 1: DOWN to column 8 and let the SysEx bytes ride the mids; this is the message to send after every power-up."
+   ]
+  },
+  {
+   "name": "The Strips",
+   "slug": "strips",
+   "theme": "hardware",
+   "world": "Eight track strips, each a copy of the last: the per-track buttons keep one note and change only the MIDI channel. Clip Stop 52 ejects, Select 51 selects, Activator 50 is on-air, Solo 49, Record Arm 48 and Crossfade A/B 66 are the first two effect banks in every pack here. Below them the eight faders on CC7, the master on CC14 and the crossfader on CC15 whose centre is everything.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#e8e4d8",
+     "why": "Silkscreen strips and fader slots."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "The one control lit."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "Amber for the FX banks."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Note and CC numbers."
+    },
+    {
+     "role": "aura",
+     "hex": "#1f2126",
+     "why": "Grey."
+    }
+   ],
+   "columns": [
+    "Channel = Track",
+    "Clip Stop 52",
+    "Select 51",
+    "Activator 50",
+    "Rec Arm 48",
+    "A/B 66",
+    "Faders CC7",
+    "Crossfader CC15"
+   ],
+   "text_corpus": [
+    "CHANNEL = TRACK",
+    "CLIP STOP n52",
+    "TRACK SELECT n51",
+    "ACTIVATOR n50",
+    "SOLO n49",
+    "RECORD ARM n48",
+    "CROSSFADE A/B n66",
+    "CC7 ch1-8",
+    "MASTER CC14",
+    "CROSSFADER CC15",
+    "0x90 + (ch - 1)",
+    "CENTRE = EVERYTHING"
+   ],
+   "moments": [
+    "Channel = track: Scene Launch 1, then press Clip Stop on strip 3 - the one lit button (layer 3) vanishes, because note 52 on channel 3 ejects layer 3; Scene Launch 1 brings it back.",
+    "Rec Arm: column 5, tap the real Record Arm buttons - they are FX bank 1, and the amber row is them.",
+    "Crossfader: column 8, sweep the real crossfader; the scene's layers split A from B (the green cap sits on FIGURE, side B, and goes dark at hard A). The cap's own travel is the lows, not CC15."
+   ]
+  },
+  {
+   "name": "Knobs + Transport",
+   "slug": "knobs",
+   "theme": "hardware",
+   "world": "The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 (the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on CC47 (the effects master sweep), the relative Tempo encoder on CC13, PLAY STOP RECORD on notes 91-93, Tap and Nudge, and the footswitch on CC64 that is a momentary blackout in every pack here.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#e8e4d8",
+     "why": "Knob bodies and buttons."
+    },
+    {
+     "role": "figure",
+     "hex": "#ffae1a",
+     "why": "LED rings."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "Beat pulses."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "CC numbers."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "Red for relative ticks and the footswitch."
+    }
+   ],
+   "columns": [
+    "Device CC16-23",
+    "LED Rings",
+    "Track CC48-55",
+    "Cue Level CC47",
+    "Tempo CC13",
+    "Play Stop Rec",
+    "Tap + Nudge",
+    "Footswitch CC64"
+   ],
+   "text_corpus": [
+    "DEVICE KNOBS CC16-23",
+    "LED RINGS",
+    "TRACK KNOBS CC48-55",
+    "CUE LEVEL CC47",
+    "TEMPO CC13",
+    "RELATIVE",
+    "PLAY n91",
+    "STOP n92",
+    "RECORD n93",
+    "TAP n99",
+    "NUDGE n100 / n101",
+    "FOOTSWITCH CC64"
+   ],
+   "moments": [
+    "Rings: column 2, turn Device knob 1 slowly; the amber ring on screen is the ring under your hand.",
+    "Cue level: column 4, sweep CUE LEVEL anticlockwise to CLEAN and back; the amber line is the four bank links moving together.",
+    "Footswitch: column 8, stamp the pedal on the one; the red bar is CC64 going 0x7F."
+   ]
+  },
+  {
+   "name": "The Wire",
+   "slug": "wire",
+   "theme": "protocol",
+   "world": "MIDI itself, from the 1983 spec to tonight's preset: the DIN-5 with its 5 mA current loop, 31,250 baud and ten bits a byte, the status byte with its high bit set, note on and note off (Piano listens for the off), control change with 128 steps, the class-compliant USB that powers the whole surface, and the 2^56 (note) and 2^57 (CC) markers Resolume files a raw message under. Red is the wire; green is a message arriving.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#e03a2f",
+     "why": "The wire."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "A message."
+    },
+    {
+     "role": "light",
+     "hex": "#3ddc84",
+     "why": "Note-on flashes."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Bytes in Consolas."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "Red."
+    }
+   ],
+   "columns": [
+    "DIN-5",
+    "31,250 Baud",
+    "Status Byte",
+    "Note On / Off",
+    "Control Change",
+    "USB-B",
+    "Resolume Key",
+    "Monitor"
+   ],
+   "text_corpus": [
+    "DIN-5",
+    "5 mA CURRENT LOOP",
+    "31,250 BAUD",
+    "1 START - 8 DATA - 1 STOP",
+    "0x90",
+    "0xB0",
+    "NOTE ON / OFF",
+    "0 - 127",
+    "USB-B - BUS POWERED",
+    "2^56 + (data1 << 8) + status",
+    "RAW INPUT MESSAGE",
+    "MIDI MONITOR"
+   ],
+   "moments": [
+    "Baud: Scene Launch 2 and the bit stream rides the mids; on the five-pin wire every byte is ten bits (the APC rides USB, which packs them four bytes at a time).",
+    "Note on/off: column 4, hold a pad - the green pad lives while you hold it, the flash is the note off.",
+    "Monitor: column 8 with Preferences > MIDI open on the second screen; the scrolling line is what the monitor shows."
+   ]
+  },
+  {
+   "name": "SE-500 Mixer",
+   "slug": "se500",
+   "theme": "wildcard",
+   "world": "A four-input analog SD video mixer drawn in the same chassis grammar: BNC composite and S-Video inputs with illuminated select buttons, a main and a sub source bus, the T-bar you pull at your own speed, wipes, picture-in-picture, split screen, colour processing, and - the reason it belongs in this pack - RS-232 on a 9-pin D-sub and MIDI control on a five-pin DIN: the APC40's language on the older wire (the APC itself is USB-only).",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#e8e4d8",
+     "why": "Inputs, slots, split lines."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "The pack's lit green (the SE-500's own on-air colour is red)."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "The T-bar's amber."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Panel legends."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "The control wire."
+    }
+   ],
+   "columns": [
+    "Four Inputs",
+    "Main / Sub",
+    "T-Bar",
+    "Wipe",
+    "PIP",
+    "Split Screen",
+    "Colour Proc",
+    "MIDI + RS-232"
+   ],
+   "text_corpus": [
+    "DATAVIDEO SE-500",
+    "4 x COMPOSITE BNC",
+    "S-VIDEO MINI-DIN",
+    "MAIN / SUB SOURCE",
+    "T-BAR",
+    "WIPE",
+    "PIP",
+    "SPLIT SCREEN",
+    "COLOUR PROCESSING",
+    "RS-232 D-SUB 9",
+    "MIDI CONTROL 5-PIN DIN",
+    "THE APC'S LANGUAGE"
+   ],
+   "moments": [
+    "T-bar: Scene Launch 3 and ride the real crossfader slowly end to end; the amber T-bar is your hand.",
+    "Wipe to PIP: DOWN from Wipe to PIP on a downbeat with Device knob 3 (SPACE) at a quarter and MIRROR QUAD lit so the window tiles.",
+    "The older wire: column 8, tap any APC button on the beat; the red pins flash - the same note-on, on five pins instead of USB."
+   ]
+  }
+ ],
+ "effect_wishlist": [
+  {
+   "effect": "Bloom",
+   "role": "Bank A: LED bleed through the rubber."
+  },
+  {
+   "effect": "Trails",
+   "role": "Bank A: the T-bar's travel and the bit stream."
+  },
+  {
+   "effect": "Mirror Quad",
+   "role": "Bank D: the PIP window tiles."
+  },
+  {
+   "effect": "CRT",
+   "role": "Bank C: the mixer's program monitor."
+  },
+  {
+   "effect": "Grid Cloner",
+   "role": "Bank D: the pad grid of grids."
+  }
+ ],
+ "fft_philosophy": "The controller is the subject and the music is what it controls, so the reactivity stays mechanical: lows swell pads and widen fader caps, mids turn knob gaps and move playheads and T-bars, highs only jitter the serial bits and the DIN pins. Colour never reacts: green is a lit pad or a message arriving, amber is the second LED family and the T-bar, red is the wire and nothing else. Text never moves. Every note, CC and byte on screen is the real one.",
+ "wildcard_rationale": "Four decks are the APC40 mkII and its wire: the grid, the strips, the knobs and transport, and MIDI itself. The fifth is a video mixer of the same era of hands-on control, the Datavideo SE-500, chosen because it speaks the APC's MIDI over the older five-pin wire and because its T-bar is the crossfader's older sibling."
+}

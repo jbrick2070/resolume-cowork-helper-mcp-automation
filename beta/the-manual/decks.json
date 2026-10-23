@@ -1,0 +1,7496 @@
+[
+ {
+  "deck": "Vocabulary",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Comp Frame",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 1.1,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The whole output framed in blue: the Composition."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing inside yet."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "COMPOSITION",
+    "source": "Text Block",
+    "params": {
+     "Text": "COMPOSITION\n1920 x 1080 - 60 FPS\n8-BIT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Composition > Settings: Name, Size, FrameRate, Bit Depth."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Deck Tab",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.9,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 12.0,
+       "Position Y": 470.0
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "A deck button along the bottom, under the clip layers: a DJ's record bag."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Playing Clip",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#6fcf6fff",
+     "Outline": 0.0,
+     "Outline Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "One cell lit green: the clip that is playing."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "DECK",
+    "source": "Text Block",
+    "params": {
+     "Text": "DECK\nA COLLECTION OF CLIPS\nONE ACTIVE AT A TIME",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Layer Strips",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#4a8fe766"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Eight layer strips: X, B, S and the V / A / M faders."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Layer Row",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.14,
+     "Color": "#cfd0d6ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.08
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "One layer row lit: layer 1, the bottom."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "LAYER",
+    "source": "Text Block",
+    "params": {
+     "Text": "LAYER\nX - B - S - V - A - M\nBLEND: ADD (DEFAULT)",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Group Bracket",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 44.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A bracket round three layers: a Group (Arena only), with its own blend, opacity and effects."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The bracket is the figure."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "GROUP (ARENA ONLY)",
+    "source": "Text Block",
+    "params": {
+     "Text": "GROUP (ARENA ONLY)\nLAYERS IN A CONTAINER\nOWN BLEND - OWN FX",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Clip Thumbnail",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#6fcf6fff",
+     "Outline": 0.0,
+     "Outline Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "One cell lit green: the clip that is playing."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Clip Selected",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.3,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Click the thumbnail to trigger; click the name handle to select without triggering."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "CLIP",
+    "source": "Text Block",
+    "params": {
+     "Text": "CLIP\nTHE NUTS AND BOLTS\nTHUMBNAIL + NAME\nHANDLE",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Column Lit",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.12,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#4a8fe7ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "One column highlighted top to bottom: triggers every layer's clip at once."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The column is the figure."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Column Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.1,
+     "Fade": true,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "The column lighting as it triggers."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "COLUMN",
+    "source": "Text Block",
+    "params": {
+     "Text": "COLUMN\nTRIGGERS EVERY LAYER\nBEAT SNAP: 1 BAR",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Source",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.26,
+     "Spacing": 0.15,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd0d6ff",
+     "Color 2": "#cfd0d6ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -500,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Source: the content generator."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Effects",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.26,
+     "Spacing": 0.15,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 500,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Effects: pixel processors, after the permanent Transform."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "CLIP = SOURCE",
+    "source": "Text Block",
+    "params": {
+     "Text": "CLIP = SOURCE\n+ TRANSFORM\n+ EFFECTS",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Pipeline Rows",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 7,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#cfd0d666"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.7,
+    "why": "Rows of a panel: one parameter per line."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Render Pass",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A green sweep along the timeline (Resolume's own pointer is blue)."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "SOURCE > CLIP FX >",
+    "source": "Text Block",
+    "params": {
+     "Text": "SOURCE > CLIP FX >\nLAYER\n> GROUP > COMP FX\n> OUTPUT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   }
+  ]
+ },
+ {
+  "deck": "The Clip",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Playing Clip",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#6fcf6fff",
+     "Outline": 0.0,
+     "Outline Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "One cell lit green: the clip that is playing."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Selection",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.3,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The blue selection outline around the chosen thing."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Piano Press",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": true,
+     "Color 1": "#6fcf6fff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "Piano: the clip plays while the key is held."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "TRIGGER STYLE",
+    "source": "Text Block",
+    "params": {
+     "Text": "TRIGGER STYLE\nNORMAL - TOGGLE -\nPIANO",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Right-click a clip > Trigger style."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Four Bars",
+    "source": "Checkered",
+    "params": {
+     "Num X": 4,
+     "Num Y": 1,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "1 Bar",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.25,
+     "Color": "#4a8fe7ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A fader: one line whose position is the value."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Waiting",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A green sweep along the timeline (Resolume's own pointer is blue)."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Metronome",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.1,
+     "Fade": true,
+     "Color 1": "#f0a030ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "The BPM panel's beat indicator: a blue square stepping round a square, one corner per beat, outlined every 16 beats."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "BEAT SNAP",
+    "source": "Text Block",
+    "params": {
+     "Text": "BEAT SNAP\n1/4 BAR - 1 BAR\n2 BARS - 4 BARS - 8\nBARS",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 16,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Layer Strips",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#4a8fe766"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Rows of a panel: one parameter per line."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Free Layer",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 800,
+      "floor": 0.2,
+      "ceiling": 0.8
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Free Layer: the clip lands on whichever layer is empty."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "CLIP TARGET",
+    "source": "Text Block",
+    "params": {
+     "Text": "CLIP TARGET\nOWN - ACTIVE - FREE\nCOMPOSITION DETERMINED",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Comp Bounds",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.9,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd0d666",
+     "Color 2": "#cfd0d666"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The blue selection outline around the chosen thing."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Clip Bounds",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.6,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 500,
+      "floor": 0.5,
+      "ceiling": 0.95
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 130.0,
+       "Scale H": 100.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Fill crops, Fit letterboxes, Stretch distorts, Original is pixel size."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "RESIZE",
+    "source": "Text Block",
+    "params": {
+     "Text": "RESIZE\nFILL - FIT - STRETCH\nORIGINAL",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Opacity Fader",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.04,
+     "Rotation": 0.0,
+     "Position": 0.2,
+     "Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Position": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 600,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The layer's V fader rising..."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Restart",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "...and the clip restarting from the beginning each time."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "FADER START",
+    "source": "Text Block",
+    "params": {
+     "Text": "FADER START\nRESTART ON FADE UP\nCLIP OR LAYER",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Column Trigger",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.12,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#4a8fe766"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A fader: one line whose position is the value."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Keeps Playing",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#6fcf6fff",
+     "Outline": 0.0,
+     "Outline Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "The layer with Ignore Column Trigger keeps its clip."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No flash: this layer ignores the column."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "IGNORE COLUMN TRIG",
+    "source": "Text Block",
+    "params": {
+     "Text": "IGNORE COLUMN TRIGGER\nCLIP - LAYER - GROUP\nSCOPE LAYER USES THIS",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Clip Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Playing Clip",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#6fcf6fff",
+     "Outline": 0.0,
+     "Outline Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "One cell lit green: the clip that is playing."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Next Clip",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Auto Pilot: next, previous, random (Any / Other / Bag), first, last, specific."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "AUTO PILOT",
+    "source": "Text Block",
+    "params": {
+     "Text": "AUTO PILOT\nNEXT - PREVIOUS -\nRANDOM\nLOOPS: 1 - DURATION:\nBEATS",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Crossfade",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 1.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.25,
+     "Position": 0.5,
+     "Color": "#4a8fe7ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.25,
+      "ceiling": 0.55
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Transition mode Alpha: a crossfade over the transition time."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Transition Time",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#cfd0d6ff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 6.0,
+      "release": 1200,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "0 to 10 seconds, millisecond precision in the Layer panel."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "TRANSITION",
+    "source": "Text Block",
+    "params": {
+     "Text": "TRANSITION\nCLIP: LAYER DETERMINED\nLAYER: ALPHA - 0-10 S",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Timeline",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.9,
+     "Color": "#4a8fe7ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A timeline's animated value along the bottom."
+   }
+  ]
+ },
+ {
+  "deck": "Parameters",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Parameter Rows",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 10,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Rows of a panel: one parameter per line."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Cogwheel",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 2,
+     "Size": 0.22,
+     "Spacing": 0.5,
+     "Line Width": 0.06,
+     "Style": "Stroke",
+     "Gap": 20.0,
+     "Rotation": 0.0,
+     "Rotation Step": 22.5,
+     "Rotation Alternate": true,
+     "Color 1": "#cfd0d666",
+     "Color 2": "#cfd0d666"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.0,
+      "ceiling": 45.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The grey cogwheel beside a parameter name: the animation menu."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "THE COGWHEEL",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE COGWHEEL\nTIMELINE - BPM SYNC\nFFT - ENVELOPE -\nDASHBOARD",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Click the grey cogwheel next to a parameter name."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Timeline Bar",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#cfd0d666"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Rows of a panel: one parameter per line."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Playhead",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A green sweep along the timeline (Resolume's own pointer is blue)."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "TIMELINE",
+    "source": "Text Block",
+    "params": {
+     "Text": "TIMELINE\nIN - OUT - SPEED -\nDURATION\nLOOP - PING-PONG -\nONE-SHOT",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 16,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Timeline",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.9,
+     "Color": "#4a8fe7ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A timeline's animated value along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Sixteen Beats",
+    "source": "Checkered",
+    "params": {
+     "Num X": 16,
+     "Num Y": 1,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Beat One",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.0625,
+     "Color": "#f0a030ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A fader: one line whose position is the value."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Beat Head",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A green sweep along the timeline (Resolume's own pointer is blue)."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Sync Indicator",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.1,
+     "Fade": true,
+     "Color 1": "#f0a030ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The blue square circles a larger square and hits top-left on every first beat."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "BPM SYNC",
+    "source": "Text Block",
+    "params": {
+     "Text": "BPM SYNC\nTIME IN BEATS - 4 - 8\n- 16\nTAP - RESYNC - NUDGE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 16,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Timeline",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.9,
+     "Color": "#f0a030ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A timeline's animated value along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "FFT Spectrum",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.5,
+     "Height": 8.0,
+     "Jagginess": 0.8,
+     "Wobble": 0.2,
+     "Attenuation": 40.0,
+     "Line Width": 0.4,
+     "Fuzzyness": 0.0,
+     "Color": "#4a8fe7ff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 250,
+      "floor": 4.0,
+      "ceiling": 20.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "The spectrum display under an FFT-driven parameter."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Band In Point",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.015,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "high",
+      "gain": 6.0,
+      "release": 400,
+      "floor": 0.25,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "In/out points under the spectrum fine-tune the frequency range."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "EXTERNAL FFT",
+    "source": "Text Block",
+    "params": {
+     "Text": "EXTERNAL FFT\nINPUT: CABLE OUTPUT\nL - M - H",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The audio input device chosen in Preferences > Audio: this rig's VB-Cable."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "FFT Signal",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Gain",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.3,
+     "Spacing": 0.15,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -400,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A dashboard dial."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Fall",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.3,
+     "Spacing": 0.15,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd0d6ff",
+     "Color 2": "#cfd0d6ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 400,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Fall: how quickly the value drops back from a peak."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "GAIN - FALL",
+    "source": "Text Block",
+    "params": {
+     "Text": "GAIN - FALL\n> LOW TO HIGH  < HIGH\nTO LOW\n- / + DRIVE SPEED",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Driven Value",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Elastic Curve",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 1.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.3,
+     "Position": 0.5,
+     "Color": "#4a8fe7ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.3,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "An envelope curve between keyframes."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Keyframe",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.06,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd0d6ff",
+     "Color 2": "#cfd0d6ff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -300,
+       "Position Y": -120,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A keyframe: double-click to add, drag to move, type phase and value."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "ENVELOPE",
+    "source": "Text Block",
+    "params": {
+     "Text": "ENVELOPE\nQUADRATIC - SINE -\nCIRCULAR\nEXPONENTIAL - ELASTIC\n- BOUNCE",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Timeline",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.9,
+     "Color": "#4a8fe7ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A timeline's animated value along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Dial 1",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.2,
+     "Spacing": 0.15,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -600,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A dashboard dial."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Dial 2",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.2,
+     "Spacing": 0.15,
+     "Line Width": 0.04,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd0d666",
+     "Color 2": "#cfd0d666"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -200,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A dashboard dial."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "DASHBOARD",
+    "source": "Text Block",
+    "params": {
+     "Text": "DASHBOARD\nDRAG A PARAMETER ONTO\nA DIAL\nIN - OUT - INVERT -\nDIAL RANGE",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Clip Playhead",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A green sweep along the timeline (Resolume's own pointer is blue)."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Follows Playhead",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 1.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.2,
+     "Position": 0.5,
+     "Color": "#4a8fe7ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.2,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Clip Position: the parameter follows scrubbing, speed, direction and beatloop."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "CLIP POSITION",
+    "source": "Text Block",
+    "params": {
+     "Text": "CLIP POSITION\nSYNCED TO THE PLAYHEAD\nCLIPS ONLY",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Timeline",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A timeline's animated value along the bottom."
+   }
+  ]
+ },
+ {
+  "deck": "Blend Modes",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Layer A",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#cfd0d6ff",
+     "Outline": 0.0,
+     "Outline Color": "#cfd0d6ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Layer A: a disc, left."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Layer B",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Alpha: mixed by opacity; transparent pixels show what is below."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "ALPHA (DEFAULT",
+    "source": "Text Block",
+    "params": {
+     "Text": "ALPHA (DEFAULT\nTRANSITION)\nCUT: HARD SWITCH",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Layer A",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Layer A: a disc, left."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Layer B",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#6fcf6fff",
+     "Outline": 0.0,
+     "Outline Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Add sums the channels; Screen is softer and glows."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "LIGHTEN MODES",
+    "source": "Text Block",
+    "params": {
+     "Text": "LIGHTEN MODES\nLIGHTEN - SCREEN -\nDODGE\n(ADD IS COMPARATIVE)",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#6fcf6f66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A tone."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Layer A",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#cfd0d6ff",
+     "Outline": 0.0,
+     "Outline Color": "#cfd0d6ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Layer A: a disc, left."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Layer B",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#2a2b33ff",
+     "Outline": 0.0,
+     "Outline Color": "#2a2b33ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Multiply darkens; Burn darkens hard and raises contrast."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No highlight: darken modes."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "DARKEN MODES",
+    "source": "Text Block",
+    "params": {
+     "Text": "DARKEN MODES\nDARKEN - MULTIPLY -\nBURN",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Layer A",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Layer A: a disc, left."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Layer B",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#cfd0d6ff",
+     "Outline": 0.0,
+     "Outline Color": "#cfd0d6ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Overlay: Multiply below 50% grey, Screen above."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "CONTRAST MODES",
+    "source": "Text Block",
+    "params": {
+     "Text": "CONTRAST MODES\nOVERLAY - SOFT LIGHT\nHARD LIGHT",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Layer A",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Layer A: a disc, left."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Layer B",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Difference: identical pixels turn black."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "COMPARATIVE MODES",
+    "source": "Text Block",
+    "params": {
+     "Text": "COMPARATIVE MODES\nADD (LAYER DEFAULT)\nSUBTRACT - DIFFERENCE\nDIFFERENCE I -\nEXCLUSION",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.75,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Luma Checker",
+    "source": "Checkered",
+    "params": {
+     "Num X": 6,
+     "Num Y": 4,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Layer A",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#cfd0d6ff",
+     "Outline": 0.0,
+     "Outline Color": "#cfd0d6ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Layer A: a disc, left."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Layer B",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#1e1f24ff",
+     "Outline": 0.0,
+     "Outline Color": "#1e1f24ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 180,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Luma Key: bright stays, dark goes transparent."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "COMPOSITE MODES",
+    "source": "Text Block",
+    "params": {
+     "Text": "COMPOSITE MODES\nLUMA KEY - LUMA KEY I\nLUMA IS ALPHA -\nDISPLACE",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Grey Ramp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#cfd0d6ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A grey ramp: the mask source."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Masked Disc",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.5,
+      "ceiling": 0.62
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "50 Mask: white fully visible, black transparent, grey partial."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "50 BLENDS",
+    "source": "Text Block",
+    "params": {
+     "Text": "50 BLENDS\n50 MASK - 50 ADD - 50\nMULTIPLY\n...TEN OF THEM",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Wipe Ellipse",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.9,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 600,
+      "floor": 0.2,
+      "ceiling": 1.2
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Wipe Ellipse: an elliptical wipe revealing the next layer."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Push Up",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.5,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#cfd0d6ff"
+    },
+    "fft": {
+     "Position": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 900,
+      "floor": 0.0,
+      "ceiling": 1.0
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Push Up / Down / Left / Right."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "TRANSITION MODES",
+    "source": "Text Block",
+    "params": {
+     "Text": "TRANSITION MODES\nWIPE ELLIPSE -\nDISSOLVE\nPUSH - ZOOM - TO BLACK",
+     "Font": "Segoe UI",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Timeline",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.9,
+     "Color": "#4a8fe7ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A timeline's animated value along the bottom."
+   }
+  ]
+ },
+ {
+  "deck": "This Rig",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Input Meter",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 2.0,
+     "Speed": 0.5,
+     "Height": 8.0,
+     "Jagginess": 0.8,
+     "Wobble": 0.2,
+     "Attenuation": 40.0,
+     "Line Width": 0.4,
+     "Fuzzyness": 0.0,
+     "Color": "#6fcf6fff",
+     "Show Knots": false
+    },
+    "fft": {
+     "Height": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 250,
+      "floor": 4.0,
+      "ceiling": 20.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "The spectrum display under an FFT-driven parameter."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Device Row",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.4,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#6fcf6fff",
+     "Color 2": "#6fcf6fff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 18.0,
+       "Position Y": 60.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Preferences > Audio > Audio Input Device: CABLE Output (VB-Audio Virtual Cable)."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "PREFERENCES > AUDI",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREFERENCES > AUDIO\nINPUT: CABLE OUTPUT\n(VB-AUDIO) - FFT GAIN",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "External FFT",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "APC Pads",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Pad Lit",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "One cell lit green: the clip that is playing."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Controller",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.9,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd0d666",
+     "Color 2": "#cfd0d666"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 70.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The blue selection outline around the chosen thing."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "MIDI In",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.2,
+     "Fade": true,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The BPM panel's beat indicator: a blue square stepping round a square, one corner per beat, outlined every 16 beats."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "PREFERENCES > MIDI",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREFERENCES > MIDI\nAPC40 MKII: IN + OUT\nOUTPUT DRIVES THE LEDS",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "JSON Rows",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 14,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Rows of a panel: one parameter per line."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Request",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#6fcf6fff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 900,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "GET /api/v1/composition: how every pack here was read back."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "PREFERENCES >",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREFERENCES >\nWEBSERVER\nREST API: ON - PORT\n8080\n/api/v1/composition",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "OSC In 7000",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.4,
+     "Color": "#4a8fe7ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A fader: one line whose position is the value."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "OSC Out 7001",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.6,
+     "Color": "#cfd0d6ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A fader: one line whose position is the value."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Message",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.5,
+     "Fade": true,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "The BPM panel's beat indicator: a blue square stepping round a square, one corner per beat, outlined every 16 beats."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "PREFERENCES > OSC",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREFERENCES > OSC\nIN 7000 - OUT 7001\n/composition/layers/1\n/clips/1/connect",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.7,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Texture",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.8,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#cfd0d666",
+     "Color 2": "#cfd0d666"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The blue selection outline around the chosen thing."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "DMA On",
+    "source": "Checkered",
+    "params": {
+     "Num X": 24,
+     "Num Y": 14,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#4a8fe766"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "DMA Textures: this rig sits on Autodetect; the manual recommends Force ON."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "PREFERENCES > VIDE",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREFERENCES > VIDEO\nDMA: AUTODETECT\n(MANUAL: FORCE ON)",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Panel",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1e1f24ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The interface's charcoal panel."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Default Rows",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 6,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Rows of a panel: one parameter per line."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Tempo Nudge Range",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f0a030ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A fader: one line whose position is the value."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#4a8fe766",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "PREFERENCES > DEFA",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREFERENCES > DEFAULTS\nBLEND: ADD -\nTRANSPORT:\nTIMELINE - PLAY MODE:\nLOOP",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A panel label, exactly as the manual names it."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Source Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 22,
+     "Num Y": 5,
+     "Color 1": "#1e1f24ff",
+     "Color 2": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The deck's clip grid: columns across, layers down."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Harvest Cell",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#4a8fe7ff",
+     "Outline": 0.0,
+     "Outline Color": "#4a8fe7ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "One cell lit green: the clip that is playing."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Library",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.9,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#6fcf6fff",
+     "Color 2": "#6fcf6fff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 70.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The blue selection outline around the chosen thing."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Highlight",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#6fcf6f66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A soft highlight on the selected panel."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "THE HARVEST -",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE HARVEST -\n7.28.1.26535\n22 SOURCES - 115\nEFFECTS\n1,094 PARAMS - 62\nBLENDS",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "What harvest_7281.py read off this running application through REST."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 22,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#2a2b33ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The grid's columns."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Blue Interface",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#1a2a44ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Shortcut mode: the interface turns partially blue."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Mapped Control",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.5,
+     "Spacing": 0.1,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The blue selection outline around the chosen thing."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Shortcut Options",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 2,
+     "Size": 0.22,
+     "Spacing": 0.5,
+     "Line Width": 0.06,
+     "Style": "Stroke",
+     "Gap": 20.0,
+     "Rotation": 0.0,
+     "Rotation Step": 22.5,
+     "Rotation Alternate": true,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#4a8fe7ff"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.0,
+      "ceiling": 45.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Toggle, Piano, Range, Value, Mouse: the Shortcuts tab, bottom-right."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Learn Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.15,
+     "Fade": true,
+     "Color 1": "#4a8fe7ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The BPM panel's beat indicator: a blue square stepping round a square, one corner per beat, outlined every 16 beats."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "CTRL - SHIFT - K",
+    "source": "Text Animator",
+    "params": {
+     "Text": "CTRL - SHIFT - K",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#cfd0d6ff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Shortcuts > Edit Keyboard, or CTRL-SHIFT-K; Escape leaves."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#4a8fe766",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A tone."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Dither",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.03,
+    "why": "A whisper of dither."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Output Level",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#6fcf6fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The composition's output level along the bottom."
+   }
+  ]
+ }
+]

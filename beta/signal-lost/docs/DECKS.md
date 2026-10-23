@@ -22,9 +22,9 @@ Palette: bed #0b0a14, body #f4e9c8, figure #ffb347, light #7fd37f, text #f4e9c8,
 
 Text corpus: GOOD EVENING. THIS IS SIGNAL LOST. · [WARM UP] · [TUNING] · 1230 KC · [MUSIC: THEME] · [ACT 1] · STATION IDENTIFICATION · TONIGHT'S HEADLINE · TRANSMISSION FROM TOMORROW · ANNOUNCER · ON AIR · [PAUSE]
 
-- Warm up to lock: Scene Launch 1 with every fader low, walk UP one column per bar while raising fader 4 (LIGHT) so the dial lamp comes up with the filaments; the needle locks on column 3.
+- Warm up to lock: Scene Launch 1 with every fader low, walk DOWN one column per bar while raising fader 4 (LIGHT) so the dial lamp comes up with the filaments; the needle locks on column 3.
 - Good evening: Scene Launch 6 on the downbeat, tap the row-5 TEXT pad so the caption retypes, and leave the ON AIR lamp on its own slow pulse. Do not touch an effect for a phrase.
-- Act one: UP to column 7, bank-C knob to a third with CRT lit so the act card reads as a title card on a print; drop it to zero on the first line of dialogue.
+- Act one: DOWN to column 7, Device knob 2 (TEXTURE) to a third with CRT lit so the act card reads as a title card on a print; drop it to zero on the first line of dialogue.
 
 ## Deck 2 - Writers Room
 
@@ -45,9 +45,9 @@ Palette: bed #0b0a14, body #ffb347, figure #f4e9c8, light #7fd37f, text #f4e9c8,
 
 Text corpus: OTR_LedgerScriptWriter · source_bank: my_story · custom_premise · story_characters · story_plot · story_setting · [SFX:] · [MUSIC:] · [BEAT] · [PAUSE] · [ACT] · LEDGER LOCKED
 
-- Premise to setting: walk UP through columns 1-4 one per phrase; the wires on row 3 wobble on the mids. Keep every effect off so the node boxes read.
+- Premise to setting: walk DOWN through columns 1-4 one per phrase; the wires on row 3 wobble on the mids. Keep every effect off so the node boxes read.
 - Beat: fire Scene Launch 6 exactly on a dropped beat in the music and let the room hold - the SCOPE goes flat on purpose.
-- Freeze to lock: UP to column 7 with bank-A at a quarter and TRAILS lit so the cascade's lines stack; UP again to Ledger Locked on the downbeat and tap BANK LOCK (CLEAN).
+- Freeze to lock: DOWN to column 7 with Device knob 6 (ECHO) at a quarter so the cascade's lines stack; DOWN again to Ledger Locked on the downbeat and tap BANK LOCK (CLEAN).
 
 ## Deck 3 - The Cast
 
@@ -69,8 +69,8 @@ Palette: bed #0b0a14, body #7fd37f, figure #ffb347, light #7fd37f, text #f4e9c8,
 Text corpus: OTR_CastLock · kokoro-onnx · af_heart · am_michael · ANNOUNCER · EN ES PT IT FR HI JA ZH · episode_language · VOICE POOL · ARCHIVIST · APPRENTICE · CAPTIONS MIRROR THE LINE · ON ONE MACHINE
 
 - Dialogue: Scene Launch 6 and ride faders 2 and 3 against each other as the voices trade lines; the SCOPE waveform is the master.
-- Eight languages: Scene Launch 4 with bank-D at a quarter and GRID CLONE lit so the eight bands tile; tap NEGATIVE once per language if the track has eight hits.
-- Credit roll: UP to column 8 on the last chorus, pull every fader but 5 and 7, and let the credits type over crackle; BLACKOUT on the final beat.
+- Eight languages: Scene Launch 4 with Device knob 3 (SPACE) at a quarter and GRID CLONE lit so the eight bands tile; tap NEGATIVE once per language if the track has eight hits.
+- Credit roll: DOWN to column 8 on the last chorus, pull every fader but 5 and 7, and let the credits type over crackle; BLACKOUT on the final beat.
 
 ## Deck 4 - The Graph
 
@@ -91,7 +91,7 @@ Palette: bed #0b0a14, body #ffb347, figure #7fd37f, light #ffb347, text #f4e9c8,
 
 Text corpus: OTR_LedgerScriptWriter · OTR_LedgerFreezeCascade · OTR_CastLock · OTR_BatchCharacterVoices · OTR_SceneSequencer · OTR_EpisodeAssembler · OTR_VideoRenderBatch · OTR_MasterAudioMux · script_json · ledger_json · master_audio_path · EPISODE.MP4
 
-- The journey: Scene Launch 1 then UP once per bar through all eight nodes; keep bank-A at a quarter with only TRAILS lit so each wire leaves a trace into the next column.
+- The journey: Scene Launch 1 then DOWN once per bar through all eight nodes; keep Device knob 6 (ECHO) at a quarter so each wire leaves a trace into the next column.
 - Sockets: on any node, tap the row-3 FIGURE pad and row-4 LIGHT pad alternately on the beat so inputs and outputs blink in turn; the kick swells the dots.
 - Mux: at column 8 pull faders 1 and 6, leave the green node and the waveform, and tap NEGATIVE for one bar as the file lands.
 
@@ -114,6 +114,6 @@ Palette: bed #0b0a14, body #f4e9c8, figure #e0432a, light #ffb347, text #f4e9c8,
 
 Text corpus: A FILM LAB, AFTER HOURS · KEEP THE LIDS ON · PAST THE RED LINE · THE SMELL OF VINEGAR · REEL BY REEL · IT'S SHIVERING AGAIN · BY DAWN · THIS HAS BEEN SIGNAL LOST · GOOD NIGHT · ARCHIVIST · APPRENTICE · NARRATOR
 
-- The gauge: Scene Launch 3, hold the row-3 FIGURE pad so the red needle shows only while held; UP to Shivering on the hi-hat run and let the face shake.
-- Vinegar: column 4, bank-B knob to a third with WAVE WARP lit so the acetate haze warps the hatching; pull it to zero on the next caption.
-- Sign-off: UP to column 8 on the last phrase, fade every fader but 2, 3, 5 and 8, let the carrier drop to hiss, then STOP ALL CLIPS.
+- The gauge: Scene Launch 3, hold the row-3 FIGURE pad so the red needle shows only while held; DOWN to Shivering on the hi-hat run and let the face shake.
+- Vinegar: column 4, Device knob 3 (SPACE) to a third with WARPSPEED lit so the acetate haze warps the hatching; pull it to zero on the next caption.
+- Sign-off: DOWN to column 8 on the last phrase, fade every fader but 2, 3, 5 and 8, let the carrier drop to hiss, then STOP ALL CLIPS.

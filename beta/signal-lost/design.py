@@ -263,11 +263,11 @@ def deck1():
                             "[MUSIC: THEME]", "[ACT 1]", "STATION IDENTIFICATION", "TONIGHT'S HEADLINE",
                             "TRANSMISSION FROM TOMORROW", "ANNOUNCER", "ON AIR", "[PAUSE]"],
             "moments": [
-                "Warm up to lock: Scene Launch 1 with every fader low, walk UP one column per bar while raising "
+                "Warm up to lock: Scene Launch 1 with every fader low, walk DOWN one column per bar while raising "
                 "fader 4 (LIGHT) so the dial lamp comes up with the filaments; the needle locks on column 3.",
                 "Good evening: Scene Launch 6 on the downbeat, tap the row-5 TEXT pad so the caption retypes, "
                 "and leave the ON AIR lamp on its own slow pulse. Do not touch an effect for a phrase.",
-                "Act one: UP to column 7, bank-C knob to a third with CRT lit so the act card reads as a title "
+                "Act one: DOWN to column 7, Device knob 2 (TEXTURE) to a third with CRT lit so the act card reads as a title "
                 "card on a print; drop it to zero on the first line of dialogue."],
             "clips": C}
 
@@ -358,12 +358,12 @@ def deck2():
                             "story_characters", "story_plot", "story_setting", "[SFX:]", "[MUSIC:]",
                             "[BEAT]", "[PAUSE]", "[ACT]", "LEDGER LOCKED"],
             "moments": [
-                "Premise to setting: walk UP through columns 1-4 one per phrase; the wires on row 3 wobble on "
+                "Premise to setting: walk DOWN through columns 1-4 one per phrase; the wires on row 3 wobble on "
                 "the mids. Keep every effect off so the node boxes read.",
                 "Beat: fire Scene Launch 6 exactly on a dropped beat in the music and let the room hold - "
                 "the SCOPE goes flat on purpose.",
-                "Freeze to lock: UP to column 7 with bank-A at a quarter and TRAILS lit so the cascade's lines "
-                "stack; UP again to Ledger Locked on the downbeat and tap BANK LOCK (CLEAN)."],
+                "Freeze to lock: DOWN to column 7 with Device knob 6 (ECHO) at a quarter so the cascade's lines "
+                "stack; DOWN again to Ledger Locked on the downbeat and tap BANK LOCK (CLEAN)."],
             "clips": C}
 
 
@@ -447,9 +447,9 @@ def deck3():
             "moments": [
                 "Dialogue: Scene Launch 6 and ride faders 2 and 3 against each other as the voices trade lines; "
                 "the SCOPE waveform is the master.",
-                "Eight languages: Scene Launch 4 with bank-D at a quarter and GRID CLONE lit so the eight "
+                "Eight languages: Scene Launch 4 with Device knob 3 (SPACE) at a quarter and GRID CLONE lit so the eight "
                 "bands tile; tap NEGATIVE once per language if the track has eight hits.",
-                "Credit roll: UP to column 8 on the last chorus, pull every fader but 5 and 7, and let the "
+                "Credit roll: DOWN to column 8 on the last chorus, pull every fader but 5 and 7, and let the "
                 "credits type over crackle; BLACKOUT on the final beat."],
             "clips": C}
 
@@ -528,8 +528,8 @@ def deck4():
             "text_corpus": [n[1] for n in NODES] + ["script_json", "ledger_json", "master_audio_path",
                                                      "EPISODE.MP4"],
             "moments": [
-                "The journey: Scene Launch 1 then UP once per bar through all eight nodes; keep bank-A at a "
-                "quarter with only TRAILS lit so each wire leaves a trace into the next column.",
+                "The journey: Scene Launch 1 then DOWN once per bar through all eight nodes; keep Device knob 6 "
+                "(ECHO) at a quarter so each wire leaves a trace into the next column.",
                 "Sockets: on any node, tap the row-3 FIGURE pad and row-4 LIGHT pad alternately on the beat "
                 "so inputs and outputs blink in turn; the kick swells the dots.",
                 "Mux: at column 8 pull faders 1 and 6, leave the green node and the waveform, and tap "
@@ -621,10 +621,10 @@ def deck5():
                             "APPRENTICE", "NARRATOR"],
             "moments": [
                 "The gauge: Scene Launch 3, hold the row-3 FIGURE pad so the red needle shows only while held; "
-                "UP to Shivering on the hi-hat run and let the face shake.",
-                "Vinegar: column 4, bank-B knob to a third with WAVE WARP lit so the acetate haze warps the "
+                "DOWN to Shivering on the hi-hat run and let the face shake.",
+                "Vinegar: column 4, Device knob 3 (SPACE) to a third with WARPSPEED lit so the acetate haze warps the "
                 "hatching; pull it to zero on the next caption.",
-                "Sign-off: UP to column 8 on the last phrase, fade every fader but 2, 3, 5 and 8, let the "
+                "Sign-off: DOWN to column 8 on the last phrase, fade every fader but 2, 3, 5 and 8, let the "
                 "carrier drop to hiss, then STOP ALL CLIPS."],
             "clips": C}
 

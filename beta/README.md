@@ -51,3 +51,26 @@ input and output sockets, and The Shivering Gauge, the episode the pack's README
 opens on. It uses 320 stock generators, no media files and no plugins. It was
 opened on Avenue 7.28.1 and every clip was read back: 18/18 checks, 0/320
 mismatches.
+
+`the-manual/` is **The Manual - Avenue 7.28.1**: a composition about Resolume
+itself. Its five decks are the Basic Vocabulary (Composition, Deck, Layer,
+Group, Clip, Column, the render order), the Clips chapter (Trigger Style, Beat
+Snap, Clip Target, Resize, Fader Start, Ignore Column Trigger, Auto Pilot,
+Transition), Parameter Animation (the cogwheel, Timeline, BPM Sync, External
+FFT, Gain and Fall, Envelopes, the Dashboard, Clip Position), the 62 blend
+modes grouped as the manual groups them, and this rig's own Preferences. Every
+term is the manual's, and the visual grammar is the interface's own: charcoal
+panels, blue selection, green playing clips. It uses 320 stock generators, no
+media files and no plugins, and was read back on Avenue 7.28.1: 18/18 checks,
+0/320 mismatches.
+
+`the-surface/` is **The Surface - APC40 mkII + MIDI**: the controller every
+pack here is played on, drawn as schematics. The grid (notes 0-39, the RGB
+velocity palette, the Mode 1 SysEx), the strips (note fixed, channel = track;
+CC7, CC14, CC15), the knobs and transport (CC16-23 with LED rings, CC48-55,
+Cue Level, the relative tempo encoder, PLAY STOP RECORD, the footswitch), MIDI
+itself (DIN-5, 31,250 baud, status bytes, the 2^56 key Resolume files a raw
+message under), and a Datavideo SE-500 video mixer as the wildcard, because it
+is controlled over the same five-pin wire. Every number is from the Akai
+APC40 Mk2 Communications Protocol v1.2. 320 stock generators, no media, no
+plugins; see its README for the rig read-back result.
