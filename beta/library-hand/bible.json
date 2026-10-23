@@ -1,0 +1,382 @@
+{
+ "pack_name": "The Library And The Hand",
+ "comp_name": "The Library And The Hand - GUSTO",
+ "tagline": "The library has precedents. The hand still needs a test.",
+ "decks": [
+  {
+   "name": "The Plinths",
+   "slug": "plinths",
+   "theme": "documented",
+   "world": "A long wireframe hall of glass-outline plinths, each holding a small machine that already exists: a domed cabinet, a chrome jukebox, an aluminium rail, two industrial arms, a servo on a fader. The camera dollies past them at 33 1/3 rpm with one stylus click per revolution. Everything documented is SOLID stylus-cyan; the one thing that does not exist, the whole machine, is a dashed orange booth that stops drawing itself halfway. Register: feasibility-study captions in Cascadia Mono, bottom-left.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#17171c",
+     "why": "Lacquer. The locked black every scene stands on."
+    },
+    {
+     "role": "body",
+     "hex": "#f2efe8",
+     "why": "Paper-white wireframe for the disc and the hall; dimmed to 40% when it is context."
+    },
+    {
+     "role": "figure",
+     "hex": "#3cc6d0",
+     "why": "Stylus-cyan: a documented machine, a published spec, an attributed claim."
+    },
+    {
+     "role": "light",
+     "hex": "#f2efe8",
+     "why": "The click is paper-white and one frame long."
+    },
+    {
+     "role": "text",
+     "hex": "#3cc6d0",
+     "why": "Captions take the evidence colour of what they describe."
+    },
+    {
+     "role": "aura",
+     "hex": "#f2792b",
+     "why": "Cue-orange: proposal, reconstruction, estimate. Only ever a wash here."
+    }
+   ],
+   "columns": [
+    "Cold Open",
+    "Six Jobs",
+    "Glenton 150",
+    "Rocket LP",
+    "Maker Rail",
+    "Juke Bots",
+    "Scripted Shows",
+    "DJ I Robot"
+   ],
+   "text_corpus": [
+    "GUSTO",
+    "RETRIEVE - FLIP - TWO PLAYERS",
+    "SCRATCH - CUT",
+    "GLENTON 150",
+    "150 LPs",
+    "~EUR 100,000 REPORTED",
+    "SOUND LEISURE LP",
+    "ROBOT DJ v1 -> v2",
+    "juke_bots",
+    "PERFORMANCE != AUTONOMY",
+    "DJ I, ROBOT",
+    "NOT DOCUMENTED"
+   ],
+   "moments": [
+    "Cold open: fire Scene Launch 1 with every effect off and the crossfader hard right, so only the disc, the orange hand and the title exist; let the click run for a full phrase before anything moves.",
+    "The hall: walk UP through Glenton, Rocket and Maker Rail with the bank-C knob at a third and CRT lit so the plinths read as a console; tap the row-5 TEXT pad on each downbeat so the dimension lines retype.",
+    "juke_bots: Scene Launch 6, then hold the row-3 FIGURE pad and ride the bank-A knob up with only Trails lit so the held disc leaves a cyan afterimage against the stylus; drop it to zero on the breakdown."
+   ]
+  },
+  {
+   "name": "The Hand",
+   "slug": "hand",
+   "theme": "proposal",
+   "world": "The pressure is physical and the click runs at 45. One desk, one lamp, a hobby servo on a fader; then the seven-inch beside the twelve-inch at the same scale, the platter hatched heavy, I = 1/2 m r^2 in orange because it is a model. The proposed hand swings in over Deck A and hovers. Nothing in this deck has been measured: almost every figure is DASHED cue-orange, and the few cyan lines are a $247 subtotal and a builder's own words.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#17171c",
+     "why": "Lacquer."
+    },
+    {
+     "role": "body",
+     "hex": "#f2efe8",
+     "why": "Paper-white for the discs and the requested trajectory."
+    },
+    {
+     "role": "figure",
+     "hex": "#f2792b",
+     "why": "Cue-orange: the hand, the head, the wall, the layouts. Proposed."
+    },
+    {
+     "role": "light",
+     "hex": "#f2efe8",
+     "why": "The click, now one tick every 1 1/3 s."
+    },
+    {
+     "role": "text",
+     "hex": "#f2792b",
+     "why": "Targets and models read orange; the few documented facts read cyan."
+    },
+    {
+     "role": "aura",
+     "hex": "#f2792b",
+     "why": "Heat, torque windows, simulated limits: orange radials."
+    }
+   ],
+   "columns": [
+    "Scratchbot",
+    "Five Hour Clock",
+    "Seven vs Twelve",
+    "Inertia Gap",
+    "Two Separations",
+    "Circle Trap",
+    "Millimetres",
+    "Swing-In Hand"
+   ],
+   "text_corpus": [
+    "SCRATCHBOT 2015",
+    "7-INCH OKAY - 12-INCH POOR",
+    "I ~ 1/2 m r^2",
+    "13.2 x",
+    "8-15 REVERSALS/s",
+    "LIBRARY != PERFORMANCE",
+    "NO LOOSE SLEEVES",
+    "B RAIL (PROPOSED)",
+    "MECHANISM PREVIEW",
+    "$247 BASE COMPONENTS",
+    "STROKE / GRIP / HEAT",
+    "DESIGN INTENT"
+   ],
+   "moments": [
+    "Seven vs twelve: Scene Launch 3, then hold for two clicks with nothing lit; on the third click tap the row-3 FIGURE pad off so only the twelve-inch remains, and let the SCOPE show the slip.",
+    "Inertia gap: Scene Launch 4 with bank-D at a quarter and STUTTER lit so the ratio bars step like a chart recorder; push the row-2 BODY fader on the drop so the bars fill the frame.",
+    "Swing-in: walk UP to column 8, hold the row-3 FIGURE pad (the coaxial head) and ride the bank-A knob with GLOW lit until the ring whites out over the label, then pull it back: no pass is awarded."
+   ]
+  },
+  {
+   "name": "The Catalog",
+   "slug": "catalog",
+   "theme": "policy",
+   "world": "The middle zone, where a record waits under a ring light to be told what it is. Tags, cameras, an optional black-and-white marker; then the marker's cells become a grid of switches and the switches become a permission table. An AI assistant asks to scratch a play-only copy and the local controller refuses: a paper-white stamp held for one full click while the hand stays up. Beneath the floor, three layers and one clock; at the front, a mushroom stop. The click is back at 33 1/3.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#17171c",
+     "why": "Lacquer."
+    },
+    {
+     "role": "body",
+     "hex": "#f2efe8",
+     "why": "The disc, the marker's white cells, the stamp."
+    },
+    {
+     "role": "figure",
+     "hex": "#f2792b",
+     "why": "Every tier and lock is a proposed enforcement design: orange."
+    },
+    {
+     "role": "light",
+     "hex": "#f2efe8",
+     "why": "The click; a polarised cyan lamp for the camera tier."
+    },
+    {
+     "role": "text",
+     "hex": "#f2792b",
+     "why": "Policy is proposed; published hardware specs are cyan."
+    },
+    {
+     "role": "aura",
+     "hex": "#3cc6d0",
+     "why": "Cyan for the near-field and the light curtain."
+    }
+   ],
+   "columns": [
+    "What Record",
+    "NFC Tier",
+    "Camera Tier",
+    "ArUco Tier",
+    "Who May Touch",
+    "Refused",
+    "Three Layers",
+    "Interlocks"
+   ],
+   "text_corpus": [
+    "WHAT IS THIS RECORD",
+    "COPY_PENDING",
+    "TIER 1 NFC",
+    "TIER 2 CAMERA",
+    "TIER 3 ArUco",
+    "COPY_1 - SIDE A",
+    "PLAY_ONLY",
+    "SCRATCH_APPROVED",
+    "ARCHIVAL_LOCKED",
+    "REFUSED AT THE CONTROLLER",
+    "IDENTIFICATION != AUTHORIZATION",
+    "RECOVERY_AUDIT"
+   ],
+   "moments": [
+    "Refused: Scene Launch 5 then walk UP to Refused on a downbeat; tap the row-5 TEXT pad so the stamp retypes, hold it for one full click with nothing else lit, and only then press the row-3 FIGURE pad on the next scene so the hand lowers onto COPY_2 instead.",
+    "ArUco: Scene Launch 4 with bank-D at a third and MIRROR QUAD lit so the marker tiles into a grid; tap NEGATIVE on the one of each bar so the cells invert with the click.",
+    "Interlocks: column 8, hold the row-2 BODY pad and roll the bank-A knob with VOID lit so the exclusion rings close around the mushroom stop; on the drop tap RECORD for one bar of blackout."
+   ]
+  },
+  {
+   "name": "The Ledger",
+   "slug": "ledger",
+   "theme": "estimate",
+   "world": "What GUSTO must earn, in the order it must spend. A six-rung ladder with precedents on the cyan left and targets on the orange right; a ledger with three booths at three scales; a road of gates whose counters all read NOT RUN. Then the cold open comes back exactly, disc and hand and camera, and the viewer sees what was missing: the test. The hand lowers, freezes one frame before contact, the needle lifts, and the sources scroll in silence.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#17171c",
+     "why": "Lacquer."
+    },
+    {
+     "role": "body",
+     "hex": "#f2efe8",
+     "why": "Ladder, ledger lines, the returning disc."
+    },
+    {
+     "role": "figure",
+     "hex": "#f2792b",
+     "why": "Every total, target and timer is dashed orange."
+    },
+    {
+     "role": "light",
+     "hex": "#f2efe8",
+     "why": "The click, until the needle lifts."
+    },
+    {
+     "role": "text",
+     "hex": "#f2792b",
+     "why": "Estimates orange; the end card's sources cyan."
+    },
+    {
+     "role": "aura",
+     "hex": "#3cc6d0",
+     "why": "Only the ghost Glenton tag and the rack glow cyan."
+    }
+   ],
+   "columns": [
+    "The Ladder",
+    "The Ledger",
+    "Gate 1A",
+    "Gate 1B",
+    "Stage Two",
+    "Stage Three",
+    "Coda",
+    "End Card"
+   ],
+   "text_corpus": [
+    "1 PLAYBACK",
+    "2 BEATMATCH",
+    "3 BABY SCRATCH",
+    "6 JUGGLE",
+    "~$3,373",
+    "~$15,178",
+    "~$39,777",
+    "RESULT: NOT RUN",
+    "15:00 REQUIRED - 00:00 ELAPSED",
+    "CONTINUE / REDESIGN / STOP",
+    "~$1,616 - UNDER 4 WEEKS",
+    "THE HAND STILL NEEDS A TEST"
+   ],
+   "moments": [
+    "Gates: walk UP from Gate 1A through Stage Three one column per phrase, tapping the row-5 TEXT pad on each downbeat so the counters retype at NOT RUN; never let a bank knob pass a third.",
+    "Coda: Scene Launch 7 with every effect off, crossfader hard right, SCOPE fader at zero; hold the row-3 FIGURE pad as the hand lowers and release it one click before the drop.",
+    "End card: walk UP to column 8 on the last beat, pull faders 1-4 to zero, and let the sources type out over silence; RECORD for blackout when the room is done."
+   ]
+  },
+  {
+   "name": "SL-1210MKX",
+   "slug": "sl1210",
+   "theme": "wildcard",
+   "world": "The Technics SL-1210MKX (ADE, October 2026) drawn as schematics: the die-cast platter from above, the under-platter DIP switches, the new +-4 / +-50 % pitch slot, the silver S-tonearm at 22 degrees, the slipmat letting the record reverse above a forward platter. Internals not yet published for the MKX are labelled MK7 PLATFORM. Everything the manual documents is cyan; the one orange column is the scratch, because that is the job GUSTO has not yet earned. It ends in the run-out groove with the blemish the whole film's click was built from.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#17171c",
+     "why": "Lacquer."
+    },
+    {
+     "role": "body",
+     "hex": "#f2efe8",
+     "why": "The platter and the strobe rows, paper-white."
+    },
+    {
+     "role": "figure",
+     "hex": "#3cc6d0",
+     "why": "Cyan: groove, tonearm, pitch knob, documented deck functions."
+    },
+    {
+     "role": "light",
+     "hex": "#3cc6d0",
+     "why": "The strobe lamp is the deck's one cyan light."
+    },
+    {
+     "role": "text",
+     "hex": "#3cc6d0",
+     "why": "Operating-instruction captions in Consolas."
+    },
+    {
+     "role": "aura",
+     "hex": "#f2792b",
+     "why": "Orange exists only in the Slipmat column."
+    }
+   ],
+   "columns": [
+    "33 1/3",
+    "DIP Switches",
+    "Pitch Fader",
+    "S-Tonearm",
+    "Slipmat",
+    "45",
+    "Reverse",
+    "Lock Groove"
+   ],
+   "text_corpus": [
+    "SL-1210MKX",
+    "33 1/3 RPM - 1.8 s / REV",
+    "45 RPM - 1.33 s / REV",
+    "DIP SW1-SW8",
+    "PITCH +-4 / +-50 %",
+    "LIFT - POSITION - LOWER",
+    "SLIPMAT",
+    "REVERSE PLAYBACK",
+    "11.9 kg - 0.7 s START",
+    "LOCKED GROOVE",
+    "ONE TICK EVERY 1.8 s",
+    "NEVER MELODIC"
+   ],
+   "moments": [
+    "33 to 45: Scene Launch 1, then fire Scene Launch 6 on a downbeat with Track knob 8 (TIME) pushed from centre to three-quarters so every generator speeds up with the click.",
+    "Slipmat: column 5, hold the row-3 FIGURE pad and push the bank-B knob with TUNNEL lit so the reversing orange groove pulls the platter inward; release on the breakdown.",
+    "Lock groove: walk UP to column 8, pull every fader but 2, 3 and 4, and let the blemish tick on the highs until the room is quiet; then STOP ALL CLIPS as the needle lifts."
+   ]
+  }
+ ],
+ "effect_wishlist": [
+  {
+   "effect": "Trails",
+   "role": "Bank A persistence: the held disc's afterimage, the loader path, the hand lowering frame by frame."
+  },
+  {
+   "effect": "Bloom",
+   "role": "Bank A glow for the strobe lamp, the ring light and the white-out over the label; kept under a third."
+  },
+  {
+   "effect": "Vignette",
+   "role": "Bank A, the work lamp's throw and the exclusion zone closing."
+  },
+  {
+   "effect": "CRT",
+   "role": "Bank C period: the plinths and the cross-section read as a console."
+  },
+  {
+   "effect": "Stop Motion",
+   "role": "Bank C: the chart-recorder step for ratio bars and counters."
+  },
+  {
+   "effect": "Mirror Quad",
+   "role": "Bank D: the ArUco marker tiles into the switch grid."
+  },
+  {
+   "effect": "Tunnel",
+   "role": "Bank B: the reversing groove pulls the platter inward in Slipmat."
+  },
+  {
+   "effect": "Invert RGB",
+   "role": "Bank A: the marker's cells invert with the click."
+  },
+  {
+   "effect": "Edge Detection",
+   "role": "Bank D: any fill becomes wireframe again; the pack's safety net against solid shapes."
+  }
+ ],
+ "fft_philosophy": "The film has one sound, a stylus click once per revolution, so the composition's reactivity is built to read as rotation and never as a light show. Sub and low (kick) drive only width and size: the disc's line width, the ratio bars, the exclusion rings, the hand's scale, on a 300-500 ms release, so a kick is a push on the record. Mids drive the SCOPE 1:1 as ACTUAL RECORD ANGLE, the one honest readout, and breathe the hall's frequency and the confidence dot. Highs touch only ruling fuzz and hatching: hi-hats become jitter on clock ticks and scan lines. Nothing about colour ever reacts: cyan means documented and orange means proposed, and the music does not get to change what is true. Text never moves. The click itself is a Stroboscope held on the LIGHT layer at 33 1/3 or 45; it is a motif, not the beat.",
+ "wildcard_rationale": "Four decks walk the script: the plinths that already exist, the hand that is only proposed, the catalog that decides who may touch which copy, and the ledger of what it would cost to find out. The fifth deck is the Technics SL-1210MKX manual drawn as schematics, because every number in the film - 1.8 seconds per revolution, 1.8 kg, 332 mm, lift-position-lower - comes from that deck, and because the click the whole film rides is a locked groove on it."
+}

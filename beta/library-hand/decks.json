@@ -1,0 +1,7898 @@
+[
+ {
+  "deck": "The Plinths",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Lacquer",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#17171cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black. A single disc turns at frame centre."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "12-Inch Disc",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 10,
+     "Size": 0.6,
+     "Spacing": 0.12,
+     "Line Width": 0.012,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.012,
+      "ceiling": 0.036000000000000004
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The twelve-inch record as concentric wireframe grooves, turning flat at frame centre."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Scratch Head",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.07,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2792bff",
+     "Outline": 0.08,
+     "Outline Color": "#f2792bff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.07,
+      "ceiling": 0.11200000000000002
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 180,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The dashed proposed hand enters above and stops just before contact."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "GUSTO",
+    "source": "Text Block",
+    "params": {
+     "Text": "GUSTO\nFEASIBILITY STUDY",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f2efe8ff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Cold-open title, paper-white, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No colour claim yet: nothing is documented, nothing is proposed."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No grid in the cold open; the grid arrives with the specification."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Empty Booth",
+    "source": "Tunnelines",
+    "params": {
+     "Color 1": "#24242bff",
+     "Color 2": "#f2efe866",
+     "Line Width": 0.008,
+     "Zoom": 1.2,
+     "Vertical": 0.06,
+     "Frequency": 0.06,
+     "Horizontal": 0.09
+    },
+    "fft": {
+     "Frequency": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 900,
+      "floor": 0.06,
+      "ceiling": 0.18
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Isometric plan of an empty booth on the lacquer grid."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Six Tags",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 6,
+     "Width": 0.05,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2792bff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.04,
+      "ceiling": 0.12
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Six requirement tags in a row, dashed orange: specified, not built."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "RANDOM ACCESS - FL",
+    "source": "Text Block",
+    "params": {
+     "Text": "RANDOM ACCESS - FLIP\nDUAL DECK - BEATMATCH\nSCRATCH - CUT",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The six jobs typed on, one tag at a time, in proposal orange."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "150 LPs On Edge",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 30,
+     "Width": 0.025,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "One hundred fifty bare discs standing on edge in an illuminated rack."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Stone Platters",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 5,
+     "Size": 0.3,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#3cc6d0ff",
+     "Color 2": "#3cc6d0ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.015,
+      "ceiling": 0.045
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -380,
+       "Position Y": -120,
+       "Scale": 70,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "Two stone turntables, documented, so the disc is cyan; left platter."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Glass Dome",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3cc6d066",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "The glass-outline dome as a soft cyan radial over the cabinet."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "GLENTON 150",
+    "source": "Text Block",
+    "params": {
+     "Text": "GLENTON 150\n150 LPs - 2 STONE\nDECKS\n169 x 215 x 104 CM",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Dimension lines in solid cyan, from the manufacturer's page."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The platter's rotation, documented: cyan."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Chrome Rocket",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.1,
+     "Bloom Mode": "Add",
+     "Shape Types": "Circle",
+     "Shape Rounding": 0.1,
+     "Line Ammount": 10,
+     "Innter Color 1": "#f2efe866",
+     "Inner color 2": "#3cc6d0ff",
+     "Outer Color 1": "#f2efe866",
+     "Outer Color 2": "#3cc6d0ff",
+     "Inner Scale": 0.35,
+     "Outer Scale": 1.4,
+     "Intersect Scale": 0.6
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.3,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The Anniversary Rocket's chrome silhouette as round wireframe geometry."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Ten LP Magazine",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 10,
+     "Width": 0.05,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Ten LPs in the magazine; the VLP-20 holds twenty on a separate outline."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "SOUND LEISURE LP",
+    "source": "Text Block",
+    "params": {
+     "Text": "SOUND LEISURE LP\nCONCEPT 1968 -\nLAUNCHED\n13 OCT 2018",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Two date stamps drop in solid cyan."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Iso Floor",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 62.0,
+     "Direction": 0.0,
+     "Position Y": 6.0,
+     "Speed": 0.15,
+     "Height": 4.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.0,
+     "Attenuation": 140.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#24242bff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A tilted wireframe floor: the booth seen from the isometric camera."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "One Metre Rail",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The one-metre linear stage, a physical mechanism: cyan."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Silicone Cups",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.2,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 0.15,
+     "Speed": 0.4,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.2,
+      "ceiling": 0.45
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "v1's two custom silicone suction cups; v2's edge gripper replaces them."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "ROBOT DJ v1 -> v2",
+    "source": "Text Block",
+    "params": {
+     "Text": "ROBOT DJ v1 -> v2\n1 M RAIL - 5-NODE\nCANopen\nPHYSICAL BUILD\nINCOMPLETE",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Published design details in cyan; the unfinished route stays dashed."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "The simulated full workflow as an orange wash: it does not turn the machine cyan."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Hatching",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 60,
+     "Width": 0.01,
+     "Rotation": 45.0,
+     "Position": 0.5,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Hatched vector fill: heavy platter hatching, never a texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The simulation window's motion, dashed orange."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "22 Records Ring",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 22,
+     "Size": 0.9,
+     "Spacing": 0.1,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#3cc6d0ff",
+     "Color 2": "#3cc6d0ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Twenty-two records in racks, ringed around both arms; the safety perimeter."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Held Disc",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.26,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3cc6d0ff",
+     "Outline": 0.05,
+     "Outline Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.22,
+      "ceiling": 0.34
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "One arm holds a disc at its centre and rotates it against a stylus: forward, back, fast, slow."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "robotlab - juke_bo",
+    "source": "Text Block",
+    "params": {
+     "Text": "robotlab - juke_bots\n2001-2007 - 22 RECORDS\nNO PLAYBACK PLATTER",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Exhibition labels tick past in cyan."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The held disc against the stylus: documented scratching, cyan."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Film Strip Bands",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 3,
+     "Width": 0.18,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Three translucent wireframe film-strip bands, one per show."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Sprocket Holes",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 14,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "high",
+      "gain": 8.0,
+      "release": 250,
+      "floor": 0.015,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Sprocket ruling across the bands: edited video, time adjustment, compositing."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "YuMi - AUTOMATICA ",
+    "source": "Text Block",
+    "params": {
+     "Text": "YuMi - AUTOMATICA - DJ\nKUKA\nPERFORMANCE !=\nCOMPLETE\nAUTONOMY",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Documented productions in cyan; no blanket NO FEEDBACK label."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No wash: three different demonstrations, not interchangeable proofs."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Three Servos",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.18,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 0.15,
+     "Speed": 0.3,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.18,
+      "ceiling": 0.43
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Three solid cyan servo icons."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Deck Schematic",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 6,
+     "Size": 0.4,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2792bff",
+     "Color 2": "#f2792bff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A dashed reconstruction of records and a mixer: SCHEMATIC - DECK LAYOUT NOT VERIFIED."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "DJ I, ROBOT - MIT",
+    "source": "Text Block",
+    "params": {
+     "Text": "DJ I, ROBOT - MIT\n1998 / 1999 / 2001\nEARLIER SCRATCH / CUT\n/ MIX",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Three separate milestones kept distinct."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   }
+  ]
+ },
+ {
+  "deck": "The Hand",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Iso Floor",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 62.0,
+     "Direction": 0.0,
+     "Position Y": 6.0,
+     "Speed": 0.15,
+     "Height": 3.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.0,
+     "Attenuation": 140.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#24242bff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A tilted wireframe floor: the booth seen from the isometric camera."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Servo Sweep",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 4.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.18,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.18,
+      "ceiling": 0.5800000000000001
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A two-servo arm pivots over the spindle: one presses the pad, one sweeps it."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Crank On Fader",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.06,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3cc6d0ff",
+     "Outline": 0.1,
+     "Outline Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.06,
+      "ceiling": 0.096
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 520,
+       "Position Y": -300,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "A hobby servo with a 3D-printed crank moving the crossfader stem, bottom right."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "SCRATCHBOT - 2015",
+    "source": "Text Block",
+    "params": {
+     "Text": "SCRATCHBOT - 2015\nARDUINO MEGA 2560\nHEEL CUSHION -\nGRIP-MAT",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Pad materials: tried and struck through, then the two that worked."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Desk Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#f2efe866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "A single work lamp over a desk-sized plinth."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 48,
+     "Width": 0.008,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The pad's sweep around the spindle, documented."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.006,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Clock Ticks",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 24,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 0.0,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Clock ticks counting against beat-phase messages; hi-hats smear them into jitter."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Laptop Heat",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.1,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.1,
+     "Line Ammount": 8,
+     "Innter Color 1": "#3cc6d0ff",
+     "Inner color 2": "#f2792bff",
+     "Outer Color 1": "#3cc6d0ff",
+     "Outer Color 2": "#f2792bff",
+     "Inner Scale": 0.35,
+     "Outer Scale": 1.4,
+     "Intersect Scale": 0.6
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.3,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The laptop glows: timing becomes unstable at 5:00:00. REPORTED THERMAL THROTTLING."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "5:00:00 - MIDI SYN",
+    "source": "Text Block",
+    "params": {
+     "Text": "5:00:00 - MIDI SYNC\nTEST\nTRAKTOR > loopMIDI >\nHAIRLESS > MEGA 2560",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The signal line from the laptop, in cyan: a documented chain."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "Heat as an orange radial that grows with the mids: reported, not measured."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 64,
+     "Width": 0.004,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Beat Phase",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 4,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Beat-phase error trace: steady until the throttle."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "12-Inch 180 g",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 12,
+     "Size": 0.62,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 260,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The twelve-inch LP at fixed camera scale, right of centre."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "7-Inch 40 g",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 6,
+     "Size": 0.36,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe866",
+     "Color 2": "#f2efe866"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -420,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The seven-inch single, same scale, so the larger radius is immediately apparent."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "7-INCH: WORKED OKA",
+    "source": "Text Block",
+    "params": {
+     "Text": "7-INCH: WORKED OKAY\n12-INCH: POOR\nPERFORMANCE",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The builder's own words."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Two outlines, two clicks, nothing else."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A dashed reconstruction of inadequate motion and possible slip: hypothetical."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Exploded Layers",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 6,
+     "Width": 0.02,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Three stacked layers in side elevation: platter, slipmat, record."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Ratio Bars",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 2,
+     "Width": 0.14,
+     "Rotation": 90.0,
+     "Position": 0.62,
+     "Color": "#f2792bff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 400,
+      "floor": 0.1,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Illustrative ratio bars, dashed: 13.2 x inertia for the same angular acceleration."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Requested vs Actua",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 5.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.2,
+     "Position": 0.5,
+     "Color": "#f2efe8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.2,
+      "ceiling": 0.6000000000000001
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A paper-white requested trajectory; the dashed record response diverges under SIMULATED LIMIT."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "I ~ 1/2 m r^2",
+    "source": "Text Block",
+    "params": {
+     "Text": "I ~ 1/2 m r^2\n180 g LP ~ 13.2 x 40 g\nSINGLE\n8-15 REVERSALS/s",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The formula and the reversal-rate target, orange: a model, not a measurement."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Platter Hatch",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 80,
+     "Width": 0.01,
+     "Rotation": 45.0,
+     "Position": 0.5,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.16,
+    "why": "Heavy hatching on the aluminium platter."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 5.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.1,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Record angle diverging from motor angle."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Iso Floor",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 62.0,
+     "Direction": 0.0,
+     "Position Y": 6.0,
+     "Speed": 0.15,
+     "Height": 4.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.0,
+     "Attenuation": 140.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#24242bff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A tilted wireframe floor: the booth seen from the isometric camera."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "The Wall",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2792bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A dashed orange wall drops between back (library) and front (hand)."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Hand Oscillates",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 6,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 8.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.42,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.12,
+      "ceiling": 0.52
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "In front, a local scratch head oscillates 8-15 reversals/s: DESIGN INTENT."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "LIBRARY != PERFORM",
+    "source": "Text Block",
+    "params": {
+     "Text": "LIBRARY != PERFORMANCE\n~20 s TRANSFER\nNO LOOSE SLEEVES",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Two separations, both proposed."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Static Lines",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 40,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Paper collapses and static lines crackle: sleeves out of the cell."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Loader Path",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The loader's slow pick / flip / place path, 0.05 cycles per second."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Ring Layout A",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 4,
+     "Size": 0.8,
+     "Spacing": 0.2,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2792b66",
+     "Color 2": "#f2792b66"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A: a compact ring of records around a central arm; clearance approaches the arm base."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Rail Layout B",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.05,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#f2792bff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.04,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "B: the straight rack beside a 1-1.5 m rail, brightened, still dashed."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "A RING - B RAIL",
+    "source": "Text Block",
+    "params": {
+     "Text": "A RING - B RAIL\n(PROPOSED)\nC CAROUSEL - D CABINET\nREAR / MIDDLE / FRONT",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Four candidates; A, C, D dim without being stamped impossible."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "The Glenton 150 footprint ghosts in beside it, cyan, for scale."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 40,
+     "Width": 0.004,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Comb Slots",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 40,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2792bff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Machined acetal comb slots with flared chamfers, one disc per slot: MECHANISM PREVIEW."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Edge Caliper",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.14,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 0.15,
+     "Speed": 0.5,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.14,
+      "ceiling": 0.39
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A three-point edge caliper; a suction cup spanning the centre hole leaks."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "COMB SLOTS - VERIF",
+    "source": "Text Block",
+    "params": {
+     "Text": "COMB SLOTS - VERIFIED\nGRIP\nSPINDLE GUIDE - LIFT /\nPOSITION / LOWER",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Four callouts, all dashed, all previews."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Ring Light",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#f2efe866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The waiting disc under a ring light at the verification station."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 72,
+     "Width": 0.004,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Vibration Trace",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A vibration trace from the moving loader stays visible for testing."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Iso Floor",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 62.0,
+     "Direction": 0.0,
+     "Position Y": 6.0,
+     "Speed": 0.15,
+     "Height": 4.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.0,
+     "Attenuation": 140.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#24242bff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A tilted wireframe floor: the booth seen from the isometric camera."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Deck A",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 9,
+     "Size": 0.5,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Deck A in close isometric, the record seated."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Coaxial Head",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.12,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2792bff",
+     "Outline": 0.12,
+     "Outline Color": "#f2792bff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The hollow elastomer-lined ring lowers onto the label, clear of the grooves: dashed."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "S1 + D5312s + OA1 ",
+    "source": "Text Block",
+    "params": {
+     "Text": "S1 + D5312s + OA1 =\n$247\nTHREE COMPONENTS ONLY\n8 kHz INTERNAL CONTROL",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Checked arithmetic in cyan; mechanics, power and heat stay dashed."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Torque and temperature window, open, orange: no animation awards a pass."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Pillar",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 30,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.05,
+    "why": "The pillar rising behind the deck."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.12,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Motor angle can follow its command while the pad slips over the vinyl."
+   }
+  ]
+ },
+ {
+  "deck": "The Catalog",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Three Shelves",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 3,
+     "Width": 0.02,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#f2792b66"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Three tiers stack like shelves, all dashed orange."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "COPY_PENDING",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 8,
+     "Size": 0.45,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The main-story disc waiting at the verification station, marked COPY_PENDING."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Confidence Dot",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.05,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2792bff",
+     "Outline": 0.14,
+     "Outline Color": "#f2792bff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.04,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Candidate matches with confidence indicators."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "TIER 1 NFC - TIER ",
+    "source": "Text Block",
+    "params": {
+     "Text": "TIER 1 NFC - TIER 2\nCAMERA\nTIER 3 OPTIONAL ArUco\nVERIFIED COPY + SIDE",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The three tiers, sequential, then together."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Ring Light",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#f2efe866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "One work lamp: a radial paper-white pool with lacquer at the edges."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Recognition",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Slot Dividers",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 20,
+     "Width": 0.03,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2792b66"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "NFC tags on sleeves and slot dividers; the expected slot lights."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Tag Field",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.2,
+     "Spacing": 0.3,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#3cc6d0ff",
+     "Color 2": "#3cc6d0ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.15,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The near-field as three cyan rings that swell when the jacket is tapped."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "TIER 1 - NFC",
+    "source": "Text Block",
+    "params": {
+     "Text": "TIER 1 - NFC\nEXPECTED SLOT\nNOT PROOF OF THE DISC",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A tag identifies the expected item or location, not the physical disc."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 24,
+     "Width": 0.006,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Label Under Lamp",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 4,
+     "Size": 0.42,
+     "Spacing": 0.25,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Both labels imaged under controlled, polarised lighting."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Scan Lines",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 16,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8.0,
+      "release": 250,
+      "floor": 0.0,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "OCR scan lines over the label; an ambiguous reading goes to inspection."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Polarised Light",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3cc6d066",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "One work lamp: a radial paper-white pool with lacquer at the edges."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "TIER 2 - CAMERA",
+    "source": "Text Block",
+    "params": {
+     "Text": "TIER 2 - CAMERA\nBOTH LABELS BEFORE\nLOAD\nAMBIGUOUS ->\nINSPECTION",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "On-screen text in the script's monospace, cyan for documented, orange for proposed."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The lamp is the only light."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 64,
+     "Width": 0.004,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Image Features",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Lacquer",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#17171cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the marker fills the frame."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "ArUco 6x6",
+    "source": "Checkered",
+    "params": {
+     "Num X": 6,
+     "Num Y": 6,
+     "Color 1": "#17171cff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 42,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "An optional ArUco marker on an approved Side A label, kept outside the grooves."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Marker Frame",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.46,
+     "Spacing": 0.12,
+     "Line Width": 0.015,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#3cc6d0ff",
+     "Color 2": "#3cc6d0ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.44,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The marker's quiet-zone border."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "MARKER ID -> LOCAL",
+    "source": "Text Block",
+    "params": {
+     "Text": "MARKER ID -> LOCAL\nLOOKUP\n-> COPY_1 - SIDE A",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.9,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A dictionary ID resolved by local lookup; the marker holds no permission."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No wash over a marker: contrast is the point."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No grid behind the marker."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Table Rows",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 9,
+     "Width": 0.01,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The permission table: one row per physical copy."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Switch Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 12,
+     "Num Y": 7,
+     "Color 1": "#17171cff",
+     "Color 2": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The marker's cells become a grid of switches."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Lock Badges",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.1,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.1,
+     "Line Ammount": 9,
+     "Innter Color 1": "#f2792bff",
+     "Inner color 2": "#3cc6d0ff",
+     "Outer Color 1": "#f2792bff",
+     "Outer Color 2": "#3cc6d0ff",
+     "Inner Scale": 0.35,
+     "Outer Scale": 1.4,
+     "Intersect Scale": 0.6
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.3,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "PLAY_ONLY, SCRATCH_APPROVED, ARCHIVAL_LOCKED badges."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "PLAY_ONLY",
+    "source": "Text Block",
+    "params": {
+     "Text": "PLAY_ONLY\nSCRATCH_APPROVED\nARCHIVAL_LOCKED",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Three protection levels per copy."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Table Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 12,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "COPY_1 PLAY_ONLY",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 8,
+     "Size": 0.45,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "COPY_1 seated for ordinary playback beneath the raised scratch head."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Hand Stays Up",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.1,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2792bff",
+     "Outline": 0.1,
+     "Outline Color": "#f2792bff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 260,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The scratch arm stays retracted. It does not react to the music; the rule holds."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "REFUSED AT THE",
+    "source": "Text Block",
+    "params": {
+     "Text": "REFUSED AT THE\nCONTROLLER",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#f2efe8ff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Paper-white stamp, held for one full click. Caller role from trusted session, never from prompt text."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Policy Wall",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792bff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "The wall at the local operation controller."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Flat Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.0,
+     "Position": 0.86,
+     "Color": "#f2efe8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.0,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Requested motion is flat: nothing moves."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Three Layers",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 3,
+     "Width": 0.03,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#3cc6d066"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.7,
+    "why": "Cross-section beneath the floor: AI host, Pi 5 supervision, Teensy execution."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Tool Names",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 8.0,
+      "release": 250,
+      "floor": 0.0,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "find_record, load_record, cue_record, play_record, crossfade, perform_routine, return_record, get_status."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "1 kHz Trajectory",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 8,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 10.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.5,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 350,
+      "floor": 0.08,
+      "ceiling": 0.48000000000000004
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "1,000 trajectory updates per second; each S1 closes its own 8 kHz loop."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "REQUEST / SUPERVIS",
+    "source": "Text Block",
+    "params": {
+     "Text": "REQUEST / SUPERVISE /\nEXECUTE\nTEENSY 1 kHz - S1 8\nkHz\nHOST-DISCONNECT TEST",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Published hardware specs cyan; the architecture stays dashed."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A ghost of Scratchbot's overheated laptop flickers above."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 48,
+     "Width": 0.006,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Timestamped Queue",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 8.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Exclusion Zone",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.5,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2792bff",
+     "Color 2": "#f2792bff"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 500,
+      "floor": 0.46,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A cylindrical exclusion volume glows over each deck."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Mushroom Stop",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.14,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2efe8ff",
+     "Outline": 0.0,
+     "Outline Color": "#f2efe8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A paper-white mushroom button rises out of the floor. It is pressed."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "TORQUE OFF != INST",
+    "source": "Text Block",
+    "params": {
+     "Text": "TORQUE OFF != INSTANT\nSTOP\nTONEARM HOME - HEAD\nRETRACTED\nPLATTER STOPPED",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Three independently confirmed lamps before the loader moves."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Light Curtain",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A light curtain standing far enough from the hazard for the measured stopping time."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Deceleration",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Controlled deceleration, then torque removal; the brake holds the disc."
+   }
+  ]
+ },
+ {
+  "deck": "The Ledger",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Six Rungs",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 6,
+     "Width": 0.03,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.7,
+    "why": "A vertical ladder of six rungs."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Precedent Plates",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.4,
+     "Rotation": 90.0,
+     "Position": 0.3,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Solid cyan plates on the left: documented precedents."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Target Plates",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.4,
+     "Rotation": 90.0,
+     "Position": 0.7,
+     "Color": "#f2792bff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.36,
+      "ceiling": 0.46
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Dashed orange plates on the right: GUSTO's integration targets, no completed-stage stamp."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "1 PLAYBACK - 2",
+    "source": "Text Block",
+    "params": {
+     "Text": "1 PLAYBACK - 2\nBEATMATCH\n3 BABY SCRATCH - 4\nCHIRP\n5 FLARE / ORBIT - 6\nJUGGLE",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2efe8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The six rungs, revealed one at a time."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The ladder ranks integration stages; no wash, no claim."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Rails",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 2,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 12,
+     "Width": 0.006,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Three Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 3,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Proof of concept, home prototype, exhibition."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Totals",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 3,
+     "Width": 0.08,
+     "Rotation": 90.0,
+     "Position": 0.55,
+     "Color": "#f2792bff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 450,
+      "floor": 0.06,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "~$3,373 - ~$15,178 - ~$39,777: inherited planning estimates, dashed."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "~$3.4K - 180-260 H",
+    "source": "Text Block",
+    "params": {
+     "Text": "~$3.4K - 180-260 H\n~$15.2K - 500-750 H\n~$39.8K - 1,200-1,800\nH",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Totals and hours; not verified build quotes."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "A ghost Glenton tag, ~EUR 100,000, not a like-for-like quote."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Ledger Lines",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 6,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Record Motion",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Iso Floor",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 62.0,
+     "Direction": 0.0,
+     "Position Y": 6.0,
+     "Speed": 0.15,
+     "Height": 3.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.0,
+     "Attenuation": 140.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#24242bff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A tilted wireframe floor: the booth seen from the isometric camera."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Linear Actuator",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#f2792bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A linear actuator, candidate edge grip, and a thrift-store turntable."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Thrift Turntable",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 7,
+     "Size": 0.36,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 380,
+       "Position Y": -60,
+       "Scale": 90,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The clearance-checked loading guide over a cheap deck."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "STAGE 1A - HANDLIN",
+    "source": "Text Block",
+    "params": {
+     "Text": "STAGE 1A - HANDLING\nTARGET: 50 CYCLES - 0\nDROPS\nRESULT: NOT RUN",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Counters at their unstarted states; result fields unfilled."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Bench Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#f2efe866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.16,
+    "why": "One work lamp: a radial paper-white pool with lacquer at the edges."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Hatching",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 30,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.05,
+    "why": "Hatched vector fill: heavy platter hatching, never a texture."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Pick Flip Return",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Iso Floor",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 62.0,
+     "Direction": 0.0,
+     "Position Y": 6.0,
+     "Speed": 0.15,
+     "Height": 3.0,
+     "Jagginess": 0.0,
+     "Wobble": 0.0,
+     "Attenuation": 140.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.0,
+     "Color": "#24242bff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A tilted wireframe floor: the booth seen from the isometric camera."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Direct Drive Deck",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 10,
+     "Size": 0.55,
+     "Spacing": 0.12,
+     "Line Width": 0.012,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.012,
+      "ceiling": 0.036000000000000004
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A direct-drive deck, scratch cartridge, used contactless-fader mixer."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Candidate Drive",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.11,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2792bff",
+     "Outline": 0.12,
+     "Outline Color": "#f2792bff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.18
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The candidate brushless drive and Teensy over the label."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "STAGE 1B - PERFORM",
+    "source": "Text Block",
+    "params": {
+     "Text": "STAGE 1B - PERFORMANCE\nREQUIRED 15:00 -\nELAPSED 00:00\nTARGET: 0 SKIPS - NOT\nRUN",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The first gate's timer, unstarted."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Temperature Window",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Hatching",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 50,
+     "Width": 0.01,
+     "Rotation": 45.0,
+     "Position": 0.5,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.06,
+    "why": "Hatched vector fill: heavy platter hatching, never a texture."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Record vs Motor",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.1,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "BEAT ERROR - RECORD VS MOTOR ANGLE - CURRENT / TEMPERATURE."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "One Deck",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 8,
+     "Size": 0.45,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "One autonomous deck."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Misfiled Disc",
+    "source": "Checkered",
+    "params": {
+     "Num X": 6,
+     "Num Y": 6,
+     "Color 1": "#17171cff",
+     "Color 2": "#f2792bff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -520,
+       "Position Y": 200,
+       "Scale": 18,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "A deliberately misfiled disc the deck must detect: SLOT_INVENTORY_MISMATCH."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "STAGE 2 - SINGLE-D",
+    "source": "Text Block",
+    "params": {
+     "Text": "STAGE 2 - SINGLE-DECK\nAUTONOMY\nDETECT MISFILE -\nREFUSE\nSURVIVE HOST\nDISCONNECT",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Proposed tests; later integration, separately costed."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Local Timing Plan",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The queued routine continues only if the design passes."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Deck A",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 8,
+     "Size": 0.4,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -400,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "Two decks, left."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Deck B",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 8,
+     "Size": 0.4,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 400,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "Two decks, right: measured tempo / phase error between them."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "STAGE 3 - TWO-DECK",
+    "source": "Text Block",
+    "params": {
+     "Text": "STAGE 3 - TWO-DECK SET\n50 RECORDS - 60\nMINUTES\nCONTINUE / REDESIGN /\nSTOP",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Each gate has three exits."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Fifty Records",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 50,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#f2efe866"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.25
+     }
+    },
+    "effects": [],
+    "opacity": 0.35,
+    "why": "Fifty records in the rack behind the decks."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Phase Error",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Lacquer",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#17171cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Lacquer black; the full booth stands in faint dashed outline, unlit."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "12-Inch Disc",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 10,
+     "Size": 0.6,
+     "Spacing": 0.12,
+     "Line Width": 0.012,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.012,
+      "ceiling": 0.036000000000000004
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The same disc, same scale, same camera as the cold open."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Hand Lowers",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.07,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2792bff",
+     "Outline": 0.08,
+     "Outline Color": "#f2792bff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 6.0,
+      "release": 500,
+      "floor": 0.07,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 60,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The hand lowers toward the label; freeze one frame before contact."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "NEXT ACTION: STAGE",
+    "source": "Text Block",
+    "params": {
+     "Text": "NEXT ACTION: STAGE 1B\n12-INCH SCRATCH + CUT\nBENCH\n~$1,616 - UNDER 4\nWEEKS",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A static planning estimate; the timer unstarted; the result blank."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Faint Booth",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No grid: the booth is unlit."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Result Blank",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.0,
+     "Position": 0.86,
+     "Color": "#f2efe8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.0,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Actual measurement fields stay blank."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Lacquer",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#17171cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black. The needle lifts and the click stops."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing but the sources."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing but the sources."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No click: the end card plays in silence."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Sources",
+    "source": "Text Block",
+    "params": {
+     "Text": "SOURCES\nGLENTON JKB - SOUND\nLEISURE\nIVAN BUILDS - robotlab\nDJ TECHTOOLS - MIT\nMEDIA LAB\nODRIVE - TECHNICS -\nRANE",
+     "Font": "Cascadia Mono",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.7,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The citation list in stylus-cyan monospace."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silence."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silence."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Needle Lifted",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.0,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.0,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   }
+  ]
+ },
+ {
+  "deck": "SL-1210MKX",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Platter 33",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 14,
+     "Size": 0.7,
+     "Spacing": 0.1,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 332 mm platter from above, a uniform-disc model, turning at 33 1/3."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Groove 33",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1.2,
+     "Detail": 1.0,
+     "Speed": 0.18,
+     "Zoom": 1.0,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.12,
+     "Button Fuzzyness": 0.0,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Spread Even": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 1.0,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The groove spiral at 33 1/3, documented: cyan."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "SL-1210MKX",
+    "source": "Text Block",
+    "params": {
+     "Text": "SL-1210MKX\n33 1/3 RPM - 1.8 s /\nREV\n0.7 s START - 11.9 kg",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MKX launch specs (ADE 2026): 0.7 s to speed, 11.9 kg with the cast balance weight."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Platter Speed",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Lacquer",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#17171cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black lacquer under the platter."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Platter Underside",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 4,
+     "Size": 0.82,
+     "Spacing": 0.14,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe866",
+     "Color 2": "#f2efe866"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The aluminium die-cast platter lifted away, seen from below."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "SW1-SW8",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 1,
+     "Color 1": "#24242bff",
+     "Color 2": "#3cc6d0ff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": -120,
+       "Scale": 40,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The eight DIP switches as an 8x1 row: LED, reserved, REV, 78, TQ1/TQ2, BK1/BK2."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Switch Tick",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#3cc6d0ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "DIP SW1 LED - SW3 ",
+    "source": "Text Block",
+    "params": {
+     "Text": "DIP SW1 LED - SW3 REV\n- SW4 78\nSW5-6 TORQUE - SW7-8\nBRAKE\nMK7 PLATFORM",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Under-platter matrix from the MK7 operating instructions, shared by the MKX."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Only the switches."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Only the switches."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Torque Ramp",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Pitch Slot",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.78,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The pitch fader's slot, right of the platter."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Fader Knob",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.05,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3cc6d0ff",
+     "Outline": 0.06,
+     "Outline Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.05,
+      "ceiling": 0.08
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 540,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The fader knob at centre detent: 0 %."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "PITCH +-4 / 8 / 16",
+    "source": "Text Block",
+    "params": {
+     "Text": "PITCH +-4 / 8 / 16 /\n50 %\n+-4 %: 2x FINER PER MM\nDIGITAL SLIDER - NO\nTRACK",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The MKX's new +-4 % fine and +-50 % wide ranges; the tempo half of beatmatching."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Speed Reference",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Record Seated",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 10,
+     "Size": 0.55,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -200,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The record seated, left; the tonearm reaches from the right."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "S-Tonearm",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.015,
+     "Rotation": 22.0,
+     "Position": 0.5,
+     "Color": "#3cc6d0ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.012,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The polished silver S-tonearm, 22 degree offset, floating free during play."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Stylus Light",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#f2efe866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "One work lamp: a radial paper-white pool with lacquer at the edges."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "S-TONEARM 230 mm -",
+    "source": "Text Block",
+    "params": {
+     "Text": "S-TONEARM 230 mm - 22\nDEG\nOVERHANG 15 mm\nLIFT - POSITION -\nLOWER",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Tonearm geometry from the MK7-platform service manual; cueing order from the script."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No wash: a gap stays visible between stylus and record."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Cue Lever",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Platter Forward",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 14,
+     "Size": 0.7,
+     "Spacing": 0.1,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe866",
+     "Color 2": "#f2efe866"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The platter keeps turning forward."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Record Reverses",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Anti-clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1.2,
+     "Detail": 1.0,
+     "Speed": 0.6,
+     "Zoom": 1.0,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.12,
+     "Button Fuzzyness": 0.0,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Spread Even": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 1.0,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The record alone reverses above the slipmat: the scratch, dashed orange because it is GUSTO's job."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "SLIPMAT: RECORD OV",
+    "source": "Text Block",
+    "params": {
+     "Text": "SLIPMAT: RECORD OVER\nFORWARD PLATTER\nGRIP > REQUIRED TORQUE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#f2792bff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Extra grip pressure also increases slipmat drag."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#f2792b66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Felt",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 60,
+     "Width": 0.01,
+     "Rotation": 45.0,
+     "Position": 0.5,
+     "Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Hatched vector fill: heavy platter hatching, never a texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Reversals",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 7.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.86,
+     "Color": "#f2792bff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.12,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Platter 45",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 14,
+     "Size": 0.7,
+     "Spacing": 0.1,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The same platter at 45: 1 1/3 s per revolution."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Groove 45",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1.2,
+     "Detail": 1.0,
+     "Speed": 0.25,
+     "Zoom": 1.0,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.12,
+     "Button Fuzzyness": 0.0,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Spread Even": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 1.0,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "One spiral groove at 33 1/3: the locked run-out that the click rides."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "45 RPM - 1.33 s / ",
+    "source": "Text Block",
+    "params": {
+     "Text": "45 RPM - 1.33 s / REV\n78 RPM VIA DIP SW4",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "On-screen text in the script's monospace, cyan for documented, orange for proposed."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Platter Speed 45",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 1.4,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Lacquer Grid",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 18,
+     "Width": 0.012,
+     "Rotation": 0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The isometric lacquer grid every scene stands on."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Platter Reverse",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 14,
+     "Size": 0.7,
+     "Spacing": 0.1,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#f2efe8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.01,
+      "ceiling": 0.03
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The twelve-inch record as concentric wireframe grooves, turning flat at frame centre."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Groove Unwinds",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Anti-clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1.2,
+     "Detail": 1.0,
+     "Speed": 0.18,
+     "Zoom": 1.0,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.12,
+     "Button Fuzzyness": 0.0,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Spread Even": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 1.0,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Reverse playback is a documented deck function: cyan, anti-clockwise."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "REVERSE PLAYBACK",
+    "source": "Text Block",
+    "params": {
+     "Text": "REVERSE PLAYBACK\nDIP SW3 - CORELESS\nDIRECT DRIVE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#3cc6d0ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "On-screen text in the script's monospace, cyan for documented, orange for proposed."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#3cc6d066",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "An edge wash in the scene's evidence colour."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Grid Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 32,
+     "Width": 0.012,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#24242bff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The vertical half of the lacquer grid."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Reverse",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.86,
+     "Color": "#3cc6d0ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Lacquer",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#17171cff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: one spiral and one click."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Run-Out Groove",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 1.2,
+     "Detail": 1.0,
+     "Speed": 0.18,
+     "Zoom": 1.6,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.12,
+     "Button Fuzzyness": 0.0,
+     "Color": "#f2efe8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Spread Even": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 1.0,
+      "ceiling": 1.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The locked run-out groove, one blemish per revolution."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "The Blemish",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.02,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#f2efe8ff",
+     "Outline": 0.0,
+     "Outline Color": "#f2efe8ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 150,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 300,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "The single blemish the needle passes once per revolution."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Locked Groove Clic",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.22,
+     "Fade": false,
+     "Color 1": "#f2efe8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "The one sampled stylus click per revolution, as a one-frame paper flash."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "ONE TICK EVERY 1.8",
+    "source": "Text Block",
+    "params": {
+     "Text": "ONE TICK EVERY 1.8 s\nNEVER MELODIC - NEVER\nDOUBLED\nNO REVERB - NO SWING",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#f2efe8ff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The audio system's rules for the click."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing but the groove."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing but the groove."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Stylus",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.86,
+     "Color": "#f2efe8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "ACTUAL RECORD ANGLE: a dashed-orange trace that follows the music 1:1."
+   }
+  ]
+ }
+]

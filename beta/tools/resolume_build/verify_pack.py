@@ -37,6 +37,8 @@ def main():
     ap.add_argument("--bible", required=True)
     ap.add_argument("--decks", required=True)
     ap.add_argument("--no-open", action="store_true")
+    ap.add_argument("--connect", action="store_true",
+                    help="connect each column before reading it back")
     ap.add_argument("--sample", type=int, default=0,
                     help="check only every Nth clip (0 = all)")
     a = ap.parse_args()
@@ -118,8 +120,16 @@ def main():
         time.sleep(3.0)
         grid = {(int(cl["layer"]), int(cl["column"])): cl
                 for cl in design.get("clips", [])}
-        for ln in range(1, 9):
-            for col in range(1, 9):
+        for col in range(1, 9):
+            # Unconnected clips can report another deck's source parameters
+            # when both decks hold the same generator in that slot (seen
+            # 2026-10-23); the loaded clip itself is right. Connect the
+            # column (and the SCOPE, which ignores column triggers) first.
+            if a.connect:
+                rig.post("/composition/columns/%d/connect" % col)
+                rig.post("/composition/layers/8/clips/%d/connect" % col)
+                time.sleep(1.5)
+            for ln in range(1, 9):
                 n += 1
                 if a.sample and n % a.sample:
                     continue
@@ -148,30 +158,56 @@ def main():
                     continue
                 want = PACK._coerce_params(item, cl.get("params"), rep,
                                            "verify")
-                for k, v in want.items():
-                    spec = item.params[k]
-                    if k not in sp:
-                        # conditional parameter (Gradient Dither only when
-                        # Stepped, Text Delay only when Animated): Resolume
-                        # does not expose it, so it cannot be read back.
-                        continue
-                    live = (sp.get(k) or {}).get("value")
-                    if spec.kind == "color":
-                        ok = str(live).lower() == LIB.u32_to_hex(v).lower()
-                    elif spec.kind == "choice":
-                        ok = str(live) == str(spec.options[v])
-                    elif spec.kind == "bool":
-                        ok = bool(live) == bool(v)
-                    elif spec.kind == "text":
-                        ok = str(live) == str(v)
-                    else:
-                        ok = live is not None and close(live, v)
-                    if not ok:
-                        mism += 1
-                        if mism <= 40:
-                            print("  MISMATCH deck %d L%d C%d %s/%s want %r "
-                                  "got %r" % (di + 1, ln, col,
-                                              item.display_name, k, v, live))
+
+                def diffs(sp):
+                    out = []
+                    for k, v in want.items():
+                        spec = item.params[k]
+                        if k not in sp:
+                            # conditional parameter (Gradient Dither only
+                            # when Stepped, Text Delay only when Animated):
+                            # Resolume does not expose it, so it cannot be
+                            # read back.
+                            continue
+                        live = (sp.get(k) or {}).get("value")
+                        if spec.kind == "color":
+                            ok = str(live).lower() == LIB.u32_to_hex(v).lower()
+                        elif spec.kind == "choice":
+                            ok = str(live) == str(spec.options[v])
+                        elif spec.kind == "bool":
+                            ok = bool(live) == bool(v)
+                        elif spec.kind == "text":
+                            ok = str(live) == str(v)
+                        else:
+                            ok = live is not None and close(live, v)
+                            # A connected clip with music playing sits
+                            # anywhere in its FFT floor..ceiling.
+                            f = (cl.get("fft") or {}).get(k)
+                            if not ok and live is not None and isinstance(f, dict):
+                                lo = max(min(f["floor"], f["ceiling"]), spec.min)
+                                hi = min(max(f["floor"], f["ceiling"]), spec.max)
+                                ok = lo - 1e-3 <= float(live) <= hi + 1e-3
+                        if not ok:
+                            out.append((k, v, live))
+                    return out
+
+                bad = diffs(sp)
+                # After a deck switch the clip name can update before its
+                # source parameters do (seen 2026-10-23: deck 2 read deck
+                # 1's values under deck 2's names). Settle and re-read
+                # before calling anything a mismatch.
+                for _ in range(3):
+                    if not bad:
+                        break
+                    time.sleep(1.5)
+                    sp, cj = rig.source_params(ln, col)
+                    bad = diffs(sp)
+                for k, v, live in bad:
+                    mism += 1
+                    if mism <= 40:
+                        print("  MISMATCH deck %d L%d C%d %s/%s want %r "
+                              "got %r" % (di + 1, ln, col,
+                                          item.display_name, k, v, live))
         print("deck %d %-18s checked" % (di + 1, bible["decks"][di]["name"]))
     check("clip names match", name_mism == 0, "%d mismatches" % name_mism)
     check("clip parameters match (%d clips)" % n, mism == 0,

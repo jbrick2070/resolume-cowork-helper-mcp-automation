@@ -24,3 +24,13 @@ but 200 pads across five decks of found broadcast-age text, and the bank arrows
 become a channel dial. **Completely untested: it has not been opened in Resolume
 even once.** It is here for the curious, not for a show. Two files, ninety
 seconds to find out; see `lexicon-ii/README.md`.
+
+`library-hand/` is **The Library And The Hand**, a procedural pack cut from a
+feasibility script about GUSTO, a proposed robot that fetches, flips, mixes and
+scratches real vinyl. Five decks: The Plinths (machines that already exist), The
+Hand (the proposed scratch head), The Catalog (identity and permission), The
+Ledger (budgets and test gates), and SL-1210MKX (the newest Technics deck drawn
+as schematics). Its colours follow the script's rule: stylus-cyan is documented,
+cue-orange is proposed. It uses 320 stock generators, no media files and no
+plugins. It was opened on Avenue 7.28.1 and every clip was read back: 18/18
+checks, 0/320 mismatches. See `library-hand/README.md`.
