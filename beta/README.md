@@ -21,9 +21,10 @@ first-test checklist.
 
 `lexicon-ii/` is the sequel — "Eighties-ism". Same five-row sentence machine,
 but 200 pads across five decks of found broadcast-age text, and the bank arrows
-become a channel dial. **Completely untested: it has not been opened in Resolume
-even once.** It is here for the curious, not for a show. Two files, ninety
-seconds to find out; see `lexicon-ii/README.md`.
+become a channel dial. **Opened once, never played:** on 2026-10-23 it loaded in
+Avenue 7.28.1 and all five decks rendered for the [gallery](../gallery/README.md), but no
+shortcut, pad or knob has been tested. It is here for the curious, not for a show; see
+`lexicon-ii/README.md`.
 
 `library-hand/` is **The Library And The Hand**, a procedural pack cut from a
 feasibility script about GUSTO, a proposed robot that fetches, flips, mixes and

@@ -1,14 +1,18 @@
 # Res React Lexicon II — "Eighties-ism"
 
-> **STATUS: BETA — completely untested. Not on hardware, and not yet on a screen.**
+> **STATUS: BETA — opened once, never played. Not on hardware.**
 > Built overnight 2026-08-06 from the XML up. Every claim below was verified against the
 > *file format* — it parses, the IDs are unique, the counts hold, the shortcut paths match
-> rig-proven donors — but the composition **has not been opened in Resolume even once**.
-> No pad has been pressed, no glyph has been rendered, no knob has been turned.
-> That's a bigger disclaimer than [`../lexicon/`](../lexicon/) carries, and it's deliberate.
+> rig-proven donors.
 >
-> For the brave: it's two files and about ninety seconds to find out. If it works it should
-> be a lot of video fun. If it doesn't, everything is regenerable from `tools/` in one command.
+> **2026-10-23:** opened for the first time, in Avenue 7.28.1, to photograph it for the
+> [gallery](../../gallery/README.md#res-react-lexicon-ii---eighties-ism). It loaded, and columns on
+> all five decks rendered their text (the frames are in the gallery; in several, lines from
+> different rows overlap). That is all that was tested: no pad has been pressed, no shortcut
+> exercised, no knob turned, and the APC40 was not in the loop.
+>
+> For the brave: it's two files. If it doesn't behave, everything is regenerable from `tools/`
+> in one command.
 
 The sequel to the [Lexicon](../lexicon/) sentence machine. Same instrument — five rows =
 **SUBJECT / VERB / OBJECT / MARK / FIELD**, eight pads per row, every press-path writes a

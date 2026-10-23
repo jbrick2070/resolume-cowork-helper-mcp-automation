@@ -2,7 +2,9 @@
 
 > **STATUS: BETA — built 2026-08-08, awaiting rig test.**
 > XML validates, all assertions pass, 120 clips / 98 shortcuts / 3 FFT rows.
-> Not yet loaded in Avenue.
+> **2026-10-23:** loaded in Avenue 7.28.1 for the first time, to photograph it for the
+> [gallery](../../gallery/README.md#res-react-nisei): columns on all three decks rendered.
+> Nothing else was tested: no shortcut, no FFT row, no APC40 in the loop.
 
 The fourth instrument. v1 wrote sentences, v2 fired quotations, v3 was broadcast
 test signals — this one is **archival**: testimony, poetry, documents, and places

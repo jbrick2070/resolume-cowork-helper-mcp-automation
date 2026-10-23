@@ -1,0 +1,709 @@
+[
+  {
+    "slug": "visual-qa-148",
+    "title": "APC40 Visual QA 148",
+    "avc": "compositions/APC40_Visual_QA_148.avc",
+    "folder": "compositions",
+    "blurb": "The stable release: every physical control of the APC40 mkII mirrored on screen by 148 native Text Animator witnesses.",
+    "decks": 3,
+    "layers": 148,
+    "columns": 1,
+    "rest_name": "APC40_Visual_QA_148",
+    "revealed_layers": 0,
+    "sampled": 9,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Text Animator",
+        "column": "APC40 Live"
+      }
+    ]
+  },
+  {
+    "slug": "electric-zentropa",
+    "title": "Electric Zentropa",
+    "avc": "compositions/APC40MKII_Electric_Zentropa_Lost_Buttons.avc",
+    "folder": "compositions",
+    "blurb": "The performance interface, built only from native Resolume sources (Lost Buttons edition; True Button Toggles shares the interface).",
+    "decks": 3,
+    "layers": 152,
+    "columns": 2,
+    "rest_name": "APC40_Electric_Zentropa_AUTOTEST",
+    "revealed_layers": 0,
+    "sampled": 10,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Text Animator",
+        "column": "APC40 Live"
+      },
+      {
+        "deck": "Text Animator",
+        "column": "Pressed"
+      }
+    ]
+  },
+  {
+    "slug": "res-react-live-gen",
+    "title": "Res React Live Gen",
+    "avc": "beta/compositions/Res React Live Gen.avc",
+    "folder": "beta/compositions",
+    "blurb": "An audio-reactive generative instrument: FFT-driven stock generators across six decks.",
+    "decks": 6,
+    "layers": 4,
+    "columns": 8,
+    "rest_name": "Res React Live Gen",
+    "revealed_layers": 0,
+    "sampled": 23,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Signal",
+        "column": "Oscillator"
+      },
+      {
+        "deck": "Signal",
+        "column": "Tracking"
+      },
+      {
+        "deck": "Machine",
+        "column": "Flux"
+      },
+      {
+        "deck": "Anatomy",
+        "column": "Glow"
+      },
+      {
+        "deck": "Codex",
+        "column": "Luge Run"
+      },
+      {
+        "deck": "React A",
+        "column": "Neon Grid"
+      },
+      {
+        "deck": "Machine",
+        "column": "Polished"
+      },
+      {
+        "deck": "Codex",
+        "column": "Sketchbook"
+      },
+      {
+        "deck": "Broadcast",
+        "column": "Signal On"
+      }
+    ]
+  },
+  {
+    "slug": "res-react-orbit-gen",
+    "title": "Res React Orbit Gen",
+    "avc": "beta/compositions/Res React Orbit Gen.avc",
+    "folder": "beta/compositions",
+    "blurb": "Orbit: five FFT-reactive decks specified cell by cell in the manifests.",
+    "decks": 5,
+    "layers": 4,
+    "columns": 9,
+    "rest_name": "Res React Orbit Gen",
+    "revealed_layers": 0,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "O5 Cosmic",
+        "column": "Redshift"
+      },
+      {
+        "deck": "O1 Physics",
+        "column": "Countdown"
+      },
+      {
+        "deck": "O4 Galactic",
+        "column": "O4 Transit"
+      },
+      {
+        "deck": "O4 Galactic",
+        "column": "Sgr A*"
+      },
+      {
+        "deck": "O5 Cosmic",
+        "column": "O5 Transit"
+      },
+      {
+        "deck": "O3 Stellar",
+        "column": "Accretion"
+      },
+      {
+        "deck": "O2 Planets",
+        "column": "O2 Transit"
+      },
+      {
+        "deck": "O3 Stellar",
+        "column": "Fusion"
+      },
+      {
+        "deck": "O1 Physics",
+        "column": "Free Fall"
+      }
+    ]
+  },
+  {
+    "slug": "lexicon",
+    "title": "Res React Lexicon",
+    "avc": "beta/lexicon/compositions/Res React Lexicon.avc",
+    "folder": "beta/lexicon",
+    "blurb": "The controller as a sentence machine: five pad rows are the five slots of a sentence, 512 grammatical sentences.",
+    "decks": 1,
+    "layers": 5,
+    "columns": 8,
+    "rest_name": "Res React Lexicon",
+    "revealed_layers": 0,
+    "sampled": 4,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Lexicon",
+        "column": "Null"
+      },
+      {
+        "deck": "Lexicon",
+        "column": "Grid"
+      },
+      {
+        "deck": "Lexicon",
+        "column": "Carrier"
+      },
+      {
+        "deck": "Lexicon",
+        "column": "Dusk"
+      }
+    ]
+  },
+  {
+    "slug": "lexicon-ii",
+    "title": "Res React Lexicon II - Eighties-ism",
+    "avc": "beta/lexicon-ii/compositions/Res React Lexicon II.avc",
+    "folder": "beta/lexicon-ii",
+    "blurb": "The sequel: 200 pads of found broadcast-age text across five decks.",
+    "decks": 5,
+    "layers": 5,
+    "columns": 8,
+    "rest_name": "Res React Lexicon II",
+    "revealed_layers": 0,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "The Reel",
+        "column": "Sunrise"
+      },
+      {
+        "deck": "The Reel",
+        "column": "October"
+      },
+      {
+        "deck": "La Nuit",
+        "column": "\u00c9tern\u00e8bre"
+      },
+      {
+        "deck": "The Reel",
+        "column": "The End"
+      },
+      {
+        "deck": "La Nuit",
+        "column": "Javel"
+      },
+      {
+        "deck": "La Nuit",
+        "column": "Rrose"
+      },
+      {
+        "deck": "Master",
+        "column": "Test Card"
+      },
+      {
+        "deck": "Ad Break",
+        "column": "Ratings"
+      },
+      {
+        "deck": "The Sermon",
+        "column": "Curse"
+      }
+    ]
+  },
+  {
+    "slug": "testcard",
+    "title": "Res React Test Card",
+    "avc": "beta/testcard/compositions/Res React Test Card.avc",
+    "folder": "beta/testcard",
+    "blurb": "Pure signal: every pad a typographic test pattern, all of them moving under live WaveWarp.",
+    "decks": 3,
+    "layers": 5,
+    "columns": 8,
+    "rest_name": "Res React Test Card",
+    "revealed_layers": 0,
+    "sampled": 12,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Test Card",
+        "column": "Cross"
+      },
+      {
+        "deck": "On Air",
+        "column": "Roll"
+      },
+      {
+        "deck": "On Air",
+        "column": "Peak"
+      },
+      {
+        "deck": "Test Card",
+        "column": "Grid"
+      },
+      {
+        "deck": "Dead Air",
+        "column": "Ghost"
+      },
+      {
+        "deck": "On Air",
+        "column": "Cue"
+      },
+      {
+        "deck": "On Air",
+        "column": "Wide"
+      },
+      {
+        "deck": "Test Card",
+        "column": "Bars"
+      },
+      {
+        "deck": "Dead Air",
+        "column": "Hum"
+      }
+    ]
+  },
+  {
+    "slug": "nisei",
+    "title": "Res React Nisei",
+    "avc": "beta/nisei/compositions/Res React Nisei.avc",
+    "folder": "beta/nisei",
+    "blurb": "Archival testimony, poetry, documents and places from the Japanese American experience, for Nisei Week.",
+    "decks": 3,
+    "layers": 5,
+    "columns": 8,
+    "rest_name": "Res React Nisei",
+    "revealed_layers": 0,
+    "sampled": 12,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Nisei Week",
+        "column": "Redress"
+      },
+      {
+        "deck": "Nisei Week",
+        "column": "Return"
+      },
+      {
+        "deck": "Little Tokyo",
+        "column": "Roots"
+      },
+      {
+        "deck": "Little Tokyo",
+        "column": "Market"
+      },
+      {
+        "deck": "Little Tokyo",
+        "column": "Promise"
+      },
+      {
+        "deck": "Executive Order",
+        "column": "The Order"
+      },
+      {
+        "deck": "Executive Order",
+        "column": "Evacuate"
+      },
+      {
+        "deck": "Executive Order",
+        "column": "The Fence"
+      },
+      {
+        "deck": "Nisei Week",
+        "column": "Festival"
+      }
+    ]
+  },
+  {
+    "slug": "earthsearch",
+    "title": "EarthSearch EP01 Live Mix",
+    "avc": "beta/earthsearch/compositions/EarthSearch_EP01_Live_Mix.avc",
+    "folder": "beta/earthsearch",
+    "blurb": "Not a clip launcher: two 27-minute masters that never stop, and a surface that shapes them.",
+    "decks": 1,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "EarthSearch_EP01_Live_Mix",
+    "revealed_layers": 2,
+    "sampled": 4,
+    "rendered": false,
+    "error": "its two 27-minute video masters live outside the repo and were not on this machine, so Avenue showed black"
+  },
+  {
+    "slug": "dead-air",
+    "title": "Dead Air - Listening Posts",
+    "avc": "beta/dead-air/Dead Air Listening Posts.avc",
+    "folder": "beta/dead-air",
+    "blurb": "Five rooms where someone is listening to the dark, and the dark, occasionally, replies.",
+    "decks": 5,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "Dead Air Listening Posts",
+    "revealed_layers": 6,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "The Sitters",
+        "column": "Trumpet Lifts"
+      },
+      {
+        "deck": "The Sitters",
+        "column": "Lights Down"
+      },
+      {
+        "deck": "The Sitters",
+        "column": "Knock Once"
+      },
+      {
+        "deck": "Hydrogen Line",
+        "column": "Deep Field"
+      },
+      {
+        "deck": "The Sitters",
+        "column": "Break Circle"
+      },
+      {
+        "deck": "Hour Of Saturn",
+        "column": "Conjuration"
+      },
+      {
+        "deck": "Hour Of Saturn",
+        "column": "Chalk Circle"
+      },
+      {
+        "deck": "German Bight",
+        "column": "Lundy Fastnet"
+      },
+      {
+        "deck": "Loss Of Signal",
+        "column": "Alarm 1202"
+      }
+    ]
+  },
+  {
+    "slug": "dew-line",
+    "title": "Dew Line - The Spinningwork",
+    "avc": "beta/dew-line/Dew Line - The Spinningwork.avc",
+    "folder": "beta/dew-line",
+    "blurb": "A spider builds an early-warning station out of silk and casts her shadow on every star the net catches.",
+    "decks": 5,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "Dew Line: The Spinningwork",
+    "revealed_layers": 6,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Arachne's Loom",
+        "column": "Warp and Weft"
+      },
+      {
+        "deck": "Goose Summer",
+        "column": "The Gift"
+      },
+      {
+        "deck": "Arachne's Loom",
+        "column": "Nyame's Price"
+      },
+      {
+        "deck": "Goose Summer",
+        "column": "Egg Sac"
+      },
+      {
+        "deck": "Dew Line Station",
+        "column": "Sign Off"
+      },
+      {
+        "deck": "Arachne's Loom",
+        "column": "Shuttle Thrown"
+      },
+      {
+        "deck": "Dew Line Station",
+        "column": "Net of Light"
+      },
+      {
+        "deck": "Sit and Wait",
+        "column": "The Rush"
+      },
+      {
+        "deck": "Orb Plate 1889",
+        "column": "Thirty Radii"
+      }
+    ]
+  },
+  {
+    "slug": "library-hand",
+    "title": "The Library And The Hand - GUSTO",
+    "avc": "beta/library-hand/The Library And The Hand - GUSTO.avc",
+    "folder": "beta/library-hand",
+    "blurb": "GUSTO, a proposed robot that fetches, flips, mixes and scratches real vinyl; stylus-cyan is documented, cue-orange proposed.",
+    "decks": 5,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "The Library And The Hand - GUSTO",
+    "revealed_layers": 6,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "The Ledger",
+        "column": "The Ladder"
+      },
+      {
+        "deck": "SL-1210MKX",
+        "column": "Lock Groove"
+      },
+      {
+        "deck": "The Plinths",
+        "column": "Glenton 150"
+      },
+      {
+        "deck": "SL-1210MKX",
+        "column": "33 1/3"
+      },
+      {
+        "deck": "The Catalog",
+        "column": "Refused"
+      },
+      {
+        "deck": "SL-1210MKX",
+        "column": "45"
+      },
+      {
+        "deck": "The Catalog",
+        "column": "Camera Tier"
+      },
+      {
+        "deck": "The Plinths",
+        "column": "Juke Bots"
+      },
+      {
+        "deck": "The Hand",
+        "column": "Circle Trap"
+      }
+    ]
+  },
+  {
+    "slug": "studio-one",
+    "title": "Studio One - War Of The Worlds 1938",
+    "avc": "beta/studio-one/Studio One - War Of The Worlds 1938.avc",
+    "folder": "beta/studio-one",
+    "blurb": "For the broadcast's 88th anniversary: CBS Studio One, Grovers Mill, the Visitors, New York, the Morning After.",
+    "decks": 5,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "Studio One - War Of The Worlds 1938",
+    "revealed_layers": 6,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "The Visitors",
+        "column": "Clock Held"
+      },
+      {
+        "deck": "Studio One",
+        "column": "8 PM Air"
+      },
+      {
+        "deck": "Morning After",
+        "column": "9 PM Doors"
+      },
+      {
+        "deck": "Studio One",
+        "column": "Facing Mics"
+      },
+      {
+        "deck": "The Visitors",
+        "column": "The Card"
+      },
+      {
+        "deck": "Studio One",
+        "column": "Orchestra"
+      },
+      {
+        "deck": "New York",
+        "column": "The Battery"
+      },
+      {
+        "deck": "Grovers Mill",
+        "column": "Heat Ray"
+      },
+      {
+        "deck": "Morning After",
+        "column": "Hooper vs Myth"
+      }
+    ]
+  },
+  {
+    "slug": "signal-lost",
+    "title": "Signal Lost - Transmission From Tomorrow",
+    "avc": "beta/signal-lost/Signal Lost - Transmission From Tomorrow.avc",
+    "folder": "beta/signal-lost",
+    "blurb": "The OldTimeRadio pipeline as a show, including a VJ journey through the workflow one node per scene.",
+    "decks": 5,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "Signal Lost - Transmission From Tomorrow",
+    "revealed_layers": 6,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Sign-On",
+        "column": "Good Evening"
+      },
+      {
+        "deck": "The Cast",
+        "column": "Announcer"
+      },
+      {
+        "deck": "Shivering Gauge",
+        "column": "Sign-Off"
+      },
+      {
+        "deck": "Writers Room",
+        "column": "Beat"
+      },
+      {
+        "deck": "The Cast",
+        "column": "Credit Roll"
+      },
+      {
+        "deck": "Writers Room",
+        "column": "Plot"
+      },
+      {
+        "deck": "The Cast",
+        "column": "Dialogue"
+      },
+      {
+        "deck": "The Graph",
+        "column": "Assembler"
+      },
+      {
+        "deck": "Sign-On",
+        "column": "Station Break"
+      }
+    ]
+  },
+  {
+    "slug": "the-manual",
+    "title": "The Manual - Avenue 7.28.1",
+    "avc": "beta/the-manual/The Manual - Avenue 7.28.1.avc",
+    "folder": "beta/the-manual",
+    "blurb": "A composition about Resolume itself: the vocabulary, the clip, parameter animation, the 62 blend modes, this rig.",
+    "decks": 5,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "The Manual - Avenue 7.28.1",
+    "revealed_layers": 6,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "Blend Modes",
+        "column": "Transitions"
+      },
+      {
+        "deck": "Blend Modes",
+        "column": "Alpha"
+      },
+      {
+        "deck": "Blend Modes",
+        "column": "Luma Key"
+      },
+      {
+        "deck": "This Rig",
+        "column": "Shortcut Mode"
+      },
+      {
+        "deck": "Vocabulary",
+        "column": "Column"
+      },
+      {
+        "deck": "This Rig",
+        "column": "Audio In"
+      },
+      {
+        "deck": "Vocabulary",
+        "column": "Layer"
+      },
+      {
+        "deck": "The Clip",
+        "column": "Transition"
+      },
+      {
+        "deck": "Parameters",
+        "column": "BPM Sync"
+      }
+    ]
+  },
+  {
+    "slug": "the-surface",
+    "title": "The Surface - APC40 mkII + MIDI",
+    "avc": "beta/the-surface/The Surface - APC40 mkII + MIDI.avc",
+    "folder": "beta/the-surface",
+    "blurb": "The controller every pack here is played on, drawn as schematics, every number from Akai's protocol document.",
+    "decks": 5,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "The Surface - APC40 mkII + MIDI",
+    "revealed_layers": 6,
+    "sampled": 20,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "SE-500 Mixer",
+        "column": "Split Screen"
+      },
+      {
+        "deck": "The Wire",
+        "column": "Status Byte"
+      },
+      {
+        "deck": "The Strips",
+        "column": "Crossfader CC1"
+      },
+      {
+        "deck": "The Grid",
+        "column": "Mode 1"
+      },
+      {
+        "deck": "The Grid",
+        "column": "Note Zero"
+      },
+      {
+        "deck": "The Wire",
+        "column": "USB-B"
+      },
+      {
+        "deck": "The Strips",
+        "column": "A/B 66"
+      }
+    ]
+  }
+]

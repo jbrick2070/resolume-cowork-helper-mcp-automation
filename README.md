@@ -9,6 +9,33 @@ experimental FFT-reactive compositions under `beta/`.
 > Tested on Resolume Avenue 7.27 + Resolume MCP 7.26, Windows 11.
 > Version drift is real; pin your expectations here.
 
+<!-- gallery:start -->
+## The compositions
+
+16 compositions; 15 of them photographed from Avenue's own output. Click a frame for its full card, or see
+the [whole gallery](gallery/README.md).
+
+| | |
+|---|---|
+| <a href="gallery/README.md#apc40-visual-qa-148"><img src="gallery/visual-qa-148/hero.jpg" alt="APC40 Visual QA 148" width="320"></a> | **APC40 Visual QA 148** · stable<br>The stable release: every physical control of the APC40 mkII mirrored on screen by 148 native Text Animator witnesses.<br>[`compositions/`](compositions) |
+| <a href="gallery/README.md#electric-zentropa"><img src="gallery/electric-zentropa/hero.jpg" alt="Electric Zentropa" width="320"></a> | **Electric Zentropa** · stable<br>The performance interface, built only from native Resolume sources (Lost Buttons edition; True Button Toggles shares the interface).<br>[`compositions/`](compositions) |
+| <a href="gallery/README.md#res-react-live-gen"><img src="gallery/res-react-live-gen/hero.jpg" alt="Res React Live Gen" width="320"></a> | **Res React Live Gen** · beta<br>An audio-reactive generative instrument: FFT-driven stock generators across six decks.<br>[`beta/compositions/`](beta/compositions) |
+| <a href="gallery/README.md#res-react-orbit-gen"><img src="gallery/res-react-orbit-gen/hero.jpg" alt="Res React Orbit Gen" width="320"></a> | **Res React Orbit Gen** · beta<br>Orbit: five FFT-reactive decks specified cell by cell in the manifests.<br>[`beta/compositions/`](beta/compositions) |
+| <a href="gallery/README.md#res-react-lexicon"><img src="gallery/lexicon/hero.jpg" alt="Res React Lexicon" width="320"></a> | **Res React Lexicon** · beta<br>The controller as a sentence machine: five pad rows are the five slots of a sentence, 512 grammatical sentences.<br>[`beta/lexicon/`](beta/lexicon) |
+| <a href="gallery/README.md#res-react-lexicon-ii---eighties-ism"><img src="gallery/lexicon-ii/hero.jpg" alt="Res React Lexicon II - Eighties-ism" width="320"></a> | **Res React Lexicon II - Eighties-ism** · beta<br>The sequel: 200 pads of found broadcast-age text across five decks.<br>[`beta/lexicon-ii/`](beta/lexicon-ii) |
+| <a href="gallery/README.md#res-react-test-card"><img src="gallery/testcard/hero.jpg" alt="Res React Test Card" width="320"></a> | **Res React Test Card** · beta<br>Pure signal: every pad a typographic test pattern, all of them moving under live WaveWarp.<br>[`beta/testcard/`](beta/testcard) |
+| <a href="gallery/README.md#res-react-nisei"><img src="gallery/nisei/hero.jpg" alt="Res React Nisei" width="320"></a> | **Res React Nisei** · beta<br>Archival testimony, poetry, documents and places from the Japanese American experience, for Nisei Week.<br>[`beta/nisei/`](beta/nisei) |
+| *no frame: its two 27-minute video masters live outside the repo and were not on this machine, so Avenue showed black* | **EarthSearch EP01 Live Mix** · beta<br>Not a clip launcher: two 27-minute masters that never stop, and a surface that shapes them.<br>[`beta/earthsearch/`](beta/earthsearch) |
+| <a href="gallery/README.md#dead-air---listening-posts"><img src="gallery/dead-air/hero.jpg" alt="Dead Air - Listening Posts" width="320"></a> | **Dead Air - Listening Posts** · beta<br>Five rooms where someone is listening to the dark, and the dark, occasionally, replies.<br>[`beta/dead-air/`](beta/dead-air) |
+| <a href="gallery/README.md#dew-line---the-spinningwork"><img src="gallery/dew-line/hero.jpg" alt="Dew Line - The Spinningwork" width="320"></a> | **Dew Line - The Spinningwork** · beta<br>A spider builds an early-warning station out of silk and casts her shadow on every star the net catches.<br>[`beta/dew-line/`](beta/dew-line) |
+| <a href="gallery/README.md#the-library-and-the-hand---gusto"><img src="gallery/library-hand/hero.jpg" alt="The Library And The Hand - GUSTO" width="320"></a> | **The Library And The Hand - GUSTO** · beta<br>GUSTO, a proposed robot that fetches, flips, mixes and scratches real vinyl; stylus-cyan is documented, cue-orange proposed.<br>[`beta/library-hand/`](beta/library-hand) |
+| <a href="gallery/README.md#studio-one---war-of-the-worlds-1938"><img src="gallery/studio-one/hero.jpg" alt="Studio One - War Of The Worlds 1938" width="320"></a> | **Studio One - War Of The Worlds 1938** · beta<br>For the broadcast's 88th anniversary: CBS Studio One, Grovers Mill, the Visitors, New York, the Morning After.<br>[`beta/studio-one/`](beta/studio-one) |
+| <a href="gallery/README.md#signal-lost---transmission-from-tomorrow"><img src="gallery/signal-lost/hero.jpg" alt="Signal Lost - Transmission From Tomorrow" width="320"></a> | **Signal Lost - Transmission From Tomorrow** · beta<br>The OldTimeRadio pipeline as a show, including a VJ journey through the workflow one node per scene.<br>[`beta/signal-lost/`](beta/signal-lost) |
+| <a href="gallery/README.md#the-manual---avenue-7281"><img src="gallery/the-manual/hero.jpg" alt="The Manual - Avenue 7.28.1" width="320"></a> | **The Manual - Avenue 7.28.1** · beta<br>A composition about Resolume itself: the vocabulary, the clip, parameter animation, the 62 blend modes, this rig.<br>[`beta/the-manual/`](beta/the-manual) |
+| <a href="gallery/README.md#the-surface---apc40-mkii--midi"><img src="gallery/the-surface/hero.jpg" alt="The Surface - APC40 mkII + MIDI" width="320"></a> | **The Surface - APC40 mkII + MIDI** · beta<br>The controller every pack here is played on, drawn as schematics, every number from Akai's protocol document.<br>[`beta/the-surface/`](beta/the-surface) |
+
+<!-- gallery:end -->
+
 ## What this is
 
 Four things, in Resolume's own terms:
