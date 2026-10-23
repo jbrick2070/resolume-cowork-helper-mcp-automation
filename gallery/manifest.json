@@ -482,15 +482,15 @@
       },
       {
         "deck": "SL-1210MKX",
+        "column": "45"
+      },
+      {
+        "deck": "SL-1210MKX",
         "column": "33 1/3"
       },
       {
         "deck": "The Catalog",
         "column": "Refused"
-      },
-      {
-        "deck": "SL-1210MKX",
-        "column": "45"
       },
       {
         "deck": "The Catalog",
@@ -502,7 +502,7 @@
       },
       {
         "deck": "The Hand",
-        "column": "Circle Trap"
+        "column": "Swing-In Hand"
       }
     ]
   },
@@ -549,12 +549,12 @@
         "column": "The Battery"
       },
       {
-        "deck": "Grovers Mill",
-        "column": "Heat Ray"
-      },
-      {
         "deck": "Morning After",
         "column": "Hooper vs Myth"
+      },
+      {
+        "deck": "Grovers Mill",
+        "column": "Forty Dead"
       }
     ]
   },
@@ -573,16 +573,16 @@
     "rendered": true,
     "frames": [
       {
-        "deck": "Sign-On",
-        "column": "Good Evening"
-      },
-      {
         "deck": "The Cast",
         "column": "Announcer"
       },
       {
         "deck": "Shivering Gauge",
         "column": "Sign-Off"
+      },
+      {
+        "deck": "Sign-On",
+        "column": "Good Evening"
       },
       {
         "deck": "Writers Room",
@@ -593,20 +593,20 @@
         "column": "Credit Roll"
       },
       {
-        "deck": "Writers Room",
-        "column": "Plot"
+        "deck": "Sign-On",
+        "column": "Station Break"
       },
       {
-        "deck": "The Cast",
-        "column": "Dialogue"
+        "deck": "Shivering Gauge",
+        "column": "The Gauge"
+      },
+      {
+        "deck": "Shivering Gauge",
+        "column": "Shivering"
       },
       {
         "deck": "The Graph",
         "column": "Assembler"
-      },
-      {
-        "deck": "Sign-On",
-        "column": "Station Break"
       }
     ]
   },
@@ -637,8 +637,8 @@
         "column": "Luma Key"
       },
       {
-        "deck": "This Rig",
-        "column": "Shortcut Mode"
+        "deck": "Blend Modes",
+        "column": "Multiply + Bur"
       },
       {
         "deck": "Vocabulary",
@@ -649,16 +649,16 @@
         "column": "Audio In"
       },
       {
-        "deck": "Vocabulary",
-        "column": "Layer"
+        "deck": "Parameters",
+        "column": "BPM Sync"
+      },
+      {
+        "deck": "This Rig",
+        "column": "Shortcut Mode"
       },
       {
         "deck": "The Clip",
-        "column": "Transition"
-      },
-      {
-        "deck": "Parameters",
-        "column": "BPM Sync"
+        "column": "Ignore Column"
       }
     ]
   },
@@ -677,6 +677,14 @@
     "rendered": true,
     "frames": [
       {
+        "deck": "The Grid",
+        "column": "Mode 1"
+      },
+      {
+        "deck": "SE-500 Mixer",
+        "column": "T-Bar"
+      },
+      {
         "deck": "SE-500 Mixer",
         "column": "Split Screen"
       },
@@ -689,20 +697,20 @@
         "column": "Crossfader CC1"
       },
       {
-        "deck": "The Grid",
-        "column": "Mode 1"
+        "deck": "SE-500 Mixer",
+        "column": "MIDI + RS-232"
       },
       {
         "deck": "The Grid",
         "column": "Note Zero"
       },
       {
-        "deck": "The Wire",
-        "column": "USB-B"
+        "deck": "Knobs + Transport",
+        "column": "Footswitch CC6"
       },
       {
-        "deck": "The Strips",
-        "column": "A/B 66"
+        "deck": "The Grid",
+        "column": "Amber 9"
       }
     ]
   }

@@ -1948,10 +1948,10 @@
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -2720,10 +2720,10 @@ ONE ACTIVE AT A TIME" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -3431,10 +3431,10 @@ BLEND: ADD (DEFAULT)" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -4158,10 +4158,10 @@ OWN BLEND - OWN FX" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -4950,10 +4950,10 @@ HANDLE" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -5629,10 +5629,10 @@ BEAT SNAP: 1 BAR" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -6422,10 +6422,10 @@ BEAT SNAP: 1 BAR" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -7113,10 +7113,10 @@ LAYER
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -7932,10 +7932,10 @@ PIANO" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -8643,10 +8643,10 @@ BARS" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -9354,10 +9354,10 @@ COMPOSITION DETERMINED" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -10098,10 +10098,10 @@ ORIGINAL" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -10802,10 +10802,10 @@ CLIP OR LAYER" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -11518,10 +11518,10 @@ SCOPE LAYER USES THIS" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -12275,10 +12275,10 @@ BEATS" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -13013,10 +13013,10 @@ LAYER: ALPHA - 0-10 S" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -13766,10 +13766,10 @@ DASHBOARD" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -14459,10 +14459,10 @@ ONE-SHOT" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -15170,10 +15170,10 @@ TAP - RESYNC - NUDGE" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -15905,10 +15905,10 @@ L - M - H" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -16685,10 +16685,10 @@ TO LOW
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -17434,10 +17434,10 @@ EXPONENTIAL - ELASTIC
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -18216,10 +18216,10 @@ DIAL RANGE" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -18939,10 +18939,10 @@ CLIPS ONLY" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -19750,10 +19750,10 @@ CUT: HARD SWITCH" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -20510,10 +20510,10 @@ DODGE
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -21268,10 +21268,10 @@ BURN" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -22026,10 +22026,10 @@ HARD LIGHT" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -22788,10 +22788,10 @@ EXCLUSION" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -23555,10 +23555,10 @@ DISPLACE" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -24237,10 +24237,10 @@ MULTIPLY
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -24952,10 +24952,10 @@ PUSH - ZOOM - TO BLACK" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -25744,10 +25744,10 @@ INPUT: CABLE OUTPUT
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -26496,10 +26496,10 @@ OUTPUT DRIVES THE LEDS" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -27204,10 +27204,10 @@ REST API: ON - PORT
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -27878,10 +27878,10 @@ IN 7000 - OUT 7001
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -28553,10 +28553,10 @@ DMA: AUTODETECT
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -29231,10 +29231,10 @@ LOOP" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
@@ -30006,10 +30006,10 @@ BLENDS" />
 								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-860.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="460.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">

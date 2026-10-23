@@ -231,11 +231,32 @@ def wrap(s, n=22):
     return NL.join(out)
 
 
+# How Avenue 7.28.1 places a Text Block, measured on the rig (2026-10-23):
+#   * Position X is the CENTRE of the Line Width box; Alignment only justifies lines inside it.
+#   * AlignmentVertically picks the FRAME EDGE the block is aligned to (Top / Center / Bottom),
+#     and Position Y is an offset downward from that edge, not from the frame centre.
+# text()'s x/y keep their natural meaning (where the text's align/valign corner sits, in pixels
+# from the frame centre, y down) and are translated here. Before this, a bottom caption at
+# y=460 was pushed 460 px BELOW the bottom edge, and left-aligned text started off the left edge.
+TEXT_LINE_W = 1400.0
+HALF_H = 540.0
+
+
+def text_block_place(align, valign, x, y, line_w=TEXT_LINE_W):
+    """(Position X, Position Y, AlignmentVertically) that put a Text Block's (align, valign)
+    corner at (x, y), in composition pixels from the centre, y down."""
+    bx = x + line_w / 2.0 if align == "Left" else x - line_w / 2.0 if align == "Right" else x
+    by = y - HALF_H if valign == "Bottom" else y + HALF_H if valign == "Top" else y
+    return bx, by, valign
+
+
 def text(col, s, color=CYAN, size=0.9, font=MONO, align="Left", valign="Bottom",
          x=-860, y=460, animated=False, delay=90, name=None, layer=5,
          why="On-screen text in the script's monospace, cyan for documented, orange for proposed."):
     """Multi-line captions are Text Block (rig-proven with newlines in Dead
-    Air); a single animated line is Text Animator so the pad can retype it."""
+    Air); a single animated line is Text Animator so the pad can retype it.
+    (x, y) is where the text's (align, valign) corner sits. Text Animator placement was not
+    re-measured; every Text Animator these packs build is centred at (0, 0)."""
     s = wrap(s)
     if animated and NL not in s:
         p = {"Text": s, "Font": font, "Style": "Regular", "Color": color,
@@ -246,9 +267,10 @@ def text(col, s, color=CYAN, size=0.9, font=MONO, align="Left", valign="Bottom",
              "Delay": delay, "Opacity": 0.0, "Scale": 0.9}
         src = "Text Animator"
     else:
+        bx, by, bvalign = text_block_place(align, valign, x, y)
         p = {"Text": s, "Font": font, "Style": "Regular", "Color": color,
-             "Size": size, "Alignment": align, "AlignmentVertically": valign,
-             "Line Width": 1400.0, "Position X": x, "Position Y": y,
+             "Size": size, "Alignment": align, "AlignmentVertically": bvalign,
+             "Line Width": TEXT_LINE_W, "Position X": bx, "Position Y": by,
              "Spacing Y": 12.0, "Outline Width": 0.0, "Glow In": 0.0,
              "Glow Out": 0.0}
         src = "Text Block"
