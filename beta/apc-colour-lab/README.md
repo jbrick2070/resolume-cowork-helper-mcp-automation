@@ -37,7 +37,7 @@ as a negative). They are plain data in [`apc_lab/themes.json`](apc_lab/themes.js
 |---|---|
 | Message encoding, channel/animation table, palette, SysEx bytes | 40 unit tests, checked against Akai's protocol v1.2 and Ableton's own APC40 mkII skin |
 | Python engine = JavaScript engine | `tools/parity.py`: 54 scenarios, 31,677 messages, 0 differences |
-| The demo page | rendered and clicked in a browser; every theme viewed |
+| The demo page | rendered and clicked in a browser; Halloween, Christmas, Dia de Muertos, Newsprint and Inverse were looked at, the other four are covered by the tests only |
 | **The animations on real hardware** | **not tested.** Avenue holds the APC's ports and no loopback driver is installed |
 
 Open questions that only a rig test can settle (the Akai document does not say):
