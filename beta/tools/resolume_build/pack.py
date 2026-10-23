@@ -256,6 +256,31 @@ def build_pack(bible, decks, rack, out_dir, slug, preset_id, id_base,
             for col in range(1, 9):
                 where = "%s L%d C%d" % (dbible["name"], ln, col)
                 c = grid.get((ln, col))
+                if c is not None and c.get("file"):
+                    # A video file clip: no generator to validate, only the
+                    # file itself. Missing files are a repair, not a crash.
+                    path = os.path.abspath(c["file"])
+                    if not os.path.exists(path):
+                        rep.repair("%s: file %r missing - filled with %s" % (
+                            where, c["file"], FALLBACK_SOURCE[ln][0]))
+                        c = None
+                    else:
+                        name = str(c.get("name") or os.path.basename(path))[:MAX_NAME]
+                        if c.get("audio"):
+                            # Avenue renames a clip that has an audio track to its
+                            # file name (seen on 129 clips, 2026-10-23), so say so.
+                            name = os.path.splitext(os.path.basename(path))[0]
+                        opacity = min(max(float(c.get("opacity", 1.0)), 0.0), 1.0)
+                        size = tuple(c.get("size") or (comp.width, comp.height))
+                        deck.add_clip(layers[ln - 1], col - 1, name, "Blank", {},
+                                      opacity=opacity, file=path, size=size,
+                                      audio=bool(c.get("audio")),
+                                      seconds=max(0.1, float(c.get("seconds", 5))))
+                        n_clips += 1
+                        sheets.append((di, dbible["name"], ln, names[ln - 1], col,
+                                       cols[col - 1], name, "Video: " + os.path.basename(path),
+                                       "", "", c.get("why", "")))
+                        continue
                 if c is None:
                     src, params = FALLBACK_SOURCE[ln]
                     rep.repair("%s: missing - filled with %s" % (where, src))

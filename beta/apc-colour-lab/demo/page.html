@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APC40 Colour Lab</title>
+<style>/*STYLE*/</style>
+</head>
+<body>
+<header>
+  <h1>APC40 mkII Colour Lab <small>a MIDI router proof of concept</small></h1>
+  <p class="lede">A pad's MIDI <b>velocity</b> picks its colour from a fixed 128-entry palette and its MIDI <b>channel</b> picks an
+    animation (static, one-shot, pulsing, blinking) that the controller then runs by itself. A router between the APC40 and Resolume can
+    therefore re-colour any pack's feedback, fill the dark pads with an ambient show and answer every press, using two MIDI messages per pad.
+    Click the pads.</p>
+  <p class="warn">Flashing content: pads blink and pulse. Use Pause at any time. This page <b>emulates</b> the LED protocol from the Akai
+    APC40 Mk2 Communications Protocol v1.2 and Ableton's own APC40 mkII skin; the animation timings have not yet been confirmed on this
+    rig's hardware.</p>
+</header>
+<main>
+  <section aria-label="Controller">
+    <h2>What the APC40 shows</h2>
+    <div class="apc">
+      <div class="rings" id="rings-top" aria-hidden="true"></div>
+      <div class="stage">
+        <div class="padwrap" id="padwrap"></div>
+        <div class="btnrow" id="led-stop" aria-hidden="true"></div>
+        <div class="btnrow" id="led-ab" aria-hidden="true"></div>
+      </div>
+      <div class="rings" id="rings-bottom" aria-hidden="true" style="margin:10px 0 0"></div>
+    </div>
+    <div class="stats">
+      <span>messages to the APC <b id="st-rate">0</b>/s</span>
+      <span>pads animating in hardware <b id="st-anim">0</b></span>
+      <span>MIDI clock bytes sent <b id="st-clock">0</b></span>
+    </div>
+  </section>
+
+  <section aria-label="Controls">
+    <h2>Theme</h2>
+    <div class="themes" id="themes"></div>
+    <p class="blurb" id="blurb" aria-live="polite"></p>
+    <div class="row"><label for="bpm">Tempo</label><input id="bpm" type="range" min="60" max="180" value="120"><output id="bpm-out">120 bpm</output></div>
+    <div class="row"><label for="ringstyle">Ring style</label>
+      <select id="ringstyle"><option value="volume">Volume</option><option value="pan">Pan</option><option value="single">Single</option></select>
+      <button class="btn" id="auto" aria-pressed="false">Auto-press</button>
+      <button class="btn" id="pause" aria-pressed="false">Pause</button>
+      <button class="btn" id="reset">Reset pack</button></div>
+    <h2 style="margin-top:16px">What Resolume sends</h2>
+    <div class="compare" id="compare" aria-label="Resolume's own feedback, unthemed"></div>
+    <p class="tag" style="margin:8px 0 0">The same pads, before the router: green is playing, dim green is loaded, one hue per layer.</p>
+  </section>
+
+  <section class="mon" aria-label="MIDI monitor">
+    <div class="monhead"><h2>MIDI monitor</h2><span class="tag">← from the controller · → Res forwarded untouched · → APC what the router sends back</span></div>
+    <ol id="log" aria-live="off"></ol>
+  </section>
+
+  <section class="explain" aria-label="How it works">
+    <h2>How it works</h2>
+    <table>
+      <tr><th>Channel</th><th>Animation</th><th>Rates (MIDI clock ticks at 24 per quarter note)</th></tr>
+      <tr><td>1</td><td>primary colour</td><td>static</td></tr>
+      <tr><td>2 to 6</td><td>one-shot to the secondary colour</td><td>1/24 · 1/16 · 1/8 · 1/4 · 1/2 (4 · 6 · 12 · 24 · 48 ticks)</td></tr>
+      <tr><td>7 to 11</td><td>pulsing between primary and secondary</td><td>same five rates</td></tr>
+      <tr><td>12 to 16</td><td>blinking between primary and secondary</td><td>same five rates</td></tr>
+    </table>
+    <ul>
+      <li><b>Recipe.</b> Send the primary colour on channel 1, then the secondary on an animation channel. Sending a primary again on channel 1 cancels the animation.</li>
+      <li><b>Router.</b> Resolume keeps the APC's input for presses; the router sits on the LED path. It re-colours the feedback through a theme (green becomes pumpkin, or white), fills pads Resolume leaves dark, and answers each press with a ripple, a cross, a sparkle or an inversion, all as one-shot messages timed by the controller.</li>
+      <li><b>Mode.</b> The controller starts in Mode 0 after every power cycle. Send <code>F0 47 7F 29 60 00 04 42 00 00 00 F7</code> (Mode 2) so the host owns every LED, rings included.</li>
+      <li><b>Not yet confirmed on hardware.</b> That the pads follow a host MIDI clock (and the tempo they use without one), the exact one-shot direction, and whether the Scene Launch pads animate like the clip pads. The demo draws them as the documents describe.</li>
+    </ul>
+  </section>
+</main>
+<footer>Pad colours: the Akai APC40 mkII RGB palette from Akai's APC40 Mk2 Communications Protocol v1.2 (display approximations). Engine: apc_lab (Python) and demo/engine.js, checked against each other on 54 scenarios.</footer>
+<script>/*DATA*/</script>
+<script>/*ENGINE*/</script>
+<script>/*APP*/</script>
+</body>
+</html>

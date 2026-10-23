@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APC40 Colour Lab</title>
+<style>:root {
+  --bg: #0e1013; --panel: #171a1f; --panel2: #1e2229; --line: #2b3039; --ink: #e7e9ee; --dim: #8d95a3;
+  --accent: #7fd1ff; --warn: #ffb84d; --good: #6fe39a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 "Segoe UI", system-ui, sans-serif; }
+body { padding: 0 16px 48px; }
+header { max-width: 1180px; margin: 0 auto; padding: 28px 0 12px; }
+h1 { margin: 0; font-size: 26px; letter-spacing: .2px; }
+h1 small { color: var(--dim); font-weight: 400; font-size: 15px; margin-left: 10px; }
+.lede { color: var(--dim); max-width: 78ch; margin: 8px 0 0; }
+.warn { margin-top: 12px; padding: 8px 12px; border: 1px solid #5a4620; background: #2a2212; color: #e9cf9a;
+  border-radius: 8px; font-size: 13px; max-width: 78ch; }
+main { max-width: 1180px; margin: 0 auto; display: grid; gap: 18px; grid-template-columns: minmax(0, 1.5fr) minmax(300px, 1fr); }
+@media (max-width: 980px) { main { grid-template-columns: 1fr; } }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+section h2 { margin: 0 0 10px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); font-weight: 600; }
+
+/* ---- the controller ---- */
+.apc { background: linear-gradient(#1b1e24, #15181d); border: 1px solid #2a2f38; border-radius: 12px; padding: 14px 14px 16px; }
+.rings { display: grid; grid-template-columns: repeat(8, 1fr); gap: 8px; margin-bottom: 10px; justify-items: center; }
+.ring { width: 100%; max-width: 62px; aspect-ratio: 1; position: relative; }
+.ring i { position: absolute; width: 7%; height: 7%; border-radius: 50%; background: #2a2f38; left: 50%; top: 50%; margin: -3.5% 0 0 -3.5%; }
+.ring i.lit { background: #ffd18a; box-shadow: 0 0 6px #ffb84d; }
+.ring b { position: absolute; inset: 22%; border-radius: 50%; background: radial-gradient(#3a3f49, #22262d); border: 1px solid #444b57; }
+.stage { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.padwrap { display: grid; grid-template-columns: repeat(8, 1fr) 14px 1fr; gap: 7px; align-items: stretch; }
+.pad { appearance: none; border: 1px solid #000; border-radius: 9px; aspect-ratio: 1; min-width: 0; padding: 0; cursor: pointer;
+  background: #000; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06); }
+.pad:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pad.scene { border-radius: 9px; }
+.gap { }
+.btnrow { display: grid; grid-template-columns: repeat(8, 1fr) 14px 1fr; gap: 7px; align-items: center; }
+.btnrow .lbl { grid-column: 10; font-size: 11px; color: var(--dim); letter-spacing: .08em; }
+.led { height: 12px; border-radius: 6px; background: #252a32; border: 1px solid #000; }
+.led.on-y { background: #ffe14a; box-shadow: 0 0 8px #ffe14a; }
+.led.on-o { background: #ff8a1c; box-shadow: 0 0 8px #ff8a1c; }
+.led.blink { animation: none; }
+.tag { font-size: 11px; color: var(--dim); letter-spacing: .08em; margin: 2px 0 -4px; }
+
+/* ---- controls ---- */
+.themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.theme { text-align: left; background: var(--panel2); border: 1px solid var(--line); color: var(--ink); border-radius: 10px;
+  padding: 9px 10px; cursor: pointer; font: inherit; }
+.theme:hover { border-color: #46505f; }
+.theme[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.theme .nm { font-weight: 600; font-size: 14px; display: block; }
+.theme .chips { display: flex; gap: 3px; margin-top: 6px; }
+.theme .chips span { width: 14px; height: 14px; border-radius: 4px; border: 1px solid rgba(255,255,255,.12); }
+.blurb { min-height: 4.5em; color: #c5cad3; margin: 12px 0 4px; font-size: 14px; }
+.row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 10px 0; }
+.row label { color: var(--dim); font-size: 13px; min-width: 88px; }
+.row input[type=range] { flex: 1; min-width: 140px; accent-color: var(--accent); }
+.row output { width: 78px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.btn { background: var(--panel2); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; font: inherit; }
+.btn:hover { border-color: #46505f; }
+.btn[aria-pressed="true"] { border-color: var(--accent); }
+select { background: var(--panel2); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; font: inherit; }
+.compare { display: grid; grid-template-columns: repeat(8, 1fr) 8px 1fr; gap: 3px; }
+.compare i { aspect-ratio: 1; border-radius: 3px; background: #000; display: block; }
+.stats { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 10px; color: var(--dim); font-size: 13px; }
+.stats b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* ---- monitor ---- */
+.mon { grid-column: 1 / -1; }
+.monhead { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+ol#log { list-style: none; margin: 0; padding: 0; font: 12.5px/1.55 Consolas, "Cascadia Mono", monospace; max-height: 300px; overflow: hidden;
+  display: grid; grid-template-columns: 1fr; }
+ol#log li { display: grid; grid-template-columns: 94px 98px 1fr 22px; gap: 10px; padding: 1px 4px; border-bottom: 1px solid #1c2027; align-items: center; }
+ol#log .dir { color: var(--dim); }
+ol#log .hex { color: #cdd3dd; }
+ol#log .sw { width: 18px; height: 12px; border-radius: 3px; border: 1px solid rgba(255,255,255,.15); }
+.explain { grid-column: 1 / -1; }
+.explain p, .explain li { color: #c5cad3; }
+.explain code { background: #11141a; border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; font-size: 13px; }
+.explain table { border-collapse: collapse; margin: 8px 0; font-size: 13.5px; }
+.explain td, .explain th { border: 1px solid var(--line); padding: 4px 10px; text-align: left; }
+.explain th { color: var(--dim); font-weight: 600; }
+footer { max-width: 1180px; margin: 18px auto 0; color: var(--dim); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>APC40 mkII Colour Lab <small>a MIDI router proof of concept</small></h1>
+  <p class="lede">A pad's MIDI <b>velocity</b> picks its colour from a fixed 128-entry palette and its MIDI <b>channel</b> picks an
+    animation (static, one-shot, pulsing, blinking) that the controller then runs by itself. A router between the APC40 and Resolume can
+    therefore re-colour any pack's feedback, fill the dark pads with an ambient show and answer every press, using two MIDI messages per pad.
+    Click the pads.</p>
+  <p class="warn">Flashing content: pads blink and pulse. Use Pause at any time. This page <b>emulates</b> the LED protocol from the Akai
+    APC40 Mk2 Communications Protocol v1.2 and Ableton's own APC40 mkII skin; the animation timings have not yet been confirmed on this
+    rig's hardware.</p>
+</header>
+<main>
+  <section aria-label="Controller">
+    <h2>What the APC40 shows</h2>
+    <div class="apc">
+      <div class="rings" id="rings-top" aria-hidden="true"></div>
+      <div class="stage">
+        <div class="padwrap" id="padwrap"></div>
+        <div class="btnrow" id="led-stop" aria-hidden="true"></div>
+        <div class="btnrow" id="led-ab" aria-hidden="true"></div>
+      </div>
+      <div class="rings" id="rings-bottom" aria-hidden="true" style="margin:10px 0 0"></div>
+    </div>
+    <div class="stats">
+      <span>messages to the APC <b id="st-rate">0</b>/s</span>
+      <span>pads animating in hardware <b id="st-anim">0</b></span>
+      <span>MIDI clock bytes sent <b id="st-clock">0</b></span>
+    </div>
+  </section>
+
+  <section aria-label="Controls">
+    <h2>Theme</h2>
+    <div class="themes" id="themes"></div>
+    <p class="blurb" id="blurb" aria-live="polite"></p>
+    <div class="row"><label for="bpm">Tempo</label><input id="bpm" type="range" min="60" max="180" value="120"><output id="bpm-out">120 bpm</output></div>
+    <div class="row"><label for="ringstyle">Ring style</label>
+      <select id="ringstyle"><option value="volume">Volume</option><option value="pan">Pan</option><option value="single">Single</option></select>
+      <button class="btn" id="auto" aria-pressed="false">Auto-press</button>
+      <button class="btn" id="pause" aria-pressed="false">Pause</button>
+      <button class="btn" id="reset">Reset pack</button></div>
+    <h2 style="margin-top:16px">What Resolume sends</h2>
+    <div class="compare" id="compare" aria-label="Resolume's own feedback, unthemed"></div>
+    <p class="tag" style="margin:8px 0 0">The same pads, before the router: green is playing, dim green is loaded, one hue per layer.</p>
+  </section>
+
+  <section class="mon" aria-label="MIDI monitor">
+    <div class="monhead"><h2>MIDI monitor</h2><span class="tag">← from the controller · → Res forwarded untouched · → APC what the router sends back</span></div>
+    <ol id="log" aria-live="off"></ol>
+  </section>
+
+  <section class="explain" aria-label="How it works">
+    <h2>How it works</h2>
+    <table>
+      <tr><th>Channel</th><th>Animation</th><th>Rates (MIDI clock ticks at 24 per quarter note)</th></tr>
+      <tr><td>1</td><td>primary colour</td><td>static</td></tr>
+      <tr><td>2 to 6</td><td>one-shot to the secondary colour</td><td>1/24 · 1/16 · 1/8 · 1/4 · 1/2 (4 · 6 · 12 · 24 · 48 ticks)</td></tr>
+      <tr><td>7 to 11</td><td>pulsing between primary and secondary</td><td>same five rates</td></tr>
+      <tr><td>12 to 16</td><td>blinking between primary and secondary</td><td>same five rates</td></tr>
+    </table>
+    <ul>
+      <li><b>Recipe.</b> Send the primary colour on channel 1, then the secondary on an animation channel. Sending a primary again on channel 1 cancels the animation.</li>
+      <li><b>Router.</b> Resolume keeps the APC's input for presses; the router sits on the LED path. It re-colours the feedback through a theme (green becomes pumpkin, or white), fills pads Resolume leaves dark, and answers each press with a ripple, a cross, a sparkle or an inversion, all as one-shot messages timed by the controller.</li>
+      <li><b>Mode.</b> The controller starts in Mode 0 after every power cycle. Send <code>F0 47 7F 29 60 00 04 42 00 00 00 F7</code> (Mode 2) so the host owns every LED, rings included.</li>
+      <li><b>Not yet confirmed on hardware.</b> That the pads follow a host MIDI clock (and the tempo they use without one), the exact one-shot direction, and whether the Scene Launch pads animate like the clip pads. The demo draws them as the documents describe.</li>
+    </ul>
+  </section>
+</main>
+<footer>Pad colours: the Akai APC40 mkII RGB palette from Akai's APC40 Mk2 Communications Protocol v1.2 (display approximations). Engine: apc_lab (Python) and demo/engine.js, checked against each other on 54 scenarios.</footer>
+<script>const PALETTE = [[0, 0, 0], [30, 30, 30], [127, 127, 127], [255, 255, 255], [255, 76, 76], [255, 0, 0], [89, 0, 0], [25, 0, 0], [255, 189, 108], [255, 84, 0], [89, 29, 0], [39, 27, 0], [255, 255, 76], [255, 255, 0], [89, 89, 0], [25, 25, 0], [136, 255, 76], [84, 255, 0], [29, 89, 0], [20, 43, 0], [76, 255, 76], [0, 255, 0], [0, 89, 0], [0, 25, 0], [76, 255, 94], [0, 255, 25], [0, 89, 13], [0, 25, 2], [76, 255, 136], [0, 255, 85], [0, 89, 29], [0, 31, 18], [76, 255, 183], [0, 255, 153], [0, 89, 53], [0, 25, 18], [76, 195, 255], [0, 169, 255], [0, 65, 82], [0, 16, 25], [76, 136, 255], [0, 85, 255], [0, 29, 89], [0, 8, 25], [76, 76, 255], [0, 0, 255], [0, 0, 89], [0, 0, 25], [135, 76, 255], [84, 0, 255], [25, 0, 100], [15, 0, 48], [255, 76, 255], [255, 0, 255], [89, 0, 89], [25, 0, 25], [255, 76, 135], [255, 0, 84], [89, 0, 29], [34, 0, 19], [255, 21, 0], [153, 53, 0], [121, 81, 0], [67, 100, 0], [3, 57, 0], [0, 87, 53], [0, 84, 127], [0, 0, 255], [0, 69, 79], [37, 0, 204], [127, 127, 127], [32, 32, 32], [255, 0, 0], [189, 255, 45], [175, 237, 6], [100, 255, 9], [16, 139, 0], [0, 255, 135], [0, 169, 255], [0, 42, 255], [63, 0, 255], [122, 0, 255], [178, 26, 125], [64, 33, 0], [255, 74, 0], [136, 225, 6], [114, 255, 21], [0, 255, 0], [59, 255, 38], [89, 255, 113], [56, 255, 204], [91, 138, 255], [49, 81, 198], [135, 127, 233], [211, 29, 255], [255, 0, 93], [255, 127, 0], [185, 176, 0], [144, 255, 0], [131, 93, 7], [57, 43, 0], [20, 76, 16], [13, 80, 56], [21, 21, 42], [22, 32, 90], [105, 60, 28], [168, 0, 10], [222, 81, 61], [216, 106, 28], [255, 225, 38], [158, 225, 47], [103, 181, 15], [30, 30, 48], [220, 255, 107], [128, 255, 189], [154, 153, 255], [142, 102, 255], [64, 64, 64], [117, 117, 117], [224, 255, 255], [160, 0, 0], [53, 0, 0], [26, 208, 0], [7, 66, 0], [185, 176, 0], [63, 49, 0], [179, 95, 0], [75, 21, 2]];
+const THEMES = {"pack": {"name": "Pack colours", "blurb": "Resolume's own feedback, untouched: green for playing, dim green for loaded, one hue per layer. The baseline every other theme re-colours.", "remap": "identity", "ambient": {"kind": "none"}, "touch": {"kind": "none"}}, "halloween": {"name": "Halloween", "blurb": "Pumpkin, violet and slime. Playing pads breathe between orange and purple; empty pads gutter like candles; a press sends a violet ring through the grid.", "remap": "pairs", "pairs": [[96, 10, 94], [94, 51, 96], [75, 18, 96]], "playing": {"colour": 94, "kind": "pulsing", "div": "1/4"}, "ambient": {"kind": "flicker", "colours": [10, 127, 61, 9], "rate": 8, "density": 0.34}, "touch": {"kind": "ripple", "colours": [94, 81, 53], "div": "1/8", "step": 0.065}, "scene": {"colour": 96, "kind": "pulsing", "div": "1/2", "secondary": 94}}, "christmas": {"name": "Christmas", "blurb": "Red, green and gold on a marquee chase around the empty pads; a press throws a gold star outward.", "remap": "pairs", "pairs": [[72, 120, 3], [87, 76, 3], [109, 99, 3]], "playing": {"colour": 3, "kind": "blinking", "div": "1/4"}, "ambient": {"kind": "chase", "colours": [72, 0, 87, 0, 109, 0], "rate": 7}, "touch": {"kind": "ripple", "colours": [109, 3], "div": "1/8", "step": 0.05}, "scene": {"colour": 72, "kind": "blinking", "div": "1/2", "secondary": 87}}, "valentine": {"name": "Valentine's", "blurb": "Rose, red and white. Every loaded pad has a heartbeat; a press sends a pink pulse outward like a ripple in a cup of wine.", "remap": "pairs", "pairs": [[57, 58, 3], [95, 7, 3], [56, 59, 3]], "playing": {"colour": 3, "kind": "pulsing", "div": "1/4"}, "ambient": {"kind": "pulse", "colours": [59, 56], "div": "1/2"}, "touch": {"kind": "ripple", "colours": [56, 4, 3], "div": "1/8", "step": 0.07}, "scene": {"colour": 95, "kind": "pulsing", "div": "1/4", "secondary": 3}}, "stars": {"name": "Stars & Stripes", "blurb": "Red, white and blue for the Fourth. Rows alternate like stripes; a press fires a firework cross along its row and column.", "remap": "pairs", "pairs": [[5, 6, 3], [3, 2, 45], [45, 46, 3]], "playing": {"colour": 3, "kind": "blinking", "div": "1/8"}, "ambient": {"kind": "stripes", "colours": [6, 2, 46]}, "touch": {"kind": "cross", "colours": [3, 13, 5], "div": "1/8", "step": 0.05}, "scene": {"colour": 45, "kind": "blinking", "div": "1/4", "secondary": 5}}, "muertos": {"name": "Dia de Muertos", "blurb": "Marigold, magenta and turquoise: the ofrenda. Empty pads rain slowly downward like petals; a press scatters marigold sparks.", "remap": "pairs", "pairs": [[96, 99, 109], [53, 54, 96], [90, 102, 3]], "playing": {"colour": 109, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "rain", "colours": [96, 126, 99, 100], "rate": 5}, "touch": {"kind": "sparkle", "colours": [96, 109, 53, 90], "div": "1/8", "count": 14}, "scene": {"colour": 53, "kind": "pulsing", "div": "1/2", "secondary": 96}}, "synthwave": {"name": "Synthwave", "blurb": "Hot pink, violet and azure. The empty pads scan like a horizon grid; a press fires a pink-to-azure shockwave.", "remap": "pairs", "pairs": [[95, 58, 37], [94, 51, 37], [37, 38, 95]], "playing": {"colour": 37, "kind": "pulsing", "div": "1/8"}, "ambient": {"kind": "scan", "colours": [49, 50, 51], "rate": 6}, "touch": {"kind": "ripple", "colours": [95, 94, 37], "div": "1/8", "step": 0.055}, "scene": {"colour": 95, "kind": "pulsing", "div": "1/4", "secondary": 37}}, "newsprint": {"name": "Newsprint", "blurb": "Black and white only. Colour becomes brightness: the loud hues go white, the quiet ones grey. A press leaves a white ring that fades to ink.", "remap": "luma", "greys": [1, 117, 118, 2, 3], "playing": {"colour": 1, "kind": "pulsing", "div": "1/4"}, "ambient": {"kind": "flicker", "colours": [1, 117], "rate": 6, "density": 0.18}, "touch": {"kind": "ripple", "colours": [3, 2, 118, 117], "div": "1/8", "step": 0.06}, "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}}, "inverse": {"name": "Inverse", "blurb": "Black and white as a negative. Quiet pads glow, the playing pad goes dark, empty pads go white, and every press flips the whole grid for a beat.", "remap": "luma-invert", "greys": [1, 117, 118, 2, 3], "playing": {"colour": 3, "kind": "blinking", "div": "1/4"}, "ambient": {"kind": "fill", "colour": 3}, "touch": {"kind": "invert", "colours": [1, 3], "div": "1/4"}, "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}}};
+const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "muertos", "synthwave", "newsprint", "inverse"];</script>
+<script>/* engine.js - the colour lab's engine in JavaScript, a line-for-line port of
+ * apc_lab/engine.py so the HTML demo and the Python router produce the same
+ * messages. tools/parity.py runs one scenario through both and diffs them.
+ *
+ * It expects PALETTE (128 [r,g,b]) and THEMES / THEME_ORDER to be supplied by
+ * the host (the demo inlines them; node loads the same JSON files).
+ */
+(function (root) {
+  "use strict";
+
+  const DIVS = ["1/24", "1/16", "1/8", "1/4", "1/2"];
+  const DIV_BEATS = { "1/24": 4 / 24, "1/16": 0.25, "1/8": 0.5, "1/4": 1.0, "1/2": 2.0 };
+  const SCENE_NOTES = [82, 83, 84, 85, 86];
+  const PAD_NOTES = Array.from({ length: 40 }, (_, i) => i);
+  const ALL_PADS = PAD_NOTES.concat(SCENE_NOTES);
+  const NOTE_ON = "on", NOTE_OFF = "off", CC = "cc";
+
+  function padColRow(note) {
+    if (note >= 82 && note <= 86) return [8, 86 - note];
+    return [note % 8, Math.floor(note / 8)];
+  }
+  function modeToChannel(kind, div) {
+    if (kind === "primary") return 1;
+    return { oneshot: 2, pulsing: 7, blinking: 12 }[kind] + DIVS.indexOf(div);
+  }
+  function channelToMode(ch) {
+    if (ch < 1 || ch > 16) throw new Error("MIDI channel out of range: " + ch);
+    if (ch === 1) return ["primary", null];
+    if (ch <= 6) return ["oneshot", DIVS[ch - 2]];
+    if (ch <= 11) return ["pulsing", DIVS[ch - 7]];
+    return ["blinking", DIVS[ch - 12]];
+  }
+  const on = (ch, note, vel) => [NOTE_ON, ch, note, vel];
+  const off = (ch, note) => [NOTE_OFF, ch, note, 0];
+  const cc = (ch, ctrl, val) => [CC, ch, ctrl, val];
+
+  // Deterministic 0..1 hash, bit-identical to engine.py's hash01.
+  function hash01(a, b) {
+    let h = (Math.imul(a, 374761393) + Math.imul(b, 668265263)) >>> 0;
+    h = Math.imul((h ^ (h >>> 13)) >>> 0, 1274126177) >>> 0;
+    h = (h ^ (h >>> 16)) >>> 0;
+    return (h & 0xFFFFFF) / 0x1000000;
+  }
+  const lerp = (a, b, w) => [a[0] + (b[0] - a[0]) * w, a[1] + (b[1] - a[1]) * w, a[2] + (b[2] - a[2]) * w];
+  const luma = (c) => (0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2]) / 255.0;
+
+  // The (on, dim) velocity pairs the packs send, in hue order (see engine.py).
+  const FAMILIES = [[5, 6], [9, 10], [13, 14], [17, 18], [21, 22], [25, 26],
+                    [37, 38], [41, 42], [45, 46], [49, 50], [53, 54], [57, 58]];
+  const FEEDBACK = {};
+  FAMILIES.forEach((p, i) => { FEEDBACK[p[0]] = [i, "on"]; FEEDBACK[p[1]] = [i, "dim"]; });
+  FEEDBACK[3] = [null, "on"];
+  FEEDBACK[2] = [null, "dim"];
+
+  function create(PALETTE, THEMES, THEME_ORDER) {
+    // ---- the surface ----------------------------------------------------------
+    class Surface {
+      constructor() {
+        this.pads = {};
+        ALL_PADS.forEach((n) => { this.pads[n] = { p: 0, s: 0, kind: "primary", div: null, t: 0 }; });
+      }
+      apply(msg, t) {
+        const [kind, ch, note, vel] = msg;
+        const pad = this.pads[note];
+        if (pad === undefined || kind === CC) return;
+        const [mode, div] = channelToMode(ch);
+        if (kind === NOTE_OFF || (kind === NOTE_ON && vel === 0)) {
+          if (mode === "primary") { pad.p = 0; pad.s = 0; pad.kind = "primary"; pad.div = null; }
+          else { pad.s = 0; pad.kind = "primary"; pad.div = null; }
+          return;
+        }
+        if (mode === "primary") { pad.p = vel; pad.s = 0; pad.kind = "primary"; pad.div = null; pad.t = t; }
+        else { pad.s = vel; pad.kind = mode; pad.div = div; pad.t = t; }
+      }
+      rgb(note, t, bpm) {
+        const pad = this.pads[note];
+        const prim = PALETTE[pad.p], sec = PALETTE[pad.s];
+        if (pad.kind === "primary") return prim.slice();
+        const period = DIV_BEATS[pad.div] * 60.0 / bpm;
+        const phase = (t - pad.t) / period;
+        if (pad.kind === "oneshot") return (phase >= 0 && phase < 1) ? sec.slice() : prim.slice();
+        if (pad.kind === "pulsing") return lerp(prim, sec, 0.5 - 0.5 * Math.cos(2 * Math.PI * phase));
+        const f = phase - Math.floor(phase);
+        return f < 0.5 ? sec.slice() : prim.slice();
+      }
+    }
+
+    const secEq = (a, b) => (a === null || b === null) ? a === b : (a[0] === b[0] && a[1] === b[1] && a[2] === b[2]);
+
+    // ---- the router -------------------------------------------------------------
+    class Router {
+      constructor(theme, bpm) {
+        this.bpm = bpm || 120.0;
+        this.themeKey = theme || "pack";
+        this.base = {}; this.sent = {};
+        ALL_PADS.forEach((n) => { this.base[n] = 0; this.sent[n] = [0, null]; });
+        this.queue = [];
+        this.seq = 0;
+        this.presses = 0;
+      }
+      get theme() { return THEMES[this.themeKey]; }
+      setTheme(key, t) { this.themeKey = key; return this.tick(t); }
+
+      fromApc(msg, t) {
+        let out = [];
+        const [kind, ch, note, vel] = msg;
+        if (kind === NOTE_ON && vel > 0 && note < 40 && ch === 1) {
+          this.presses += 1;
+          out = this._touch(note, t);
+        }
+        return [[msg], out];
+      }
+      fromResolume(msg, t) {
+        const [kind, ch, note, vel] = msg;
+        if (Object.prototype.hasOwnProperty.call(this.base, note) && kind !== CC) {
+          const isOn = kind === NOTE_ON && vel > 0;
+          this.base[note] = isOn ? vel : 0;
+          return this._refresh(note, t);
+        }
+        return [msg];
+      }
+      tick(t) {
+        const out = [];
+        this.queue.sort((a, b) => (a[0] - b[0]) || (a[1] - b[1]));
+        while (this.queue.length && this.queue[0][0] <= t) out.push(this.queue.shift()[2]);
+        ALL_PADS.forEach((n) => { this._refresh(n, t).forEach((m) => out.push(m)); });
+        return out;
+      }
+
+      desired(note, t) {
+        const v = this.base[note];
+        const th = this.theme;
+        if (v) return this._remap(note, v, th);
+        if (note >= 82) return [0, null];
+        return this._ambient(note, t, th);
+      }
+      _remap(note, v, th) {
+        const mode = th.remap;
+        const fb = FEEDBACK[v];
+        const fam = fb ? fb[0] : null, state = fb ? fb[1] : null;
+        if (mode === "identity" || state === null) return [v, null];
+        const playing = th.playing;
+        let sec = (playing && state === "on") ? [playing.colour, playing.kind, playing.div] : null;
+        if (note >= 82 && state === "on" && th.scene) {
+          const s = th.scene;
+          return [s.colour, [s.secondary, s.kind, s.div]];
+        }
+        if (mode === "pairs") {
+          const pairs = th.pairs;
+          const pair = pairs[(fam !== null ? fam : 0) % pairs.length];
+          if (fam === null) {
+            sec = (sec && playing) ? [pairs[0][0], playing.kind, playing.div] : null;
+            return [state === "on" ? 3 : 2, sec];
+          }
+          if (state !== "on") return [pair[1], null];
+          if (playing) sec = [pair[2], playing.kind, playing.div];
+          return [pair[0], sec];
+        }
+        const greys = th.greys;
+        const lum = luma(PALETTE[v]);
+        let idx = lum < 0.12 ? 0 : lum < 0.30 ? 1 : lum < 0.50 ? 2 : lum < 0.75 ? 3 : 4;
+        if (state === "on") idx = 4; else idx = Math.min(idx, 2);
+        if (mode === "luma-invert") idx = greys.length - 1 - idx;
+        return [greys[idx], sec];
+      }
+      _ambient(note, t, th) {
+        const a = th.ambient, kind = a.kind;
+        const [col, row] = padColRow(note);
+        if (kind === "none") return [0, null];
+        if (kind === "fill") return [a.colour, null];
+        const cs = a.colours;
+        if (kind === "pulse") return [cs[0], [cs[1], "pulsing", a.div]];
+        if (kind === "stripes") return [cs[row % cs.length], null];
+        const k = Math.floor(t * a.rate);
+        if (kind === "flicker") {
+          if (hash01(note, k) < a.density) return [cs[Math.floor(hash01(note + 101, k) * cs.length)], null];
+          return [0, null];
+        }
+        if (kind === "chase") {
+          const i = row * 8 + (row % 2 === 0 ? col : 7 - col);
+          return [cs[(((i - k) % cs.length) + cs.length) % cs.length], null];
+        }
+        if (kind === "rain") {
+          const rel = (row + k + col * 3) % 10;
+          return rel < cs.length ? [cs[rel], null] : [0, null];
+        }
+        if (kind === "scan") {
+          const d = Math.abs(row - (k % 5));
+          return d < cs.length ? [cs[d], null] : [0, null];
+        }
+        return [0, null];
+      }
+      _refresh(note, t) {
+        const want = this.desired(note, t);
+        const have = this.sent[note];
+        if (want[0] === have[0] && secEq(want[1], have[1])) return [];
+        const out = [];
+        const p = want[0], sec = want[1];
+        if (p !== have[0] || (sec === null && have[1] !== null) || !secEq(sec, have[1])) {
+          out.push(p ? on(1, note, p) : off(1, note));
+        }
+        if (sec !== null) out.push(on(modeToChannel(sec[1], sec[2]), note, sec[0]));
+        this.sent[note] = want;
+        return out;
+      }
+      _touch(note, t) {
+        const tc = this.theme.touch, kind = tc.kind;
+        if (kind === "none") return [];
+        const ch = modeToChannel("oneshot", tc.div);
+        const cs = tc.colours;
+        const [c0, r0] = padColRow(note);
+        const plan = [];
+        PAD_NOTES.forEach((m) => {
+          const [c, r] = padColRow(m);
+          const dc = Math.abs(c - c0), dr = Math.abs(r - r0);
+          if (kind === "ripple") {
+            const d = Math.max(dc, dr);
+            plan.push([d * tc.step, m, cs[d % cs.length]]);
+          } else if (kind === "cross" && (dc === 0 || dr === 0)) {
+            const d = dc + dr;
+            plan.push([d * tc.step, m, cs[d % cs.length]]);
+          } else if (kind === "invert") {
+            plan.push([0.0, m, this.base[m] ? cs[0] : cs[1]]);
+          }
+        });
+        if (kind === "sparkle") {
+          for (let j = 0; j < tc.count; j++) {
+            const m = Math.floor(hash01(j + 1, this.presses) * 40);
+            plan.push([hash01(j + 50, this.presses) * 0.35, m, cs[Math.floor(hash01(j + 90, this.presses) * cs.length)]]);
+          }
+        }
+        plan.sort((x, y) => (x[0] - y[0]) || (x[1] - y[1]));
+        const out = [];
+        plan.forEach(([delay, m, colour]) => {
+          const msg = on(ch, m, colour);
+          if (delay <= 0) out.push(msg);
+          else { this.seq += 1; this.queue.push([t + delay, this.seq, msg]); }
+        });
+        return out;
+      }
+    }
+
+    // ---- rings and clock -----------------------------------------------------------
+    const RING_STYLES = { off: 0, single: 1, volume: 2, pan: 3 };
+    class RingMeter {
+      constructor() { this.style = new Array(16).fill(null); this.value = new Array(16).fill(null); }
+      static ccs(i) { return i < 8 ? [48 + i, 56 + i] : [16 + (i - 8), 24 + (i - 8)]; }
+      set(i, level, style) {
+        const out = [];
+        const [valueCc, styleCc] = RingMeter.ccs(i);
+        const s = RING_STYLES[style || "volume"];
+        if (this.style[i] !== s) { out.push(cc(1, styleCc, s)); this.style[i] = s; }
+        const v = Math.max(0, Math.min(127, Math.round(level * 127)));
+        if (this.value[i] !== v) { out.push(cc(1, valueCc, v)); this.value[i] = v; }
+        return out;
+      }
+    }
+    const clockTicks = (t0, t1, bpm) => Math.floor(t1 * bpm * 24 / 60.0) - Math.floor(t0 * bpm * 24 / 60.0);
+
+    return { Surface, Router, RingMeter, clockTicks };
+  }
+
+  const api = {
+    create, DIVS, DIV_BEATS, SCENE_NOTES, PAD_NOTES, ALL_PADS, padColRow, modeToChannel, channelToMode,
+    on, off, cc, hash01, FAMILIES, FEEDBACK,
+  };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  else root.APCLab = api;
+})(typeof self !== "undefined" ? self : this);
+</script>
+<script>/* app.js - the colour lab demo. PALETTE, THEMES, THEME_ORDER and APCLab are
+ * defined above it by build_demo.py. Everything here is presentation: the
+ * messages come from the same engine the Python router uses. */
+(function () {
+  "use strict";
+  const E = APCLab.create(PALETTE, THEMES, THEME_ORDER);
+  const { Router, Surface, RingMeter, clockTicks } = E;
+  const L = APCLab;
+
+  const el = (tag, cls, parent) => { const e = document.createElement(tag); if (cls) e.className = cls; if (parent) parent.appendChild(e); return e; };
+  const hex = (c) => "#" + c.map((x) => Math.max(0, Math.min(255, Math.round(x))).toString(16).padStart(2, "0")).join("");
+  const $ = (id) => document.getElementById(id);
+
+  // ---------------------------------------------------------------- state ----
+  const ROW_FAMILIES = [[49, 50], [37, 38], [21, 22], [9, 10], [3, 2]];     // what a pack sends per layer row
+  const EMPTY = { 4: [6, 7] };                                            // row 5 has two empty slots
+  const state = { playing: [0, 3, 5, 1, 6], column: -1 };
+  let router = new Router("pack", 120);
+  const apc = new Surface();          // what the controller shows
+  const raw = new Surface();          // what Resolume sends, untouched
+  const rings = new RingMeter();
+  let bpm = 120, paused = false, auto = false, lastAuto = 0, nextPress = 1.2, t0 = performance.now(), tPaused = 0;
+  const logEl = $("log");
+  const MAXLOG = 22;
+  let sentWindow = [];                // timestamps of messages to the APC, for msgs/s
+
+  // ---------------------------------------------------------------- build ----
+  const padEls = {}, rawEls = {}, ringEls = [];
+  const padwrap = $("padwrap");
+  for (let r = 4; r >= 0; r--) {
+    for (let c = 0; c < 8; c++) {
+      const n = r * 8 + c;
+      const b = el("button", "pad", padwrap);
+      b.type = "button"; b.dataset.note = n; b.setAttribute("aria-label", "Pad row " + (r + 1) + " column " + (c + 1));
+      padEls[n] = b;
+    }
+    el("span", "gap", padwrap);
+    const sn = 86 - r;
+    const s = el("button", "pad scene", padwrap);
+    s.type = "button"; s.dataset.note = sn; s.setAttribute("aria-label", "Scene launch " + (87 - sn));
+    padEls[sn] = s;
+  }
+  const cmp = $("compare");
+  for (let r = 4; r >= 0; r--) {
+    for (let c = 0; c < 8; c++) rawEls[r * 8 + c] = el("i", "", cmp);
+    el("span", "", cmp);
+    rawEls[86 - r] = el("i", "", cmp);
+  }
+  function makeRings(parent) {
+    for (let i = 0; i < 8; i++) {
+      const w = el("div", "ring", parent);
+      const dots = [];
+      for (let k = 0; k < 15; k++) {
+        const d = el("i", "", w);
+        const a = (-135 + k * (270 / 14)) * Math.PI / 180;
+        d.style.left = (50 + 44 * Math.sin(a)) + "%";
+        d.style.top = (50 - 44 * Math.cos(a)) + "%";
+        dots.push(d);
+      }
+      el("b", "", w);
+      ringEls.push(dots);
+    }
+  }
+  makeRings($("rings-top"));
+  makeRings($("rings-bottom"));
+  const ledStop = $("led-stop"), ledAB = $("led-ab");
+  const stopEls = [], abEls = [];
+  for (let i = 0; i < 8; i++) { stopEls.push(el("i", "led", ledStop)); abEls.push(el("i", "led", ledAB)); }
+  el("span", "", ledStop); el("span", "lbl", ledStop).textContent = "CLIP STOP";
+  el("span", "", ledAB); el("span", "lbl", ledAB).textContent = "CROSSFADE A/B";
+
+  // theme cards
+  const themesEl = $("themes");
+  const velocities = (o, out) => {
+    if (Array.isArray(o)) o.forEach((x) => (typeof x === "number" ? out.push(x) : velocities(x, out)));
+    else if (o && typeof o === "object") Object.keys(o).forEach((k) => {
+      if ((k === "colour" || k === "secondary") && typeof o[k] === "number") out.push(o[k]); else velocities(o[k], out);
+    });
+    return out;
+  };
+  const cards = {};
+  THEME_ORDER.forEach((key) => {
+    const th = THEMES[key];
+    const b = el("button", "theme", themesEl);
+    b.type = "button"; b.setAttribute("aria-pressed", key === "pack" ? "true" : "false");
+    el("span", "nm", b).textContent = th.name;
+    const chips = el("div", "chips", b);
+    const seen = [];
+    velocities({ p: th.pairs, g: th.greys, a: th.ambient, t: th.touch, s: th.playing }, []).concat(
+      key === "pack" ? [49, 37, 21, 9, 3] : []).forEach((v) => { if (v && seen.indexOf(v) < 0 && seen.length < 6) seen.push(v); });
+    seen.forEach((v) => { el("span", "", chips).style.background = hex(PALETTE[v]); });
+    b.addEventListener("click", () => setTheme(key));
+    cards[key] = b;
+  });
+
+  // ------------------------------------------------------------- the loop ----
+  function now() { return ((paused ? tPaused : performance.now()) - t0) / 1000; }
+
+  function describe(m) {
+    const [kind, ch, a, b] = m;
+    if (kind === "cc") return "CC " + a + " = " + b;
+    const [mode, div] = L.channelToMode(ch);
+    const what = kind === "off" ? "note off" : "note on";
+    const col = kind === "off" ? "" : "  colour " + b;
+    return what + " n" + a + col + (mode === "primary" ? "  primary" : "  " + mode + " " + div);
+  }
+  function hexOf(m) {
+    const base = { on: 0x90, off: 0x80, cc: 0xB0 }[m[0]];
+    return [base | (m[1] - 1), m[2], m[3]].map((x) => x.toString(16).toUpperCase().padStart(2, "0")).join(" ");
+  }
+  function logMsg(dir, m, t) {
+    const li = el("li", "");
+    el("span", "dir", li).textContent = dir;
+    el("span", "hex", li).textContent = hexOf(m);
+    el("span", "", li).textContent = describe(m);
+    const sw = el("span", "sw", li);
+    sw.style.background = m[0] === "on" ? hex(PALETTE[m[3]]) : "transparent";
+    logEl.insertBefore(li, logEl.firstChild);
+    while (logEl.children.length > MAXLOG) logEl.removeChild(logEl.lastChild);
+  }
+
+  function emitToApc(msgs, t, quiet) {
+    msgs.forEach((m) => { apc.apply(m, t); if (!quiet) logMsg("→ APC", m, t); });
+    sentWindow.push([t, msgs.length]);
+  }
+  function fromResolume(msg, t) {
+    raw.apply(msg, t);
+    emitToApc(router.fromResolume(msg, t), t);
+  }
+  function resolumeFeedback(t) {
+    // The fake Resolume: one playing clip per row, the rest loaded (dim), a couple empty.
+    for (let r = 0; r < 5; r++) {
+      for (let c = 0; c < 8; c++) {
+        const n = r * 8 + c, [on, dim] = ROW_FAMILIES[r];
+        let m;
+        if ((EMPTY[r] || []).indexOf(c) >= 0) m = L.off(1, n);
+        else m = L.on(1, n, state.playing[r] === c ? on : dim);
+        fromResolume(m, t);
+      }
+    }
+    for (let i = 0; i < 5; i++) {
+      const sn = 82 + i;
+      fromResolume(L.on(1, sn, state.column === i ? 3 : 2), t);
+    }
+    // crossfade A/B and clip stop LEDs are single-colour buttons: Resolume drives them directly.
+    renderButtons();
+  }
+  function renderButtons() {
+    for (let i = 0; i < 8; i++) {
+      abEls[i].className = "led " + (i < 4 ? "on-y" : "on-o");           // vel 1 = yellow (A), 2 = orange (B)
+    }
+  }
+
+  function press(note, t) {
+    const [toRes, toApc] = router.fromApc(L.on(1, note, 127), t);
+    logMsg("← APC", L.on(1, note, 127), t);
+    toRes.forEach((m) => logMsg("→ Res", m, t));
+    emitToApc(toApc, t);
+    // the fake Resolume answers: connect the clip (or the whole column) and send new feedback
+    if (note >= 82) state.column = note - 82, state.playing = state.playing.map(() => note - 82);
+    else { state.playing[Math.floor(note / 8)] = note % 8; state.column = -1; }
+    resolumeFeedback(t);
+  }
+
+  function setTheme(key, t) {
+    t = t === undefined ? now() : t;
+    router = new Router(key, bpm);
+    ALL_RESET(t);
+    resolumeFeedback(t);
+    emitToApc(router.tick(t), t);
+    Object.keys(cards).forEach((k) => cards[k].setAttribute("aria-pressed", k === key ? "true" : "false"));
+    $("blurb").textContent = THEMES[key].blurb;
+  }
+  function ALL_RESET(t) {
+    L.ALL_PADS.forEach((n) => apc.apply(L.off(1, n), t));
+  }
+
+  let ringStyle = "volume";
+  function driveRings(t) {
+    for (let i = 0; i < 16; i++) {
+      const lvl = 0.5 + 0.5 * Math.sin(t * (0.7 + i * 0.23) + i);
+      const style = ringStyle;
+      const msgs = rings.set(i, ringStyle === "pan" ? lvl : lvl, style);
+      // light the dots the way the ring styles do
+      const dots = ringEls[i];
+      const v = Math.round(lvl * 127);
+      dots.forEach((d, k) => {
+        let lit;
+        if (style === "volume") lit = v === 0 ? false : k < Math.ceil((v / 127) * 15);
+        else if (style === "single") lit = k === Math.min(14, Math.floor(v / 8.5));
+        else { const c = 7, p = Math.min(14, Math.floor(v / 8.5)); lit = (p >= c) ? (k >= c && k <= p) : (k <= c && k >= p); }
+        d.classList.toggle("lit", lit);
+      });
+      msgs.forEach((m) => sentWindow.push([t, 1]));
+    }
+  }
+
+  function frame() {
+    const t = now();
+    if (!paused) {
+      if (auto && t >= nextPress) { press(Math.floor(Math.random() * 40), t); nextPress = t + 0.9 + Math.random() * 1.6; }
+      emitToApc(router.tick(t), t);
+      driveRings(t);
+      clockSent += clockTicks(lastT, t, bpm);
+      lastT = t;
+    }
+    for (const k in padEls) {
+      const c = apc.rgb(+k, t, bpm), r = raw.rgb(+k, t, bpm);
+      const bright = Math.max(c[0], c[1], c[2]);
+      padEls[k].style.background = hex(c);
+      padEls[k].style.boxShadow = bright > 90 ? "0 0 " + Math.round(bright / 14) + "px " + hex(c) + "88, inset 0 0 0 1px rgba(255,255,255,.1)" : "inset 0 0 0 1px rgba(255,255,255,.06)";
+      rawEls[k].style.background = hex(r);
+    }
+    // stop-clip LEDs blink at 1/8 note (documented), driven by the same clock
+    const blinkOn = (t / (L.DIV_BEATS["1/8"] * 60 / bpm)) % 1 < 0.5;
+    stopEls.forEach((e, i) => { e.className = "led" + (state.playing[0] >= 0 && i % 3 === 0 && blinkOn ? " on-o" : ""); });
+    // stats
+    sentWindow = sentWindow.filter((x) => x[0] > t - 2);
+    $("st-rate").textContent = (sentWindow.reduce((a, x) => a + x[1], 0) / 2).toFixed(0);
+    let anim = 0;
+    L.PAD_NOTES.forEach((n) => { if (apc.pads[n].kind !== "primary") anim++; });
+    $("st-anim").textContent = anim;
+    $("st-clock").textContent = clockSent;
+    requestAnimationFrame(frame);
+  }
+  let lastT = 0, clockSent = 0;
+
+  // ------------------------------------------------------------- controls ----
+  padwrap.addEventListener("pointerdown", (e) => {
+    const b = e.target.closest(".pad");
+    if (b) { press(+b.dataset.note, now()); }
+  });
+  $("bpm").addEventListener("input", (e) => { bpm = +e.target.value; $("bpm-out").textContent = bpm + " bpm"; });
+  $("auto").addEventListener("click", (e) => { auto = !auto; e.target.setAttribute("aria-pressed", auto); });
+  $("pause").addEventListener("click", (e) => {
+    paused = !paused; e.target.setAttribute("aria-pressed", paused); e.target.textContent = paused ? "Resume" : "Pause";
+    if (paused) tPaused = performance.now(); else { t0 += performance.now() - tPaused; }
+  });
+  $("ringstyle").addEventListener("change", (e) => { ringStyle = e.target.value; });
+  $("reset").addEventListener("click", () => { state.playing = [0, 3, 5, 1, 6]; state.column = -1; setTheme(router.themeKey); });
+
+  // start: calm if the visitor prefers reduced motion
+  setTheme("pack", 0);
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    paused = true; tPaused = performance.now(); $("pause").setAttribute("aria-pressed", "true"); $("pause").textContent = "Resume";
+  }
+  requestAnimationFrame(frame);
+  window.__lab = { setTheme, press, router: () => router, apc, state, now };
+})();
+</script>
+</body>
+</html>

@@ -74,3 +74,13 @@ message under), and a Datavideo SE-500 video mixer as the wildcard, because it
 is controlled over the same five-pin wire. Every number is from the Akai
 APC40 Mk2 Communications Protocol v1.2. 320 stock generators, no media, no
 plugins; see its README for the rig read-back result.
+
+`apc-colour-lab/` is a MIDI router proof of concept for the APC40 mkII. A pad's note-on
+velocity picks its colour from a 128-entry palette and its MIDI channel picks an animation
+(static, one-shot, pulsing, blinking) that the controller runs by itself, so a router on the
+LED path can re-theme any pack's feedback, fill dark pads with an ambient show and answer
+every press. It has nine themes (Halloween, Christmas, Valentine's, Stars & Stripes,
+Dia de Muertos, Synthwave and two black-and-white ones), a Python engine and a JavaScript
+port checked against each other on 54 scenarios (31,677 messages, 0 differences), 40 unit
+tests, and a one-file interactive demo, `apc40_colour_lab.html`. The animations are emulated
+from Akai's protocol document and Ableton's skin and have not been confirmed on hardware.

@@ -410,7 +410,8 @@ class Layer(object):
 
 class Clip(object):
     def __init__(self, comp, layer, column, name, item, values, fft,
-                 color_id, opacity, effects, seconds, blend):
+                 color_id, opacity, effects, seconds, blend, file=None,
+                 size=None, audio=False):
         self.comp = comp
         self.layer = layer
         self.column = column
@@ -422,12 +423,27 @@ class Clip(object):
         self.effects = effects or []
         self.seconds = seconds
         self.blend = blend
+        # A video file instead of a generator: written the way the rig wrote
+        # EarthSearch_EP01_Live_Mix.avc (PreloadData + VideoFormatReaderSource).
+        # size is the track's render size, e.g. (1440, 1080) to pillarbox 4:3.
+        self.file = file
+        self.size = size or (comp.width, comp.height)
+        # audio=True adds the file's audio track, MUTED (Volume -192 dB, as
+        # EarthSearch_EP01_Live_Mix.avc does) so nothing sounds until the
+        # performer raises it. Without it the clip is picture only.
+        self.audio = audio
 
     def xml(self, ids, t=2):
         ind = "\t" * t
         it = self.item
         p = ['%s<Clip name="Clip" uniqueId="%s" layerIndex="%d" '
              'columnIndex="%d">' % (ind, ids(), self.layer.index, self.column)]
+        if self.file:
+            p.append('%s\t<PreloadData>' % ind)
+            if self.audio:
+                p.append('%s\t\t<AudioFile value="%s" />' % (ind, esc(self.file)))
+            p.append('%s\t\t<VideoFile value="%s" />' % (ind, esc(self.file)))
+            p.append('%s\t</PreloadData>' % ind)
         p.append('%s\t<Params name="Params">' % ind)
         p.append('%s\t\t<Param name="Name" T="STRING" default="%s" '
                  'value="%s" />' % (ind, esc(self.name), esc(self.name)))
@@ -443,11 +459,27 @@ class Clip(object):
         p.append('%s\t<ClipView name="ClipView">' % ind)
         p.append('%s\t\t<FoldParams name="FoldParams" />' % ind)
         p.append('%s\t</ClipView>' % ind)
+        if self.file and self.audio:
+            p.append('%s\t<AudioTrack name="AudioTrack">' % ind)
+            p.append('%s\t\t<Params name="Params">' % ind)
+            p.append('%s\t\t\t<ParamRange name="Volume" T="DOUBLE" default="0" '
+                     'value="-192.0">' % ind)
+            p.append('%s\t\t\t\t<PhaseSourceStatic name="PhaseSourceStatic" />'
+                     % ind)
+            p.append('%s\t\t\t</ParamRange>' % ind)
+            p.append('%s\t\t</Params>' % ind)
+            p.append('%s\t\t<AudioEffectChain name="AudioEffectChain" />' % ind)
+            p.append('%s\t\t<PrimarySource>' % ind)
+            p.append('%s\t\t\t<AudioFileSource FileName="%s" />'
+                     % (ind, esc(self.file)))
+            p.append('%s\t\t</PrimarySource>' % ind)
+            p.append('%s\t</AudioTrack>' % ind)
         p.append('%s\t<VideoTrack name="VideoTrack">' % ind)
         p.append('%s\t\t<Params name="Params">' % ind)
         p.append(prange(t + 3, "Opacity", 1, self.opacity))
-        p.append(prange(t + 3, "Width", self.comp.width, self.comp.width))
-        p.append(prange(t + 3, "Height", self.comp.height, self.comp.height))
+        w, h = self.size
+        p.append(prange(t + 3, "Width", self.comp.width, w))
+        p.append(prange(t + 3, "Height", self.comp.height, h))
         for ch in ("RScale", "GScale", "BScale", "AScale"):
             p.append(pbool(t + 3, ch, True, default=True))
         p.append('%s\t\t</Params>' % ind)
@@ -458,6 +490,17 @@ class Clip(object):
         p.append('%s\t\t</RenderPass>' % ind)
         p.append(mixer(t + 2, ids, "Blend", self.blend))
         p.append('%s\t\t<PrimarySource>' % ind)
+        if self.file:
+            p.append('%s\t\t\t<VideoSource name="VideoSource" width="%d" '
+                     'height="%d" type="VideoFormatReaderSource">'
+                     % (ind, w, h))
+            p.append('%s\t\t\t\t<VideoFormatReaderSource fileName="%s" />'
+                     % (ind, esc(self.file)))
+            p.append('%s\t\t\t</VideoSource>' % ind)
+            p.append('%s\t\t</PrimarySource>' % ind)
+            p.append('%s\t</VideoTrack>' % ind)
+            p.append('%s</Clip>' % ind)
+            return "\n".join(p)
         p.append('%s\t\t\t<VideoSource storage="0" name="VideoSource" '
                  'width="%d" height="%d" type="%s">'
                  % (ind, self.comp.width, self.comp.height,
@@ -494,7 +537,7 @@ class Deck(object):
 
     def add_clip(self, layer, column, name, source, values=None, fft=None,
                  color_id=None, opacity=1.0, effects=None, seconds=5,
-                 blend=None):
+                 blend=None, file=None, size=None, audio=False):
         if isinstance(layer, int):
             layer = self.comp.layers[layer]
         item = self.comp.lib.source(source)
@@ -502,7 +545,8 @@ class Deck(object):
               for e in (effects or [])]
         clip = Clip(self.comp, layer, column, name, item, values, fft,
                     layer.color_id if color_id is None else color_id,
-                    opacity, fx, seconds, blend)
+                    opacity, fx, seconds, blend, file=file, size=size,
+                    audio=audio)
         if (layer.index, column) in self.clips:
             raise ValueError("deck %s already has a clip at layer %d col %d"
                              % (self.name, layer.number, column + 1))

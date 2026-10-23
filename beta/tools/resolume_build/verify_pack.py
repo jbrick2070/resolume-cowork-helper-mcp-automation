@@ -43,6 +43,8 @@ def main():
                     help="connect each column before reading it back")
     ap.add_argument("--sample", type=int, default=0,
                     help="check only every Nth clip (0 = all)")
+    ap.add_argument("--only-decks", default=None,
+                    help="comma list of 1-based deck numbers to read back (e.g. 7,19,29)")
     a = ap.parse_args()
     bible = json.load(open(a.bible, encoding="utf-8"))
     decks = json.load(open(a.decks, encoding="utf-8"))
@@ -108,7 +110,10 @@ def main():
     n = 0
     mism = 0
     name_mism = 0
+    only = ({int(x) for x in a.only_decks.split(",")} if a.only_decks else None)
     for di, design in enumerate(decks):
+        if only is not None and (di + 1) not in only:
+            continue
         rig.deck_select(di + 1)
         # A deck switch is not instantaneous: poll until the column names are
         # this deck's before reading anything from it.
@@ -149,6 +154,9 @@ def main():
                 if cl is None:
                     continue
                 want_name = str(cl.get("name") or cl.get("source"))[:PACK.MAX_NAME]
+                if cl.get("file") and cl.get("audio"):
+                    # the builder names audio file clips after the file (Avenue does)
+                    want_name = os.path.splitext(os.path.basename(cl["file"]))[0]
                 if live_name != want_name:
                     time.sleep(1.5)
                     sp, cj = rig.source_params(ln, col)
@@ -158,6 +166,26 @@ def main():
                     if name_mism <= 20:
                         print("  NAME deck %d L%d C%d want %r got %r"
                               % (di + 1, ln, col, want_name, live_name))
+                if cl.get("file"):
+                    # A video file clip: Avenue must have found the file and
+                    # report the same path and the size the builder asked for.
+                    want_path = os.path.normcase(os.path.abspath(cl["file"]))
+                    for _try in range(4):
+                        fi = ((cj.get("video") or {}).get("fileinfo")) or {}
+                        got = os.path.normcase(os.path.abspath(fi.get("path", "")))
+                        if fi.get("exists") and got == want_path:
+                            break
+                        # the first columns after a deck switch can read the
+                        # previous deck's clip; settle and look again
+                        time.sleep(1.5)
+                        sp, cj = rig.source_params(ln, col)
+                    if not fi.get("exists") or got != want_path:
+                        mism += 1
+                        if mism <= 40:
+                            print("  FILE deck %d L%d C%d want %r got %r exists=%r"
+                                  % (di + 1, ln, col, cl["file"],
+                                     fi.get("path"), fi.get("exists")))
+                    continue
                 try:
                     item = lib.source(cl["source"])
                 except KeyError:
