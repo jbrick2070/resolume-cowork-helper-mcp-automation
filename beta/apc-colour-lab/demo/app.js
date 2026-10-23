@@ -15,11 +15,12 @@
   const ROW_FAMILIES = [[49, 50], [37, 38], [21, 22], [9, 10], [3, 2]];     // what a pack sends per layer row
   const EMPTY = { 4: [6, 7] };                                            // row 5 has two empty slots
   const state = { playing: [0, 3, 5, 1, 6], column: -1 };
-  let router = new Router("pack", 120);
+  let router = new Router("pack", 60);
   const apc = new Surface();          // what the controller shows
   const raw = new Surface();          // what Resolume sends, untouched
   const rings = new RingMeter();
-  let bpm = 120, paused = false, auto = false, lastAuto = 0, nextPress = 1.2, t0 = performance.now(), tPaused = 0;
+  let gridMode = "sparse";           // sparse: one clip per layer, the rest dark; full: a loaded pack
+  let bpm = 60, paused = false, auto = false, lastAuto = 0, nextPress = 1.2, t0 = performance.now(), tPaused = 0;
   const logEl = $("log");
   const MAXLOG = 22;
   let sentWindow = [];                // timestamps of messages to the APC, for msgs/s
@@ -72,14 +73,15 @@
   // theme cards
   const themesEl = $("themes");
   const velocities = (o, out) => {
-    if (Array.isArray(o)) o.forEach((x) => (typeof x === "number" ? out.push(x) : velocities(x, out)));
+    if (Array.isArray(o)) o.forEach((x) => (typeof x === "number" ? (Number.isInteger(x) && out.push(x)) : velocities(x, out)));
     else if (o && typeof o === "object") Object.keys(o).forEach((k) => {
-      if ((k === "colour" || k === "secondary") && typeof o[k] === "number") out.push(o[k]); else velocities(o[k], out);
+      if (k === "lumps") return;                                       // weights, not colours
+      if ((k === "colour" || k === "secondary" || k === "prism") && typeof o[k] === "number") out.push(o[k]); else velocities(o[k], out);
     });
     return out;
   };
   const cards = {};
-  THEME_ORDER.forEach((key) => {
+  function addCard(key) {
     const th = THEMES[key];
     const b = el("button", "theme", themesEl);
     b.type = "button"; b.setAttribute("aria-pressed", key === "pack" ? "true" : "false");
@@ -87,11 +89,12 @@
     const chips = el("div", "chips", b);
     const seen = [];
     velocities({ p: th.pairs, g: th.greys, a: th.ambient, t: th.touch, s: th.playing }, []).concat(
-      key === "pack" ? [49, 37, 21, 9, 3] : []).forEach((v) => { if (v && seen.indexOf(v) < 0 && seen.length < 6) seen.push(v); });
+      key === "pack" ? [49, 37, 21, 9, 3] : []).forEach((v) => { if (v && PALETTE[v] && seen.indexOf(v) < 0 && seen.length < 6) seen.push(v); });
     seen.forEach((v) => { el("span", "", chips).style.background = hex(PALETTE[v]); });
     b.addEventListener("click", () => setTheme(key));
     cards[key] = b;
-  });
+  }
+  THEME_ORDER.forEach(addCard);
 
   // ------------------------------------------------------------- the loop ----
   function now() { return ((paused ? tPaused : performance.now()) - t0) / 1000; }
@@ -128,12 +131,14 @@
     emitToApc(router.fromResolume(msg, t), t);
   }
   function resolumeFeedback(t) {
-    // The fake Resolume: one playing clip per row, the rest loaded (dim), a couple empty.
+    // The fake Resolume: one playing clip per row; in a full pack the rest are loaded (dim)
+    // and a couple empty, in a sparse one they are all dark, so the theme's ambient shows.
     for (let r = 0; r < 5; r++) {
       for (let c = 0; c < 8; c++) {
         const n = r * 8 + c, [on, dim] = ROW_FAMILIES[r];
         let m;
-        if ((EMPTY[r] || []).indexOf(c) >= 0) m = L.off(1, n);
+        if (gridMode === "sparse" && state.playing[r] !== c) m = L.off(1, n);
+        else if ((EMPTY[r] || []).indexOf(c) >= 0) m = L.off(1, n);
         else m = L.on(1, n, state.playing[r] === c ? on : dim);
         fromResolume(m, t);
       }
@@ -236,7 +241,33 @@
     paused = !paused; e.target.setAttribute("aria-pressed", paused); e.target.textContent = paused ? "Resume" : "Pause";
     if (paused) tPaused = performance.now(); else { t0 += performance.now() - tPaused; }
   });
+  // A theme made from a picture (tools/theme_from_image.py): {"key": ..., "theme": {...}}.
+  function loadThemeText(text) {
+    let doc;
+    try { doc = JSON.parse(text); } catch (err) { $("blurb").textContent = "That file is not JSON."; return; }
+    const th = doc && doc.theme, key = doc && typeof doc.key === "string" ? doc.key.replace(/[^a-z0-9_-]/gi, "").slice(0, 24) : "";
+    const bad = !key || !th || ["name", "remap", "ambient", "touch"].some((k) => !(k in th)) ||
+      ["identity", "pairs", "luma", "luma-invert"].indexOf(th.remap) < 0 ||
+      velocities({ p: th.pairs, g: th.greys, a: th.ambient, t: th.touch, s: th.playing, c: th.scene }, []).some((v) => v < 0 || v > 127);
+    if (bad) { $("blurb").textContent = "That theme file is missing a field or uses a colour outside 0-127."; return; }
+    const known = THEME_ORDER.indexOf(key) >= 0;
+    if (known && !loadedKeys.has(key)) { $("blurb").textContent = "That key belongs to a built-in theme; give yours another key."; return; }
+    if (known) { cards[key].remove(); delete cards[key]; }     // replace a theme loaded earlier
+    THEMES[key] = th;
+    if (!known) THEME_ORDER.push(key);
+    loadedKeys.add(key);
+    addCard(key);
+    setTheme(key);
+  }
+  const loadedKeys = new Set();
+  $("loadtheme").addEventListener("click", () => $("themefile").click());
+  $("themefile").addEventListener("change", (e) => {
+    const f = e.target.files && e.target.files[0];
+    if (f) f.text().then(loadThemeText);
+    e.target.value = "";
+  });
   $("ringstyle").addEventListener("change", (e) => { ringStyle = e.target.value; });
+  $("grid").addEventListener("change", (e) => { gridMode = e.target.value; setTheme(router.themeKey); });
   $("reset").addEventListener("click", () => { state.playing = [0, 3, 5, 1, 6]; state.column = -1; setTheme(router.themeKey); });
 
   // start: calm if the visitor prefers reduced motion
@@ -245,5 +276,5 @@
     paused = true; tPaused = performance.now(); $("pause").setAttribute("aria-pressed", "true"); $("pause").textContent = "Resume";
   }
   requestAnimationFrame(frame);
-  window.__lab = { setTheme, press, router: () => router, apc, state, now };
+  window.__lab = { setTheme, press, router: () => router, apc, state, now, loadThemeText };
 })();

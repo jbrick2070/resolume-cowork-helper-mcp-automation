@@ -14,8 +14,8 @@
     therefore re-colour any pack's feedback, fill the dark pads with an ambient show and answer every press, using two MIDI messages per pad.
     Click the pads.</p>
   <p class="warn">Flashing content: pads blink and pulse. Use Pause at any time. This page <b>emulates</b> the LED protocol from the Akai
-    APC40 Mk2 Communications Protocol v1.2 and Ableton's own APC40 mkII skin; the animation timings have not yet been confirmed on this
-    rig's hardware.</p>
+    APC40 Mk2 Communications Protocol v1.2 and Ableton's own APC40 mkII skin; the palette and pulsing were watched on a real APC40 mkII on 2026-10-23 and worked;
+    the other timings have not yet been confirmed on this rig's hardware.</p>
 </header>
 <main>
   <section aria-label="Controller">
@@ -40,12 +40,16 @@
     <h2>Theme</h2>
     <div class="themes" id="themes"></div>
     <p class="blurb" id="blurb" aria-live="polite"></p>
-    <div class="row"><label for="bpm">Tempo</label><input id="bpm" type="range" min="60" max="180" value="120"><output id="bpm-out">120 bpm</output></div>
+    <div class="row"><label for="bpm">Tempo</label><input id="bpm" type="range" min="40" max="180" value="60"><output id="bpm-out">60 bpm</output></div>
+    <div class="row"><label for="grid">Resolume grid</label>
+      <select id="grid"><option value="sparse">Sparse: one clip per layer</option><option value="full">Full pack: every slot loaded</option></select></div>
     <div class="row"><label for="ringstyle">Ring style</label>
       <select id="ringstyle"><option value="volume">Volume</option><option value="pan">Pan</option><option value="single">Single</option></select>
       <button class="btn" id="auto" aria-pressed="false">Auto-press</button>
       <button class="btn" id="pause" aria-pressed="false">Pause</button>
-      <button class="btn" id="reset">Reset pack</button></div>
+      <button class="btn" id="reset">Reset pack</button>
+      <button class="btn" id="loadtheme" title="A theme made by tools/theme_from_image.py from a picture">Load theme (.json)</button>
+      <input type="file" id="themefile" accept=".json,application/json" hidden></div>
     <h2 style="margin-top:16px">What Resolume sends</h2>
     <div class="compare" id="compare" aria-label="Resolume's own feedback, unthemed"></div>
     <p class="tag" style="margin:8px 0 0">The same pads, before the router: green is playing, dim green is loaded, one hue per layer.</p>
@@ -69,11 +73,11 @@
       <li><b>Recipe.</b> Send the primary colour on channel 1, then the secondary on an animation channel. Sending a primary again on channel 1 cancels the animation.</li>
       <li><b>Router.</b> Resolume keeps the APC's input for presses; the router sits on the LED path. It re-colours the feedback through a theme (green becomes pumpkin, or white), fills pads Resolume leaves dark, and answers each press with a ripple, a cross, a sparkle or an inversion, all as one-shot messages timed by the controller.</li>
       <li><b>Mode.</b> The controller starts in Mode 0 after every power cycle. Send <code>F0 47 7F 29 60 00 04 42 00 00 00 F7</code> (Mode 2) so the host owns every LED, rings included.</li>
-      <li><b>Not yet confirmed on hardware.</b> That the pads follow a host MIDI clock (and the tempo they use without one), the exact one-shot direction, and whether the Scene Launch pads animate like the clip pads. The demo draws them as the documents describe.</li>
+      <li><b>Still open after a first look at the hardware.</b> That the pads follow a host MIDI clock (and the tempo they use without one), the exact one-shot direction, and whether the Scene Launch pads animate like the clip pads. The demo draws them as the documents describe.</li>
     </ul>
   </section>
 </main>
-<footer>Pad colours: the Akai APC40 mkII RGB palette from Akai's APC40 Mk2 Communications Protocol v1.2 (display approximations). Engine: apc_lab (Python) and demo/engine.js, checked against each other on 54 scenarios.</footer>
+<footer>Pad colours: the Akai APC40 mkII RGB palette from Akai's APC40 Mk2 Communications Protocol v1.2 (display approximations). Engine: apc_lab (Python) and demo/engine.js, checked against each other on 117 scenarios.</footer>
 <script>/*DATA*/</script>
 <script>/*ENGINE*/</script>
 <script>/*APP*/</script>

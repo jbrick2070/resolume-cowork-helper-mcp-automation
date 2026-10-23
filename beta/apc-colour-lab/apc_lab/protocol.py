@@ -18,8 +18,9 @@ Scene Launch notes 82-86) the NOTE-ON VELOCITY picks the colour from a fixed
 
 so two messages per pad make the controller animate a pad by itself.
 
-ASSUMPTIONS, not yet verified on this rig's hardware (the controller's ports
-are held by Avenue): (a) the rates are note values at the host tempo, so
+Hardware check, 2026-10-23: the palette and pulsing were watched on a real APC40 mkII
+and worked; the three assumptions below were not reported stage by stage and stay
+assumptions: (a) the rates are note values at the host tempo, so
 1/4 = one beat; (b) a note-on on an animation channel animates between the pad's
 primary colour and the colour in that message; (c) resending the primary on
 channel 1 cancels an animation (the module's "Reset Mode" does exactly this).
@@ -30,6 +31,11 @@ NOTE_ON, NOTE_OFF, CC = "on", "off", "cc"
 SCENE_NOTES = (82, 83, 84, 85, 86)        # 82 = top row, 86 = bottom row
 PAD_NOTES = tuple(range(40))              # 0 = bottom-left, 39 = top-right
 ALL_PADS = PAD_NOTES + SCENE_NOTES
+
+# The tempo the lab runs the controller's animations at. The performer found 120 bpm
+# "a bit too fast" on a real APC40 mkII (2026-10-23). At 60 a beat is one second, so a
+# 1/2 pulse (two beats, the slowest the controller offers) is a two-second breath.
+DEFAULT_BPM = 60.0
 
 KINDS = ("primary", "oneshot", "pulsing", "blinking")
 DIVS = ("1/24", "1/16", "1/8", "1/4", "1/2")

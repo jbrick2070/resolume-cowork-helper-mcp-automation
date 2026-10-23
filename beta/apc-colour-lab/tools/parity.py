@@ -16,15 +16,18 @@ from apc_lab import engine as E          # noqa: E402
 from apc_lab import protocol as P        # noqa: E402
 
 
-def scenario(theme, seed):
+def scenario(theme, seed, grid="full"):
     rnd = random.Random(seed)
     ev = []
     t = 0.0
-    # Resolume loads a pack-like grid: dim clips everywhere, one playing per row.
+    # Resolume loads a pack-like grid: dim clips everywhere, one playing per row. In the
+    # "dark" grid it sends only the playing clip of each row, so every ambient animation runs.
     fams = [(49, 50), (41, 42), (21, 22), (9, 10), (3, 2)]
     for row in range(5):
         for col in range(8):
             on, dim = fams[row]
+            if grid == "dark" and col != row:
+                continue
             ev.append({"kind": "resolume", "t": 0.0, "msg": ["on", 1, row * 8 + col, on if col == row else dim]})
     ev.append({"kind": "resolume", "t": 0.0, "msg": ["on", 1, 82, 45]})
     ev.append({"kind": "resolume", "t": 0.0, "msg": ["on", 1, 86, 46]})
@@ -70,27 +73,27 @@ def run_python(sc):
 def main():
     bad = 0
     total_msgs = 0
-    for theme in E.THEME_ORDER:
-        for seed in range(6):
-            sc = scenario(theme, seed)
-            py = run_python(sc)
-            node = subprocess.run(["node", os.path.join(ROOT, "demo", "run_scenario.js")],
-                                  input=json.dumps(sc), capture_output=True, text=True, check=True)
-            js = json.loads(node.stdout)
-            total_msgs += sum(len(x) for x in py["log"])
-            if py["log"] != js["log"]:
-                bad += 1
-                for i, (a, b) in enumerate(zip(py["log"], js["log"])):
-                    if a != b:
-                        print("MESSAGE DIFF theme=%s seed=%d event=%d\n  py %s\n  js %s" % (theme, seed, i, a[:4], b[:4]))
-                        break
-            else:
-                a = json.dumps(py["samples"])
-                b = json.dumps(js["samples"])
+    runs = [(theme, seed, grid) for theme in E.THEME_ORDER
+            for seed, grid in [(s, "full") for s in range(6)] + [(s, "dark") for s in range(3)]]
+    for theme, seed, grid in runs:
+        sc = scenario(theme, seed, grid)
+        py = run_python(sc)
+        node = subprocess.run(["node", os.path.join(ROOT, "demo", "run_scenario.js")],
+                              input=json.dumps(sc), capture_output=True, text=True, check=True)
+        js = json.loads(node.stdout)
+        total_msgs += sum(len(x) for x in py["log"])
+        if py["log"] != js["log"]:
+            bad += 1
+            for i, (a, b) in enumerate(zip(py["log"], js["log"])):
                 if a != b:
-                    bad += 1
-                    print("COLOUR DIFF theme=%s seed=%d" % (theme, seed))
-    print("parity: %d scenarios, %d messages compared, %d differ" % (len(E.THEME_ORDER) * 6, total_msgs, bad))
+                    print("MESSAGE DIFF theme=%s seed=%d grid=%s event=%d\n  py %s\n  js %s" % (theme, seed, grid, i, a[:4], b[:4]))
+                    break
+        else:
+            # compare values, not text: Python prints 255.0 where JavaScript prints 255
+            if py["samples"] != js["samples"]:
+                bad += 1
+                print("COLOUR DIFF theme=%s seed=%d grid=%s" % (theme, seed, grid))
+    print("parity: %d scenarios, %d messages compared, %d differ" % (len(runs), total_msgs, bad))
     return 1 if bad else 0
 
 

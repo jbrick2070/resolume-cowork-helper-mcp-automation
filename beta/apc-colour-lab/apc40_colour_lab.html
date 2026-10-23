@@ -93,8 +93,8 @@ footer { max-width: 1180px; margin: 18px auto 0; color: var(--dim); font-size: 1
     therefore re-colour any pack's feedback, fill the dark pads with an ambient show and answer every press, using two MIDI messages per pad.
     Click the pads.</p>
   <p class="warn">Flashing content: pads blink and pulse. Use Pause at any time. This page <b>emulates</b> the LED protocol from the Akai
-    APC40 Mk2 Communications Protocol v1.2 and Ableton's own APC40 mkII skin; the animation timings have not yet been confirmed on this
-    rig's hardware.</p>
+    APC40 Mk2 Communications Protocol v1.2 and Ableton's own APC40 mkII skin; the palette and pulsing were watched on a real APC40 mkII on 2026-10-23 and worked;
+    the other timings have not yet been confirmed on this rig's hardware.</p>
 </header>
 <main>
   <section aria-label="Controller">
@@ -119,12 +119,16 @@ footer { max-width: 1180px; margin: 18px auto 0; color: var(--dim); font-size: 1
     <h2>Theme</h2>
     <div class="themes" id="themes"></div>
     <p class="blurb" id="blurb" aria-live="polite"></p>
-    <div class="row"><label for="bpm">Tempo</label><input id="bpm" type="range" min="60" max="180" value="120"><output id="bpm-out">120 bpm</output></div>
+    <div class="row"><label for="bpm">Tempo</label><input id="bpm" type="range" min="40" max="180" value="60"><output id="bpm-out">60 bpm</output></div>
+    <div class="row"><label for="grid">Resolume grid</label>
+      <select id="grid"><option value="sparse">Sparse: one clip per layer</option><option value="full">Full pack: every slot loaded</option></select></div>
     <div class="row"><label for="ringstyle">Ring style</label>
       <select id="ringstyle"><option value="volume">Volume</option><option value="pan">Pan</option><option value="single">Single</option></select>
       <button class="btn" id="auto" aria-pressed="false">Auto-press</button>
       <button class="btn" id="pause" aria-pressed="false">Pause</button>
-      <button class="btn" id="reset">Reset pack</button></div>
+      <button class="btn" id="reset">Reset pack</button>
+      <button class="btn" id="loadtheme" title="A theme made by tools/theme_from_image.py from a picture">Load theme (.json)</button>
+      <input type="file" id="themefile" accept=".json,application/json" hidden></div>
     <h2 style="margin-top:16px">What Resolume sends</h2>
     <div class="compare" id="compare" aria-label="Resolume's own feedback, unthemed"></div>
     <p class="tag" style="margin:8px 0 0">The same pads, before the router: green is playing, dim green is loaded, one hue per layer.</p>
@@ -148,14 +152,14 @@ footer { max-width: 1180px; margin: 18px auto 0; color: var(--dim); font-size: 1
       <li><b>Recipe.</b> Send the primary colour on channel 1, then the secondary on an animation channel. Sending a primary again on channel 1 cancels the animation.</li>
       <li><b>Router.</b> Resolume keeps the APC's input for presses; the router sits on the LED path. It re-colours the feedback through a theme (green becomes pumpkin, or white), fills pads Resolume leaves dark, and answers each press with a ripple, a cross, a sparkle or an inversion, all as one-shot messages timed by the controller.</li>
       <li><b>Mode.</b> The controller starts in Mode 0 after every power cycle. Send <code>F0 47 7F 29 60 00 04 42 00 00 00 F7</code> (Mode 2) so the host owns every LED, rings included.</li>
-      <li><b>Not yet confirmed on hardware.</b> That the pads follow a host MIDI clock (and the tempo they use without one), the exact one-shot direction, and whether the Scene Launch pads animate like the clip pads. The demo draws them as the documents describe.</li>
+      <li><b>Still open after a first look at the hardware.</b> That the pads follow a host MIDI clock (and the tempo they use without one), the exact one-shot direction, and whether the Scene Launch pads animate like the clip pads. The demo draws them as the documents describe.</li>
     </ul>
   </section>
 </main>
-<footer>Pad colours: the Akai APC40 mkII RGB palette from Akai's APC40 Mk2 Communications Protocol v1.2 (display approximations). Engine: apc_lab (Python) and demo/engine.js, checked against each other on 54 scenarios.</footer>
+<footer>Pad colours: the Akai APC40 mkII RGB palette from Akai's APC40 Mk2 Communications Protocol v1.2 (display approximations). Engine: apc_lab (Python) and demo/engine.js, checked against each other on 117 scenarios.</footer>
 <script>const PALETTE = [[0, 0, 0], [30, 30, 30], [127, 127, 127], [255, 255, 255], [255, 76, 76], [255, 0, 0], [89, 0, 0], [25, 0, 0], [255, 189, 108], [255, 84, 0], [89, 29, 0], [39, 27, 0], [255, 255, 76], [255, 255, 0], [89, 89, 0], [25, 25, 0], [136, 255, 76], [84, 255, 0], [29, 89, 0], [20, 43, 0], [76, 255, 76], [0, 255, 0], [0, 89, 0], [0, 25, 0], [76, 255, 94], [0, 255, 25], [0, 89, 13], [0, 25, 2], [76, 255, 136], [0, 255, 85], [0, 89, 29], [0, 31, 18], [76, 255, 183], [0, 255, 153], [0, 89, 53], [0, 25, 18], [76, 195, 255], [0, 169, 255], [0, 65, 82], [0, 16, 25], [76, 136, 255], [0, 85, 255], [0, 29, 89], [0, 8, 25], [76, 76, 255], [0, 0, 255], [0, 0, 89], [0, 0, 25], [135, 76, 255], [84, 0, 255], [25, 0, 100], [15, 0, 48], [255, 76, 255], [255, 0, 255], [89, 0, 89], [25, 0, 25], [255, 76, 135], [255, 0, 84], [89, 0, 29], [34, 0, 19], [255, 21, 0], [153, 53, 0], [121, 81, 0], [67, 100, 0], [3, 57, 0], [0, 87, 53], [0, 84, 127], [0, 0, 255], [0, 69, 79], [37, 0, 204], [127, 127, 127], [32, 32, 32], [255, 0, 0], [189, 255, 45], [175, 237, 6], [100, 255, 9], [16, 139, 0], [0, 255, 135], [0, 169, 255], [0, 42, 255], [63, 0, 255], [122, 0, 255], [178, 26, 125], [64, 33, 0], [255, 74, 0], [136, 225, 6], [114, 255, 21], [0, 255, 0], [59, 255, 38], [89, 255, 113], [56, 255, 204], [91, 138, 255], [49, 81, 198], [135, 127, 233], [211, 29, 255], [255, 0, 93], [255, 127, 0], [185, 176, 0], [144, 255, 0], [131, 93, 7], [57, 43, 0], [20, 76, 16], [13, 80, 56], [21, 21, 42], [22, 32, 90], [105, 60, 28], [168, 0, 10], [222, 81, 61], [216, 106, 28], [255, 225, 38], [158, 225, 47], [103, 181, 15], [30, 30, 48], [220, 255, 107], [128, 255, 189], [154, 153, 255], [142, 102, 255], [64, 64, 64], [117, 117, 117], [224, 255, 255], [160, 0, 0], [53, 0, 0], [26, 208, 0], [7, 66, 0], [185, 176, 0], [63, 49, 0], [179, 95, 0], [75, 21, 2]];
-const THEMES = {"pack": {"name": "Pack colours", "blurb": "Resolume's own feedback, untouched: green for playing, dim green for loaded, one hue per layer. The baseline every other theme re-colours.", "remap": "identity", "ambient": {"kind": "none"}, "touch": {"kind": "none"}}, "halloween": {"name": "Halloween", "blurb": "Pumpkin, violet and slime. Playing pads breathe between orange and purple; empty pads gutter like candles; a press sends a violet ring through the grid.", "remap": "pairs", "pairs": [[96, 10, 94], [94, 51, 96], [75, 18, 96]], "playing": {"colour": 94, "kind": "pulsing", "div": "1/4"}, "ambient": {"kind": "flicker", "colours": [10, 127, 61, 9], "rate": 8, "density": 0.34}, "touch": {"kind": "ripple", "colours": [94, 81, 53], "div": "1/8", "step": 0.065}, "scene": {"colour": 96, "kind": "pulsing", "div": "1/2", "secondary": 94}}, "christmas": {"name": "Christmas", "blurb": "Red, green and gold on a marquee chase around the empty pads; a press throws a gold star outward.", "remap": "pairs", "pairs": [[72, 120, 3], [87, 76, 3], [109, 99, 3]], "playing": {"colour": 3, "kind": "blinking", "div": "1/4"}, "ambient": {"kind": "chase", "colours": [72, 0, 87, 0, 109, 0], "rate": 7}, "touch": {"kind": "ripple", "colours": [109, 3], "div": "1/8", "step": 0.05}, "scene": {"colour": 72, "kind": "blinking", "div": "1/2", "secondary": 87}}, "valentine": {"name": "Valentine's", "blurb": "Rose, red and white. Every loaded pad has a heartbeat; a press sends a pink pulse outward like a ripple in a cup of wine.", "remap": "pairs", "pairs": [[57, 58, 3], [95, 7, 3], [56, 59, 3]], "playing": {"colour": 3, "kind": "pulsing", "div": "1/4"}, "ambient": {"kind": "pulse", "colours": [59, 56], "div": "1/2"}, "touch": {"kind": "ripple", "colours": [56, 4, 3], "div": "1/8", "step": 0.07}, "scene": {"colour": 95, "kind": "pulsing", "div": "1/4", "secondary": 3}}, "stars": {"name": "Stars & Stripes", "blurb": "Red, white and blue for the Fourth. Rows alternate like stripes; a press fires a firework cross along its row and column.", "remap": "pairs", "pairs": [[5, 6, 3], [3, 2, 45], [45, 46, 3]], "playing": {"colour": 3, "kind": "blinking", "div": "1/8"}, "ambient": {"kind": "stripes", "colours": [6, 2, 46]}, "touch": {"kind": "cross", "colours": [3, 13, 5], "div": "1/8", "step": 0.05}, "scene": {"colour": 45, "kind": "blinking", "div": "1/4", "secondary": 5}}, "muertos": {"name": "Dia de Muertos", "blurb": "Marigold, magenta and turquoise: the ofrenda. Empty pads rain slowly downward like petals; a press scatters marigold sparks.", "remap": "pairs", "pairs": [[96, 99, 109], [53, 54, 96], [90, 102, 3]], "playing": {"colour": 109, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "rain", "colours": [96, 126, 99, 100], "rate": 5}, "touch": {"kind": "sparkle", "colours": [96, 109, 53, 90], "div": "1/8", "count": 14}, "scene": {"colour": 53, "kind": "pulsing", "div": "1/2", "secondary": 96}}, "synthwave": {"name": "Synthwave", "blurb": "Hot pink, violet and azure. The empty pads scan like a horizon grid; a press fires a pink-to-azure shockwave.", "remap": "pairs", "pairs": [[95, 58, 37], [94, 51, 37], [37, 38, 95]], "playing": {"colour": 37, "kind": "pulsing", "div": "1/8"}, "ambient": {"kind": "scan", "colours": [49, 50, 51], "rate": 6}, "touch": {"kind": "ripple", "colours": [95, 94, 37], "div": "1/8", "step": 0.055}, "scene": {"colour": 95, "kind": "pulsing", "div": "1/4", "secondary": 37}}, "newsprint": {"name": "Newsprint", "blurb": "Black and white only. Colour becomes brightness: the loud hues go white, the quiet ones grey. A press leaves a white ring that fades to ink.", "remap": "luma", "greys": [1, 117, 118, 2, 3], "playing": {"colour": 1, "kind": "pulsing", "div": "1/4"}, "ambient": {"kind": "flicker", "colours": [1, 117], "rate": 6, "density": 0.18}, "touch": {"kind": "ripple", "colours": [3, 2, 118, 117], "div": "1/8", "step": 0.06}, "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}}, "inverse": {"name": "Inverse", "blurb": "Black and white as a negative. Quiet pads glow, the playing pad goes dark, empty pads go white, and every press flips the whole grid for a beat.", "remap": "luma-invert", "greys": [1, 117, 118, 2, 3], "playing": {"colour": 3, "kind": "blinking", "div": "1/4"}, "ambient": {"kind": "fill", "colour": 3}, "touch": {"kind": "invert", "colours": [1, 3], "div": "1/4"}, "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}}};
-const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "muertos", "synthwave", "newsprint", "inverse"];</script>
+const THEMES = {"pack": {"name": "Pack colours", "blurb": "Resolume's own feedback, untouched: green for playing, dim green for loaded, one hue per layer. The baseline every other theme re-colours.", "remap": "identity", "ambient": {"kind": "none"}, "touch": {"kind": "none"}}, "halloween": {"name": "Halloween", "blurb": "Pumpkin, violet and slime. Playing pads breathe slowly between orange and purple; empty pads gutter like candles; a press sends a violet ring through the grid.", "remap": "pairs", "pairs": [[96, 10, 94], [94, 51, 96], [75, 18, 96]], "playing": {"colour": 94, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "flicker", "colours": [10, 127, 61, 9], "rate": 4, "density": 0.3}, "touch": {"kind": "ripple", "colours": [94, 81, 53], "div": "1/8", "step": 0.25}, "scene": {"colour": 96, "kind": "pulsing", "div": "1/2", "secondary": 94}}, "christmas": {"name": "Christmas", "blurb": "Red, green and gold on a slow marquee chase around the empty pads; a press throws a gold star outward.", "remap": "pairs", "pairs": [[72, 120, 3], [87, 76, 3], [109, 99, 3]], "playing": {"colour": 3, "kind": "blinking", "div": "1/2"}, "ambient": {"kind": "chase", "colours": [72, 0, 87, 0, 109, 0], "rate": 3.5}, "touch": {"kind": "ripple", "colours": [109, 3], "div": "1/8", "step": 0.25}, "scene": {"colour": 72, "kind": "blinking", "div": "1/2", "secondary": 87}}, "valentine": {"name": "Valentine's", "blurb": "Rose, red and white. Every loaded pad has a slow heartbeat; a press sends a pink pulse outward like a ripple in a cup of wine.", "remap": "pairs", "pairs": [[57, 58, 3], [95, 7, 3], [56, 59, 3]], "playing": {"colour": 3, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "pulse", "colours": [59, 56], "div": "1/2"}, "touch": {"kind": "ripple", "colours": [56, 4, 3], "div": "1/8", "step": 0.25}, "scene": {"colour": 95, "kind": "pulsing", "div": "1/2", "secondary": 3}}, "stars": {"name": "Stars & Stripes", "blurb": "Red, white and blue for the Fourth. Rows alternate like stripes; a press fires a firework cross along its row and column.", "remap": "pairs", "pairs": [[5, 6, 3], [3, 2, 45], [45, 46, 3]], "playing": {"colour": 3, "kind": "blinking", "div": "1/2"}, "ambient": {"kind": "stripes", "colours": [6, 2, 46]}, "touch": {"kind": "cross", "colours": [3, 13, 5], "div": "1/8", "step": 0.2}, "scene": {"colour": 45, "kind": "blinking", "div": "1/2", "secondary": 5}}, "muertos": {"name": "Dia de Muertos", "blurb": "Marigold, magenta and turquoise: the ofrenda. Empty pads rain slowly downward like petals; a press scatters marigold sparks.", "remap": "pairs", "pairs": [[96, 99, 109], [53, 54, 96], [90, 102, 3]], "playing": {"colour": 109, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "rain", "colours": [96, 126, 99, 100], "rate": 2.5}, "touch": {"kind": "sparkle", "colours": [96, 109, 53, 90], "div": "1/4", "count": 14, "spread": 0.7}, "scene": {"colour": 53, "kind": "pulsing", "div": "1/2", "secondary": 96}}, "synthwave": {"name": "Synthwave", "blurb": "Hot pink, violet and azure. The empty pads scan slowly like a horizon grid; a press fires a pink-to-azure shockwave.", "remap": "pairs", "pairs": [[95, 58, 37], [94, 51, 37], [37, 38, 95]], "playing": {"colour": 37, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "scan", "colours": [49, 50, 51], "rate": 2.5}, "touch": {"kind": "ripple", "colours": [95, 94, 37], "div": "1/8", "step": 0.25}, "scene": {"colour": 95, "kind": "pulsing", "div": "1/2", "secondary": 37}}, "newsprint": {"name": "Newsprint", "blurb": "Black and white only. Colour becomes brightness: the loud hues go white, the quiet ones grey. A press leaves a white ring that fades to ink.", "remap": "luma", "greys": [1, 117, 118, 2, 3], "playing": {"colour": 1, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "flicker", "colours": [1, 117], "rate": 3, "density": 0.16}, "touch": {"kind": "ripple", "colours": [3, 2, 118, 117], "div": "1/8", "step": 0.25}, "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}}, "inverse": {"name": "Inverse", "blurb": "Black and white as a negative. Quiet pads glow, the playing pad goes dark, empty pads go white, and every press flips the whole grid for a beat.", "remap": "luma-invert", "greys": [1, 117, 118, 2, 3], "playing": {"colour": 3, "kind": "blinking", "div": "1/2"}, "ambient": {"kind": "fill", "colour": 3}, "touch": {"kind": "invert", "colours": [1, 3], "div": "1/4"}, "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}}, "darkside": {"name": "Prism (Dark Side)", "blurb": "After the sleeve of Pink Floyd's The Dark Side of the Moon (1973): a white beam crosses the empty pads, hits the prism, and fans into a five-row spectrum. A pulse of light travels the whole way. A press throws rainbow rings.", "remap": "pairs", "pairs": [[5, 6, 3], [13, 14, 3], [21, 22, 3], [37, 38, 3], [81, 50, 3]], "playing": {"colour": 3, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "prism", "beam": [3, 117], "prism": 2, "spectrum": [[81, 50], [37, 38], [21, 22], [13, 14], [5, 6]], "rate": 3}, "touch": {"kind": "ripple", "colours": [3, 13, 21, 37, 81, 5], "div": "1/8", "step": 0.25}, "scene": {"colour": 3, "kind": "pulsing", "div": "1/2", "secondary": 81}}, "pulsar": {"name": "Pulsar (Unknown Pleasures)", "blurb": "After the sleeve of Joy Division's Unknown Pleasures (1979), whose artwork plots the radio pulses of a pulsar as stacked white lines on black. Each row is a line; lumps rise out of the middle and are redrawn slowly. A press leaves a white ring that fades to ink.", "remap": "luma", "greys": [1, 117, 118, 2, 3], "playing": {"colour": 1, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "pulsar", "colours": [3, 117], "lumps": [0, 0.15, 0.5, 0.8, 0.8, 0.5, 0.15, 0], "rate": 1.2}, "touch": {"kind": "ripple", "colours": [3, 2, 118, 117], "div": "1/8", "step": 0.25}, "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}}, "kindofblue": {"name": "Blue (Kind of Blue)", "blurb": "After Miles Davis's Kind of Blue (1959), in the one colour. Every empty pad breathes slowly between two blues; playing pads swell to white; a press sends a pale ring out through the blues.", "remap": "pairs", "pairs": [[45, 46, 3], [41, 42, 3], [37, 38, 3]], "playing": {"colour": 3, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "pulse", "colours": [46, 41], "div": "1/2"}, "touch": {"kind": "ripple", "colours": [3, 44, 41, 45], "div": "1/8", "step": 0.25}, "scene": {"colour": 44, "kind": "pulsing", "div": "1/2", "secondary": 3}}, "purplerain": {"name": "Purple Rain", "blurb": "After Prince and the Revolution's Purple Rain (1984), in the one colour: violet and magenta fall slowly through the empty pads, playing pads pulse to purple, and a press scatters sparks.", "remap": "pairs", "pairs": [[49, 50, 94], [81, 50, 53], [94, 54, 3]], "playing": {"colour": 94, "kind": "pulsing", "div": "1/2"}, "ambient": {"kind": "rain", "colours": [81, 49, 50, 51], "rate": 2.5}, "touch": {"kind": "sparkle", "colours": [94, 53, 81, 3], "div": "1/4", "count": 12, "spread": 0.7}, "scene": {"colour": 94, "kind": "pulsing", "div": "1/2", "secondary": 81}}};
+const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "muertos", "synthwave", "newsprint", "inverse", "darkside", "pulsar", "kindofblue", "purplerain"];</script>
 <script>/* engine.js - the colour lab's engine in JavaScript, a line-for-line port of
  * apc_lab/engine.py so the HTML demo and the Python router produce the same
  * messages. tools/parity.py runs one scenario through both and diffs them.
@@ -248,7 +252,7 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
     // ---- the router -------------------------------------------------------------
     class Router {
       constructor(theme, bpm) {
-        this.bpm = bpm || 120.0;
+        this.bpm = bpm || 60.0;                 // protocol.DEFAULT_BPM
         this.themeKey = theme || "pack";
         this.base = {}; this.sent = {};
         ALL_PADS.forEach((n) => { this.base[n] = 0; this.sent[n] = [0, null]; });
@@ -326,6 +330,7 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
         const [col, row] = padColRow(note);
         if (kind === "none") return [0, null];
         if (kind === "fill") return [a.colour, null];
+        if (kind === "prism") return [Router.prism(col, row, Math.floor(t * a.rate), a), null];
         const cs = a.colours;
         if (kind === "pulse") return [cs[0], [cs[1], "pulsing", a.div]];
         if (kind === "stripes") return [cs[row % cs.length], null];
@@ -346,7 +351,22 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
           const d = Math.abs(row - (k % 5));
           return d < cs.length ? [cs[d], null] : [0, null];
         }
+        if (kind === "pulsar") {
+          const lump = (c, r) => r < 4 && hash01(c + 8 * r, k) < a.lumps[c];
+          if (lump(col, row)) return [0, null];
+          if (row > 0 && lump(col, row - 1)) return [cs[0], null];
+          return [cs[1], null];
+        }
         return [0, null];
+      }
+      static prism(col, row, k, a) {
+        const p = ((k % 10) + 10) % 10;
+        if (col <= 3) {
+          if (row === 2) return col === p ? a.beam[0] : a.beam[1];
+          return (col === 3 && (row === 1 || row === 3)) ? a.prism : 0;
+        }
+        const s = a.spectrum[row];
+        return col === p ? s[0] : s[1];
       }
       _refresh(note, t) {
         const want = this.desired(note, t);
@@ -384,7 +404,7 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
         if (kind === "sparkle") {
           for (let j = 0; j < tc.count; j++) {
             const m = Math.floor(hash01(j + 1, this.presses) * 40);
-            plan.push([hash01(j + 50, this.presses) * 0.35, m, cs[Math.floor(hash01(j + 90, this.presses) * cs.length)]]);
+            plan.push([hash01(j + 50, this.presses) * (tc.spread !== undefined ? tc.spread : 0.35), m, cs[Math.floor(hash01(j + 90, this.presses) * cs.length)]]);
           }
         }
         plan.sort((x, y) => (x[0] - y[0]) || (x[1] - y[1]));
@@ -443,11 +463,12 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
   const ROW_FAMILIES = [[49, 50], [37, 38], [21, 22], [9, 10], [3, 2]];     // what a pack sends per layer row
   const EMPTY = { 4: [6, 7] };                                            // row 5 has two empty slots
   const state = { playing: [0, 3, 5, 1, 6], column: -1 };
-  let router = new Router("pack", 120);
+  let router = new Router("pack", 60);
   const apc = new Surface();          // what the controller shows
   const raw = new Surface();          // what Resolume sends, untouched
   const rings = new RingMeter();
-  let bpm = 120, paused = false, auto = false, lastAuto = 0, nextPress = 1.2, t0 = performance.now(), tPaused = 0;
+  let gridMode = "sparse";           // sparse: one clip per layer, the rest dark; full: a loaded pack
+  let bpm = 60, paused = false, auto = false, lastAuto = 0, nextPress = 1.2, t0 = performance.now(), tPaused = 0;
   const logEl = $("log");
   const MAXLOG = 22;
   let sentWindow = [];                // timestamps of messages to the APC, for msgs/s
@@ -500,14 +521,15 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
   // theme cards
   const themesEl = $("themes");
   const velocities = (o, out) => {
-    if (Array.isArray(o)) o.forEach((x) => (typeof x === "number" ? out.push(x) : velocities(x, out)));
+    if (Array.isArray(o)) o.forEach((x) => (typeof x === "number" ? (Number.isInteger(x) && out.push(x)) : velocities(x, out)));
     else if (o && typeof o === "object") Object.keys(o).forEach((k) => {
-      if ((k === "colour" || k === "secondary") && typeof o[k] === "number") out.push(o[k]); else velocities(o[k], out);
+      if (k === "lumps") return;                                       // weights, not colours
+      if ((k === "colour" || k === "secondary" || k === "prism") && typeof o[k] === "number") out.push(o[k]); else velocities(o[k], out);
     });
     return out;
   };
   const cards = {};
-  THEME_ORDER.forEach((key) => {
+  function addCard(key) {
     const th = THEMES[key];
     const b = el("button", "theme", themesEl);
     b.type = "button"; b.setAttribute("aria-pressed", key === "pack" ? "true" : "false");
@@ -515,11 +537,12 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
     const chips = el("div", "chips", b);
     const seen = [];
     velocities({ p: th.pairs, g: th.greys, a: th.ambient, t: th.touch, s: th.playing }, []).concat(
-      key === "pack" ? [49, 37, 21, 9, 3] : []).forEach((v) => { if (v && seen.indexOf(v) < 0 && seen.length < 6) seen.push(v); });
+      key === "pack" ? [49, 37, 21, 9, 3] : []).forEach((v) => { if (v && PALETTE[v] && seen.indexOf(v) < 0 && seen.length < 6) seen.push(v); });
     seen.forEach((v) => { el("span", "", chips).style.background = hex(PALETTE[v]); });
     b.addEventListener("click", () => setTheme(key));
     cards[key] = b;
-  });
+  }
+  THEME_ORDER.forEach(addCard);
 
   // ------------------------------------------------------------- the loop ----
   function now() { return ((paused ? tPaused : performance.now()) - t0) / 1000; }
@@ -556,12 +579,14 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
     emitToApc(router.fromResolume(msg, t), t);
   }
   function resolumeFeedback(t) {
-    // The fake Resolume: one playing clip per row, the rest loaded (dim), a couple empty.
+    // The fake Resolume: one playing clip per row; in a full pack the rest are loaded (dim)
+    // and a couple empty, in a sparse one they are all dark, so the theme's ambient shows.
     for (let r = 0; r < 5; r++) {
       for (let c = 0; c < 8; c++) {
         const n = r * 8 + c, [on, dim] = ROW_FAMILIES[r];
         let m;
-        if ((EMPTY[r] || []).indexOf(c) >= 0) m = L.off(1, n);
+        if (gridMode === "sparse" && state.playing[r] !== c) m = L.off(1, n);
+        else if ((EMPTY[r] || []).indexOf(c) >= 0) m = L.off(1, n);
         else m = L.on(1, n, state.playing[r] === c ? on : dim);
         fromResolume(m, t);
       }
@@ -664,7 +689,33 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
     paused = !paused; e.target.setAttribute("aria-pressed", paused); e.target.textContent = paused ? "Resume" : "Pause";
     if (paused) tPaused = performance.now(); else { t0 += performance.now() - tPaused; }
   });
+  // A theme made from a picture (tools/theme_from_image.py): {"key": ..., "theme": {...}}.
+  function loadThemeText(text) {
+    let doc;
+    try { doc = JSON.parse(text); } catch (err) { $("blurb").textContent = "That file is not JSON."; return; }
+    const th = doc && doc.theme, key = doc && typeof doc.key === "string" ? doc.key.replace(/[^a-z0-9_-]/gi, "").slice(0, 24) : "";
+    const bad = !key || !th || ["name", "remap", "ambient", "touch"].some((k) => !(k in th)) ||
+      ["identity", "pairs", "luma", "luma-invert"].indexOf(th.remap) < 0 ||
+      velocities({ p: th.pairs, g: th.greys, a: th.ambient, t: th.touch, s: th.playing, c: th.scene }, []).some((v) => v < 0 || v > 127);
+    if (bad) { $("blurb").textContent = "That theme file is missing a field or uses a colour outside 0-127."; return; }
+    const known = THEME_ORDER.indexOf(key) >= 0;
+    if (known && !loadedKeys.has(key)) { $("blurb").textContent = "That key belongs to a built-in theme; give yours another key."; return; }
+    if (known) { cards[key].remove(); delete cards[key]; }     // replace a theme loaded earlier
+    THEMES[key] = th;
+    if (!known) THEME_ORDER.push(key);
+    loadedKeys.add(key);
+    addCard(key);
+    setTheme(key);
+  }
+  const loadedKeys = new Set();
+  $("loadtheme").addEventListener("click", () => $("themefile").click());
+  $("themefile").addEventListener("change", (e) => {
+    const f = e.target.files && e.target.files[0];
+    if (f) f.text().then(loadThemeText);
+    e.target.value = "";
+  });
   $("ringstyle").addEventListener("change", (e) => { ringStyle = e.target.value; });
+  $("grid").addEventListener("change", (e) => { gridMode = e.target.value; setTheme(router.themeKey); });
   $("reset").addEventListener("click", () => { state.playing = [0, 3, 5, 1, 6]; state.column = -1; setTheme(router.themeKey); });
 
   // start: calm if the visitor prefers reduced motion
@@ -673,7 +724,7 @@ const THEME_ORDER = ["pack", "halloween", "christmas", "valentine", "stars", "mu
     paused = true; tPaused = performance.now(); $("pause").setAttribute("aria-pressed", "true"); $("pause").textContent = "Resume";
   }
   requestAnimationFrame(frame);
-  window.__lab = { setTheme, press, router: () => router, apc, state, now };
+  window.__lab = { setTheme, press, router: () => router, apc, state, now, loadThemeText };
 })();
 </script>
 </body>

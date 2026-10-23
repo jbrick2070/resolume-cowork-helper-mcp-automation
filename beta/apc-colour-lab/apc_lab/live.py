@@ -18,17 +18,21 @@ The router sits ON THE LED PATH. Two topologies:
      Services' own loopback endpoints can stand in.)
 
   B. Windows MIDI Services multi-client: Resolume keeps the APC and the router
-     opens it too, sending only LED messages. Untested here: whether this APC's
-     driver allows a second client is unverified.
+     opens it too, sending only LED messages. Verified for the OUTPUT port on this rig
+     (a second process drove the APC's LEDs while Avenue was running, 2026-10-23); the
+     input port was not tried. The router can then only ADD to what Resolume sends: its
+     own feedback still reaches the controller directly, so re-colouring needs topology A.
 
 Usage:
     python -m apc_lab.live --list
     python -m apc_lab.live --dry-run --theme halloween
+    python -m apc_lab.live --dry-run --theme-file cover.json --theme cover     # a theme made from a picture
     python -m apc_lab.live --apc "APC40 mkII" --to-res "to-res" --from-res "from-res" --theme halloween
 
 Keys while running: n / p = next / previous theme, q = quit.
 """
 import argparse
+import json
 import os
 import sys
 import time
@@ -156,8 +160,9 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--list", action="store_true", help="print MIDI port names and exit (opens nothing)")
     ap.add_argument("--dry-run", action="store_true", help="simulate a short session and print the bytes (opens nothing)")
-    ap.add_argument("--theme", default="halloween", choices=E.THEME_ORDER)
-    ap.add_argument("--bpm", type=float, default=120.0)
+    ap.add_argument("--theme", default="halloween", help="one of: " + ", ".join(E.THEME_ORDER) + ", or the key in --theme-file")
+    ap.add_argument("--theme-file", help="a theme .json made by tools/theme_from_image.py; adds it before --theme is looked up")
+    ap.add_argument("--bpm", type=float, default=P.DEFAULT_BPM, help="MIDI clock tempo the pad animations follow (slower = calmer)")
     ap.add_argument("--mode", type=int, default=2, choices=(0, 1, 2), help="APC mode SysEx to send first")
     ap.add_argument("--seconds", type=float, default=3.0, help="dry-run length")
     ap.add_argument("--apc", help="APC port name (substring) for both directions")
@@ -165,6 +170,12 @@ def main(argv=None):
     ap.add_argument("--to-res", help="virtual port that Resolume reads presses from")
     ap.add_argument("--from-res", help="virtual port that Resolume writes LED feedback to")
     a = ap.parse_args(argv)
+    if a.theme_file:
+        with open(a.theme_file, encoding="utf-8") as f:
+            doc = json.load(f)
+        E.add_theme(doc["key"], doc["theme"])
+    if a.theme not in E.THEMES:
+        ap.error("unknown theme %r (known: %s)" % (a.theme, ", ".join(E.THEME_ORDER)))
     if a.list:
         import mido
         print("inputs :", mido.get_input_names())

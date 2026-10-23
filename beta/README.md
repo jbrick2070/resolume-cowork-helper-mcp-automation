@@ -79,8 +79,13 @@ plugins; see its README for the rig read-back result.
 velocity picks its colour from a 128-entry palette and its MIDI channel picks an animation
 (static, one-shot, pulsing, blinking) that the controller runs by itself, so a router on the
 LED path can re-theme any pack's feedback, fill dark pads with an ambient show and answer
-every press. It has nine themes (Halloween, Christmas, Valentine's, Stars & Stripes,
-Dia de Muertos, Synthwave and two black-and-white ones), a Python engine and a JavaScript
-port checked against each other on 54 scenarios (31,677 messages, 0 differences), 40 unit
-tests, and a one-file interactive demo, `apc40_colour_lab.html`. The animations are emulated
-from Akai's protocol document and Ableton's skin and have not been confirmed on hardware.
+every press. It has thirteen themes (Halloween, Christmas, Valentine's, Stars & Stripes,
+Dia de Muertos, Synthwave, two black-and-white ones, and four record-sleeve ones: a prism,
+a plotted pulsar, one blue, one purple), a Python engine and a JavaScript port checked
+against each other on 117 scenarios (70,884 messages, 0 differences), 58 unit tests, a
+one-file interactive demo, `apc40_colour_lab.html`, looping GIFs of every theme in
+`docs/media/`, and a tool that turns any picture (an album sleeve, say) into a theme by
+mapping its dominant colours to the nearest of the APC's 128 LED colours. Animation rates
+default to a slow 60 bpm after a first look at a real controller found the first ones too
+fast. The palette and pulsing were watched on a real APC40 mkII; the other animations are
+emulated from Akai's protocol document and Ableton's skin and are not yet confirmed.

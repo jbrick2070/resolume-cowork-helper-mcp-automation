@@ -19,7 +19,7 @@ def test_palette_is_128_and_matches_akai_anchors():
 def _velocities(o):
     if isinstance(o, dict):
         for k, v in o.items():
-            if k in ("colour", "secondary") and isinstance(v, int):
+            if k in ("colour", "secondary", "prism") and isinstance(v, int):
                 yield v
             else:
                 for x in _velocities(v):
@@ -100,7 +100,8 @@ def test_identity_theme_passes_feedback_through():
 def test_halloween_remaps_playing_and_loaded_green():
     r = E.Router("halloween")
     play = r.from_resolume(P.on(1, 8, 21), 0.0)
-    assert play[0] == P.on(1, 8, 94) and play[1][1] == P.mode_to_channel("pulsing", "1/4")
+    div = E.THEMES["halloween"]["playing"]["div"]
+    assert play[0] == P.on(1, 8, 94) and play[1][1] == P.mode_to_channel("pulsing", div)
     assert play[1][3] == 96                                            # breathes to pumpkin
     assert r.from_resolume(P.on(1, 9, 22), 0.0) == [P.on(1, 9, 51)]    # loaded = dim violet
 
@@ -128,9 +129,10 @@ def test_dark_pad_returns_to_ambient_when_resolume_clears_it():
 def test_ripple_is_a_ring_ordered_by_distance():
     r = E.Router("halloween")
     r.tick(0.0)
+    touch = E.THEMES["halloween"]["touch"]
+    ch = P.mode_to_channel("oneshot", touch["div"])
     _, immediate = r.from_apc(P.on(1, 20, 100), 1.0)                   # pad (4, 2)
-    assert immediate == [P.on(P.mode_to_channel("oneshot", "1/8"), 20, 94)]
-    ch = P.mode_to_channel("oneshot", "1/8")
+    assert immediate == [P.on(ch, 20, 94)]
     got = []
     t = 1.0
     while r.queue and t < 3.0:
@@ -143,7 +145,7 @@ def test_ripple_is_a_ring_ordered_by_distance():
     times = {m[2]: tt for tt, m in got}
     assert len(times) == 39                                            # every other pad, once
     for n, tt in times.items():
-        assert tt == pytest.approx(1.0 + dist(n) * 0.065, abs=0.02)
+        assert tt == pytest.approx(1.0 + dist(n) * touch["step"], abs=0.02)
 
 
 def test_invert_flips_lit_and_dark_pads():
@@ -195,3 +197,80 @@ def test_clock_is_24_per_quarter_note():
     assert E.clock_ticks(0.0, 1.0, 60.0) == 24
     pieces = sum(E.clock_ticks(i / 10.0, (i + 1) / 10.0, 133.0) for i in range(100))
     assert pieces == E.clock_ticks(0.0, 10.0, 133.0)
+
+
+# ---- the record-sleeve themes -------------------------------------------------
+def _dark_grid_router(key):
+    """Resolume sends nothing, so every pad is the theme's ambient."""
+    r = E.Router(key)
+    r.tick(0.0)
+    return r
+
+
+def test_prism_draws_a_beam_a_prism_and_a_spectrum():
+    a = E.THEMES["darkside"]["ambient"]
+    r = _dark_grid_router("darkside")
+    assert r.desired(P.pad_note(0, 2), 0.0)[0] == a["beam"][0]         # the lit beam pad: the light starts at column 0
+    assert r.desired(P.pad_note(1, 2), 0.0)[0] == a["beam"][1]         # the rest of the beam, dim
+    assert r.desired(P.pad_note(0, 0), 0.0)[0] == 0                    # off the beam: dark
+    assert r.desired(P.pad_note(3, 1), 0.0)[0] == a["prism"]           # the prism's flank
+    assert r.desired(P.pad_note(3, 0), 0.0)[0] == 0
+    for row in range(5):                                               # five rows of spectrum
+        assert r.desired(P.pad_note(5, row), 0.0)[0] == a["spectrum"][row][1]
+
+
+def test_prism_light_walks_the_whole_way_then_rests():
+    a = E.THEMES["darkside"]["ambient"]
+    r = _dark_grid_router("darkside")
+    step = 1.0 / a["rate"]
+    lit = []
+    for k in range(10):
+        t = k * step + step / 2
+        lit.append([c for c in range(8) if r.desired(P.pad_note(c, 2), t)[0] in
+                    (a["beam"][0], a["spectrum"][2][0])])
+    assert lit[:8] == [[c] for c in range(8)]                          # one bright column per step
+    assert lit[8] == lit[9] == []                                      # two steps of rest
+
+
+def test_pulsar_lines_lift_where_a_lump_lands():
+    a = E.THEMES["pulsar"]["ambient"]
+    bright, base = a["colours"]
+    r = _dark_grid_router("pulsar")
+    seen_gap = seen_peak = False
+    for k in range(40):
+        t = (k + 0.5) / a["rate"]
+        for c in range(8):
+            for row in range(5):
+                v = r.desired(P.pad_note(c, row), t)[0]
+                assert v in (0, bright, base)
+                below = row > 0 and r.desired(P.pad_note(c, row - 1), t)[0] == 0
+                if v == bright:
+                    assert below                                       # a peak sits above a gap
+                    seen_peak = True
+                if v == 0:
+                    seen_gap = True
+    assert seen_gap and seen_peak
+    for k in range(40):                                                # the two edge columns never lift
+        t = (k + 0.5) / a["rate"]
+        assert all(r.desired(P.pad_note(0, row), t)[0] == base for row in range(5))
+        assert all(r.desired(P.pad_note(7, row), t)[0] == base for row in range(5))
+
+
+def test_sparkle_spread_comes_from_the_theme():
+    r = E.Router("purplerain")
+    r.tick(0.0)
+    r.from_apc(P.on(1, 12, 100), 1.0)
+    spread = E.THEMES["purplerain"]["touch"]["spread"]
+    assert r.queue and max(due for due, _, _ in r.queue) <= 1.0 + spread + 1e-9
+    assert max(due for due, _, _ in r.queue) > 1.0 + 0.35              # wider than the default
+
+
+def test_default_tempo_is_the_slowed_one():
+    assert P.DEFAULT_BPM == 60.0
+    assert E.Router("pack").bpm == P.DEFAULT_BPM
+    for th in E.THEMES.values():
+        for key in ("playing", "scene", "ambient"):                    # held animations: 1/4 at the fastest
+            if key in th and "div" in th[key]:
+                assert th[key]["div"] in ("1/4", "1/2"), (th["name"], key)
+        if "div" in th.get("touch", {}):                               # one-shot flashes: 1/8 at the fastest
+            assert th["touch"]["div"] in ("1/8", "1/4", "1/2"), th["name"]

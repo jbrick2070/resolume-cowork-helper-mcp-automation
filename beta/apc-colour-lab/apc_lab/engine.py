@@ -43,6 +43,18 @@ FEEDBACK[3] = (None, "on")        # white
 FEEDBACK[2] = (None, "dim")
 
 
+def add_theme(key, theme):
+    """Register a theme made elsewhere (tools/theme_from_image.py) so a Router can run it."""
+    for need in ("name", "remap", "ambient", "touch"):
+        if need not in theme:
+            raise ValueError("theme %r has no %r" % (key, need))
+    if theme["remap"] not in ("identity", "pairs", "luma", "luma-invert"):
+        raise ValueError("theme %r: unknown remap %r" % (key, theme["remap"]))
+    THEMES[key] = theme
+    if key not in THEME_ORDER:
+        THEME_ORDER.append(key)
+
+
 def hash01(a, b):
     """Deterministic 0..1 hash, bit-identical in demo/engine.js."""
     h = (a * 374761393 + b * 668265263) & 0xFFFFFFFF
@@ -84,7 +96,7 @@ class Surface(object):
         else:
             pad.update(s=vel, kind=mode, div=div, t=t)
 
-    def rgb(self, note, t, bpm=120.0):
+    def rgb(self, note, t, bpm=P.DEFAULT_BPM):
         pad = self.pads[note]
         prim, sec = PALETTE[pad["p"]], PALETTE[pad["s"]]
         if pad["kind"] == "primary":
@@ -100,7 +112,7 @@ class Surface(object):
 
 # ----------------------------------------------------------------- the router --
 class Router(object):
-    def __init__(self, theme="pack", bpm=120.0):
+    def __init__(self, theme="pack", bpm=P.DEFAULT_BPM):
         self.bpm = bpm
         self.theme_key = theme
         self.base = {n: 0 for n in P.ALL_PADS}       # Resolume's feedback, raw velocity
@@ -196,6 +208,8 @@ class Router(object):
             return (0, None)
         if kind == "fill":
             return (a["colour"], None)
+        if kind == "prism":
+            return (self._prism(col, row, int(math.floor(t * a["rate"])), a), None)
         cs = a["colours"]
         if kind == "pulse":
             return (cs[0], (cs[1], "pulsing", a["div"]))
@@ -215,7 +229,29 @@ class Router(object):
         if kind == "scan":
             d = abs(row - (k % 5))
             return (cs[d], None) if d < len(cs) else (0, None)
+        if kind == "pulsar":
+            # stacked lines, one per row; a lump lifts a line one row at its column
+            def lump(c, r):
+                return r < 4 and hash01(c + 8 * r, k) < a["lumps"][c]
+            if lump(col, row):
+                return (0, None)                     # this line has moved up a row here
+            if row > 0 and lump(col, row - 1):
+                return (cs[0], None)                 # ...and this pad is where it arrived
+            return (cs[1], None)
         return (0, None)
+
+    @staticmethod
+    def _prism(col, row, k, a):
+        """A white beam on the middle row, a prism at column 3, a five-row spectrum
+        from column 4 on. One bright step of light runs the whole way (8 and 9 rest)."""
+        p = k % 10
+        beam, spectrum = a["beam"], a["spectrum"]
+        if col <= 3:
+            if row == 2:
+                return beam[0] if col == p else beam[1]
+            return a["prism"] if col == 3 and row in (1, 3) else 0
+        on, dim = spectrum[row]
+        return on if col == p else dim
 
     # ---- diff emission ---------------------------------------------------------
     def _refresh(self, note, t):
@@ -256,7 +292,7 @@ class Router(object):
         if kind == "sparkle":
             for j in range(tc["count"]):
                 m = int(hash01(j + 1, self.presses) * 40)
-                plan.append((hash01(j + 50, self.presses) * 0.35, m,
+                plan.append((hash01(j + 50, self.presses) * tc.get("spread", 0.35), m,
                              cs[int(hash01(j + 90, self.presses) * len(cs))]))
         out = []
         for delay, m, colour in sorted(plan, key=lambda x: (x[0], x[1])):

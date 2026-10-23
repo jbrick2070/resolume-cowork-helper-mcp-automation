@@ -1,6 +1,7 @@
 {
-  "_comment": "Velocities are APC40 mkII palette indices (palette.json). 'pairs' are [on, dim, playing-secondary] velocity triples; the hue families the packs speak (red..magenta, in hue order) take pairs[i % len(pairs)]. 'playing' is the secondary animation laid over every 'on' pad. 'ambient' fills pads Resolume leaves dark. 'touch' answers a pad press.",
-  "order": ["pack", "halloween", "christmas", "valentine", "stars", "muertos", "synthwave", "newsprint", "inverse"],
+  "_comment": "Velocities are APC40 mkII palette indices (palette.json). 'pairs' are [on, dim, playing-secondary] velocity triples; the hue families the packs speak (red..magenta, in hue order) take pairs[i % len(pairs)]. 'playing' is the secondary animation laid over every 'on' pad. 'ambient' fills pads Resolume leaves dark. 'touch' answers a pad press with one-shot flashes (step = seconds between rings, so a 1/8 flash of 0.5 s at 60 bpm over a 0.25 s step is a ring two pads wide; spread = seconds a sparkle burst lasts, default 0.35). 'div' rates are note values at the clock tempo (protocol.DEFAULT_BPM unless you change it): 1/2 is two beats (2 s at 60 bpm), the slowest the controller offers. 'rate' on an ambient is software steps per second. Everything was slowed on 2026-10-23 after the performer watched the first rates on a real APC40 mkII and found them 'a bit too fast'.",
+  "order": ["pack", "halloween", "christmas", "valentine", "stars", "muertos", "synthwave", "newsprint", "inverse",
+            "darkside", "pulsar", "kindofblue", "purplerain"],
   "themes": {
     "pack": {
       "name": "Pack colours",
@@ -11,43 +12,43 @@
     },
     "halloween": {
       "name": "Halloween",
-      "blurb": "Pumpkin, violet and slime. Playing pads breathe between orange and purple; empty pads gutter like candles; a press sends a violet ring through the grid.",
+      "blurb": "Pumpkin, violet and slime. Playing pads breathe slowly between orange and purple; empty pads gutter like candles; a press sends a violet ring through the grid.",
       "remap": "pairs",
       "pairs": [[96, 10, 94], [94, 51, 96], [75, 18, 96]],
-      "playing": {"colour": 94, "kind": "pulsing", "div": "1/4"},
-      "ambient": {"kind": "flicker", "colours": [10, 127, 61, 9], "rate": 8, "density": 0.34},
-      "touch": {"kind": "ripple", "colours": [94, 81, 53], "div": "1/8", "step": 0.065},
+      "playing": {"colour": 94, "kind": "pulsing", "div": "1/2"},
+      "ambient": {"kind": "flicker", "colours": [10, 127, 61, 9], "rate": 4, "density": 0.3},
+      "touch": {"kind": "ripple", "colours": [94, 81, 53], "div": "1/8", "step": 0.25},
       "scene": {"colour": 96, "kind": "pulsing", "div": "1/2", "secondary": 94}
     },
     "christmas": {
       "name": "Christmas",
-      "blurb": "Red, green and gold on a marquee chase around the empty pads; a press throws a gold star outward.",
+      "blurb": "Red, green and gold on a slow marquee chase around the empty pads; a press throws a gold star outward.",
       "remap": "pairs",
       "pairs": [[72, 120, 3], [87, 76, 3], [109, 99, 3]],
-      "playing": {"colour": 3, "kind": "blinking", "div": "1/4"},
-      "ambient": {"kind": "chase", "colours": [72, 0, 87, 0, 109, 0], "rate": 7},
-      "touch": {"kind": "ripple", "colours": [109, 3], "div": "1/8", "step": 0.05},
+      "playing": {"colour": 3, "kind": "blinking", "div": "1/2"},
+      "ambient": {"kind": "chase", "colours": [72, 0, 87, 0, 109, 0], "rate": 3.5},
+      "touch": {"kind": "ripple", "colours": [109, 3], "div": "1/8", "step": 0.25},
       "scene": {"colour": 72, "kind": "blinking", "div": "1/2", "secondary": 87}
     },
     "valentine": {
       "name": "Valentine's",
-      "blurb": "Rose, red and white. Every loaded pad has a heartbeat; a press sends a pink pulse outward like a ripple in a cup of wine.",
+      "blurb": "Rose, red and white. Every loaded pad has a slow heartbeat; a press sends a pink pulse outward like a ripple in a cup of wine.",
       "remap": "pairs",
       "pairs": [[57, 58, 3], [95, 7, 3], [56, 59, 3]],
-      "playing": {"colour": 3, "kind": "pulsing", "div": "1/4"},
+      "playing": {"colour": 3, "kind": "pulsing", "div": "1/2"},
       "ambient": {"kind": "pulse", "colours": [59, 56], "div": "1/2"},
-      "touch": {"kind": "ripple", "colours": [56, 4, 3], "div": "1/8", "step": 0.07},
-      "scene": {"colour": 95, "kind": "pulsing", "div": "1/4", "secondary": 3}
+      "touch": {"kind": "ripple", "colours": [56, 4, 3], "div": "1/8", "step": 0.25},
+      "scene": {"colour": 95, "kind": "pulsing", "div": "1/2", "secondary": 3}
     },
     "stars": {
       "name": "Stars & Stripes",
       "blurb": "Red, white and blue for the Fourth. Rows alternate like stripes; a press fires a firework cross along its row and column.",
       "remap": "pairs",
       "pairs": [[5, 6, 3], [3, 2, 45], [45, 46, 3]],
-      "playing": {"colour": 3, "kind": "blinking", "div": "1/8"},
+      "playing": {"colour": 3, "kind": "blinking", "div": "1/2"},
       "ambient": {"kind": "stripes", "colours": [6, 2, 46]},
-      "touch": {"kind": "cross", "colours": [3, 13, 5], "div": "1/8", "step": 0.05},
-      "scene": {"colour": 45, "kind": "blinking", "div": "1/4", "secondary": 5}
+      "touch": {"kind": "cross", "colours": [3, 13, 5], "div": "1/8", "step": 0.2},
+      "scene": {"colour": 45, "kind": "blinking", "div": "1/2", "secondary": 5}
     },
     "muertos": {
       "name": "Dia de Muertos",
@@ -55,28 +56,28 @@
       "remap": "pairs",
       "pairs": [[96, 99, 109], [53, 54, 96], [90, 102, 3]],
       "playing": {"colour": 109, "kind": "pulsing", "div": "1/2"},
-      "ambient": {"kind": "rain", "colours": [96, 126, 99, 100], "rate": 5},
-      "touch": {"kind": "sparkle", "colours": [96, 109, 53, 90], "div": "1/8", "count": 14},
+      "ambient": {"kind": "rain", "colours": [96, 126, 99, 100], "rate": 2.5},
+      "touch": {"kind": "sparkle", "colours": [96, 109, 53, 90], "div": "1/4", "count": 14, "spread": 0.7},
       "scene": {"colour": 53, "kind": "pulsing", "div": "1/2", "secondary": 96}
     },
     "synthwave": {
       "name": "Synthwave",
-      "blurb": "Hot pink, violet and azure. The empty pads scan like a horizon grid; a press fires a pink-to-azure shockwave.",
+      "blurb": "Hot pink, violet and azure. The empty pads scan slowly like a horizon grid; a press fires a pink-to-azure shockwave.",
       "remap": "pairs",
       "pairs": [[95, 58, 37], [94, 51, 37], [37, 38, 95]],
-      "playing": {"colour": 37, "kind": "pulsing", "div": "1/8"},
-      "ambient": {"kind": "scan", "colours": [49, 50, 51], "rate": 6},
-      "touch": {"kind": "ripple", "colours": [95, 94, 37], "div": "1/8", "step": 0.055},
-      "scene": {"colour": 95, "kind": "pulsing", "div": "1/4", "secondary": 37}
+      "playing": {"colour": 37, "kind": "pulsing", "div": "1/2"},
+      "ambient": {"kind": "scan", "colours": [49, 50, 51], "rate": 2.5},
+      "touch": {"kind": "ripple", "colours": [95, 94, 37], "div": "1/8", "step": 0.25},
+      "scene": {"colour": 95, "kind": "pulsing", "div": "1/2", "secondary": 37}
     },
     "newsprint": {
       "name": "Newsprint",
       "blurb": "Black and white only. Colour becomes brightness: the loud hues go white, the quiet ones grey. A press leaves a white ring that fades to ink.",
       "remap": "luma",
       "greys": [1, 117, 118, 2, 3],
-      "playing": {"colour": 1, "kind": "pulsing", "div": "1/4"},
-      "ambient": {"kind": "flicker", "colours": [1, 117], "rate": 6, "density": 0.18},
-      "touch": {"kind": "ripple", "colours": [3, 2, 118, 117], "div": "1/8", "step": 0.06},
+      "playing": {"colour": 1, "kind": "pulsing", "div": "1/2"},
+      "ambient": {"kind": "flicker", "colours": [1, 117], "rate": 3, "density": 0.16},
+      "touch": {"kind": "ripple", "colours": [3, 2, 118, 117], "div": "1/8", "step": 0.25},
       "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}
     },
     "inverse": {
@@ -84,10 +85,51 @@
       "blurb": "Black and white as a negative. Quiet pads glow, the playing pad goes dark, empty pads go white, and every press flips the whole grid for a beat.",
       "remap": "luma-invert",
       "greys": [1, 117, 118, 2, 3],
-      "playing": {"colour": 3, "kind": "blinking", "div": "1/4"},
+      "playing": {"colour": 3, "kind": "blinking", "div": "1/2"},
       "ambient": {"kind": "fill", "colour": 3},
       "touch": {"kind": "invert", "colours": [1, 3], "div": "1/4"},
       "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}
+    },
+    "darkside": {
+      "name": "Prism (Dark Side)",
+      "blurb": "After the sleeve of Pink Floyd's The Dark Side of the Moon (1973): a white beam crosses the empty pads, hits the prism, and fans into a five-row spectrum. A pulse of light travels the whole way. A press throws rainbow rings.",
+      "remap": "pairs",
+      "pairs": [[5, 6, 3], [13, 14, 3], [21, 22, 3], [37, 38, 3], [81, 50, 3]],
+      "playing": {"colour": 3, "kind": "pulsing", "div": "1/2"},
+      "ambient": {"kind": "prism", "beam": [3, 117], "prism": 2,
+                  "spectrum": [[81, 50], [37, 38], [21, 22], [13, 14], [5, 6]], "rate": 3},
+      "touch": {"kind": "ripple", "colours": [3, 13, 21, 37, 81, 5], "div": "1/8", "step": 0.25},
+      "scene": {"colour": 3, "kind": "pulsing", "div": "1/2", "secondary": 81}
+    },
+    "pulsar": {
+      "name": "Pulsar (Unknown Pleasures)",
+      "blurb": "After the sleeve of Joy Division's Unknown Pleasures (1979), whose artwork plots the radio pulses of a pulsar as stacked white lines on black. Each row is a line; lumps rise out of the middle and are redrawn slowly. A press leaves a white ring that fades to ink.",
+      "remap": "luma",
+      "greys": [1, 117, 118, 2, 3],
+      "playing": {"colour": 1, "kind": "pulsing", "div": "1/2"},
+      "ambient": {"kind": "pulsar", "colours": [3, 117], "lumps": [0, 0.15, 0.5, 0.8, 0.8, 0.5, 0.15, 0], "rate": 1.2},
+      "touch": {"kind": "ripple", "colours": [3, 2, 118, 117], "div": "1/8", "step": 0.25},
+      "scene": {"colour": 3, "kind": "blinking", "div": "1/2", "secondary": 1}
+    },
+    "kindofblue": {
+      "name": "Blue (Kind of Blue)",
+      "blurb": "After Miles Davis's Kind of Blue (1959), in the one colour. Every empty pad breathes slowly between two blues; playing pads swell to white; a press sends a pale ring out through the blues.",
+      "remap": "pairs",
+      "pairs": [[45, 46, 3], [41, 42, 3], [37, 38, 3]],
+      "playing": {"colour": 3, "kind": "pulsing", "div": "1/2"},
+      "ambient": {"kind": "pulse", "colours": [46, 41], "div": "1/2"},
+      "touch": {"kind": "ripple", "colours": [3, 44, 41, 45], "div": "1/8", "step": 0.25},
+      "scene": {"colour": 44, "kind": "pulsing", "div": "1/2", "secondary": 3}
+    },
+    "purplerain": {
+      "name": "Purple Rain",
+      "blurb": "After Prince and the Revolution's Purple Rain (1984), in the one colour: violet and magenta fall slowly through the empty pads, playing pads pulse to purple, and a press scatters sparks.",
+      "remap": "pairs",
+      "pairs": [[49, 50, 94], [81, 50, 53], [94, 54, 3]],
+      "playing": {"colour": 94, "kind": "pulsing", "div": "1/2"},
+      "ambient": {"kind": "rain", "colours": [81, 49, 50, 51], "rate": 2.5},
+      "touch": {"kind": "sparkle", "colours": [94, 53, 81, 3], "div": "1/4", "count": 12, "spread": 0.7},
+      "scene": {"colour": 94, "kind": "pulsing", "div": "1/2", "secondary": 81}
     }
   }
 }

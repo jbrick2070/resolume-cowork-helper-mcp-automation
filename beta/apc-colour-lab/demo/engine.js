@@ -90,7 +90,7 @@
     // ---- the router -------------------------------------------------------------
     class Router {
       constructor(theme, bpm) {
-        this.bpm = bpm || 120.0;
+        this.bpm = bpm || 60.0;                 // protocol.DEFAULT_BPM
         this.themeKey = theme || "pack";
         this.base = {}; this.sent = {};
         ALL_PADS.forEach((n) => { this.base[n] = 0; this.sent[n] = [0, null]; });
@@ -168,6 +168,7 @@
         const [col, row] = padColRow(note);
         if (kind === "none") return [0, null];
         if (kind === "fill") return [a.colour, null];
+        if (kind === "prism") return [Router.prism(col, row, Math.floor(t * a.rate), a), null];
         const cs = a.colours;
         if (kind === "pulse") return [cs[0], [cs[1], "pulsing", a.div]];
         if (kind === "stripes") return [cs[row % cs.length], null];
@@ -188,7 +189,22 @@
           const d = Math.abs(row - (k % 5));
           return d < cs.length ? [cs[d], null] : [0, null];
         }
+        if (kind === "pulsar") {
+          const lump = (c, r) => r < 4 && hash01(c + 8 * r, k) < a.lumps[c];
+          if (lump(col, row)) return [0, null];
+          if (row > 0 && lump(col, row - 1)) return [cs[0], null];
+          return [cs[1], null];
+        }
         return [0, null];
+      }
+      static prism(col, row, k, a) {
+        const p = ((k % 10) + 10) % 10;
+        if (col <= 3) {
+          if (row === 2) return col === p ? a.beam[0] : a.beam[1];
+          return (col === 3 && (row === 1 || row === 3)) ? a.prism : 0;
+        }
+        const s = a.spectrum[row];
+        return col === p ? s[0] : s[1];
       }
       _refresh(note, t) {
         const want = this.desired(note, t);
@@ -226,7 +242,7 @@
         if (kind === "sparkle") {
           for (let j = 0; j < tc.count; j++) {
             const m = Math.floor(hash01(j + 1, this.presses) * 40);
-            plan.push([hash01(j + 50, this.presses) * 0.35, m, cs[Math.floor(hash01(j + 90, this.presses) * cs.length)]]);
+            plan.push([hash01(j + 50, this.presses) * (tc.spread !== undefined ? tc.spread : 0.35), m, cs[Math.floor(hash01(j + 90, this.presses) * cs.length)]]);
           }
         }
         plan.sort((x, y) => (x[0] - y[0]) || (x[1] - y[1]));
