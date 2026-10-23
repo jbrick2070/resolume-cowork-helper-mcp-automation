@@ -101,3 +101,9 @@ A composition about Resolume itself: the vocabulary, the clip, parameter animati
 The controller every pack here is played on, drawn as schematics, every number from Akai's protocol document.  [`beta/the-surface/`](../beta/the-surface)
 
 ![The Surface - APC40 mkII + MIDI](the-surface/card.jpg)
+
+## The Mixers - V-4, MXPro, MX-1 + JVC
+
+Three video mixers (Edirol V-4, Videonics MXPro, MX-1), a JVC S-VHS deck beside a pro edit controller, and the APC40 itself; LEFT and RIGHT walk the six decks.  [`beta/the-mixers/`](../beta/the-mixers)
+
+![The Mixers - V-4, MXPro, MX-1 + JVC](the-mixers/card.jpg)

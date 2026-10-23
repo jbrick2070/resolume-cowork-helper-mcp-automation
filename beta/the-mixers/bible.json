@@ -1,0 +1,414 @@
+{
+ "pack_name": "The Mixers",
+ "comp_name": "The Mixers - V-4, MXPro, MX-1 + JVC",
+ "tagline": "Three mixers, a VCR, an edit controller and the APC40. LEFT and RIGHT walk between them.",
+ "decks": [
+  {
+   "name": "APC40 mkII",
+   "slug": "apc40",
+   "theme": "the controller",
+   "world": "The controller as an object before it is a protocol: the 424 x 254 x 46 mm chassis, 40 RGB pads with note 0 bottom-left, nine 45 mm faders, sixteen knobs with LED rings, the crossfader, the USB-B socket that also powers it, the three modes set by SysEx, and the two buttons this pack is walked with: LEFT and RIGHT, previous and next deck.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#e8e4d8",
+     "why": "Silkscreen, slots, sockets."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "A lit pad."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "Rings and the crossfader."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Panel legends."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "Unused here; the wire is deck 5's."
+    }
+   ],
+   "columns": [
+    "The Object",
+    "40 Pads",
+    "9 Faders",
+    "16 Knobs",
+    "Crossfader",
+    "USB-B",
+    "Three Modes",
+    "On The Desk"
+   ],
+   "text_corpus": [
+    "AKAI APC40 MKII",
+    "424 x 254 x 46 MM",
+    "40 RGB PADS",
+    "9 x 45 MM FADERS",
+    "16 KNOBS WITH LED RINGS",
+    "CROSSFADER CC15",
+    "USB TYPE B",
+    "MODE 0 - 1 - 2",
+    "LEFT / RIGHT = PREVIOUS / NEXT DECK"
+   ],
+   "moments": [
+    "Column 8 first: read the legend, then press RIGHT once; the V-4 appears. RIGHT again, the MXPro. LEFT walks back. That is the whole navigation.",
+    "Column 5 with the real crossfader: the amber bar on screen follows the lows, your hand follows it.",
+    "Column 2, any pad: note 0 lights bottom-left on screen and on the desk at once."
+   ]
+  },
+  {
+   "name": "Edirol V-4",
+   "slug": "v4",
+   "theme": "beat sync",
+   "world": "Roland's 2002 four-channel mixer that VJs carried for a decade: four composite inputs, two frame synchronizers, an A and a B bus, a T-bar of over 100 steps, more than 200 wipes, eight effects, a TAP button and BPM SYNC that cut on the beat from MIDI clock, input select on MIDI notes, and no audio at all.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#5b7a99",
+     "why": "Edirol's blue-grey."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "The lit bus."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "The T-bar."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Panel legends."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "The MIDI wire."
+    }
+   ],
+   "columns": [
+    "The Box",
+    "Four Inputs",
+    "A / B Buses",
+    "T-Bar",
+    "Effects",
+    "BPM Sync",
+    "MIDI",
+    "Output Fade"
+   ],
+   "text_corpus": [
+    "EDIROL V-4",
+    "4 x COMPOSITE IN",
+    "CHANNEL A",
+    "CHANNEL B",
+    "T-BAR",
+    "MIX - WIPE - EFX",
+    "TAP - BPM SYNC",
+    "OUTPUT FADE"
+   ],
+   "moments": [
+    "BPM Sync on the downbeat: tap TAP TEMPO on the APC with the music; the green pulse is the V-4 cutting for you.",
+    "T-Bar with the real crossfader, slowly end to end.",
+    "MIDI then Output Fade: two columns DOWN - the wire, then the fade to white."
+   ]
+  },
+  {
+   "name": "Videonics MXPro",
+   "slug": "mxpro",
+   "theme": "the keypad",
+   "world": "The 1997 upgrade to the MX-1, built in Campbell, California: four inputs with audio, a CURRENT row and a NEXT row instead of A/B buses, 501 transitions in five categories including hearts, stars and keyholes, a keypad to type them by number, PLAY instead of the slack T-bar, input effects, a 16-image multi-PIP placed by joystick, and LEARN scripts of 250 steps.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#d8cfb8",
+     "why": "The Videonics beige."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "The NEXT source."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "Unused but for the glow."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Panel legends."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "Unused."
+    }
+   ],
+   "columns": [
+    "The Box",
+    "Current / Next",
+    "501",
+    "Shapes",
+    "Keypad + Play",
+    "Input F/X",
+    "Multi-PIP",
+    "Learn"
+   ],
+   "text_corpus": [
+    "VIDEONICS MXPRO",
+    "CURRENT",
+    "NEXT",
+    "501 TRANSITIONS",
+    "SHAPES",
+    "PLAY",
+    "STROBE",
+    "MULTI-PIP",
+    "LEARN"
+   ],
+   "moments": [
+    "501 then Shapes on consecutive downbeats: the number, then the keyhole.",
+    "Keypad + Play: press the APC's PLAY as the MXPro's PLAY.",
+    "Learn last, then RIGHT: from the MXPro back to where it started, the MX-1."
+   ]
+  },
+  {
+   "name": "Videonics MX-1",
+   "slug": "mx1",
+   "theme": "the original",
+   "world": "The 1994 four-input mixer from Campbell, California that put a frame synchronizer, dual TBC, 210 numbered effects and a Take-bar on a desk for about a thousand dollars; the manual's own example is a nightclub, a music video on one input and a camera on the dance floor on the other.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#d8cfb8",
+     "why": "The Videonics beige."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "The lit source."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "The Take-bar."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Panel legends."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "Unused."
+    }
+   ],
+   "columns": [
+    "The Original",
+    "Take-Bar",
+    "Numbered",
+    "Quad Preview",
+    "Film Look",
+    "Chroma Key",
+    "Freeze",
+    "The Club"
+   ],
+   "text_corpus": [
+    "VIDEONICS MX-1",
+    "TAKE-BAR",
+    "EFFECT 0 = CUT",
+    "PREVIEW",
+    "FILM LOOK",
+    "CHROMA KEY",
+    "FREEZE",
+    "THE DANCE FLOOR"
+   ],
+   "moments": [
+    "Take-Bar with the real crossfader: the gesture the whole pack is built on, from 1994.",
+    "Film Look under a slow track: the strobe at setting 1.",
+    "The Club last: the manual's own nightclub, on the APC that replaced it."
+   ]
+  },
+  {
+   "name": "JVC S-VHS + Edit",
+   "slug": "jvc",
+   "theme": "the tape",
+   "world": "Two JVC machines that never worked together: the 1999 HR-S7600U S-VHS deck, with its jog dial and shuttle ring on the front panel, DA-4 heads, digital TBC with 3-DNR and S-VHS ET; and the RM-G850E, a wired professional edit controller with a player dial, a recorder dial and a red PERFORM key, built to drive JVC's U-matic editing decks.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "The black deck."
+    },
+    {
+     "role": "body",
+     "hex": "#e8e4d8",
+     "why": "Dials, heads, tape lines."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "A frame stepped."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "TIME SCAN and the ASSEM key."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Legends."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "PERFORM."
+    }
+   ],
+   "columns": [
+    "The Deck",
+    "Jog",
+    "Shuttle",
+    "Heads",
+    "TBC + 3-DNR",
+    "S-VHS ET",
+    "RM-G850E",
+    "Perform"
+   ],
+   "text_corpus": [
+    "JVC HR-S7600U",
+    "S-VHS",
+    "JOG DIAL",
+    "SHUTTLE RING",
+    "DA-4",
+    "DIGITAL TBC",
+    "S-VHS ET",
+    "JVC RM-G850E",
+    "PREVIEW - PERFORM"
+   ],
+   "moments": [
+    "Jog then Shuttle under a breakdown: one frame, then seven times speed.",
+    "Heads on a heavy kick: the drum turns with the lows.",
+    "Perform last: the red key, then RIGHT to the Patch Bay."
+   ]
+  },
+  {
+   "name": "Patch Bay",
+   "slug": "patchbay",
+   "theme": "how they talk",
+   "world": "The deck that joins the others: a mixer's four inputs beside Resolume's eight layers, the T-bar beside the crossfader, a composite wire beside a USB cable, and the four verbs every box here shares: dissolve, wipe, key, freeze.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#0f1012",
+     "why": "Chassis."
+    },
+    {
+     "role": "body",
+     "hex": "#e8e4d8",
+     "why": "Inputs, slots, sockets."
+    },
+    {
+     "role": "figure",
+     "hex": "#3ddc84",
+     "why": "The lit side of every comparison."
+    },
+    {
+     "role": "light",
+     "hex": "#ffae1a",
+     "why": "The T-bar / crossfader."
+    },
+    {
+     "role": "text",
+     "hex": "#e8e4d8",
+     "why": "Legends."
+    },
+    {
+     "role": "aura",
+     "hex": "#e03a2f",
+     "why": "The wire."
+    }
+   ],
+   "columns": [
+    "Four Into Eight",
+    "T-Bar / Crossfader",
+    "Composite / USB",
+    "Dissolve",
+    "Wipe",
+    "Key",
+    "Freeze",
+    "The Shared Words"
+   ],
+   "text_corpus": [
+    "4 INPUTS, 1 OUT",
+    "8 LAYERS, 1 OUT",
+    "T-BAR = CROSSFADER",
+    "COMPOSITE",
+    "USB",
+    "DISSOLVE",
+    "WIPE",
+    "KEY",
+    "FREEZE",
+    "MIX"
+   ],
+   "moments": [
+    "Column 2 and the real crossfader: the gesture every mixer here was built around.",
+    "Walk columns 4 to 7 DOWN on consecutive downbeats: dissolve, wipe, key, freeze - the grammar.",
+    "Column 8 last, then LEFT four times back to the APC40 deck: the loop closes."
+   ]
+  }
+ ],
+ "effect_wishlist": [
+  {
+   "effect": "Bloom",
+   "role": "Bank A: LED bleed and phosphor glow."
+  },
+  {
+   "effect": "Trails",
+   "role": "Bank A: the T-bar's travel and the shuttle's scan."
+  },
+  {
+   "effect": "Mirror Quad",
+   "role": "Bank D: the multi-PIP tiles."
+  },
+  {
+   "effect": "CRT",
+   "role": "Bank C: the program monitor every mixer fed."
+  },
+  {
+   "effect": "Grid Cloner",
+   "role": "Bank D: the quad preview."
+  }
+ ],
+ "fft_philosophy": "The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter uncorrected tape lines and the MIDI pins. Colour never reacts. Text never moves. Every number on screen is from the sources in docs/.",
+ "wildcard_rationale": "Six decks, walked with the APC40's LEFT and RIGHT buttons: the controller itself, three video mixers (Edirol V-4, Videonics MXPro, Videonics MX-1), a JVC S-VHS deck beside a JVC pro edit controller it never met, and a patch bay of the words they share."
+}

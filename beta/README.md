@@ -90,3 +90,14 @@ mapping its dominant colours to the nearest of the APC's 128 LED colours. Animat
 default to a slow 60 bpm after a first look at a real controller found the first ones too
 fast. The palette and pulsing were watched on a real APC40 mkII; the other animations are
 emulated from Akai's protocol document and Ableton's skin and are not yet confirmed.
+
+`the-mixers/` is **The Mixers - V-4, MXPro, MX-1 + JVC**: six decks of hands-on video
+hardware drawn as schematics, walked with the APC40 mkII's own LEFT and RIGHT buttons
+(previous / next deck). The APC40 mkII as an object; the Edirol V-4 (2002: TAP and BPM SYNC
+from MIDI clock, input select on MIDI notes 36-48, no audio at all); the Videonics MXPro
+(1997: 501 transitions, a CURRENT and a NEXT row instead of A/B buses); the Videonics MX-1
+(1994: the Take-bar, 210 numbered effects, the manual's own nightclub); a JVC deck pairing the
+1999 HR-S7600U S-VHS VCR with the RM-G850E, which turned out to be a professional U-matic
+edit controller rather than its remote, so the deck says they never met; and a patch bay of
+the words they all share. Every caption is sourced in `the-mixers/docs/SOURCES_*.md`.
+384 stock generators, no media, no plugins.

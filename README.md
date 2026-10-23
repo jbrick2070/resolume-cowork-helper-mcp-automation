@@ -12,7 +12,7 @@ experimental FFT-reactive compositions under `beta/`.
 <!-- gallery:start -->
 ## The compositions
 
-16 compositions; 15 of them photographed from Avenue's own output. Click a frame for its full card, or see
+17 compositions; 16 of them photographed from Avenue's own output. Click a frame for its full card, or see
 the [whole gallery](gallery/README.md).
 
 | | |
@@ -33,6 +33,7 @@ the [whole gallery](gallery/README.md).
 | <a href="gallery/README.md#signal-lost---transmission-from-tomorrow"><img src="gallery/signal-lost/hero.jpg" alt="Signal Lost - Transmission From Tomorrow" width="320"></a> | **Signal Lost - Transmission From Tomorrow** · beta<br>The OldTimeRadio pipeline as a show, including a VJ journey through the workflow one node per scene.<br>[`beta/signal-lost/`](beta/signal-lost) |
 | <a href="gallery/README.md#the-manual---avenue-7281"><img src="gallery/the-manual/hero.jpg" alt="The Manual - Avenue 7.28.1" width="320"></a> | **The Manual - Avenue 7.28.1** · beta<br>A composition about Resolume itself: the vocabulary, the clip, parameter animation, the 62 blend modes, this rig.<br>[`beta/the-manual/`](beta/the-manual) |
 | <a href="gallery/README.md#the-surface---apc40-mkii--midi"><img src="gallery/the-surface/hero.jpg" alt="The Surface - APC40 mkII + MIDI" width="320"></a> | **The Surface - APC40 mkII + MIDI** · beta<br>The controller every pack here is played on, drawn as schematics, every number from Akai's protocol document.<br>[`beta/the-surface/`](beta/the-surface) |
+| <a href="gallery/README.md#the-mixers---v-4-mxpro-mx-1--jvc"><img src="gallery/the-mixers/hero.jpg" alt="The Mixers - V-4, MXPro, MX-1 + JVC" width="320"></a> | **The Mixers - V-4, MXPro, MX-1 + JVC** · beta<br>Three video mixers (Edirol V-4, Videonics MXPro, MX-1), a JVC S-VHS deck beside a pro edit controller, and the APC40 itself; LEFT and RIGHT walk the six decks.<br>[`beta/the-mixers/`](beta/the-mixers) |
 
 <!-- gallery:end -->
 

@@ -1,0 +1,8463 @@
+[
+ {
+  "deck": "APC40 mkII",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Pad Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#0f1012ff",
+     "Color 2": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Pad Row (Dim)",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 8,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.3,
+     "Color": "#e8e4d866",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A row of unlit pads."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Pad Row",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 8,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": -0.1,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "A row of pads lit together."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "AKAI APC40 MKII",
+    "source": "Text Block",
+    "params": {
+     "Text": "AKAI APC40 MKII\n424 x 254 x 46 MM\n1.8 KG - BUS POWERED",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "5 x 8 Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#0f1012ff",
+     "Color 2": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Five Rows",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 5,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen rules across the panel."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Note 0",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3ddc84ff",
+     "Outline": 0.0,
+     "Outline Color": "#3ddc84ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "One pad lit in its RGB velocity colour."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "40 RGB PADS",
+    "source": "Text Block",
+    "params": {
+     "Text": "40 RGB PADS\nNOTE 0 = BOTTOM-LEFT\n128-COLOUR PALETTE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Nine Slots",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 9,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen rules across the panel."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Nine Faders",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 9,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Eight channel faders and a master, 45 mm travel."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "9 x 45 MM FADERS",
+    "source": "Text Block",
+    "params": {
+     "Text": "9 x 45 MM FADERS\nCC7 CH1-8, MASTER CC14\nABSOLUTE, 0-127",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Track Knob",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 2,
+     "Size": 0.26,
+     "Spacing": 0.3,
+     "Line Width": 0.05,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#ffae1aff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -300,
+       "Position Y": 120,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Eight track knobs with LED rings, CC48-55."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Device Knob",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 2,
+     "Size": 0.26,
+     "Spacing": 0.3,
+     "Line Width": 0.05,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#ffae1aff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 300,
+       "Position Y": 120,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Eight device knobs with LED rings, CC16-23."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffae1a66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "16 KNOBS, LED RING",
+    "source": "Text Block",
+    "params": {
+     "Text": "16 KNOBS, LED RINGS\nTRACK CC48-55\nDEVICE CC16-23",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Crossfader Slot",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The slot the bar travels in."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Crossfader",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.08,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#ffae1aff"
+    },
+    "fft": {
+     "Position": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 800,
+      "floor": 0.05,
+      "ceiling": 0.95
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The crossfader, CC15: A left, B right, centre is both."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffae1a66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "CROSSFADER CC15",
+    "source": "Text Block",
+    "params": {
+     "Text": "CROSSFADER CC15\nA LEFT - B RIGHT\nCENTRE = EVERYTHING",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "USB-B",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.05,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.1,
+     "Line Ammount": 8,
+     "Innter Color 1": "#e8e4d8ff",
+     "Inner color 2": "#1f2126ff",
+     "Outer Color 1": "#e8e4d866",
+     "Outer Color 2": "#1f2126ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "USB type B: bus powered, no supply needed, class compliant."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Bus Power",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": true,
+     "Color 1": "#3ddc84ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Bus powered: the cable is the supply."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "USB TYPE B",
+    "source": "Text Block",
+    "params": {
+     "Text": "USB TYPE B\nBUS POWERED\nCLASS COMPLIANT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "USB",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Three Modes",
+    "source": "Checkered",
+    "params": {
+     "Num X": 3,
+     "Num Y": 1,
+     "Color 1": "#00000000",
+     "Color 2": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 24.0,
+       "Scale H": 40.0,
+       "Position X": 560.0,
+       "Position Y": 80.0
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "Mode 0 generic, Mode 1 Ableton Live, Mode 2 alternate: set by SysEx."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "SysEx",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.15,
+     "Fade": true,
+     "Color 1": "#3ddc84ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "F0 47 7F 29 60 00 04 <40|41|42> 00 00 00 F7."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "F0 47 7F 29 60 00 ",
+    "source": "Text Block",
+    "params": {
+     "Text": "F0 47 7F 29 60 00 04\n40 | 41 | 42 ... F7\nMODE 0 - 1 - 2",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "SysEx",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Desk Rules",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 4,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen rules across the panel."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "The Controller",
+    "source": "Text Animator",
+    "params": {
+     "Text": "THE CONTROLLER",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 1.6,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "What the other decks are played from."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "LEFT = PREVIOUS DE",
+    "source": "Text Block",
+    "params": {
+     "Text": "LEFT = PREVIOUS DECK\nRIGHT = NEXT DECK\nNOTES 97 + 96",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   }
+  ]
+ },
+ {
+  "deck": "Edirol V-4",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Four Inputs (Panel",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.25,
+     "Color": "#5b7a99ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.09,
+      "ceiling": 0.14
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The four input columns of the panel."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Edirol V-4",
+    "source": "Text Animator",
+    "params": {
+     "Text": "EDIROL V-4",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 1.8,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The badge."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#5b7a9966",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "EDIROL V-4 - 2002",
+    "source": "Text Block",
+    "params": {
+     "Text": "EDIROL V-4 - 2002\n225 x 295 x 105 MM\n2.3 KG - NO AUDIO",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Composite 1-4",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.09,
+      "ceiling": 0.14
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Four composite inputs on RCA."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "S-Video 1-2",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": -0.1,
+     "Color": "#5b7a99ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.09,
+      "ceiling": 0.14
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "S-Video on inputs 1 and 2, which takes priority."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "4 x COMPOSITE IN",
+    "source": "Text Block",
+    "params": {
+     "Text": "4 x COMPOSITE IN\nS-VIDEO ON 1 + 2\n2 FRAME SYNCHRONIZERS",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Channel A",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.2,
+     "Color": "#e8e4d866",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "Channel A: input select buttons 1-4."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Channel B",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": -0.2,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "Channel B: input select buttons 1-4."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "CHANNEL A: 1 2 3 4",
+    "source": "Text Block",
+    "params": {
+     "Text": "CHANNEL A: 1 2 3 4\nCHANNEL B: 1 2 3 4\nTRANSFORMER = CUT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "T-Bar Slot",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The slot the bar travels in."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "T-Bar",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.08,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#ffae1aff"
+    },
+    "fft": {
+     "Position": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 800,
+      "floor": 0.05,
+      "ceiling": 0.95
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A T-bar of over 100 steps; it mounts horizontal or vertical."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffae1a66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "T-BAR, 100+ STEPS",
+    "source": "Text Block",
+    "params": {
+     "Text": "T-BAR, 100+ STEPS\nMIX - WIPE - EFX\n200+ WIPE PATTERNS",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Channel A",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#5b7a9966"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Strobe",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.4,
+     "Fade": true,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "Channel A's first effect button: Strobe."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "A: STROBE NEGATIVE",
+    "source": "Text Block",
+    "params": {
+     "Text": "A: STROBE NEGATIVE\nCOLORIZE MULTI\nB: MIRROR - KEYS - PIP",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Beat Grid",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#e8e4d866",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "Four beats to the bar."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "BPM Sync",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.25,
+     "Fade": true,
+     "Color 1": "#3ddc84ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.16,
+    "why": "BPM SYNC switches A and B on the beat without touching the fader."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "TAP - BPM SYNC",
+    "source": "Text Block",
+    "params": {
+     "Text": "TAP - BPM SYNC\nCUTS A/B ON THE BEAT\nF8 CLOCK DRIVES IT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "MIDI IN",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.4,
+     "Spacing": 0.1,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#e8e4d8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "MIDI IN and MIDI OUT on 5-pin DIN; THRU is a soft option."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Five Pins",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 5,
+     "Blend": "Minimal",
+     "Size": 0.05,
+     "Distance": 0.6,
+     "Radius": 0.3,
+     "Fuzzyness": 0.0,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#e03a2fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 0.05,
+      "ceiling": 0.08
+     }
+    },
+    "effects": [],
+    "opacity": 0.95,
+    "why": "Five pins in a 180-degree arc."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "A: NOTES 36 38 40 ",
+    "source": "Text Block",
+    "params": {
+     "Text": "A: NOTES 36 38 40 41\nB: NOTES 43 45 47 48\nCC7 = TRANSITION TIME",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#e03a2fff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "A tone."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "MIDI In",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#e03a2fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Fade Ramp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#000000ff",
+     "Color 2": "#ffffffff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Black on the left, white on the right."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Output Fade",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.24,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#e8e4d8ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "OUTPUT FADE: left to black, right to white."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "OUTPUT FADE",
+    "source": "Text Block",
+    "params": {
+     "Text": "OUTPUT FADE\nLEFT: TO BLACK\nRIGHT: TO WHITE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   }
+  ]
+ },
+ {
+  "deck": "Videonics MXPro",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Beige Case",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#d8cfb866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "The Videonics beige."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "MXPro",
+    "source": "Text Animator",
+    "params": {
+     "Text": "MXPRO",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The badge."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d8cfb866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "VIDEONICS MXPRO 19",
+    "source": "Text Block",
+    "params": {
+     "Text": "VIDEONICS MXPRO 1997\n$1,799 - MODEL MX-3000\nCAMPBELL, CALIFORNIA",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Current Row",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 5,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.2,
+     "Color": "#e8e4d866",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "CURRENT: A B C D COLOR."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Next Row",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 5,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": -0.2,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "NEXT: A B C D COLOR; they swap after each transition."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "CURRENT: A B C D C",
+    "source": "Text Block",
+    "params": {
+     "Text": "CURRENT: A B C D COLOR\nNEXT: A B C D COLOR\nTHEY SWAP EACH TAKE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Five Categories",
+    "source": "Checkered",
+    "params": {
+     "Num X": 5,
+     "Num Y": 1,
+     "Color 1": "#00000000",
+     "Color 2": "#d8cfb866"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 24.0,
+       "Scale H": 40.0,
+       "Position X": 560.0,
+       "Position Y": 80.0
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "USER, BASIC, EDGES, TRAILING, SHAPES."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "501",
+    "source": "Text Animator",
+    "params": {
+     "Text": "501",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 2.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "501 transitions, up from the MX-1's 210."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "501 TRANSITIONS",
+    "source": "Text Block",
+    "params": {
+     "Text": "501 TRANSITIONS\nUSER BASIC EDGES\nTRAILING SHAPES",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Current",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Keyhole",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.3,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3ddc84ff",
+     "Outline": 0.02,
+     "Outline Color": "#e8e4d8ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.3,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 70.0,
+       "Scale H": 100.0,
+       "Position X": 0.0,
+       "Position Y": 0.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A shape wipe: the next source grows inside a shape."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "HEART STAR DIAMOND",
+    "source": "Text Block",
+    "params": {
+     "Text": "HEART STAR DIAMOND\nKEYHOLE BINOCULAR\nANTI-ALIASED EDGES",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Keypad",
+    "source": "Checkered",
+    "params": {
+     "Num X": 3,
+     "Num Y": 4,
+     "Color 1": "#00000000",
+     "Color 2": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 24.0,
+       "Scale H": 40.0,
+       "Position X": 560.0,
+       "Position Y": 80.0
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "Type the transition number."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "PLAY",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.08,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3ddc84ff",
+     "Outline": 0.03,
+     "Outline Color": "#e8e4d866"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -300,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "PLAY performs the transition; press it again to wipe back."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "TYPE THE NUMBER",
+    "source": "Text Block",
+    "params": {
+     "Text": "TYPE THE NUMBER\nPRESS PLAY\nSPEED 0-9 - REVERSE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Source",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#d8cfb866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.4,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Strobe",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.5,
+     "Fade": true,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "STROBE 0-9, switched off during transitions."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "STROBE 0-9 - MOSAI",
+    "source": "Text Block",
+    "params": {
+     "Text": "STROBE 0-9 - MOSAIC\nPOSTERIZE - B&W\nCOLOR NEG - FLIP",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Sixteen Tiles",
+    "source": "Checkered",
+    "params": {
+     "Num X": 4,
+     "Num Y": 4,
+     "Color 1": "#00000000",
+     "Color 2": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Up to 16 images on one screen."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Joystick PIP",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.3,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3ddc84ff",
+     "Outline": 0.02,
+     "Outline Color": "#e8e4d8ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.3,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 25.0,
+       "Scale H": 25.0,
+       "Position X": -360.0,
+       "Position Y": -200.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The joystick places a PIP; new since the MX-1."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "UP TO 16 IMAGES",
+    "source": "Text Block",
+    "params": {
+     "Text": "UP TO 16 IMAGES\n9 MULTI-PIP LAYOUTS\nJOYSTICK PLACES THEM",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Eight Memories",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 8,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#e8e4d866",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "8 learned environments survive power-off."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "GPI Pulse",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.15,
+     "Fade": true,
+     "Color 1": "#3ddc84ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "A GPI pulse on the mini-jack acts exactly as PLAY."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "LEARN: 250 STEPS",
+    "source": "Text Block",
+    "params": {
+     "Text": "LEARN: 250 STEPS\nGPI PULSE = PLAY\n8 MEMORIES SURVIVE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   }
+  ]
+ },
+ {
+  "deck": "Videonics MX-1",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Beige Case",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#d8cfb866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "The Videonics beige."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "MX-1",
+    "source": "Text Animator",
+    "params": {
+     "Text": "MX-1",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 2.4,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The badge."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d8cfb866",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "VIDEONICS MX-1 199",
+    "source": "Text Block",
+    "params": {
+     "Text": "VIDEONICS MX-1 1994\n4 INPUTS - DUAL TBC\n300 x 165 x 99 MM",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Take-Bar Slot",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The slot the bar travels in."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Take-Bar",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.08,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#ffae1aff"
+    },
+    "fft": {
+     "Position": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 800,
+      "floor": 0.05,
+      "ceiling": 0.95
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "'T-bar' is short for 'Take-bar'; start it from either end."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffae1a66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "T-BAR = TAKE-BAR",
+    "source": "Text Block",
+    "params": {
+     "Text": "T-BAR = TAKE-BAR\nSTART FROM EITHER END\n10 SPEEDS: 0-9",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Keypad",
+    "source": "Checkered",
+    "params": {
+     "Num X": 3,
+     "Num Y": 4,
+     "Color 1": "#00000000",
+     "Color 2": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 24.0,
+       "Scale H": 40.0,
+       "Position X": 560.0,
+       "Position Y": 80.0
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "Every effect has a number."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "0-239",
+    "source": "Text Animator",
+    "params": {
+     "Text": "0-239",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "210 effects, numbered 0 to 239."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "EFFECT 0 = CUT",
+    "source": "Text Block",
+    "params": {
+     "Text": "EFFECT 0 = CUT\n1 = DISSOLVE\n212 = BUTTERFLY",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Four Thumbnails",
+    "source": "Checkered",
+    "params": {
+     "Num X": 2,
+     "Num Y": 2,
+     "Color 1": "#e8e4d866",
+     "Color 2": "#d8cfb866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Preview: all four inputs live at once."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Input A",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.3,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3ddc84ff",
+     "Outline": 0.02,
+     "Outline Color": "#e8e4d8ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.3,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 50.0,
+       "Scale H": 50.0,
+       "Position X": -480.0,
+       "Position Y": -270.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Input A's live thumbnail, lit."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "PREVIEW: ALL FOUR",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREVIEW: ALL FOUR\nINPUTS LIVE AT ONCE\nPLUS THE EFFECT LIST",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Source",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#d8cfb866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.4,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Film Look",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.12,
+     "Fade": true,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "Strobe setting 1 is the 'film look'."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "STROBE 0-7",
+    "source": "Text Block",
+    "params": {
+     "Text": "STROBE 0-7\n1 = FILM LOOK\n2 = OLD MOVIE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Background",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#3ddc8466"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Keyed Source",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.3,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#e8e4d8ff",
+     "Outline": 0.02,
+     "Outline Color": "#e8e4d8ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.3,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 90.0,
+       "Scale H": 90.0,
+       "Position X": 0.0,
+       "Position Y": 0.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Chroma key: pick the colour with an on-screen cursor."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "CHROMA KEY: PICK T",
+    "source": "Text Block",
+    "params": {
+     "Text": "CHROMA KEY: PICK THE\nCOLOUR WITH A CURSOR\nLUMA KEY: 237 + 238",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Freeze Frame",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "A frozen field: one picture held."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "FREEZE",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.08,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#3ddc84ff",
+     "Outline": 0.03,
+     "Outline Color": "#e8e4d866"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 300,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "FREEZE captures a field."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "FREEZE ONE FIELD",
+    "source": "Text Block",
+    "params": {
+     "Text": "FREEZE ONE FIELD\nSHIFT+FREEZE =\nSTOP-MOTION SNAPSHOTS",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Music Video",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#d8cfb866"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 50.0,
+       "Scale H": 100.0,
+       "Position X": -480.0
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "Source A: a music video."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Dance Floor Camera",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#3ddc8466"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 50.0,
+       "Scale H": 100.0,
+       "Position X": 480.0
+      }
+     }
+    ],
+    "opacity": 0.7,
+    "why": "Source B: 'a camera aimed at the dance floor' - the manual's own example."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "A: THE MUSIC VIDEO",
+    "source": "Text Block",
+    "params": {
+     "Text": "A: THE MUSIC VIDEO\nB: A CAMERA ON\nTHE DANCE FLOOR",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   }
+  ]
+ },
+ {
+  "deck": "JVC S-VHS + Edit",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Tape Path",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 3,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The tray and the transport."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "S-VHS",
+    "source": "Text Animator",
+    "params": {
+     "Text": "S-VHS",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 2.2,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The format badge on the tray door."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "JVC HR-S7600U - 19",
+    "source": "Text Block",
+    "params": {
+     "Text": "JVC HR-S7600U - 1999\nS-VHS HI-FI - $449.95\n437 x 97 x 347 MM",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Jog Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.34,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#e8e4d8ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The JOG dial, on the front panel."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Frame Step",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": true,
+     "Color 1": "#3ddc84ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "One click, one frame: right forward, left back."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "JOG DIAL",
+    "source": "Text Block",
+    "params": {
+     "Text": "JOG DIAL\nRIGHT: FRAME FORWARD\nLEFT: FRAME BACK",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Shuttle Ring",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 2,
+     "Size": 0.4,
+     "Spacing": 0.3,
+     "Line Width": 0.05,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#ffae1aff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The TIME SCAN SHUTTLE ring around the jog dial."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Scan Lines",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.02,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#ffae1aff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 500,
+      "floor": 0.1,
+      "ceiling": 0.9
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The picture scanning at speed."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffae1a66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "SHUTTLE RING",
+    "source": "Text Block",
+    "params": {
+     "Text": "SHUTTLE RING\nTIME SCAN TO 7x\nIT STAYS WHERE IT SITS",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Head Drum",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.35,
+     "Spacing": 0.25,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 30.0,
+     "Rotation": 0.0,
+     "Rotation Step": 120.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#e8e4d866"
+    },
+    "fft": {
+     "Rotation": {
+      "band": "low",
+      "gain": 6.0,
+      "release": 900,
+      "floor": 0.0,
+      "ceiling": 180.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "The spinning head drum."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Six Heads",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 6,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.09,
+      "ceiling": 0.14
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "4 video heads and 2 hi-fi audio heads."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "DA-4 HEAD SYSTEM",
+    "source": "Text Block",
+    "params": {
+     "Text": "DA-4 HEAD SYSTEM\n4 VIDEO + 2 HI-FI\n400 LINES IN S-VHS",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Jitter",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.4,
+     "Amount": 30,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#e8e4d866"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.2,
+      "ceiling": 0.8
+     }
+    },
+    "effects": [],
+    "opacity": 0.4,
+    "why": "Unstable tape lines before correction."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Corrected Lines",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 30,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "The same lines after the time base corrector."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "DIGITAL TBC + 3-DN",
+    "source": "Text Block",
+    "params": {
+     "Text": "DIGITAL TBC + 3-DNR\n2 MB FRAME MEMORY\nUSE IT TO EDIT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "VHS Tape",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.4,
+    "why": "A plain VHS cassette."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "ET",
+    "source": "Text Animator",
+    "params": {
+     "Text": "ET",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 2.6,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The S-VHS ET button, lit."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "S-VHS ET",
+    "source": "Text Block",
+    "params": {
+     "Text": "S-VHS ET\nS-VHS PICTURE ON\nPLAIN VHS TAPE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Player Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.24,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#e8e4d8ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -420,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "RM-G850E: the PLAYER search dial."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Recorder Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.24,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 90.0,
+     "Rotation": 135.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#e8e4d8ff"
+    },
+    "fft": {
+     "Gap": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 350,
+      "floor": 20.0,
+      "ceiling": 270.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 420,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "RM-G850E: the RECORDER search dial."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "JVC RM-G850E",
+    "source": "Text Block",
+    "params": {
+     "Text": "JVC RM-G850E\nPRO EDIT CONTROLLER\nPLAYER + RECORDER",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Edit Keys",
+    "source": "Checkered",
+    "params": {
+     "Num X": 4,
+     "Num Y": 1,
+     "Color 1": "#ffae1aff",
+     "Color 2": "#3a6fd8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Colour-coded edit keys: ASSEM orange, AUDIO green, VIDEO blue."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "PERFORM",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.08,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#e03a2fff",
+     "Outline": 0.03,
+     "Outline Color": "#e8e4d866"
+    },
+    "fft": {
+     "Scale": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": -200,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The red PERFORM key between PREVIEW and REVIEW."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "PREVIEW - PERFORM",
+    "source": "Text Block",
+    "params": {
+     "Text": "PREVIEW - PERFORM\nREVIEW - GO TO\nIT DROVE U-MATIC",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#e03a2fff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "A tone."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   }
+  ]
+ },
+ {
+  "deck": "Patch Bay",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Four Inputs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 300,
+      "floor": 0.09,
+      "ceiling": 0.14
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A mixer has four inputs."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Eight Layers",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 8,
+     "Blend": "Minimal",
+     "Size": 0.09,
+     "Distance": 0.5,
+     "Radius": 0.1,
+     "Fuzzyness": 0.02,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": -0.2,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.13
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "Resolume has eight layers here."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "MIXER: 4 IN, 1 OUT",
+    "source": "Text Block",
+    "params": {
+     "Text": "MIXER: 4 IN, 1 OUT\nTHIS PACK: 8 LAYERS\nSAME IDEA, MORE BUSES",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Slot",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.03,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The slot the bar travels in."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "T-Bar = Crossfader",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.08,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#ffae1aff"
+    },
+    "fft": {
+     "Position": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 800,
+      "floor": 0.05,
+      "ceiling": 0.95
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The mixer's T-bar and the APC's crossfader are the same gesture."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffae1a66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "MIXER: THE T-BAR",
+    "source": "Text Block",
+    "params": {
+     "Text": "MIXER: THE T-BAR\nAPC: CROSSFADER CC15\nONE HAND, ONE MOVE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "BNC / RCA",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.4,
+     "Spacing": 0.1,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#e8e4d8ff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.06
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Composite video on a coax: one wire, one picture."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "USB-B",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.05,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.1,
+     "Line Ammount": 8,
+     "Innter Color 1": "#e8e4d8ff",
+     "Inner color 2": "#1f2126ff",
+     "Outer Color 1": "#e8e4d866",
+     "Outer Color 2": "#1f2126ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "USB: one wire, every message."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "COMPOSITE: 1 PICTU",
+    "source": "Text Block",
+    "params": {
+     "Text": "COMPOSITE: 1 PICTURE\nUSB: EVERY MESSAGE\nMIDI DIN: 31,250 BAUD",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#e03a2fff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.05,
+    "why": "A tone."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Wire",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#e03a2fff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Source A",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Source B",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#3ddc8466"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.5,
+    "why": "Input B dissolving in."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "DISSOLVE",
+    "source": "Text Block",
+    "params": {
+     "Text": "DISSOLVE\nA OUT AS B COMES IN\nTHE FIRST MOVE",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Source A",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e8e4d866"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Wipe Edge",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.5,
+     "Rotation": 90.0,
+     "Position": 0.4,
+     "Color": "#3ddc84ff"
+    },
+    "fft": {
+     "Position": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 900,
+      "floor": 0.0,
+      "ceiling": 1.0
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A wipe revealing the other bus."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "WIPE",
+    "source": "Text Block",
+    "params": {
+     "Text": "WIPE\nAN EDGE CROSSES\nB REVEALED BEHIND A",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Background",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#3ddc8466"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Input A, full frame."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Keyed Window",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.3,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.0,
+     "Noise Speed": 0.0,
+     "Color": "#e8e4d8ff",
+     "Outline": 0.02,
+     "Outline Color": "#e8e4d8ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.3,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 160.0,
+       "Scale H": 90.0,
+       "Position X": 520.0,
+       "Position Y": -280.0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A luma or chroma key: one picture cut into another."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "KEY",
+    "source": "Text Block",
+    "params": {
+     "Text": "KEY\nLUMA: BY BRIGHTNESS\nCHROMA: BY COLOUR",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Freeze Frame",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "A frozen field: one picture held."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Strobe",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.5,
+     "Fade": true,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "A strobe: the frame held and dropped."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "FREEZE - STROBE",
+    "source": "Text Block",
+    "params": {
+     "Text": "FREEZE - STROBE\nONE FIELD HELD\nDROPPED ON THE BEAT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Rules",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 6,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen rules across the panel."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Mix",
+    "source": "Text Animator",
+    "params": {
+     "Text": "MIX",
+     "Font": "Bahnschrift",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The one verb every box here shares."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "MIX WIPE KEY FREEZ",
+    "source": "Text Block",
+    "params": {
+     "Text": "MIX WIPE KEY FREEZE\nTHE SAME FOUR WORDS\nEVERY BOX SPEAKS IT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Matte Tooth",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.04,
+    "why": "The chassis' matte texture."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Program",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   }
+  ]
+ }
+]

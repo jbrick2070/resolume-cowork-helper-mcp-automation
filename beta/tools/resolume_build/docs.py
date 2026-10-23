@@ -14,6 +14,8 @@ def write_docs(out_dir, bible, manifest, extra_notes=None):
     preset = "APC 40 MK II - %s" % pack
     decks = bible["decks"]
     counts = manifest["counts"]
+    nd = len(decks)
+    nword = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight"}.get(nd, str(nd))
     readme = []
     A = readme.append
     A("# %s" % pack)
@@ -28,14 +30,14 @@ def write_docs(out_dir, bible, manifest, extra_notes=None):
     A("")
     A("| | |")
     A("|---|---|")
-    A("| `%s.avc` | the composition: 5 decks x 8 layers x 8 scenes |" % comp.replace(":", " -"))
+    A("| `%s.avc` | the composition: %d decks x 8 layers x 8 scenes |" % (comp.replace(":", " -"), nd))
     A("| `%s.xml` | the APC40 mkII preset - every control has a job |" % preset)
     A("| `docs/RUN_SHEET.md` | plug in, set the audio input, press PLAY |")
     A("| `docs/CONTROL_MAP.md` | every button, pad, knob and fader |")
-    A("| `docs/DECKS.md` | the five worlds, scene by scene |")
+    A("| `docs/DECKS.md` | the %s worlds, scene by scene |" % nword)
     A("| `BUILD_REPORT.txt` | what the builder repaired, if anything |")
     A("")
-    A("## The five worlds")
+    A("## The %s worlds" % nword)
     A("")
     for i, d in enumerate(decks, start=1):
         A("**%d. %s** (%s) - %s" % (i, d["name"], d.get("theme", ""),
@@ -45,7 +47,7 @@ def write_docs(out_dir, bible, manifest, extra_notes=None):
         A("")
     A("## How it plays")
     A("")
-    A("* **Decks are worlds.** LEFT / RIGHT walk the five deck tabs.")
+    A("* **Decks are worlds.** LEFT / RIGHT walk the %s deck tabs." % nword)
     A("* **Columns are scenes.** Scene Launch 1-5 fire scenes 1-5; UP / "
       "DOWN walk all eight. A scene fires all eight layers at once, "
       "composed as one picture.")

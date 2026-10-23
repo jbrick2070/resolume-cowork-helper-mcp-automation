@@ -713,5 +713,57 @@
         "column": "Amber 9"
       }
     ]
+  },
+  {
+    "slug": "the-mixers",
+    "title": "The Mixers - V-4, MXPro, MX-1 + JVC",
+    "avc": "beta/the-mixers/The Mixers - V-4, MXPro, MX-1 + JVC.avc",
+    "folder": "beta/the-mixers",
+    "blurb": "Three video mixers (Edirol V-4, Videonics MXPro, MX-1), a JVC S-VHS deck beside a pro edit controller, and the APC40 itself; LEFT and RIGHT walk the six decks.",
+    "decks": 6,
+    "layers": 8,
+    "columns": 8,
+    "rest_name": "The Mixers - V-4, MXPro, MX-1 + JVC",
+    "revealed_layers": 6,
+    "sampled": 24,
+    "rendered": true,
+    "frames": [
+      {
+        "deck": "APC40 mkII",
+        "column": "9 Faders"
+      },
+      {
+        "deck": "JVC S-VHS + Edit",
+        "column": "Perform"
+      },
+      {
+        "deck": "Patch Bay",
+        "column": "Key"
+      },
+      {
+        "deck": "Videonics MX-1",
+        "column": "Chroma Key"
+      },
+      {
+        "deck": "Edirol V-4",
+        "column": "Output Fade"
+      },
+      {
+        "deck": "Videonics MX-1",
+        "column": "The Club"
+      },
+      {
+        "deck": "APC40 mkII",
+        "column": "USB-B"
+      },
+      {
+        "deck": "Patch Bay",
+        "column": "Composite / US"
+      },
+      {
+        "deck": "Videonics MXPro",
+        "column": "Learn"
+      }
+    ]
   }
 ]
