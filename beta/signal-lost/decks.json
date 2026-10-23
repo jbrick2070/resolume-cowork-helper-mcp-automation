@@ -2637,10 +2637,10 @@
    {
     "layer": 5,
     "column": 7,
-    "name": "OTR_LedgerFreezeCa",
+    "name": "OTR_Ledger",
     "source": "Text Block",
     "params": {
-     "Text": "OTR_LedgerFreezeCascade\nPHASE 7: NORMALIZE\nPHASE 8: COVERAGE\nAUDIT",
+     "Text": "OTR_Ledger\nFreezeCascade\nPHASE 7 + 8: NORMALIZE",
      "Font": "Courier New",
      "Style": "Regular",
      "Color": "#f4e9c8ff",

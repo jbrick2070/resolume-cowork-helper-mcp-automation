@@ -764,10 +764,10 @@
   "clips": 320,
   "comp_effects": 34,
   "fft_nodes": 489,
-  "bytes": 1540609
+  "bytes": 1540557
  },
  "preset": 164,
- "repairs": 1,
+ "repairs": 0,
  "sheets": [
   [
    0,
@@ -2102,7 +2102,7 @@
    "TEXT",
    7,
    "Freeze Cascade",
-   "OTR_LedgerFreezeCa",
+   "OTR_Ledger",
    "Text Block",
    "",
    "",

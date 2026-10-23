@@ -11922,7 +11922,7 @@ DEVELOPING TANKS" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1793000000790" layerIndex="4" columnIndex="6">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="OTR_LedgerFreezeCa" value="OTR_LedgerFreezeCa" />
+				<Param name="Name" T="STRING" default="OTR_Ledger" value="OTR_Ledger" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="5" storeChoices="0" />
 			</Params>
@@ -11980,15 +11980,13 @@ DEVELOPING TANKS" />
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1793000000794" baseType="Generator">
 							<Params name="Params">
-								<ParamText name="Text" T="STRING" default="Resolume" value="OTR_LedgerFreezeCascad
-PHASE 7: NORMALIZE
-PHASE 8: COVERAGE
-AUDIT">
+								<ParamText name="Text" T="STRING" default="Resolume" value="OTR_Ledger
+FreezeCascade
+PHASE 7 + 8: NORMALIZE">
 									<Params name="Params">
-										<Param name="Lines" T="STRING" default="Resolume" value="OTR_LedgerFreezeCascad
-PHASE 7: NORMALIZE
-PHASE 8: COVERAGE
-AUDIT" />
+										<Param name="Lines" T="STRING" default="Resolume" value="OTR_Ledger
+FreezeCascade
+PHASE 7 + 8: NORMALIZE" />
 									</Params>
 								</ParamText>
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Courier New" storeChoices="0" />

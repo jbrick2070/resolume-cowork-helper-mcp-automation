@@ -329,7 +329,7 @@ def deck2():
                fft=fft("Height", "low", 10.0, 20.0, 8.0, 400)),
           node_box(3, 7, color=GREEN, name="FreezeCascade", lines=12, shape="Hexagon"),
           glow(7, color=GREEN_DIM, opacity=0.18),
-          text(7, "OTR_LedgerFreezeCascade\nPHASE 7: NORMALIZE\nPHASE 8: COVERAGE AUDIT", size=0.8),
+          text(7, "OTR_Ledger\nFreezeCascade\nPHASE 7 + 8: NORMALIZE", size=0.8),
           blank(6, 7), crackle(7, opacity=0.05), vu(7, amp=0.05)]
     C += [ruling(8, amount=24), node_box(2, 8, color=GREEN, name="Ledger", lines=8),
           clip(3, 8, "Padlock Ring", "Rings",
