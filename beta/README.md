@@ -34,3 +34,12 @@ as schematics). Its colours follow the script's rule: stylus-cyan is documented,
 cue-orange is proposed. It uses 320 stock generators, no media files and no
 plugins. It was opened on Avenue 7.28.1 and every clip was read back: 18/18
 checks, 0/320 mismatches. See `library-hand/README.md`.
+
+`studio-one/` is **Studio One - War Of The Worlds 1938**, made for the
+broadcast's 88th anniversary (30 October 2026). Its five decks are the room
+(CBS Studio One, the RCA 44-BX, the foley table), Grovers Mill, The Visitors
+(an alternate history in which the invasion is real), New York, and the
+Morning After (the panic was printed, not broadcast). It uses a
+silver-gelatin palette, and red appears only where a red pencil drew it. It
+uses 320 stock generators, no media files and no plugins. It was opened on
+Avenue 7.28.1 and every clip was read back: 18/18 checks, 0/320 mismatches.

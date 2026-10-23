@@ -1408,11 +1408,8 @@
 				</RenderPass>
 			</RenderPass>
 			<ChoosableMixer name="Blend">
-				<Params name="Params">
-					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="560198290202542303" storeChoices="0" />
-				</Params>
 				<VideoMixerStateID uniqueId="1791000000182" />
-				<RenderPass name="Overlay" type="Overlay" uniqueTypeId="85110912423038" uniqueId="1791000000183" baseType="Mixer" />
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1791000000183" baseType="Mixer" />
 			</ChoosableMixer>
 			<ChoosableMixer name="Transition">
 				<Params name="Params">

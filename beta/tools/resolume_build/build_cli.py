@@ -70,6 +70,8 @@ def main():
     ap.add_argument("--scenes", default=None,
                     help="comma list of 5 LED colour families for scene pads")
     ap.add_argument("--notes", default="")
+    ap.add_argument("--layer-blends", default=None,
+                    help="per-layer blend overrides, e.g. 7:Add,6:Screen")
     a = ap.parse_args()
     with open(a.bible, encoding="utf-8") as f:
         bible = json.load(f)
@@ -83,7 +85,10 @@ def main():
     scenes = a.scenes.split(",") if a.scenes else None
     avc, preset, rep, counts = PACK.build_pack(
         bible, decks, rack, a.out, a.theme, a.preset_id, a.id_base,
-        row_colors=rows, scene_colors=scenes, notes=a.notes)
+        row_colors=rows, scene_colors=scenes, notes=a.notes,
+        layer_blends=({int(k): v for k, v in (x.split(":", 1) for x in
+                                               a.layer_blends.split(","))}
+                      if a.layer_blends else None))
     from resolume_build import docs as DOCS
     manifest = json.load(open(os.path.join(a.out, "manifest.json"),
                               encoding="utf-8"))

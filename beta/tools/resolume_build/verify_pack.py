@@ -37,6 +37,8 @@ def main():
     ap.add_argument("--bible", required=True)
     ap.add_argument("--decks", required=True)
     ap.add_argument("--no-open", action="store_true")
+    ap.add_argument("--layer-blends", default=None,
+                    help="the same overrides the pack was built with, e.g. 7:Add")
     ap.add_argument("--connect", action="store_true",
                     help="connect each column before reading it back")
     ap.add_argument("--sample", type=int, default=0,
@@ -81,6 +83,10 @@ def main():
     check("30 bank effects bypassed", sum(1 for v in byp.values() if v) == 30,
           sum(1 for v in byp.values() if v))
     check("4 macros armed", sum(1 for v in byp.values() if v is False) == 4)
+    blends = dict(PACK.LAYER_BLENDS)
+    if a.layer_blends:
+        blends.update({int(k): v for k, v in (x.split(":", 1) for x in
+                                               a.layer_blends.split(","))})
     for i, L in enumerate(c["layers"], start=1):
         want_xf = "A" if i in INST.XFADE_A else ("B" if i in INST.XFADE_B
                                                   else "None")
@@ -89,7 +95,7 @@ def main():
               and L["crossfadergroup"]["value"] == want_xf
               and L["ignorecolumntrigger"]["value"] == (i == 8)
               and L["video"]["mixer"]["Blend Mode"]["value"]
-              == PACK.LAYER_BLENDS[i],
+              == blends[i],
               "xf=%s ign=%s blend=%s" % (L["crossfadergroup"]["value"],
                                          L["ignorecolumntrigger"]["value"],
                                          L["video"]["mixer"]["Blend Mode"]["value"]))

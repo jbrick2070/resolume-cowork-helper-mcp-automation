@@ -1,0 +1,370 @@
+{
+ "pack_name": "Studio One",
+ "comp_name": "Studio One - War Of The Worlds 1938",
+ "tagline": "Everyone forgets. The record doesn't.",
+ "decks": [
+  {
+   "name": "Studio One",
+   "slug": "studio",
+   "theme": "studio",
+   "world": "CBS Studio One, fourth floor, 485 Madison Avenue, 8:00 pm, Sunday 30 October 1938: a windowless, double-height room of microphones, music stands and a foley table that looks like a machine shop. Silver-gelatin newsreel light - charcoal blacks, ivory highlights, soft halation round the practical lamps - and one amber, the glow of the board behind the glass. The RCA 44-BX is the hero object, a chrome diamond that hears front and back and nothing at its sides. Typed copy in Courier, the network's serif for the opening.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#121212",
+     "why": "Charcoal: no daylight reaches this room."
+    },
+    {
+     "role": "body",
+     "hex": "#e9e1cf",
+     "why": "Ivory highlights on chrome and paper."
+    },
+    {
+     "role": "figure",
+     "hex": "#8a857a",
+     "why": "Warm grey for iron, wood and wool."
+    },
+    {
+     "role": "light",
+     "hex": "#d9a441",
+     "why": "Practical-lamp amber: the board, the desk lamp, the VU glow."
+    },
+    {
+     "role": "text",
+     "hex": "#e9e1cf",
+     "why": "Typed ivory."
+    },
+    {
+     "role": "aura",
+     "hex": "#8a857a",
+     "why": "Grey tone; no colour enters the studio."
+    }
+   ],
+   "columns": [
+    "8 PM Air",
+    "Roll It",
+    "Facing Mics",
+    "Foley Table",
+    "Giant Cube",
+    "Orchestra",
+    "The Glass",
+    "Dead Air"
+   ],
+   "text_corpus": [
+    "COLUMBIA BROADCASTING SYSTEM",
+    "8:00 PM",
+    "ROLL IT",
+    "RCA 44-BX",
+    "FIGURE-8",
+    "JAR + IRON POT",
+    "GIANT-CUBE MACHINE",
+    "27 MUSICIANS",
+    "CONTROL BOOTH",
+    "DEAD AIR",
+    "MERCURY THEATRE",
+    "STUDIO ONE"
+   ],
+   "moments": [
+    "Roll it: Scene Launch 2 on the downbeat, tap the row-5 TEXT pad so ROLL IT retypes, and hold the row-3 FIGURE pad so the lathe disc turns under Nora's arm.",
+    "Foley: Scene Launch 4 and roll the bank-A knob with ECHO lit so the jar lid leaves rings in the iron pot; tap STUTTER on each scrape.",
+    "Dead air: walk UP to column 8 on the loudest moment of the track, let the room freeze for a full phrase, then fire Scene Launch 1 to come back on air."
+   ]
+  },
+  {
+   "name": "Grovers Mill",
+   "slug": "grovers-mill",
+   "theme": "account",
+   "world": "The accounts, exactly as the soundtrack gives them: the observatory, the Wilmuth farm, the hum, the cap turning, the feelers in bad light, the heat ray from the mirror, the dead line, forty people. Every scene here is inside a reconstruction, so the optical soundtrack strip runs down the left edge. Night is charcoal-to-grey; the light is car headlights and one beam. The crowd is silhouettes; Phillips is never shown dead.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#121212",
+     "why": "New Jersey night."
+    },
+    {
+     "role": "body",
+     "hex": "#e9e1cf",
+     "why": "Headlights, the cylinder's pale ribs, the beam."
+    },
+    {
+     "role": "figure",
+     "hex": "#8a857a",
+     "why": "Feelers and smoke in warm grey."
+    },
+    {
+     "role": "light",
+     "hex": "#e9e1cf",
+     "why": "Ivory flashes; amber only for the sealed jack."
+    },
+    {
+     "role": "text",
+     "hex": "#e9e1cf",
+     "why": "The reporter's words, typed."
+    },
+    {
+     "role": "aura",
+     "hex": "#e9e1cf",
+     "why": "An ivory radial when the ray fires."
+    }
+   ],
+   "columns": [
+    "Observatory",
+    "The Farm",
+    "The Hum",
+    "The Cap",
+    "Emergence",
+    "Heat Ray",
+    "Field Lost",
+    "Forty Dead"
+   ],
+   "text_corpus": [
+    "GROVERS MILL, N.J.",
+    "WILMUTH FARM",
+    "THE HUM",
+    "THE TOP IS TURNING",
+    "SOMETHING'S WRIGGLING",
+    "A JET OF FLAME",
+    "UNABLE TO CONTINUE",
+    "FORTY PEOPLE",
+    "MARTIAL LAW",
+    "PRINCETON",
+    "PIERSON",
+    "PHILLIPS"
+   ],
+   "moments": [
+    "The cap: Scene Launch 4, hold the row-3 FIGURE pad so the cap turns on the mids, and ride the bank-B knob with TUNNEL lit to pull the cylinder's ribs inward.",
+    "Heat ray: Scene Launch 5 then UP to Heat Ray on the drop; the beam's width follows the kick. Tap STROBE on the hit only, never twice in a bar.",
+    "Field lost: UP to column 7 mid-phrase so the picture cuts to black under the strip, hold a full bar of nothing, then Scene Launch 1 of deck 1 to return to the studio."
+   ]
+  },
+  {
+   "name": "The Visitors",
+   "slug": "visitors",
+   "theme": "takeover",
+   "world": "The r04 alternate history: the invasion is real, and two visitors with FCC credentials make the broadcasters call it theatre. They never speak, never hurry, never touch first; they knock while holding the keys. A black sedan at the curb, a brass revolving door, a card read with moving lips, a latch, a bare ridged hand on the board, and the red pencil. Red exists only on pencil marks: three clips in the whole composition.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#121212",
+     "why": "Charcoal."
+    },
+    {
+     "role": "body",
+     "hex": "#e9e1cf",
+     "why": "Paper: cards, pages, the porthole."
+    },
+    {
+     "role": "figure",
+     "hex": "#c41e1e",
+     "why": "RED PENCIL ONLY. Three lines, nothing else."
+    },
+    {
+     "role": "light",
+     "hex": "#d9a441",
+     "why": "Desk lamp, jack lamps, console glow."
+    },
+    {
+     "role": "text",
+     "hex": "#e9e1cf",
+     "why": "Notices and typed pages; the visitors themselves never get a caption."
+    },
+    {
+     "role": "aura",
+     "hex": "#8a857a",
+     "why": "Grey only."
+    }
+   ],
+   "columns": [
+    "The Curb",
+    "The Lobby",
+    "The Card",
+    "The Latch",
+    "Gloves Off",
+    "Red Line",
+    "Station Break",
+    "Clock Held"
+   ],
+   "text_corpus": [
+    "FEDERAL SUPERVISION",
+    "DO NOT ENTER",
+    "THIS IS A DRAMATIZATION",
+    "YOU ARE LISTENING",
+    "8:41 PM",
+    "JOHN",
+    "JOHN",
+    "VISITORS' BOOK",
+    "FCC FIELD DIVISION",
+    "CUSTODY",
+    "REHEARSAL RACK",
+    "NEXT WEEK"
+   ],
+   "moments": [
+    "Red line: Scene Launch 6 with every effect off; hold the row-3 FIGURE pad so the red pencil line appears only while you hold it, and let it go on the downbeat.",
+    "Station break: UP to column 7, pull fader 3 down to a third so the red line sits under Doyle's microphone like a thought he cannot finish.",
+    "Clock held: column 8, push Track knob 8 (TIME) fully anticlockwise so every generator in the room stops with the sweep hand; bring it back to centre to release."
+   ]
+  },
+  {
+   "name": "New York",
+   "slug": "new-york",
+   "theme": "account",
+   "world": "The second half's accounts: the battery in the Watchung Mountains, the bombers from Langham Field, the dive into the first machine, the roof of Broadcasting Building with smoke over the Hudson, fifty feet away, nineteen machines in Central Park with black birds wheeling, and the peaceful study. One column is not an account: The Window, the second proof - the avenue outside is wet, lit and untouched, so the strip gives way to the board's program line.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#121212",
+     "why": "Night over the city."
+    },
+    {
+     "role": "body",
+     "hex": "#8a857a",
+     "why": "Machines, guns, skyline: grey."
+    },
+    {
+     "role": "figure",
+     "hex": "#8a857a",
+     "why": "Smoke and cowls."
+    },
+    {
+     "role": "light",
+     "hex": "#e9e1cf",
+     "why": "Muzzle flashes; amber only for the untouched avenue."
+    },
+    {
+     "role": "text",
+     "hex": "#e9e1cf",
+     "why": "Place names, typed."
+    },
+    {
+     "role": "aura",
+     "hex": "#8a857a",
+     "why": "Grey."
+    }
+   ],
+   "columns": [
+    "The Battery",
+    "Bombers",
+    "The Dive",
+    "The Roof",
+    "Black Smoke",
+    "The Window",
+    "Nineteen",
+    "Peaceful Study"
+   ],
+   "text_corpus": [
+    "THE BATTERY",
+    "LANGHAM FIELD",
+    "DIVING ON THE FIRST MACHINE",
+    "ROOF OF BROADCASTING BUILDING",
+    "FIFTY FEET AWAY",
+    "THE AVENUE UNTOUCHED",
+    "NINETEEN MACHINES",
+    "CENTRAL PARK",
+    "PEACEFUL STUDY",
+    "PRINCETON",
+    "THE HUDSON",
+    "BAYONNE"
+   ],
+   "moments": [
+    "The dive: Scene Launch 3 on the build and push Track knob 8 (TIME) past three-quarters so the nose glazing rushes; drop it to centre on the impact.",
+    "The window: UP from The Roof to The Window on the drop - smoke cuts to a wet, lit, untouched avenue. Hold it; that is the proof.",
+    "Nineteen: column 7, bank-D knob at a third with MIRROR QUAD lit so the row of machines multiplies; release on the line about the birds."
+   ]
+  },
+  {
+   "name": "Morning After",
+   "slug": "morning-after",
+   "theme": "wildcard",
+   "world": "9:00 pm and after: the heavy doors burst open on dark uniforms, the switchboard becomes a vast sea of light, flashbulbs at the morning press conference, and the front pages. Then the correction the century took to make: about two percent of the audience was listening, and the panic was printed, not broadcast. It ends on the disc in the rehearsal rack with a small circle on its sleeve, and next week's script already red-pencilled - the one other place red is allowed.",
+   "palette": [
+    {
+     "role": "bed",
+     "hex": "#121212",
+     "why": "Charcoal."
+    },
+    {
+     "role": "body",
+     "hex": "#e9e1cf",
+     "why": "Newsprint and flashbulbs."
+    },
+    {
+     "role": "figure",
+     "hex": "#262420",
+     "why": "Dark uniforms, the press crowd."
+    },
+    {
+     "role": "light",
+     "hex": "#d9a441",
+     "why": "The switchboard's sea of amber lamps."
+    },
+    {
+     "role": "text",
+     "hex": "#e9e1cf",
+     "why": "Typed; headlines black on ivory."
+    },
+    {
+     "role": "aura",
+     "hex": "#c41e1e",
+     "why": "Red once, on next week's script."
+    }
+   ],
+   "columns": [
+    "9 PM Doors",
+    "Switchboard",
+    "Flashbulbs",
+    "Headlines",
+    "Two Percent",
+    "Hooper vs Myth",
+    "The Disc",
+    "Next Week"
+   ],
+   "text_corpus": [
+    "9:00 PM",
+    "THE DOORS OPEN",
+    "A VAST SEA OF LIGHT",
+    "DEFINITELY NOT",
+    "RADIO WAR TERRORIZES U.S.",
+    "~2% OF THE AUDIENCE",
+    "PRINTED, NOT BROADCAST",
+    "EVERYONE FORGETS",
+    "THE RECORD DOESN'T",
+    "NEXT WEEK",
+    "CHASE AND SANBORN HOUR",
+    "OCTOBER 31, 1938"
+   ],
+   "moments": [
+    "Doors: Scene Launch 1 on the last hit of a track; the uniforms' edges shiver on the mids. Tap STROBE once for the doors.",
+    "Headlines to two percent: Scene Launch 4, hold it for a phrase, then UP to Two Percent so the front page collapses to one thin bar.",
+    "The disc: walk UP to column 7, pull every fader but 2, 3 and 8, and let the strip carry the music out; then UP to Next Week and BLACKOUT on the last beat."
+   ]
+  }
+ ],
+ "effect_wishlist": [
+  {
+   "effect": "Trails",
+   "role": "Bank A: the jar lid's rings, the switchboard's sea of light."
+  },
+  {
+   "effect": "Bloom",
+   "role": "Bank A: halation around practical lamps and the heat ray."
+  },
+  {
+   "effect": "CRT",
+   "role": "Bank C: a newsreel print."
+  },
+  {
+   "effect": "Stop Motion",
+   "role": "Bank C: the foley scrape and the station break."
+  },
+  {
+   "effect": "Tunnel",
+   "role": "Bank B: the cylinder's ribs pulled inward."
+  },
+  {
+   "effect": "Mirror Quad",
+   "role": "Bank D: nineteen machines multiplied."
+  }
+ ],
+ "fft_philosophy": "Sound is the whole subject, so the composition listens like the room did. The kick drives only physical size - the RCA 44-BX diamond, the cylinder's ribs, the heat ray's width, the headlights - so a hit reads as pressure on the ribbon. Mids drive the board's program line (SCOPE) and the cap turning; highs only shiver the ribbon and the crowd's edges. Nothing about colour ever reacts: charcoal, ivory, grey and one amber are fixed, and red appears only where a pencil drew it. Text never moves. Dead Air, the Silent Mic and the Clock Held are deliberately deaf: the stillness is the effect.",
+ "wildcard_rationale": "Four decks walk the night: the room, the accounts it gave, the visitors who took it, and the city it described. The fifth is what happened after 9 pm - the doors, the switchboard, the flashbulbs and the headlines - and the correction: the panic was printed, not broadcast. The broadcast's 88th anniversary is Thursday 30 October 2026."
+}

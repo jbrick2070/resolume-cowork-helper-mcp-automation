@@ -1,0 +1,3 @@
+composition: {'layers': 8, 'decks': 5, 'clips': 320, 'comp_effects': 34, 'fft_nodes': 384, 'bytes': 1504233}
+preset: 164 shortcuts on 149 physical controls; unmapped: none; multi: {'PLAY n91': 2, 'STOP n92': 5, 'BANK LOCK n103': 8, 'CUE LEVEL CC47': 4}
+repairs: 0

@@ -1,0 +1,7336 @@
+[
+ {
+  "deck": "Studio One",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Network Mic",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 18,
+     "Innter Color 1": "#e9e1cfff",
+     "Inner color 2": "#8a857aff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5,
+     "Gloabal rot": 0.25
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 70.0,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Doyle's network microphone at left, the first thing lit."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Studio Clock",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 0.0,
+     "Detail": 1.0,
+     "Speed": 0.12,
+     "Zoom": 0.8,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.05,
+     "Button Fuzzyness": 0.0,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The studio clock: 8:00 pm. Studio time is real time."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.22,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "COLUMBIA BROADCAST",
+    "source": "Text Block",
+    "params": {
+     "Text": "COLUMBIA BROADCASTING\nSYSTEM - 8:00 PM\nSUNDAY 30 OCT 1938",
+     "Font": "Bodoni MT",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The network opening, in the building's own serif."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Linoleum",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 14,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Center Mic",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 18,
+     "Innter Color 1": "#e9e1cfff",
+     "Inner color 2": "#8a857aff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5,
+     "Gloabal rot": 0.25
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 100.0,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The RCA 44-BX: a diamond of satin chrome, figure-8, 8.5 lb on its yoke."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Lathe A",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 24,
+     "Size": 0.55,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#e9e1cfff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.01,
+      "ceiling": 0.025
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Nora lowers the cutting arm onto a turning black disc: lathe A."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "ROLL IT",
+    "source": "Text Animator",
+    "params": {
+     "Text": "ROLL IT",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Position X": 0,
+     "Position Y": 0,
+     "Animated": true,
+     "Glow In": 0.0,
+     "Glow Out": 0.0,
+     "Outline Width": 0.0,
+     "Range": "Characters",
+     "Order": "Front to back",
+     "Delay": 90,
+     "Opacity": 0.0,
+     "Scale": 0.9
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The roll-it signal: a small circle drawn in the air."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#8a857a66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A silver-gelatin tone over the frame."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Linoleum",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 14,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Figure-8 Grille",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 18,
+     "Innter Color 1": "#e9e1cfff",
+     "Inner color 2": "#8a857aff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5,
+     "Gloabal rot": 0.25
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 80.0,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The RCA 44-BX: a diamond of satin chrome, figure-8, 8.5 lb on its yoke."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Ribbon",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 40,
+     "Width": 0.2,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#e9e1cfff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 250,
+      "floor": 0.05,
+      "ceiling": 0.45
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The ribbon's figure-8: live front and back, dead at the sides."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "RCA 44-BX",
+    "source": "Text Block",
+    "params": {
+     "Text": "RCA 44-BX\n12 x 4.75 x 3.375 IN\n8.5 LB - FIGURE-8",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The microphone's specification from its manual."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#e9e1cf55",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A silver-gelatin tone over the frame."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Sandbox Boards",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 28,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Iron Pot",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 6,
+     "Size": 0.35,
+     "Spacing": 0.12,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#8a857aff",
+     "Color 2": "#8a857aff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.03,
+      "ceiling": 0.075
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -300,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "The cast-iron vessel whose rim the jar scrapes."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Jam Jar Lid",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.18,
+     "Spacing": 0.12,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#e9e1cfff"
+    },
+    "fft": {
+     "Size": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 0.16,
+      "ceiling": 0.24
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": -300,
+       "Position Y": 0,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "The glass jam jar turning in the pot: the cylinder unscrewing."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Foley Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.24,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "JAR + IRON POT",
+    "source": "Text Block",
+    "params": {
+     "Text": "JAR + IRON POT\nSANDBOX - CORNSTARCH\nROLLER SKATES",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Ora Nichols's metaphors: mundane objects, unearthly sounds."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Foley Mic",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Linoleum",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 14,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Giant Cube",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.05,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.0,
+     "Line Ammount": 12,
+     "Innter Color 1": "#8a857aff",
+     "Inner color 2": "#262420ff",
+     "Outer Color 1": "#e9e1cf55",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.4,
+     "Outer Scale": 1.3,
+     "Intersect Scale": 0.6
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.36,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.85,
+    "why": "Arthur Nichols's five-foot sound machine as a nest of squares."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Nine Motors",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 3,
+     "Blend": "Minimal",
+     "Size": 0.16,
+     "Distance": 0.5,
+     "Radius": 0.5,
+     "Fuzzyness": 0.1,
+     "Speed": 1.2,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#8a857aff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.14,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Nine independent electric motors behind switches and levers."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Machine Gun",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.5,
+     "Fade": true,
+     "Color 1": "#d9a441ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "The cube's rapid-fire machine-gun bursts."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "GIANT-CUBE MACHINE",
+    "source": "Text Block",
+    "params": {
+     "Text": "GIANT-CUBE MACHINE\n5 FT x 2 FT\n9 MOTORS - PUMPS -\nWHISTLES",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.1,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Linoleum",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 14,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Music Stands",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 27,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#8a857aff"
+    },
+    "fft": {
+     "Width": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.015,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Twenty-seven music stands in a clustered arc."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Piano Filler",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.1,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 2.0,
+     "Main Speed": 1.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.12,
+     "Position": 0.5,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 600,
+      "floor": 0.1,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The solo piano filler, played for unbearably long stretches."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "BERNARD HERRMANN",
+    "source": "Text Block",
+    "params": {
+     "Text": "BERNARD HERRMANN\n27 MUSICIANS\nDEBUSSY - CHOPIN\nFILLER",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#d9a44155",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Horizontal"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "A silver-gelatin tone over the frame."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Linoleum",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 14,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Booth Glass",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 2,
+     "Width": 0.6,
+     "Rotation": 0.0,
+     "Position": 0.35,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The double-paned soundproof window."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "VU Meters",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 4,
+     "Size": 0.12,
+     "Spacing": 0.12,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#d9a441ff",
+     "Color 2": "#d9a441ff"
+    },
+    "fft": {
+     "Size": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 250,
+      "floor": 0.1,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": -200,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "The board's round VU meters glowing behind the glass."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Console Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.26,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "CONTROL BOOTH",
+    "source": "Text Block",
+    "params": {
+     "Text": "CONTROL BOOTH\nHOUSEMAN - TAYLOR\nACOUSTICALLY SEVERED",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#d9a44155",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A silver-gelatin tone over the frame."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Dead air: the room freezes under Welles's raised hands."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Silent Mic",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 18,
+     "Innter Color 1": "#e9e1cfff",
+     "Inner color 2": "#8a857aff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5,
+     "Gloabal rot": 0.25
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 90.0,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.35,
+    "why": "The microphone with nothing in front of it. It does not react."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nobody moves."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No lamp change in the silence."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "Dead Air",
+    "source": "Text Block",
+    "params": {
+     "Text": "... ",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 1.4,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Dead air. Nothing typed."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Flat Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 1.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.0,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line flat: the pause stretched for an agonizing length."
+   }
+  ]
+ },
+ {
+  "deck": "Grovers Mill",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Telescope Dome",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 16,
+     "Size": 0.8,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#e9e1cf55"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.01,
+      "ceiling": 0.025
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The observatory dome's ribs."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Mars Disc",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.06,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.2,
+     "Noise Speed": 0.1,
+     "Color": "#e9e1cfff",
+     "Outline": 0.0,
+     "Outline Color": "#e9e1cfff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.06,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Mars in the eyepiece: a small grainy disc. No red: red is the pencil's."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Eyepiece Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "PRINCETON OBSERVAT",
+    "source": "Text Block",
+    "params": {
+     "Text": "PRINCETON OBSERVATORY\nPIERSON - PHILLIPS",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Headlights",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 6,
+     "Blend": "Minimal",
+     "Size": 0.12,
+     "Distance": 0.6,
+     "Radius": 0.2,
+     "Fuzzyness": 0.6,
+     "Speed": 0.2,
+     "Position X": 0.0,
+     "Position Y": -0.4,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.12,
+      "ceiling": 0.24
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "A row of car headlights behind the crowd."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Crowd",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.3,
+     "Amount": 40,
+     "Width": 0.5,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#121212ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 600,
+      "floor": 0.25,
+      "ceiling": 0.5
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A crowd of silhouettes against the headlights."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Headlamp Pool",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "WILMUTH FARM",
+    "source": "Text Block",
+    "params": {
+     "Text": "WILMUTH FARM\nGROVERS MILL, N.J.",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "The Cylinder",
+    "source": "Tunnelines",
+    "params": {
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#8a857a66",
+     "Line Width": 0.01,
+     "Zoom": 2.4,
+     "Vertical": 0.02,
+     "Frequency": 0.04,
+     "Horizontal": 0.02
+    },
+    "fft": {
+     "Frequency": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 700,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The cylinder half buried in the pit, its end shedding flakes."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "The Hum",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 8,
+     "Mode": "Line",
+     "Line Width": 0.01,
+     "Fuzzyness": 0.2,
+     "Direction": "Horizontal",
+     "Mirror": true,
+     "Frequency": 12.0,
+     "Main Speed": 4.0,
+     "Modulator": 0.0,
+     "Modulation Depth": 0.0,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 0.7,
+    "why": "The hum: a dense, even vibration in the air above the pit."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Sealed Jack Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "The only lit jack in the field is the sealed one."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "THE HUM",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE HUM",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 1.2,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Cylinder End",
+    "source": "Tunnelines",
+    "params": {
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#8a857a66",
+     "Line Width": 0.01,
+     "Zoom": 2.4,
+     "Vertical": 0.02,
+     "Frequency": 0.04,
+     "Horizontal": 0.02
+    },
+    "fft": {
+     "Frequency": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 700,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The cylinder half buried in the pit, its end shedding flakes."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "The Cap Turns",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 5,
+     "Size": 0.3,
+     "Spacing": 0.12,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#e9e1cfff"
+    },
+    "fft": {
+     "Size": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 300,
+      "floor": 0.28,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The circular top beginning to turn - matched to the jam jar lid in Studio One."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Pit Light",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.22,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "THE TOP IS",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE TOP IS\nBEGINNING TO TURN",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "The Cylinder",
+    "source": "Tunnelines",
+    "params": {
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#8a857a66",
+     "Line Width": 0.01,
+     "Zoom": 2.4,
+     "Vertical": 0.02,
+     "Frequency": 0.04,
+     "Horizontal": 0.02
+    },
+    "fft": {
+     "Frequency": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 700,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The cylinder half buried in the pit, its end shedding flakes."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Ribbed Feelers",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Anti-clockwise",
+     "Control Mode": "Detailed",
+     "Spread Even": 2.0,
+     "Detail": 3.0,
+     "Speed": 0.4,
+     "Zoom": 1.4,
+     "Leafs": 3,
+     "Distortion": 30.0,
+     "Fuzzyness": 0.3,
+     "Ramification": 0.6,
+     "Button": false,
+     "Button Size": 0.0,
+     "Button Fuzzyness": 0.0,
+     "Color": "#8a857aff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Distortion": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 20.0,
+      "ceiling": 60.0
+     }
+    },
+    "effects": [],
+    "opacity": 0.7,
+    "why": "The hatch's ribbed feelers - the tentacles - in bad light."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Bad Light",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.08,
+     "Fade": true,
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.18,
+    "why": "A flashbulb or a lamp failing."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "SOMETHING'S WRIGGL",
+    "source": "Text Block",
+    "params": {
+     "Text": "SOMETHING'S WRIGGLING\nOUT OF THE SHADOW",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Headlights",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 6,
+     "Blend": "Minimal",
+     "Size": 0.12,
+     "Distance": 0.6,
+     "Radius": 0.2,
+     "Fuzzyness": 0.6,
+     "Speed": 0.2,
+     "Position X": 0.0,
+     "Position Y": -0.4,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.12,
+      "ceiling": 0.24
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "A row of car headlights behind the crowd."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Heat Ray",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.4,
+     "Amount": 1,
+     "Width": 0.06,
+     "Rotation": 18.0,
+     "Position": 0.5,
+     "Color": "#e9e1cfff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 12.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The heat ray: one beam of light from the mirror."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Ray Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": true,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.25,
+    "why": "A flashbulb or a lamp failing."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "A JET OF FLAME",
+    "source": "Text Block",
+    "params": {
+     "Text": "A JET OF FLAME\nSPRINGS FROM THE\nMIRROR",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#e9e1cf55",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "A silver-gelatin tone over the frame."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.2,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.2,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The broadcast from the farm is lost."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing from the field."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing from the field."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The sealed lamp dies."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "WE ARE UNABLE TO",
+    "source": "Text Block",
+    "params": {
+     "Text": "WE ARE UNABLE TO\nCONTINUE THE BROADCAST",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Strip Silent",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.0,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.0,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The strip runs on, carrying nothing."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Black Smoke",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 4,
+     "Amplitude": 0.5,
+     "Density": 0.45
+    },
+    "fft": {
+     "Density": {
+      "band": "low",
+      "gain": 7.0,
+      "release": 1500,
+      "floor": 0.4,
+      "ceiling": 0.7
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#121212ff",
+       "White To": "#8a857a66"
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Drifting black smoke over the marshes."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Stone Wall",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.2,
+     "Amount": 6,
+     "Width": 0.3,
+     "Rotation": 0.0,
+     "Position": 0.7,
+     "Color": "#8a857a66"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.7,
+    "why": "The stone wall Phillips was last seen behind. He is never shown dead."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Embers",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "FORTY PEOPLE",
+    "source": "Text Block",
+    "params": {
+     "Text": "FORTY PEOPLE\nMARTIAL LAW",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   }
+  ]
+ },
+ {
+  "deck": "The Visitors",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Wet Pavement",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 6,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Black Sedan",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.5,
+     "Noise Type": "Hatched",
+     "Noise Amount": 0.1,
+     "Noise Speed": 0.0,
+     "Color": "#262420ff",
+     "Outline": 0.02,
+     "Outline Color": "#8a857aff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 180,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A black sedan at the curb, its outline catching the street light."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Two Homburgs",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 2,
+     "Blend": "Minimal",
+     "Size": 0.1,
+     "Distance": 0.3,
+     "Radius": 0.1,
+     "Fuzzyness": 0.05,
+     "Speed": 0.0,
+     "Position X": 0.0,
+     "Position Y": 0.0,
+     "Color": "#121212ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Two motionless homburgs inside. They never hurry."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Street Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The visitors never speak: no text."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Marble",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 20,
+     "Width": 0.01,
+     "Rotation": 45.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Lift Dial",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.6,
+     "Spacing": 0.12,
+     "Line Width": 0.02,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#8a857aff",
+     "Color 2": "#8a857aff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": -240,
+       "Scale": 60,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "The semicircular lift dial above the closed gate."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Revolving Door",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 0.0,
+     "Detail": 1.0,
+     "Speed": 0.3,
+     "Zoom": 1.0,
+     "Leafs": 4,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": false,
+     "Button Size": 0.0,
+     "Button Fuzzyness": 0.0,
+     "Color": "#d9a44155",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The brass revolving door still turning as they step onto the marble."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Desk Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.3,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The visitors never speak."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Visitors' Card",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e9e1cfff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 36,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "A small card in a grey kid glove."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Red Line On Card",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.52,
+     "Color": "#c41e1eff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "One red pencil line beneath the text. Red exists only here."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Desk Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.24,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Amos reads it with moving lips; nobody in frame speaks."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Door Panels",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Porthole",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.3,
+     "Spacing": 0.12,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#e9e1cf55"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.03,
+      "ceiling": 0.075
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "The small window in the control-room door."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Ring Of Keys",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.1,
+     "Spacing": 0.3,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 30.0,
+     "Rotation": 0.0,
+     "Rotation Step": 40.0,
+     "Rotation Alternate": true,
+     "Color 1": "#8a857aff",
+     "Color 2": "#8a857aff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 260,
+       "Position Y": -80,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "They knock while holding the keys."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Console Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "FEDERAL SUPERVISIO",
+    "source": "Text Block",
+    "params": {
+     "Text": "FEDERAL SUPERVISION\nDO NOT ENTER",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The notice on the studio door; written by the network, not spoken by them."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Jack Field",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 24,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Patch Cords",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 5,
+     "Mode": "Line",
+     "Line Width": 0.012,
+     "Fuzzyness": 0.0,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 1.0,
+     "Modulator": 0.5,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.2,
+     "Position": 0.6,
+     "Color": "#8a857aff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 600,
+      "floor": 0.18,
+      "ceiling": 0.3
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Patch cords hanging across the jack field."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Bare Hand",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.12,
+     "Noise Type": "Hatched",
+     "Noise Amount": 0.3,
+     "Noise Speed": 0.2,
+     "Color": "#8a857aff",
+     "Outline": 0.0,
+     "Outline Color": "#8a857aff"
+    },
+    "fft": {
+     "Noise Amount": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.2,
+      "ceiling": 0.6
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Carver's bare hand on the board, creased and ridged."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Jack Lamps",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.26,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The visitors never speak."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Script Page",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e9e1cfff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 36,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.85,
+    "why": "The station-break page, typed."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Red Pencil",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.48,
+     "Color": "#c41e1eff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Small's nickel-ferruled red pencil draws one line. The only red on screen."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Page Light",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "THIS IS A",
+    "source": "Text Block",
+    "params": {
+     "Text": "THIS IS A\nDRAMATIZATION",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#121212ff",
+     "Size": 1.1,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": -20,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The line under the red pencil, typed on the page."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Linoleum",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 14,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Doyle's Mic",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 18,
+     "Innter Color 1": "#e9e1cfff",
+     "Inner color 2": "#8a857aff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5,
+     "Gloabal rot": 0.25
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 70.0,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "The RCA 44-BX: a diamond of satin chrome, figure-8, 8.5 lb on its yoke."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Red Line At Eye",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.7,
+     "Color": "#c41e1eff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The page clipped at Doyle's eye level, one red line beneath the text."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "YOU ARE LISTENING",
+    "source": "Text Block",
+    "params": {
+     "Text": "YOU ARE LISTENING\nTO A CBS PRESENTATION",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The station identification, read calm."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Wash",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#00000000",
+     "Color 2": "#8a857a66",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "A silver-gelatin tone over the frame."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Linoleum",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 14,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Clock Held",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 0.0,
+     "Detail": 1.0,
+     "Speed": 0.0,
+     "Zoom": 0.8,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.05,
+     "Button Fuzzyness": 0.0,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "A ridged finger pins the sweep hand. The clock reads 8:41 pm."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Welles Eyes Closed",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 18,
+     "Innter Color 1": "#e9e1cfff",
+     "Inner color 2": "#8a857aff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5,
+     "Gloabal rot": 0.25
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 50.0,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "The RCA 44-BX: a diamond of satin chrome, figure-8, 8.5 lb on its yoke."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.16,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "8:41 PM",
+    "source": "Text Block",
+    "params": {
+     "Text": "8:41 PM",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 1.4,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Real time, never the play's time."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.07,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.07,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   }
+  ]
+ },
+ {
+  "deck": "New York",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Distant Tripod",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.05,
+     "Bloom Mode": "Add",
+     "Shape Types": "Triangle",
+     "Shape Rounding": 0.0,
+     "Line Ammount": 9,
+     "Innter Color 1": "#8a857aff",
+     "Inner color 2": "#262420ff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.25,
+     "Outer Scale": 1.6,
+     "Intersect Scale": 0.4
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 600,
+      "floor": 0.22,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [],
+    "opacity": 0.5,
+    "why": "A towering three-legged machine: tripod geometry rising from smoke."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Gun Battery",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 4,
+     "Width": 0.03,
+     "Rotation": 30.0,
+     "Position": 0.4,
+     "Color": "#8a857aff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 250,
+      "floor": 0.02,
+      "ceiling": 0.08
+     }
+    },
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Four gun barrels raised at 30 degrees."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Muzzle Flash",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.4,
+     "Fade": true,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "A flashbulb or a lamp failing."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "THE BATTERY",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE BATTERY\nWATCHUNG MOUNTAINS",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Black Smoke",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 4,
+     "Amplitude": 0.5,
+     "Density": 0.45
+    },
+    "fft": {
+     "Density": {
+      "band": "low",
+      "gain": 7.0,
+      "release": 1500,
+      "floor": 0.4,
+      "ceiling": 0.7
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#121212ff",
+       "White To": "#8a857a66"
+      }
+     }
+    ],
+    "opacity": 0.4,
+    "why": "Drifting black smoke over the marshes."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Bomber Formation",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 3,
+     "Size": 0.05,
+     "Spacing": 2.0,
+     "Line Width": 0.04,
+     "Style": "Fill",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#8a857aff",
+     "Color 2": "#8a857aff"
+    },
+    "fft": {
+     "Spacing": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 600,
+      "floor": 1.6,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": -200,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Bombers close together, ready to attack."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Low Cloud",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "LANGHAM FIELD",
+    "source": "Text Block",
+    "params": {
+     "Text": "LANGHAM FIELD\nBOMBERS IN FORMATION",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Cowl Fills Glass",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.05,
+     "Bloom Mode": "Add",
+     "Shape Types": "Triangle",
+     "Shape Rounding": 0.0,
+     "Line Ammount": 9,
+     "Innter Color 1": "#8a857aff",
+     "Inner color 2": "#262420ff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.25,
+     "Outer Scale": 1.6,
+     "Intersect Scale": 0.4
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 600,
+      "floor": 0.22,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "A towering three-legged machine: tripod geometry rising from smoke."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Nose Glazing",
+    "source": "Tunnelines",
+    "params": {
+     "Color 1": "#8a857aff",
+     "Color 2": "#262420ff",
+     "Line Width": 0.02,
+     "Zoom": 3.5,
+     "Vertical": 0.2,
+     "Frequency": 0.4,
+     "Horizontal": 0.0
+    },
+    "fft": {
+     "Frequency": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.4,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [],
+    "opacity": 0.7,
+    "why": "The glazed nose rushing toward the cowl: very large, fast."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Engine Failing",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.6,
+     "Fade": true,
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "A flashbulb or a lamp failing."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "DIVING ON THE",
+    "source": "Text Block",
+    "params": {
+     "Text": "DIVING ON THE\nFIRST MACHINE",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.18,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.18,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Skyline",
+    "source": "Line Scape",
+    "params": {
+     "Tilt": 0.0,
+     "Direction": 0.0,
+     "Position Y": 4.0,
+     "Speed": 0.0,
+     "Height": 8.0,
+     "Jagginess": 1.0,
+     "Wobble": 0.0,
+     "Attenuation": 30.0,
+     "Line Width": 0.3,
+     "Fuzzyness": 0.0,
+     "Color": "#8a857aff",
+     "Show Knots": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Manhattan's skyline from the roof of Broadcasting Building."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Smoke Over Hudson",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 4,
+     "Amplitude": 0.5,
+     "Density": 0.45
+    },
+    "fft": {
+     "Density": {
+      "band": "low",
+      "gain": 7.0,
+      "release": 1500,
+      "floor": 0.4,
+      "ceiling": 0.7
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#121212ff",
+       "White To": "#8a857a66"
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Drifting black smoke over the marshes."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Bells",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "ROOF OF",
+    "source": "Text Block",
+    "params": {
+     "Text": "ROOF OF\nBROADCASTING BUILDING",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Black Smoke",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 4,
+     "Amplitude": 0.5,
+     "Density": 0.45
+    },
+    "fft": {
+     "Density": {
+      "band": "low",
+      "gain": 7.0,
+      "release": 1500,
+      "floor": 0.4,
+      "ceiling": 0.7
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#121212ff",
+       "White To": "#8a857a66"
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "Drifting black smoke over the marshes."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Fifty Feet",
+    "source": "Abstract Field",
+    "params": {
+     "Octaves": 4,
+     "Amplitude": 0.5,
+     "Density": 0.45
+    },
+    "fft": {
+     "Density": {
+      "band": "low",
+      "gain": 7.0,
+      "release": 1500,
+      "floor": 0.4,
+      "ceiling": 0.7
+     }
+    },
+    "effects": [
+     {
+      "effect": "Tint",
+      "params": {
+       "Black To": "#121212ff",
+       "White To": "#e9e1cf55"
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Drifting black smoke over the marshes."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The smoke takes the light."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "FIFTY FEET",
+    "source": "Text Block",
+    "params": {
+     "Text": "FIFTY FEET\nAWAY",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Tall Window",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 4,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Avenue Lights",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 8,
+     "Blend": "Minimal",
+     "Size": 0.06,
+     "Distance": 0.6,
+     "Radius": 0.2,
+     "Fuzzyness": 0.6,
+     "Speed": 0.2,
+     "Position X": 0.0,
+     "Position Y": -0.4,
+     "Color": "#d9a44155",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Size": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 500,
+      "floor": 0.06,
+      "ceiling": 0.18
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "A row of car headlights behind the crowd."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Rain On Glass",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.08,
+    "why": "Wet pavement and rain on the glass: the avenue untouched."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Shop Windows",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "THE AVENUE",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE AVENUE\nUNTOUCHED",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The page has outrun the world."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.06,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.06,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Night Field",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#121212ff",
+     "Color 2": "#262420ff",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Vertical"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "New Jersey night: a charcoal-to-grey sky gradient."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Nineteen Machines",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.1,
+     "Amount": 19,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#8a857aff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.7,
+    "why": "A long row of towering machines, cowls open and empty."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Empty Cowl",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.05,
+     "Bloom Mode": "Add",
+     "Shape Types": "Triangle",
+     "Shape Rounding": 0.0,
+     "Line Ammount": 6,
+     "Innter Color 1": "#8a857aff",
+     "Inner color 2": "#262420ff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.25,
+     "Outer Scale": 1.6,
+     "Intersect Scale": 0.4
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 600,
+      "floor": 0.22,
+      "ceiling": 0.36
+     }
+    },
+    "effects": [],
+    "opacity": 0.6,
+    "why": "A towering three-legged machine: tripod geometry rising from smoke."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Black Birds",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 5,
+     "Blend": "Minimal",
+     "Size": 0.04,
+     "Distance": 0.9,
+     "Radius": 0.9,
+     "Fuzzyness": 0.0,
+     "Speed": 2.0,
+     "Position X": 0.0,
+     "Position Y": 0.5,
+     "Color": "#121212ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black birds wheeling above."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "NINETEEN MACHINES",
+    "source": "Text Block",
+    "params": {
+     "Text": "NINETEEN MACHINES\nCENTRAL PARK",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Study Shelves",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 10,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Study Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.34,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Pierson's Pen",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.01,
+     "Fuzzyness": 0.0,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 1.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.6,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 7.0,
+      "release": 800,
+      "floor": 0.03,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Pierson's journal pen in the peaceful study."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The lamp is on layer 2 here."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "PEACEFUL STUDY",
+    "source": "Text Block",
+    "params": {
+     "Text": "PEACEFUL STUDY\nAT PRINCETON",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.8,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.05,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.05,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The optical soundtrack strip down the left edge: we are inside an account."
+   }
+  ]
+ },
+ {
+  "deck": "Morning After",
+  "clips": [
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Blue Uniforms",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.2,
+     "Amount": 9,
+     "Width": 0.5,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {
+     "Fuzzyness": {
+      "band": "mid",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.15,
+      "ceiling": 0.4
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The doors burst open: a wall of dark uniforms."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "9:00 PM",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Control Mode": "Even",
+     "Spread Even": 0.0,
+     "Detail": 1.0,
+     "Speed": 0.0,
+     "Zoom": 0.8,
+     "Leafs": 1,
+     "Distortion": 0.0,
+     "Fuzzyness": 0.0,
+     "Ramification": 0.0,
+     "Button": true,
+     "Button Size": 0.05,
+     "Button Fuzzyness": 0.0,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "The studio clock at 9:00 pm."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "Flashbulb",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.2,
+     "Fade": true,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "A flashbulb or a lamp failing."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "9:00 PM",
+    "source": "Text Block",
+    "params": {
+     "Text": "9:00 PM\nTHE DOORS OPEN",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 2,
+    "name": "Switchboard Jacks",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 30,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 2,
+    "name": "Sea Of Light",
+    "source": "Checkered",
+    "params": {
+     "Num X": 40,
+     "Num Y": 12,
+     "Color 1": "#121212ff",
+     "Color 2": "#d9a44155"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "The switchboard as a vast sea of light."
+   },
+   {
+    "layer": 3,
+    "column": 2,
+    "name": "Lamps Ringing",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.7,
+     "Fade": true,
+     "Color 1": "#d9a441ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "Every line lit, flickering with calls."
+   },
+   {
+    "layer": 4,
+    "column": 2,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 2,
+    "name": "A VAST SEA",
+    "source": "Text Block",
+    "params": {
+     "Text": "A VAST SEA\nOF LIGHT",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 1.0,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 2,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 2,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 2,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.1,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.1,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 3,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 3,
+    "name": "Battery Of Mics",
+    "source": "Geometry Pattern Maker",
+    "params": {
+     "Bloom": 0.15,
+     "Bloom Mode": "Add",
+     "Shape Types": "Square",
+     "Shape Rounding": 0.2,
+     "Line Ammount": 18,
+     "Innter Color 1": "#e9e1cfff",
+     "Inner color 2": "#8a857aff",
+     "Outer Color 1": "#8a857aff",
+     "Outer Color 2": "#262420ff",
+     "Inner Scale": 0.3,
+     "Outer Scale": 1.2,
+     "Intersect Scale": 0.5,
+     "Gloabal rot": 0.25
+    },
+    "fft": {
+     "Inner Scale": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 400,
+      "floor": 0.28,
+      "ceiling": 0.42
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 50.0,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.8,
+    "why": "Welles before a battery of microphones, unshaven."
+   },
+   {
+    "layer": 3,
+    "column": 3,
+    "name": "Press Corps",
+    "source": "Metaballs",
+    "params": {
+     "Grid": 4,
+     "Blend": "Minimal",
+     "Size": 0.2,
+     "Distance": 0.6,
+     "Radius": 0.4,
+     "Fuzzyness": 0.2,
+     "Speed": 0.6,
+     "Position X": 0.0,
+     "Position Y": -0.5,
+     "Color": "#262420ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.9,
+    "why": "Reporters crowding the table."
+   },
+   {
+    "layer": 4,
+    "column": 3,
+    "name": "Flashbulbs",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.35,
+     "Fade": true,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.35,
+    "why": "A flashbulb or a lamp failing."
+   },
+   {
+    "layer": 5,
+    "column": 3,
+    "name": "DEFINITELY NOT",
+    "source": "Text Block",
+    "params": {
+     "Text": "DEFINITELY NOT",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 1.2,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Welles at the press conference, 31 October."
+   },
+   {
+    "layer": 6,
+    "column": 3,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 3,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 3,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.04,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Column Rules",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 5,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Front Page",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e9e1cfff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 36,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "A typed script page, paper-clipped, ivory on charcoal."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The headline is the picture."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#e9e1cf55",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "RADIO WAR",
+    "source": "Text Block",
+    "params": {
+     "Text": "RADIO WAR\nTERRORIZES U.S.",
+     "Font": "Franklin Gothic Heavy",
+     "Style": "Regular",
+     "Color": "#121212ff",
+     "Size": 2.0,
+     "Alignment": "Center",
+     "AlignmentVertically": "Center",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A front-page headline style, black on newsprint."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Audience Bar",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.2,
+     "Color": "#e9e1cfff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "A single thin bar: about 2% of the radio audience."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Bergen On NBC",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.7,
+     "Rotation": 90.0,
+     "Position": 0.65,
+     "Color": "#8a857a66"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Everyone else was listening to Edgar Bergen on NBC."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No lamp."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "C.E. HOOPER: ~2%",
+    "source": "Text Block",
+    "params": {
+     "Text": "C.E. HOOPER: ~2%\nOF THE AUDIENCE",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "The Myth",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e9e1cf55"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 36,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "A typed script page, paper-clipped, ivory on charcoal."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "The Record",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 12,
+     "Width": 0.01,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#e9e1cfff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.6,
+    "why": "Ruled columns: what was actually documented."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No lamp."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "THE PANIC WAS",
+    "source": "Text Block",
+    "params": {
+     "Text": "THE PANIC WAS\nPRINTED, NOT\nBROADCAST",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Newspapers manufactured the mass-panic myth to wound radio."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.03,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.03,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Rehearsal Rack",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.05,
+     "Amount": 40,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#262420ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Studio linoleum ruling, charcoal on charcoal."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Disc A",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 30,
+     "Size": 0.6,
+     "Spacing": 0.12,
+     "Line Width": 0.01,
+     "Style": "Stroke",
+     "Gap": 0.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#e9e1cfff"
+    },
+    "fft": {
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 450,
+      "floor": 0.01,
+      "ceiling": 0.025
+     }
+    },
+    "effects": [],
+    "opacity": 0.8,
+    "why": "Disc A, filed as next week's rehearsal, with the hum in its grooves."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Small Circle",
+    "source": "Rings",
+    "params": {
+     "Num Rings": 1,
+     "Size": 0.08,
+     "Spacing": 0.1,
+     "Line Width": 0.03,
+     "Style": "Stroke",
+     "Gap": 20.0,
+     "Rotation": 0.0,
+     "Rotation Step": 0.0,
+     "Rotation Alternate": false,
+     "Color 1": "#e9e1cfff",
+     "Color 2": "#e9e1cfff"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 420,
+       "Position Y": -260,
+       "Scale": 100,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "Nora draws a small circle on the sleeve without knowing why."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "Practical Lamp",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#d9a44155",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.2,
+    "why": "One practical lamp: soft halation, a radial pool."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "EVERYONE FORGETS",
+    "source": "Text Block",
+    "params": {
+     "Text": "EVERYONE FORGETS\nTHE RECORD DOESN'T",
+     "Font": "Courier New",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -860,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "Soundtrack Strip",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 2,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.08,
+     "Position": 0.04,
+     "Color": "#e9e1cfff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.08,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The grooves become the optical soundtrack strip carrying the theme out."
+   },
+   {
+    "layer": 1,
+    "column": 8,
+    "name": "Charcoal",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#121212ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Black: the windowless room before a lamp."
+   },
+   {
+    "layer": 2,
+    "column": 8,
+    "name": "Next Week's Script",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#e9e1cf55"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Position X": 0,
+       "Position Y": 0,
+       "Scale": 36,
+       "Rotation Z": 0
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "A typed script page, paper-clipped, ivory on charcoal."
+   },
+   {
+    "layer": 3,
+    "column": 8,
+    "name": "Already Red",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.012,
+     "Rotation": 0.0,
+     "Position": 0.5,
+     "Color": "#c41e1eff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Next week's script in the briefcase, already red-pencilled."
+   },
+   {
+    "layer": 4,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "No lamp: the schedule repeats."
+   },
+   {
+    "layer": 5,
+    "column": 8,
+    "name": "NEXT WEEK",
+    "source": "Text Block",
+    "params": {
+     "Text": "NEXT WEEK",
+     "Font": "Bodoni MT",
+     "Style": "Regular",
+     "Color": "#e9e1cfff",
+     "Size": 1.6,
+     "Alignment": "Center",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": 0,
+     "Position Y": 460,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Typed script copy, Courier, bottom-left."
+   },
+   {
+    "layer": 6,
+    "column": 8,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Nothing here by design."
+   },
+   {
+    "layer": 7,
+    "column": 8,
+    "name": "Film Grain",
+    "source": "Static",
+    "params": {
+     "Mode": "Grayscale"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.07,
+    "why": "Fine silver-gelatin grain over everything."
+   },
+   {
+    "layer": 8,
+    "column": 8,
+    "name": "VU Line",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 2.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.02,
+     "Position": 0.88,
+     "Color": "#d9a441ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 300,
+      "floor": 0.02,
+      "ceiling": 0.32
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 400,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The program line on the board's VU meters: the one honest readout."
+   }
+  ]
+ }
+]
