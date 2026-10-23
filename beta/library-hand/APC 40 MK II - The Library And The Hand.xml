@@ -650,8 +650,8 @@
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1791000900046" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/connectprevcolumn" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/connectprevcolumn" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/connectnextcolumn" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/connectnextcolumn" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037952144" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />
@@ -659,8 +659,8 @@
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1791000900047" paramNodeName="" behaviour="1028" inputDeviceName="APC40 mkII" outputDeviceName="APC40 mkII">
-			<ShortcutPath name="InputPath" path="/composition/connectnextcolumn" translationType="1" allowedTranslationTypes="1" />
-			<ShortcutPath name="OutputPath" path="/composition/connectnextcolumn" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="InputPath" path="/composition/connectprevcolumn" translationType="1" allowedTranslationTypes="1" />
+			<ShortcutPath name="OutputPath" path="/composition/connectprevcolumn" translationType="1" allowedTranslationTypes="1" />
 			<RawInputMessage key="72057594037952400" value="0" numSteps="128" />
 			<NamedValues>
 				<Value first="Off" second="0.0" />

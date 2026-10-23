@@ -26,25 +26,25 @@
 
 **The Plinths**
 - Cold open: fire Scene Launch 1 with every effect off and the crossfader hard right, so only the disc, the orange hand and the title exist; let the click run for a full phrase before anything moves.
-- The hall: walk DOWN through Glenton, Rocket and Maker Rail with Device knob 2 (TEXTURE) at a third and CRT lit so the plinths read as a console; tap the row-5 TEXT pad on each downbeat so the dimension lines retype.
+- The hall: walk UP through Glenton, Rocket and Maker Rail with Device knob 2 (TEXTURE) at a third and CRT lit so the plinths read as a console; tap the row-5 TEXT pad on each downbeat so the dimension lines retype.
 - juke_bots: Scene Launch 6, then hold the row-3 FIGURE pad and turn Device knob 6 (ECHO) up so the held disc leaves a cyan afterimage against the stylus; drop it to zero on the breakdown.
 
 **The Hand**
 - Seven vs twelve: Scene Launch 3, then hold for two clicks with nothing lit; on the third click tap the row-3 FIGURE pad off so only the twelve-inch remains, and let the SCOPE show the slip.
 - Inertia gap: Scene Launch 4 with Device knob 4 (FRACTURE) at a quarter and STUTTER lit so the ratio bars step like a chart recorder; push the row-2 BODY fader on the drop so the bars fill the frame.
-- Swing-in: walk DOWN to column 8, hold the row-3 FIGURE pad (the coaxial head) and turn Device knob 5 (GLOW) up until the ring whites out over the label, then pull it back: no pass is awarded.
+- Swing-in: walk UP to column 8, hold the row-3 FIGURE pad (the coaxial head) and turn Device knob 5 (GLOW) up until the ring whites out over the label, then pull it back: no pass is awarded.
 
 **The Catalog**
-- Refused: Scene Launch 5 then walk DOWN to Refused on a downbeat; tap the row-5 TEXT pad so the stamp retypes, hold it for one full click with nothing else lit, and only then press the row-3 FIGURE pad on the next scene so the hand lowers onto COPY_2 instead.
+- Refused: Scene Launch 5 then walk UP to Refused on a downbeat; tap the row-5 TEXT pad so the stamp retypes, hold it for one full click with nothing else lit, and only then press the row-3 FIGURE pad on the next scene so the hand lowers onto COPY_2 instead.
 - ArUco: Scene Launch 4 with Device knob 3 (SPACE) at a third and MIRROR QUAD lit so the marker tiles into a grid; tap NEGATIVE on the one of each bar so the cells invert with the click.
 - Interlocks: column 8, hold the row-2 BODY pad and turn Device knob 8 (VOID) up so the exclusion rings close around the mushroom stop; on the drop tap RECORD for one bar of blackout.
 
 **The Ledger**
-- Gates: walk DOWN from Gate 1A through Stage Three one column per phrase, tapping the row-5 TEXT pad on each downbeat so the counters retype at NOT RUN; never let a bank knob pass a third.
+- Gates: walk UP from Gate 1A through Stage Three one column per phrase, tapping the row-5 TEXT pad on each downbeat so the counters retype at NOT RUN; never let a bank knob pass a third.
 - Coda: Scene Launch 7 with every effect off, crossfader hard right, SCOPE fader at zero; hold the row-3 FIGURE pad as the hand lowers and release it one click before the drop.
-- End card: walk DOWN to column 8 on the last beat, pull faders 1-4 to zero, and let the sources type out over silence; RECORD for blackout when the room is done.
+- End card: walk UP to column 8 on the last beat, pull faders 1-4 to zero, and let the sources type out over silence; RECORD for blackout when the room is done.
 
 **SL-1210MKX**
 - 33 to 45: Scene Launch 1, then fire Scene Launch 6 on a downbeat with Track knob 8 (TIME) pushed from centre to three-quarters so every generator speeds up with the click.
 - Slipmat: column 5, hold the row-3 FIGURE pad and push Device knob 3 (SPACE) with TUNNEL lit so the reversing orange groove pulls the platter inward; release on the breakdown.
-- Lock groove: walk DOWN to column 8, pull every fader but 2, 3 and 4, and let the blemish tick on the highs until the room is quiet; then STOP ALL CLIPS as the needle lifts.
+- Lock groove: walk UP to column 8, pull every fader but 2, 3 and 4, and let the blemish tick on the highs until the room is quiet; then STOP ALL CLIPS as the needle lifts.

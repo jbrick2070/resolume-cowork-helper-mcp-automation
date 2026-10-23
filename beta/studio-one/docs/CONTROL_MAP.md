@@ -55,8 +55,8 @@
 | SCENE 3 | SCENE LAUNCH 3 n84 | `/composition/columns/3/connect` | fires every layer's clip in column 3 |
 | SCENE 4 | SCENE LAUNCH 4 n85 | `/composition/columns/4/connect` | fires every layer's clip in column 4 |
 | SCENE 5 | SCENE LAUNCH 5 n86 | `/composition/columns/5/connect` | fires every layer's clip in column 5 |
-| PREVIOUS SCENE | UP n94 | `/composition/connectprevcolumn` |  |
-| NEXT SCENE | DOWN n95 | `/composition/connectnextcolumn` |  |
+| NEXT SCENE | UP n94 | `/composition/connectnextcolumn` |  |
+| PREVIOUS SCENE | DOWN n95 | `/composition/connectprevcolumn` |  |
 
 ## Decks
 

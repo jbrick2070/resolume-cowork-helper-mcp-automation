@@ -20,7 +20,9 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
+import tempfile
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -267,7 +269,13 @@ def card(entry, hero, grid, rest, path):
 
 
 def shoot(slug, title, rel, folder, blurb, out_root):
-    path = os.path.join(KIT, rel)
+    # Open a temporary copy, never the kit file itself: Avenue may save the open composition
+    # (with the live changes reveal() makes) when it quits, and that once overwrote a kit file.
+    src = os.path.join(KIT, rel)
+    tmp_dir = os.path.join(tempfile.gettempdir(), "resolume_gallery")
+    os.makedirs(tmp_dir, exist_ok=True)
+    path = os.path.join(tmp_dir, os.path.basename(src))
+    shutil.copy2(src, path)
     entry = {"slug": slug, "title": title, "avc": rel, "folder": folder, "blurb": blurb}
     if not rig.ensure_running():
         entry["error"] = "Avenue not reachable"

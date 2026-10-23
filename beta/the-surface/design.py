@@ -279,7 +279,7 @@ def deck1():
                 "Note zero: Scene Launch 1 and press the real bottom-left pad; the picture is the pad.",
                 "Palette: column 4, tap the row-3 FIGURE pad on the beat so index 9 blinks amber over the "
                 "128-cell table.",
-                "Mode 1: DOWN to column 8 and let the SysEx bytes ride the mids; this is the message to send "
+                "Mode 1: UP to column 8 and let the SysEx bytes ride the mids; this is the message to send "
                 "after every power-up."],
             "clips": C}
 
@@ -638,7 +638,7 @@ def deck5():
             "moments": [
                 "T-bar: Scene Launch 3 and ride the real crossfader slowly end to end; the amber T-bar is "
                 "your hand.",
-                "Wipe to PIP: DOWN from Wipe to PIP on a downbeat with Device knob 3 (SPACE) at a quarter and MIRROR QUAD lit "
+                "Wipe to PIP: UP from Wipe to PIP on a downbeat with Device knob 3 (SPACE) at a quarter and MIRROR QUAD lit "
                 "so the window tiles.",
                 "The older wire: column 8, tap any APC button on the beat; the red pins flash - the same note-on, on five pins instead of USB."],
             "clips": C}

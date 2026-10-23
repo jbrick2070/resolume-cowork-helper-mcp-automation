@@ -32,7 +32,7 @@
 **Edirol V-4**
 - BPM Sync on the downbeat: tap TAP TEMPO on the APC with the music; the green pulse is the V-4 cutting for you.
 - T-Bar with the real crossfader, slowly end to end.
-- MIDI then Output Fade: two columns DOWN - the wire, then the fade to white.
+- MIDI then Output Fade: two columns UP - the wire, then the fade to white.
 
 **Videonics MXPro**
 - 501 then Shapes on consecutive downbeats: the number, then the keyhole.
@@ -51,5 +51,5 @@
 
 **Patch Bay**
 - Column 2 and the real crossfader: the gesture every mixer here was built around.
-- Walk columns 4 to 7 DOWN on consecutive downbeats: dissolve, wipe, key, freeze - the grammar.
+- Walk columns 4 to 7 UP on consecutive downbeats: dissolve, wipe, key, freeze - the grammar.
 - Column 8 last, then LEFT four times back to the APC40 deck: the loop closes.

@@ -25,7 +25,7 @@
 ## Signature moments, deck by deck
 
 **Vocabulary**
-- Hierarchy: walk DOWN from Composition to Column one per bar with nothing lit; the blue frame shrinks to a tab, a strip, a bracket, a cell, a column.
+- Hierarchy: walk UP from Composition to Column one per bar with nothing lit; the blue frame shrinks to a tab, a strip, a bracket, a cell, a column.
 - Clip: on column 5 tap the row-2 BODY pad on the beat so the green thumbnail retriggers.
 - Render order: column 8, Device knob 6 (ECHO) at a third so the green pass leaves a trace down the pipeline rows.
 
@@ -47,4 +47,4 @@
 **This Rig**
 - Audio in: Scene Launch 1 - if the input meter is flat, Preferences > Audio is not set to CABLE Output. The composition explains its own silence.
 - MIDI: column 2, press any pad; the pack's LED feedback is what Preferences > MIDI output is for.
-- Shortcut mode: DOWN to column 8 on the last bar, every fader up, and let the interface go blue; BLACKOUT to leave.
+- Shortcut mode: UP to column 8 on the last bar, every fader up, and let the interface go blue; BLACKOUT to leave.

@@ -47,7 +47,7 @@ Text corpus: EDIROL V-4 · 4 x COMPOSITE IN · CHANNEL A · CHANNEL B · T-BAR �
 
 - BPM Sync on the downbeat: tap TAP TEMPO on the APC with the music; the green pulse is the V-4 cutting for you.
 - T-Bar with the real crossfader, slowly end to end.
-- MIDI then Output Fade: two columns DOWN - the wire, then the fade to white.
+- MIDI then Output Fade: two columns UP - the wire, then the fade to white.
 
 ## Deck 3 - Videonics MXPro
 
@@ -138,5 +138,5 @@ Palette: bed #0f1012, body #e8e4d8, figure #3ddc84, light #ffae1a, text #e8e4d8,
 Text corpus: 4 INPUTS, 1 OUT · 8 LAYERS, 1 OUT · T-BAR = CROSSFADER · COMPOSITE · USB · DISSOLVE · WIPE · KEY · FREEZE · MIX
 
 - Column 2 and the real crossfader: the gesture every mixer here was built around.
-- Walk columns 4 to 7 DOWN on consecutive downbeats: dissolve, wipe, key, freeze - the grammar.
+- Walk columns 4 to 7 UP on consecutive downbeats: dissolve, wipe, key, freeze - the grammar.
 - Column 8 last, then LEFT four times back to the APC40 deck: the loop closes.

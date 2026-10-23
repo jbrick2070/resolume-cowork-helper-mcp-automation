@@ -13,7 +13,7 @@ THE SURFACE, in one place
   Pad grid 5x8        rows 1-5 = layers 1-5 (BED BODY FIGURE LIGHT TEXT),
                       clip connect. Bottom row = layer 1.
   Scene Launch 1-5    connect columns 1-5 of the current deck (scenes)
-  UP / DOWN           previous / next scene (column)
+  UP / DOWN           next / previous scene (column): UP walks right
   LEFT / RIGHT        previous / next DECK (world)
   Clip Stop ch1-8     eject layer 1-8
   Track Select ch1-8  select layer
@@ -131,9 +131,10 @@ def build_apc_map(S, deck_clip_names=None):
               "action11", note=n, group="Scenes",
               note_text="fires every layer's clip in column %d" % i,
               led={"Off": fam["dim"], "On": fam["on"]})
-    P.add("PREVIOUS SCENE", "note", "/composition/connectprevcolumn",
-          "action1", note=94, group="Scenes", led={"Off": 0, "On": 127})
+    # UP walks forward (to the right), DOWN walks back: the performer's choice, 2026-10-23
     P.add("NEXT SCENE", "note", "/composition/connectnextcolumn",
+          "action1", note=94, group="Scenes", led={"Off": 0, "On": 127})
+    P.add("PREVIOUS SCENE", "note", "/composition/connectprevcolumn",
           "action1", note=95, group="Scenes", led={"Off": 0, "On": 127})
     P.add("PREVIOUS DECK", "note", "/composition/selectprevdeck",
           "action11", note=97, group="Decks", led={"Off": 0, "On": 1},
