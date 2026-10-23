@@ -1,0 +1,55 @@
+{
+  "key": "examplesleeve",
+  "theme": {
+    "name": "Example Sleeve",
+    "blurb": "Made from example_sleeve.png: its 3 dominant colours mapped to the nearest of the APC40 mkII's 128 LED colours (107, 2, 93).",
+    "remap": "pairs",
+    "pairs": [
+      [
+        107,
+        127,
+        2
+      ],
+      [
+        2,
+        71,
+        93
+      ],
+      [
+        93,
+        112,
+        107
+      ]
+    ],
+    "playing": {
+      "colour": 2,
+      "kind": "pulsing",
+      "div": "1/2"
+    },
+    "ambient": {
+      "kind": "pulse",
+      "colours": [
+        127,
+        107
+      ],
+      "div": "1/2"
+    },
+    "touch": {
+      "kind": "ripple",
+      "colours": [
+        107,
+        2,
+        93,
+        3
+      ],
+      "div": "1/8",
+      "step": 0.25
+    },
+    "scene": {
+      "colour": 107,
+      "kind": "pulsing",
+      "div": "1/2",
+      "secondary": 2
+    }
+  }
+}
