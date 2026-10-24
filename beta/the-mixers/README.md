@@ -2,7 +2,7 @@
 
 *Three mixers, a VCR, an edit controller and the APC40. LEFT and RIGHT walk between them.*
 
-A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 384 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 432 of its parameters listen to the music through Resolume's external FFT.
+A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 384 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 855 of its parameters listen to the music through Resolume's external FFT.
 
 | | |
 |---|---|
@@ -50,7 +50,7 @@ Scenes: Four Into Eight -> T-Bar / Crossfader -> Composite / USB -> Dissolve -> 
 
 ## FFT philosophy
 
-The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter uncorrected tape lines and the MIDI pins. Colour never reacts. Text never moves. Every number on screen is from the sources in docs/.
+The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter uncorrected tape lines and the MIDI pins. Since the kinetic pass the room never stops: every deck has a moving texture under it, pads drift, knobs turn with the mids, figures punch on the kick and leave trails, and light blooms with the lows. Colour never reacts. Captions never move. Every number on screen is from the sources in docs/.
 
 ## Built from the running application
 

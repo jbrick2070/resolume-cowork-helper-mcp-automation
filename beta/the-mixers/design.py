@@ -507,9 +507,116 @@ def write(decks, bible_extra):
             print("  %s: missing %s dup %s" % (d["name"], missing, dup))
 
 
+# ================================================================ KINETIC PASS
+# The pilot of the "more kinetic" plan (2026-10-23): one pass over every finished deck.
+# Captions (layer 5) are never touched, so every sourced line stays still and readable.
+# Set KINETIC = False to build the still version for comparison.
+KINETIC = True
+
+# one moving texture per deck on GRAIN (layer 7, Add): the room never stops
+MOTION = {
+    "apc40": ("Desk Floor", "Line Scape",
+              {"Tilt": 68.0, "Direction": 0.0, "Position Y": 8.0, "Speed": 0.6, "Height": 6.0,
+               "Jagginess": 0.15, "Wobble": 0.1, "Attenuation": 120.0, "Line Width": 0.25,
+               "Fuzzyness": 0.3, "Color": SILK, "Show Knots": False},
+              fft("Height", "low", 4.0, 12.0, 9.0, 200), 0.55),
+    "v4": ("Signal Tunnel", "Tunnelines",
+           {"Line Width": 0.01, "Zoom": 1.5, "Vertical": 0.08, "Frequency": 0.25, "Horizontal": 0.09,
+            "Color 1": EDIROL, "Color 2": CLEAR},
+           fft("Zoom", "low", 1.2, 2.4, 10.0, 160), 0.6),
+    "mxpro": ("Effect Spiral", "Spiral",
+              {"Direction": "Clockwise", "Speed": 0.35, "Zoom": 1.0, "Leafs": 3, "Spread Even": 1.0,
+               "Fuzzyness": 0.3, "Color": VIDEONICS, "BG Color": CLEAR},
+              fft("Zoom", "low", 0.9, 1.4, 9.0, 180), 0.5),
+    "mx1": ("Scan Lines", "Sine Wave",
+            {"Waves": 12, "Mode": "Line", "Line Width": 0.02, "Fuzzyness": 0.3, "Direction": "Horizontal",
+             "Mirror": False, "Frequency": 2.0, "Main Speed": 3.0, "Modulator": 2.0, "Modulation Depth": 0.5,
+             "Modulator Speed": 2.0, "Amplitude": 0.06, "Position": 0.5, "Color": VIDEONICS, "BG Color": CLEAR},
+            fft("Amplitude", "mid", 0.04, 0.2, 9.0, 160), 0.5),
+    "jvc": ("Tracking Bars", "Sine Wave",
+            {"Waves": 3, "Mode": "Line", "Line Width": 0.08, "Fuzzyness": 0.6, "Direction": "Vertical",
+             "Mirror": False, "Frequency": 0.0, "Main Speed": 6.0, "Modulator": 1.0, "Modulation Depth": 0.3,
+             "Modulator Speed": 1.0, "Amplitude": 0.04, "Position": 0.5, "Color": SILK, "BG Color": CLEAR},
+            fft("Amplitude", "high", 0.02, 0.1, 9.0, 120), 0.45),
+    "patchbay": ("Patch Spiral", "Spiral",
+                 {"Direction": "Anti-clockwise", "Speed": 0.3, "Zoom": 1.2, "Leafs": 2, "Spread Even": 1.0,
+                  "Fuzzyness": 0.3, "Color": SILK, "BG Color": CLEAR},
+                 fft("Zoom", "low", 1.0, 1.5, 9.0, 180), 0.45),
+}
+TEXT_SOURCES = ("Text Block", "Text Animator")
+
+
+def _snappy(f, release_cap=260):
+    """Audio-driven moves that come back fast enough to read as hits, not drift."""
+    for spec in f.values():
+        spec["release"] = min(spec["release"], release_cap)
+    return f
+
+
+def _widen(f, param, factor):
+    spec = f.get(param)
+    if spec:
+        spec["ceiling"] = spec["floor"] + (spec["ceiling"] - spec["floor"]) * factor
+
+
+def kinetic_clip(c, slug):
+    layer, src, p = c["layer"], c["source"], c["params"]
+    if layer == 5:
+        if src == "Text Block":                       # captions stay put, a quarter smaller
+            p["Size"] = max(0.5, round(float(p.get("Size", 0.9)) * 0.75, 3))
+        return c
+    if layer == 7 and c["name"] == "Matte Tooth" and slug in MOTION:
+        name, msrc, mparams, mfft, op = MOTION[slug]
+        return clip(7, c["column"], name, msrc, dict(mparams), "Kinetic pass: the room keeps moving.",
+                    opacity=op, fft={k: dict(v) for k, v in mfft.items()},
+                    effects=[{"effect": "Infinite Zoom",          # continuous travel, on its own clock
+                              "params": {"Rotation Speed": 0.08, "Zoom": 0.04, "Range": 4.0, "Alpha": 0.7,
+                                         "Num Slices": 6}}])
+    if src == "Metaballs":                            # pads and sockets drift and breathe
+        p["Speed"] = max(float(p.get("Speed", 0.0)), 0.8)
+        _widen(c["fft"], "Size", 2.0)
+    elif src == "Shaper":                             # buttons and windows shimmer at the edge
+        p["Noise Speed"] = 0.6
+        p["Noise Amount"] = max(float(p.get("Noise Amount", 0.0)), 0.04)
+    elif src == "Sine Wave":                          # scopes run instead of idling
+        p["Main Speed"] = max(float(p.get("Main Speed", 1.0)), 4.0)
+        p["Modulator Speed"] = 2.0
+        _widen(c["fft"], "Amplitude", 1.8)
+    elif src == "Rings" and float(p.get("Gap", 0.0)) > 0:
+        c["effects"].append({"effect": "Transform", "params": {"Rotation Z": 0.0},
+                             "fft": fft("Rotation Z", "mid", -70.0, 70.0, 10.0, 180)})   # knobs turn with the mids
+    if layer in (2, 3) and src != "Solid Color" and len(c["effects"]) < 4:
+        top = 108.0 if src in TEXT_SOURCES else (125.0 if layer == 3 else 112.0)
+        c["effects"].append({"effect": "Transform", "params": {"Scale": 100.0},
+                             "fft": fft("Scale", "low", 100.0, top, 11.0, 120)})      # figures punch on the kick
+    _snappy(c["fft"])
+    return c
+
+
+KINETIC_BIBLE = {
+    # effects that stay on a whole layer, whatever clip is playing
+    "layer_effects": {
+        "2": [{"effect": "Wave Warp", "params": {"Mode": 0.0, "Width": 0.25, "Speed": 0.25, "Pin edges?": True},
+               "fft": fft("Height", "mid", 0.02, 0.08, 9.0, 200)}],
+        "3": [{"effect": "Trails", "params": {"Mode": "Lighten", "Feedback": 0.55}, "wet_max": 0.8}],
+        "4": [{"effect": "Bloom", "params": {"Threshold": 0.6, "Iterations": 2, "Size": 0.3},
+               "fft": fft("Amount", "low", 0.2, 0.75, 10.0, 160)}],
+        "8": [{"effect": "Shift RGB", "params": {"Mode": "Shift X", "R": 0.2, "B": -0.2},
+               "fft": fft("Distance", "high", 0.0, 0.03, 9.0, 120)}],
+    },
+    # a short crossfade when a layer changes clip, so presses glide instead of cutting
+    "layer_transition_ms": {"1": 250, "2": 200, "3": 150, "6": 400, "7": 300},
+}
+
+
 def main():
     decks = [deck1(), deck2(), deck3(), deck4(), deck5(), deck6()]
-    write(decks, {
+    extra = {}
+    if KINETIC:
+        for d in decks:
+            d["clips"] = [kinetic_clip(c, d["slug"]) for c in d["clips"]]
+        extra.update(KINETIC_BIBLE)
+    write(decks, dict(extra, **{
         "effect_wishlist": [
             {"effect": "Bloom", "role": "Bank A: LED bleed and phosphor glow."},
             {"effect": "Trails", "role": "Bank A: the T-bar's travel and the shuttle's scan."},
@@ -519,12 +626,14 @@ def main():
         "fft_philosophy": (
             "The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows "
             "push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter "
-            "uncorrected tape lines and the MIDI pins. Colour never reacts. Text never moves. Every number on screen "
-            "is from the sources in docs/."),
+            "uncorrected tape lines and the MIDI pins. Since the kinetic pass the room never stops: every deck has "
+            "a moving texture under it, pads drift, knobs turn with the mids, figures punch on the kick and leave "
+            "trails, and light blooms with the lows. Colour never reacts. Captions never move. Every number on "
+            "screen is from the sources in docs/."),
         "wildcard_rationale": (
             "Six decks, walked with the APC40's LEFT and RIGHT buttons: the controller itself, three video mixers "
             "(Edirol V-4, Videonics MXPro, Videonics MX-1), a JVC S-VHS deck beside a JVC pro edit controller it "
-            "never met, and a patch bay of the words they share.")})
+            "never met, and a patch bay of the words they share.")}))
 
 
 if __name__ == "__main__":

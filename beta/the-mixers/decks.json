@@ -30,7 +30,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.3,
      "Color": "#e8e4d866",
@@ -40,12 +40,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A row of unlit pads."
    },
@@ -61,7 +77,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.1,
      "Color": "#3ddc84ff",
@@ -71,12 +87,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A row of pads lit together."
    },
@@ -108,7 +140,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -140,15 +172,45 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -163,10 +225,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -176,14 +238,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -222,7 +284,23 @@
      "Color": "#1f2126ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "Silkscreen rules across the panel."
    },
@@ -234,8 +312,8 @@
     "params": {
      "Scale": 0.16,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.0,
      "Outline Color": "#3ddc84ff"
@@ -244,7 +322,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.16,
       "ceiling": 0.2
      }
@@ -257,6 +335,21 @@
        "Scale H": 62.0,
        "Position X": -480.0,
        "Position Y": 150.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -291,7 +384,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -323,15 +416,45 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -346,10 +469,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -359,14 +482,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -402,7 +525,23 @@
      "Color": "#1f2126ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "Silkscreen rules across the panel."
    },
@@ -423,12 +562,28 @@
      "Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.02,
       "ceiling": 0.05
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Eight channel faders and a master, 45 mm travel."
    },
@@ -460,7 +615,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -492,15 +647,45 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -515,10 +700,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -528,14 +713,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -579,7 +764,7 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
@@ -592,6 +777,36 @@
        "Position Y": 120,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
       }
      }
     ],
@@ -620,7 +835,7 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
@@ -633,6 +848,36 @@
        "Position Y": 120,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -667,7 +912,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -699,15 +944,45 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -722,10 +997,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -735,14 +1010,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -778,7 +1053,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The slot the bar travels in."
    },
@@ -799,12 +1090,28 @@
      "Position": {
       "band": "low",
       "gain": 9.0,
-      "release": 800,
+      "release": 260,
       "floor": 0.05,
       "ceiling": 0.95
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The crossfader, CC15: A left, B right, centre is both."
    },
@@ -836,7 +1143,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -868,15 +1175,45 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -891,10 +1228,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -904,14 +1241,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -956,12 +1293,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "USB type B: bus powered, no supply needed, class compliant."
    },
@@ -977,7 +1330,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.1,
     "why": "Bus powered: the cable is the supply."
    },
@@ -1009,7 +1378,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -1041,15 +1410,45 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1064,10 +1463,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1077,14 +1476,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1127,6 +1526,21 @@
        "Position X": 560.0,
        "Position Y": 80.0
       }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
      }
     ],
     "opacity": 0.7,
@@ -1144,7 +1558,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.12,
     "why": "F0 47 7F 29 60 00 04 <40|41|42> 00 00 00 F7."
    },
@@ -1176,7 +1606,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -1208,15 +1638,45 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1231,10 +1691,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1244,14 +1704,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1287,7 +1747,23 @@
      "Color": "#1f2126ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "Silkscreen rules across the panel."
    },
@@ -1317,7 +1793,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "What the other decks are played from."
    },
@@ -1349,7 +1841,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -1381,15 +1873,45 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Desk Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.55,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1404,10 +1926,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1417,14 +1939,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1463,7 +1985,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.25,
      "Color": "#5b7a99ff",
@@ -1473,12 +1995,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.09,
-      "ceiling": 0.14
+      "ceiling": 0.19000000000000003
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The four input columns of the panel."
    },
@@ -1508,7 +2046,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The badge."
    },
@@ -1540,7 +2094,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -1572,15 +2126,40 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1595,10 +2174,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1608,14 +2187,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1649,7 +2228,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.3,
      "Color": "#e8e4d8ff",
@@ -1659,12 +2238,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.09,
-      "ceiling": 0.14
+      "ceiling": 0.19000000000000003
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Four composite inputs on RCA."
    },
@@ -1680,7 +2275,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.1,
      "Color": "#5b7a99ff",
@@ -1690,12 +2285,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.09,
-      "ceiling": 0.14
+      "ceiling": 0.19000000000000003
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "S-Video on inputs 1 and 2, which takes priority."
    },
@@ -1727,7 +2338,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -1759,15 +2370,40 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1782,10 +2418,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1795,14 +2431,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1836,7 +2472,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.2,
      "Color": "#e8e4d866",
@@ -1846,12 +2482,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Channel A: input select buttons 1-4."
    },
@@ -1867,7 +2519,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.2,
      "Color": "#3ddc84ff",
@@ -1877,12 +2529,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Channel B: input select buttons 1-4."
    },
@@ -1914,7 +2582,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -1946,15 +2614,40 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1969,10 +2662,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1982,14 +2675,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2025,7 +2718,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The slot the bar travels in."
    },
@@ -2046,12 +2755,28 @@
      "Position": {
       "band": "low",
       "gain": 9.0,
-      "release": 800,
+      "release": 260,
       "floor": 0.05,
       "ceiling": 0.95
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A T-bar of over 100 steps; it mounts horizontal or vertical."
    },
@@ -2083,7 +2808,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -2115,15 +2840,40 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2138,10 +2888,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2151,14 +2901,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2205,7 +2955,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.2,
     "why": "Channel A's first effect button: Strobe."
    },
@@ -2237,7 +3003,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -2269,15 +3035,40 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2292,10 +3083,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2305,14 +3096,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2346,7 +3137,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#e8e4d866",
@@ -2356,12 +3147,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Four beats to the bar."
    },
@@ -2377,7 +3184,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.16,
     "why": "BPM SYNC switches A and B on the beat without touching the fader."
    },
@@ -2409,7 +3232,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -2441,15 +3264,40 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2464,10 +3312,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2477,14 +3325,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2528,12 +3376,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.06
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "MIDI IN and MIDI OUT on 5-pin DIN; THRU is a soft option."
    },
@@ -2549,7 +3413,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.0,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#e03a2fff",
@@ -2561,10 +3425,26 @@
       "gain": 9.0,
       "release": 200,
       "floor": 0.05,
-      "ceiling": 0.08
+      "ceiling": 0.11
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Five pins in a 180-degree arc."
    },
@@ -2596,7 +3476,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -2633,15 +3513,40 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2656,10 +3561,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -2669,14 +3574,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2712,7 +3617,23 @@
      "Type": "Horizontal"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "Black on the left, white on the right."
    },
@@ -2738,12 +3659,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "OUTPUT FADE: left to black, right to white."
    },
@@ -2775,7 +3727,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -2807,15 +3759,40 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#5b7a99ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.6,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2830,10 +3807,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2843,14 +3820,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2916,7 +3893,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The badge."
    },
@@ -2948,7 +3941,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -2980,15 +3973,41 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3003,10 +4022,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3016,14 +4035,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3057,7 +4076,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.2,
      "Color": "#e8e4d866",
@@ -3067,12 +4086,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "CURRENT: A B C D COLOR."
    },
@@ -3088,7 +4123,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.2,
      "Color": "#3ddc84ff",
@@ -3098,12 +4133,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "NEXT: A B C D COLOR; they swap after each transition."
    },
@@ -3135,7 +4186,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -3167,15 +4218,41 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3190,10 +4267,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3203,14 +4280,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3253,6 +4330,21 @@
        "Position X": 560.0,
        "Position Y": 80.0
       }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
      }
     ],
     "opacity": 0.7,
@@ -3284,7 +4376,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "501 transitions, up from the MX-1's 210."
    },
@@ -3316,7 +4424,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -3348,15 +4456,41 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3371,10 +4505,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3384,14 +4518,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3434,8 +4568,8 @@
     "params": {
      "Scale": 0.3,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.02,
      "Outline Color": "#e8e4d8ff"
@@ -3444,7 +4578,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.3,
       "ceiling": 0.36
      }
@@ -3457,6 +4591,21 @@
        "Scale H": 100.0,
        "Position X": 0.0,
        "Position Y": 0.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -3491,7 +4640,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -3523,15 +4672,41 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3546,10 +4721,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3559,14 +4734,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3609,6 +4784,21 @@
        "Position X": 560.0,
        "Position Y": 80.0
       }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
      }
     ],
     "opacity": 0.7,
@@ -3622,8 +4812,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -3632,7 +4822,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -3645,6 +4835,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -3679,7 +4884,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -3711,15 +4916,41 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3734,10 +4965,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3747,14 +4978,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3801,7 +5032,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.2,
     "why": "STROBE 0-9, switched off during transitions."
    },
@@ -3833,7 +5080,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -3865,15 +5112,41 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3888,10 +5161,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3901,14 +5174,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3942,7 +5215,23 @@
      "Color 2": "#e8e4d866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "Up to 16 images on one screen."
    },
@@ -3954,8 +5243,8 @@
     "params": {
      "Scale": 0.3,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.02,
      "Outline Color": "#e8e4d8ff"
@@ -3964,7 +5253,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.3,
       "ceiling": 0.36
      }
@@ -3977,6 +5266,21 @@
        "Scale H": 25.0,
        "Position X": -360.0,
        "Position Y": -200.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -4011,7 +5315,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -4043,15 +5347,41 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4066,10 +5396,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4079,14 +5409,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4120,7 +5450,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#e8e4d866",
@@ -4130,12 +5460,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "8 learned environments survive power-off."
    },
@@ -4151,7 +5497,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.12,
     "why": "A GPI pulse on the mini-jack acts exactly as PLAY."
    },
@@ -4183,7 +5545,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -4215,15 +5577,41 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Effect Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4238,10 +5626,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4251,14 +5639,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4324,7 +5712,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The badge."
    },
@@ -4356,7 +5760,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -4388,15 +5792,48 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4411,10 +5848,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4424,14 +5861,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4467,7 +5904,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The slot the bar travels in."
    },
@@ -4488,12 +5941,28 @@
      "Position": {
       "band": "low",
       "gain": 9.0,
-      "release": 800,
+      "release": 260,
       "floor": 0.05,
       "ceiling": 0.95
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "'T-bar' is short for 'Take-bar'; start it from either end."
    },
@@ -4525,7 +5994,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -4557,15 +6026,48 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4580,10 +6082,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4593,14 +6095,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4643,6 +6145,21 @@
        "Position X": 560.0,
        "Position Y": 80.0
       }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
      }
     ],
     "opacity": 0.7,
@@ -4674,7 +6191,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "210 effects, numbered 0 to 239."
    },
@@ -4706,7 +6239,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -4738,15 +6271,48 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4761,10 +6327,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4774,14 +6340,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4815,7 +6381,23 @@
      "Color 2": "#d8cfb866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.5,
     "why": "Preview: all four inputs live at once."
    },
@@ -4827,8 +6409,8 @@
     "params": {
      "Scale": 0.3,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.02,
      "Outline Color": "#e8e4d8ff"
@@ -4837,7 +6419,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.3,
       "ceiling": 0.36
      }
@@ -4850,6 +6432,21 @@
        "Scale H": 50.0,
        "Position X": -480.0,
        "Position Y": -270.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -4884,7 +6481,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -4916,15 +6513,48 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4939,10 +6569,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4952,14 +6582,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5006,7 +6636,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.18,
     "why": "Strobe setting 1 is the 'film look'."
    },
@@ -5038,7 +6684,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -5070,15 +6716,48 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5093,10 +6772,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5106,14 +6785,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5156,8 +6835,8 @@
     "params": {
      "Scale": 0.3,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e8e4d8ff",
      "Outline": 0.02,
      "Outline Color": "#e8e4d8ff"
@@ -5166,7 +6845,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.3,
       "ceiling": 0.36
      }
@@ -5179,6 +6858,21 @@
        "Scale H": 90.0,
        "Position X": 0.0,
        "Position Y": 0.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -5213,7 +6907,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -5245,15 +6939,48 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5268,10 +6995,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5281,14 +7008,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5319,7 +7046,23 @@
      "Mode": "Grayscale"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.35,
     "why": "A frozen field: one picture held."
    },
@@ -5331,8 +7074,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -5341,7 +7084,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -5354,6 +7097,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -5388,7 +7146,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -5420,15 +7178,48 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5443,10 +7234,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5456,14 +7247,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5557,7 +7348,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -5589,15 +7380,48 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#d8cfb8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.5,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5612,10 +7436,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5625,14 +7449,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5673,7 +7497,23 @@
      "Color": "#1f2126ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The tray and the transport."
    },
@@ -5703,7 +7543,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The format badge on the tray door."
    },
@@ -5735,7 +7591,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -5767,15 +7623,48 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5790,10 +7679,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5803,14 +7692,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5854,12 +7743,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The JOG dial, on the front panel."
    },
@@ -5875,7 +7795,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.12,
     "why": "One click, one frame: right forward, left back."
    },
@@ -5907,7 +7843,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -5939,15 +7875,48 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5962,10 +7931,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5975,14 +7944,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6026,12 +7995,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The TIME SCAN SHUTTLE ring around the jog dial."
    },
@@ -6052,12 +8052,28 @@
      "Position": {
       "band": "mid",
       "gain": 9.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.9
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The picture scanning at speed."
    },
@@ -6089,7 +8105,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -6121,15 +8137,48 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6144,10 +8193,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6157,14 +8206,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6208,12 +8257,43 @@
      "Rotation": {
       "band": "low",
       "gain": 6.0,
-      "release": 900,
+      "release": 260,
       "floor": 0.0,
       "ceiling": 180.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "The spinning head drum."
    },
@@ -6229,7 +8309,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#3ddc84ff",
@@ -6239,12 +8319,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.09,
-      "ceiling": 0.14
+      "ceiling": 0.19000000000000003
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "4 video heads and 2 hi-fi audio heads."
    },
@@ -6276,7 +8372,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -6308,15 +8404,48 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6331,10 +8460,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6344,14 +8473,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6390,12 +8519,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.8
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.4,
     "why": "Unstable tape lines before correction."
    },
@@ -6413,7 +8558,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.5,
     "why": "The same lines after the time base corrector."
    },
@@ -6445,7 +8606,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -6477,15 +8638,48 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6500,10 +8694,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6513,14 +8707,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6581,7 +8775,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The S-VHS ET button, lit."
    },
@@ -6613,7 +8823,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -6645,15 +8855,48 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6668,10 +8911,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6681,14 +8924,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6732,7 +8975,7 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
@@ -6745,6 +8988,36 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
       }
      }
     ],
@@ -6773,7 +9046,7 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
@@ -6786,6 +9059,36 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 10.0,
+        "release": 180,
+        "floor": -70.0,
+        "ceiling": 70.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -6820,7 +9123,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -6852,15 +9155,48 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6875,10 +9211,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6888,14 +9224,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6929,7 +9265,23 @@
      "Color 2": "#3a6fd8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.5,
     "why": "Colour-coded edit keys: ASSEM orange, AUDIO green, VIDEO blue."
    },
@@ -6941,8 +9293,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e03a2fff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -6951,7 +9303,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -6964,6 +9316,21 @@
        "Position Y": -200,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -6998,7 +9365,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -7035,15 +9402,48 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 0.0,
+     "Main Speed": 6.0,
+     "Modulator": 1.0,
+     "Modulation Depth": 0.3,
+     "Modulator Speed": 1.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7058,10 +9458,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -7071,14 +9471,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7117,7 +9517,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.3,
      "Color": "#e8e4d8ff",
@@ -7127,12 +9527,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.09,
-      "ceiling": 0.14
+      "ceiling": 0.19000000000000003
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "A mixer has four inputs."
    },
@@ -7148,7 +9564,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.2,
      "Color": "#3ddc84ff",
@@ -7158,12 +9574,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Resolume has eight layers here."
    },
@@ -7195,7 +9627,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -7227,15 +9659,41 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7250,10 +9708,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -7263,14 +9721,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7306,7 +9764,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The slot the bar travels in."
    },
@@ -7327,12 +9801,28 @@
      "Position": {
       "band": "low",
       "gain": 9.0,
-      "release": 800,
+      "release": 260,
       "floor": 0.05,
       "ceiling": 0.95
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The mixer's T-bar and the APC's crossfader are the same gesture."
    },
@@ -7364,7 +9854,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -7396,15 +9886,41 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7419,10 +9935,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -7432,14 +9948,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7483,12 +9999,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.06
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Composite video on a coax: one wire, one picture."
    },
@@ -7515,12 +10047,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "USB: one wire, every message."
    },
@@ -7552,7 +10100,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -7589,15 +10137,41 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7612,10 +10186,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -7625,14 +10199,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7708,7 +10282,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -7740,15 +10314,41 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7763,10 +10363,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -7776,14 +10376,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7835,12 +10435,28 @@
      "Position": {
       "band": "mid",
       "gain": 8.0,
-      "release": 900,
+      "release": 260,
       "floor": 0.0,
       "ceiling": 1.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A wipe revealing the other bus."
    },
@@ -7872,7 +10488,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -7904,15 +10520,41 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7927,10 +10569,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -7940,14 +10582,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7990,8 +10632,8 @@
     "params": {
      "Scale": 0.3,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e8e4d8ff",
      "Outline": 0.02,
      "Outline Color": "#e8e4d8ff"
@@ -8000,7 +10642,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.3,
       "ceiling": 0.36
      }
@@ -8013,6 +10655,21 @@
        "Scale H": 90.0,
        "Position X": 520.0,
        "Position Y": -280.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
       }
      }
     ],
@@ -8047,7 +10704,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -8079,15 +10736,41 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -8102,10 +10785,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -8115,14 +10798,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -8153,7 +10836,23 @@
      "Mode": "Grayscale"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 0.35,
     "why": "A frozen field: one picture held."
    },
@@ -8169,7 +10868,23 @@
      "Color 2": "#00000000"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 125.0
+       }
+      }
+     }
+    ],
     "opacity": 0.18,
     "why": "A strobe: the frame held and dropped."
    },
@@ -8201,7 +10916,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -8233,15 +10948,41 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -8256,10 +10997,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -8269,14 +11010,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -8312,7 +11053,23 @@
      "Color": "#1f2126ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 112.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "Silkscreen rules across the panel."
    },
@@ -8342,7 +11099,23 @@
      "Scale": 0.9
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 11.0,
+        "release": 120,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The one verb every box here shares."
    },
@@ -8374,7 +11147,7 @@
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 0.9,
+     "Size": 0.675,
      "Alignment": "Left",
      "AlignmentVertically": "Bottom",
      "Line Width": 1400.0,
@@ -8406,15 +11179,41 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Patch Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.04,
+       "Range": 4.0,
+       "Alpha": 0.7,
+       "Num Slices": 6
+      }
+     }
+    ],
+    "opacity": 0.45,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -8429,10 +11228,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -8442,14 +11241,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }

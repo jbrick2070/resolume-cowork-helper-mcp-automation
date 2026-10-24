@@ -388,6 +388,83 @@
     ]
    }
   ],
+  "layer_effects": {
+   "2": [
+    {
+     "effect": "Wave Warp",
+     "params": {
+      "Mode": 0.0,
+      "Width": 0.25,
+      "Speed": 0.25,
+      "Pin edges?": true
+     },
+     "fft": {
+      "Height": {
+       "band": "mid",
+       "gain": 9.0,
+       "release": 200,
+       "floor": 0.02,
+       "ceiling": 0.08
+      }
+     }
+    }
+   ],
+   "3": [
+    {
+     "effect": "Trails",
+     "params": {
+      "Mode": "Lighten",
+      "Feedback": 0.55
+     },
+     "wet_max": 0.8
+    }
+   ],
+   "4": [
+    {
+     "effect": "Bloom",
+     "params": {
+      "Threshold": 0.6,
+      "Iterations": 2,
+      "Size": 0.3
+     },
+     "fft": {
+      "Amount": {
+       "band": "low",
+       "gain": 10.0,
+       "release": 160,
+       "floor": 0.2,
+       "ceiling": 0.75
+      }
+     }
+    }
+   ],
+   "8": [
+    {
+     "effect": "Shift RGB",
+     "params": {
+      "Mode": "Shift X",
+      "R": 0.2,
+      "B": -0.2
+     },
+     "fft": {
+      "Distance": {
+       "band": "high",
+       "gain": 9.0,
+       "release": 120,
+       "floor": 0.0,
+       "ceiling": 0.03
+      }
+     }
+    }
+   ]
+  },
+  "layer_transition_ms": {
+   "1": 250,
+   "2": 200,
+   "3": 150,
+   "6": 400,
+   "7": 300
+  },
   "effect_wishlist": [
    {
     "effect": "Bloom",
@@ -410,7 +487,7 @@
     "role": "Bank D: the quad preview."
    }
   ],
-  "fft_philosophy": "The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter uncorrected tape lines and the MIDI pins. Colour never reacts. Text never moves. Every number on screen is from the sources in docs/.",
+  "fft_philosophy": "The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter uncorrected tape lines and the MIDI pins. Since the kinetic pass the room never stops: every deck has a moving texture under it, pads drift, knobs turn with the mids, figures punch on the kick and leave trails, and light blooms with the lows. Colour never reacts. Captions never move. Every number on screen is from the sources in docs/.",
   "wildcard_rationale": "Six decks, walked with the APC40's LEFT and RIGHT buttons: the controller itself, three video mixers (Edirol V-4, Videonics MXPro, Videonics MX-1), a JVC S-VHS deck beside a JVC pro edit controller it never met, and a patch bay of the words they share."
  },
  "rack": {
@@ -807,8 +884,8 @@
   "decks": 6,
   "clips": 384,
   "comp_effects": 34,
-  "fft_nodes": 432,
-  "bytes": 1743470
+  "fft_nodes": 855,
+  "bytes": 2100113
  },
  "preset": 164,
  "repairs": 0,
@@ -927,7 +1004,7 @@
    "Pad Row (Dim)",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of unlit pads."
   ],
   [
@@ -940,7 +1017,7 @@
    "Five Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -953,7 +1030,7 @@
    "Nine Slots",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -966,7 +1043,7 @@
    "Track Knob",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform, Transform",
    "Eight track knobs with LED rings, CC48-55."
   ],
   [
@@ -979,7 +1056,7 @@
    "Crossfader Slot",
    "Lines",
    "",
-   "",
+   "Transform",
    "The slot the bar travels in."
   ],
   [
@@ -992,7 +1069,7 @@
    "USB-B",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "USB type B: bus powered, no supply needed, class compliant."
   ],
   [
@@ -1005,7 +1082,7 @@
    "Three Modes",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "Mode 0 generic, Mode 1 Ableton Live, Mode 2 alternate: set by SysEx."
   ],
   [
@@ -1018,7 +1095,7 @@
    "Desk Rules",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -1031,7 +1108,7 @@
    "Pad Row",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of pads lit together."
   ],
   [
@@ -1044,7 +1121,7 @@
    "Note 0",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One pad lit in its RGB velocity colour."
   ],
   [
@@ -1057,7 +1134,7 @@
    "Nine Faders",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Eight channel faders and a master, 45 mm travel."
   ],
   [
@@ -1070,7 +1147,7 @@
    "Device Knob",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform, Transform",
    "Eight device knobs with LED rings, CC16-23."
   ],
   [
@@ -1083,7 +1160,7 @@
    "Crossfader",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "The crossfader, CC15: A left, B right, centre is both."
   ],
   [
@@ -1096,7 +1173,7 @@
    "Bus Power",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "Bus powered: the cable is the supply."
   ],
   [
@@ -1109,7 +1186,7 @@
    "SysEx",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "F0 47 7F 29 60 00 04 <40|41|42> 00 00 00 F7."
   ],
   [
@@ -1122,7 +1199,7 @@
    "The Controller",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "What the other decks are played from."
   ],
   [
@@ -1444,11 +1521,11 @@
    "GRAIN",
    1,
    "The Object",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1457,11 +1534,11 @@
    "GRAIN",
    2,
    "40 Pads",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1470,11 +1547,11 @@
    "GRAIN",
    3,
    "9 Faders",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1483,11 +1560,11 @@
    "GRAIN",
    4,
    "16 Knobs",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1496,11 +1573,11 @@
    "GRAIN",
    5,
    "Crossfader",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1509,11 +1586,11 @@
    "GRAIN",
    6,
    "USB-B",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1522,11 +1599,11 @@
    "GRAIN",
    7,
    "Three Modes",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1535,11 +1612,11 @@
    "GRAIN",
    8,
    "On The Desk",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Desk Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1759,7 +1836,7 @@
    "Four Inputs (Panel",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "The four input columns of the panel."
   ],
   [
@@ -1772,7 +1849,7 @@
    "Composite 1-4",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Four composite inputs on RCA."
   ],
   [
@@ -1785,7 +1862,7 @@
    "Channel A",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Channel A: input select buttons 1-4."
   ],
   [
@@ -1798,7 +1875,7 @@
    "T-Bar Slot",
    "Lines",
    "",
-   "",
+   "Transform",
    "The slot the bar travels in."
   ],
   [
@@ -1824,7 +1901,7 @@
    "Beat Grid",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Four beats to the bar."
   ],
   [
@@ -1837,7 +1914,7 @@
    "MIDI IN",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "MIDI IN and MIDI OUT on 5-pin DIN; THRU is a soft option."
   ],
   [
@@ -1850,7 +1927,7 @@
    "Fade Ramp",
    "Gradient",
    "",
-   "",
+   "Transform",
    "Black on the left, white on the right."
   ],
   [
@@ -1863,7 +1940,7 @@
    "Edirol V-4",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "The badge."
   ],
   [
@@ -1876,7 +1953,7 @@
    "S-Video 1-2",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "S-Video on inputs 1 and 2, which takes priority."
   ],
   [
@@ -1889,7 +1966,7 @@
    "Channel B",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Channel B: input select buttons 1-4."
   ],
   [
@@ -1902,7 +1979,7 @@
    "T-Bar",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "A T-bar of over 100 steps; it mounts horizontal or vertical."
   ],
   [
@@ -1915,7 +1992,7 @@
    "Strobe",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "Channel A's first effect button: Strobe."
   ],
   [
@@ -1928,7 +2005,7 @@
    "BPM Sync",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "BPM SYNC switches A and B on the beat without touching the fader."
   ],
   [
@@ -1941,7 +2018,7 @@
    "Five Pins",
    "Metaballs",
    "Size>high",
-   "",
+   "Transform",
    "Five pins in a 180-degree arc."
   ],
   [
@@ -1954,7 +2031,7 @@
    "Output Fade",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "OUTPUT FADE: left to black, right to white."
   ],
   [
@@ -2276,11 +2353,11 @@
    "GRAIN",
    1,
    "The Box",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2289,11 +2366,11 @@
    "GRAIN",
    2,
    "Four Inputs",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2302,11 +2379,11 @@
    "GRAIN",
    3,
    "A / B Buses",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2315,11 +2392,11 @@
    "GRAIN",
    4,
    "T-Bar",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2328,11 +2405,11 @@
    "GRAIN",
    5,
    "Effects",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2341,11 +2418,11 @@
    "GRAIN",
    6,
    "BPM Sync",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2354,11 +2431,11 @@
    "GRAIN",
    7,
    "MIDI",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2367,11 +2444,11 @@
    "GRAIN",
    8,
    "Output Fade",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2604,7 +2681,7 @@
    "Current Row",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "CURRENT: A B C D COLOR."
   ],
   [
@@ -2617,7 +2694,7 @@
    "Five Categories",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "USER, BASIC, EDGES, TRAILING, SHAPES."
   ],
   [
@@ -2643,7 +2720,7 @@
    "Keypad",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "Type the transition number."
   ],
   [
@@ -2669,7 +2746,7 @@
    "Sixteen Tiles",
    "Checkered",
    "",
-   "",
+   "Transform",
    "Up to 16 images on one screen."
   ],
   [
@@ -2682,7 +2759,7 @@
    "Eight Memories",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "8 learned environments survive power-off."
   ],
   [
@@ -2695,7 +2772,7 @@
    "MXPro",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "The badge."
   ],
   [
@@ -2708,7 +2785,7 @@
    "Next Row",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "NEXT: A B C D COLOR; they swap after each transition."
   ],
   [
@@ -2721,7 +2798,7 @@
    "501",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "501 transitions, up from the MX-1's 210."
   ],
   [
@@ -2734,7 +2811,7 @@
    "Keyhole",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "A shape wipe: the next source grows inside a shape."
   ],
   [
@@ -2747,7 +2824,7 @@
    "PLAY",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "PLAY performs the transition; press it again to wipe back."
   ],
   [
@@ -2760,7 +2837,7 @@
    "Strobe",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "STROBE 0-9, switched off during transitions."
   ],
   [
@@ -2773,7 +2850,7 @@
    "Joystick PIP",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "The joystick places a PIP; new since the MX-1."
   ],
   [
@@ -2786,7 +2863,7 @@
    "GPI Pulse",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "A GPI pulse on the mini-jack acts exactly as PLAY."
   ],
   [
@@ -3108,11 +3185,11 @@
    "GRAIN",
    1,
    "The Box",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3121,11 +3198,11 @@
    "GRAIN",
    2,
    "Current / Next",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3134,11 +3211,11 @@
    "GRAIN",
    3,
    "501",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3147,11 +3224,11 @@
    "GRAIN",
    4,
    "Shapes",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3160,11 +3237,11 @@
    "GRAIN",
    5,
    "Keypad + Play",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3173,11 +3250,11 @@
    "GRAIN",
    6,
    "Input F/X",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3186,11 +3263,11 @@
    "GRAIN",
    7,
    "Multi-PIP",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3199,11 +3276,11 @@
    "GRAIN",
    8,
    "Learn",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Effect Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3436,7 +3513,7 @@
    "Take-Bar Slot",
    "Lines",
    "",
-   "",
+   "Transform",
    "The slot the bar travels in."
   ],
   [
@@ -3449,7 +3526,7 @@
    "Keypad",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "Every effect has a number."
   ],
   [
@@ -3462,7 +3539,7 @@
    "Four Thumbnails",
    "Checkered",
    "",
-   "",
+   "Transform",
    "Preview: all four inputs live at once."
   ],
   [
@@ -3501,7 +3578,7 @@
    "Freeze Frame",
    "Static",
    "",
-   "",
+   "Transform",
    "A frozen field: one picture held."
   ],
   [
@@ -3527,7 +3604,7 @@
    "MX-1",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "The badge."
   ],
   [
@@ -3540,7 +3617,7 @@
    "Take-Bar",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "'T-bar' is short for 'Take-bar'; start it from either end."
   ],
   [
@@ -3553,7 +3630,7 @@
    "0-239",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "210 effects, numbered 0 to 239."
   ],
   [
@@ -3566,7 +3643,7 @@
    "Input A",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Input A's live thumbnail, lit."
   ],
   [
@@ -3579,7 +3656,7 @@
    "Film Look",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "Strobe setting 1 is the 'film look'."
   ],
   [
@@ -3592,7 +3669,7 @@
    "Keyed Source",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Chroma key: pick the colour with an on-screen cursor."
   ],
   [
@@ -3605,7 +3682,7 @@
    "FREEZE",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "FREEZE captures a field."
   ],
   [
@@ -3940,11 +4017,11 @@
    "GRAIN",
    1,
    "The Original",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3953,11 +4030,11 @@
    "GRAIN",
    2,
    "Take-Bar",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3966,11 +4043,11 @@
    "GRAIN",
    3,
    "Numbered",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3979,11 +4056,11 @@
    "GRAIN",
    4,
    "Quad Preview",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3992,11 +4069,11 @@
    "GRAIN",
    5,
    "Film Look",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4005,11 +4082,11 @@
    "GRAIN",
    6,
    "Chroma Key",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4018,11 +4095,11 @@
    "GRAIN",
    7,
    "Freeze",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4031,11 +4108,11 @@
    "GRAIN",
    8,
    "The Club",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4255,7 +4332,7 @@
    "Tape Path",
    "Lines",
    "",
-   "",
+   "Transform",
    "The tray and the transport."
   ],
   [
@@ -4268,7 +4345,7 @@
    "Jog Dial",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "The JOG dial, on the front panel."
   ],
   [
@@ -4281,7 +4358,7 @@
    "Shuttle Ring",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "The TIME SCAN SHUTTLE ring around the jog dial."
   ],
   [
@@ -4294,7 +4371,7 @@
    "Head Drum",
    "Rings",
    "Rotation>low",
-   "",
+   "Transform, Transform",
    "The spinning head drum."
   ],
   [
@@ -4307,7 +4384,7 @@
    "Jitter",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Unstable tape lines before correction."
   ],
   [
@@ -4333,7 +4410,7 @@
    "Player Dial",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform, Transform",
    "RM-G850E: the PLAYER search dial."
   ],
   [
@@ -4346,7 +4423,7 @@
    "Edit Keys",
    "Checkered",
    "",
-   "",
+   "Transform",
    "Colour-coded edit keys: ASSEM orange, AUDIO green, VIDEO blue."
   ],
   [
@@ -4359,7 +4436,7 @@
    "S-VHS",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "The format badge on the tray door."
   ],
   [
@@ -4372,7 +4449,7 @@
    "Frame Step",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "One click, one frame: right forward, left back."
   ],
   [
@@ -4385,7 +4462,7 @@
    "Scan Lines",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "The picture scanning at speed."
   ],
   [
@@ -4398,7 +4475,7 @@
    "Six Heads",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "4 video heads and 2 hi-fi audio heads."
   ],
   [
@@ -4411,7 +4488,7 @@
    "Corrected Lines",
    "Lines",
    "",
-   "",
+   "Transform",
    "The same lines after the time base corrector."
   ],
   [
@@ -4424,7 +4501,7 @@
    "ET",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "The S-VHS ET button, lit."
   ],
   [
@@ -4437,7 +4514,7 @@
    "Recorder Dial",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform, Transform",
    "RM-G850E: the RECORDER search dial."
   ],
   [
@@ -4450,7 +4527,7 @@
    "PERFORM",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "The red PERFORM key between PREVIEW and REVIEW."
   ],
   [
@@ -4772,11 +4849,11 @@
    "GRAIN",
    1,
    "The Deck",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4785,11 +4862,11 @@
    "GRAIN",
    2,
    "Jog",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4798,11 +4875,11 @@
    "GRAIN",
    3,
    "Shuttle",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4811,11 +4888,11 @@
    "GRAIN",
    4,
    "Heads",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4824,11 +4901,11 @@
    "GRAIN",
    5,
    "TBC + 3-DNR",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4837,11 +4914,11 @@
    "GRAIN",
    6,
    "S-VHS ET",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4850,11 +4927,11 @@
    "GRAIN",
    7,
    "RM-G850E",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4863,11 +4940,11 @@
    "GRAIN",
    8,
    "Perform",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -5087,7 +5164,7 @@
    "Four Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A mixer has four inputs."
   ],
   [
@@ -5100,7 +5177,7 @@
    "Slot",
    "Lines",
    "",
-   "",
+   "Transform",
    "The slot the bar travels in."
   ],
   [
@@ -5113,7 +5190,7 @@
    "BNC / RCA",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "Composite video on a coax: one wire, one picture."
   ],
   [
@@ -5165,7 +5242,7 @@
    "Freeze Frame",
    "Static",
    "",
-   "",
+   "Transform",
    "A frozen field: one picture held."
   ],
   [
@@ -5178,7 +5255,7 @@
    "Rules",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -5191,7 +5268,7 @@
    "Eight Layers",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Resolume has eight layers here."
   ],
   [
@@ -5204,7 +5281,7 @@
    "T-Bar = Crossfader",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "The mixer's T-bar and the APC's crossfader are the same gesture."
   ],
   [
@@ -5217,7 +5294,7 @@
    "USB-B",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "USB: one wire, every message."
   ],
   [
@@ -5243,7 +5320,7 @@
    "Wipe Edge",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "A wipe revealing the other bus."
   ],
   [
@@ -5256,7 +5333,7 @@
    "Keyed Window",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "A luma or chroma key: one picture cut into another."
   ],
   [
@@ -5269,7 +5346,7 @@
    "Strobe",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "A strobe: the frame held and dropped."
   ],
   [
@@ -5282,7 +5359,7 @@
    "Mix",
    "Text Animator",
    "",
-   "",
+   "Transform",
    "The one verb every box here shares."
   ],
   [
@@ -5604,11 +5681,11 @@
    "GRAIN",
    1,
    "Four Into Eigh",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,
@@ -5617,11 +5694,11 @@
    "GRAIN",
    2,
    "T-Bar / Crossf",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,
@@ -5630,11 +5707,11 @@
    "GRAIN",
    3,
    "Composite / US",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,
@@ -5643,11 +5720,11 @@
    "GRAIN",
    4,
    "Dissolve",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,
@@ -5656,11 +5733,11 @@
    "GRAIN",
    5,
    "Wipe",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,
@@ -5669,11 +5746,11 @@
    "GRAIN",
    6,
    "Key",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,
@@ -5682,11 +5759,11 @@
    "GRAIN",
    7,
    "Freeze",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,
@@ -5695,11 +5772,11 @@
    "GRAIN",
    8,
    "The Shared Wor",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Patch Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    5,

@@ -387,6 +387,83 @@
    ]
   }
  ],
+ "layer_effects": {
+  "2": [
+   {
+    "effect": "Wave Warp",
+    "params": {
+     "Mode": 0.0,
+     "Width": 0.25,
+     "Speed": 0.25,
+     "Pin edges?": true
+    },
+    "fft": {
+     "Height": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 0.02,
+      "ceiling": 0.08
+     }
+    }
+   }
+  ],
+  "3": [
+   {
+    "effect": "Trails",
+    "params": {
+     "Mode": "Lighten",
+     "Feedback": 0.55
+    },
+    "wet_max": 0.8
+   }
+  ],
+  "4": [
+   {
+    "effect": "Bloom",
+    "params": {
+     "Threshold": 0.6,
+     "Iterations": 2,
+     "Size": 0.3
+    },
+    "fft": {
+     "Amount": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 0.2,
+      "ceiling": 0.75
+     }
+    }
+   }
+  ],
+  "8": [
+   {
+    "effect": "Shift RGB",
+    "params": {
+     "Mode": "Shift X",
+     "R": 0.2,
+     "B": -0.2
+    },
+    "fft": {
+     "Distance": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.0,
+      "ceiling": 0.03
+     }
+    }
+   }
+  ]
+ },
+ "layer_transition_ms": {
+  "1": 250,
+  "2": 200,
+  "3": 150,
+  "6": 400,
+  "7": 300
+ },
  "effect_wishlist": [
   {
    "effect": "Bloom",
@@ -409,6 +486,6 @@
    "role": "Bank D: the quad preview."
   }
  ],
- "fft_philosophy": "The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter uncorrected tape lines and the MIDI pins. Colour never reacts. Text never moves. Every number on screen is from the sources in docs/.",
+ "fft_philosophy": "The hardware is the subject and the music is what it plays, so the reactivity stays mechanical: lows push T-bars and turn the head drum, mids move wipe edges and the shuttle's scan, highs only jitter uncorrected tape lines and the MIDI pins. Since the kinetic pass the room never stops: every deck has a moving texture under it, pads drift, knobs turn with the mids, figures punch on the kick and leave trails, and light blooms with the lows. Colour never reacts. Captions never move. Every number on screen is from the sources in docs/.",
  "wildcard_rationale": "Six decks, walked with the APC40's LEFT and RIGHT buttons: the controller itself, three video mixers (Edirol V-4, Videonics MXPro, Videonics MX-1), a JVC S-VHS deck beside a JVC pro edit controller it never met, and a patch bay of the words they share."
 }

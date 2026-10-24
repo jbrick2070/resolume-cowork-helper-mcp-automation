@@ -729,16 +729,16 @@
     "rendered": true,
     "frames": [
       {
-        "deck": "APC40 mkII",
-        "column": "9 Faders"
+        "deck": "Patch Bay",
+        "column": "Key"
       },
       {
         "deck": "JVC S-VHS + Edit",
         "column": "Perform"
       },
       {
-        "deck": "Patch Bay",
-        "column": "Key"
+        "deck": "APC40 mkII",
+        "column": "9 Faders"
       },
       {
         "deck": "Videonics MX-1",
@@ -753,8 +753,8 @@
         "column": "The Club"
       },
       {
-        "deck": "APC40 mkII",
-        "column": "USB-B"
+        "deck": "Videonics MXPro",
+        "column": "Learn"
       },
       {
         "deck": "Patch Bay",
@@ -762,7 +762,7 @@
       },
       {
         "deck": "Videonics MXPro",
-        "column": "Learn"
+        "column": "The Box"
       }
     ]
   }

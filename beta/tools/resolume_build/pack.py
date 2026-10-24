@@ -25,6 +25,19 @@ LAYER_COLOR_IDS = {1: 4, 2: 3, 3: 1, 4: 2, 5: 5, 6: 4, 7: 3, 8: 1}
 TEXT_SOURCES = {"Text Animator", "Text Block"}
 MAX_LINE = 22
 MAX_NAME = 18
+MAX_CLIP_EFFECTS = 4                    # was 2; no pack before The Mixers' kinetic pass used more than 2
+
+
+def _wet(e, rep, where):
+    """An effect's optional 'wet_max' (0..1, how wet it sits), or None for fully wet."""
+    w = e.get("wet_max")
+    if w is None:
+        return None
+    try:
+        return min(max(float(w), 0.0), 1.0)
+    except (TypeError, ValueError):
+        rep.repair("%s: wet_max %r not a number - fully wet" % (where, w))
+        return None
 
 # A safe stand-in per layer role when a designer names a source that does
 # not exist. Logged, never silent.
@@ -220,12 +233,29 @@ def build_pack(bible, decks, rack, out_dir, slug, preset_id, id_base,
     # ---- layers ------------------------------------------------------------
     names = INST.LAYER_ROLES
     layers = []
+    # opt-in, per layer: effects that stay on every clip of the layer, and a clip-change fade
+    layer_fx = bible.get("layer_effects") or {}
+    layer_ms = bible.get("layer_transition_ms") or {}
     for n in range(1, 9):
         xf = 1 if n in INST.XFADE_A else (2 if n in INST.XFADE_B else 0)
+        fx = []
+        for e in (layer_fx.get(str(n)) or layer_fx.get(n) or [])[:MAX_CLIP_EFFECTS]:
+            where = "layer %d %s" % (n, names[n - 1])
+            try:
+                fitem = lib.effect(e.get("effect", ""))
+            except KeyError:
+                rep.repair("%s: layer effect %r unknown/banned - dropped" % (where, e.get("effect")))
+                continue
+            fparams = _coerce_params(fitem, e.get("params"), rep, where + "/" + fitem.display_name)
+            ffft = _coerce_fft(fitem, e.get("fft"), fparams, rep, where, comp.bands)
+            fx.append(comp.make_effect(fitem.display_name, fparams, None,
+                                       _wet(e, rep, where), ffft or None, False))
+        ms = layer_ms.get(str(n), layer_ms.get(n, 0))
         layers.append(comp.add_layer(
             names[n - 1], blend=blends[n], opacity=1.0, crossfader=xf,
             ignore_column=(n == INST.SCOPE_LAYER), master=1.0,
-            color_id=LAYER_COLOR_IDS[n]))
+            color_id=LAYER_COLOR_IDS[n], transition_ms=max(0, min(10000, int(ms))),
+            effects=fx))
 
     # ---- decks ---------------------------------------------------------------
     sheets = []
@@ -304,17 +334,21 @@ def build_pack(bible, decks, rack, out_dir, slug, preset_id, id_base,
                 fft = _coerce_fft(item, c.get("fft"), params, rep, where,
                                   comp.bands)
                 effects = []
-                for e in (c.get("effects") or [])[:2]:
+                for e in (c.get("effects") or [])[:MAX_CLIP_EFFECTS]:
                     try:
                         fitem = lib.effect(e.get("effect", ""))
                     except KeyError:
                         rep.repair("%s: clip effect %r unknown/banned - dropped"
                                    % (where, e.get("effect")))
                         continue
-                    fparams = _coerce_params(fitem, e.get("params"), rep,
-                                             where + "/" + fitem.display_name)
+                    fwhere = where + "/" + fitem.display_name
+                    fparams = _coerce_params(fitem, e.get("params"), rep, fwhere)
+                    # opt-in: an effect can follow the music and sit part-wet
+                    ffft = _coerce_fft(fitem, e.get("fft"), fparams, rep, fwhere,
+                                       comp.bands)
                     effects.append(comp.make_effect(fitem.display_name, fparams,
-                                                    None, None, None, False))
+                                                    None, _wet(e, rep, fwhere),
+                                                    ffft or None, False))
                 name = str(c.get("name") or item.display_name)[:MAX_NAME]
                 try:
                     opacity = float(c.get("opacity", 1.0))
