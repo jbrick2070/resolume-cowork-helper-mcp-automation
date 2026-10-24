@@ -1,3 +1,6 @@
+REPAIR safety: L4 C4 Madder Strobe: strobing clip opacity 0.7 -> 0.45
+REPAIR safety: L4 C8 Lighthouse: strobing clip opacity 0.6 -> 0.45
+captions: 25 Text Animators rewritten as Text Blocks, 8 fitted by the size model, 38 from rig measurements
 REPAIR Dew Line Station L1 C2/Tint: Tint has no parameter 'Opacity' - dropped
 REPAIR Dew Line Station L1 C8/CRT: CRT has no parameter 'Opacity' - dropped
 REPAIR Dew Line Station L3 C2/Trails: Trails has no parameter 'Opacity' - dropped
@@ -5,6 +8,6 @@ REPAIR Dew Line Station L3 C4/Shape Mask: Shape Mask has no parameter 'Opacity' 
 REPAIR Dew Line Station L3 C4/Shape Mask: Shape Mask has no parameter 'Opacity' - dropped
 REPAIR Dew Line Station L4 C4/Bloom: Bloom has no parameter 'Opacity' - dropped
 REPAIR Dew Line Station L4 C6/Bloom: Bloom has no parameter 'Opacity' - dropped
-composition: {'layers': 8, 'decks': 5, 'clips': 320, 'comp_effects': 34, 'fft_nodes': 684, 'bytes': 1684660}
+composition: {'layers': 8, 'decks': 5, 'clips': 320, 'comp_effects': 34, 'fft_nodes': 684, 'bytes': 1681510}
 preset: 164 shortcuts on 149 physical controls; unmapped: none; multi: {'PLAY n91': 2, 'STOP n92': 5, 'BANK LOCK n103': 8, 'CUE LEVEL CC47': 4}
-repairs: 7
+repairs: 9

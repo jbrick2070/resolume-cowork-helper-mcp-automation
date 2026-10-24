@@ -328,7 +328,7 @@
      {
       "effect": "Radial Cloner",
       "params": {
-       "Clones": 15,
+       "Clones": 12.0,
        "Start Radius": 0,
        "Start Scale": 100,
        "Start Rotation": 0,
@@ -2262,7 +2262,7 @@
      {
       "effect": "Trails",
       "params": {
-       "Feedback": 0.85,
+       "Feedback": 0.82,
        "Mode": "Alpha"
       }
      }
@@ -2935,7 +2935,7 @@
      {
       "effect": "Trails",
       "params": {
-       "Feedback": 0.92,
+       "Feedback": 0.82,
        "Mode": "Alpha"
       }
      },
@@ -5160,7 +5160,7 @@
      {
       "effect": "Trails",
       "params": {
-       "Feedback": 0.85,
+       "Feedback": 0.82,
        "Mode": "Alpha"
       }
      }
@@ -6277,7 +6277,7 @@
      {
       "effect": "Trails",
       "params": {
-       "Feedback": 0.9,
+       "Feedback": 0.82,
        "Mode": "Alpha"
       }
      }
@@ -7361,7 +7361,7 @@
       "effect": "Trails",
       "params": {
        "Opacity": 1,
-       "Feedback": 0.92,
+       "Feedback": 0.82,
        "Mode": "Lighten"
       }
      }

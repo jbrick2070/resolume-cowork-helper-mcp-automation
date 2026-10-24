@@ -1953,7 +1953,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000230" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000230" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="1420.405 MHZ">
 									<Params name="Params">
@@ -1966,22 +1966,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="2" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-820.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="440.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-120.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-100.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -2696,7 +2701,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000274" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000274" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="NOTHING, THEN SCRUFF">
 									<Params name="Params">
@@ -2709,22 +2714,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="2" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-820.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="440.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-120.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-100.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -3440,7 +3450,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000322" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000322" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="96 FT PAPER PER DAY">
 									<Params name="Params">
@@ -3453,22 +3463,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="2" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-820.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="440.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-120.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-100.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -4181,7 +4196,7 @@
 								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.3">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Fade" T="BOOL" default="0" value="0" />
+								<Param name="Fade" T="BOOL" default="0" value="1" />
 								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4292863720" channelmode="2" paletteEnabled="0" color="4292863720" interpolated="0" />
 								<ParamColor name="Color 2" T="COLOR" default="4278190080" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
 							</Params>
@@ -4248,7 +4263,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000370" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000370" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="CP 1919+21">
 									<Params name="Params">
@@ -4261,22 +4276,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="2" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-820.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="440.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-120.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-100.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -5029,7 +5049,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000418" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000418" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="WOW! 6EQUJ5">
 									<Params name="Params">
@@ -5042,33 +5062,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.6">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="1" />
-								<ParamChoice name="Range" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamChoice name="Order" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamRange name="Delay" T="DOUBLE" default="100.0" value="90.0">
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Opacity" T="DOUBLE" default="1.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Scale" T="DOUBLE" default="1.0" value="0.85">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -5867,7 +5881,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000466" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000466" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="LOOK AGAIN AT THAT DOT">
 									<Params name="Params">
@@ -5880,22 +5894,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="2" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-820.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="440.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-120.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-100.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -6233,7 +6252,7 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.7">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -6600,7 +6619,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000514" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000514" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="NO CARRIER">
 									<Params name="Params">
@@ -6613,22 +6632,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="2" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-820.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="440.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-120.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-100.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -7365,7 +7389,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000554" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000554" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="LISTENING, NOT SENDING">
 									<Params name="Params">
@@ -7378,22 +7402,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="2" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-820.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="440.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-120.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-100.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -8047,7 +8076,7 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -8104,7 +8133,7 @@
 								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.08">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Fade" T="BOOL" default="0" value="0" />
+								<Param name="Fade" T="BOOL" default="0" value="1" />
 								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279935715" channelmode="2" paletteEnabled="0" color="4279935715" interpolated="0" />
 								<ParamColor name="Color 2" T="COLOR" default="4278190080" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
 							</Params>
@@ -8171,7 +8200,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000610" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000610" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="GO FOR TLI">
 									<Params name="Params">
@@ -8184,15 +8213,29 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.9">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="0" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-780.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="160.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -8848,7 +8891,7 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -8905,7 +8948,7 @@
 								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.08">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Fade" T="BOOL" default="0" value="0" />
+								<Param name="Fade" T="BOOL" default="0" value="1" />
 								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279935715" channelmode="2" paletteEnabled="0" color="4279935715" interpolated="0" />
 								<ParamColor name="Color 2" T="COLOR" default="4278190080" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
 							</Params>
@@ -8972,7 +9015,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000662" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000662" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="CAPCOM, FLIGHT">
 									<Params name="Params">
@@ -8985,15 +9028,29 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.9">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="0" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-780.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="160.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -9638,7 +9695,7 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -9695,7 +9752,7 @@
 								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.12">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Fade" T="BOOL" default="0" value="0" />
+								<Param name="Fade" T="BOOL" default="0" value="1" />
 								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279935715" channelmode="2" paletteEnabled="0" color="4279935715" interpolated="0" />
 								<ParamColor name="Color 2" T="COLOR" default="4278190080" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
 							</Params>
@@ -9762,7 +9819,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000714" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000714" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="10 9 8 7 6 5 4 3 2 1">
 									<Params name="Params">
@@ -9775,21 +9832,27 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.1">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="0" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-780.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="1" />
-								<ParamChoice name="Range" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamChoice name="Order" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamRange name="Delay" T="DOUBLE" default="100.0" value="1000.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="160.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Opacity" T="DOUBLE" default="1.0" value="0.0">
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -10514,7 +10577,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000758" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000758" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="45 MIN OF DEAD AIR">
 									<Params name="Params">
@@ -10527,15 +10590,29 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.9">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="0" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-780.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="160.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -11186,7 +11263,7 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -11310,7 +11387,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000806" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000806" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="THAT WHISTLING SOUND">
 									<Params name="Params">
@@ -11323,15 +11400,29 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.9">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="0" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-780.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="160.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -12005,7 +12096,7 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -12059,10 +12150,10 @@
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="StroboscopeGenerator" type="StroboscopeGenerator" uniqueTypeId="MSTR" uniqueId="1790100000857" baseType="Generator">
 							<Params name="Params">
-								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.5">
+								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.35">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Fade" T="BOOL" default="0" value="0" />
+								<Param name="Fade" T="BOOL" default="0" value="1" />
 								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279935715" channelmode="2" paletteEnabled="0" color="4279935715" interpolated="0" />
 								<ParamColor name="Color 2" T="COLOR" default="4278190080" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
 							</Params>
@@ -12129,7 +12220,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000862" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000862" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="ALARM 1202">
 									<Params name="Params">
@@ -12142,15 +12233,29 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.3">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="0" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-780.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="160.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -12917,7 +13022,7 @@
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100000914" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100000914" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="EAGLE, HOUSTON">
 									<Params name="Params">
@@ -12930,15 +13035,29 @@
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.9">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="0" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="0" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="0" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-780.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="160.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -13499,7 +13618,7 @@
 						</Params>
 						<RenderPass name="Trails" type="Trails" uniqueTypeId="A111" uniqueId="1790100000948" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Feedback" T="DOUBLE" default="0.9" value="0.85">
+								<ParamRange name="Feedback" T="DOUBLE" default="0.9" value="0.82">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Mode" T="INT32" default="0" value="0" storeChoices="0" />
@@ -13722,7 +13841,7 @@ THE LOOP IS QUIET" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-80.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="40.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -14610,7 +14729,7 @@ IS ANYONE THERE" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Baskerville Old Face" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.4">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.3">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -14621,7 +14740,7 @@ IS ANYONE THERE" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-307.5">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="4.0">
@@ -15167,7 +15286,7 @@ IS ANYONE THERE" />
 						</Params>
 						<RenderPass name="Trails" type="Trails" uniqueTypeId="A111" uniqueId="1790100001048" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Feedback" T="DOUBLE" default="0.9" value="0.85">
+								<ParamRange name="Feedback" T="DOUBLE" default="0.9" value="0.82">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Mode" T="INT32" default="0" value="0" storeChoices="0" />
@@ -15434,7 +15553,7 @@ DO NOT BREAK THE RING" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Baskerville Old Face" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.4">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.05">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -15445,7 +15564,7 @@ DO NOT BREAK THE RING" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="368.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="4.0">
@@ -16171,7 +16290,7 @@ DO NOT BREAK THE RING" />
 								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.08">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Fade" T="BOOL" default="0" value="0" />
+								<Param name="Fade" T="BOOL" default="0" value="1" />
 								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
 								<ParamColor name="Color 2" T="COLOR" default="4278190080" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
 							</Params>
@@ -16250,7 +16369,7 @@ Y E S" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Baskerville Old Face" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.4">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.25">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -16261,7 +16380,7 @@ Y E S" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-312.6">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="30.0">
@@ -17018,7 +17137,7 @@ G O O D B Y E" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Baskerville Old Face" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.4">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.832">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -17029,7 +17148,7 @@ G O O D B Y E" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="318.6">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="30.0">
@@ -17967,7 +18086,7 @@ G O O D B Y E" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Baskerville Old Face" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.5">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.25">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -17978,7 +18097,7 @@ G O O D B Y E" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-342.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="4.0">
@@ -18853,7 +18972,7 @@ GLASS SPELLS L-E-A-V-E" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Baskerville Old Face" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.3">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.816">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -18864,7 +18983,7 @@ GLASS SPELLS L-E-A-V-E" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="375.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="4.0">
@@ -19591,7 +19710,7 @@ GLASS SPELLS L-E-A-V-E" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100001294" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100001294" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="COLD, SHE SAYS. COLD.">
 									<Params name="Params">
@@ -19601,21 +19720,21 @@ GLASS SPELLS L-E-A-V-E" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Lucida Console" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4294929451" channelmode="2" paletteEnabled="0" color="4294929451" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.0">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.666">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
-								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-420.0">
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="-349.2">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-340.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="6.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="0.0">
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
@@ -19624,19 +19743,7 @@ GLASS SPELLS L-E-A-V-E" />
 								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.15">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="1" />
-								<ParamChoice name="Range" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamChoice name="Order" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamRange name="Delay" T="DOUBLE" default="100.0" value="120.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Opacity" T="DOUBLE" default="1.0" value="1.0">
-									<PhaseSourceStatic name="PhaseSourceStatic" />
-								</ParamRange>
-								<ParamRange name="Scale" T="DOUBLE" default="1.0" value="1.0">
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -20309,7 +20416,7 @@ SHE HAS GONE BACK" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Baskerville Old Face" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4291813865" channelmode="2" paletteEnabled="0" color="4291813865" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.5">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.1">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -21142,7 +21249,7 @@ SHE HAS GONE BACK" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Bodoni MT" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Bold" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4292667887" channelmode="2" paletteEnabled="0" color="4292667887" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.6">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.306">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -21781,7 +21888,7 @@ SHE HAS GONE BACK" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.7">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -21810,7 +21917,7 @@ SHE HAS GONE BACK" />
 								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.06">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Fade" T="BOOL" default="0" value="0" />
+								<Param name="Fade" T="BOOL" default="0" value="1" />
 								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4292667887" channelmode="2" paletteEnabled="0" color="4292667887" interpolated="0" />
 								<ParamColor name="Color 2" T="COLOR" default="4278190080" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0" />
 							</Params>
@@ -21900,7 +22007,7 @@ HOUR OF SATURN" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-362.5">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="10.0">
@@ -22700,7 +22807,7 @@ HOUR OF SATURN" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-206.3">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="60.0">
@@ -23443,7 +23550,7 @@ HOUR OF SATURN" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Bodoni MT" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Bold" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4292667887" channelmode="2" paletteEnabled="0" color="4292667887" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.8">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.469">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -24126,7 +24233,7 @@ HOUR OF SATURN" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.7">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -24260,7 +24367,7 @@ RED GEL, THEN BLUE" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-362.5">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="10.0">
@@ -24821,7 +24928,7 @@ RED GEL, THEN BLUE" />
 						</Params>
 						<RenderPass name="Trails" type="Trails" uniqueTypeId="A111" uniqueId="1790100001612" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Feedback" T="DOUBLE" default="0.9" value="0.85">
+								<ParamRange name="Feedback" T="DOUBLE" default="0.9" value="0.82">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Mode" T="INT32" default="0" value="2" storeChoices="0" />
@@ -24924,7 +25031,7 @@ RED GEL, THEN BLUE" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.6">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -25035,7 +25142,7 @@ RED GEL, THEN BLUE" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100001626" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100001626" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="I CONJURE THEE">
 									<Params name="Params">
@@ -25045,24 +25152,30 @@ RED GEL, THEN BLUE" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Perpetua Titling MT" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Bold" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4292667887" channelmode="2" paletteEnabled="0" color="4292667887" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.6">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.065">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="20.0">
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="1" />
-								<ParamChoice name="Range" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamChoice name="Order" T="INT32" default="0" value="0" storeChoices="0" />
-								<ParamRange name="Delay" T="DOUBLE" default="100.0" value="150.0">
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 							</Params>
@@ -25754,7 +25867,7 @@ RED GEL, THEN BLUE" />
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="StroboscopeGenerator" type="StroboscopeGenerator" uniqueTypeId="MSTR" uniqueId="1790100001665" baseType="Generator">
 							<Params name="Params">
-								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.5">
+								<ParamRange name="Frequency" T="DOUBLE" default="0.5" value="0.35">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<Param name="Fade" T="BOOL" default="0" value="1" />
@@ -25836,7 +25949,7 @@ NON GUARDARE" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Engravers MT" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4292667887" channelmode="2" paletteEnabled="0" color="4292667887" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.0">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="0.666">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
@@ -25847,7 +25960,7 @@ NON GUARDARE" />
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-375.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Spacing X" T="DOUBLE" default="0.0" value="10.0">
@@ -27315,7 +27428,7 @@ FINE" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100001762" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100001762" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="AT 0048, LONG WAVE">
 									<Params name="Params">
@@ -27328,15 +27441,29 @@ FINE" />
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.2">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="342.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -28966,7 +29093,7 @@ GOOD OCCASIONALLY POOR" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100001850" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100001850" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="VIKING, NORTH UTSIRE">
 									<Params name="Params">
@@ -28979,15 +29106,29 @@ GOOD OCCASIONALLY POOR" />
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.05">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-360.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -29718,7 +29859,7 @@ GOOD OCCASIONALLY POOR" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100001890" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100001890" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="DOGGER, FISHER">
 									<Params name="Params">
@@ -29731,15 +29872,29 @@ GOOD OCCASIONALLY POOR" />
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.4">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="380.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -30608,7 +30763,7 @@ GOOD OCCASIONALLY POOR" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100001938" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100001938" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="GERMAN BIGHT, HUMBER">
 									<Params name="Params">
@@ -30621,15 +30776,29 @@ GOOD OCCASIONALLY POOR" />
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.05">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
+								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-360.8">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -31403,7 +31572,7 @@ GOOD OCCASIONALLY POOR" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100001978" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100001978" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="LUNDY, FASTNET">
 									<Params name="Params">
@@ -31413,18 +31582,32 @@ GOOD OCCASIONALLY POOR" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Gill Sans MT" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4292404457" channelmode="2" paletteEnabled="0" color="4292404457" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.4">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.142">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="380.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -32210,7 +32393,7 @@ GOOD OCCASIONALLY POOR" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100002030" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100002030" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="ROCKALL, MALIN">
 									<Params name="Params">
@@ -32220,18 +32403,32 @@ GOOD OCCASIONALLY POOR" />
 								<ParamChoice name="Font" T="STRING" default="Arial" value="Gill Sans MT" storeChoices="0" />
 								<ParamChoice name="Style" T="STRING" default="Bold" value="Regular" storeChoices="0" />
 								<ParamColor name="Color" T="COLOR" default="4294967295" value="4292404457" channelmode="2" paletteEnabled="0" color="4292404457" interpolated="0" />
-								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.4">
+								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.142">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="-380.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -32953,7 +33150,7 @@ GOOD OCCASIONALLY POOR" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="TextGenerator" type="TextGenerator" uniqueTypeId="11421072728336491440" uniqueId="1790100002070" baseType="Generator">
+						<RenderPass name="BlockTextGenerator" type="BlockTextGenerator" uniqueTypeId="3600113141201236715" uniqueId="1790100002070" baseType="Generator">
 							<Params name="Params">
 								<ParamText name="Text" T="STRING" default="Resolume" value="LOSING ITS IDENTITY">
 									<Params name="Params">
@@ -32966,15 +33163,29 @@ GOOD OCCASIONALLY POOR" />
 								<ParamRange name="Size" T="DOUBLE" default="1.0" value="1.1">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<ParamChoice name="Alignment" T="INT32" default="0" value="1" storeChoices="0" />
+								<ParamChoice name="Alignment" T="INT32" default="1" value="1" storeChoices="0" />
 								<ParamChoice name="AlignmentVertically" T="INT32" default="1" value="1" storeChoices="0" />
+								<ParamRange name="Line Width" T="DOUBLE" default="1920.0" value="1400.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 								<ParamRange name="Position X" T="DOUBLE" default="0.0" value="0.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
 								<ParamRange name="Position Y" T="DOUBLE" default="0.0" value="380.0">
 									<PhaseSourceStatic name="PhaseSourceStatic" />
 								</ParamRange>
-								<Param name="Animated" T="BOOL" default="0" value="0" />
+								<ParamRange name="Spacing Y" T="DOUBLE" default="0.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Outline Width" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow In" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow Out" T="DOUBLE" default="0.0" value="0.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>

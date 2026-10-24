@@ -489,7 +489,211 @@
    }
   ],
   "fft_philosophy": "Sub and low (20 to 120 Hz) through a fast-attack, 400 ms release envelope drive only amplitude-type parameters (Line Scape Height, React Pulsar Level, Metaballs Size, Sine Wave Amplitude, the BED gradient's breath) so a kick reads as a push or a tide and never as a flash; low-mids (120 to 500 Hz) through a 2-second envelope drive density and rotation (Abstract Field Density, Lines Fuzzyness, Rings and Spiral rotation), the slow structural breathing of the room; highs (6 to 16 kHz) touch GRAIN opacity and the Golden Flicker Reel's ember dots only, so hi-hats become hiss and moth dust and nothing else. One long RMS envelope over several seconds drives AURA opacity and the Vignette size so builds open the room and breakdowns close it; that is the only macro the music gets. Onsets are triggers, not levels: one Stroboscope flash, one candle gutter, one glitch frame, quantised to the beat and rate-limited to once per bar, and most of them are fired by hand on a pad rather than by a threshold, because the performer is the medium and a knock that answers must be answered. These never react at all: TEXT position, scale, opacity or content (words are read, not shaken, and the mids-gate on text proposed by one runner-up is rejected); hue, blend mode, gel or AURA colour (colour is a decision the performer makes with a scene, the music only changes how much light is in the room, never what colour the room is); the BED's scale and position (the environment does not dance); the SCOPE's own gain (it is the honest readout and the one element allowed to follow the signal 1:1); and scene changes.",
-  "wildcard_rationale": "Space and Halloween are both about receiving voices from where no one should be: the pulsar, the far side of the Moon, the parlour, the circle. The shipping forecast is the broadcast that goes the other way, a voice sent into the dark at 0048 on the assumption that someone is out there, which makes it the third kind of listening post and completes the set; its lighthouse is literally a Stroboscope with a published character, and its sea areas are the most Radiophonic text in English, a liturgy of place names and numbers read in the flat BBC register this performer already plays in EarthSearch and Lexicon. As the fifth deck it is the come-down: after the ritual peaks in Hour Of Saturn, the night ends on the North Sea near dawn with a low losing its identity, and its gale warnings carry real dread without a single horror cue. Its text-as-lead-instrument mechanic, one sea area per pad press on the downbeat, is borrowed from the sixth world that would not fit without dropping a Halloween room, Numbers Station, which is documented as the first swap: UVB-76, MDZHB, LINCOLNSHIRE POACHER, SWEDISH RHAPSODY, NAIMINA 74 14 35 74, ENDE ENDE, one five-figure group per column, every strobe hand-tapped, phosphor amber on dial black, ready to replace German Bight the night the performer wants a second found-text deck instead of a dawn."
+  "wildcard_rationale": "Space and Halloween are both about receiving voices from where no one should be: the pulsar, the far side of the Moon, the parlour, the circle. The shipping forecast is the broadcast that goes the other way, a voice sent into the dark at 0048 on the assumption that someone is out there, which makes it the third kind of listening post and completes the set; its lighthouse is literally a Stroboscope with a published character, and its sea areas are the most Radiophonic text in English, a liturgy of place names and numbers read in the flat BBC register this performer already plays in EarthSearch and Lexicon. As the fifth deck it is the come-down: after the ritual peaks in Hour Of Saturn, the night ends on the North Sea near dawn with a low losing its identity, and its gale warnings carry real dread without a single horror cue. Its text-as-lead-instrument mechanic, one sea area per pad press on the downbeat, is borrowed from the sixth world that would not fit without dropping a Halloween room, Numbers Station, which is documented as the first swap: UVB-76, MDZHB, LINCOLNSHIRE POACHER, SWEDISH RHAPSODY, NAIMINA 74 14 35 74, ENDE ENDE, one five-figure group per column, every strobe hand-tapped, phosphor amber on dial black, ready to replace German Bight the night the performer wants a second found-text deck instead of a dawn.",
+  "safety": true,
+  "caption_blocks": true,
+  "caption_fit": {
+   "d1c1": {
+    "Size": 0.8,
+    "Position X": -120.0,
+    "Position Y": -100.0
+   },
+   "d1c2": {
+    "Size": 0.8,
+    "Position X": -120.0,
+    "Position Y": -100.0
+   },
+   "d1c3": {
+    "Size": 0.8,
+    "Position X": -120.0,
+    "Position Y": -100.0
+   },
+   "d1c4": {
+    "Size": 0.8,
+    "Position X": -120.0,
+    "Position Y": -100.0
+   },
+   "d1c5": {
+    "Size": 1.6,
+    "Position X": 0.0,
+    "Position Y": 0.0
+   },
+   "d1c6": {
+    "Size": 0.8,
+    "Position X": -120.0,
+    "Position Y": -100.0
+   },
+   "d1c7": {
+    "Size": 0.8,
+    "Position X": -120.0,
+    "Position Y": -100.0
+   },
+   "d1c8": {
+    "Size": 0.8,
+    "Position X": -120.0,
+    "Position Y": -100.0
+   },
+   "d2c1": {
+    "Size": 0.9,
+    "Position X": -80.0,
+    "Position Y": 160.0
+   },
+   "d2c2": {
+    "Size": 0.9,
+    "Position X": -80.0,
+    "Position Y": 160.0
+   },
+   "d2c3": {
+    "Size": 1.1,
+    "Position X": -80.0,
+    "Position Y": 160.0
+   },
+   "d2c4": {
+    "Size": 0.9,
+    "Position X": -80.0,
+    "Position Y": 160.0
+   },
+   "d2c5": {
+    "Size": 0.9,
+    "Position X": -80.0,
+    "Position Y": 160.0
+   },
+   "d2c6": {
+    "Size": 1.3,
+    "Position X": -80.0,
+    "Position Y": 160.0
+   },
+   "d2c7": {
+    "Size": 0.9,
+    "Position X": -80.0,
+    "Position Y": 160.0
+   },
+   "d2c8": {
+    "Size": 1.0,
+    "Position X": -80.0,
+    "Position Y": 40.0
+   },
+   "d3c1": {
+    "Size": 1.3,
+    "Position X": 0.0,
+    "Position Y": -307.5
+   },
+   "d3c2": {
+    "Size": 1.05,
+    "Position X": 0.0,
+    "Position Y": 368.8
+   },
+   "d3c3": {
+    "Size": 1.25,
+    "Position X": 0.0,
+    "Position Y": -312.6
+   },
+   "d3c4": {
+    "Size": 0.832,
+    "Position X": 0.0,
+    "Position Y": 318.6
+   },
+   "d3c5": {
+    "Size": 1.25,
+    "Position X": 0.0,
+    "Position Y": -342.8
+   },
+   "d3c6": {
+    "Size": 0.816,
+    "Position X": 0.0,
+    "Position Y": 375.0
+   },
+   "d3c7": {
+    "Size": 0.666,
+    "Position X": -349.2,
+    "Position Y": -340.0
+   },
+   "d3c8": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": 0.0
+   },
+   "d4c1": {
+    "Size": 1.306,
+    "Position X": 0.0,
+    "Position Y": -380.0
+   },
+   "d4c2": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": -362.5
+   },
+   "d4c3": {
+    "Size": 1.4,
+    "Position X": 0.0,
+    "Position Y": -206.3
+   },
+   "d4c4": {
+    "Size": 1.469,
+    "Position X": 0.0,
+    "Position Y": -380.0
+   },
+   "d4c5": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": -362.5
+   },
+   "d4c6": {
+    "Size": 1.065,
+    "Position X": 0.0,
+    "Position Y": -380.0
+   },
+   "d4c7": {
+    "Size": 0.666,
+    "Position X": 0.0,
+    "Position Y": -375.0
+   },
+   "d4c8": {
+    "Size": 1.4,
+    "Position X": 0.0,
+    "Position Y": 0.0
+   },
+   "d5c1": {
+    "Size": 1.2,
+    "Position X": 0.0,
+    "Position Y": 342.8
+   },
+   "d5c2": {
+    "Size": 0.85,
+    "Position X": 0.0,
+    "Position Y": 0.0
+   },
+   "d5c3": {
+    "Size": 1.05,
+    "Position X": 0.0,
+    "Position Y": -360.8
+   },
+   "d5c4": {
+    "Size": 1.4,
+    "Position X": 0.0,
+    "Position Y": 380.0
+   },
+   "d5c5": {
+    "Size": 1.05,
+    "Position X": 0.0,
+    "Position Y": -360.8
+   },
+   "d5c6": {
+    "Size": 1.142,
+    "Position X": 0.0,
+    "Position Y": 380.0
+   },
+   "d5c7": {
+    "Size": 1.142,
+    "Position X": 0.0,
+    "Position Y": -380.0
+   },
+   "d5c8": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": 380.0
+   }
+  }
  },
  "rack": {
   "banks": [
@@ -886,10 +1090,10 @@
   "clips": 320,
   "comp_effects": 34,
   "fft_nodes": 645,
-  "bytes": 1667707
+  "bytes": 1678309
  },
  "preset": 164,
- "repairs": 17,
+ "repairs": 26,
  "sheets": [
   [
    0,
@@ -1315,7 +1519,7 @@
    1,
    "Dark Run",
    "Freq Readout",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The hydrogen line frequency as bottom-left teletype telemetry in margin grey."
@@ -1328,7 +1532,7 @@
    2,
    "Scruff",
    "Scruff Note",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The margin annotation of the first hint, bottom-left and never centred."
@@ -1341,7 +1545,7 @@
    3,
    "Chart Recorder",
    "Paper Log",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "One line of clerical wonder in the margin on the same baseline as the other columns; CHART SPEED 1 IN/MIN is held for a text-swap or a second deck."
@@ -1354,7 +1558,7 @@
    4,
    "CP 1919",
    "Pulsar Log",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The pulsar's designation as margin telemetry on the shared baseline; PERIOD 1.3373 S and LGM-1 are the best candidates for a pad text-swap."
@@ -1367,7 +1571,7 @@
    5,
    "Wow Signal",
    "Wow Typewriter",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The deck's only red and only centred text, typed on character by character from an invisible start state (Opacity 0, Scale 0.85) so each glyph settles in, retriggered from the pad."
@@ -1380,7 +1584,7 @@
    6,
    "Deep Field",
    "Dot Caption",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The margin note that makes the whole room look at one pixel."
@@ -1393,7 +1597,7 @@
    7,
    "No Carrier",
    "No Carrier Line",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The modem's last words in the margin, read and not shaken."
@@ -1406,7 +1610,7 @@
    8,
    "Dawn Chorus",
    "Last Annotation",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The closing line, the only column where the text is chart paper."
@@ -2147,7 +2351,7 @@
    1,
    "Go For TLI",
    "Go For TLI",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The capcom call left-justified like a transcript line in phosphor green, kept off the limb and the scope."
@@ -2160,7 +2364,7 @@
    2,
    "The Loop",
    "Capcom Flight",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The loop's call sign in the transcript position, same green, same size, so the room stays one room."
@@ -2173,7 +2377,7 @@
    3,
    "LOS In Ten",
    "Countdown Ten",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The rig's own countdown idea rebuilt stock: characters fade in front to back one per second when the row-5 pad retriggers it."
@@ -2186,7 +2390,7 @@
    4,
    "Dead Air",
    "Dead Air Count",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The loop keeps counting into silence; the line is there for the pad, not the scene launch."
@@ -2199,7 +2403,7 @@
    5,
    "Whistling",
    "Whistling Sound",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The only column where the transcript goes violet, because something else is on the loop."
@@ -2212,7 +2416,7 @@
    6,
    "Alarm 1202",
    "Alarm 1202",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The alarm code larger than any other line, still the same green, still left-justified."
@@ -2225,7 +2429,7 @@
    7,
    "Acquisition",
    "Eagle Houston",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The voice that answers, on the roster after all, in the transcript position."
@@ -3057,7 +3261,7 @@
    7,
    "Class A",
    "Cold She Says",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The 1971 overdub typed character by character in cold-spot blue, up in the north-west corner where the cold is; the only column in typewriter."
@@ -3876,7 +4080,7 @@
    6,
    "Conjuration",
    "I Conjure Thee",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The only Text Animator in the deck: the conjuration typed on letter by letter in Perpetua Titling, chalk."
@@ -4643,7 +4847,7 @@
    1,
    "Sailing By",
    "At 0048 Long Wave",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The time and the band, low on the card, under the sea."
@@ -4669,7 +4873,7 @@
    3,
    "Viking Utsire",
    "Viking Utsire",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "First sea area, card white, high on the card off the figure."
@@ -4682,7 +4886,7 @@
    4,
    "Dogger Fisher",
    "Dogger Fisher",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Second sea area, low on the card so the buoys own the middle."
@@ -4695,7 +4899,7 @@
    5,
    "German Bight",
    "German Bight",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The title sea area, high on the card above the arcs."
@@ -4708,7 +4912,7 @@
    6,
    "Lundy Fastnet",
    "Lundy Fastnet",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Sea area low on the card, the litany walking west."
@@ -4721,7 +4925,7 @@
    7,
    "Rockall Malin",
    "Rockall Malin",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Last full sea area, high on the card above the rock."
@@ -4734,7 +4938,7 @@
    8,
    "Fair Isle",
    "Losing Identity",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The last line of the night, low on the card, pressed on the last beat."

@@ -673,7 +673,7 @@
     "source": "Stroboscope",
     "params": {
      "Frequency": 0.3,
-     "Fade": false,
+     "Fade": true,
      "Color 1": "#e8e6dfff",
      "Color 2": "#00000000"
     },
@@ -1697,7 +1697,7 @@
     "source": "Stroboscope",
     "params": {
      "Frequency": 0.08,
-     "Fade": false,
+     "Fade": true,
      "Color 1": "#e3a21aff",
      "Color 2": "#00000000"
     },
@@ -1919,7 +1919,7 @@
     "source": "Stroboscope",
     "params": {
      "Frequency": 0.08,
-     "Fade": false,
+     "Fade": true,
      "Color 1": "#e3a21aff",
      "Color 2": "#00000000"
     },
@@ -2134,7 +2134,7 @@
     "source": "Stroboscope",
     "params": {
      "Frequency": 0.12,
-     "Fade": false,
+     "Fade": true,
      "Color 1": "#e3a21aff",
      "Color 2": "#00000000"
     },
@@ -2782,8 +2782,8 @@
     "name": "Master Alarm",
     "source": "Stroboscope",
     "params": {
-     "Frequency": 0.5,
-     "Fade": false,
+     "Frequency": 0.35,
+     "Fade": true,
      "Color 1": "#e3a21aff",
      "Color 2": "#00000000"
     },
@@ -3211,7 +3211,7 @@
      {
       "effect": "Trails",
       "params": {
-       "Feedback": 0.85,
+       "Feedback": 0.82,
        "Mode": "Alpha"
       }
      }
@@ -3662,7 +3662,7 @@
       "effect": "Trails",
       "params": {
        "Opacity": 1,
-       "Feedback": 0.85,
+       "Feedback": 0.82,
        "Mode": "Alpha"
       }
      }
@@ -3934,7 +3934,7 @@
     "source": "Stroboscope",
     "params": {
      "Frequency": 0.08,
-     "Fade": false,
+     "Fade": true,
      "Color 1": "#e9e1cf",
      "Color 2": "#00000000"
     },
@@ -5480,7 +5480,7 @@
     "source": "Stroboscope",
     "params": {
      "Frequency": 0.06,
-     "Fade": false,
+     "Fade": true,
      "Color 1": "#efe9dc",
      "Color 2": "#00000000"
     },
@@ -6314,7 +6314,7 @@
      {
       "effect": "Trails",
       "params": {
-       "Feedback": 0.85,
+       "Feedback": 0.82,
        "Mode": "Lighten"
       }
      }
@@ -6546,7 +6546,7 @@
     "name": "Lamp Guttering",
     "source": "Stroboscope",
     "params": {
-     "Frequency": 0.5,
+     "Frequency": 0.35,
      "Fade": true,
      "Color 1": "#c1121f",
      "Color 2": "#00000000"

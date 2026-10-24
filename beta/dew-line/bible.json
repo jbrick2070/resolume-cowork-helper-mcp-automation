@@ -488,5 +488,199 @@
   }
  ],
  "fft_philosophy": "Lows (kick, 40-120 Hz) drive structural tension only - Suckr strength, Rings Size and Spacing contracting a few percent, Trails length, Sine Wave Modulation Depth - through an envelope follower with fast attack and a 300-600 ms release, so the web tightens on the kick and relaxes between hits like a load on a structure rather than a flash. Mids (200 Hz-2 kHz) drive the slow motion rates (Spiral Speed, Line Scape Wobble, Abstract Field drift, Metaballs Speed) so a busy mix makes the world breathe faster but never flicker, and highs (6 kHz up) drive the silk alone - Fuzzyness, Displace amount, Bloom and dew brightness - in ranges small enough that silk shivers and never tears. Nothing ever reacts on TEXT (words must be readable on a wall at 2am), nothing moves the FIGURE's position (the spider decides where she is), hue never reacts anywhere, nothing on AURA reacts, column transitions never react, the rotation of any orb never reacts (a web does not spin to a beat), the Radar sweep period never reacts because it is the clock, and strobe frequency is not a signal path at all - every flash is a Stroboscope pad under a finger. The SCOPE layer alone takes the raw unsmoothed spectrum, precisely so that everything else can afford to be slow. Reactivity is a musician's hand on a fader, not a VU meter: smoothed, thresholded, and deliberately missing the obvious beat half the time.",
- "wildcard_rationale": "The single most unexpected idea is that the web is never drawn, only revealed: the stock Radar effect in Bank A is the spider. Every ring, radius and spiral already exists on its layer, but the composition only shows what the beam has passed over, so the performer builds the orb by letting the sweep rotate while mashing structural pads, and a new ring lands exactly where the beam is. Lock that sweep to eight beats and it becomes the eight-legged clock: one revolution is one bar, each leg is a beat, and the whole composition keeps time visibly without a single frame of media, which is also why the pack is called Dew Line - the 1957 Distant Early Warning radar line and dew on an orb web at dawn are the same picture, a net strung across the dark that catches light so you can see what is coming, which is exactly what a club wall is for. Two smaller wildcards now live inside that one. In Orb Plate 1889, columns five and six are formwork removal: the same Spiral generator with Direction reversed, Spread tightened and Trails up, so the audience watches the dense capture spiral eat the dry scaffold from rim to hub while the title block stamps SCAFFOLD REMOVED, the one gesture that proves the spider is a builder and not a decoration, because she makes a temporary structure, uses it, and takes it down. In Dew Line Station, column six takes the telescope spider literally: the four vanes that hold every reflector's secondary mirror are called the spider by every astronomer who has collimated one, and the cross on every bright star is her shadow, so opening Bloom and Sparkles makes every dew return and marble egg grow a four-armed cross. Read in one breath, the bible says the spider builds a temporary structure, takes it down, and casts her shadow on every star the net catches."
+ "wildcard_rationale": "The single most unexpected idea is that the web is never drawn, only revealed: the stock Radar effect in Bank A is the spider. Every ring, radius and spiral already exists on its layer, but the composition only shows what the beam has passed over, so the performer builds the orb by letting the sweep rotate while mashing structural pads, and a new ring lands exactly where the beam is. Lock that sweep to eight beats and it becomes the eight-legged clock: one revolution is one bar, each leg is a beat, and the whole composition keeps time visibly without a single frame of media, which is also why the pack is called Dew Line - the 1957 Distant Early Warning radar line and dew on an orb web at dawn are the same picture, a net strung across the dark that catches light so you can see what is coming, which is exactly what a club wall is for. Two smaller wildcards now live inside that one. In Orb Plate 1889, columns five and six are formwork removal: the same Spiral generator with Direction reversed, Spread tightened and Trails up, so the audience watches the dense capture spiral eat the dry scaffold from rim to hub while the title block stamps SCAFFOLD REMOVED, the one gesture that proves the spider is a builder and not a decoration, because she makes a temporary structure, uses it, and takes it down. In Dew Line Station, column six takes the telescope spider literally: the four vanes that hold every reflector's secondary mirror are called the spider by every astronomer who has collimated one, and the cross on every bright star is her shadow, so opening Bloom and Sparkles makes every dew return and marble egg grow a four-armed cross. Read in one breath, the bible says the spider builds a temporary structure, takes it down, and casts her shadow on every star the net catches.",
+ "safety": true,
+ "caption_blocks": true,
+ "caption_fit": {
+  "d1c1": {
+   "Size": 1.0,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d1c2": {
+   "Size": 1.0,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d1c3": {
+   "Size": 1.0,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d1c4": {
+   "Size": 1.0,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d1c5": {
+   "Size": 1.0,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d1c6": {
+   "Size": 0.979,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d1c7": {
+   "Size": 1.0,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d1c8": {
+   "Size": 1.1,
+   "Position X": -120.0,
+   "Position Y": 400.0
+  },
+  "d2c1": {
+   "Size": 0.9,
+   "Position X": 540.0,
+   "Position Y": -400.0
+  },
+  "d2c2": {
+   "Size": 0.85,
+   "Position X": 266.8,
+   "Position Y": -400.0
+  },
+  "d2c3": {
+   "Size": 0.599,
+   "Position X": 540.0,
+   "Position Y": -400.0
+  },
+  "d2c4": {
+   "Size": 0.9,
+   "Position X": 333.6,
+   "Position Y": -400.0
+  },
+  "d2c5": {
+   "Size": 0.666,
+   "Position X": 540.0,
+   "Position Y": -400.0
+  },
+  "d2c6": {
+   "Size": 0.732,
+   "Position X": 467.2,
+   "Position Y": -400.0
+  },
+  "d2c7": {
+   "Size": 0.599,
+   "Position X": 540.0,
+   "Position Y": -400.0
+  },
+  "d2c8": {
+   "Size": 1.061,
+   "Position X": 393.2,
+   "Position Y": -400.0
+  },
+  "d3c1": {
+   "Size": 1.1,
+   "Position X": 0.0,
+   "Position Y": 362.5
+  },
+  "d3c2": {
+   "Size": 1.05,
+   "Position X": 0.0,
+   "Position Y": -303.1
+  },
+  "d3c3": {
+   "Size": 0.816,
+   "Position X": 0.0,
+   "Position Y": 343.8
+  },
+  "d3c4": {
+   "Size": 1.7,
+   "Position X": 0.0,
+   "Position Y": 0.0
+  },
+  "d3c5": {
+   "Size": 0.938,
+   "Position X": 0.0,
+   "Position Y": 284.4
+  },
+  "d3c6": {
+   "Size": 0.699,
+   "Position X": 0.0,
+   "Position Y": -368.8
+  },
+  "d3c7": {
+   "Size": 1.2,
+   "Position X": -300.0,
+   "Position Y": -342.8
+  },
+  "d3c8": {
+   "Size": 1.1,
+   "Position X": 300.0,
+   "Position Y": 354.8
+  },
+  "d4c1": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 260.0
+  },
+  "d4c2": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 300.0
+  },
+  "d4c3": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 300.0
+  },
+  "d4c4": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 300.0
+  },
+  "d4c5": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 300.0
+  },
+  "d4c6": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 260.0
+  },
+  "d4c7": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 260.0
+  },
+  "d4c8": {
+   "Size": 0.9,
+   "Position X": 40.0,
+   "Position Y": 260.0
+  },
+  "d5c1": {
+   "Size": 1.1,
+   "Position X": 0.0,
+   "Position Y": -354.8
+  },
+  "d5c2": {
+   "Size": 1.1,
+   "Position X": 0.0,
+   "Position Y": 354.8
+  },
+  "d5c3": {
+   "Size": 1.1,
+   "Position X": 0.0,
+   "Position Y": 354.8
+  },
+  "d5c4": {
+   "Size": 1.25,
+   "Position X": 0.0,
+   "Position Y": 312.5
+  },
+  "d5c5": {
+   "Size": 1.0,
+   "Position X": 0.0,
+   "Position Y": -350.0
+  },
+  "d5c6": {
+   "Size": 1.0,
+   "Position X": 0.0,
+   "Position Y": 340.0
+  }
+ }
 }

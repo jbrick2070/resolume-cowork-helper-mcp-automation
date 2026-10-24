@@ -489,7 +489,201 @@
    }
   ],
   "fft_philosophy": "Lows (kick, 40-120 Hz) drive structural tension only - Suckr strength, Rings Size and Spacing contracting a few percent, Trails length, Sine Wave Modulation Depth - through an envelope follower with fast attack and a 300-600 ms release, so the web tightens on the kick and relaxes between hits like a load on a structure rather than a flash. Mids (200 Hz-2 kHz) drive the slow motion rates (Spiral Speed, Line Scape Wobble, Abstract Field drift, Metaballs Speed) so a busy mix makes the world breathe faster but never flicker, and highs (6 kHz up) drive the silk alone - Fuzzyness, Displace amount, Bloom and dew brightness - in ranges small enough that silk shivers and never tears. Nothing ever reacts on TEXT (words must be readable on a wall at 2am), nothing moves the FIGURE's position (the spider decides where she is), hue never reacts anywhere, nothing on AURA reacts, column transitions never react, the rotation of any orb never reacts (a web does not spin to a beat), the Radar sweep period never reacts because it is the clock, and strobe frequency is not a signal path at all - every flash is a Stroboscope pad under a finger. The SCOPE layer alone takes the raw unsmoothed spectrum, precisely so that everything else can afford to be slow. Reactivity is a musician's hand on a fader, not a VU meter: smoothed, thresholded, and deliberately missing the obvious beat half the time.",
-  "wildcard_rationale": "The single most unexpected idea is that the web is never drawn, only revealed: the stock Radar effect in Bank A is the spider. Every ring, radius and spiral already exists on its layer, but the composition only shows what the beam has passed over, so the performer builds the orb by letting the sweep rotate while mashing structural pads, and a new ring lands exactly where the beam is. Lock that sweep to eight beats and it becomes the eight-legged clock: one revolution is one bar, each leg is a beat, and the whole composition keeps time visibly without a single frame of media, which is also why the pack is called Dew Line - the 1957 Distant Early Warning radar line and dew on an orb web at dawn are the same picture, a net strung across the dark that catches light so you can see what is coming, which is exactly what a club wall is for. Two smaller wildcards now live inside that one. In Orb Plate 1889, columns five and six are formwork removal: the same Spiral generator with Direction reversed, Spread tightened and Trails up, so the audience watches the dense capture spiral eat the dry scaffold from rim to hub while the title block stamps SCAFFOLD REMOVED, the one gesture that proves the spider is a builder and not a decoration, because she makes a temporary structure, uses it, and takes it down. In Dew Line Station, column six takes the telescope spider literally: the four vanes that hold every reflector's secondary mirror are called the spider by every astronomer who has collimated one, and the cross on every bright star is her shadow, so opening Bloom and Sparkles makes every dew return and marble egg grow a four-armed cross. Read in one breath, the bible says the spider builds a temporary structure, takes it down, and casts her shadow on every star the net catches."
+  "wildcard_rationale": "The single most unexpected idea is that the web is never drawn, only revealed: the stock Radar effect in Bank A is the spider. Every ring, radius and spiral already exists on its layer, but the composition only shows what the beam has passed over, so the performer builds the orb by letting the sweep rotate while mashing structural pads, and a new ring lands exactly where the beam is. Lock that sweep to eight beats and it becomes the eight-legged clock: one revolution is one bar, each leg is a beat, and the whole composition keeps time visibly without a single frame of media, which is also why the pack is called Dew Line - the 1957 Distant Early Warning radar line and dew on an orb web at dawn are the same picture, a net strung across the dark that catches light so you can see what is coming, which is exactly what a club wall is for. Two smaller wildcards now live inside that one. In Orb Plate 1889, columns five and six are formwork removal: the same Spiral generator with Direction reversed, Spread tightened and Trails up, so the audience watches the dense capture spiral eat the dry scaffold from rim to hub while the title block stamps SCAFFOLD REMOVED, the one gesture that proves the spider is a builder and not a decoration, because she makes a temporary structure, uses it, and takes it down. In Dew Line Station, column six takes the telescope spider literally: the four vanes that hold every reflector's secondary mirror are called the spider by every astronomer who has collimated one, and the cross on every bright star is her shadow, so opening Bloom and Sparkles makes every dew return and marble egg grow a four-armed cross. Read in one breath, the bible says the spider builds a temporary structure, takes it down, and casts her shadow on every star the net catches.",
+  "safety": true,
+  "caption_blocks": true,
+  "caption_fit": {
+   "d1c1": {
+    "Size": 1.0,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d1c2": {
+    "Size": 1.0,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d1c3": {
+    "Size": 1.0,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d1c4": {
+    "Size": 1.0,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d1c5": {
+    "Size": 1.0,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d1c6": {
+    "Size": 0.979,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d1c7": {
+    "Size": 1.0,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d1c8": {
+    "Size": 1.1,
+    "Position X": -120.0,
+    "Position Y": 400.0
+   },
+   "d2c1": {
+    "Size": 0.9,
+    "Position X": 540.0,
+    "Position Y": -400.0
+   },
+   "d2c2": {
+    "Size": 0.85,
+    "Position X": 266.8,
+    "Position Y": -400.0
+   },
+   "d2c3": {
+    "Size": 0.599,
+    "Position X": 540.0,
+    "Position Y": -400.0
+   },
+   "d2c4": {
+    "Size": 0.9,
+    "Position X": 333.6,
+    "Position Y": -400.0
+   },
+   "d2c5": {
+    "Size": 0.666,
+    "Position X": 540.0,
+    "Position Y": -400.0
+   },
+   "d2c6": {
+    "Size": 0.732,
+    "Position X": 467.2,
+    "Position Y": -400.0
+   },
+   "d2c7": {
+    "Size": 0.599,
+    "Position X": 540.0,
+    "Position Y": -400.0
+   },
+   "d2c8": {
+    "Size": 1.061,
+    "Position X": 393.2,
+    "Position Y": -400.0
+   },
+   "d3c1": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": 362.5
+   },
+   "d3c2": {
+    "Size": 1.05,
+    "Position X": 0.0,
+    "Position Y": -303.1
+   },
+   "d3c3": {
+    "Size": 0.816,
+    "Position X": 0.0,
+    "Position Y": 343.8
+   },
+   "d3c4": {
+    "Size": 1.7,
+    "Position X": 0.0,
+    "Position Y": 0.0
+   },
+   "d3c5": {
+    "Size": 0.938,
+    "Position X": 0.0,
+    "Position Y": 284.4
+   },
+   "d3c6": {
+    "Size": 0.699,
+    "Position X": 0.0,
+    "Position Y": -368.8
+   },
+   "d3c7": {
+    "Size": 1.2,
+    "Position X": -300.0,
+    "Position Y": -342.8
+   },
+   "d3c8": {
+    "Size": 1.1,
+    "Position X": 300.0,
+    "Position Y": 354.8
+   },
+   "d4c1": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 260.0
+   },
+   "d4c2": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 300.0
+   },
+   "d4c3": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 300.0
+   },
+   "d4c4": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 300.0
+   },
+   "d4c5": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 300.0
+   },
+   "d4c6": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 260.0
+   },
+   "d4c7": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 260.0
+   },
+   "d4c8": {
+    "Size": 0.9,
+    "Position X": 40.0,
+    "Position Y": 260.0
+   },
+   "d5c1": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": -354.8
+   },
+   "d5c2": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": 354.8
+   },
+   "d5c3": {
+    "Size": 1.1,
+    "Position X": 0.0,
+    "Position Y": 354.8
+   },
+   "d5c4": {
+    "Size": 1.25,
+    "Position X": 0.0,
+    "Position Y": 312.5
+   },
+   "d5c5": {
+    "Size": 1.0,
+    "Position X": 0.0,
+    "Position Y": -350.0
+   },
+   "d5c6": {
+    "Size": 1.0,
+    "Position X": 0.0,
+    "Position Y": 340.0
+   }
+  }
  },
  "rack": {
   "banks": [
@@ -898,10 +1092,10 @@
   "clips": 320,
   "comp_effects": 34,
   "fft_nodes": 684,
-  "bytes": 1684660
+  "bytes": 1681510
  },
  "preset": 164,
- "repairs": 7,
+ "repairs": 9,
  "sheets": [
   [
    0,
@@ -1327,7 +1521,7 @@
    1,
    "Bridge Line",
    "Stamp Bridge Line",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Title-block ink bottom-left, revealed one character at a time like a pen crossing the page."
@@ -1340,7 +1534,7 @@
    2,
    "Y Frame",
    "Stamp Y Frame",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The order of operations as a field note."
@@ -1353,7 +1547,7 @@
    3,
    "Thirty Radii",
    "Stamp Radius 14",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Every radius numbered, the drafting office counting along."
@@ -1366,7 +1560,7 @@
    4,
    "The Hub",
    "Stamp Hub Open",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The hub note while the rings sit at centre; text stays bottom-left off the figure."
@@ -1379,7 +1573,7 @@
    5,
    "Dry Spiral",
    "Stamp Dry Spiral",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Formwork, labelled as such before it is removed."
@@ -1392,7 +1586,7 @@
    6,
    "Capture Spiral",
    "Stamp Scaffold",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Column six stamps SCAFFOLD REMOVED in a stamp face, a size up, as the capture spiral eats the dry one."
@@ -1405,7 +1599,7 @@
    7,
    "Dew Load",
    "Stamp Dew Weight",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The engineering fact of the dew load, written small while the beads bloom."
@@ -1418,7 +1612,7 @@
    8,
    "Eaten at Dawn",
    "Stamp Eaten Dawn",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Left lit four bars after the BODY pad stops so the words outlive the web."
@@ -2159,7 +2353,7 @@
    1,
    "Funnel Mouth",
    "Sit Wait Header",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Ash monospaced strip-chart header top-right, no glow, the deck's instruction."
@@ -2172,7 +2366,7 @@
    2,
    "Twelve Days",
    "Twelve Days Header",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Ash header top-right; the sentence ends without an object because nothing has come."
@@ -2185,7 +2379,7 @@
    3,
    "First Tremor",
    "Tremor Timestamp",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The recorder stamps the time of the first vibration in ash monospace."
@@ -2198,7 +2392,7 @@
    4,
    "Triangulate",
    "Listen With Feet",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "How she triangulates: the header names the instrument."
@@ -2211,7 +2405,7 @@
    5,
    "Pluck the Line",
    "Pluck Listen",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The foreleg's instruction in ash, slightly larger as the decision approaches."
@@ -2224,7 +2418,7 @@
    6,
    "The Rush",
    "Rush Countdown",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Largest ash header of the deck, still top-right, still unreactive so it reads on a wall at 2am."
@@ -2237,7 +2431,7 @@
    7,
    "Swathe",
    "Rotate Wrap Header",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Ash header back to working size as the action becomes procedure."
@@ -2250,7 +2444,7 @@
    8,
    "The Husk",
    "Contact Lost Red",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The deck's one red, used once: the header turns Contact red and the room is left with one word, static and the trace."
@@ -3030,7 +3224,7 @@
    4,
    "The Verdict",
    "Verdict Hang",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The only text allowed dead centre: the sentence stamped in madder across the woman herself."
@@ -3069,7 +3263,7 @@
    7,
    "Story Nodes",
    "Onini Lands",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The first capture name drops onto the web letter by letter, upper left, a pad to mash as the beam passes each node."
@@ -3082,7 +3276,7 @@
    8,
    "Ananse Web",
    "Osebo Lands",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The second capture lands at the opposite node, lower right, so mashing columns 7 and 8 drops names onto the web one by one."
@@ -4655,7 +4849,7 @@
    1,
    "Carrier",
    "Ident Station 7",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The station ident in 1981 continuity sans, signal white, parked in the top band so it never sits on the carrier."
@@ -4668,7 +4862,7 @@
    2,
    "Sweep",
    "Hour In Eighths",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "One revolution per bar, one leg per beat: the caption in the lower band under the sweep."
@@ -4681,7 +4875,7 @@
    3,
    "Silk Crosshair",
    "Reticle Strand",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Caption in the lower band, clear of the crosshair's centre."
@@ -4707,7 +4901,7 @@
    5,
    "Eight O'Clock",
    "Not A Signal",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The Bell Burnell line, 22 characters at size 1, in the top band above the hands."
@@ -4720,7 +4914,7 @@
    6,
    "Net of Light",
    "Shadow On Star",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "The peak's line in the lower band, under the vanes and the dew."
@@ -4733,7 +4927,7 @@
    7,
    "Blackout",
    "No Contact 0300",
-   "Text Animator",
+   "Text Block",
    "",
    "",
    "Warn red, dead centre like a continuity caption, because there is nothing else on the wall to sit on."
