@@ -236,6 +236,9 @@ def build_pack(bible, decks, rack, out_dir, slug, preset_id, id_base,
     # opt-in, per layer: effects that stay on every clip of the layer, and a clip-change fade
     layer_fx = bible.get("layer_effects") or {}
     layer_ms = bible.get("layer_transition_ms") or {}
+    if bible.get("kinetic") and not layer_fx:
+        from . import kinetic_pass as KP
+        layer_fx, layer_ms = KP.LAYER_EFFECTS, dict(layer_ms or KP.LAYER_TRANSITION_MS)
     for n in range(1, 9):
         xf = 1 if n in INST.XFADE_A else (2 if n in INST.XFADE_B else 0)
         fx = []
@@ -256,6 +259,33 @@ def build_pack(bible, decks, rack, out_dir, slug, preset_id, id_base,
             ignore_column=(n == INST.SCOPE_LAYER), master=1.0,
             color_id=LAYER_COLOR_IDS[n], transition_ms=max(0, min(10000, int(ms))),
             effects=fx))
+
+    # ---- the kinetic pass (opt-in: bible["kinetic"] = {"colour": "#rrggbbff"}) -----------
+    # For packs with no design.py of their own (Dead Air, Dew Line): the same pass the design
+    # packs call themselves, applied to the deck JSON at build time. Captions are never touched.
+    kin = bible.get("kinetic")
+    if kin:
+        from . import kinetic_pass as KP
+        decks = [dict(d, clips=[dict(c) for c in d.get("clips", [])]) for d in decks]
+        KP.pass_decks(decks, KP.default_motion(kin.get("colour", "#e8e4d8ff"), kin.get("dim")),
+                      lambda m: rep.repair("kinetic: " + m))
+
+    # ---- safety clamps only (opt-in: bible["safety"] = true) -----------------------------
+    # For the packs whose own philosophy forbids the kinetic pass (Dead Air, Dew Line) but which
+    # must still obey the flash, red and GPU caps the rest of the library obeys.
+    if bible.get("safety") and not kin:
+        from . import kinetic as K
+        decks = [dict(d, clips=[dict(c) for c in d.get("clips", [])]) for d in decks]
+        for d in decks:
+            K.clamp_deck(d, lambda m: rep.repair("safety: " + m))
+
+    # ---- captions as Text Blocks (opt-in: bible["caption_blocks"] = true) -------------------------
+    # Dead Air and Dew Line were generated before Avenue's text placement was measured and built their
+    # captions as Text Animators written for the wrong coordinates; see captions.py.
+    if bible.get("caption_blocks"):
+        from . import captions as CAP
+        decks = [dict(d, clips=[dict(c, params=dict(c.get("params", {}))) for c in d.get("clips", [])]) for d in decks]
+        CAP.convert(decks, lambda m: rep.note(m), table=bible.get("caption_fit"))
 
     # ---- decks ---------------------------------------------------------------
     sheets = []

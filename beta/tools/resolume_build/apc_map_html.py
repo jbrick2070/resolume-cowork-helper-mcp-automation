@@ -212,9 +212,14 @@ def describe(path, comp, rng):
         "/composition/tempocontroller/resync": "Tempo resync",
         "/composition/tempocontroller/tempo": "Tempo",
         "/composition/select": "Select composition",
+        "/audiodevicemanager/params/fftinputgain": "FFT input gain",
     }
     if p in simple:
         lab = simple[p]
+        if p == "/composition/speed" and rng and rng[0] == rng[1]:
+            lab = "Composition speed -> 1x" if rng[0] == "0.1" else lab
+        if p == "/audiodevicemanager/params/fftinputgain" and rng and rng[0] == rng[1]:
+            lab = "FFT input gain -> home"
         if p == "/composition/crossfader/phase" and rng and rng[0] == rng[1]:
             lab = "Crossfader -> %s" % {"0": "A", "1": "B", "0.5": "centre"}.get(
                 rng[0], rng[0])

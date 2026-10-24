@@ -17,7 +17,7 @@ Preset: **APC 40 MK II - EarthSearch EP01**  ·  composition: **EarthSearch_EP01
 | **STOP / RESET BOTH** | `STOP` | Ejects every layer. Both masters return to 00:00. |
 | **CLEAN / ALL FX OFF** | `BANK LOCK` | Takes all five effect banks, every overlay layer, the scope and the captions to zero in one press. Playback is not touched. |
 
-The **Cue Level** knob sweeps the same eight links continuously, so after a CLEAN it is also how you bring the look back — the physical knobs do not move themselves, and Avenue has no soft-takeover.
+The **Cue Level** knob is a relative encoder: each click nudges all eight links together from wherever they are, so after a CLEAN it is how you bring the look back, with no jump.
 
 `STOP ALL CLIPS` does what it says: it clears the five overlay layers and cannot reach a master.
 
@@ -170,8 +170,8 @@ Bank intensity: **Device knob 5**. CLEAN drives it to zero.
 | Track fader 8 | `SCOPE` level | down |
 | Master fader | composition master | up |
 | **Crossfader** | **A ↔ B dissolve.** MASTER A is on bus A, MASTER B on bus B. Hard left is pure A, hard right pure B, everything between is a true dissolve. | left (pure A) |
-| Cue Level | FX MASTER sweep — anticlockwise is a clean image | up |
-| Tempo knob | BPM reference for animation only; the masters run on their own timeline and are unaffected | — |
+| Cue Level | FX MASTER nudge (relative): anticlockwise walks every link toward a clean image | up |
+| Tempo knob | FFT INPUT GAIN, the same knob on every composition. EarthSearch listens to the composition's own audio, so it has no effect here | none |
 | Footswitch | momentary BLACKOUT — hold for black | — |
 
 ### Device Control knobs — bank intensity
@@ -217,10 +217,10 @@ This is what makes the audio reactivity playable rather than baked. Watch the SC
 | Button | Function |
 |---|---|
 | MASTER n80 | Select composition |
-| METRONOME n90 | Tempo resync |
+| METRONOME n90 | FFT gain home (the Tempo knob's reset; no effect here, see above) |
 | TAP TEMPO n99 | Tap tempo — the masters are timeline-locked, so tempo only affects BPM-synced animation - never playback |
 | SHIFT n98 | Re-arm SCOPE — brings the FFT readout back if it was ejected. Touches nothing else. |
-| TEMPO CC13 (relative encoder) | Tempo knob — BPM reference for animation only. The masters run on their own timeline and are not affected. |
+| TEMPO CC13 (relative encoder) | FFT INPUT GAIN, the same knob on every composition. EarthSearch listens to the composition's own audio, so it has no effect here. |
 
 ---
 

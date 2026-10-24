@@ -29,7 +29,8 @@ THE SURFACE, in one place
   RECORD              BLACKOUT toggle (reversible)
   BANK LOCK           CLEAN: all eight dashboard links to zero (FX off)
   SHIFT               re-arm the SCOPE
-  METRONOME / TAP     tempo resync / tap tempo
+  METRONOME           FFT GAIN home (puts the global gain back to the middle)
+  TAP TEMPO           TIME home (composition speed back to 1x)
   MASTER              select composition
   Faders ch1-8        layer master level     MASTER fader  composition master
   CROSSFADER          environment (A: BED BODY AURA) <-> figures (B: FIGURE
@@ -37,8 +38,9 @@ THE SURFACE, in one place
   Device knobs 1-8    dashboard links 1-8: four bank dry/wets, four macros
   Track knobs 1-8     live FFT: LOW/MID/HIGH depth + release, SCOPE depth,
                       TIME (composition speed 0..2x)
-  CUE LEVEL           FX master sweep over the four bank links
-  TEMPO knob          BPM (relative encoder)
+  CUE LEVEL           FX master over the four bank links (relative encoder)
+  TEMPO knob          FFT INPUT GAIN, global (relative encoder). The same knob
+                      on every composition; this instrument has no BPM job.
   FOOTSWITCH          momentary blackout
 """
 from . import apc as A
@@ -56,6 +58,8 @@ BANK_SEATS = [
     ("DEVICE n%d", [("note", 1, n) for n in range(58, 66)]),
     ("GLOBAL n%d", [("note", 1, n) for n in (87, 88, 89, 100, 101, 102)]),
 ]
+
+FFT_GAIN = "/audiodevicemanager/params/fftinputgain"
 
 FORBIDDEN_PATHS = [
     "transport/position",      # no scrubbing from the surface
@@ -202,10 +206,18 @@ def build_apc_map(S, deck_clip_names=None):
           note=98, group="Scope",
           led={"Connected": 1, "Connected & previewing": 1,
                "Disconnected": 0, "Previewing": 0, "Empty": 0, "Off": 0})
-    P.add("Tempo resync", "note", "/composition/tempocontroller/resync",
-          "action1", note=90, group="Tempo", led={"Off": 0, "On": 127})
-    P.add("Tap tempo", "note", "/composition/tempocontroller/tempotap",
-          "action1", note=99, group="Tempo", led={"Off": 0, "On": 127})
+    # No BPM job anywhere in this instrument (the music drives it through the
+    # external FFT), so the tempo buttons become the two reset buttons for the
+    # two global dials: FFT gain on the TEMPO knob, speed on Track knob 8.
+    P.add("FFT GAIN home (0.5)", "note", FFT_GAIN, "ccrange", note=90,
+          group="FFT gain (global)", value_range=("0.5", "0.5"), init="0.5",
+          led={"Off": 0, "On": 127},
+          note_text="one press puts the global FFT gain back to the middle; "
+                    "the TEMPO knob trims it from there")
+    P.add("TIME home (1x)", "note", "/composition/speed", "ccrange", note=99,
+          group="TIME home", value_range=("0.1", "0.1"), init="0.1",
+          led={"Off": 0, "On": 127},
+          note_text="one press puts composition speed back to exactly 1x")
     P.add("Select composition", "note", "/composition/select", "selectcomp",
           note=80, group="Mixer", led={"Off": 0, "On": 1})
 
@@ -251,16 +263,27 @@ def build_apc_map(S, deck_clip_names=None):
     P.add("Track knob 8 - TIME (speed 0..2x)", "cc", "/composition/speed",
           "ccrange", cc=55, group="Live FFT", value_range=("0", "0.2"),
           init="0.5", note_text="every generator breathes faster or slower")
+    # CUE LEVEL and TEMPO are the two free-spinning encoders (no LED ring).
+    # Avenue's own MIDI-learn of CUE LEVEL in the performer's saved preset came
+    # back RELATIVE (behaviour 2113544 carries the relative bit, step 1/128), so
+    # the FX master is a relative nudge on all four bank links, not a position.
     for link in range(1, 5):
-        P.add("FX MASTER sweep (link %d)" % link, "cc",
-              "/composition/dashboard/link%d" % link, "ccrange", cc=47,
-              group="FX master", value_range=("0", "1"), init="1",
-              note_text="anticlockwise = the clean picture")
+        P.add("FX MASTER nudge (link %d)" % link, "cc",
+              "/composition/dashboard/link%d" % link, "relative", cc=47,
+              group="FX master", num_steps=64,
+              note_text="anticlockwise walks all four banks to the clean "
+                        "picture, clockwise brings them back")
     P.add("Footswitch momentary BLACKOUT", "cc", "/composition/bypassed",
           "ccrange", cc=64, value_range=("0", "1"), init="0",
           group="Safety - blackout")
-    P.add("Tempo knob", "cc", "/composition/tempocontroller/tempo",
-          "relative", cc=13, group="Tempo")
+    # FFT INPUT GAIN: Avenue's global audio-analysis gain (Preferences > Audio,
+    # path proven in the performer's own saved presets). It lives on the TEMPO
+    # knob because that is the one knob every composition's preset leaves free
+    # and the instrument has no BPM job. Relative, so it never jumps.
+    P.add("FFT GAIN (global input gain)", "cc", FFT_GAIN, "relative", cc=13,
+          group="FFT gain (global)", num_steps=128,
+          note_text="turn up when the picture is too calm, down when it "
+                    "slams; the same knob on every composition")
     return P
 
 

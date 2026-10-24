@@ -112,13 +112,19 @@ def write_docs(out_dir, bible, manifest, extra_notes=None):
       "is not set.")
     B("* Track knobs 1-6 are depth / release for the three bands; turn depth "
       "up until the SCOPE breathes with the music, not with every hi-hat.")
+    B("* **FFT GAIN is the TEMPO knob**, on every composition: Avenue's "
+      "global audio gain. Turn it up when the picture is too calm for the "
+      "room, down when it slams. METRONOME puts it back to the middle.")
+    B("* **TIME is Track knob 8**: composition speed, 0 to 2x with 1x at "
+      "the centre. TAP TEMPO puts it back to exactly 1x.")
     B("")
     B("## Playing")
     B("")
     B("* Scenes with Scene Launch 1-5 and UP/DOWN; worlds with LEFT/RIGHT.")
     B("* Pads mash the five playable layers across any scene.")
     B("* Effects: lit button = active. Device knobs 1-4 are the four banks' "
-      "wetness, 5-8 the macros. CUE LEVEL sweeps all four banks.")
+      "wetness, 5-8 the macros. CUE LEVEL nudges all four banks together "
+      "(anticlockwise toward the clean picture).")
     B("* **STOP** clears the pad layers only (beds and scope survive). "
       "**STOP ALL CLIPS** ejects everything. **RECORD** is blackout "
       "(press again to return). The footswitch is a momentary blackout.")

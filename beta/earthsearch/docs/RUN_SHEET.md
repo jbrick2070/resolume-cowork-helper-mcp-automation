@@ -59,10 +59,10 @@ At the end of 27:10.708 both masters **loop** together and stay locked.
 **CLEAN mutes; it does not disarm.** Every effect pad stays lit and every
 overlay stays connected — the eight links are simply at zero. So bring things
 back *deliberately*, one **Device knob** at a time, and un-light anything you
-did not want. **Do not reach for Cue Level after a CLEAN**: it is a single
-physical pot that owns all eight links at once, and its first nudge sends
-whatever position it is already sitting in — which is usually full. Avenue has
-no soft-takeover, so nothing on the surface re-syncs itself.
+did not want. **Cue Level is the safe way back after a CLEAN**: it is a
+relative encoder, so turning it clockwise raises all eight links together from
+zero with no jump. The Device knobs are positions, and Avenue has no
+soft-takeover, so their first touch sends whatever position they sit in.
 
 ---
 
@@ -76,7 +76,7 @@ no soft-takeover, so nothing on the surface re-syncs itself.
 | Both masters stopped | **PLAY** restarts both together from zero. |
 | Nothing reacts to the audio | Check a master is playing and that Preferences → Audio has a working output device. The FFT reads the composition's own audio. |
 | The pads are dark | The APC40 must be enabled as a MIDI **output** as well as an input. |
-| A knob jumped when you touched it | Expected — Avenue has no soft-takeover, and after a CLEAN the software is at zero while your knobs are not. Come back on the Device knobs, not Cue Level. |
+| A knob jumped when you touched it | Expected — Avenue has no soft-takeover, and after a CLEAN the software is at zero while your knobs are not. Come back with Cue Level, which is relative and never jumps. |
 | The crossfader does nothing | The masters must be on crossfader buses A and B. The composition ships that way. |
 
 ---

@@ -77,3 +77,11 @@ def monitor_box(size):
 def grab_monitor(hwnd=None, front=True):
     win = grab_window(hwnd, front)
     return win.crop(monitor_box(win.size))
+
+
+def pin(hwnd, on=True):
+    """Keep Avenue above every other window while frames are captured (the capture reads the screen, so anything
+    on top of the Composition Monitor ends up in the frames). Call pin(hwnd, False) when done."""
+    HWND_TOPMOST, HWND_NOTOPMOST, SWP_NOMOVE, SWP_NOSIZE, SWP_SHOWWINDOW = -1, -2, 0x2, 0x1, 0x40
+    user32.SetWindowPos(hwnd, HWND_TOPMOST if on else HWND_NOTOPMOST, 0, 0, 0, 0,
+                        SWP_NOMOVE | SWP_NOSIZE | (SWP_SHOWWINDOW if on else 0))

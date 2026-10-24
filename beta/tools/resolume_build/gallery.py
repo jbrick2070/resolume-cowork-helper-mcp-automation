@@ -100,19 +100,40 @@ def signature(c):
             c["layers"][0]["name"]["value"] if c["layers"] else "")
 
 
-def open_and_wait(path, timeout=240):
+def _ids(c):
+    """A few of the composition's own ids (Avenue reports the file's uniqueIds): a different build gives
+    different ones, so a finished load is visible without waiting for the open call to answer."""
+    try:
+        return (c["layers"][0]["id"], c["layers"][-1]["id"], c["layers"][min(6, len(c["layers"]) - 1)]["clips"][0]["id"],
+                c["layers"][min(4, len(c["layers"]) - 1)]["clips"][-1]["id"])
+    except Exception:
+        return None
+
+
+def open_and_wait(path, timeout=240, grace=45):
+    """Open a composition and return it once it is loaded.
+
+    The open call is made on a worker thread: Avenue sometimes loads the file at once and then keeps the
+    HTTP request pending for minutes or for ever, so the answer is not what we wait for. We poll the
+    composition instead and accept it when its ids or counts have changed. Re-opening the very same file
+    cannot be told apart that way, so that case is accepted after `grace` seconds."""
+    import threading
     name, nd, nl, nc = avc_counts(path)
     try:
-        before = signature(rig.composition())
+        c0 = rig.composition()
+        before, before_ids = signature(c0), _ids(c0)
     except Exception:
-        before = None
-    try:
-        rig.post("/composition/open", rig.file_url(path), timeout=timeout)
-    except Exception as exc:
-        print("  open call:", exc)
-    # Avenue names an open composition after its file, not the header's name attribute
-    stem = os.path.splitext(os.path.basename(path))[0]
-    same_as_before = before is not None and before[0] in (name, stem) and before[1:4] == (nd, nl, nc)
+        before, before_ids = None, None
+    answer = {}
+
+    def _post():
+        try:
+            rig.post("/composition/open", rig.file_url(path), timeout=timeout)
+            answer["done"] = True
+        except Exception as exc:
+            answer["err"] = str(exc)
+    worker = threading.Thread(target=_post, daemon=True)
+    worker.start()
     t0 = time.time()
     while time.time() - t0 < timeout:
         time.sleep(1.5)
@@ -122,11 +143,14 @@ def open_and_wait(path, timeout=240):
             c = rig.composition()
         except Exception:
             continue
-        sig = signature(c)
+        elapsed = time.time() - t0
         counts_ok = (len(c["decks"]), len(c["layers"]), len(c["columns"])) == (nd, nl, nc)
-        # the target may already have been open (reopened in place): accept it after a pause
-        if counts_ok and (sig != before or (same_as_before and time.time() - t0 > 8)):
-            time.sleep(4)
+        changed = signature(c) != before or _ids(c) != before_ids
+        if counts_ok and changed and elapsed > 3:
+            time.sleep(5)                                   # let the last clips and thumbnails settle
+            return rig.composition()
+        if counts_ok and elapsed > 8 and (not worker.is_alive() or elapsed > grace):
+            time.sleep(4)                                   # nothing changed: the same file, reopened in place
             return rig.composition()
     return None
 

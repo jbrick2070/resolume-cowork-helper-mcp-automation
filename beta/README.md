@@ -9,6 +9,11 @@ These files are useful experiments, not the verified stable release.
 | `lexicon/compositions/Res React Lexicon.avc` | `lexicon/controllers/APC 40 MK II - Lexicon v1.xml` |
 | `lexicon-ii/compositions/Res React Lexicon II.avc` | `lexicon-ii/controllers/APC 40 MK II - Lexicon v2.xml` |
 
+**One APC40, every composition.** The TEMPO knob is the global FFT gain, UP and DOWN walk the scenes,
+RIGHT and LEFT walk the decks, and RECORD and the footswitch are blackout, in every composition here except
+the controller twins and EarthSearch EP01. See [OPERATOR_STANDARD.md](OPERATOR_STANDARD.md). The presets were
+brought into line on 2026-10-23 from the performer's own saved presets and are not yet confirmed on the hardware.
+
 Both generative compositions remain useful as references for the FFT prompts,
 manifests, and FFGL plugins. Their APC40 controller pairings have not been
 accepted as end-to-end verified builds. Use them for experimentation, not as

@@ -89,7 +89,8 @@ SHAPES = {
                       att_in="1", att_out="1", devices=True, sibling=None,
                       subtarget=True),
     "relative":  dict(behaviour="16392", param_node="", tt="1", att_in="1",
-                      att_out="1", devices=True, sibling=None),
+                      att_out="1", devices=True, sibling=None,
+                      subtarget=True),
 }
 
 
@@ -173,14 +174,15 @@ class Preset(object):
 
     def add(self, control, kind, path, shape, note=None, cc=None, channel=1,
             led=None, value_range=None, init=None, group="", note_text="",
-            physical=None):
+            physical=None, num_steps=None):
         key = (kind, channel, note if kind == "note" else cc)
         self.map.append(dict(
             control=control, physical=physical or PHYSICAL_NAMES.get(
                 key, "%s ch%d %s" % (kind, channel, key[2])),
             kind=kind, path=path, shape=shape, note=note, cc=cc,
             channel=channel, led=led or {}, value_range=value_range,
-            init=init, group=group, note_text=note_text))
+            init=init, group=group, note_text=note_text,
+            num_steps=num_steps))
         return self.map[-1]
 
     @staticmethod
@@ -217,8 +219,9 @@ class Preset(object):
         if vr is not None:
             X.append('\t\t\t<ValueRange min="%s" max="%s" />' % (vr[0], vr[1]))
         init = sc.get("init")
-        X.append('\t\t\t<RawInputMessage key="%d" value="%s" numSteps="128" />'
-                 % (self.key_of(sc), "0" if init is None else init))
+        X.append('\t\t\t<RawInputMessage key="%d" value="%s" numSteps="%d" />'
+                 % (self.key_of(sc), "0" if init is None else init,
+                    sc.get("num_steps") or 128))
         if sc["led"]:
             X.append("\t\t\t<NamedValues>")
             for state in sorted(sc["led"]):
