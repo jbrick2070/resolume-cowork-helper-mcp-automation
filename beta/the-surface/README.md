@@ -2,7 +2,7 @@
 
 *Note 0 is bottom-left. Channel is track. Centre is everything.*
 
-A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 441 of its parameters listen to the music through Resolume's external FFT.
+A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 804 of its parameters listen to the music through Resolume's external FFT.
 
 | | |
 |---|---|
@@ -23,7 +23,7 @@ Scenes: Note Zero -> Row Of Eight -> Five Rows -> Velocity Palette -> Green 21 -
 
 Scenes: Channel = Track -> Clip Stop 52 -> Select 51 -> Activator 50 -> Rec Arm 48 -> A/B 66 -> Faders CC7 -> Crossfader CC15
 
-**3. Knobs + Transport** (hardware) - The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 (the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on CC47 (the effects master sweep), the relative Tempo encoder on CC13, PLAY STOP RECORD on notes 91-93, Tap and Nudge, and the footswitch on CC64 that is a momentary blackout in every pack here.
+**3. Knobs + Transport** (hardware) - The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 (the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on CC47 (the relative effects master), the relative Tempo encoder on CC13 (the global FFT gain), PLAY STOP RECORD on notes 91-93, Tap and Metronome (the two reset buttons), Nudge, and the footswitch on CC64 that is a momentary blackout in every pack here.
 
 Scenes: Device CC16-23 -> LED Rings -> Track CC48-55 -> Cue Level CC47 -> Tempo CC13 -> Play Stop Rec -> Tap + Nudge -> Footswitch CC64
 
@@ -46,7 +46,7 @@ Scenes: Four Inputs -> Main / Sub -> T-Bar -> Wipe -> PIP -> Split Screen -> Col
 
 ## FFT philosophy
 
-The controller is the subject and the music is what it controls, so the reactivity stays mechanical: lows swell pads and widen fader caps, mids turn knob gaps and move playheads and T-bars, highs only jitter the serial bits and the DIN pins. Colour never reacts: green is a lit pad or a message arriving, amber is the second LED family and the T-bar, red is the wire and nothing else. Text never moves. Every note, CC and byte on screen is the real one.
+The controller is the subject and the music is what it controls, so the reactivity stays mechanical: lows swell pads and widen fader caps, mids turn knob gaps and move playheads and T-bars, highs only jitter the serial bits and the DIN pins. Colour never reacts: green is a lit pad or a message arriving, amber is the second LED family and the T-bar, red is the wire and nothing else. Text never moves. Every note, CC and byte on screen is the real one. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.
 
 ## Built from the running application
 

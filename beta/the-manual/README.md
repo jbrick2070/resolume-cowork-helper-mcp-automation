@@ -2,7 +2,7 @@
 
 *Composition > Deck > Group > Layer > Clip. Click the cogwheel.*
 
-A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 420 of its parameters listen to the music through Resolume's external FFT.
+A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 786 of its parameters listen to the music through Resolume's external FFT.
 
 | | |
 |---|---|
@@ -46,7 +46,7 @@ Scenes: Audio In -> MIDI -> Webserver -> OSC -> Video -> Defaults -> The Harvest
 
 ## FFT philosophy
 
-This pack is about the thing that makes it move, so the FFT is explicit. Deck 3 draws the spectrum, the L M H bands, Gain and Fall; Deck 5 draws the input device the whole repo depends on. Elsewhere the rule is the usual one: lows drive size and width (selection outlines, the playing cell, discs), mids drive playheads, dials and the spectrum, highs touch only the band in-point and dither. Colour never reacts: blue is selected, green is playing, amber is BPM, grey is everything else. Text never moves.
+This pack is about the thing that makes it move, so the FFT is explicit. Deck 3 draws the spectrum, the L M H bands, Gain and Fall; Deck 5 draws the input device the whole repo depends on. Elsewhere the rule is the usual one: lows drive size and width (selection outlines, the playing cell, discs), mids drive playheads, dials and the spectrum, highs touch only the band in-point and dither. Colour never reacts: blue is selected, green is playing, amber is BPM, grey is everything else. Text never moves. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.
 
 ## Built from the running application
 

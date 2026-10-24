@@ -13,12 +13,14 @@
 * **PLAY** fires scene 1 of the current deck and arms the SCOPE.
 * Watch the SCOPE (layer 8, fader 8): if it is flat, the audio input is not set.
 * Track knobs 1-6 are depth / release for the three bands; turn depth up until the SCOPE breathes with the music, not with every hi-hat.
+* **FFT GAIN is the TEMPO knob**, on every composition: Avenue's global audio gain. Turn it up when the picture is too calm for the room, down when it slams. METRONOME puts it back to the middle.
+* **TIME is Track knob 8**: composition speed, 0 to 2x with 1x at the centre. TAP TEMPO puts it back to exactly 1x.
 
 ## Playing
 
 * Scenes with Scene Launch 1-5 and UP/DOWN; worlds with LEFT/RIGHT.
 * Pads mash the five playable layers across any scene.
-* Effects: lit button = active. Device knobs 1-4 are the four banks' wetness, 5-8 the macros. CUE LEVEL sweeps all four banks.
+* Effects: lit button = active. Device knobs 1-4 are the four banks' wetness, 5-8 the macros. CUE LEVEL nudges all four banks together (anticlockwise toward the clean picture).
 * **STOP** clears the pad layers only (beds and scope survive). **STOP ALL CLIPS** ejects everything. **RECORD** is blackout (press again to return). The footswitch is a momentary blackout.
 * **BANK LOCK = CLEAN.** Every effect dry, every macro off, picture untouched. Avenue has no soft-takeover: after CLEAN the physical knobs are where you left them, so the next knob you touch jumps. Sweep CUE LEVEL to come back smoothly.
 
@@ -37,6 +39,7 @@
 **Knobs + Transport**
 - Rings: column 2, turn Device knob 1 slowly; the amber ring on screen is the ring under your hand.
 - Cue level: column 4, sweep CUE LEVEL anticlockwise to CLEAN and back; the amber line is the four bank links moving together.
+- Gain: column 5, turn the TEMPO encoder; the red ticks are CC13 and the FFT gain moves with them.
 - Footswitch: column 8, stamp the pedal on the one; the red bar is CC64 going 0x7F.
 
 **The Wire**

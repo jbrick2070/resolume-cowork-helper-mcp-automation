@@ -141,7 +141,7 @@
    "name": "Knobs + Transport",
    "slug": "knobs",
    "theme": "hardware",
-   "world": "The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 (the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on CC47 (the effects master sweep), the relative Tempo encoder on CC13, PLAY STOP RECORD on notes 91-93, Tap and Nudge, and the footswitch on CC64 that is a momentary blackout in every pack here.",
+   "world": "The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 (the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on CC47 (the relative effects master), the relative Tempo encoder on CC13 (the global FFT gain), PLAY STOP RECORD on notes 91-93, Tap and Metronome (the two reset buttons), Nudge, and the footswitch on CC64 that is a momentary blackout in every pack here.",
    "palette": [
     {
      "role": "bed",
@@ -201,6 +201,7 @@
    "moments": [
     "Rings: column 2, turn Device knob 1 slowly; the amber ring on screen is the ring under your hand.",
     "Cue level: column 4, sweep CUE LEVEL anticlockwise to CLEAN and back; the amber line is the four bank links moving together.",
+    "Gain: column 5, turn the TEMPO encoder; the red ticks are CC13 and the FFT gain moves with them.",
     "Footswitch: column 8, stamp the pedal on the one; the red bar is CC64 going 0x7F."
    ]
   },
@@ -361,6 +362,87 @@
    "role": "Bank D: the pad grid of grids."
   }
  ],
- "fft_philosophy": "The controller is the subject and the music is what it controls, so the reactivity stays mechanical: lows swell pads and widen fader caps, mids turn knob gaps and move playheads and T-bars, highs only jitter the serial bits and the DIN pins. Colour never reacts: green is a lit pad or a message arriving, amber is the second LED family and the T-bar, red is the wire and nothing else. Text never moves. Every note, CC and byte on screen is the real one.",
- "wildcard_rationale": "Four decks are the APC40 mkII and its wire: the grid, the strips, the knobs and transport, and MIDI itself. The fifth is a video mixer of the same era of hands-on control, the Datavideo SE-500, chosen because it speaks the APC's MIDI over the older five-pin wire and because its T-bar is the crossfader's older sibling."
+ "fft_philosophy": "The controller is the subject and the music is what it controls, so the reactivity stays mechanical: lows swell pads and widen fader caps, mids turn knob gaps and move playheads and T-bars, highs only jitter the serial bits and the DIN pins. Colour never reacts: green is a lit pad or a message arriving, amber is the second LED family and the T-bar, red is the wire and nothing else. Text never moves. Every note, CC and byte on screen is the real one. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+ "wildcard_rationale": "Four decks are the APC40 mkII and its wire: the grid, the strips, the knobs and transport, and MIDI itself. The fifth is a video mixer of the same era of hands-on control, the Datavideo SE-500, chosen because it speaks the APC's MIDI over the older five-pin wire and because its T-bar is the crossfader's older sibling.",
+ "layer_effects": {
+  "2": [
+   {
+    "effect": "Wave Warp",
+    "params": {
+     "Mode": 0.0,
+     "Width": 0.5,
+     "Speed": 0.1,
+     "Angle": 0.25,
+     "Pin edges?": true
+    },
+    "fft": {
+     "Height": {
+      "band": "mid",
+      "gain": 4.0,
+      "release": 110,
+      "floor": 0.005,
+      "ceiling": 0.025
+     }
+    }
+   }
+  ],
+  "3": [
+   {
+    "effect": "Trails",
+    "params": {
+     "Mode": "Lighten",
+     "Feedback": 0.3
+    },
+    "wet_max": 0.25
+   }
+  ],
+  "4": [
+   {
+    "effect": "Bloom",
+    "params": {
+     "Threshold": 0.8,
+     "Iterations": 2,
+     "Size": 0.15
+    },
+    "fft": {
+     "Amount": {
+      "band": "low",
+      "gain": 6.0,
+      "release": 150,
+      "floor": 0.1,
+      "ceiling": 0.3
+     }
+    }
+   }
+  ],
+  "8": [
+   {
+    "effect": "Shift RGB",
+    "params": {
+     "Mode": "Shift X",
+     "R": 1.0,
+     "G": 0.0,
+     "B": -1.0
+    },
+    "fft": {
+     "Distance": {
+      "band": "high",
+      "gain": 2.0,
+      "release": 100,
+      "floor": 0.002,
+      "ceiling": 0.008
+     }
+    }
+   }
+  ]
+ },
+ "layer_transition_ms": {
+  "1": 150,
+  "2": 100,
+  "3": 100,
+  "4": 100,
+  "6": 100,
+  "7": 150,
+  "8": 100
+ }
 }

@@ -355,12 +355,17 @@
 |---|---|---|---|
 | Re-arm SCOPE | SHIFT n98 | `/composition/layers/8/clips/1/connect` |  |
 
-## Tempo
+## FFT gain (global)
 
 | control | physical | path | note |
 |---|---|---|---|
-| Tempo resync | METRONOME n90 | `/composition/tempocontroller/resync` |  |
-| Tap tempo | TAP TEMPO n99 | `/composition/tempocontroller/tempotap` |  |
+| FFT GAIN home (0.5) | METRONOME n90 | `/audiodevicemanager/params/fftinputgain` | one press puts the global FFT gain back to the middle; the TEMPO knob trims it from there |
+
+## TIME home
+
+| control | physical | path | note |
+|---|---|---|---|
+| TIME home (1x) | TAP TEMPO n99 | `/composition/speed` | one press puts composition speed back to exactly 1x |
 
 ## Mixer
 
@@ -418,10 +423,10 @@
 
 | control | physical | path | note |
 |---|---|---|---|
-| FX MASTER sweep (link 1) | CUE LEVEL CC47 | `/composition/dashboard/link1` | anticlockwise = the clean picture |
-| FX MASTER sweep (link 2) | CUE LEVEL CC47 | `/composition/dashboard/link2` | anticlockwise = the clean picture |
-| FX MASTER sweep (link 3) | CUE LEVEL CC47 | `/composition/dashboard/link3` | anticlockwise = the clean picture |
-| FX MASTER sweep (link 4) | CUE LEVEL CC47 | `/composition/dashboard/link4` | anticlockwise = the clean picture |
+| FX MASTER nudge (link 1) | CUE LEVEL CC47 | `/composition/dashboard/link1` | anticlockwise walks all four banks to the clean picture, clockwise brings them back |
+| FX MASTER nudge (link 2) | CUE LEVEL CC47 | `/composition/dashboard/link2` | anticlockwise walks all four banks to the clean picture, clockwise brings them back |
+| FX MASTER nudge (link 3) | CUE LEVEL CC47 | `/composition/dashboard/link3` | anticlockwise walks all four banks to the clean picture, clockwise brings them back |
+| FX MASTER nudge (link 4) | CUE LEVEL CC47 | `/composition/dashboard/link4` | anticlockwise walks all four banks to the clean picture, clockwise brings them back |
 
 ## Safety - blackout
 
@@ -429,8 +434,8 @@
 |---|---|---|---|
 | Footswitch momentary BLACKOUT | FOOTSWITCH CC64 | `/composition/bypassed` |  |
 
-## Tempo
+## FFT gain (global)
 
 | control | physical | path | note |
 |---|---|---|---|
-| Tempo knob | TEMPO knob CC13 | `/composition/tempocontroller/tempo` |  |
+| FFT GAIN (global input gain) | TEMPO knob CC13 | `/audiodevicemanager/params/fftinputgain` | turn up when the picture is too calm, down when it slams; the same knob on every composition |

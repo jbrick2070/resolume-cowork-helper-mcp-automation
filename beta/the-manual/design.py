@@ -611,8 +611,28 @@ def deck5():
             "clips": C}
 
 
+# The kinetic pass (2026-10-23): the shared pass in resolume_build/kinetic_pass.py gives the room a
+# moving texture on its own clock, unfreezes generators, lets the lows punch a little and keeps
+# captions still. KINETIC = False rebuilds the still version.
+KINETIC = True
+STILL_COLUMNS = set()                 # (deck from 0, column from 1) held still on purpose
+KINETIC_NOTE = (" Since the kinetic pass the room never stops: a texture on its own clock sits under every "
+                "deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.")
+
+
 def main():
     decks = [deck1(), deck2(), deck3(), deck4(), deck5()]
+    extra = {}
+    if KINETIC:
+        import sys
+        sys.path.insert(0, os.path.join(HERE, "..", ".."))
+        from resolume_build import kinetic_pass as KP
+        fired = []
+        KP.pass_decks(decks, KP.default_motion(LABEL), fired.append, still=STILL_COLUMNS)
+        extra = KP.BIBLE_EXTRA
+        print("kinetic clamps fired: %d" % len(fired))
+        for line in fired[:12]:
+            print("  " + line)
     bible = {
         "pack_name": "The Manual",
         "comp_name": "The Manual - Avenue 7.28.1",
@@ -635,6 +655,9 @@ def main():
             "Four decks are the manual: vocabulary, the clip, parameters, blend modes. The fifth is this "
             "rig's own Preferences as they are set tonight - the audio input, the controller, the REST "
             "port, the harvest counts - so the composition documents the machine that played it.")}
+    bible.update(extra)
+    if KINETIC:
+        bible["fft_philosophy"] += KINETIC_NOTE
     with open(os.path.join(HERE, "bible.json"), "w", encoding="utf-8") as f:
         json.dump(bible, f, indent=1, ensure_ascii=False)
     with open(os.path.join(HERE, "decks.json"), "w", encoding="utf-8") as f:

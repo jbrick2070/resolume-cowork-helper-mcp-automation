@@ -362,8 +362,89 @@
     "role": "Bank D: a deck's grid of grids."
    }
   ],
-  "fft_philosophy": "This pack is about the thing that makes it move, so the FFT is explicit. Deck 3 draws the spectrum, the L M H bands, Gain and Fall; Deck 5 draws the input device the whole repo depends on. Elsewhere the rule is the usual one: lows drive size and width (selection outlines, the playing cell, discs), mids drive playheads, dials and the spectrum, highs touch only the band in-point and dither. Colour never reacts: blue is selected, green is playing, amber is BPM, grey is everything else. Text never moves.",
-  "wildcard_rationale": "Four decks are the manual: vocabulary, the clip, parameters, blend modes. The fifth is this rig's own Preferences as they are set tonight - the audio input, the controller, the REST port, the harvest counts - so the composition documents the machine that played it."
+  "fft_philosophy": "This pack is about the thing that makes it move, so the FFT is explicit. Deck 3 draws the spectrum, the L M H bands, Gain and Fall; Deck 5 draws the input device the whole repo depends on. Elsewhere the rule is the usual one: lows drive size and width (selection outlines, the playing cell, discs), mids drive playheads, dials and the spectrum, highs touch only the band in-point and dither. Colour never reacts: blue is selected, green is playing, amber is BPM, grey is everything else. Text never moves. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+  "wildcard_rationale": "Four decks are the manual: vocabulary, the clip, parameters, blend modes. The fifth is this rig's own Preferences as they are set tonight - the audio input, the controller, the REST port, the harvest counts - so the composition documents the machine that played it.",
+  "layer_effects": {
+   "2": [
+    {
+     "effect": "Wave Warp",
+     "params": {
+      "Mode": 0.0,
+      "Width": 0.5,
+      "Speed": 0.1,
+      "Angle": 0.25,
+      "Pin edges?": true
+     },
+     "fft": {
+      "Height": {
+       "band": "mid",
+       "gain": 4.0,
+       "release": 110,
+       "floor": 0.005,
+       "ceiling": 0.025
+      }
+     }
+    }
+   ],
+   "3": [
+    {
+     "effect": "Trails",
+     "params": {
+      "Mode": "Lighten",
+      "Feedback": 0.3
+     },
+     "wet_max": 0.25
+    }
+   ],
+   "4": [
+    {
+     "effect": "Bloom",
+     "params": {
+      "Threshold": 0.8,
+      "Iterations": 2,
+      "Size": 0.15
+     },
+     "fft": {
+      "Amount": {
+       "band": "low",
+       "gain": 6.0,
+       "release": 150,
+       "floor": 0.1,
+       "ceiling": 0.3
+      }
+     }
+    }
+   ],
+   "8": [
+    {
+     "effect": "Shift RGB",
+     "params": {
+      "Mode": "Shift X",
+      "R": 1.0,
+      "G": 0.0,
+      "B": -1.0
+     },
+     "fft": {
+      "Distance": {
+       "band": "high",
+       "gain": 2.0,
+       "release": 100,
+       "floor": 0.002,
+       "ceiling": 0.008
+      }
+     }
+    }
+   ]
+  },
+  "layer_transition_ms": {
+   "1": 150,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "6": 100,
+   "7": 150,
+   "8": 100
+  }
  },
  "rack": {
   "banks": [
@@ -759,8 +840,8 @@
   "decks": 5,
   "clips": 320,
   "comp_effects": 34,
-  "fft_nodes": 420,
-  "bytes": 1527076
+  "fft_nodes": 786,
+  "bytes": 1839925
  },
  "preset": 164,
  "repairs": 0,
@@ -879,7 +960,7 @@
    "Comp Frame",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The whole output framed in blue: the Composition."
   ],
   [
@@ -892,7 +973,7 @@
    "Deck Tab",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "A deck button along the bottom, under the clip layers: a DJ's record bag."
   ],
   [
@@ -905,7 +986,7 @@
    "Layer Strips",
    "Lines",
    "",
-   "",
+   "Transform",
    "Eight layer strips: X, B, S and the V / A / M faders."
   ],
   [
@@ -918,7 +999,7 @@
    "Group Bracket",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "A bracket round three layers: a Group (Arena only), with its own blend, opacity and effects."
   ],
   [
@@ -931,7 +1012,7 @@
    "Clip Thumbnail",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One cell lit green: the clip that is playing."
   ],
   [
@@ -944,7 +1025,7 @@
    "Column Lit",
    "Lines",
    "",
-   "",
+   "Transform",
    "One column highlighted top to bottom: triggers every layer's clip at once."
   ],
   [
@@ -957,7 +1038,7 @@
    "Source",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform",
    "Source: the content generator."
   ],
   [
@@ -970,7 +1051,7 @@
    "Pipeline Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Rows of a panel: one parameter per line."
   ],
   [
@@ -996,7 +1077,7 @@
    "Playing Clip",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One cell lit green: the clip that is playing."
   ],
   [
@@ -1009,7 +1090,7 @@
    "Layer Row",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "One layer row lit: layer 1, the bottom."
   ],
   [
@@ -1035,7 +1116,7 @@
    "Clip Selected",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "Click the thumbnail to trigger; click the name handle to select without triggering."
   ],
   [
@@ -1061,7 +1142,7 @@
    "Effects",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform",
    "Effects: pixel processors, after the permanent Transform."
   ],
   [
@@ -1074,7 +1155,7 @@
    "Render Pass",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "A green sweep along the timeline (Resolume's own pointer is blue)."
   ],
   [
@@ -1305,11 +1386,11 @@
    "AURA",
    2,
    "Deck",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1318,11 +1399,11 @@
    "AURA",
    3,
    "Layer",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1331,11 +1412,11 @@
    "AURA",
    4,
    "Group",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1344,11 +1425,11 @@
    "AURA",
    5,
    "Clip",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1357,11 +1438,11 @@
    "AURA",
    6,
    "Column",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1396,11 +1477,11 @@
    "GRAIN",
    1,
    "Composition",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1474,11 +1555,11 @@
    "GRAIN",
    7,
    "Source + FX",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1487,11 +1568,11 @@
    "GRAIN",
    8,
    "Render Order",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1711,7 +1792,7 @@
    "Playing Clip",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One cell lit green: the clip that is playing."
   ],
   [
@@ -1724,7 +1805,7 @@
    "1 Bar",
    "Lines",
    "",
-   "",
+   "Transform",
    "A fader: one line whose position is the value."
   ],
   [
@@ -1737,7 +1818,7 @@
    "Layer Strips",
    "Lines",
    "",
-   "",
+   "Transform",
    "Rows of a panel: one parameter per line."
   ],
   [
@@ -1750,7 +1831,7 @@
    "Comp Bounds",
    "Rings",
    "",
-   "",
+   "Transform",
    "The blue selection outline around the chosen thing."
   ],
   [
@@ -1763,7 +1844,7 @@
    "Opacity Fader",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "The layer's V fader rising..."
   ],
   [
@@ -1776,7 +1857,7 @@
    "Column Trigger",
    "Lines",
    "",
-   "",
+   "Transform",
    "A fader: one line whose position is the value."
   ],
   [
@@ -1789,7 +1870,7 @@
    "Playing Clip",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One cell lit green: the clip that is playing."
   ],
   [
@@ -1802,7 +1883,7 @@
    "Crossfade",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "Transition mode Alpha: a crossfade over the transition time."
   ],
   [
@@ -1815,7 +1896,7 @@
    "Selection",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The blue selection outline around the chosen thing."
   ],
   [
@@ -1828,7 +1909,7 @@
    "Waiting",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "A green sweep along the timeline (Resolume's own pointer is blue)."
   ],
   [
@@ -1841,7 +1922,7 @@
    "Free Layer",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "Free Layer: the clip lands on whichever layer is empty."
   ],
   [
@@ -1854,7 +1935,7 @@
    "Clip Bounds",
    "Rings",
    "Size>low",
-   "Transform",
+   "Transform, Transform",
    "Fill crops, Fit letterboxes, Stretch distorts, Original is pixel size."
   ],
   [
@@ -1867,7 +1948,7 @@
    "Restart",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "...and the clip restarting from the beginning each time."
   ],
   [
@@ -1880,7 +1961,7 @@
    "Keeps Playing",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "The layer with Ignore Column Trigger keeps its clip."
   ],
   [
@@ -1893,7 +1974,7 @@
    "Next Clip",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "Auto Pilot: next, previous, random (Any / Other / Bag), first, last, specific."
   ],
   [
@@ -1906,7 +1987,7 @@
    "Transition Time",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "0 to 10 seconds, millisecond precision in the Layer panel."
   ],
   [
@@ -2124,11 +2205,11 @@
    "AURA",
    1,
    "Trigger Style",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    1,
@@ -2137,11 +2218,11 @@
    "AURA",
    2,
    "Beat Snap",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    1,
@@ -2150,11 +2231,11 @@
    "AURA",
    3,
    "Clip Target",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    1,
@@ -2189,11 +2270,11 @@
    "AURA",
    6,
    "Ignore Column",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    1,
@@ -2202,11 +2283,11 @@
    "AURA",
    7,
    "Auto Pilot",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    1,
@@ -2267,11 +2348,11 @@
    "GRAIN",
    4,
    "Resize",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2280,11 +2361,11 @@
    "GRAIN",
    5,
    "Fader Start",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2319,11 +2400,11 @@
    "GRAIN",
    8,
    "Transition",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2543,7 +2624,7 @@
    "Parameter Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Rows of a panel: one parameter per line."
   ],
   [
@@ -2556,7 +2637,7 @@
    "Timeline Bar",
    "Lines",
    "",
-   "",
+   "Transform",
    "Rows of a panel: one parameter per line."
   ],
   [
@@ -2569,7 +2650,7 @@
    "Beat One",
    "Lines",
    "",
-   "",
+   "Transform",
    "A fader: one line whose position is the value."
   ],
   [
@@ -2582,7 +2663,7 @@
    "FFT Spectrum",
    "Line Scape",
    "Height>mid",
-   "",
+   "Transform",
    "The spectrum display under an FFT-driven parameter."
   ],
   [
@@ -2595,7 +2676,7 @@
    "Gain",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform",
    "A dashboard dial."
   ],
   [
@@ -2608,7 +2689,7 @@
    "Elastic Curve",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "An envelope curve between keyframes."
   ],
   [
@@ -2621,7 +2702,7 @@
    "Dial 1",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform",
    "A dashboard dial."
   ],
   [
@@ -2634,7 +2715,7 @@
    "Clip Playhead",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "A green sweep along the timeline (Resolume's own pointer is blue)."
   ],
   [
@@ -2647,7 +2728,7 @@
    "Cogwheel",
    "Rings",
    "Rotation>low",
-   "",
+   "Transform, Transform",
    "The grey cogwheel beside a parameter name: the animation menu."
   ],
   [
@@ -2660,7 +2741,7 @@
    "Playhead",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "A green sweep along the timeline (Resolume's own pointer is blue)."
   ],
   [
@@ -2673,7 +2754,7 @@
    "Beat Head",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "A green sweep along the timeline (Resolume's own pointer is blue)."
   ],
   [
@@ -2686,7 +2767,7 @@
    "Band In Point",
    "Lines",
    "Position>high",
-   "",
+   "Transform",
    "In/out points under the spectrum fine-tune the frequency range."
   ],
   [
@@ -2699,7 +2780,7 @@
    "Fall",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform",
    "Fall: how quickly the value drops back from a peak."
   ],
   [
@@ -2712,7 +2793,7 @@
    "Keyframe",
    "Rings",
    "",
-   "Transform",
+   "Transform, Transform",
    "A keyframe: double-click to add, drag to move, type phase and value."
   ],
   [
@@ -2725,7 +2806,7 @@
    "Dial 2",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform",
    "A dashboard dial."
   ],
   [
@@ -2738,7 +2819,7 @@
    "Follows Playhead",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "Clip Position: the parameter follows scrubbing, speed, direction and beatloop."
   ],
   [
@@ -2969,11 +3050,11 @@
    "AURA",
    2,
    "Timeline",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    2,
@@ -2982,11 +3063,11 @@
    "AURA",
    3,
    "BPM Sync",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    2,
@@ -3060,11 +3141,11 @@
    "GRAIN",
    1,
    "Cogwheel",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3099,11 +3180,11 @@
    "GRAIN",
    4,
    "External FFT",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3112,11 +3193,11 @@
    "GRAIN",
    5,
    "Gain + Fall",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3125,11 +3206,11 @@
    "GRAIN",
    6,
    "Envelope",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3138,11 +3219,11 @@
    "GRAIN",
    7,
    "Dashboard",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3151,11 +3232,11 @@
    "GRAIN",
    8,
    "Clip Position",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3375,7 +3456,7 @@
    "Layer A",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Layer A: a disc, left."
   ],
   [
@@ -3388,7 +3469,7 @@
    "Layer A",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Layer A: a disc, left."
   ],
   [
@@ -3401,7 +3482,7 @@
    "Layer A",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Layer A: a disc, left."
   ],
   [
@@ -3414,7 +3495,7 @@
    "Layer A",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Layer A: a disc, left."
   ],
   [
@@ -3427,7 +3508,7 @@
    "Layer A",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Layer A: a disc, left."
   ],
   [
@@ -3440,7 +3521,7 @@
    "Layer A",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Layer A: a disc, left."
   ],
   [
@@ -3453,7 +3534,7 @@
    "Grey Ramp",
    "Gradient",
    "",
-   "",
+   "Transform",
    "A grey ramp: the mask source."
   ],
   [
@@ -3466,7 +3547,7 @@
    "Wipe Ellipse",
    "Rings",
    "Size>mid",
-   "",
+   "Transform",
    "Wipe Ellipse: an elliptical wipe revealing the next layer."
   ],
   [
@@ -3479,7 +3560,7 @@
    "Layer B",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Alpha: mixed by opacity; transparent pixels show what is below."
   ],
   [
@@ -3492,7 +3573,7 @@
    "Layer B",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Add sums the channels; Screen is softer and glows."
   ],
   [
@@ -3505,7 +3586,7 @@
    "Layer B",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Multiply darkens; Burn darkens hard and raises contrast."
   ],
   [
@@ -3518,7 +3599,7 @@
    "Layer B",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Overlay: Multiply below 50% grey, Screen above."
   ],
   [
@@ -3531,7 +3612,7 @@
    "Layer B",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Difference: identical pixels turn black."
   ],
   [
@@ -3544,7 +3625,7 @@
    "Layer B",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Luma Key: bright stays, dark goes transparent."
   ],
   [
@@ -3557,7 +3638,7 @@
    "Masked Disc",
    "Shaper",
    "Scale>low",
-   "",
+   "Transform",
    "50 Mask: white fully visible, black transparent, grey partial."
   ],
   [
@@ -3570,7 +3651,7 @@
    "Push Up",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "Push Up / Down / Left / Right."
   ],
   [
@@ -3892,11 +3973,11 @@
    "GRAIN",
    1,
    "Alpha",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3905,11 +3986,11 @@
    "GRAIN",
    2,
    "Add + Screen",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3918,11 +3999,11 @@
    "GRAIN",
    3,
    "Multiply + Bur",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3931,11 +4012,11 @@
    "GRAIN",
    4,
    "Overlay",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3944,11 +4025,11 @@
    "GRAIN",
    5,
    "Difference",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3957,11 +4038,11 @@
    "GRAIN",
    6,
    "Luma Key",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3970,11 +4051,11 @@
    "GRAIN",
    7,
    "50 Mask",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3983,11 +4064,11 @@
    "GRAIN",
    8,
    "Transitions",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4207,7 +4288,7 @@
    "Input Meter",
    "Line Scape",
    "Height>mid",
-   "",
+   "Transform",
    "The spectrum display under an FFT-driven parameter."
   ],
   [
@@ -4220,7 +4301,7 @@
    "Pad Lit",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One cell lit green: the clip that is playing."
   ],
   [
@@ -4233,7 +4314,7 @@
    "JSON Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Rows of a panel: one parameter per line."
   ],
   [
@@ -4246,7 +4327,7 @@
    "OSC In 7000",
    "Lines",
    "",
-   "",
+   "Transform",
    "A fader: one line whose position is the value."
   ],
   [
@@ -4259,7 +4340,7 @@
    "Texture",
    "Rings",
    "",
-   "",
+   "Transform",
    "The blue selection outline around the chosen thing."
   ],
   [
@@ -4272,7 +4353,7 @@
    "Default Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Rows of a panel: one parameter per line."
   ],
   [
@@ -4285,7 +4366,7 @@
    "Harvest Cell",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One cell lit green: the clip that is playing."
   ],
   [
@@ -4298,7 +4379,7 @@
    "Mapped Control",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The blue selection outline around the chosen thing."
   ],
   [
@@ -4311,7 +4392,7 @@
    "Device Row",
    "Rings",
    "",
-   "Transform",
+   "Transform, Transform",
    "Preferences > Audio > Audio Input Device: CABLE Output (VB-Audio Virtual Cable)."
   ],
   [
@@ -4324,7 +4405,7 @@
    "Controller",
    "Rings",
    "",
-   "Transform",
+   "Transform, Transform",
    "The blue selection outline around the chosen thing."
   ],
   [
@@ -4337,7 +4418,7 @@
    "Request",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "GET /api/v1/composition: how every pack here was read back."
   ],
   [
@@ -4350,7 +4431,7 @@
    "OSC Out 7001",
    "Lines",
    "",
-   "",
+   "Transform",
    "A fader: one line whose position is the value."
   ],
   [
@@ -4363,7 +4444,7 @@
    "DMA On",
    "Checkered",
    "",
-   "",
+   "Transform",
    "DMA Textures: this rig sits on Autodetect; the manual recommends Force ON."
   ],
   [
@@ -4376,7 +4457,7 @@
    "Tempo Nudge Range",
    "Lines",
    "",
-   "",
+   "Transform",
    "A fader: one line whose position is the value."
   ],
   [
@@ -4389,7 +4470,7 @@
    "Library",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The blue selection outline around the chosen thing."
   ],
   [
@@ -4402,7 +4483,7 @@
    "Shortcut Options",
    "Rings",
    "Rotation>low",
-   "",
+   "Transform, Transform",
    "Toggle, Piano, Range, Value, Mouse: the Shortcuts tab, bottom-right."
   ],
   [
@@ -4633,11 +4714,11 @@
    "AURA",
    2,
    "MIDI",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    4,
@@ -4698,11 +4779,11 @@
    "AURA",
    7,
    "The Harvest",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    4,
@@ -4724,11 +4805,11 @@
    "GRAIN",
    1,
    "Audio In",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4750,11 +4831,11 @@
    "GRAIN",
    3,
    "Webserver",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4763,11 +4844,11 @@
    "GRAIN",
    4,
    "OSC",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4776,11 +4857,11 @@
    "GRAIN",
    5,
    "Video",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4789,11 +4870,11 @@
    "GRAIN",
    6,
    "Defaults",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4815,11 +4896,11 @@
    "GRAIN",
    8,
    "Shortcut Mode",
-   "Dither",
-   "Static",
-   "",
-   "",
-   "A whisper of dither."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,

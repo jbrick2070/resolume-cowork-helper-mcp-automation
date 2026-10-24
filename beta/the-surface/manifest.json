@@ -142,7 +142,7 @@
     "name": "Knobs + Transport",
     "slug": "knobs",
     "theme": "hardware",
-    "world": "The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 (the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on CC47 (the effects master sweep), the relative Tempo encoder on CC13, PLAY STOP RECORD on notes 91-93, Tap and Nudge, and the footswitch on CC64 that is a momentary blackout in every pack here.",
+    "world": "The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 (the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on CC47 (the relative effects master), the relative Tempo encoder on CC13 (the global FFT gain), PLAY STOP RECORD on notes 91-93, Tap and Metronome (the two reset buttons), Nudge, and the footswitch on CC64 that is a momentary blackout in every pack here.",
     "palette": [
      {
       "role": "bed",
@@ -202,6 +202,7 @@
     "moments": [
      "Rings: column 2, turn Device knob 1 slowly; the amber ring on screen is the ring under your hand.",
      "Cue level: column 4, sweep CUE LEVEL anticlockwise to CLEAN and back; the amber line is the four bank links moving together.",
+     "Gain: column 5, turn the TEMPO encoder; the red ticks are CC13 and the FFT gain moves with them.",
      "Footswitch: column 8, stamp the pedal on the one; the red bar is CC64 going 0x7F."
     ]
    },
@@ -362,8 +363,89 @@
     "role": "Bank D: the pad grid of grids."
    }
   ],
-  "fft_philosophy": "The controller is the subject and the music is what it controls, so the reactivity stays mechanical: lows swell pads and widen fader caps, mids turn knob gaps and move playheads and T-bars, highs only jitter the serial bits and the DIN pins. Colour never reacts: green is a lit pad or a message arriving, amber is the second LED family and the T-bar, red is the wire and nothing else. Text never moves. Every note, CC and byte on screen is the real one.",
-  "wildcard_rationale": "Four decks are the APC40 mkII and its wire: the grid, the strips, the knobs and transport, and MIDI itself. The fifth is a video mixer of the same era of hands-on control, the Datavideo SE-500, chosen because it speaks the APC's MIDI over the older five-pin wire and because its T-bar is the crossfader's older sibling."
+  "fft_philosophy": "The controller is the subject and the music is what it controls, so the reactivity stays mechanical: lows swell pads and widen fader caps, mids turn knob gaps and move playheads and T-bars, highs only jitter the serial bits and the DIN pins. Colour never reacts: green is a lit pad or a message arriving, amber is the second LED family and the T-bar, red is the wire and nothing else. Text never moves. Every note, CC and byte on screen is the real one. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+  "wildcard_rationale": "Four decks are the APC40 mkII and its wire: the grid, the strips, the knobs and transport, and MIDI itself. The fifth is a video mixer of the same era of hands-on control, the Datavideo SE-500, chosen because it speaks the APC's MIDI over the older five-pin wire and because its T-bar is the crossfader's older sibling.",
+  "layer_effects": {
+   "2": [
+    {
+     "effect": "Wave Warp",
+     "params": {
+      "Mode": 0.0,
+      "Width": 0.5,
+      "Speed": 0.1,
+      "Angle": 0.25,
+      "Pin edges?": true
+     },
+     "fft": {
+      "Height": {
+       "band": "mid",
+       "gain": 4.0,
+       "release": 110,
+       "floor": 0.005,
+       "ceiling": 0.025
+      }
+     }
+    }
+   ],
+   "3": [
+    {
+     "effect": "Trails",
+     "params": {
+      "Mode": "Lighten",
+      "Feedback": 0.3
+     },
+     "wet_max": 0.25
+    }
+   ],
+   "4": [
+    {
+     "effect": "Bloom",
+     "params": {
+      "Threshold": 0.8,
+      "Iterations": 2,
+      "Size": 0.15
+     },
+     "fft": {
+      "Amount": {
+       "band": "low",
+       "gain": 6.0,
+       "release": 150,
+       "floor": 0.1,
+       "ceiling": 0.3
+      }
+     }
+    }
+   ],
+   "8": [
+    {
+     "effect": "Shift RGB",
+     "params": {
+      "Mode": "Shift X",
+      "R": 1.0,
+      "G": 0.0,
+      "B": -1.0
+     },
+     "fft": {
+      "Distance": {
+       "band": "high",
+       "gain": 2.0,
+       "release": 100,
+       "floor": 0.002,
+       "ceiling": 0.008
+      }
+     }
+    }
+   ]
+  },
+  "layer_transition_ms": {
+   "1": 150,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "6": 100,
+   "7": 150,
+   "8": 100
+  }
  },
  "rack": {
   "banks": [
@@ -759,8 +841,8 @@
   "decks": 5,
   "clips": 320,
   "comp_effects": 34,
-  "fft_nodes": 441,
-  "bytes": 1521177
+  "fft_nodes": 804,
+  "bytes": 1822542
  },
  "preset": 164,
  "repairs": 0,
@@ -879,7 +961,7 @@
    "Pad n0",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Bottom-left pad: note 0. note = row_from_bottom x 8 + column."
   ],
   [
@@ -892,7 +974,7 @@
    "Row 1: n0-n7",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of pads lit together."
   ],
   [
@@ -905,7 +987,7 @@
    "Row 1",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of pads lit together."
   ],
   [
@@ -918,7 +1000,7 @@
    "128 Velocities",
    "Checkered",
    "",
-   "",
+   "Transform",
    "The 128-entry RGB velocity palette: 0-3 greys, then hues in fours."
   ],
   [
@@ -931,7 +1013,7 @@
    "Connected 21",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One pad lit in its RGB velocity colour."
   ],
   [
@@ -944,7 +1026,7 @@
    "Connected 9",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One pad lit in its RGB velocity colour."
   ],
   [
@@ -957,7 +1039,7 @@
    "Scene 1-5",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Scene Launch 1-5, notes 82-86, the right column."
   ],
   [
@@ -970,7 +1052,7 @@
    "SysEx Bytes",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "Twelve bytes over class-compliant USB-MIDI: the Mode SysEx on the wire."
   ],
   [
@@ -1009,7 +1091,7 @@
    "Row 5: n32-n39",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Top row: n32-n39, the TEXT layer in every pack here."
   ],
   [
@@ -1022,7 +1104,7 @@
    "Index 9",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Index 9: amber on. 10 is its dim."
   ],
   [
@@ -1035,7 +1117,7 @@
    "Disconnected 22",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Resolume sends 21 for Connected and 22 for Disconnected on this family."
   ],
   [
@@ -1048,7 +1130,7 @@
    "Disconnected 10",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One pad lit in its RGB velocity colour."
   ],
   [
@@ -1061,7 +1143,7 @@
    "Stop All n81",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "STOP ALL CLIPS, note 81, below the scene pads."
   ],
   [
@@ -1074,7 +1156,7 @@
    "Mode",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Mode 1: every button a plain momentary note; Device knobs un-banked."
   ],
   [
@@ -1292,11 +1374,11 @@
    "AURA",
    1,
    "Note Zero",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1344,11 +1426,11 @@
    "AURA",
    5,
    "Green 21",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1357,11 +1439,11 @@
    "AURA",
    6,
    "Amber 9",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1435,11 +1517,11 @@
    "GRAIN",
    4,
    "Velocity Palet",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1474,11 +1556,11 @@
    "GRAIN",
    7,
    "Scene Launch",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1487,11 +1569,11 @@
    "GRAIN",
    8,
    "Mode 1",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1711,7 +1793,7 @@
    "Eight Strips",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of pads lit together."
   ],
   [
@@ -1724,7 +1806,7 @@
    "Clip Stop Row",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of pads lit together."
   ],
   [
@@ -1737,7 +1819,7 @@
    "Select Row",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of pads lit together."
   ],
   [
@@ -1750,7 +1832,7 @@
    "Activators Lit",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Activator LEDs lit = layer on air (bypass off)."
   ],
   [
@@ -1763,7 +1845,7 @@
    "Rec Arm Row",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Record Arm, note 48 on channels 1-8: FX bank 1, eight latching toggles."
   ],
   [
@@ -1776,7 +1858,7 @@
    "A/B Row",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Crossfade A/B, note 66: FX bank 2 here."
   ],
   [
@@ -1789,7 +1871,7 @@
    "Eight Faders",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Eight channel faders, CC7 on channels 1-8."
   ],
   [
@@ -1802,7 +1884,7 @@
    "Crossfader Slot",
    "Lines",
    "",
-   "",
+   "Transform",
    "A 45 mm fader: a slot and a cap."
   ],
   [
@@ -1815,7 +1897,7 @@
    "Track 1",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Same note on every strip; only the MIDI channel differs, 1-8."
   ],
   [
@@ -1828,7 +1910,7 @@
    "n52 ch3",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Clip Stop on strip 3: note 52, channel 3 - EJECT layer 3."
   ],
   [
@@ -1841,7 +1923,7 @@
    "n51 ch4",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Track Select: note 51 - SELECT layer. In Mode 0 this re-banks the Device knobs instead."
   ],
   [
@@ -1854,7 +1936,7 @@
    "n50 ch6 Off",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "One activator dark: layer 6 muted."
   ],
   [
@@ -1867,7 +1949,7 @@
    "FX1 TINT",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "The first seat of bank 1: TINT."
   ],
   [
@@ -1880,7 +1962,7 @@
    "n66 ch6",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "A rubber button with a single-colour LED."
   ],
   [
@@ -1893,7 +1975,7 @@
    "Fader 2 Cap",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Fader 2: CC7 on channel 2, layer 2's master."
   ],
   [
@@ -1906,7 +1988,7 @@
    "Crossfader Cap",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "CC15: environment <-> figures. Centre = everything, rig-measured."
   ],
   [
@@ -2202,11 +2284,11 @@
    "AURA",
    7,
    "Faders CC7",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    1,
@@ -2228,11 +2310,11 @@
    "GRAIN",
    1,
    "Channel = Trac",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2241,11 +2323,11 @@
    "GRAIN",
    2,
    "Clip Stop 52",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2254,11 +2336,11 @@
    "GRAIN",
    3,
    "Select 51",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2267,11 +2349,11 @@
    "GRAIN",
    4,
    "Activator 50",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2280,11 +2362,11 @@
    "GRAIN",
    5,
    "Rec Arm 48",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2293,11 +2375,11 @@
    "GRAIN",
    6,
    "A/B 66",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2319,11 +2401,11 @@
    "GRAIN",
    8,
    "Crossfader CC1",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2543,7 +2625,7 @@
    "Knob Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -2556,7 +2638,7 @@
    "Ring Wide",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "A knob with its LED ring."
   ],
   [
@@ -2569,7 +2651,7 @@
    "Top Row",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -2582,8 +2664,8 @@
    "Cue Level",
    "Rings",
    "Gap>mid",
-   "",
-   "CUE LEVEL, CC47: the FX master sweep over the four bank links."
+   "Transform, Transform",
+   "CUE LEVEL, CC47, relative: one nudge moves all four bank links together."
   ],
   [
    2,
@@ -2595,8 +2677,8 @@
    "Tempo Encoder",
    "Rings",
    "Gap>mid",
-   "",
-   "TEMPO, CC13, relative: 1-63 up, 127-64 down."
+   "Transform, Transform",
+   "TEMPO, CC13, relative: 1-63 up, 127-64 down. Here it trims the global FFT input gain."
   ],
   [
    2,
@@ -2608,7 +2690,7 @@
    "PLAY n91",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "PLAY: OPEN THE SHOW - column 1 + re-arm the SCOPE."
   ],
   [
@@ -2621,7 +2703,7 @@
    "TAP n99",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "A rubber button with a single-colour LED."
   ],
   [
@@ -2634,7 +2716,7 @@
    "1/4 Inch Jack",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The footswitch jack, rear panel."
   ],
   [
@@ -2647,7 +2729,7 @@
    "Device Knob 1",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "Device Control knobs 1-8, CC16-23: dashboard links 1-8, the four bank wets and four macros."
   ],
   [
@@ -2660,7 +2742,7 @@
    "Ring Value",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "Ring LEDs follow the value CC in Mode 1; ring style is single, volume or pan."
   ],
   [
@@ -2673,7 +2755,7 @@
    "Eight Track Knobs",
    "Metaballs",
    "Size>mid",
-   "",
+   "Transform",
    "Track Control knobs 1-8 along the top, CC48-55: LOW/MID/HIGH depth and release, SCOPE, TIME."
   ],
   [
@@ -2686,7 +2768,7 @@
    "Sweep",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "A 45 mm fader: a slot and a cap."
   ],
   [
@@ -2699,7 +2781,7 @@
    "Relative Ticks",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "31,250 baud serial: bytes on the wire."
   ],
   [
@@ -2712,7 +2794,7 @@
    "STOP n92",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "STOP: CLEAR THE GRID - eject layers 1-5. RECORD n93: BLACKOUT."
   ],
   [
@@ -2725,8 +2807,8 @@
    "NUDGE+ n101",
    "Shaper",
    "Scale>mid",
-   "Transform",
-   "NUDGE - n100, NUDGE + n101; METRONOME n90 is resync."
+   "Transform, Transform",
+   "NUDGE - n100, NUDGE + n101; METRONOME n90 puts the FFT gain home, TAP n99 puts TIME at 1x."
   ],
   [
    2,
@@ -2738,7 +2820,7 @@
    "CC64 Down",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "CC64: 0x7F down, 0x00 up - momentary BLACKOUT."
   ],
   [
@@ -2891,7 +2973,7 @@
    "TEXT",
    4,
    "Cue Level CC47",
-   "CUE LEVEL CC47",
+   "CUE LEVEL CC47 -",
    "Text Block",
    "",
    "",
@@ -2930,7 +3012,7 @@
    "TEXT",
    7,
    "Tap + Nudge",
-   "TAP TEMPO n99",
+   "TAP n99 = TIME HOM",
    "Text Block",
    "",
    "",
@@ -3060,11 +3142,11 @@
    "GRAIN",
    1,
    "Device CC16-23",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3073,11 +3155,11 @@
    "GRAIN",
    2,
    "LED Rings",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3086,11 +3168,11 @@
    "GRAIN",
    3,
    "Track CC48-55",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3099,11 +3181,11 @@
    "GRAIN",
    4,
    "Cue Level CC47",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3112,11 +3194,11 @@
    "GRAIN",
    5,
    "Tempo CC13",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3125,11 +3207,11 @@
    "GRAIN",
    6,
    "Play Stop Rec",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3138,11 +3220,11 @@
    "GRAIN",
    7,
    "Tap + Nudge",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3151,11 +3233,11 @@
    "GRAIN",
    8,
    "Footswitch CC6",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3375,7 +3457,7 @@
    "DIN-5",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "A 5-pin DIN socket: pins 4 and 5 carry the current loop."
   ],
   [
@@ -3388,7 +3470,7 @@
    "Bit Stream",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "31,250 baud serial: bytes on the wire."
   ],
   [
@@ -3401,7 +3483,7 @@
    "Eight Bits",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "A status byte: high bit set, 1001 nnnn."
   ],
   [
@@ -3414,7 +3496,7 @@
    "Note On",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "One pad lit in its RGB velocity colour."
   ],
   [
@@ -3427,7 +3509,7 @@
    "Fader",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "A 45 mm fader: a slot and a cap."
   ],
   [
@@ -3440,7 +3522,7 @@
    "USB-B",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "USB type B: bus powered, no supply needed, class compliant."
   ],
   [
@@ -3453,7 +3535,7 @@
    "Key Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -3466,7 +3548,7 @@
    "Monitor Rows",
    "Lines",
    "",
-   "",
+   "Transform",
    "Silkscreen rules across the panel."
   ],
   [
@@ -3479,7 +3561,7 @@
    "Five Pins",
    "Metaballs",
    "Size>high",
-   "",
+   "Transform",
    "Five pins in a 180-degree arc."
   ],
   [
@@ -3492,7 +3574,7 @@
    "Start Stop Bits",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Ten bits per byte: start, eight data, stop."
   ],
   [
@@ -3505,7 +3587,7 @@
    "MSB = 1",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Bit 7 set: this is a status byte."
   ],
   [
@@ -3518,7 +3600,7 @@
    "Note Off",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "Note off: 0x80, or 0x90 with velocity 0. The pad goes dark."
   ],
   [
@@ -3531,7 +3613,7 @@
    "0-127",
    "Lines",
    "",
-   "",
+   "Transform",
    "7 bits of value: 0 to 127, 128 steps."
   ],
   [
@@ -3544,7 +3626,7 @@
    "USB Packets",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "Class-compliant USB MIDI: no driver, bus powered."
   ],
   [
@@ -3557,7 +3639,7 @@
    "Marker Bit",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "2^56: the note marker; 2^57 for CC. How Resolume files a raw MIDI message."
   ],
   [
@@ -3570,7 +3652,7 @@
    "Messages Scrolling",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "USB-MIDI packets arriving: what the monitor in Preferences > MIDI shows."
   ],
   [
@@ -3827,11 +3909,11 @@
    "AURA",
    4,
    "Note On / Off",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing by design."
+   "Counter Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    3,
@@ -3892,11 +3974,11 @@
    "GRAIN",
    1,
    "DIN-5",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3905,11 +3987,11 @@
    "GRAIN",
    2,
    "31,250 Baud",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3918,11 +4000,11 @@
    "GRAIN",
    3,
    "Status Byte",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3944,11 +4026,11 @@
    "GRAIN",
    5,
    "Control Change",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3957,11 +4039,11 @@
    "GRAIN",
    6,
    "USB-B",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3970,11 +4052,11 @@
    "GRAIN",
    7,
    "Resolume Key",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3983,11 +4065,11 @@
    "GRAIN",
    8,
    "Monitor",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4207,7 +4289,7 @@
    "Four BNCs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Four composite inputs on BNC; S-Video on mini-DIN beside each."
   ],
   [
@@ -4220,7 +4302,7 @@
    "Sub Source",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Sub source: the input the next transition, split or PIP will use."
   ],
   [
@@ -4233,7 +4315,7 @@
    "T-Bar Slot",
    "Lines",
    "",
-   "",
+   "Transform",
    "A 45 mm fader: a slot and a cap."
   ],
   [
@@ -4272,7 +4354,7 @@
    "Split Line",
    "Lines",
    "",
-   "",
+   "Transform",
    "A 45 mm fader: a slot and a cap."
   ],
   [
@@ -4285,7 +4367,7 @@
    "Colour Bars",
    "Checkered",
    "",
-   "",
+   "Transform",
    "Colour processing: bars to set levels by."
   ],
   [
@@ -4298,7 +4380,7 @@
    "DE-9 RS-232",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "RS-232 on a 9-pin D-sub, tally on a 15-pin D-sub, and MIDI control on a 5-pin DIN."
   ],
   [
@@ -4311,7 +4393,7 @@
    "Input 1",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "Illuminated selection buttons, one per input (red on the SE-500; green is the pack's lit colour)."
   ],
   [
@@ -4324,7 +4406,7 @@
    "Main Source",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Main source selected: what is on the output (the SE-500 lights it red; green is the pack's lit colour). Two composite program outs plus S-Video, component via the breakout cable, and a separate quad-preview out."
   ],
   [
@@ -4337,7 +4419,7 @@
    "T-Bar",
    "Lines",
    "Position>low",
-   "",
+   "Transform",
    "The T-bar: pull it through and the transition happens at your speed."
   ],
   [
@@ -4350,7 +4432,7 @@
    "Wipe Edge",
    "Lines",
    "Position>mid",
-   "",
+   "Transform",
    "A vertical wipe revealing input B."
   ],
   [
@@ -4363,7 +4445,7 @@
    "PIP Window",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Picture-in-picture: input B in a window, top-right."
   ],
   [
@@ -4389,7 +4471,7 @@
    "Chroma",
    "Rings",
    "Gap>mid",
-   "Transform",
+   "Transform, Transform",
    "Colour processing, per input, from the on-screen menu (hold Background, steer with the arrows and +/-): brightness, contrast, colour, tint. The knob is the pack's glyph, not the SE-500's control."
   ],
   [
@@ -4402,7 +4484,7 @@
    "Five Pins",
    "Metaballs",
    "Size>high",
-   "",
+   "Transform",
    "Five pins in a 180-degree arc."
   ],
   [
@@ -4724,11 +4806,11 @@
    "GRAIN",
    1,
    "Four Inputs",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4737,11 +4819,11 @@
    "GRAIN",
    2,
    "Main / Sub",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4750,11 +4832,11 @@
    "GRAIN",
    3,
    "T-Bar",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4763,11 +4845,11 @@
    "GRAIN",
    4,
    "Wipe",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4776,11 +4858,11 @@
    "GRAIN",
    5,
    "PIP",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4789,11 +4871,11 @@
    "GRAIN",
    6,
    "Split Screen",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4802,11 +4884,11 @@
    "GRAIN",
    7,
    "Colour Proc",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4815,11 +4897,11 @@
    "GRAIN",
    8,
    "MIDI + RS-232",
-   "Matte Tooth",
-   "Static",
-   "",
-   "",
-   "The chassis' matte texture."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,

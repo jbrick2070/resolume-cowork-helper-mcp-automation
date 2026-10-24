@@ -403,17 +403,17 @@ def deck3():
           label(3, "TRACK KNOBS CC48-55\nLOW MID HIGH: DEPTH + RELEASE\nSCOPE DEPTH - TIME", size=0.8),
           blank(6, 3), tooth(3), vu(3)]
     C += [chassis(4), knob(2, 4, color=SILK, size=0.34, name="Cue Level",
-                           why="CUE LEVEL, CC47: the FX master sweep over the four bank links."),
+                           why="CUE LEVEL, CC47, relative: one nudge moves all four bank links together."),
           fader(3, 4, color=PADAMBER, position=0.5, rot=0.0, width=0.02, name="Sweep",
                 fft_=fft("Position", "low", 0.2, 0.8, 8.0, 600)),
           glow(4, color=PADAMBER_DIM, opacity=0.08),
-          label(4, "CUE LEVEL CC47\n= FX MASTER SWEEP\nANTICLOCKWISE = CLEAN"),
+          label(4, "CUE LEVEL CC47 - RELATIVE\n= FX MASTER NUDGE\nANTICLOCKWISE = CLEAN"),
           blank(6, 4), tooth(4), vu(4)]
     C += [chassis(5), knob(2, 5, color=SILK, size=0.3, name="Tempo Encoder",
-                           why="TEMPO, CC13, relative: 1-63 up, 127-64 down."),
+                           why="TEMPO, CC13, relative: 1-63 up, 127-64 down. Here it trims the global FFT input gain."),
           midi_wave(3, 5, color=DINRED, waves=4, amp=0.05, position=0.2, name="Relative Ticks"),
           pulse(5, freq=0.1, color=PADAMBER, opacity=0.1, name="Beat"),
-          label(5, "TEMPO CC13 - RELATIVE\n1-63 = UP - 127-64 = DOWN\nBPM", size=0.9),
+          label(5, "TEMPO CC13 - RELATIVE\n1-63 = UP - 127-64 = DOWN\n= FFT INPUT GAIN", size=0.9),
           blank(6, 5), tooth(5), vu(5)]
     C += [chassis(6), button(2, 6, color=SILK, x=-300, y=0, name="PLAY n91", lit=True,
                              why="PLAY: OPEN THE SHOW - column 1 + re-arm the SCOPE."),
@@ -424,9 +424,9 @@ def deck3():
           blank(6, 6), tooth(6), vu(6)]
     C += [chassis(7), button(2, 7, color=SILK, x=-200, y=0, name="TAP n99", lit=True),
           button(3, 7, color=SILK, x=200, y=0, name="NUDGE+ n101",
-                 why="NUDGE - n100, NUDGE + n101; METRONOME n90 is resync."),
+                 why="NUDGE - n100, NUDGE + n101; METRONOME n90 puts the FFT gain home, TAP n99 puts TIME at 1x."),
           pulse(7, freq=0.1, color=PADAMBER, opacity=0.14, name="Tap"),
-          label(7, "TAP TEMPO n99\nNUDGE n100 / n101\nMETRONOME n90 = RESYNC"),
+          label(7, "TAP n99 = TIME HOME\nNUDGE n100 / n101\nMETRONOME n90 = FFT HOME"),
           blank(6, 7), tooth(7), vu(7)]
     C += [chassis(8), din(2, 8, color=SILK, name="1/4 Inch Jack",
                           why="The footswitch jack, rear panel."),
@@ -439,8 +439,8 @@ def deck3():
     return {"name": "Knobs + Transport", "slug": "knobs", "theme": "hardware",
             "world": ("The right-hand block and the top row: eight Device knobs with LED rings on CC16-23 "
                       "(the dashboard links), eight Track knobs on CC48-55 (the live FFT), Cue Level on "
-                      "CC47 (the effects master sweep), the relative Tempo encoder on CC13, PLAY STOP "
-                      "RECORD on notes 91-93, Tap and Nudge, and the footswitch on CC64 that is a momentary "
+                      "CC47 (the relative effects master), the relative Tempo encoder on CC13 (the global FFT gain), PLAY STOP "
+                      "RECORD on notes 91-93, Tap and Metronome (the two reset buttons), Nudge, and the footswitch on CC64 that is a momentary "
                       "blackout in every pack here."),
             "palette": [{"role": "bed", "hex": "#0f1012", "why": "Chassis."},
                         {"role": "body", "hex": "#e8e4d8", "why": "Knob bodies and buttons."},
@@ -457,6 +457,7 @@ def deck3():
                 "hand.",
                 "Cue level: column 4, sweep CUE LEVEL anticlockwise to CLEAN and back; the amber line is the "
                 "four bank links moving together.",
+                "Gain: column 5, turn the TEMPO encoder; the red ticks are CC13 and the FFT gain moves with them.",
                 "Footswitch: column 8, stamp the pedal on the one; the red bar is CC64 going 0x7F."],
             "clips": C}
 
@@ -644,8 +645,28 @@ def deck5():
             "clips": C}
 
 
+# The kinetic pass (2026-10-23): the shared pass in resolume_build/kinetic_pass.py gives the room a
+# moving texture on its own clock, unfreezes generators, lets the lows punch a little and keeps
+# captions still. KINETIC = False rebuilds the still version.
+KINETIC = True
+STILL_COLUMNS = set()                 # (deck from 0, column from 1) held still on purpose
+KINETIC_NOTE = (" Since the kinetic pass the room never stops: a texture on its own clock sits under every "
+                "deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.")
+
+
 def main():
     decks = [deck1(), deck2(), deck3(), deck4(), deck5()]
+    extra = {}
+    if KINETIC:
+        import sys
+        sys.path.insert(0, os.path.join(HERE, "..", ".."))
+        from resolume_build import kinetic_pass as KP
+        fired = []
+        KP.pass_decks(decks, KP.default_motion(SILK), fired.append, still=STILL_COLUMNS)
+        extra = KP.BIBLE_EXTRA
+        print("kinetic clamps fired: %d" % len(fired))
+        for line in fired[:12]:
+            print("  " + line)
     bible = {
         "pack_name": "The Surface",
         "comp_name": "The Surface - APC40 mkII + MIDI",
@@ -668,6 +689,9 @@ def main():
             "and MIDI itself. The fifth is a video mixer of the same era of hands-on control, the "
             "Datavideo SE-500, chosen because it speaks the APC's MIDI over the older five-pin wire and because "
             "its T-bar is the crossfader's older sibling.")}
+    bible.update(extra)
+    if KINETIC:
+        bible["fft_philosophy"] += KINETIC_NOTE
     with open(os.path.join(HERE, "bible.json"), "w", encoding="utf-8") as f:
         json.dump(bible, f, indent=1, ensure_ascii=False)
     with open(os.path.join(HERE, "decks.json"), "w", encoding="utf-8") as f:

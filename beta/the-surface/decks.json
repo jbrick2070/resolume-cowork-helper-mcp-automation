@@ -4,189 +4,6 @@
   "clips": [
    {
     "layer": 1,
-    "column": 1,
-    "name": "Pad Grid",
-    "source": "Checkered",
-    "params": {
-     "Num X": 8,
-     "Num Y": 5,
-     "Color 1": "#0f1012ff",
-     "Color 2": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
-   },
-   {
-    "layer": 2,
-    "column": 1,
-    "name": "Pad n0",
-    "source": "Shaper",
-    "params": {
-     "Scale": 0.16,
-     "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
-     "Color": "#3ddc84ff",
-     "Outline": 0.0,
-     "Outline Color": "#3ddc84ff"
-    },
-    "fft": {
-     "Scale": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 300,
-      "floor": 0.16,
-      "ceiling": 0.2
-     }
-    },
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale W": 100.0,
-       "Scale H": 62.0,
-       "Position X": -840.0,
-       "Position Y": -300.0
-      }
-     }
-    ],
-    "opacity": 0.9,
-    "why": "Bottom-left pad: note 0. note = row_from_bottom x 8 + column."
-   },
-   {
-    "layer": 3,
-    "column": 1,
-    "name": "Blank",
-    "source": "Blank",
-    "params": {
-     "Black BG": false
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "One pad."
-   },
-   {
-    "layer": 4,
-    "column": 1,
-    "name": "LED Glow",
-    "source": "Gradient",
-    "params": {
-     "Method": "2 Colors",
-     "Color 1": "#3ddc8466",
-     "Color 2": "#00000000",
-     "Mode": "Smooth",
-     "Dither": 0.0,
-     "Type": "Radial"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.12,
-    "why": "LED bleed through the pad's rubber."
-   },
-   {
-    "layer": 5,
-    "column": 1,
-    "name": "NOTE 0 - CHANNEL 1",
-    "source": "Text Block",
-    "params": {
-     "Text": "NOTE 0 - CHANNEL 1\n0x90 0x00 vel\nBOTTOM-LEFT",
-     "Font": "Consolas",
-     "Style": "Regular",
-     "Color": "#e8e4d8ff",
-     "Size": 0.9,
-     "Alignment": "Left",
-     "AlignmentVertically": "Bottom",
-     "Line Width": 1400.0,
-     "Position X": -160.0,
-     "Position Y": -80.0,
-     "Spacing Y": 12.0,
-     "Outline Width": 0.0,
-     "Glow In": 0.0,
-     "Glow Out": 0.0
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Note-on status 0x90 on channel 1."
-   },
-   {
-    "layer": 6,
-    "column": 1,
-    "name": "Blank",
-    "source": "Blank",
-    "params": {
-     "Black BG": false
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Nothing by design."
-   },
-   {
-    "layer": 7,
-    "column": 1,
-    "name": "Track Columns",
-    "source": "Lines",
-    "params": {
-     "Fuzzyness": 0.0,
-     "Amount": 8,
-     "Width": 0.01,
-     "Rotation": 90.0,
-     "Position": 0.5,
-     "Color": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Eight track columns."
-   },
-   {
-    "layer": 8,
-    "column": 1,
-    "name": "MIDI Activity",
-    "source": "Sine Wave",
-    "params": {
-     "Waves": 1,
-     "Mode": "Line",
-     "Line Width": 0.03,
-     "Fuzzyness": 0.05,
-     "Direction": "Horizontal",
-     "Mirror": false,
-     "Frequency": 3.0,
-     "Main Speed": 2.0,
-     "Modulator": 2.0,
-     "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
-     "Amplitude": 0.06,
-     "Position": 0.9,
-     "Color": "#3ddc84ff",
-     "BG Color": "#00000000"
-    },
-    "fft": {
-     "Amplitude": {
-      "band": "mid",
-      "gain": 10.0,
-      "release": 300,
-      "floor": 0.06,
-      "ceiling": 0.32
-     },
-     "Line Width": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 400,
-      "floor": 0.03,
-      "ceiling": 0.09
-     }
-    },
-    "effects": [],
-    "opacity": 1.0,
-    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
-   },
-   {
-    "layer": 1,
     "column": 2,
     "name": "Pad Grid",
     "source": "Checkered",
@@ -213,7 +30,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.62,
      "Color": "#3ddc84ff",
@@ -223,12 +40,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A row of pads lit together."
    },
@@ -333,10 +166,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -346,14 +179,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -390,7 +223,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.62,
      "Color": "#3ddc84ff",
@@ -400,12 +233,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A row of pads lit together."
    },
@@ -421,7 +270,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.62,
      "Color": "#ffae1aff",
@@ -431,12 +280,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Top row: n32-n39, the TEXT layer in every pack here."
    },
@@ -528,10 +393,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -541,14 +406,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -582,7 +447,23 @@
      "Color 2": "#3ddc8466"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "The 128-entry RGB velocity palette: 0-3 greys, then hues in fours."
    },
@@ -594,8 +475,8 @@
     "params": {
      "Scale": 0.16,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#ffae1aff",
      "Outline": 0.0,
      "Outline Color": "#ffae1aff"
@@ -604,7 +485,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.16,
       "ceiling": 0.2
      }
@@ -617,6 +498,21 @@
        "Scale H": 62.0,
        "Position X": -620.0,
        "Position Y": 260.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -683,15 +579,45 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -706,10 +632,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -719,428 +645,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
-      "floor": 0.03,
-      "ceiling": 0.09
-     }
-    },
-    "effects": [],
-    "opacity": 1.0,
-    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
-   },
-   {
-    "layer": 1,
-    "column": 5,
-    "name": "Pad Grid",
-    "source": "Checkered",
-    "params": {
-     "Num X": 8,
-     "Num Y": 5,
-     "Color 1": "#0f1012ff",
-     "Color 2": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
-   },
-   {
-    "layer": 2,
-    "column": 5,
-    "name": "Connected 21",
-    "source": "Shaper",
-    "params": {
-     "Scale": 0.16,
-     "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
-     "Color": "#3ddc84ff",
-     "Outline": 0.0,
-     "Outline Color": "#3ddc84ff"
-    },
-    "fft": {
-     "Scale": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 300,
-      "floor": 0.16,
-      "ceiling": 0.2
-     }
-    },
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale W": 100.0,
-       "Scale H": 62.0,
-       "Position X": -480.0,
-       "Position Y": 150.0
-      }
-     }
-    ],
-    "opacity": 0.9,
-    "why": "One pad lit in its RGB velocity colour."
-   },
-   {
-    "layer": 3,
-    "column": 5,
-    "name": "Disconnected 22",
-    "source": "Shaper",
-    "params": {
-     "Scale": 0.16,
-     "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
-     "Color": "#3ddc8466",
-     "Outline": 0.0,
-     "Outline Color": "#3ddc8466"
-    },
-    "fft": {
-     "Scale": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 300,
-      "floor": 0.16,
-      "ceiling": 0.2
-     }
-    },
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale W": 100.0,
-       "Scale H": 62.0,
-       "Position X": -240.0,
-       "Position Y": 150.0
-      }
-     }
-    ],
-    "opacity": 0.9,
-    "why": "Resolume sends 21 for Connected and 22 for Disconnected on this family."
-   },
-   {
-    "layer": 4,
-    "column": 5,
-    "name": "LED Glow",
-    "source": "Gradient",
-    "params": {
-     "Method": "2 Colors",
-     "Color 1": "#3ddc8466",
-     "Color 2": "#00000000",
-     "Mode": "Smooth",
-     "Dither": 0.0,
-     "Type": "Radial"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.14,
-    "why": "LED bleed through the pad's rubber."
-   },
-   {
-    "layer": 5,
-    "column": 5,
-    "name": "GREEN FAMILY",
-    "source": "Text Block",
-    "params": {
-     "Text": "GREEN FAMILY\nON 21 - DIM 22\nCONNECTED /\nDISCONNECTED",
-     "Font": "Consolas",
-     "Style": "Regular",
-     "Color": "#e8e4d8ff",
-     "Size": 0.9,
-     "Alignment": "Left",
-     "AlignmentVertically": "Bottom",
-     "Line Width": 1400.0,
-     "Position X": -160.0,
-     "Position Y": -80.0,
-     "Spacing Y": 12.0,
-     "Outline Width": 0.0,
-     "Glow In": 0.0,
-     "Glow Out": 0.0
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Silkscreen caption and protocol value."
-   },
-   {
-    "layer": 6,
-    "column": 5,
-    "name": "Blank",
-    "source": "Blank",
-    "params": {
-     "Black BG": false
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Nothing by design."
-   },
-   {
-    "layer": 7,
-    "column": 5,
-    "name": "Track Columns",
-    "source": "Lines",
-    "params": {
-     "Fuzzyness": 0.0,
-     "Amount": 8,
-     "Width": 0.01,
-     "Rotation": 90.0,
-     "Position": 0.5,
-     "Color": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Eight track columns."
-   },
-   {
-    "layer": 8,
-    "column": 5,
-    "name": "MIDI Activity",
-    "source": "Sine Wave",
-    "params": {
-     "Waves": 1,
-     "Mode": "Line",
-     "Line Width": 0.03,
-     "Fuzzyness": 0.05,
-     "Direction": "Horizontal",
-     "Mirror": false,
-     "Frequency": 3.0,
-     "Main Speed": 2.0,
-     "Modulator": 2.0,
-     "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
-     "Amplitude": 0.06,
-     "Position": 0.9,
-     "Color": "#3ddc84ff",
-     "BG Color": "#00000000"
-    },
-    "fft": {
-     "Amplitude": {
-      "band": "mid",
-      "gain": 10.0,
-      "release": 300,
-      "floor": 0.06,
-      "ceiling": 0.32
-     },
-     "Line Width": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 400,
-      "floor": 0.03,
-      "ceiling": 0.09
-     }
-    },
-    "effects": [],
-    "opacity": 1.0,
-    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
-   },
-   {
-    "layer": 1,
-    "column": 6,
-    "name": "Pad Grid",
-    "source": "Checkered",
-    "params": {
-     "Num X": 8,
-     "Num Y": 5,
-     "Color 1": "#0f1012ff",
-     "Color 2": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
-   },
-   {
-    "layer": 2,
-    "column": 6,
-    "name": "Connected 9",
-    "source": "Shaper",
-    "params": {
-     "Scale": 0.16,
-     "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
-     "Color": "#ffae1aff",
-     "Outline": 0.0,
-     "Outline Color": "#ffae1aff"
-    },
-    "fft": {
-     "Scale": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 300,
-      "floor": 0.16,
-      "ceiling": 0.2
-     }
-    },
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale W": 100.0,
-       "Scale H": 62.0,
-       "Position X": -480.0,
-       "Position Y": 150.0
-      }
-     }
-    ],
-    "opacity": 0.9,
-    "why": "One pad lit in its RGB velocity colour."
-   },
-   {
-    "layer": 3,
-    "column": 6,
-    "name": "Disconnected 10",
-    "source": "Shaper",
-    "params": {
-     "Scale": 0.16,
-     "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
-     "Color": "#ffae1a66",
-     "Outline": 0.0,
-     "Outline Color": "#ffae1a66"
-    },
-    "fft": {
-     "Scale": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 300,
-      "floor": 0.16,
-      "ceiling": 0.2
-     }
-    },
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale W": 100.0,
-       "Scale H": 62.0,
-       "Position X": -240.0,
-       "Position Y": 150.0
-      }
-     }
-    ],
-    "opacity": 0.9,
-    "why": "One pad lit in its RGB velocity colour."
-   },
-   {
-    "layer": 4,
-    "column": 6,
-    "name": "LED Glow",
-    "source": "Gradient",
-    "params": {
-     "Method": "2 Colors",
-     "Color 1": "#ffae1a66",
-     "Color 2": "#00000000",
-     "Mode": "Smooth",
-     "Dither": 0.0,
-     "Type": "Radial"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.14,
-    "why": "LED bleed through the pad's rubber."
-   },
-   {
-    "layer": 5,
-    "column": 6,
-    "name": "AMBER FAMILY",
-    "source": "Text Block",
-    "params": {
-     "Text": "AMBER FAMILY\nON 9 - DIM 10\nONLY PADS + SCENES ARE\nRGB",
-     "Font": "Consolas",
-     "Style": "Regular",
-     "Color": "#e8e4d8ff",
-     "Size": 0.9,
-     "Alignment": "Left",
-     "AlignmentVertically": "Bottom",
-     "Line Width": 1400.0,
-     "Position X": -160.0,
-     "Position Y": -80.0,
-     "Spacing Y": 12.0,
-     "Outline Width": 0.0,
-     "Glow In": 0.0,
-     "Glow Out": 0.0
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Silkscreen caption and protocol value."
-   },
-   {
-    "layer": 6,
-    "column": 6,
-    "name": "Blank",
-    "source": "Blank",
-    "params": {
-     "Black BG": false
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Nothing by design."
-   },
-   {
-    "layer": 7,
-    "column": 6,
-    "name": "Track Columns",
-    "source": "Lines",
-    "params": {
-     "Fuzzyness": 0.0,
-     "Amount": 8,
-     "Width": 0.01,
-     "Rotation": 90.0,
-     "Position": 0.5,
-     "Color": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Eight track columns."
-   },
-   {
-    "layer": 8,
-    "column": 6,
-    "name": "MIDI Activity",
-    "source": "Sine Wave",
-    "params": {
-     "Waves": 1,
-     "Mode": "Line",
-     "Line Width": 0.03,
-     "Fuzzyness": 0.05,
-     "Direction": "Horizontal",
-     "Mirror": false,
-     "Frequency": 3.0,
-     "Main Speed": 2.0,
-     "Modulator": 2.0,
-     "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
-     "Amplitude": 0.06,
-     "Position": 0.9,
-     "Color": "#3ddc84ff",
-     "BG Color": "#00000000"
-    },
-    "fft": {
-     "Amplitude": {
-      "band": "mid",
-      "gain": 10.0,
-      "release": 300,
-      "floor": 0.06,
-      "ceiling": 0.32
-     },
-     "Line Width": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1174,7 +686,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#3ddc84ff",
@@ -1184,12 +696,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Scene Launch 1-5, notes 82-86, the right column."
    },
@@ -1201,8 +729,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e8e4d8ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -1211,7 +739,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -1224,6 +752,21 @@
        "Position Y": -400,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -1290,15 +833,45 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1313,10 +886,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1326,14 +899,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1371,7 +944,7 @@
      "Main Speed": 6.0,
      "Modulator": 0.0,
      "Modulation Depth": 0.0,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.5,
      "Color": "#e03a2fff",
@@ -1381,12 +954,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.26
+      "ceiling": 0.42000000000000004
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Twelve bytes over class-compliant USB-MIDI: the Mode SysEx on the wire."
    },
@@ -1398,8 +987,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -1408,7 +997,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -1421,6 +1010,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -1490,15 +1094,45 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1513,10 +1147,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -1526,14 +1160,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1541,6 +1175,756 @@
     "effects": [],
     "opacity": 1.0,
     "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 1,
+    "name": "Pad Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#0f1012ff",
+     "Color 2": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
+   },
+   {
+    "layer": 2,
+    "column": 1,
+    "name": "Pad n0",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
+     "Color": "#3ddc84ff",
+     "Outline": 0.0,
+     "Outline Color": "#3ddc84ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -840.0,
+       "Position Y": -300.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Bottom-left pad: note 0. note = row_from_bottom x 8 + column."
+   },
+   {
+    "layer": 3,
+    "column": 1,
+    "name": "Blank",
+    "source": "Blank",
+    "params": {
+     "Black BG": false
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "One pad."
+   },
+   {
+    "layer": 4,
+    "column": 1,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.12,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 1,
+    "name": "NOTE 0 - CHANNEL 1",
+    "source": "Text Block",
+    "params": {
+     "Text": "NOTE 0 - CHANNEL 1\n0x90 0x00 vel\nBOTTOM-LEFT",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Note-on status 0x90 on channel 1."
+   },
+   {
+    "layer": 7,
+    "column": 1,
+    "name": "Track Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Eight track columns."
+   },
+   {
+    "layer": 8,
+    "column": 1,
+    "name": "MIDI Activity",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 260,
+      "floor": 0.06,
+      "ceiling": 0.528
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 6,
+    "column": 1,
+    "name": "Slow Spiral",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.22,
+    "why": "Kinetic pass: a column with no clock of its own gets one."
+   },
+   {
+    "layer": 1,
+    "column": 5,
+    "name": "Pad Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#0f1012ff",
+     "Color 2": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
+   },
+   {
+    "layer": 2,
+    "column": 5,
+    "name": "Connected 21",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
+     "Color": "#3ddc84ff",
+     "Outline": 0.0,
+     "Outline Color": "#3ddc84ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "One pad lit in its RGB velocity colour."
+   },
+   {
+    "layer": 3,
+    "column": 5,
+    "name": "Disconnected 22",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
+     "Color": "#3ddc8466",
+     "Outline": 0.0,
+     "Outline Color": "#3ddc8466"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -240.0,
+       "Position Y": 150.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Resolume sends 21 for Connected and 22 for Disconnected on this family."
+   },
+   {
+    "layer": 4,
+    "column": 5,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 5,
+    "name": "GREEN FAMILY",
+    "source": "Text Block",
+    "params": {
+     "Text": "GREEN FAMILY\nON 21 - DIM 22\nCONNECTED /\nDISCONNECTED",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 7,
+    "column": 5,
+    "name": "Track Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Eight track columns."
+   },
+   {
+    "layer": 8,
+    "column": 5,
+    "name": "MIDI Activity",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 260,
+      "floor": 0.06,
+      "ceiling": 0.528
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 6,
+    "column": 5,
+    "name": "Slow Spiral",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.22,
+    "why": "Kinetic pass: a column with no clock of its own gets one."
+   },
+   {
+    "layer": 1,
+    "column": 6,
+    "name": "Pad Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#0f1012ff",
+     "Color 2": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
+   },
+   {
+    "layer": 2,
+    "column": 6,
+    "name": "Connected 9",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
+     "Color": "#ffae1aff",
+     "Outline": 0.0,
+     "Outline Color": "#ffae1aff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "One pad lit in its RGB velocity colour."
+   },
+   {
+    "layer": 3,
+    "column": 6,
+    "name": "Disconnected 10",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
+     "Color": "#ffae1a66",
+     "Outline": 0.0,
+     "Outline Color": "#ffae1a66"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -240.0,
+       "Position Y": 150.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "One pad lit in its RGB velocity colour."
+   },
+   {
+    "layer": 4,
+    "column": 6,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#ffae1a66",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.14,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 6,
+    "name": "AMBER FAMILY",
+    "source": "Text Block",
+    "params": {
+     "Text": "AMBER FAMILY\nON 9 - DIM 10\nONLY PADS + SCENES ARE\nRGB",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 7,
+    "column": 6,
+    "name": "Track Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Eight track columns."
+   },
+   {
+    "layer": 8,
+    "column": 6,
+    "name": "MIDI Activity",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 260,
+      "floor": 0.06,
+      "ceiling": 0.528
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 6,
+    "column": 6,
+    "name": "Slow Spiral",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.22,
+    "why": "Kinetic pass: a column with no clock of its own gets one."
    }
   ]
  },
@@ -1577,7 +1961,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#e8e4d8ff",
@@ -1587,12 +1971,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A row of pads lit together."
    },
@@ -1604,8 +2004,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -1614,7 +2014,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -1627,6 +2027,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -1693,15 +2108,40 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1716,10 +2156,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1729,14 +2169,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1775,7 +2215,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.3,
      "Color": "#e8e4d8ff",
@@ -1785,12 +2225,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A row of pads lit together."
    },
@@ -1802,8 +2258,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -1812,7 +2268,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -1825,6 +2281,21 @@
        "Position Y": 200,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -1889,15 +2360,40 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1912,10 +2408,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -1925,14 +2421,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1971,7 +2467,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.1,
      "Color": "#e8e4d8ff",
@@ -1981,12 +2477,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A row of pads lit together."
    },
@@ -1998,8 +2510,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -2008,7 +2520,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -2021,6 +2533,21 @@
        "Position Y": 70,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -2087,15 +2614,40 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2110,10 +2662,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2123,14 +2675,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2169,7 +2721,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.1,
      "Color": "#3ddc84ff",
@@ -2179,12 +2731,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Activator LEDs lit = layer on air (bypass off)."
    },
@@ -2196,8 +2764,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e8e4d8ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -2206,7 +2774,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -2219,6 +2787,21 @@
        "Position Y": -70,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -2285,15 +2868,40 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2308,10 +2916,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2321,14 +2929,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2367,7 +2975,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.3,
      "Color": "#ffae1aff",
@@ -2377,12 +2985,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Record Arm, note 48 on channels 1-8: FX bank 1, eight latching toggles."
    },
@@ -2394,8 +3018,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#ffae1aff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -2404,7 +3028,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -2417,6 +3041,21 @@
        "Position Y": -210,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -2483,15 +3122,40 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2506,10 +3170,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2519,14 +3183,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2565,7 +3229,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.5,
      "Color": "#ffae1aff",
@@ -2575,12 +3239,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Crossfade A/B, note 66: FX bank 2 here."
    },
@@ -2592,8 +3272,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -2602,7 +3282,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -2615,6 +3295,21 @@
        "Position Y": -350,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -2681,15 +3376,40 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2704,10 +3424,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -2717,196 +3437,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
-      "floor": 0.03,
-      "ceiling": 0.09
-     }
-    },
-    "effects": [],
-    "opacity": 1.0,
-    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
-   },
-   {
-    "layer": 1,
-    "column": 7,
-    "name": "Chassis",
-    "source": "Solid Color",
-    "params": {
-     "Color": "#0f1012ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Matte black chassis."
-   },
-   {
-    "layer": 2,
-    "column": 7,
-    "name": "Eight Faders",
-    "source": "Lines",
-    "params": {
-     "Fuzzyness": 0.0,
-     "Amount": 8,
-     "Width": 0.02,
-     "Rotation": 90.0,
-     "Position": 0.5,
-     "Color": "#e8e4d8ff"
-    },
-    "fft": {
-     "Width": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 400,
-      "floor": 0.02,
-      "ceiling": 0.05
-     }
-    },
-    "effects": [],
-    "opacity": 0.9,
-    "why": "Eight channel faders, CC7 on channels 1-8."
-   },
-   {
-    "layer": 3,
-    "column": 7,
-    "name": "Fader 2 Cap",
-    "source": "Lines",
-    "params": {
-     "Fuzzyness": 0.0,
-     "Amount": 1,
-     "Width": 0.04,
-     "Rotation": 90.0,
-     "Position": 0.1875,
-     "Color": "#3ddc84ff"
-    },
-    "fft": {
-     "Width": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 400,
-      "floor": 0.04,
-      "ceiling": 0.08
-     }
-    },
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Fader 2: CC7 on channel 2, layer 2's master."
-   },
-   {
-    "layer": 4,
-    "column": 7,
-    "name": "LED Glow",
-    "source": "Gradient",
-    "params": {
-     "Method": "2 Colors",
-     "Color 1": "#3ddc8466",
-     "Color 2": "#00000000",
-     "Mode": "Smooth",
-     "Dither": 0.0,
-     "Type": "Radial"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "LED bleed through the pad's rubber."
-   },
-   {
-    "layer": 5,
-    "column": 7,
-    "name": "TRACK FADERS CC7 c",
-    "source": "Text Block",
-    "params": {
-     "Text": "TRACK FADERS CC7 ch1-8\n= LAYER MASTER 1-8\nMASTER FADER CC14",
-     "Font": "Consolas",
-     "Style": "Regular",
-     "Color": "#e8e4d8ff",
-     "Size": 0.9,
-     "Alignment": "Left",
-     "AlignmentVertically": "Bottom",
-     "Line Width": 1400.0,
-     "Position X": -160.0,
-     "Position Y": -80.0,
-     "Spacing Y": 12.0,
-     "Outline Width": 0.0,
-     "Glow In": 0.0,
-     "Glow Out": 0.0
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Silkscreen caption and protocol value."
-   },
-   {
-    "layer": 6,
-    "column": 7,
-    "name": "Blank",
-    "source": "Blank",
-    "params": {
-     "Black BG": false
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Nothing by design."
-   },
-   {
-    "layer": 7,
-    "column": 7,
-    "name": "Track Columns",
-    "source": "Lines",
-    "params": {
-     "Fuzzyness": 0.0,
-     "Amount": 8,
-     "Width": 0.01,
-     "Rotation": 90.0,
-     "Position": 0.5,
-     "Color": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Eight track columns."
-   },
-   {
-    "layer": 8,
-    "column": 7,
-    "name": "MIDI Activity",
-    "source": "Sine Wave",
-    "params": {
-     "Waves": 1,
-     "Mode": "Line",
-     "Line Width": 0.03,
-     "Fuzzyness": 0.05,
-     "Direction": "Horizontal",
-     "Mirror": false,
-     "Frequency": 3.0,
-     "Main Speed": 2.0,
-     "Modulator": 2.0,
-     "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
-     "Amplitude": 0.06,
-     "Position": 0.9,
-     "Color": "#3ddc84ff",
-     "BG Color": "#00000000"
-    },
-    "fft": {
-     "Amplitude": {
-      "band": "mid",
-      "gain": 10.0,
-      "release": 300,
-      "floor": 0.06,
-      "ceiling": 0.32
-     },
-     "Line Width": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2942,7 +3480,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A 45 mm fader: a slot and a cap."
    },
@@ -2963,12 +3517,28 @@
      "Position": {
       "band": "low",
       "gain": 9.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.8
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "CC15: environment <-> figures. Centre = everything, rig-measured."
    },
@@ -3032,15 +3602,40 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#e8e4d8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3055,10 +3650,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3068,14 +3663,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3083,6 +3678,253 @@
     "effects": [],
     "opacity": 1.0,
     "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 7,
+    "name": "Chassis",
+    "source": "Solid Color",
+    "params": {
+     "Color": "#0f1012ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Matte black chassis."
+   },
+   {
+    "layer": 2,
+    "column": 7,
+    "name": "Eight Faders",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.02,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.02,
+      "ceiling": 0.05
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "Eight channel faders, CC7 on channels 1-8."
+   },
+   {
+    "layer": 3,
+    "column": 7,
+    "name": "Fader 2 Cap",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 1,
+     "Width": 0.04,
+     "Rotation": 90.0,
+     "Position": 0.1875,
+     "Color": "#3ddc84ff"
+    },
+    "fft": {
+     "Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.04,
+      "ceiling": 0.08
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
+    "opacity": 1.0,
+    "why": "Fader 2: CC7 on channel 2, layer 2's master."
+   },
+   {
+    "layer": 4,
+    "column": 7,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.06,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 7,
+    "name": "TRACK FADERS CC7 c",
+    "source": "Text Block",
+    "params": {
+     "Text": "TRACK FADERS CC7 ch1-8\n= LAYER MASTER 1-8\nMASTER FADER CC14",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Silkscreen caption and protocol value."
+   },
+   {
+    "layer": 7,
+    "column": 7,
+    "name": "Track Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Eight track columns."
+   },
+   {
+    "layer": 8,
+    "column": 7,
+    "name": "MIDI Activity",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 260,
+      "floor": 0.06,
+      "ceiling": 0.528
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 6,
+    "column": 7,
+    "name": "Scan Lines",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.22,
+    "why": "Kinetic pass: a column with no clock of its own gets one."
    }
   ]
  },
@@ -3116,7 +3958,23 @@
      "Color": "#e8e4d866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "Silkscreen rules across the panel."
    },
@@ -3142,12 +4000,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Device Control knobs 1-8, CC16-23: dashboard links 1-8, the four bank wets and four macros."
    },
@@ -3211,15 +4100,41 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3234,10 +4149,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3247,14 +4162,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3298,12 +4213,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "A knob with its LED ring."
    },
@@ -3329,12 +4275,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Ring LEDs follow the value CC in Mode 1; ring style is single, volume or pan."
    },
@@ -3398,15 +4375,41 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3421,10 +4424,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3434,14 +4437,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3477,7 +4480,23 @@
      "Color": "#e8e4d866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "Silkscreen rules across the panel."
    },
@@ -3493,7 +4512,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.55,
      "Color": "#e8e4d8ff",
@@ -3503,12 +4522,28 @@
      "Size": {
       "band": "mid",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.11
+      "ceiling": 0.16
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Track Control knobs 1-8 along the top, CC48-55: LOW/MID/HIGH depth and release, SCOPE, TIME."
    },
@@ -3572,15 +4607,41 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3595,10 +4656,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3608,14 +4669,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3659,14 +4720,45 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
-    "why": "CUE LEVEL, CC47: the FX master sweep over the four bank links."
+    "why": "CUE LEVEL, CC47, relative: one nudge moves all four bank links together."
    },
    {
     "layer": 3,
@@ -3685,12 +4777,28 @@
      "Position": {
       "band": "low",
       "gain": 8.0,
-      "release": 600,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.8
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A 45 mm fader: a slot and a cap."
    },
@@ -3715,10 +4823,10 @@
    {
     "layer": 5,
     "column": 4,
-    "name": "CUE LEVEL CC47",
+    "name": "CUE LEVEL CC47 -",
     "source": "Text Block",
     "params": {
-     "Text": "CUE LEVEL CC47\n= FX MASTER SWEEP\nANTICLOCKWISE = CLEAN",
+     "Text": "CUE LEVEL CC47 -\nRELATIVE\n= FX MASTER NUDGE\nANTICLOCKWISE = CLEAN",
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
@@ -3754,15 +4862,41 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3777,10 +4911,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3790,14 +4924,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3841,14 +4975,45 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
-    "why": "TEMPO, CC13, relative: 1-63 up, 127-64 down."
+    "why": "TEMPO, CC13, relative: 1-63 up, 127-64 down. Here it trims the global FFT input gain."
    },
    {
     "layer": 3,
@@ -3866,7 +5031,7 @@
      "Main Speed": 6.0,
      "Modulator": 0.0,
      "Modulation Depth": 0.0,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.05,
      "Position": 0.2,
      "Color": "#e03a2fff",
@@ -3876,12 +5041,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.25
+      "ceiling": 0.41000000000000003
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "31,250 baud serial: bytes on the wire."
    },
@@ -3907,7 +5088,7 @@
     "name": "TEMPO CC13 - RELAT",
     "source": "Text Block",
     "params": {
-     "Text": "TEMPO CC13 - RELATIVE\n1-63 = UP - 127-64 =\nDOWN\nBPM",
+     "Text": "TEMPO CC13 - RELATIVE\n1-63 = UP - 127-64 =\nDOWN\n= FFT INPUT GAIN",
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
@@ -3943,15 +5124,41 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3966,10 +5173,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -3979,14 +5186,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4016,8 +5223,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -4026,7 +5233,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -4039,6 +5246,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
       }
      }
     ],
@@ -4053,8 +5275,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e8e4d8ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -4063,7 +5285,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -4076,6 +5298,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -4142,15 +5379,41 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4165,10 +5428,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4178,14 +5441,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4215,8 +5478,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -4225,7 +5488,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -4238,6 +5501,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
       }
      }
     ],
@@ -4252,8 +5530,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e8e4d8ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -4262,7 +5540,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -4276,10 +5554,25 @@
        "Scale": 100,
        "Rotation Z": 0
       }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
      }
     ],
     "opacity": 0.9,
-    "why": "NUDGE - n100, NUDGE + n101; METRONOME n90 is resync."
+    "why": "NUDGE - n100, NUDGE + n101; METRONOME n90 puts the FFT gain home, TAP n99 puts TIME at 1x."
    },
    {
     "layer": 4,
@@ -4300,10 +5593,10 @@
    {
     "layer": 5,
     "column": 7,
-    "name": "TAP TEMPO n99",
+    "name": "TAP n99 = TIME HOM",
     "source": "Text Block",
     "params": {
-     "Text": "TAP TEMPO n99\nNUDGE n100 / n101\nMETRONOME n90 = RESYNC",
+     "Text": "TAP n99 = TIME HOME\nNUDGE n100 / n101\nMETRONOME n90 = FFT\nHOME",
      "Font": "Consolas",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
@@ -4339,15 +5632,41 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4362,10 +5681,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -4375,14 +5694,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4426,12 +5745,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.06
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The footswitch jack, rear panel."
    },
@@ -4452,12 +5787,28 @@
      "Width": {
       "band": "low",
       "gain": 10.0,
-      "release": 200,
+      "release": 200.0,
       "floor": 0.02,
       "ceiling": 0.1
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "CC64: 0x7F down, 0x00 up - momentary BLACKOUT."
    },
@@ -4519,15 +5870,41 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4542,10 +5919,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -4555,14 +5932,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4611,12 +5988,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.06
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "A 5-pin DIN socket: pins 4 and 5 carry the current loop."
    },
@@ -4632,7 +6025,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.0,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#e03a2fff",
@@ -4642,12 +6035,28 @@
      "Size": {
       "band": "high",
       "gain": 9.0,
-      "release": 200,
+      "release": 200.0,
       "floor": 0.05,
-      "ceiling": 0.08
+      "ceiling": 0.11
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Five pins in a 180-degree arc."
    },
@@ -4711,15 +6120,48 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4734,10 +6176,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -4747,14 +6189,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4792,7 +6234,7 @@
      "Main Speed": 6.0,
      "Modulator": 0.0,
      "Modulation Depth": 0.0,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.1,
      "Position": 0.5,
      "Color": "#e03a2fff",
@@ -4802,12 +6244,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
-      "ceiling": 0.30000000000000004
+      "ceiling": 0.4600000000000001
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "31,250 baud serial: bytes on the wire."
    },
@@ -4828,12 +6286,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 8.0,
-      "release": 250,
+      "release": 250.0,
       "floor": 0.0,
       "ceiling": 0.3
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "Ten bits per byte: start, eight data, stop."
    },
@@ -4897,15 +6371,48 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4920,10 +6427,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -4933,14 +6440,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4981,6 +6488,21 @@
        "Scale W": 100.0,
        "Scale H": 24.0
       }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
      }
     ],
     "opacity": 0.8,
@@ -4994,8 +6516,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#e03a2fff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -5004,7 +6526,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -5017,6 +6539,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -5083,15 +6620,48 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5106,10 +6676,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -5119,200 +6689,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
-      "floor": 0.03,
-      "ceiling": 0.09
-     }
-    },
-    "effects": [],
-    "opacity": 1.0,
-    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
-   },
-   {
-    "layer": 1,
-    "column": 4,
-    "name": "Pad Grid",
-    "source": "Checkered",
-    "params": {
-     "Num X": 8,
-     "Num Y": 5,
-     "Color 1": "#0f1012ff",
-     "Color 2": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
-   },
-   {
-    "layer": 2,
-    "column": 4,
-    "name": "Note On",
-    "source": "Shaper",
-    "params": {
-     "Scale": 0.16,
-     "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
-     "Color": "#3ddc84ff",
-     "Outline": 0.0,
-     "Outline Color": "#3ddc84ff"
-    },
-    "fft": {
-     "Scale": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 300,
-      "floor": 0.16,
-      "ceiling": 0.2
-     }
-    },
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale W": 100.0,
-       "Scale H": 62.0,
-       "Position X": -480.0,
-       "Position Y": 150.0
-      }
-     }
-    ],
-    "opacity": 0.9,
-    "why": "One pad lit in its RGB velocity colour."
-   },
-   {
-    "layer": 3,
-    "column": 4,
-    "name": "Note Off",
-    "source": "Stroboscope",
-    "params": {
-     "Frequency": 0.3,
-     "Fade": true,
-     "Color 1": "#3ddc84ff",
-     "Color 2": "#00000000"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.3,
-    "why": "Note off: 0x80, or 0x90 with velocity 0. The pad goes dark."
-   },
-   {
-    "layer": 4,
-    "column": 4,
-    "name": "LED Glow",
-    "source": "Gradient",
-    "params": {
-     "Method": "2 Colors",
-     "Color 1": "#3ddc8466",
-     "Color 2": "#00000000",
-     "Mode": "Smooth",
-     "Dither": 0.0,
-     "Type": "Radial"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.1,
-    "why": "LED bleed through the pad's rubber."
-   },
-   {
-    "layer": 5,
-    "column": 4,
-    "name": "NOTE ON 0x90 nn vv",
-    "source": "Text Block",
-    "params": {
-     "Text": "NOTE ON 0x90 nn vv\nNOTE OFF 0x80 nn 00\nPIANO = HOLD",
-     "Font": "Consolas",
-     "Style": "Regular",
-     "Color": "#e8e4d8ff",
-     "Size": 0.9,
-     "Alignment": "Left",
-     "AlignmentVertically": "Bottom",
-     "Line Width": 1400.0,
-     "Position X": -160.0,
-     "Position Y": -80.0,
-     "Spacing Y": 12.0,
-     "Outline Width": 0.0,
-     "Glow In": 0.0,
-     "Glow Out": 0.0
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Trigger style Piano listens to the note off."
-   },
-   {
-    "layer": 6,
-    "column": 4,
-    "name": "Blank",
-    "source": "Blank",
-    "params": {
-     "Black BG": false
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Nothing by design."
-   },
-   {
-    "layer": 7,
-    "column": 4,
-    "name": "Track Columns",
-    "source": "Lines",
-    "params": {
-     "Fuzzyness": 0.0,
-     "Amount": 8,
-     "Width": 0.01,
-     "Rotation": 90.0,
-     "Position": 0.5,
-     "Color": "#1f2126ff"
-    },
-    "fft": {},
-    "effects": [],
-    "opacity": 1.0,
-    "why": "Eight track columns."
-   },
-   {
-    "layer": 8,
-    "column": 4,
-    "name": "MIDI Activity",
-    "source": "Sine Wave",
-    "params": {
-     "Waves": 1,
-     "Mode": "Line",
-     "Line Width": 0.03,
-     "Fuzzyness": 0.05,
-     "Direction": "Horizontal",
-     "Mirror": false,
-     "Frequency": 3.0,
-     "Main Speed": 2.0,
-     "Modulator": 2.0,
-     "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
-     "Amplitude": 0.06,
-     "Position": 0.9,
-     "Color": "#3ddc84ff",
-     "BG Color": "#00000000"
-    },
-    "fft": {
-     "Amplitude": {
-      "band": "mid",
-      "gain": 10.0,
-      "release": 300,
-      "floor": 0.06,
-      "ceiling": 0.32
-     },
-     "Line Width": {
-      "band": "low",
-      "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5351,12 +6735,28 @@
      "Position": {
       "band": "low",
       "gain": 9.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.9
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A 45 mm fader: a slot and a cap."
    },
@@ -5374,7 +6774,23 @@
      "Color": "#e8e4d866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "7 bits of value: 0 to 127, 128 steps."
    },
@@ -5438,15 +6854,48 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5461,10 +6910,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5474,14 +6923,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5526,12 +6975,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "USB type B: bus powered, no supply needed, class compliant."
    },
@@ -5551,7 +7016,7 @@
      "Main Speed": 6.0,
      "Modulator": 0.0,
      "Modulation Depth": 0.0,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.75,
      "Color": "#e8e4d8ff",
@@ -5561,12 +7026,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.23
+      "ceiling": 0.39
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Class-compliant USB MIDI: no driver, bus powered."
    },
@@ -5630,15 +7111,48 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5653,10 +7167,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5666,14 +7180,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5709,7 +7223,23 @@
      "Color": "#e8e4d866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "Silkscreen rules across the panel."
    },
@@ -5721,8 +7251,8 @@
     "params": {
      "Scale": 0.1,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.0,
      "Outline Color": "#3ddc84ff"
@@ -5731,7 +7261,7 @@
      "Scale": {
       "band": "mid",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.14
      }
@@ -5744,6 +7274,21 @@
        "Position Y": 120,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -5810,15 +7355,48 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5833,10 +7411,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -5846,14 +7424,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5889,7 +7467,23 @@
      "Color": "#1f2126ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "Silkscreen rules across the panel."
    },
@@ -5909,7 +7503,7 @@
      "Main Speed": 6.0,
      "Modulator": 0.0,
      "Modulation Depth": 0.0,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.5,
      "Color": "#3ddc84ff",
@@ -5919,12 +7513,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.26
+      "ceiling": 0.42000000000000004
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "USB-MIDI packets arriving: what the monitor in Preferences > MIDI shows."
    },
@@ -5986,15 +7596,48 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6009,10 +7652,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6022,14 +7665,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6037,6 +7680,249 @@
     "effects": [],
     "opacity": 1.0,
     "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 1,
+    "column": 4,
+    "name": "Pad Grid",
+    "source": "Checkered",
+    "params": {
+     "Num X": 8,
+     "Num Y": 5,
+     "Color 1": "#0f1012ff",
+     "Color 2": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "The 5x8 clip-launch grid, 40 RGB pads, bottom-left is note 0."
+   },
+   {
+    "layer": 2,
+    "column": 4,
+    "name": "Note On",
+    "source": "Shaper",
+    "params": {
+     "Scale": 0.16,
+     "Noise Type": "Grain",
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
+     "Color": "#3ddc84ff",
+     "Outline": 0.0,
+     "Outline Color": "#3ddc84ff"
+    },
+    "fft": {
+     "Scale": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.16,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale W": 100.0,
+       "Scale H": 62.0,
+       "Position X": -480.0,
+       "Position Y": 150.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.9,
+    "why": "One pad lit in its RGB velocity colour."
+   },
+   {
+    "layer": 3,
+    "column": 4,
+    "name": "Note Off",
+    "source": "Stroboscope",
+    "params": {
+     "Frequency": 0.3,
+     "Fade": true,
+     "Color 1": "#3ddc84ff",
+     "Color 2": "#00000000"
+    },
+    "fft": {},
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Note off: 0x80, or 0x90 with velocity 0. The pad goes dark."
+   },
+   {
+    "layer": 4,
+    "column": 4,
+    "name": "LED Glow",
+    "source": "Gradient",
+    "params": {
+     "Method": "2 Colors",
+     "Color 1": "#3ddc8466",
+     "Color 2": "#00000000",
+     "Mode": "Smooth",
+     "Dither": 0.0,
+     "Type": "Radial"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 0.1,
+    "why": "LED bleed through the pad's rubber."
+   },
+   {
+    "layer": 5,
+    "column": 4,
+    "name": "NOTE ON 0x90 nn vv",
+    "source": "Text Block",
+    "params": {
+     "Text": "NOTE ON 0x90 nn vv\nNOTE OFF 0x80 nn 00\nPIANO = HOLD",
+     "Font": "Consolas",
+     "Style": "Regular",
+     "Color": "#e8e4d8ff",
+     "Size": 0.9,
+     "Alignment": "Left",
+     "AlignmentVertically": "Bottom",
+     "Line Width": 1400.0,
+     "Position X": -160.0,
+     "Position Y": -80.0,
+     "Spacing Y": 12.0,
+     "Outline Width": 0.0,
+     "Glow In": 0.0,
+     "Glow Out": 0.0
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Trigger style Piano listens to the note off."
+   },
+   {
+    "layer": 7,
+    "column": 4,
+    "name": "Track Columns",
+    "source": "Lines",
+    "params": {
+     "Fuzzyness": 0.0,
+     "Amount": 8,
+     "Width": 0.01,
+     "Rotation": 90.0,
+     "Position": 0.5,
+     "Color": "#1f2126ff"
+    },
+    "fft": {},
+    "effects": [],
+    "opacity": 1.0,
+    "why": "Eight track columns."
+   },
+   {
+    "layer": 8,
+    "column": 4,
+    "name": "MIDI Activity",
+    "source": "Sine Wave",
+    "params": {
+     "Waves": 1,
+     "Mode": "Line",
+     "Line Width": 0.03,
+     "Fuzzyness": 0.05,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 3.0,
+     "Main Speed": 4.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.4,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.9,
+     "Color": "#3ddc84ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 10.0,
+      "release": 260,
+      "floor": 0.06,
+      "ceiling": 0.528
+     },
+     "Line Width": {
+      "band": "low",
+      "gain": 8.0,
+      "release": 260,
+      "floor": 0.03,
+      "ceiling": 0.09
+     }
+    },
+    "effects": [],
+    "opacity": 1.0,
+    "why": "MIDI activity along the bottom: the monitor in Preferences > MIDI."
+   },
+   {
+    "layer": 6,
+    "column": 4,
+    "name": "Counter Spiral",
+    "source": "Spiral",
+    "params": {
+     "Direction": "Anti-clockwise",
+     "Speed": 0.3,
+     "Zoom": 1.2,
+     "Leafs": 2,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
+    },
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 1.0,
+      "ceiling": 1.5
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.22,
+    "why": "Kinetic pass: a column with no clock of its own gets one."
    }
   ]
  },
@@ -6068,7 +7954,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.3,
      "Color": "#e8e4d8ff",
@@ -6078,12 +7964,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.09,
-      "ceiling": 0.14
+      "ceiling": 0.19000000000000003
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Four composite inputs on BNC; S-Video on mini-DIN beside each."
    },
@@ -6095,8 +7997,8 @@
     "params": {
      "Scale": 0.08,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.03,
      "Outline Color": "#e8e4d866"
@@ -6105,7 +8007,7 @@
      "Scale": {
       "band": "mid",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
       "ceiling": 0.1
      }
@@ -6118,6 +8020,21 @@
        "Position Y": -180,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -6184,15 +8101,48 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6207,10 +8157,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6220,14 +8170,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6261,7 +8211,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.2,
      "Color": "#e8e4d866",
@@ -6271,12 +8221,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Sub source: the input the next transition, split or PIP will use."
    },
@@ -6292,7 +8258,7 @@
      "Distance": 0.5,
      "Radius": 0.1,
      "Fuzzyness": 0.02,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": -0.2,
      "Color": "#3ddc84ff",
@@ -6302,12 +8268,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.13
+      "ceiling": 0.18
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "Main source selected: what is on the output (the SE-500 lights it red; green is the pack's lit colour). Two composite program outs plus S-Video, component via the breakout cable, and a separate quad-preview out."
    },
@@ -6371,15 +8353,48 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6394,10 +8409,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6407,14 +8422,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6450,7 +8465,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A 45 mm fader: a slot and a cap."
    },
@@ -6471,12 +8502,28 @@
      "Position": {
       "band": "low",
       "gain": 9.0,
-      "release": 800,
+      "release": 260,
       "floor": 0.05,
       "ceiling": 0.95
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The T-bar: pull it through and the transition happens at your speed."
    },
@@ -6540,15 +8587,48 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6563,10 +8643,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6576,14 +8656,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6635,12 +8715,28 @@
      "Position": {
       "band": "mid",
       "gain": 8.0,
-      "release": 900,
+      "release": 260,
       "floor": 0.0,
       "ceiling": 1.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A vertical wipe revealing input B."
    },
@@ -6704,15 +8800,48 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6727,10 +8856,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6740,14 +8869,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6790,8 +8919,8 @@
     "params": {
      "Scale": 0.3,
      "Noise Type": "Grain",
-     "Noise Amount": 0.0,
-     "Noise Speed": 0.0,
+     "Noise Amount": 0.04,
+     "Noise Speed": 0.6,
      "Color": "#3ddc84ff",
      "Outline": 0.02,
      "Outline Color": "#e8e4d8ff"
@@ -6800,7 +8929,7 @@
      "Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.3,
       "ceiling": 0.36
      }
@@ -6813,6 +8942,21 @@
        "Scale H": 90.0,
        "Position X": 520.0,
        "Position Y": -280.0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -6879,15 +9023,48 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6902,10 +9079,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -6915,14 +9092,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6958,7 +9135,23 @@
      "Color": "#e8e4d8ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "A 45 mm fader: a slot and a cap."
    },
@@ -7044,15 +9237,48 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7067,10 +9293,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -7080,14 +9306,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7121,7 +9347,23 @@
      "Color 2": "#ffae1aff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "Colour processing: bars to set levels by."
    },
@@ -7147,7 +9389,7 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 350,
+      "release": 260,
       "floor": 20.0,
       "ceiling": 270.0
      }
@@ -7160,6 +9402,21 @@
        "Position Y": -320,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
       }
      }
     ],
@@ -7226,15 +9483,48 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7249,10 +9539,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#3ddc84ff",
@@ -7262,14 +9552,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7313,12 +9603,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.06
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "RS-232 on a 9-pin D-sub, tally on a 15-pin D-sub, and MIDI control on a 5-pin DIN."
    },
@@ -7334,7 +9640,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.0,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#e03a2fff",
@@ -7344,12 +9650,28 @@
      "Size": {
       "band": "high",
       "gain": 9.0,
-      "release": 200,
+      "release": 200.0,
       "floor": 0.05,
-      "ceiling": 0.08
+      "ceiling": 0.11
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Five pins in a 180-degree arc."
    },
@@ -7416,15 +9738,48 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Matte Tooth",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#e8e4d8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "The chassis' matte texture."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7439,10 +9794,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.9,
      "Color": "#e03a2fff",
@@ -7452,14 +9807,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }

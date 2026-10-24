@@ -361,6 +361,87 @@
    "role": "Bank D: a deck's grid of grids."
   }
  ],
- "fft_philosophy": "This pack is about the thing that makes it move, so the FFT is explicit. Deck 3 draws the spectrum, the L M H bands, Gain and Fall; Deck 5 draws the input device the whole repo depends on. Elsewhere the rule is the usual one: lows drive size and width (selection outlines, the playing cell, discs), mids drive playheads, dials and the spectrum, highs touch only the band in-point and dither. Colour never reacts: blue is selected, green is playing, amber is BPM, grey is everything else. Text never moves.",
- "wildcard_rationale": "Four decks are the manual: vocabulary, the clip, parameters, blend modes. The fifth is this rig's own Preferences as they are set tonight - the audio input, the controller, the REST port, the harvest counts - so the composition documents the machine that played it."
+ "fft_philosophy": "This pack is about the thing that makes it move, so the FFT is explicit. Deck 3 draws the spectrum, the L M H bands, Gain and Fall; Deck 5 draws the input device the whole repo depends on. Elsewhere the rule is the usual one: lows drive size and width (selection outlines, the playing cell, discs), mids drive playheads, dials and the spectrum, highs touch only the band in-point and dither. Colour never reacts: blue is selected, green is playing, amber is BPM, grey is everything else. Text never moves. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+ "wildcard_rationale": "Four decks are the manual: vocabulary, the clip, parameters, blend modes. The fifth is this rig's own Preferences as they are set tonight - the audio input, the controller, the REST port, the harvest counts - so the composition documents the machine that played it.",
+ "layer_effects": {
+  "2": [
+   {
+    "effect": "Wave Warp",
+    "params": {
+     "Mode": 0.0,
+     "Width": 0.5,
+     "Speed": 0.1,
+     "Angle": 0.25,
+     "Pin edges?": true
+    },
+    "fft": {
+     "Height": {
+      "band": "mid",
+      "gain": 4.0,
+      "release": 110,
+      "floor": 0.005,
+      "ceiling": 0.025
+     }
+    }
+   }
+  ],
+  "3": [
+   {
+    "effect": "Trails",
+    "params": {
+     "Mode": "Lighten",
+     "Feedback": 0.3
+    },
+    "wet_max": 0.25
+   }
+  ],
+  "4": [
+   {
+    "effect": "Bloom",
+    "params": {
+     "Threshold": 0.8,
+     "Iterations": 2,
+     "Size": 0.15
+    },
+    "fft": {
+     "Amount": {
+      "band": "low",
+      "gain": 6.0,
+      "release": 150,
+      "floor": 0.1,
+      "ceiling": 0.3
+     }
+    }
+   }
+  ],
+  "8": [
+   {
+    "effect": "Shift RGB",
+    "params": {
+     "Mode": "Shift X",
+     "R": 1.0,
+     "G": 0.0,
+     "B": -1.0
+    },
+    "fft": {
+     "Distance": {
+      "band": "high",
+      "gain": 2.0,
+      "release": 100,
+      "floor": 0.002,
+      "ceiling": 0.008
+     }
+    }
+   }
+  ]
+ },
+ "layer_transition_ms": {
+  "1": 150,
+  "2": 100,
+  "3": 100,
+  "4": 100,
+  "6": 100,
+  "7": 150,
+  "8": 100
+ }
 }
