@@ -378,8 +378,89 @@
     "role": "Bank D: any fill becomes wireframe again; the pack's safety net against solid shapes."
    }
   ],
-  "fft_philosophy": "The film has one sound, a stylus click once per revolution, so the composition's reactivity is built to read as rotation and never as a light show. Sub and low (kick) drive only width and size: the disc's line width, the ratio bars, the exclusion rings, the hand's scale, on a 300-500 ms release, so a kick is a push on the record. Mids drive the SCOPE 1:1 as ACTUAL RECORD ANGLE, the one honest readout, and breathe the hall's frequency and the confidence dot. Highs touch only ruling fuzz and hatching: hi-hats become jitter on clock ticks and scan lines. Nothing about colour ever reacts: cyan means documented and orange means proposed, and the music does not get to change what is true. Text never moves. The click itself is a Stroboscope held on the LIGHT layer at 33 1/3 or 45; it is a motif, not the beat.",
-  "wildcard_rationale": "Four decks walk the script: the plinths that already exist, the hand that is only proposed, the catalog that decides who may touch which copy, and the ledger of what it would cost to find out. The fifth deck is the Technics SL-1210MKX manual drawn as schematics, because every number in the film - 1.8 seconds per revolution, 1.8 kg, 332 mm, lift-position-lower - comes from that deck, and because the click the whole film rides is a locked groove on it."
+  "fft_philosophy": "The film has one sound, a stylus click once per revolution, so the composition's reactivity is built to read as rotation and never as a light show. Sub and low (kick) drive only width and size: the disc's line width, the ratio bars, the exclusion rings, the hand's scale, on a 300-500 ms release, so a kick is a push on the record. Mids drive the SCOPE 1:1 as ACTUAL RECORD ANGLE, the one honest readout, and breathe the hall's frequency and the confidence dot. Highs touch only ruling fuzz and hatching: hi-hats become jitter on clock ticks and scan lines. Nothing about colour ever reacts: cyan means documented and orange means proposed, and the music does not get to change what is true. Text never moves. The click itself is a Stroboscope held on the LIGHT layer at 33 1/3 or 45; it is a motif, not the beat. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+  "wildcard_rationale": "Four decks walk the script: the plinths that already exist, the hand that is only proposed, the catalog that decides who may touch which copy, and the ledger of what it would cost to find out. The fifth deck is the Technics SL-1210MKX manual drawn as schematics, because every number in the film - 1.8 seconds per revolution, 1.8 kg, 332 mm, lift-position-lower - comes from that deck, and because the click the whole film rides is a locked groove on it.",
+  "layer_effects": {
+   "2": [
+    {
+     "effect": "Wave Warp",
+     "params": {
+      "Mode": 0.0,
+      "Width": 0.5,
+      "Speed": 0.1,
+      "Angle": 0.25,
+      "Pin edges?": true
+     },
+     "fft": {
+      "Height": {
+       "band": "mid",
+       "gain": 4.0,
+       "release": 110,
+       "floor": 0.005,
+       "ceiling": 0.025
+      }
+     }
+    }
+   ],
+   "3": [
+    {
+     "effect": "Trails",
+     "params": {
+      "Mode": "Lighten",
+      "Feedback": 0.3
+     },
+     "wet_max": 0.25
+    }
+   ],
+   "4": [
+    {
+     "effect": "Bloom",
+     "params": {
+      "Threshold": 0.8,
+      "Iterations": 2,
+      "Size": 0.15
+     },
+     "fft": {
+      "Amount": {
+       "band": "low",
+       "gain": 6.0,
+       "release": 150,
+       "floor": 0.1,
+       "ceiling": 0.3
+      }
+     }
+    }
+   ],
+   "8": [
+    {
+     "effect": "Shift RGB",
+     "params": {
+      "Mode": "Shift X",
+      "R": 1.0,
+      "G": 0.0,
+      "B": -1.0
+     },
+     "fft": {
+      "Distance": {
+       "band": "high",
+       "gain": 2.0,
+       "release": 100,
+       "floor": 0.002,
+       "ceiling": 0.008
+      }
+     }
+    }
+   ]
+  },
+  "layer_transition_ms": {
+   "1": 150,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "6": 100,
+   "7": 150,
+   "8": 100
+  }
  },
  "rack": {
   "banks": [
@@ -775,8 +856,8 @@
   "decks": 5,
   "clips": 320,
   "comp_effects": 34,
-  "fft_nodes": 471,
-  "bytes": 1583267
+  "fft_nodes": 747,
+  "bytes": 1778038
  },
  "preset": 164,
  "repairs": 0,
@@ -895,7 +976,7 @@
    "12-Inch Disc",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The twelve-inch record as concentric wireframe grooves, turning flat at frame centre."
   ],
   [
@@ -908,7 +989,7 @@
    "Empty Booth",
    "Tunnelines",
    "Frequency>mid",
-   "",
+   "Transform",
    "Isometric plan of an empty booth on the lacquer grid."
   ],
   [
@@ -921,7 +1002,7 @@
    "150 LPs On Edge",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "One hundred fifty bare discs standing on edge in an illuminated rack."
   ],
   [
@@ -934,7 +1015,7 @@
    "Chrome Rocket",
    "Geometry Pattern Maker",
    "Inner Scale>mid",
-   "",
+   "Transform",
    "The Anniversary Rocket's chrome silhouette as round wireframe geometry."
   ],
   [
@@ -947,7 +1028,7 @@
    "One Metre Rail",
    "Lines",
    "",
-   "",
+   "Transform",
    "The one-metre linear stage, a physical mechanism: cyan."
   ],
   [
@@ -960,7 +1041,7 @@
    "22 Records Ring",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "Twenty-two records in racks, ringed around both arms; the safety perimeter."
   ],
   [
@@ -973,7 +1054,7 @@
    "Film Strip Bands",
    "Lines",
    "",
-   "",
+   "Transform",
    "Three translucent wireframe film-strip bands, one per show."
   ],
   [
@@ -986,7 +1067,7 @@
    "Three Servos",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Three solid cyan servo icons."
   ],
   [
@@ -999,7 +1080,7 @@
    "Scratch Head",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "The dashed proposed hand enters above and stops just before contact."
   ],
   [
@@ -1012,7 +1093,7 @@
    "Six Tags",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Six requirement tags in a row, dashed orange: specified, not built."
   ],
   [
@@ -1025,7 +1106,7 @@
    "Stone Platters",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "Two stone turntables, documented, so the disc is cyan; left platter."
   ],
   [
@@ -1038,7 +1119,7 @@
    "Ten LP Magazine",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Ten LPs in the magazine; the VLP-20 holds twenty on a separate outline."
   ],
   [
@@ -1051,7 +1132,7 @@
    "Silicone Cups",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "v1's two custom silicone suction cups; v2's edge gripper replaces them."
   ],
   [
@@ -1064,7 +1145,7 @@
    "Held Disc",
    "Shaper",
    "Scale>low",
-   "",
+   "Transform",
    "One arm holds a disc at its centre and rotates it against a stylus: forward, back, fast, slow."
   ],
   [
@@ -1077,7 +1158,7 @@
    "Sprocket Holes",
    "Lines",
    "Width>high",
-   "",
+   "Transform",
    "Sprocket ruling across the bands: edited video, time adjustment, compositing."
   ],
   [
@@ -1090,7 +1171,7 @@
    "Deck Schematic",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "A dashed reconstruction of records and a mixer: SCHEMATIC - DECK LAYOUT NOT VERIFIED."
   ],
   [
@@ -1386,11 +1467,11 @@
    "AURA",
    7,
    "Scripted Shows",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "No wash: three different demonstrations, not interchangeable proofs."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    0,
@@ -1412,11 +1493,11 @@
    "GRAIN",
    1,
    "Cold Open",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "No grid in the cold open; the grid arrives with the specification."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1727,7 +1808,7 @@
    "Servo Sweep",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "A two-servo arm pivots over the spindle: one presses the pad, one sweeps it."
   ],
   [
@@ -1740,7 +1821,7 @@
    "Clock Ticks",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Clock ticks counting against beat-phase messages; hi-hats smear them into jitter."
   ],
   [
@@ -1753,7 +1834,7 @@
    "12-Inch 180 g",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The twelve-inch LP at fixed camera scale, right of centre."
   ],
   [
@@ -1766,7 +1847,7 @@
    "Ratio Bars",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Illustrative ratio bars, dashed: 13.2 x inertia for the same angular acceleration."
   ],
   [
@@ -1779,7 +1860,7 @@
    "The Wall",
    "Lines",
    "",
-   "",
+   "Transform",
    "A dashed orange wall drops between back (library) and front (hand)."
   ],
   [
@@ -1792,7 +1873,7 @@
    "Ring Layout A",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "A: a compact ring of records around a central arm; clearance approaches the arm base."
   ],
   [
@@ -1805,7 +1886,7 @@
    "Comb Slots",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Machined acetal comb slots with flared chamfers, one disc per slot: MECHANISM PREVIEW."
   ],
   [
@@ -1818,7 +1899,7 @@
    "Deck A",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "Deck A in close isometric, the record seated."
   ],
   [
@@ -1831,7 +1912,7 @@
    "Crank On Fader",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "A hobby servo with a 3D-printed crank moving the crossfader stem, bottom right."
   ],
   [
@@ -1844,7 +1925,7 @@
    "Laptop Heat",
    "Geometry Pattern Maker",
    "Inner Scale>mid",
-   "",
+   "Transform",
    "The laptop glows: timing becomes unstable at 5:00:00. REPORTED THERMAL THROTTLING."
   ],
   [
@@ -1857,7 +1938,7 @@
    "7-Inch 40 g",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The seven-inch single, same scale, so the larger radius is immediately apparent."
   ],
   [
@@ -1870,7 +1951,7 @@
    "Requested vs Actua",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "A paper-white requested trajectory; the dashed record response diverges under SIMULATED LIMIT."
   ],
   [
@@ -1883,7 +1964,7 @@
    "Hand Oscillates",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "In front, a local scratch head oscillates 8-15 reversals/s: DESIGN INTENT."
   ],
   [
@@ -1896,7 +1977,7 @@
    "Rail Layout B",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "B: the straight rack beside a 1-1.5 m rail, brightened, still dashed."
   ],
   [
@@ -1909,7 +1990,7 @@
    "Edge Caliper",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A three-point edge caliper; a suction cup spanning the centre hole leaks."
   ],
   [
@@ -1922,7 +2003,7 @@
    "Coaxial Head",
    "Shaper",
    "Scale>low",
-   "",
+   "Transform",
    "The hollow elastomer-lined ring lowers onto the label, clear of the grooves: dashed."
   ],
   [
@@ -2166,11 +2247,11 @@
    "AURA",
    3,
    "Seven vs Twelv",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Two outlines, two clicks, nothing else."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    1,
@@ -2559,7 +2640,7 @@
    "COPY_PENDING",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The main-story disc waiting at the verification station, marked COPY_PENDING."
   ],
   [
@@ -2572,7 +2653,7 @@
    "Slot Dividers",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "NFC tags on sleeves and slot dividers; the expected slot lights."
   ],
   [
@@ -2585,7 +2666,7 @@
    "Label Under Lamp",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "Both labels imaged under controlled, polarised lighting."
   ],
   [
@@ -2598,7 +2679,7 @@
    "ArUco 6x6",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "An optional ArUco marker on an approved Side A label, kept outside the grooves."
   ],
   [
@@ -2611,7 +2692,7 @@
    "Switch Grid",
    "Checkered",
    "",
-   "",
+   "Transform",
    "The marker's cells become a grid of switches."
   ],
   [
@@ -2624,7 +2705,7 @@
    "COPY_1 PLAY_ONLY",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "COPY_1 seated for ordinary playback beneath the raised scratch head."
   ],
   [
@@ -2637,7 +2718,7 @@
    "Tool Names",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "find_record, load_record, cue_record, play_record, crossfade, perform_routine, return_record, get_status."
   ],
   [
@@ -2650,7 +2731,7 @@
    "Exclusion Zone",
    "Rings",
    "Size>low",
-   "",
+   "Transform",
    "A cylindrical exclusion volume glows over each deck."
   ],
   [
@@ -2663,7 +2744,7 @@
    "Confidence Dot",
    "Shaper",
    "Scale>mid",
-   "",
+   "Transform",
    "Candidate matches with confidence indicators."
   ],
   [
@@ -2676,7 +2757,7 @@
    "Tag Field",
    "Rings",
    "Size>mid",
-   "",
+   "Transform",
    "The near-field as three cyan rings that swell when the jacket is tapped."
   ],
   [
@@ -2689,7 +2770,7 @@
    "Scan Lines",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "OCR scan lines over the label; an ambiguous reading goes to inspection."
   ],
   [
@@ -2702,7 +2783,7 @@
    "Marker Frame",
    "Rings",
    "Size>low",
-   "",
+   "Transform",
    "The marker's quiet-zone border."
   ],
   [
@@ -2715,7 +2796,7 @@
    "Lock Badges",
    "Geometry Pattern Maker",
    "Inner Scale>mid",
-   "",
+   "Transform",
    "PLAY_ONLY, SCRATCH_APPROVED, ARCHIVAL_LOCKED badges."
   ],
   [
@@ -2728,7 +2809,7 @@
    "Hand Stays Up",
    "Shaper",
    "",
-   "Transform",
+   "Transform, Transform",
    "The scratch arm stays retracted. It does not react to the music; the rule holds."
   ],
   [
@@ -2741,7 +2822,7 @@
    "1 kHz Trajectory",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "1,000 trajectory updates per second; each S1 closes its own 8 kHz loop."
   ],
   [
@@ -2754,7 +2835,7 @@
    "Mushroom Stop",
    "Shaper",
    "",
-   "",
+   "Transform",
    "A paper-white mushroom button rises out of the floor. It is pressed."
   ],
   [
@@ -2998,11 +3079,11 @@
    "AURA",
    3,
    "Camera Tier",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "The lamp is the only light."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    2,
@@ -3115,11 +3196,11 @@
    "GRAIN",
    4,
    "ArUco Tier",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "No grid behind the marker."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3391,7 +3472,7 @@
    "Precedent Plates",
    "Lines",
    "",
-   "",
+   "Transform",
    "Solid cyan plates on the left: documented precedents."
   ],
   [
@@ -3404,7 +3485,7 @@
    "Three Columns",
    "Lines",
    "",
-   "",
+   "Transform",
    "Proof of concept, home prototype, exhibition."
   ],
   [
@@ -3417,7 +3498,7 @@
    "Linear Actuator",
    "Lines",
    "",
-   "",
+   "Transform",
    "A linear actuator, candidate edge grip, and a thrift-store turntable."
   ],
   [
@@ -3430,7 +3511,7 @@
    "Direct Drive Deck",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "A direct-drive deck, scratch cartridge, used contactless-fader mixer."
   ],
   [
@@ -3443,7 +3524,7 @@
    "One Deck",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "One autonomous deck."
   ],
   [
@@ -3456,7 +3537,7 @@
    "Deck A",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "Two decks, left."
   ],
   [
@@ -3469,7 +3550,7 @@
    "12-Inch Disc",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The same disc, same scale, same camera as the cold open."
   ],
   [
@@ -3495,7 +3576,7 @@
    "Target Plates",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Dashed orange plates on the right: GUSTO's integration targets, no completed-stage stamp."
   ],
   [
@@ -3508,7 +3589,7 @@
    "Totals",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "~$3,373 - ~$15,178 - ~$39,777: inherited planning estimates, dashed."
   ],
   [
@@ -3521,7 +3602,7 @@
    "Thrift Turntable",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The clearance-checked loading guide over a cheap deck."
   ],
   [
@@ -3534,7 +3615,7 @@
    "Candidate Drive",
    "Shaper",
    "Scale>low",
-   "",
+   "Transform",
    "The candidate brushless drive and Teensy over the label."
   ],
   [
@@ -3547,7 +3628,7 @@
    "Misfiled Disc",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "A deliberately misfiled disc the deck must detect: SLOT_INVENTORY_MISMATCH."
   ],
   [
@@ -3560,7 +3641,7 @@
    "Deck B",
    "Rings",
    "Line Width>mid",
-   "Transform",
+   "Transform, Transform",
    "Two decks, right: measured tempo / phase error between them."
   ],
   [
@@ -3573,7 +3654,7 @@
    "Hand Lowers",
    "Shaper",
    "Scale>low",
-   "Transform",
+   "Transform, Transform",
    "The hand lowers toward the label; freeze one frame before contact."
   ],
   [
@@ -3804,11 +3885,11 @@
    "AURA",
    1,
    "The Ladder",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "The ladder ranks integration stages; no wash, no claim."
+   "Counter Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    3,
@@ -3986,11 +4067,11 @@
    "GRAIN",
    7,
    "Coda",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "No grid: the booth is unlit."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3999,11 +4080,11 @@
    "GRAIN",
    8,
    "End Card",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Silence."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4223,7 +4304,7 @@
    "Platter 33",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The 332 mm platter from above, a uniform-disc model, turning at 33 1/3."
   ],
   [
@@ -4236,7 +4317,7 @@
    "Platter Underside",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The aluminium die-cast platter lifted away, seen from below."
   ],
   [
@@ -4249,7 +4330,7 @@
    "Pitch Slot",
    "Lines",
    "",
-   "",
+   "Transform",
    "The pitch fader's slot, right of the platter."
   ],
   [
@@ -4262,7 +4343,7 @@
    "Record Seated",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The record seated, left; the tonearm reaches from the right."
   ],
   [
@@ -4275,7 +4356,7 @@
    "Platter Forward",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The platter keeps turning forward."
   ],
   [
@@ -4288,7 +4369,7 @@
    "Platter 45",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The same platter at 45: 1 1/3 s per revolution."
   ],
   [
@@ -4301,7 +4382,7 @@
    "Platter Reverse",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The twelve-inch record as concentric wireframe grooves, turning flat at frame centre."
   ],
   [
@@ -4314,7 +4395,7 @@
    "Run-Out Groove",
    "Spiral",
    "Spread Even>low",
-   "",
+   "Transform",
    "The locked run-out groove, one blemish per revolution."
   ],
   [
@@ -4327,7 +4408,7 @@
    "Groove 33",
    "Spiral",
    "Spread Even>low",
-   "",
+   "Transform",
    "The groove spiral at 33 1/3, documented: cyan."
   ],
   [
@@ -4340,7 +4421,7 @@
    "SW1-SW8",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "The eight DIP switches as an 8x1 row: LED, reserved, REV, 78, TQ1/TQ2, BK1/BK2."
   ],
   [
@@ -4353,7 +4434,7 @@
    "Fader Knob",
    "Shaper",
    "Scale>mid",
-   "Transform",
+   "Transform, Transform",
    "The fader knob at centre detent: 0 %."
   ],
   [
@@ -4366,7 +4447,7 @@
    "S-Tonearm",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "The polished silver S-tonearm, 22 degree offset, floating free during play."
   ],
   [
@@ -4379,7 +4460,7 @@
    "Record Reverses",
    "Spiral",
    "Spread Even>low",
-   "",
+   "Transform",
    "The record alone reverses above the slipmat: the scratch, dashed orange because it is GUSTO's job."
   ],
   [
@@ -4392,7 +4473,7 @@
    "Groove 45",
    "Spiral",
    "Spread Even>low",
-   "",
+   "Transform",
    "One spiral groove at 33 1/3: the locked run-out that the click rides."
   ],
   [
@@ -4405,7 +4486,7 @@
    "Groove Unwinds",
    "Spiral",
    "Spread Even>low",
-   "",
+   "Transform",
    "Reverse playback is a documented deck function: cyan, anti-clockwise."
   ],
   [
@@ -4418,7 +4499,7 @@
    "The Blemish",
    "Shaper",
    "Scale>high",
-   "Transform",
+   "Transform, Transform",
    "The single blemish the needle passes once per revolution."
   ],
   [
@@ -4675,11 +4756,11 @@
    "AURA",
    4,
    "S-Tonearm",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "No wash: a gap stays visible between stylus and record."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: a column with no clock of its own gets one."
   ],
   [
    4,
@@ -4753,11 +4834,11 @@
    "GRAIN",
    2,
    "DIP Switches",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Only the switches."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4831,11 +4912,11 @@
    "GRAIN",
    8,
    "Lock Groove",
-   "Blank",
-   "Blank",
-   "",
-   "",
-   "Nothing but the groove."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,

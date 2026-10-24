@@ -54,10 +54,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -101,10 +101,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -202,14 +202,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -293,10 +293,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -345,10 +345,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -446,14 +446,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -534,10 +534,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -576,10 +576,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -677,14 +677,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -787,25 +787,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
-       }
-      }
-     },
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 112.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      }
@@ -858,25 +843,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
-       }
-      }
-     },
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 125.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      }
@@ -974,14 +944,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -1062,10 +1032,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -1104,10 +1074,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -1205,14 +1175,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -1307,10 +1277,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -1339,10 +1309,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -1440,14 +1410,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -1535,10 +1505,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -1567,10 +1537,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -1668,14 +1638,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -1756,10 +1726,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -1777,7 +1747,7 @@
      "Font": "Bahnschrift",
      "Style": "Regular",
      "Color": "#e8e4d8ff",
-     "Size": 1.6,
+     "Size": 1.59,
      "Alignment": "Center",
      "AlignmentVertically": "Center",
      "Position X": 0,
@@ -1789,27 +1759,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "What the other decks are played from."
    },
@@ -1903,14 +1857,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.55,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -2009,10 +1963,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -2042,27 +1996,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "The badge."
    },
@@ -2150,15 +2088,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -2252,10 +2190,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -2299,10 +2237,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -2394,15 +2332,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -2496,10 +2434,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -2543,10 +2481,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -2638,15 +2576,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -2727,10 +2665,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -2769,10 +2707,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -2864,15 +2802,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -2949,7 +2887,7 @@
     "name": "Strobe",
     "source": "Stroboscope",
     "params": {
-     "Frequency": 0.4,
+     "Frequency": 0.35,
      "Fade": true,
      "Color 1": "#e8e4d8ff",
      "Color 2": "#00000000"
@@ -2964,10 +2902,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -3059,15 +2997,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -3161,10 +3099,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -3193,10 +3131,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -3288,15 +3226,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -3390,10 +3328,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -3437,10 +3375,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -3537,15 +3475,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -3626,10 +3564,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -3673,10 +3611,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      },
@@ -3688,10 +3626,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -3783,15 +3721,15 @@
      {
       "effect": "Infinite Zoom",
       "params": {
-       "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.6,
+    "opacity": 0.32,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -3889,27 +3827,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "The badge."
    },
@@ -3999,14 +3921,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -4100,10 +4022,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -4147,10 +4069,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -4244,14 +4166,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -4339,10 +4261,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -4372,27 +4294,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "501 transitions, up from the MX-1's 210."
    },
@@ -4482,14 +4388,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -4601,10 +4507,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -4698,14 +4604,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -4793,10 +4699,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -4845,10 +4751,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -4942,14 +4848,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -5026,7 +4932,7 @@
     "name": "Strobe",
     "source": "Stroboscope",
     "params": {
-     "Frequency": 0.5,
+     "Frequency": 0.35,
      "Fade": true,
      "Color 1": "#e8e4d8ff",
      "Color 2": "#00000000"
@@ -5041,10 +4947,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -5138,14 +5044,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -5224,10 +5130,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -5276,10 +5182,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -5373,14 +5279,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -5474,10 +5380,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -5506,10 +5412,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -5603,14 +5509,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -5708,27 +5614,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "The badge."
    },
@@ -5825,14 +5715,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -5913,10 +5803,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -5955,10 +5845,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -6059,14 +5949,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -6154,10 +6044,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -6187,27 +6077,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "210 effects, numbered 0 to 239."
    },
@@ -6304,14 +6178,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -6390,10 +6264,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -6442,10 +6316,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -6546,14 +6420,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -6645,10 +6519,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -6749,14 +6623,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -6868,10 +6742,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -6972,14 +6846,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -7055,10 +6929,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -7107,10 +6981,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -7211,14 +7085,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -7413,14 +7287,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.5,
+    "opacity": 0.3,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -7506,10 +7380,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -7539,27 +7413,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "The format badge on the tray door."
    },
@@ -7632,11 +7490,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -7656,14 +7514,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -7757,10 +7615,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      },
@@ -7772,10 +7630,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -7804,10 +7662,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -7884,11 +7742,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -7908,14 +7766,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -8009,10 +7867,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      },
@@ -8024,10 +7882,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -8066,10 +7924,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -8146,11 +8004,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -8170,14 +8028,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -8271,10 +8129,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      },
@@ -8286,10 +8144,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -8333,10 +8191,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -8413,11 +8271,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -8437,14 +8295,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -8533,10 +8391,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -8567,10 +8425,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -8647,11 +8505,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -8671,14 +8529,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -8771,27 +8629,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "The S-VHS ET button, lit."
    },
@@ -8864,11 +8706,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -8888,14 +8730,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -8998,25 +8840,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
-       }
-      }
-     },
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 112.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      }
@@ -9069,25 +8896,10 @@
       "fft": {
        "Rotation Z": {
         "band": "mid",
-        "gain": 10.0,
-        "release": 180,
-        "floor": -70.0,
-        "ceiling": 70.0
-       }
-      }
-     },
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 125.0
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
        }
       }
      }
@@ -9164,11 +8976,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -9188,14 +9000,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -9274,10 +9086,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -9326,10 +9138,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -9411,11 +9223,11 @@
      "Fuzzyness": 0.6,
      "Direction": "Vertical",
      "Mirror": false,
-     "Frequency": 0.0,
+     "Frequency": 1.0,
      "Main Speed": 6.0,
-     "Modulator": 1.0,
-     "Modulation Depth": 0.3,
-     "Modulator Speed": 1.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
      "Amplitude": 0.04,
      "Position": 0.5,
      "Color": "#e8e4d8ff",
@@ -9435,14 +9247,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -9541,10 +9353,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -9588,10 +9400,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -9685,14 +9497,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -9773,10 +9585,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -9815,10 +9627,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -9912,14 +9724,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -10013,10 +9825,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -10061,10 +9873,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -10163,14 +9975,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -10340,14 +10152,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -10449,10 +10261,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -10546,14 +10358,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -10665,10 +10477,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -10762,14 +10574,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -10845,10 +10657,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -10862,7 +10674,7 @@
     "name": "Strobe",
     "source": "Stroboscope",
     "params": {
-     "Frequency": 0.5,
+     "Frequency": 0.35,
      "Fade": true,
      "Color 1": "#e8e4d8ff",
      "Color 2": "#00000000"
@@ -10877,10 +10689,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 125.0
+        "ceiling": 108.0
        }
       }
      }
@@ -10974,14 +10786,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {
@@ -11062,10 +10874,10 @@
       "fft": {
        "Scale": {
         "band": "low",
-        "gain": 11.0,
-        "release": 120,
+        "gain": 6.0,
+        "release": 150,
         "floor": 100.0,
-        "ceiling": 112.0
+        "ceiling": 104.0
        }
       }
      }
@@ -11095,27 +10907,11 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
-    "effects": [
-     {
-      "effect": "Transform",
-      "params": {
-       "Scale": 100.0
-      },
-      "fft": {
-       "Scale": {
-        "band": "low",
-        "gain": 11.0,
-        "release": 120,
-        "floor": 100.0,
-        "ceiling": 108.0
-       }
-      }
-     }
-    ],
+    "effects": [],
     "opacity": 1.0,
     "why": "The one verb every box here shares."
    },
@@ -11205,14 +11001,14 @@
       "effect": "Infinite Zoom",
       "params": {
        "Rotation Speed": 0.08,
-       "Zoom": 0.04,
-       "Range": 4.0,
-       "Alpha": 0.7,
-       "Num Slices": 6
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
       }
      }
     ],
-    "opacity": 0.45,
+    "opacity": 0.28,
     "why": "Kinetic pass: the room keeps moving."
    },
    {

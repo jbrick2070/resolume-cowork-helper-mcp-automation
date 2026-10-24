@@ -519,29 +519,29 @@ MOTION = {
               {"Tilt": 68.0, "Direction": 0.0, "Position Y": 8.0, "Speed": 0.6, "Height": 6.0,
                "Jagginess": 0.15, "Wobble": 0.1, "Attenuation": 120.0, "Line Width": 0.25,
                "Fuzzyness": 0.3, "Color": SILK, "Show Knots": False},
-              fft("Height", "low", 4.0, 12.0, 9.0, 200), 0.55),
+              fft("Height", "low", 4.0, 12.0, 9.0, 200), 0.3),
     "v4": ("Signal Tunnel", "Tunnelines",
            {"Line Width": 0.01, "Zoom": 1.5, "Vertical": 0.08, "Frequency": 0.25, "Horizontal": 0.09,
             "Color 1": EDIROL, "Color 2": CLEAR},
-           fft("Zoom", "low", 1.2, 2.4, 10.0, 160), 0.6),
+           fft("Zoom", "low", 1.2, 2.4, 10.0, 160), 0.32),
     "mxpro": ("Effect Spiral", "Spiral",
               {"Direction": "Clockwise", "Speed": 0.35, "Zoom": 1.0, "Leafs": 3, "Spread Even": 1.0,
                "Fuzzyness": 0.3, "Color": VIDEONICS, "BG Color": CLEAR},
-              fft("Zoom", "low", 0.9, 1.4, 9.0, 180), 0.5),
+              fft("Zoom", "low", 0.9, 1.4, 9.0, 180), 0.3),
     "mx1": ("Scan Lines", "Sine Wave",
             {"Waves": 12, "Mode": "Line", "Line Width": 0.02, "Fuzzyness": 0.3, "Direction": "Horizontal",
              "Mirror": False, "Frequency": 2.0, "Main Speed": 3.0, "Modulator": 2.0, "Modulation Depth": 0.5,
              "Modulator Speed": 2.0, "Amplitude": 0.06, "Position": 0.5, "Color": VIDEONICS, "BG Color": CLEAR},
-            fft("Amplitude", "mid", 0.04, 0.2, 9.0, 160), 0.5),
+            fft("Amplitude", "mid", 0.04, 0.2, 9.0, 160), 0.3),
     "jvc": ("Tracking Bars", "Sine Wave",
             {"Waves": 3, "Mode": "Line", "Line Width": 0.08, "Fuzzyness": 0.6, "Direction": "Vertical",
-             "Mirror": False, "Frequency": 0.0, "Main Speed": 6.0, "Modulator": 1.0, "Modulation Depth": 0.3,
-             "Modulator Speed": 1.0, "Amplitude": 0.04, "Position": 0.5, "Color": SILK, "BG Color": CLEAR},
-            fft("Amplitude", "high", 0.02, 0.1, 9.0, 120), 0.45),
+             "Mirror": False, "Frequency": 1.0, "Main Speed": 6.0, "Modulator": 2.0, "Modulation Depth": 0.6,
+             "Modulator Speed": 3.0, "Amplitude": 0.04, "Position": 0.5, "Color": SILK, "BG Color": CLEAR},
+            fft("Amplitude", "high", 0.02, 0.1, 9.0, 120), 0.28),
     "patchbay": ("Patch Spiral", "Spiral",
                  {"Direction": "Anti-clockwise", "Speed": 0.3, "Zoom": 1.2, "Leafs": 2, "Spread Even": 1.0,
                   "Fuzzyness": 0.3, "Color": SILK, "BG Color": CLEAR},
-                 fft("Zoom", "low", 1.0, 1.5, 9.0, 180), 0.45),
+                 fft("Zoom", "low", 1.0, 1.5, 9.0, 180), 0.28),
 }
 TEXT_SOURCES = ("Text Block", "Text Animator")
 
@@ -570,8 +570,10 @@ def kinetic_clip(c, slug):
         return clip(7, c["column"], name, msrc, dict(mparams), "Kinetic pass: the room keeps moving.",
                     opacity=op, fft={k: dict(v) for k, v in mfft.items()},
                     effects=[{"effect": "Infinite Zoom",          # continuous travel, on its own clock
-                              "params": {"Rotation Speed": 0.08, "Zoom": 0.04, "Range": 4.0, "Alpha": 0.7,
-                                         "Num Slices": 6}}])
+                              "params": ({"Rotation Speed": 0.04, "Zoom": 0.03, "Range": 1.4, "Alpha": 0.75,
+                                          "Num Slices": 3} if msrc == "Tunnelines" else       # a tunnel travels inward
+                                         {"Rotation Speed": 0.08, "Zoom": 0.0, "Range": 1.4, "Alpha": 0.75,
+                                          "Num Slices": 3})}])
     if src == "Metaballs":                            # pads and sockets drift and breathe
         p["Speed"] = max(float(p.get("Speed", 0.0)), 0.8)
         _widen(c["fft"], "Size", 2.0)
@@ -584,11 +586,11 @@ def kinetic_clip(c, slug):
         _widen(c["fft"], "Amplitude", 1.8)
     elif src == "Rings" and float(p.get("Gap", 0.0)) > 0:
         c["effects"].append({"effect": "Transform", "params": {"Rotation Z": 0.0},
-                             "fft": fft("Rotation Z", "mid", -70.0, 70.0, 10.0, 180)})   # knobs turn with the mids
-    if layer in (2, 3) and src != "Solid Color" and len(c["effects"]) < 4:
-        top = 108.0 if src in TEXT_SOURCES else (125.0 if layer == 3 else 112.0)
+                             "fft": fft("Rotation Z", "mid", -12.0, 12.0, 4.0, 110)})    # knobs turn with the mids
+    if layer in (2, 3) and src not in ("Solid Color",) + TEXT_SOURCES and len(c["effects"]) < 4:
+        top = 108.0 if layer == 3 else 104.0
         c["effects"].append({"effect": "Transform", "params": {"Scale": 100.0},
-                             "fft": fft("Scale", "low", 100.0, top, 11.0, 120)})      # figures punch on the kick
+                             "fft": fft("Scale", "low", 100.0, top, 6.0, 150)})       # figures punch on the kick
     _snappy(c["fft"])
     return c
 
@@ -596,16 +598,16 @@ def kinetic_clip(c, slug):
 KINETIC_BIBLE = {
     # effects that stay on a whole layer, whatever clip is playing
     "layer_effects": {
-        "2": [{"effect": "Wave Warp", "params": {"Mode": 0.0, "Width": 0.25, "Speed": 0.25, "Pin edges?": True},
-               "fft": fft("Height", "mid", 0.02, 0.08, 9.0, 200)}],
-        "3": [{"effect": "Trails", "params": {"Mode": "Lighten", "Feedback": 0.55}, "wet_max": 0.8}],
-        "4": [{"effect": "Bloom", "params": {"Threshold": 0.6, "Iterations": 2, "Size": 0.3},
-               "fft": fft("Amount", "low", 0.2, 0.75, 10.0, 160)}],
-        "8": [{"effect": "Shift RGB", "params": {"Mode": "Shift X", "R": 0.2, "B": -0.2},
-               "fft": fft("Distance", "high", 0.0, 0.03, 9.0, 120)}],
+        "2": [{"effect": "Wave Warp", "params": {"Mode": 0.0, "Width": 0.5, "Speed": 0.1, "Angle": 0.25, "Pin edges?": True},
+               "fft": fft("Height", "mid", 0.005, 0.025, 4.0, 110)}],
+        "3": [{"effect": "Trails", "params": {"Mode": "Lighten", "Feedback": 0.30}, "wet_max": 0.25}],
+        "4": [{"effect": "Bloom", "params": {"Threshold": 0.8, "Iterations": 2, "Size": 0.15},
+               "fft": fft("Amount", "low", 0.10, 0.30, 6.0, 150)}],
+        "8": [{"effect": "Shift RGB", "params": {"Mode": "Shift X", "R": 1.0, "G": 0.0, "B": -1.0},
+               "fft": fft("Distance", "high", 0.002, 0.008, 2.0, 100)}],
     },
     # a short crossfade when a layer changes clip, so presses glide instead of cutting
-    "layer_transition_ms": {"1": 250, "2": 200, "3": 150, "6": 400, "7": 300},
+    "layer_transition_ms": {"1": 150, "2": 100, "3": 100, "4": 100, "6": 100, "7": 150, "8": 100},
 }
 
 
@@ -613,9 +615,31 @@ def main():
     decks = [deck1(), deck2(), deck3(), deck4(), deck5(), deck6()]
     extra = {}
     if KINETIC:
+        import sys
+        sys.path.insert(0, os.path.join(HERE, "..", ".."))
+        from resolume_build import kinetic as KIN           # safety and GPU rules, as code
+        fired = []
         for d in decks:
-            d["clips"] = [kinetic_clip(c, d["slug"]) for c in d["clips"]]
+            d["clips"] = [KIN.clamp_clip(kinetic_clip(c, d["slug"]), fired.append) for c in d["clips"]]
+        # a column with no clock of its own gets a moving texture on its Blank AURA layer (see kinetic_pass.py)
+        from resolume_build import kinetic_pass as KP
+        clocked = [MOTION[k] for k in ("apc40", "mxpro", "mx1", "jvc", "patchbay")]
+        for di, d in enumerate(decks):
+            alt, filled = clocked[(di + 1) % len(clocked)], 0
+            for col in sorted({c["column"] for c in d["clips"]}):
+                cc = [c for c in d["clips"] if c["column"] == col]
+                if KP.has_self_motion(cc):
+                    continue
+                cc2, did = KP.aura_fill(cc, col, alt)
+                if did:
+                    d["clips"] = [c for c in d["clips"] if c["column"] != col] + [KIN.clamp_clip(c, fired.append) for c in cc2]
+                    filled += 1
+            if filled:
+                print("deck %d: %d columns without a clock of their own got an AURA texture" % (di + 1, filled))
         extra.update(KINETIC_BIBLE)
+        print("kinetic clamps fired: %d" % len(fired))
+        for line in fired[:12]:
+            print("  " + line)
     write(decks, dict(extra, **{
         "effect_wishlist": [
             {"effect": "Bloom", "role": "Bank A: LED bleed and phosphor glow."},

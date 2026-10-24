@@ -2,7 +2,7 @@
 
 *Three mixers, a VCR, an edit controller and the APC40. LEFT and RIGHT walk between them.*
 
-A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 384 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 855 of its parameters listen to the music through Resolume's external FFT.
+A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 384 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 816 of its parameters listen to the music through Resolume's external FFT.
 
 | | |
 |---|---|

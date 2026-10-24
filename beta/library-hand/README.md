@@ -2,7 +2,7 @@
 
 *The library has precedents. The hand still needs a test.*
 
-A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 471 of its parameters listen to the music through Resolume's external FFT.
+A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 747 of its parameters listen to the music through Resolume's external FFT.
 
 | | |
 |---|---|
@@ -46,7 +46,7 @@ Scenes: 33 1/3 -> DIP Switches -> Pitch Fader -> S-Tonearm -> Slipmat -> 45 -> R
 
 ## FFT philosophy
 
-The film has one sound, a stylus click once per revolution, so the composition's reactivity is built to read as rotation and never as a light show. Sub and low (kick) drive only width and size: the disc's line width, the ratio bars, the exclusion rings, the hand's scale, on a 300-500 ms release, so a kick is a push on the record. Mids drive the SCOPE 1:1 as ACTUAL RECORD ANGLE, the one honest readout, and breathe the hall's frequency and the confidence dot. Highs touch only ruling fuzz and hatching: hi-hats become jitter on clock ticks and scan lines. Nothing about colour ever reacts: cyan means documented and orange means proposed, and the music does not get to change what is true. Text never moves. The click itself is a Stroboscope held on the LIGHT layer at 33 1/3 or 45; it is a motif, not the beat.
+The film has one sound, a stylus click once per revolution, so the composition's reactivity is built to read as rotation and never as a light show. Sub and low (kick) drive only width and size: the disc's line width, the ratio bars, the exclusion rings, the hand's scale, on a 300-500 ms release, so a kick is a push on the record. Mids drive the SCOPE 1:1 as ACTUAL RECORD ANGLE, the one honest readout, and breathe the hall's frequency and the confidence dot. Highs touch only ruling fuzz and hatching: hi-hats become jitter on clock ticks and scan lines. Nothing about colour ever reacts: cyan means documented and orange means proposed, and the music does not get to change what is true. Text never moves. The click itself is a Stroboscope held on the LIGHT layer at 33 1/3 or 45; it is a motif, not the beat. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.
 
 ## Built from the running application
 

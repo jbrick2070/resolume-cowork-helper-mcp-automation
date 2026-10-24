@@ -259,12 +259,15 @@ def text(col, s, color=CYAN, size=0.9, font=MONO, align="Left", valign="Bottom",
     re-measured; every Text Animator these packs build is centred at (0, 0)."""
     s = wrap(s)
     if animated and NL not in s:
+        # measured: a centred stamp is about 0.04 of the frame width per character per unit of Size, so keep it
+        # inside 88% of the frame ("ROLL IT" at 2.0 spans 0.55; "CTRL - SHIFT - K" at 2.0 overflowed)
+        size = min(size, round(0.88 / (0.0395 * max(1, len(s))), 2))
         p = {"Text": s, "Font": font, "Style": "Regular", "Color": color,
              "Size": size, "Alignment": align, "AlignmentVertically": valign,
              "Position X": x, "Position Y": y, "Animated": True,
              "Glow In": 0.0, "Glow Out": 0.0, "Outline Width": 0.0,
              "Range": "Characters", "Order": "Front to back",
-             "Delay": delay, "Opacity": 0.0, "Scale": 0.9}
+             "Delay": delay, "Opacity": 1.0, "Scale": 1.0}      # 0.0 / 0.9 never revealed on the rig (probed 2026-10-23)
         src = "Text Animator"
     else:
         bx, by, bvalign = text_block_place(align, valign, x, y)
@@ -1037,8 +1040,28 @@ def deck5():
             "clips": C}
 
 
+# The kinetic pass (2026-10-23): the shared pass in resolume_build/kinetic_pass.py gives the room a
+# moving texture on its own clock, unfreezes generators, lets the lows punch a little and keeps
+# captions still. KINETIC = False rebuilds the still version.
+KINETIC = True
+STILL_COLUMNS = set()                 # (deck from 0, column from 1) held still on purpose
+KINETIC_NOTE = (" Since the kinetic pass the room never stops: a texture on its own clock sits under every "
+                "deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.")
+
+
 def main():
     decks = [deck1(), deck2(), deck3(), deck4(), deck5()]
+    extra = {}
+    if KINETIC:
+        import sys
+        sys.path.insert(0, os.path.join(HERE, "..", ".."))
+        from resolume_build import kinetic_pass as KP
+        fired = []
+        KP.pass_decks(decks, KP.default_motion(PAPER), fired.append, still=STILL_COLUMNS)
+        extra = KP.BIBLE_EXTRA
+        print("kinetic clamps fired: %d" % len(fired))
+        for line in fired[:12]:
+            print("  " + line)
     bible = {
         "pack_name": "The Library And The Hand",
         "comp_name": "The Library And The Hand - GUSTO",
@@ -1070,6 +1093,9 @@ def main():
             "find out. The fifth deck is the Technics SL-1210MKX manual drawn as schematics, because every "
             "number in the film - 1.8 seconds per revolution, 1.8 kg, 332 mm, lift-position-lower - comes "
             "from that deck, and because the click the whole film rides is a locked groove on it.")}
+    bible.update(extra)
+    if KINETIC:
+        bible["fft_philosophy"] += KINETIC_NOTE
     with open(os.path.join(HERE, "bible.json"), "w", encoding="utf-8") as f:
         json.dump(bible, f, indent=1, ensure_ascii=False)
     with open(os.path.join(HERE, "decks.json"), "w", encoding="utf-8") as f:

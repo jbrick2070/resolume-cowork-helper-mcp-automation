@@ -394,17 +394,18 @@
      "effect": "Wave Warp",
      "params": {
       "Mode": 0.0,
-      "Width": 0.25,
-      "Speed": 0.25,
+      "Width": 0.5,
+      "Speed": 0.1,
+      "Angle": 0.25,
       "Pin edges?": true
      },
      "fft": {
       "Height": {
        "band": "mid",
-       "gain": 9.0,
-       "release": 200,
-       "floor": 0.02,
-       "ceiling": 0.08
+       "gain": 4.0,
+       "release": 110,
+       "floor": 0.005,
+       "ceiling": 0.025
       }
      }
     }
@@ -414,26 +415,26 @@
      "effect": "Trails",
      "params": {
       "Mode": "Lighten",
-      "Feedback": 0.55
+      "Feedback": 0.3
      },
-     "wet_max": 0.8
+     "wet_max": 0.25
     }
    ],
    "4": [
     {
      "effect": "Bloom",
      "params": {
-      "Threshold": 0.6,
+      "Threshold": 0.8,
       "Iterations": 2,
-      "Size": 0.3
+      "Size": 0.15
      },
      "fft": {
       "Amount": {
        "band": "low",
-       "gain": 10.0,
-       "release": 160,
-       "floor": 0.2,
-       "ceiling": 0.75
+       "gain": 6.0,
+       "release": 150,
+       "floor": 0.1,
+       "ceiling": 0.3
       }
      }
     }
@@ -443,27 +444,30 @@
      "effect": "Shift RGB",
      "params": {
       "Mode": "Shift X",
-      "R": 0.2,
-      "B": -0.2
+      "R": 1.0,
+      "G": 0.0,
+      "B": -1.0
      },
      "fft": {
       "Distance": {
        "band": "high",
-       "gain": 9.0,
-       "release": 120,
-       "floor": 0.0,
-       "ceiling": 0.03
+       "gain": 2.0,
+       "release": 100,
+       "floor": 0.002,
+       "ceiling": 0.008
       }
      }
     }
    ]
   },
   "layer_transition_ms": {
-   "1": 250,
-   "2": 200,
-   "3": 150,
-   "6": 400,
-   "7": 300
+   "1": 150,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "6": 100,
+   "7": 150,
+   "8": 100
   },
   "effect_wishlist": [
    {
@@ -884,8 +888,8 @@
   "decks": 6,
   "clips": 384,
   "comp_effects": 34,
-  "fft_nodes": 855,
-  "bytes": 2100113
+  "fft_nodes": 816,
+  "bytes": 2076812
  },
  "preset": 164,
  "repairs": 0,
@@ -1043,7 +1047,7 @@
    "Track Knob",
    "Rings",
    "Gap>mid",
-   "Transform, Transform, Transform",
+   "Transform, Transform",
    "Eight track knobs with LED rings, CC48-55."
   ],
   [
@@ -1147,7 +1151,7 @@
    "Device Knob",
    "Rings",
    "Gap>mid",
-   "Transform, Transform, Transform",
+   "Transform, Transform",
    "Eight device knobs with LED rings, CC16-23."
   ],
   [
@@ -1199,7 +1203,7 @@
    "The Controller",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "What the other decks are played from."
   ],
   [
@@ -1940,7 +1944,7 @@
    "Edirol V-4",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "The badge."
   ],
   [
@@ -2772,7 +2776,7 @@
    "MXPro",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "The badge."
   ],
   [
@@ -2798,7 +2802,7 @@
    "501",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "501 transitions, up from the MX-1's 210."
   ],
   [
@@ -3604,7 +3608,7 @@
    "MX-1",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "The badge."
   ],
   [
@@ -3630,7 +3634,7 @@
    "0-239",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "210 effects, numbered 0 to 239."
   ],
   [
@@ -4410,7 +4414,7 @@
    "Player Dial",
    "Rings",
    "Gap>mid",
-   "Transform, Transform, Transform",
+   "Transform, Transform",
    "RM-G850E: the PLAYER search dial."
   ],
   [
@@ -4436,7 +4440,7 @@
    "S-VHS",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "The format badge on the tray door."
   ],
   [
@@ -4501,7 +4505,7 @@
    "ET",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "The S-VHS ET button, lit."
   ],
   [
@@ -4514,7 +4518,7 @@
    "Recorder Dial",
    "Rings",
    "Gap>mid",
-   "Transform, Transform, Transform",
+   "Transform, Transform",
    "RM-G850E: the RECORDER search dial."
   ],
   [
@@ -5359,7 +5363,7 @@
    "Mix",
    "Text Animator",
    "",
-   "Transform",
+   "",
    "The one verb every box here shares."
   ],
   [
