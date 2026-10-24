@@ -27,7 +27,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.5,
-     "Speed": 0.15,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -37,12 +37,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.16
+      "ceiling": 0.26
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "Valve filaments glowing in the chassis."
    },
@@ -65,7 +81,23 @@
      "Color 2": "#f4e9c866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -129,15 +161,45 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.1,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -152,10 +214,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.02,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -165,14 +227,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.02,
-      "ceiling": 0.32
+      "ceiling": 0.56
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -216,12 +278,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.015,
       "ceiling": 0.0375
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -242,12 +320,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 8.0,
-      "release": 250,
+      "release": 250.0,
       "floor": 0.02,
       "ceiling": 0.3
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "The tuning band: kilocycle ticks along the glass."
    },
@@ -311,15 +405,45 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.12,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -337,7 +461,7 @@
      "Main Speed": 6.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.04,
      "Position": 0.86,
      "Color": "#7fd37f66",
@@ -347,9 +471,9 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.04,
-      "ceiling": 0.33999999999999997
+      "ceiling": 0.5800000000000001
      }
     },
     "effects": [],
@@ -391,12 +515,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.015,
       "ceiling": 0.0375
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -417,12 +557,28 @@
      "Rotation": {
       "band": "mid",
       "gain": 7.0,
-      "release": 900,
+      "release": 260,
       "floor": 66.0,
       "ceiling": 78.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The station needle across the band."
    },
@@ -491,15 +647,45 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -514,10 +700,10 @@
      "Direction": "Horizontal",
      "Mirror": true,
      "Frequency": 2.0,
-     "Main Speed": 3.0,
+     "Main Speed": 4.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -527,9 +713,9 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.36
+      "ceiling": 0.6000000000000001
      }
     },
     "effects": [],
@@ -563,7 +749,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -577,12 +763,28 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.4,
     "why": "The workflow's wires, bezier-ish, from node to node."
    },
@@ -609,12 +811,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A ComfyUI node: a rounded box with sockets."
    },
@@ -678,15 +896,45 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -701,10 +949,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.04,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -714,14 +962,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.04,
-      "ceiling": 0.32
+      "ceiling": 0.5440000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -765,12 +1013,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 10.0,
       "ceiling": 120.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
    },
@@ -787,10 +1066,10 @@
      "Direction": "Horizontal",
      "Mirror": true,
      "Frequency": 2.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.18,
      "Position": 0.5,
      "Color": "#ffb347ff",
@@ -800,12 +1079,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.18,
-      "ceiling": 0.48
+      "ceiling": 0.72
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The theme, composed in the musical style of wherever the story came from."
    },
@@ -874,15 +1169,45 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -900,7 +1225,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.12,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -910,14 +1235,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.12,
-      "ceiling": 0.32
+      "ceiling": 0.48000000000000004
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -961,12 +1286,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.015,
       "ceiling": 0.0375
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.5,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -992,12 +1333,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 10.0,
       "ceiling": 120.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
    },
@@ -1064,15 +1436,45 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1087,10 +1489,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.1,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -1100,14 +1502,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
-      "ceiling": 0.32
+      "ceiling": 0.496
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1151,12 +1553,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.3,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -1183,12 +1601,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A ComfyUI node: a rounded box with sockets."
    },
@@ -1232,8 +1666,8 @@
      "Range": "Characters",
      "Order": "Front to back",
      "Delay": 90,
-     "Opacity": 0.0,
-     "Scale": 0.9
+     "Opacity": 1.0,
+     "Scale": 1.0
     },
     "fft": {},
     "effects": [],
@@ -1256,15 +1690,45 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.08,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1279,10 +1743,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.05,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -1292,14 +1756,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.32
+      "ceiling": 0.536
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1343,12 +1807,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.015,
       "ceiling": 0.0375
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -1369,12 +1849,28 @@
      "Rotation": {
       "band": "mid",
       "gain": 7.0,
-      "release": 900,
+      "release": 260,
       "floor": 66.0,
       "ceiling": 78.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The station needle across the band."
    },
@@ -1438,15 +1934,45 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Moving Floor",
+    "source": "Line Scape",
     "params": {
-     "Mode": "Grayscale"
+     "Tilt": 68.0,
+     "Direction": 0.0,
+     "Position Y": 8.0,
+     "Speed": 0.6,
+     "Height": 6.0,
+     "Jagginess": 0.15,
+     "Wobble": 0.1,
+     "Attenuation": 120.0,
+     "Line Width": 0.25,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "Show Knots": false
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.1,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Height": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 200,
+      "floor": 4.0,
+      "ceiling": 12.0
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1464,7 +1990,7 @@
      "Main Speed": 6.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.86,
      "Color": "#7fd37f66",
@@ -1474,9 +2000,9 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32999999999999996
+      "ceiling": 0.57
      }
     },
     "effects": [],
@@ -1529,12 +2055,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A ComfyUI node: a rounded box with sockets."
    },
@@ -1547,7 +2089,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -1561,12 +2103,28 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.5,
     "why": "The workflow's wires, bezier-ish, from node to node."
    },
@@ -1630,15 +2188,40 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1653,10 +2236,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -1666,14 +2249,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1712,7 +2295,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.5,
-     "Speed": 0.15,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#f4e9c8ff",
@@ -1722,12 +2305,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.12,
-      "ceiling": 0.22
+      "ceiling": 0.32
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "story_characters: three silhouettes as soft discs."
    },
@@ -1748,12 +2347,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.25,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -1817,15 +2432,40 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -1840,10 +2480,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -1853,14 +2493,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -1896,7 +2536,7 @@
      "Tilt": 20.0,
      "Direction": 0.0,
      "Position Y": 4.0,
-     "Speed": 0.4,
+     "Speed": 0.5,
      "Height": 10.0,
      "Jagginess": 0.4,
      "Wobble": 0.1,
@@ -1910,12 +2550,28 @@
      "Jagginess": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.3,
       "ceiling": 0.8
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "story_plot: a rising line with knots at the turns."
    },
@@ -1992,15 +2648,40 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2015,10 +2696,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -2028,14 +2709,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2079,12 +2760,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.4,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -2111,12 +2808,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.6,
     "why": "A ComfyUI node: a rounded box with sockets."
    },
@@ -2180,15 +2893,40 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2203,10 +2941,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -2216,14 +2954,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2336,15 +3074,40 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2359,10 +3122,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.04,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -2372,14 +3135,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.04,
-      "ceiling": 0.32
+      "ceiling": 0.5440000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2575,12 +3338,28 @@
      "Height": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 10.0,
       "ceiling": 20.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.7,
     "why": "The freeze cascade: lines falling into place, phase by phase."
    },
@@ -2607,12 +3386,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A ComfyUI node: a rounded box with sockets."
    },
@@ -2676,15 +3471,40 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2699,10 +3519,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.05,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -2712,14 +3532,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.32
+      "ceiling": 0.536
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2769,12 +3589,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A ComfyUI node: a rounded box with sockets."
    },
@@ -2805,6 +3641,21 @@
        "Position Y": -180,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -2871,15 +3722,40 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Signal Tunnel",
+    "source": "Tunnelines",
     "params": {
-     "Mode": "Grayscale"
+     "Line Width": 0.01,
+     "Zoom": 1.5,
+     "Vertical": 0.08,
+     "Frequency": 0.25,
+     "Horizontal": 0.09,
+     "Color 1": "#f4e9c8ff",
+     "Color 2": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 10.0,
+      "release": 160,
+      "floor": 1.2,
+      "ceiling": 2.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.04,
+       "Zoom": 0.03,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.32,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -2894,10 +3770,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -2907,14 +3783,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -2969,12 +3845,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "A ComfyUI node: a rounded box with sockets."
    },
@@ -2990,7 +3882,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.5,
-     "Speed": 0.15,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#f4e9c8ff",
@@ -3000,12 +3892,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.1,
-      "ceiling": 0.2
+      "ceiling": 0.30000000000000004
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "Valve filaments glowing in the chassis."
    },
@@ -3069,15 +3977,41 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3095,7 +4029,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -3105,14 +4039,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3150,7 +4084,7 @@
      "Main Speed": 4.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.2,
      "Position": 0.5,
      "Color": "#7fd37fff",
@@ -3160,12 +4094,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.2,
-      "ceiling": 0.5
+      "ceiling": 0.74
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "A Kokoro ONNX voice as a dense sine."
    },
@@ -3182,10 +4132,10 @@
      "Direction": "Horizontal",
      "Mirror": true,
      "Frequency": 2.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.1,
      "Position": 0.5,
      "Color": "#ffb347ff",
@@ -3195,12 +4145,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
-      "ceiling": 0.4
+      "ceiling": 0.6400000000000001
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The phoneme stream under the voice."
    },
@@ -3264,15 +4230,41 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3290,7 +4282,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.12,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -3300,14 +4292,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.12,
-      "ceiling": 0.32
+      "ceiling": 0.48000000000000004
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3351,12 +4343,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.015,
       "ceiling": 0.0375
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -3382,12 +4390,43 @@
      "Gap": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 10.0,
       "ceiling": 120.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Rotation Z": 0.0
+      },
+      "fft": {
+       "Rotation Z": {
+        "band": "mid",
+        "gain": 4.0,
+        "release": 110,
+        "floor": -12.0,
+        "ceiling": 12.0
+       }
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
    },
@@ -3454,15 +4493,41 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3477,10 +4542,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.08,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -3490,14 +4555,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.32
+      "ceiling": 0.512
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3541,12 +4606,28 @@
      "Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.05,
       "ceiling": 0.12
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Eight horizontal bands, one per language."
    },
@@ -3623,15 +4704,41 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3649,7 +4756,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.08,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -3659,14 +4766,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.32
+      "ceiling": 0.512
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3700,7 +4807,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.5,
-     "Speed": 0.15,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#f4e9c8ff",
@@ -3710,12 +4817,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.07,
-      "ceiling": 0.17
+      "ceiling": 0.27
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "The voice pool: many small discs, a few lit."
    },
@@ -3731,7 +4854,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.5,
-     "Speed": 0.15,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -3741,12 +4864,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.1,
-      "ceiling": 0.2
+      "ceiling": 0.30000000000000004
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "Valve filaments glowing in the chassis."
    },
@@ -3810,15 +4949,41 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -3836,7 +5001,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -3846,14 +5011,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -3888,10 +5053,10 @@
      "Direction": "Horizontal",
      "Mirror": true,
      "Frequency": 2.0,
-     "Main Speed": 3.0,
+     "Main Speed": 4.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.16,
      "Position": 0.42,
      "Color": "#7fd37fff",
@@ -3901,12 +5066,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.16,
-      "ceiling": 0.45999999999999996
+      "ceiling": 0.7
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The carrier wave: a steady sine until a voice rides it."
    },
@@ -3926,7 +5107,7 @@
      "Main Speed": 5.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.12,
      "Position": 0.58,
      "Color": "#ffb347ff",
@@ -3936,12 +5117,28 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.12,
-      "ceiling": 0.42
+      "ceiling": 0.66
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "Two voices in exchange, never overlapping lines."
    },
@@ -4005,15 +5202,41 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.05,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4031,7 +5254,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.12,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -4041,14 +5264,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.12,
-      "ceiling": 0.32
+      "ceiling": 0.48000000000000004
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4087,12 +5310,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.35,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -4110,7 +5349,23 @@
      "Color": "#1c1826ff"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The burned caption's dark bar along the bottom."
    },
@@ -4169,15 +5424,41 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4192,10 +5473,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.04,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -4205,14 +5486,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.04,
-      "ceiling": 0.32
+      "ceiling": 0.5440000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4320,15 +5601,41 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Slow Spiral",
+    "source": "Spiral",
     "params": {
-     "Mode": "Grayscale"
+     "Direction": "Clockwise",
+     "Speed": 0.35,
+     "Zoom": 1.0,
+     "Leafs": 3,
+     "Spread Even": 1.0,
+     "Fuzzyness": 0.3,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.08,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Zoom": {
+      "band": "low",
+      "gain": 9.0,
+      "release": 180,
+      "floor": 0.9,
+      "ceiling": 1.4
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4343,10 +5650,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.02,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -4356,14 +5663,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.02,
-      "ceiling": 0.32
+      "ceiling": 0.56
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4418,12 +5725,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "OTR_LedgerScriptWriter as a rounded box; its wire runs on to the next node."
    },
@@ -4439,7 +5762,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": -0.62,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -4449,12 +5772,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Input sockets on the left: gate_in"
    },
@@ -4470,7 +5809,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.62,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -4480,9 +5819,9 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
     "effects": [],
@@ -4524,7 +5863,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -4538,7 +5877,7 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
@@ -4550,15 +5889,48 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4573,10 +5945,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -4586,14 +5958,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4643,12 +6015,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "OTR_LedgerFreezeCascade as a rounded box; its wire runs on to the next node."
    },
@@ -4664,7 +6052,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": -0.62,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -4674,12 +6062,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Input sockets on the left: script_text, script_json, news_used"
    },
@@ -4695,7 +6099,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.62,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -4705,9 +6109,9 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
     "effects": [],
@@ -4749,7 +6153,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -4763,7 +6167,7 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
@@ -4775,15 +6179,48 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -4798,10 +6235,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -4811,14 +6248,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -4868,12 +6305,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "OTR_CastLock as a rounded box; its wire runs on to the next node."
    },
@@ -4889,7 +6342,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": -0.62,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -4899,12 +6352,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Input sockets on the left: script_json"
    },
@@ -4920,7 +6389,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.62,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -4930,9 +6399,9 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
     "effects": [],
@@ -4974,7 +6443,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -4988,7 +6457,7 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
@@ -5000,15 +6469,48 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5023,10 +6525,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -5036,14 +6538,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5093,12 +6595,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "OTR_BatchCharacterVoices as a rounded box; its wire runs on to the next node."
    },
@@ -5114,7 +6632,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": -0.62,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -5124,12 +6642,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Input sockets on the left: script_json, ledger_json, gate_in"
    },
@@ -5145,7 +6679,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.62,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -5155,9 +6689,9 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
     "effects": [],
@@ -5199,7 +6733,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -5213,7 +6747,7 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
@@ -5225,15 +6759,48 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5251,7 +6818,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.08,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -5261,14 +6828,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.32
+      "ceiling": 0.512
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5318,12 +6885,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "OTR_SceneSequencer as a rounded box; its wire runs on to the next node."
    },
@@ -5339,7 +6922,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": -0.62,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -5349,12 +6932,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Input sockets on the left: tts_audio_clips, announcer_audio_clips, script_json"
    },
@@ -5370,7 +6969,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.62,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -5380,9 +6979,9 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
     "effects": [],
@@ -5424,7 +7023,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -5438,7 +7037,7 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
@@ -5450,15 +7049,48 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5476,7 +7108,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.08,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -5486,14 +7118,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.32
+      "ceiling": 0.512
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5543,12 +7175,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "OTR_EpisodeAssembler as a rounded box; its wire runs on to the next node."
    },
@@ -5564,7 +7212,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": -0.62,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -5574,12 +7222,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Input sockets on the left: scene_audio, music_cue_audio, video_policy_json"
    },
@@ -5595,7 +7259,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.62,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -5605,9 +7269,9 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
     "effects": [],
@@ -5649,7 +7313,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -5663,7 +7327,7 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
@@ -5675,15 +7339,48 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5701,7 +7398,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.08,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -5711,14 +7408,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.32
+      "ceiling": 0.512
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -5768,12 +7465,28 @@
      "Inner Scale": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.28,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.85,
     "why": "OTR_VideoRenderBatch as a rounded box; its wire runs on to the next node."
    },
@@ -5789,7 +7502,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": -0.62,
      "Position Y": 0.0,
      "Color": "#7fd37fff",
@@ -5799,12 +7512,28 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.95,
     "why": "Input sockets on the left: patched_ledger_json, master_audio_path, image_done"
    },
@@ -5820,7 +7549,7 @@
      "Distance": 0.35,
      "Radius": 0.1,
      "Fuzzyness": 0.05,
-     "Speed": 0.0,
+     "Speed": 0.8,
      "Position X": 0.62,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -5830,9 +7559,9 @@
      "Size": {
       "band": "low",
       "gain": 9.0,
-      "release": 350,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.1
+      "ceiling": 0.15000000000000002
      }
     },
     "effects": [],
@@ -5874,7 +7603,7 @@
      "Tilt": 0.0,
      "Direction": 0.0,
      "Position Y": 2.0,
-     "Speed": 0.3,
+     "Speed": 0.5,
      "Height": 6.0,
      "Jagginess": 0.0,
      "Wobble": 0.3,
@@ -5888,7 +7617,7 @@
      "Wobble": {
       "band": "mid",
       "gain": 7.0,
-      "release": 700,
+      "release": 260,
       "floor": 0.2,
       "ceiling": 0.6
      }
@@ -5900,15 +7629,48 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Scan Lines",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 12,
+     "Mode": "Line",
+     "Line Width": 0.02,
+     "Fuzzyness": 0.3,
+     "Direction": "Horizontal",
+     "Mirror": false,
+     "Frequency": 2.0,
+     "Main Speed": 3.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.5,
+     "Modulator Speed": 2.0,
+     "Amplitude": 0.06,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.04,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "mid",
+      "gain": 9.0,
+      "release": 160,
+      "floor": 0.04,
+      "ceiling": 0.2
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.3,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -5926,7 +7688,7 @@
      "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.08,
      "Position": 0.86,
      "Color": "#7fd37fff",
@@ -5936,14 +7698,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.32
+      "ceiling": 0.512
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6212,12 +7974,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.4,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -6233,7 +8011,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.5,
-     "Speed": 0.15,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#ffb347ff",
@@ -6243,12 +8021,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.18
+      "ceiling": 0.27999999999999997
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "Valve filaments glowing in the chassis."
    },
@@ -6312,15 +8106,48 @@
    {
     "layer": 7,
     "column": 1,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.08,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6335,10 +8162,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.04,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -6348,14 +8175,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.04,
-      "ceiling": 0.32
+      "ceiling": 0.5440000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6396,6 +8223,21 @@
        "Scale W": 100.0,
        "Scale H": 40.0
       }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
      }
     ],
     "opacity": 0.7,
@@ -6418,12 +8260,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.35,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -6487,15 +8345,48 @@
    {
     "layer": 7,
     "column": 2,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.08,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6510,10 +8401,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.05,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -6523,14 +8414,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.05,
-      "ceiling": 0.32
+      "ceiling": 0.536
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6574,12 +8465,28 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.01,
       "ceiling": 0.025
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -6600,12 +8507,28 @@
      "Rotation": {
       "band": "mid",
       "gain": 7.0,
-      "release": 900,
+      "release": 260,
       "floor": 104.0,
       "ceiling": 116.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The gauge needle, red: the second place red is allowed."
    },
@@ -6669,15 +8592,48 @@
    {
     "layer": 7,
     "column": 3,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6692,10 +8648,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.08,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -6705,14 +8661,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.08,
-      "ceiling": 0.32
+      "ceiling": 0.512
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6748,7 +8704,7 @@
      "Density": {
       "band": "low",
       "gain": 8.0,
-      "release": 1200,
+      "release": 260,
       "floor": 0.4,
       "ceiling": 0.8
      }
@@ -6759,6 +8715,21 @@
       "params": {
        "Black To": "#0b0a14ff",
        "White To": "#ffb34766"
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
       }
      }
     ],
@@ -6782,12 +8753,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.3,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -6856,15 +8843,48 @@
    {
     "layer": 7,
     "column": 4,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.12,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -6879,10 +8899,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.04,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -6892,14 +8912,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.04,
-      "ceiling": 0.32
+      "ceiling": 0.5440000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -6943,7 +8963,7 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.01,
       "ceiling": 0.025
      }
@@ -6956,6 +8976,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
       }
      }
     ],
@@ -6984,7 +9019,7 @@
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 450,
+      "release": 260,
       "floor": 0.01,
       "ceiling": 0.025
      }
@@ -6997,6 +9032,21 @@
        "Position Y": 0,
        "Scale": 100,
        "Rotation Z": 0
+      }
+     },
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
       }
      }
     ],
@@ -7063,15 +9113,48 @@
    {
     "layer": 7,
     "column": 5,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.08,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7086,10 +9169,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.06,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -7099,14 +9182,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.32
+      "ceiling": 0.528
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7150,12 +9233,28 @@
      "Size": {
       "band": "high",
       "gain": 10.0,
-      "release": 150,
+      "release": 150.0,
       "floor": 0.58,
       "ceiling": 0.64
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.9,
     "why": "The gauge face shivering on the highs."
    },
@@ -7176,12 +9275,28 @@
      "Rotation": {
       "band": "mid",
       "gain": 7.0,
-      "release": 900,
+      "release": 260,
       "floor": 104.0,
       "ceiling": 116.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The station needle across the band."
    },
@@ -7191,7 +9306,7 @@
     "name": "Flicker",
     "source": "Stroboscope",
     "params": {
-     "Frequency": 0.6,
+     "Frequency": 0.35,
      "Fade": true,
      "Color 1": "#f4e9c866",
      "Color 2": "#00000000"
@@ -7243,15 +9358,48 @@
    {
     "layer": 7,
     "column": 6,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.1,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7266,10 +9414,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.1,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -7279,14 +9427,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
-      "ceiling": 0.32
+      "ceiling": 0.496
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7330,12 +9478,28 @@
      "Fuzzyness": {
       "band": "high",
       "gain": 7.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.1,
       "ceiling": 0.4
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.3,
     "why": "Storybook-engraving hatching: the stills are drawn, not photographed."
    },
@@ -7351,7 +9515,7 @@
      "Distance": 0.6,
      "Radius": 0.3,
      "Fuzzyness": 0.5,
-     "Speed": 0.15,
+     "Speed": 0.8,
      "Position X": 0.0,
      "Position Y": 0.0,
      "Color": "#f4e9c8ff",
@@ -7361,12 +9525,28 @@
      "Size": {
       "band": "low",
       "gain": 8.0,
-      "release": 500,
+      "release": 260,
       "floor": 0.06,
-      "ceiling": 0.16
+      "ceiling": 0.26
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 0.8,
     "why": "Valve filaments glowing in the chassis."
    },
@@ -7435,15 +9615,48 @@
    {
     "layer": 7,
     "column": 7,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.06,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7458,10 +9671,10 @@
      "Direction": "Horizontal",
      "Mirror": false,
      "Frequency": 3.0,
-     "Main Speed": 2.0,
+     "Main Speed": 4.0,
      "Modulator": 2.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.88,
      "Color": "#ffb347ff",
@@ -7471,14 +9684,14 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32
+      "ceiling": 0.5520000000000002
      },
      "Line Width": {
       "band": "low",
       "gain": 8.0,
-      "release": 400,
+      "release": 260,
       "floor": 0.03,
       "ceiling": 0.09
      }
@@ -7519,7 +9732,23 @@
      "Color 2": "#f4e9c866"
     },
     "fft": {},
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 104.0
+       }
+      }
+     }
+    ],
     "opacity": 0.5,
     "why": "The round tuning dial of a cathedral radio."
    },
@@ -7540,12 +9769,28 @@
      "Rotation": {
       "band": "mid",
       "gain": 7.0,
-      "release": 900,
+      "release": 260,
       "floor": 66.0,
       "ceiling": 78.0
      }
     },
-    "effects": [],
+    "effects": [
+     {
+      "effect": "Transform",
+      "params": {
+       "Scale": 100.0
+      },
+      "fft": {
+       "Scale": {
+        "band": "low",
+        "gain": 6.0,
+        "release": 150,
+        "floor": 100.0,
+        "ceiling": 108.0
+       }
+      }
+     }
+    ],
     "opacity": 1.0,
     "why": "The station needle across the band."
    },
@@ -7607,15 +9852,48 @@
    {
     "layer": 7,
     "column": 8,
-    "name": "Shellac Crackle",
-    "source": "Static",
+    "name": "Tracking Bars",
+    "source": "Sine Wave",
     "params": {
-     "Mode": "Grayscale"
+     "Waves": 3,
+     "Mode": "Line",
+     "Line Width": 0.08,
+     "Fuzzyness": 0.6,
+     "Direction": "Vertical",
+     "Mirror": false,
+     "Frequency": 1.0,
+     "Main Speed": 6.0,
+     "Modulator": 2.0,
+     "Modulation Depth": 0.6,
+     "Modulator Speed": 3.0,
+     "Amplitude": 0.04,
+     "Position": 0.5,
+     "Color": "#f4e9c8ff",
+     "BG Color": "#00000000"
     },
-    "fft": {},
-    "effects": [],
-    "opacity": 0.1,
-    "why": "Surface noise: the vintage filter's crackle bed."
+    "fft": {
+     "Amplitude": {
+      "band": "high",
+      "gain": 9.0,
+      "release": 120,
+      "floor": 0.02,
+      "ceiling": 0.1
+     }
+    },
+    "effects": [
+     {
+      "effect": "Infinite Zoom",
+      "params": {
+       "Rotation Speed": 0.08,
+       "Zoom": 0.0,
+       "Range": 1.4,
+       "Alpha": 0.75,
+       "Num Slices": 3
+      }
+     }
+    ],
+    "opacity": 0.28,
+    "why": "Kinetic pass: the room keeps moving."
    },
    {
     "layer": 8,
@@ -7633,7 +9911,7 @@
      "Main Speed": 6.0,
      "Modulator": 1.0,
      "Modulation Depth": 0.4,
-     "Modulator Speed": 1.0,
+     "Modulator Speed": 2.0,
      "Amplitude": 0.03,
      "Position": 0.86,
      "Color": "#7fd37f66",
@@ -7643,9 +9921,9 @@
      "Amplitude": {
       "band": "mid",
       "gain": 10.0,
-      "release": 300,
+      "release": 260,
       "floor": 0.03,
-      "ceiling": 0.32999999999999996
+      "ceiling": 0.57
      }
     },
     "effects": [],

@@ -629,8 +629,27 @@ def deck5():
             "clips": C}
 
 
+# The kinetic pass (2026-10-23): the shared pass in resolume_build/kinetic_pass.py gives the room a
+# moving texture on its own clock, unfreezes the generators, lets the lows punch a little and keeps
+# captions still. KINETIC = False rebuilds the still version. The two columns the pack always held
+# still stay still: the [BEAT] (deck 2, column 6) and the 48 kHz Master (deck 4, column 8).
+KINETIC = True
+STILL_COLUMNS = {(1, 6), (3, 8)}
+
+
 def main():
     decks = [deck1(), deck2(), deck3(), deck4(), deck5()]
+    extra = {}
+    if KINETIC:
+        import sys
+        sys.path.insert(0, os.path.join(HERE, "..", ".."))
+        from resolume_build import kinetic_pass as KP
+        fired = []
+        KP.pass_decks(decks, KP.default_motion(CREAM), fired.append, still=STILL_COLUMNS)
+        extra = KP.BIBLE_EXTRA
+        print("kinetic clamps fired: %d" % len(fired))
+        for line in fired[:12]:
+            print("  " + line)
     bible = {
         "pack_name": "Signal Lost",
         "comp_name": "Signal Lost - Transmission From Tomorrow",
@@ -650,12 +669,15 @@ def main():
             "pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. "
             "Colour never reacts: amber is work, green is signal and master, cream is paper, red is the "
             "ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz "
-            "Master are deliberately still: the picture holds while the sound does the work."),
+            "Master are deliberately still: the picture holds while the sound does the work. Everywhere "
+            "else the room never stops: a texture on its own clock under every deck, the lows push the "
+            "figures a little, the highs shiver the scope, and the captions stay put."),
         "wildcard_rationale": (
             "Four decks are the machine: the set signing on, the writers' room, the cast, the filter. The "
             "fifth is what the machine made - The Shivering Gauge, the episode the pack's README opens on - "
             "drawn the way the pipeline draws its own stills, so the instrument ends by performing its own "
             "output.")}
+    bible.update(extra)
     with open(os.path.join(HERE, "bible.json"), "w", encoding="utf-8") as f:
         json.dump(bible, f, indent=1, ensure_ascii=False)
     with open(os.path.join(HERE, "decks.json"), "w", encoding="utf-8") as f:

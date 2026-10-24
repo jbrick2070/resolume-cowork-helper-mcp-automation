@@ -2,7 +2,7 @@
 
 *Good evening. This is SIGNAL LOST.*
 
-A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 489 of its parameters listen to the music through Resolume's external FFT.
+A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 831 of its parameters listen to the music through Resolume's external FFT.
 
 | | |
 |---|---|
@@ -46,7 +46,7 @@ Scenes: Lab After Hours -> Developing Tanks -> The Gauge -> Vinegar -> Reel By R
 
 ## FFT philosophy
 
-Radio is sound made visible, so the composition's reactivity is the program line and the voices. Mids drive the SCOPE (VU line or waveform) 1:1 and the magic eye's fan; lows drive only size and width - dial lines, node boxes, timeline blocks, filament size - so a kick is pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. Colour never reacts: amber is work, green is signal and master, cream is paper, red is the ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz Master are deliberately still: the picture holds while the sound does the work.
+Radio is sound made visible, so the composition's reactivity is the program line and the voices. Mids drive the SCOPE (VU line or waveform) 1:1 and the magic eye's fan; lows drive only size and width - dial lines, node boxes, timeline blocks, filament size - so a kick is pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. Colour never reacts: amber is work, green is signal and master, cream is paper, red is the ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz Master are deliberately still: the picture holds while the sound does the work. Everywhere else the room never stops: a texture on its own clock under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.
 
 ## Built from the running application
 

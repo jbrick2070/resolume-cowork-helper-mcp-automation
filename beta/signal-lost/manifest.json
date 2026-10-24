@@ -366,8 +366,89 @@
     "role": "Bank D: eight languages tiled."
    }
   ],
-  "fft_philosophy": "Radio is sound made visible, so the composition's reactivity is the program line and the voices. Mids drive the SCOPE (VU line or waveform) 1:1 and the magic eye's fan; lows drive only size and width - dial lines, node boxes, timeline blocks, filament size - so a kick is pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. Colour never reacts: amber is work, green is signal and master, cream is paper, red is the ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz Master are deliberately still: the picture holds while the sound does the work.",
-  "wildcard_rationale": "Four decks are the machine: the set signing on, the writers' room, the cast, the filter. The fifth is what the machine made - The Shivering Gauge, the episode the pack's README opens on - drawn the way the pipeline draws its own stills, so the instrument ends by performing its own output."
+  "fft_philosophy": "Radio is sound made visible, so the composition's reactivity is the program line and the voices. Mids drive the SCOPE (VU line or waveform) 1:1 and the magic eye's fan; lows drive only size and width - dial lines, node boxes, timeline blocks, filament size - so a kick is pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. Colour never reacts: amber is work, green is signal and master, cream is paper, red is the ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz Master are deliberately still: the picture holds while the sound does the work. Everywhere else the room never stops: a texture on its own clock under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+  "wildcard_rationale": "Four decks are the machine: the set signing on, the writers' room, the cast, the filter. The fifth is what the machine made - The Shivering Gauge, the episode the pack's README opens on - drawn the way the pipeline draws its own stills, so the instrument ends by performing its own output.",
+  "layer_effects": {
+   "2": [
+    {
+     "effect": "Wave Warp",
+     "params": {
+      "Mode": 0.0,
+      "Width": 0.5,
+      "Speed": 0.1,
+      "Angle": 0.25,
+      "Pin edges?": true
+     },
+     "fft": {
+      "Height": {
+       "band": "mid",
+       "gain": 4.0,
+       "release": 110,
+       "floor": 0.005,
+       "ceiling": 0.025
+      }
+     }
+    }
+   ],
+   "3": [
+    {
+     "effect": "Trails",
+     "params": {
+      "Mode": "Lighten",
+      "Feedback": 0.3
+     },
+     "wet_max": 0.25
+    }
+   ],
+   "4": [
+    {
+     "effect": "Bloom",
+     "params": {
+      "Threshold": 0.8,
+      "Iterations": 2,
+      "Size": 0.15
+     },
+     "fft": {
+      "Amount": {
+       "band": "low",
+       "gain": 6.0,
+       "release": 150,
+       "floor": 0.1,
+       "ceiling": 0.3
+      }
+     }
+    }
+   ],
+   "8": [
+    {
+     "effect": "Shift RGB",
+     "params": {
+      "Mode": "Shift X",
+      "R": 1.0,
+      "G": 0.0,
+      "B": -1.0
+     },
+     "fft": {
+      "Distance": {
+       "band": "high",
+       "gain": 2.0,
+       "release": 100,
+       "floor": 0.002,
+       "ceiling": 0.008
+      }
+     }
+    }
+   ]
+  },
+  "layer_transition_ms": {
+   "1": 150,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "6": 100,
+   "7": 150,
+   "8": 100
+  }
  },
  "rack": {
   "banks": [
@@ -763,8 +844,8 @@
   "decks": 5,
   "clips": 320,
   "comp_effects": 34,
-  "fft_nodes": 489,
-  "bytes": 1540555
+  "fft_nodes": 831,
+  "bytes": 1831237
  },
  "preset": 164,
  "repairs": 0,
@@ -883,7 +964,7 @@
    "Cold Filaments",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Valve filaments glowing in the chassis."
   ],
   [
@@ -896,7 +977,7 @@
    "Tuning Dial",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -909,7 +990,7 @@
    "Tuning Dial",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -922,7 +1003,7 @@
    "Feed Lines",
    "Line Scape",
    "Wobble>mid",
-   "",
+   "Transform",
    "The workflow's wires, bezier-ish, from node to node."
   ],
   [
@@ -935,7 +1016,7 @@
    "Magic Eye Wide",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
   ],
   [
@@ -948,7 +1029,7 @@
    "Tuning Dial",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -961,7 +1042,7 @@
    "Act Card Hatch",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -974,7 +1055,7 @@
    "Tuning Dial",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -987,7 +1068,7 @@
    "Dark Dial",
    "Rings",
    "",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -1000,7 +1081,7 @@
    "Station Band",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "The tuning band: kilocycle ticks along the glass."
   ],
   [
@@ -1013,7 +1094,7 @@
    "Dial Needle",
    "Lines",
    "Rotation>mid",
-   "",
+   "Transform",
    "The station needle across the band."
   ],
   [
@@ -1026,7 +1107,7 @@
    "RSS Reader",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "A ComfyUI node: a rounded box with sockets."
   ],
   [
@@ -1039,7 +1120,7 @@
    "Theme Swell",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "The theme, composed in the musical style of wherever the story came from."
   ],
   [
@@ -1052,7 +1133,7 @@
    "Magic Eye",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
   ],
   [
@@ -1065,7 +1146,7 @@
    "Act Card",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "A ComfyUI node: a rounded box with sockets."
   ],
   [
@@ -1078,7 +1159,7 @@
    "Dial Needle",
    "Lines",
    "Rotation>mid",
-   "",
+   "Transform",
    "The station needle across the band."
   ],
   [
@@ -1400,11 +1481,11 @@
    "GRAIN",
    1,
    "Warm Up",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1413,11 +1494,11 @@
    "GRAIN",
    2,
    "Tuning",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1426,11 +1507,11 @@
    "GRAIN",
    3,
    "Lock",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1439,11 +1520,11 @@
    "GRAIN",
    4,
    "Tonight's News",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1452,11 +1533,11 @@
    "GRAIN",
    5,
    "Theme",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1465,11 +1546,11 @@
    "GRAIN",
    6,
    "Good Evening",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1478,11 +1559,11 @@
    "GRAIN",
    7,
    "Act One",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1491,11 +1572,11 @@
    "GRAIN",
    8,
    "Station Break",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1715,7 +1796,7 @@
    "ScriptWriter",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "A ComfyUI node: a rounded box with sockets."
   ],
   [
@@ -1728,7 +1809,7 @@
    "Three Voices",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "story_characters: three silhouettes as soft discs."
   ],
   [
@@ -1741,7 +1822,7 @@
    "Plot Line",
    "Line Scape",
    "Jagginess>low",
-   "",
+   "Transform",
    "story_plot: a rising line with knots at the turns."
   ],
   [
@@ -1754,7 +1835,7 @@
    "Lab Shelves",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -1793,7 +1874,7 @@
    "Cascade",
    "Line Scape",
    "Height>low",
-   "",
+   "Transform",
    "The freeze cascade: lines falling into place, phase by phase."
   ],
   [
@@ -1806,7 +1887,7 @@
    "Ledger",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "A ComfyUI node: a rounded box with sockets."
   ],
   [
@@ -1819,7 +1900,7 @@
    "Graph Wires",
    "Line Scape",
    "Wobble>mid",
-   "",
+   "Transform",
    "The workflow's wires, bezier-ish, from node to node."
   ],
   [
@@ -1832,7 +1913,7 @@
    "Engraving Hatch",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -1858,7 +1939,7 @@
    "Setting Card",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "A ComfyUI node: a rounded box with sockets."
   ],
   [
@@ -1897,7 +1978,7 @@
    "FreezeCascade",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "A ComfyUI node: a rounded box with sockets."
   ],
   [
@@ -1910,7 +1991,7 @@
    "Padlock Ring",
    "Rings",
    "",
-   "Transform",
+   "Transform, Transform",
    "The ledger locked: two rings, a shackle."
   ],
   [
@@ -2232,11 +2313,11 @@
    "GRAIN",
    1,
    "Premise",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2245,11 +2326,11 @@
    "GRAIN",
    2,
    "Characters",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2258,11 +2339,11 @@
    "GRAIN",
    3,
    "Plot",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2271,11 +2352,11 @@
    "GRAIN",
    4,
    "Setting",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2284,11 +2365,11 @@
    "GRAIN",
    5,
    "Cue Markup",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2310,11 +2391,11 @@
    "GRAIN",
    7,
    "Freeze Cascade",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2323,11 +2404,11 @@
    "GRAIN",
    8,
    "Ledger Locked",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2547,7 +2628,7 @@
    "CastLock",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "A ComfyUI node: a rounded box with sockets."
   ],
   [
@@ -2560,7 +2641,7 @@
    "Kokoro Voice",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "A Kokoro ONNX voice as a dense sine."
   ],
   [
@@ -2573,7 +2654,7 @@
    "Announcer Mic Ring",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -2586,7 +2667,7 @@
    "Eight Bands",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Eight horizontal bands, one per language."
   ],
   [
@@ -2599,7 +2680,7 @@
    "Voice Pool",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "The voice pool: many small discs, a few lit."
   ],
   [
@@ -2612,7 +2693,7 @@
    "Voice A",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "The carrier wave: a steady sine until a voice rides it."
   ],
   [
@@ -2625,7 +2706,7 @@
    "Still Hatch",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -2651,7 +2732,7 @@
    "Bound Voices",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Valve filaments glowing in the chassis."
   ],
   [
@@ -2664,7 +2745,7 @@
    "Phoneme Line",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "The phoneme stream under the voice."
   ],
   [
@@ -2677,7 +2758,7 @@
    "Magic Eye",
    "Rings",
    "Gap>mid",
-   "",
+   "Transform, Transform",
    "The 6E5 tuning-eye tube: a green fan that closes on a strong signal."
   ],
   [
@@ -2703,7 +2784,7 @@
    "Chosen Two",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Valve filaments glowing in the chassis."
   ],
   [
@@ -2716,7 +2797,7 @@
    "Voice B",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "Two voices in exchange, never overlapping lines."
   ],
   [
@@ -2729,7 +2810,7 @@
    "Caption Bar",
    "Lines",
    "",
-   "",
+   "Transform",
    "The burned caption's dark bar along the bottom."
   ],
   [
@@ -3064,11 +3145,11 @@
    "GRAIN",
    1,
    "Cast Lock",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3077,11 +3158,11 @@
    "GRAIN",
    2,
    "Kokoro",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3090,11 +3171,11 @@
    "GRAIN",
    3,
    "Announcer",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3103,11 +3184,11 @@
    "GRAIN",
    4,
    "Eight Language",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3116,11 +3197,11 @@
    "GRAIN",
    5,
    "Voice Pool",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3129,11 +3210,11 @@
    "GRAIN",
    6,
    "Dialogue",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3142,11 +3223,11 @@
    "GRAIN",
    7,
    "Captions",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3155,11 +3236,11 @@
    "GRAIN",
    8,
    "Credit Roll",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3379,7 +3460,7 @@
    "ScriptWriter",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "OTR_LedgerScriptWriter as a rounded box; its wire runs on to the next node."
   ],
   [
@@ -3392,7 +3473,7 @@
    "FreezeCascade",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "OTR_LedgerFreezeCascade as a rounded box; its wire runs on to the next node."
   ],
   [
@@ -3405,7 +3486,7 @@
    "CastLock",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "OTR_CastLock as a rounded box; its wire runs on to the next node."
   ],
   [
@@ -3418,7 +3499,7 @@
    "Voices",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "OTR_BatchCharacterVoices as a rounded box; its wire runs on to the next node."
   ],
   [
@@ -3431,7 +3512,7 @@
    "SceneSequencer",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "OTR_SceneSequencer as a rounded box; its wire runs on to the next node."
   ],
   [
@@ -3444,7 +3525,7 @@
    "Assembler",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "OTR_EpisodeAssembler as a rounded box; its wire runs on to the next node."
   ],
   [
@@ -3457,7 +3538,7 @@
    "RenderBatch",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "OTR_VideoRenderBatch as a rounded box; its wire runs on to the next node."
   ],
   [
@@ -3483,7 +3564,7 @@
    "Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Input sockets on the left: gate_in"
   ],
   [
@@ -3496,7 +3577,7 @@
    "Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Input sockets on the left: script_text, script_json, news_used"
   ],
   [
@@ -3509,7 +3590,7 @@
    "Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Input sockets on the left: script_json"
   ],
   [
@@ -3522,7 +3603,7 @@
    "Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Input sockets on the left: script_json, ledger_json, gate_in"
   ],
   [
@@ -3535,7 +3616,7 @@
    "Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Input sockets on the left: tts_audio_clips, announcer_audio_clips, script_json"
   ],
   [
@@ -3548,7 +3629,7 @@
    "Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Input sockets on the left: scene_audio, music_cue_audio, video_policy_json"
   ],
   [
@@ -3561,7 +3642,7 @@
    "Inputs",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Input sockets on the left: patched_ledger_json, master_audio_path, image_done"
   ],
   [
@@ -3896,11 +3977,11 @@
    "GRAIN",
    1,
    "ScriptWriter",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3909,11 +3990,11 @@
    "GRAIN",
    2,
    "FreezeCascade",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3922,11 +4003,11 @@
    "GRAIN",
    3,
    "CastLock",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3935,11 +4016,11 @@
    "GRAIN",
    4,
    "Voices",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3948,11 +4029,11 @@
    "GRAIN",
    5,
    "SceneSequencer",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3961,11 +4042,11 @@
    "GRAIN",
    6,
    "Assembler",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3974,11 +4055,11 @@
    "GRAIN",
    7,
    "RenderBatch",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4211,7 +4292,7 @@
    "Lab Shelves",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -4224,7 +4305,7 @@
    "Tanks",
    "Checkered",
    "",
-   "Transform",
+   "Transform, Transform",
    "Four developing tanks in a row."
   ],
   [
@@ -4237,7 +4318,7 @@
    "Gauge Face",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -4250,7 +4331,7 @@
    "Acetate Haze",
    "Abstract Field",
    "Density>low",
-   "Tint",
+   "Tint, Transform",
    "Vinegar syndrome: the acetate base hazing and warping."
   ],
   [
@@ -4263,7 +4344,7 @@
    "Reel",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -4276,7 +4357,7 @@
    "Gauge Face",
    "Rings",
    "Size>high",
-   "",
+   "Transform",
    "The gauge face shivering on the highs."
   ],
   [
@@ -4289,7 +4370,7 @@
    "Lab Shelves",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -4302,7 +4383,7 @@
    "Dial Fading",
    "Rings",
    "",
-   "",
+   "Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -4315,7 +4396,7 @@
    "Two Lamps",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Valve filaments glowing in the chassis."
   ],
   [
@@ -4328,7 +4409,7 @@
    "Tank Hatch",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -4341,7 +4422,7 @@
    "Gauge Needle",
    "Lines",
    "Rotation>mid",
-   "",
+   "Transform",
    "The gauge needle, red: the second place red is allowed."
   ],
   [
@@ -4354,7 +4435,7 @@
    "Warped Hatch",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "Storybook-engraving hatching: the stills are drawn, not photographed."
   ],
   [
@@ -4367,7 +4448,7 @@
    "Take-Up Reel",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The round tuning dial of a cathedral radio."
   ],
   [
@@ -4380,7 +4461,7 @@
    "Shivering Needle",
    "Lines",
    "Rotation>mid",
-   "",
+   "Transform",
    "The station needle across the band."
   ],
   [
@@ -4393,7 +4474,7 @@
    "Last Lamp",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Valve filaments glowing in the chassis."
   ],
   [
@@ -4406,7 +4487,7 @@
    "Dial Needle",
    "Lines",
    "Rotation>mid",
-   "",
+   "Transform",
    "The station needle across the band."
   ],
   [
@@ -4728,11 +4809,11 @@
    "GRAIN",
    1,
    "Lab After Hour",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4741,11 +4822,11 @@
    "GRAIN",
    2,
    "Developing Tan",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4754,11 +4835,11 @@
    "GRAIN",
    3,
    "The Gauge",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4767,11 +4848,11 @@
    "GRAIN",
    4,
    "Vinegar",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4780,11 +4861,11 @@
    "GRAIN",
    5,
    "Reel By Reel",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4793,11 +4874,11 @@
    "GRAIN",
    6,
    "Shivering",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4806,11 +4887,11 @@
    "GRAIN",
    7,
    "Dawn",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4819,11 +4900,11 @@
    "GRAIN",
    8,
    "Sign-Off",
-   "Shellac Crackle",
-   "Static",
-   "",
-   "",
-   "Surface noise: the vintage filter's crackle bed."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,

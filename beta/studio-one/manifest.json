@@ -366,8 +366,89 @@
     "role": "Bank D: nineteen machines multiplied."
    }
   ],
-  "fft_philosophy": "Sound is the whole subject, so the composition listens like the room did. The kick drives only physical size - the RCA 44-BX diamond, the cylinder's ribs, the heat ray's width, the headlights - so a hit reads as pressure on the ribbon. Mids drive the board's program line (SCOPE) and the cap turning; highs only shiver the ribbon and the crowd's edges. Nothing about colour ever reacts: charcoal, ivory, grey and one amber are fixed, and red appears only where a pencil drew it. Text never moves. Dead Air, the Silent Mic and the Clock Held are deliberately deaf: the stillness is the effect.",
-  "wildcard_rationale": "Four decks walk the night: the room, the accounts it gave, the visitors who took it, and the city it described. The fifth is what happened after 9 pm - the doors, the switchboard, the flashbulbs and the headlines - and the correction: the panic was printed, not broadcast. The broadcast's 88th anniversary is Thursday 30 October 2026."
+  "fft_philosophy": "Sound is the whole subject, so the composition listens like the room did. The kick drives only physical size - the RCA 44-BX diamond, the cylinder's ribs, the heat ray's width, the headlights - so a hit reads as pressure on the ribbon. Mids drive the board's program line (SCOPE) and the cap turning; highs only shiver the ribbon and the crowd's edges. Nothing about colour ever reacts: charcoal, ivory, grey and one amber are fixed, and red appears only where a pencil drew it. Text never moves. Dead Air, the Silent Mic and the Clock Held are deliberately deaf: the stillness is the effect. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+  "wildcard_rationale": "Four decks walk the night: the room, the accounts it gave, the visitors who took it, and the city it described. The fifth is what happened after 9 pm - the doors, the switchboard, the flashbulbs and the headlines - and the correction: the panic was printed, not broadcast. The broadcast's 88th anniversary is Thursday 30 October 2026.",
+  "layer_effects": {
+   "2": [
+    {
+     "effect": "Wave Warp",
+     "params": {
+      "Mode": 0.0,
+      "Width": 0.5,
+      "Speed": 0.1,
+      "Angle": 0.25,
+      "Pin edges?": true
+     },
+     "fft": {
+      "Height": {
+       "band": "mid",
+       "gain": 4.0,
+       "release": 110,
+       "floor": 0.005,
+       "ceiling": 0.025
+      }
+     }
+    }
+   ],
+   "3": [
+    {
+     "effect": "Trails",
+     "params": {
+      "Mode": "Lighten",
+      "Feedback": 0.3
+     },
+     "wet_max": 0.25
+    }
+   ],
+   "4": [
+    {
+     "effect": "Bloom",
+     "params": {
+      "Threshold": 0.8,
+      "Iterations": 2,
+      "Size": 0.15
+     },
+     "fft": {
+      "Amount": {
+       "band": "low",
+       "gain": 6.0,
+       "release": 150,
+       "floor": 0.1,
+       "ceiling": 0.3
+      }
+     }
+    }
+   ],
+   "8": [
+    {
+     "effect": "Shift RGB",
+     "params": {
+      "Mode": "Shift X",
+      "R": 1.0,
+      "G": 0.0,
+      "B": -1.0
+     },
+     "fft": {
+      "Distance": {
+       "band": "high",
+       "gain": 2.0,
+       "release": 100,
+       "floor": 0.002,
+       "ceiling": 0.008
+      }
+     }
+    }
+   ]
+  },
+  "layer_transition_ms": {
+   "1": 150,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "6": 100,
+   "7": 150,
+   "8": 100
+  }
  },
  "rack": {
   "banks": [
@@ -763,8 +844,8 @@
   "decks": 5,
   "clips": 320,
   "comp_effects": 34,
-  "fft_nodes": 384,
-  "bytes": 1504233
+  "fft_nodes": 711,
+  "bytes": 1786349
  },
  "preset": 164,
  "repairs": 0,
@@ -883,7 +964,7 @@
    "Network Mic",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Doyle's network microphone at left, the first thing lit."
   ],
   [
@@ -896,7 +977,7 @@
    "Center Mic",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "Transform",
+   "Transform, Transform",
    "The RCA 44-BX: a diamond of satin chrome, figure-8, 8.5 lb on its yoke."
   ],
   [
@@ -909,7 +990,7 @@
    "Figure-8 Grille",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "Transform",
+   "Transform, Transform",
    "The RCA 44-BX: a diamond of satin chrome, figure-8, 8.5 lb on its yoke."
   ],
   [
@@ -922,7 +1003,7 @@
    "Iron Pot",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The cast-iron vessel whose rim the jar scrapes."
   ],
   [
@@ -935,7 +1016,7 @@
    "Giant Cube",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "",
+   "Transform",
    "Arthur Nichols's five-foot sound machine as a nest of squares."
   ],
   [
@@ -948,7 +1029,7 @@
    "Music Stands",
    "Lines",
    "Width>mid",
-   "",
+   "Transform",
    "Twenty-seven music stands in a clustered arc."
   ],
   [
@@ -961,7 +1042,7 @@
    "Booth Glass",
    "Lines",
    "",
-   "",
+   "Transform",
    "The double-paned soundproof window."
   ],
   [
@@ -987,7 +1068,7 @@
    "Studio Clock",
    "Spiral",
    "",
-   "",
+   "Transform",
    "The studio clock: 8:00 pm. Studio time is real time."
   ],
   [
@@ -1000,7 +1081,7 @@
    "Lathe A",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "Nora lowers the cutting arm onto a turning black disc: lathe A."
   ],
   [
@@ -1013,7 +1094,7 @@
    "Ribbon",
    "Lines",
    "Fuzzyness>high",
-   "",
+   "Transform",
    "The ribbon's figure-8: live front and back, dead at the sides."
   ],
   [
@@ -1026,7 +1107,7 @@
    "Jam Jar Lid",
    "Rings",
    "Size>high",
-   "Transform",
+   "Transform, Transform",
    "The glass jam jar turning in the pot: the cylinder unscrewing."
   ],
   [
@@ -1039,7 +1120,7 @@
    "Nine Motors",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "Nine independent electric motors behind switches and levers."
   ],
   [
@@ -1052,7 +1133,7 @@
    "Piano Filler",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "The solo piano filler, played for unbearably long stretches."
   ],
   [
@@ -1065,7 +1146,7 @@
    "VU Meters",
    "Rings",
    "Size>mid",
-   "Transform",
+   "Transform, Transform",
    "The board's round VU meters glowing behind the glass."
   ],
   [
@@ -1400,11 +1481,11 @@
    "GRAIN",
    1,
    "8 PM Air",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1413,11 +1494,11 @@
    "GRAIN",
    2,
    "Roll It",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1426,11 +1507,11 @@
    "GRAIN",
    3,
    "Facing Mics",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1439,11 +1520,11 @@
    "GRAIN",
    4,
    "Foley Table",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1452,11 +1533,11 @@
    "GRAIN",
    5,
    "Giant Cube",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1465,11 +1546,11 @@
    "GRAIN",
    6,
    "Orchestra",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1478,11 +1559,11 @@
    "GRAIN",
    7,
    "The Glass",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Moving Floor",
+   "Line Scape",
+   "Height>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    0,
@@ -1715,7 +1796,7 @@
    "Telescope Dome",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The observatory dome's ribs."
   ],
   [
@@ -1728,7 +1809,7 @@
    "Headlights",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of car headlights behind the crowd."
   ],
   [
@@ -1741,7 +1822,7 @@
    "The Cylinder",
    "Tunnelines",
    "Frequency>low",
-   "",
+   "Transform",
    "The cylinder half buried in the pit, its end shedding flakes."
   ],
   [
@@ -1754,7 +1835,7 @@
    "Cylinder End",
    "Tunnelines",
    "Frequency>low",
-   "",
+   "Transform",
    "The cylinder half buried in the pit, its end shedding flakes."
   ],
   [
@@ -1767,7 +1848,7 @@
    "The Cylinder",
    "Tunnelines",
    "Frequency>low",
-   "",
+   "Transform",
    "The cylinder half buried in the pit, its end shedding flakes."
   ],
   [
@@ -1780,7 +1861,7 @@
    "Headlights",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of car headlights behind the crowd."
   ],
   [
@@ -1806,7 +1887,7 @@
    "Black Smoke",
    "Abstract Field",
    "Density>low",
-   "Tint",
+   "Tint, Transform",
    "Drifting black smoke over the marshes."
   ],
   [
@@ -1819,7 +1900,7 @@
    "Mars Disc",
    "Shaper",
    "Scale>low",
-   "",
+   "Transform",
    "Mars in the eyepiece: a small grainy disc. No red: red is the pencil's."
   ],
   [
@@ -1832,7 +1913,7 @@
    "Crowd",
    "Lines",
    "Fuzzyness>mid",
-   "",
+   "Transform",
    "A crowd of silhouettes against the headlights."
   ],
   [
@@ -1845,7 +1926,7 @@
    "The Hum",
    "Sine Wave",
    "Amplitude>low",
-   "",
+   "Transform",
    "The hum: a dense, even vibration in the air above the pit."
   ],
   [
@@ -1858,7 +1939,7 @@
    "The Cap Turns",
    "Rings",
    "Size>mid",
-   "",
+   "Transform",
    "The circular top beginning to turn - matched to the jam jar lid in Studio One."
   ],
   [
@@ -1871,7 +1952,7 @@
    "Ribbed Feelers",
    "Spiral",
    "Distortion>low",
-   "",
+   "Transform",
    "The hatch's ribbed feelers - the tentacles - in bad light."
   ],
   [
@@ -1884,7 +1965,7 @@
    "Heat Ray",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "The heat ray: one beam of light from the mirror."
   ],
   [
@@ -1910,7 +1991,7 @@
    "Stone Wall",
    "Lines",
    "",
-   "",
+   "Transform",
    "The stone wall Phillips was last seen behind. He is never shown dead."
   ],
   [
@@ -2232,11 +2313,11 @@
    "GRAIN",
    1,
    "Observatory",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2245,11 +2326,11 @@
    "GRAIN",
    2,
    "The Farm",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2258,11 +2339,11 @@
    "GRAIN",
    3,
    "The Hum",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2271,11 +2352,11 @@
    "GRAIN",
    4,
    "The Cap",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2284,11 +2365,11 @@
    "GRAIN",
    5,
    "Emergence",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2297,11 +2378,11 @@
    "GRAIN",
    6,
    "Heat Ray",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2310,11 +2391,11 @@
    "GRAIN",
    7,
    "Field Lost",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2323,11 +2404,11 @@
    "GRAIN",
    8,
    "Forty Dead",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Signal Tunnel",
+   "Tunnelines",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    1,
@@ -2547,7 +2628,7 @@
    "Black Sedan",
    "Shaper",
    "",
-   "Transform",
+   "Transform, Transform",
    "A black sedan at the curb, its outline catching the street light."
   ],
   [
@@ -2560,7 +2641,7 @@
    "Lift Dial",
    "Rings",
    "Line Width>low",
-   "Transform",
+   "Transform, Transform",
    "The semicircular lift dial above the closed gate."
   ],
   [
@@ -2586,7 +2667,7 @@
    "Porthole",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "The small window in the control-room door."
   ],
   [
@@ -2599,7 +2680,7 @@
    "Patch Cords",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "Patch cords hanging across the jack field."
   ],
   [
@@ -2625,7 +2706,7 @@
    "Doyle's Mic",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "Transform",
+   "Transform, Transform",
    "The RCA 44-BX: a diamond of satin chrome, figure-8, 8.5 lb on its yoke."
   ],
   [
@@ -2651,7 +2732,7 @@
    "Two Homburgs",
    "Metaballs",
    "",
-   "",
+   "Transform",
    "Two motionless homburgs inside. They never hurry."
   ],
   [
@@ -2664,7 +2745,7 @@
    "Revolving Door",
    "Spiral",
    "",
-   "",
+   "Transform",
    "The brass revolving door still turning as they step onto the marble."
   ],
   [
@@ -2677,7 +2758,7 @@
    "Red Line On Card",
    "Lines",
    "",
-   "",
+   "Transform",
    "One red pencil line beneath the text. Red exists only here."
   ],
   [
@@ -2690,7 +2771,7 @@
    "Ring Of Keys",
    "Rings",
    "",
-   "Transform",
+   "Transform, Transform",
    "They knock while holding the keys."
   ],
   [
@@ -2703,7 +2784,7 @@
    "Bare Hand",
    "Shaper",
    "Noise Amount>low",
-   "",
+   "Transform",
    "Carver's bare hand on the board, creased and ridged."
   ],
   [
@@ -2716,7 +2797,7 @@
    "Red Pencil",
    "Lines",
    "",
-   "",
+   "Transform",
    "Small's nickel-ferruled red pencil draws one line. The only red on screen."
   ],
   [
@@ -2729,7 +2810,7 @@
    "Red Line At Eye",
    "Lines",
    "",
-   "",
+   "Transform",
    "The page clipped at Doyle's eye level, one red line beneath the text."
   ],
   [
@@ -3064,11 +3145,11 @@
    "GRAIN",
    1,
    "The Curb",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3077,11 +3158,11 @@
    "GRAIN",
    2,
    "The Lobby",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3090,11 +3171,11 @@
    "GRAIN",
    3,
    "The Card",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3103,11 +3184,11 @@
    "GRAIN",
    4,
    "The Latch",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3116,11 +3197,11 @@
    "GRAIN",
    5,
    "Gloves Off",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3129,11 +3210,11 @@
    "GRAIN",
    6,
    "Red Line",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3142,11 +3223,11 @@
    "GRAIN",
    7,
    "Station Break",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Slow Spiral",
+   "Spiral",
+   "Zoom>low",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    2,
@@ -3379,7 +3460,7 @@
    "Distant Tripod",
    "Geometry Pattern Maker",
    "Inner Scale>mid",
-   "",
+   "Transform",
    "A towering three-legged machine: tripod geometry rising from smoke."
   ],
   [
@@ -3392,7 +3473,7 @@
    "Black Smoke",
    "Abstract Field",
    "Density>low",
-   "Tint",
+   "Tint, Transform",
    "Drifting black smoke over the marshes."
   ],
   [
@@ -3405,7 +3486,7 @@
    "Cowl Fills Glass",
    "Geometry Pattern Maker",
    "Inner Scale>mid",
-   "",
+   "Transform",
    "A towering three-legged machine: tripod geometry rising from smoke."
   ],
   [
@@ -3418,7 +3499,7 @@
    "Skyline",
    "Line Scape",
    "",
-   "",
+   "Transform",
    "Manhattan's skyline from the roof of Broadcasting Building."
   ],
   [
@@ -3431,7 +3512,7 @@
    "Black Smoke",
    "Abstract Field",
    "Density>low",
-   "Tint",
+   "Tint, Transform",
    "Drifting black smoke over the marshes."
   ],
   [
@@ -3444,7 +3525,7 @@
    "Avenue Lights",
    "Metaballs",
    "Size>low",
-   "",
+   "Transform",
    "A row of car headlights behind the crowd."
   ],
   [
@@ -3457,7 +3538,7 @@
    "Nineteen Machines",
    "Lines",
    "",
-   "",
+   "Transform",
    "A long row of towering machines, cowls open and empty."
   ],
   [
@@ -3470,7 +3551,7 @@
    "Study Lamp",
    "Gradient",
    "",
-   "",
+   "Transform",
    "One practical lamp: soft halation, a radial pool."
   ],
   [
@@ -3483,7 +3564,7 @@
    "Gun Battery",
    "Lines",
    "Width>low",
-   "",
+   "Transform",
    "Four gun barrels raised at 30 degrees."
   ],
   [
@@ -3496,7 +3577,7 @@
    "Bomber Formation",
    "Rings",
    "Spacing>mid",
-   "Transform",
+   "Transform, Transform",
    "Bombers close together, ready to attack."
   ],
   [
@@ -3509,7 +3590,7 @@
    "Nose Glazing",
    "Tunnelines",
    "Frequency>low",
-   "",
+   "Transform",
    "The glazed nose rushing toward the cowl: very large, fast."
   ],
   [
@@ -3522,7 +3603,7 @@
    "Smoke Over Hudson",
    "Abstract Field",
    "Density>low",
-   "Tint",
+   "Tint, Transform",
    "Drifting black smoke over the marshes."
   ],
   [
@@ -3535,7 +3616,7 @@
    "Fifty Feet",
    "Abstract Field",
    "Density>low",
-   "Tint",
+   "Tint, Transform",
    "Drifting black smoke over the marshes."
   ],
   [
@@ -3548,7 +3629,7 @@
    "Rain On Glass",
    "Static",
    "",
-   "",
+   "Transform",
    "Wet pavement and rain on the glass: the avenue untouched."
   ],
   [
@@ -3561,7 +3642,7 @@
    "Empty Cowl",
    "Geometry Pattern Maker",
    "Inner Scale>mid",
-   "",
+   "Transform",
    "A towering three-legged machine: tripod geometry rising from smoke."
   ],
   [
@@ -3574,7 +3655,7 @@
    "Pierson's Pen",
    "Sine Wave",
    "Amplitude>mid",
-   "",
+   "Transform",
    "Pierson's journal pen in the peaceful study."
   ],
   [
@@ -3896,11 +3977,11 @@
    "GRAIN",
    1,
    "The Battery",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3909,11 +3990,11 @@
    "GRAIN",
    2,
    "Bombers",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3922,11 +4003,11 @@
    "GRAIN",
    3,
    "The Dive",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3935,11 +4016,11 @@
    "GRAIN",
    4,
    "The Roof",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3948,11 +4029,11 @@
    "GRAIN",
    5,
    "Black Smoke",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3961,11 +4042,11 @@
    "GRAIN",
    6,
    "The Window",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3974,11 +4055,11 @@
    "GRAIN",
    7,
    "Nineteen",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -3987,11 +4068,11 @@
    "GRAIN",
    8,
    "Peaceful Study",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Scan Lines",
+   "Sine Wave",
+   "Amplitude>mid",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    3,
@@ -4211,7 +4292,7 @@
    "Blue Uniforms",
    "Lines",
    "Fuzzyness>mid",
-   "",
+   "Transform",
    "The doors burst open: a wall of dark uniforms."
   ],
   [
@@ -4224,7 +4305,7 @@
    "Sea Of Light",
    "Checkered",
    "",
-   "",
+   "Transform",
    "The switchboard as a vast sea of light."
   ],
   [
@@ -4237,7 +4318,7 @@
    "Battery Of Mics",
    "Geometry Pattern Maker",
    "Inner Scale>low",
-   "Transform",
+   "Transform, Transform",
    "Welles before a battery of microphones, unshaven."
   ],
   [
@@ -4263,7 +4344,7 @@
    "Audience Bar",
    "Lines",
    "",
-   "",
+   "Transform",
    "A single thin bar: about 2% of the radio audience."
   ],
   [
@@ -4289,7 +4370,7 @@
    "Disc A",
    "Rings",
    "Line Width>low",
-   "",
+   "Transform",
    "Disc A, filed as next week's rehearsal, with the hum in its grooves."
   ],
   [
@@ -4315,7 +4396,7 @@
    "9:00 PM",
    "Spiral",
    "",
-   "",
+   "Transform",
    "The studio clock at 9:00 pm."
   ],
   [
@@ -4328,7 +4409,7 @@
    "Lamps Ringing",
    "Stroboscope",
    "",
-   "",
+   "Transform",
    "Every line lit, flickering with calls."
   ],
   [
@@ -4341,7 +4422,7 @@
    "Press Corps",
    "Metaballs",
    "",
-   "",
+   "Transform",
    "Reporters crowding the table."
   ],
   [
@@ -4367,7 +4448,7 @@
    "Bergen On NBC",
    "Lines",
    "",
-   "",
+   "Transform",
    "Everyone else was listening to Edgar Bergen on NBC."
   ],
   [
@@ -4380,7 +4461,7 @@
    "The Record",
    "Lines",
    "",
-   "",
+   "Transform",
    "Ruled columns: what was actually documented."
   ],
   [
@@ -4393,7 +4474,7 @@
    "Small Circle",
    "Rings",
    "",
-   "Transform",
+   "Transform, Transform",
    "Nora draws a small circle on the sleeve without knowing why."
   ],
   [
@@ -4406,7 +4487,7 @@
    "Already Red",
    "Lines",
    "",
-   "",
+   "Transform",
    "Next week's script in the briefcase, already red-pencilled."
   ],
   [
@@ -4728,11 +4809,11 @@
    "GRAIN",
    1,
    "9 PM Doors",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4741,11 +4822,11 @@
    "GRAIN",
    2,
    "Switchboard",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4754,11 +4835,11 @@
    "GRAIN",
    3,
    "Flashbulbs",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4767,11 +4848,11 @@
    "GRAIN",
    4,
    "Headlines",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4780,11 +4861,11 @@
    "GRAIN",
    5,
    "Two Percent",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4793,11 +4874,11 @@
    "GRAIN",
    6,
    "Hooper vs Myth",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4806,11 +4887,11 @@
    "GRAIN",
    7,
    "The Disc",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,
@@ -4819,11 +4900,11 @@
    "GRAIN",
    8,
    "Next Week",
-   "Film Grain",
-   "Static",
-   "",
-   "",
-   "Fine silver-gelatin grain over everything."
+   "Tracking Bars",
+   "Sine Wave",
+   "Amplitude>high",
+   "Infinite Zoom",
+   "Kinetic pass: the room keeps moving."
   ],
   [
    4,

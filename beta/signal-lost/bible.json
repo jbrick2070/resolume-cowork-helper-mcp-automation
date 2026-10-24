@@ -365,6 +365,87 @@
    "role": "Bank D: eight languages tiled."
   }
  ],
- "fft_philosophy": "Radio is sound made visible, so the composition's reactivity is the program line and the voices. Mids drive the SCOPE (VU line or waveform) 1:1 and the magic eye's fan; lows drive only size and width - dial lines, node boxes, timeline blocks, filament size - so a kick is pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. Colour never reacts: amber is work, green is signal and master, cream is paper, red is the ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz Master are deliberately still: the picture holds while the sound does the work.",
- "wildcard_rationale": "Four decks are the machine: the set signing on, the writers' room, the cast, the filter. The fifth is what the machine made - The Shivering Gauge, the episode the pack's README opens on - drawn the way the pipeline draws its own stills, so the instrument ends by performing its own output."
+ "fft_philosophy": "Radio is sound made visible, so the composition's reactivity is the program line and the voices. Mids drive the SCOPE (VU line or waveform) 1:1 and the magic eye's fan; lows drive only size and width - dial lines, node boxes, timeline blocks, filament size - so a kick is pressure on the chassis; highs shiver the band ticks, the hatching and, once, the gauge face. Colour never reacts: amber is work, green is signal and master, cream is paper, red is the ON AIR lamp and the gauge needle and nothing else. Text never moves. [BEAT] and the 48 kHz Master are deliberately still: the picture holds while the sound does the work. Everywhere else the room never stops: a texture on its own clock under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.",
+ "wildcard_rationale": "Four decks are the machine: the set signing on, the writers' room, the cast, the filter. The fifth is what the machine made - The Shivering Gauge, the episode the pack's README opens on - drawn the way the pipeline draws its own stills, so the instrument ends by performing its own output.",
+ "layer_effects": {
+  "2": [
+   {
+    "effect": "Wave Warp",
+    "params": {
+     "Mode": 0.0,
+     "Width": 0.5,
+     "Speed": 0.1,
+     "Angle": 0.25,
+     "Pin edges?": true
+    },
+    "fft": {
+     "Height": {
+      "band": "mid",
+      "gain": 4.0,
+      "release": 110,
+      "floor": 0.005,
+      "ceiling": 0.025
+     }
+    }
+   }
+  ],
+  "3": [
+   {
+    "effect": "Trails",
+    "params": {
+     "Mode": "Lighten",
+     "Feedback": 0.3
+    },
+    "wet_max": 0.25
+   }
+  ],
+  "4": [
+   {
+    "effect": "Bloom",
+    "params": {
+     "Threshold": 0.8,
+     "Iterations": 2,
+     "Size": 0.15
+    },
+    "fft": {
+     "Amount": {
+      "band": "low",
+      "gain": 6.0,
+      "release": 150,
+      "floor": 0.1,
+      "ceiling": 0.3
+     }
+    }
+   }
+  ],
+  "8": [
+   {
+    "effect": "Shift RGB",
+    "params": {
+     "Mode": "Shift X",
+     "R": 1.0,
+     "G": 0.0,
+     "B": -1.0
+    },
+    "fft": {
+     "Distance": {
+      "band": "high",
+      "gain": 2.0,
+      "release": 100,
+      "floor": 0.002,
+      "ceiling": 0.008
+     }
+    }
+   }
+  ]
+ },
+ "layer_transition_ms": {
+  "1": 150,
+  "2": 100,
+  "3": 100,
+  "4": 100,
+  "6": 100,
+  "7": 150,
+  "8": 100
+ }
 }

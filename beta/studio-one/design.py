@@ -740,7 +740,7 @@ def deck5():
           page(2, 4, color=IVORY, opacity=0.9, name="Front Page"),
           blank(3, 4, "The headline is the picture."),
           lamp(4, color=IVORY_DIM, opacity=0.1),
-          text(4, "RADIO WAR\nTERRORIZES U.S.", font=GOTH, size=2.0, color=CHAR, align="Center",
+          text(4, "RADIO WAR\nTERRORIZES U.S.", font=GOTH, size=1.4, color=CHAR, align="Center",
                valign="Center", x=0, y=0, why="A front-page headline style, black on newsprint."),
           blank(6, 4), grain(4, opacity=0.12), vu(4, amp=0.02)]
     C += [black(5), clip(2, 5, "Audience Bar", "Lines",
@@ -807,8 +807,29 @@ def deck5():
             "clips": C}
 
 
+# The kinetic pass (2026-10-23): the shared pass in resolume_build/kinetic_pass.py gives the room a
+# moving texture on its own clock, unfreezes generators, lets the lows punch a little and keeps
+# captions still. KINETIC = False rebuilds the still version.
+# The columns the designer made deliberately deaf (Dead Air, Clock Held) stay still.
+KINETIC = True
+STILL_COLUMNS = {(0, 8), (2, 8)}                 # (deck from 0, column from 1) held still on purpose
+KINETIC_NOTE = (" Since the kinetic pass the room never stops: a texture on its own clock sits under every "
+                "deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.")
+
+
 def main():
     decks = [deck1(), deck2(), deck3(), deck4(), deck5()]
+    extra = {}
+    if KINETIC:
+        import sys
+        sys.path.insert(0, os.path.join(HERE, "..", ".."))
+        from resolume_build import kinetic_pass as KP
+        fired = []
+        KP.pass_decks(decks, KP.default_motion(IVORY), fired.append, still=STILL_COLUMNS)
+        extra = KP.BIBLE_EXTRA
+        print("kinetic clamps fired: %d" % len(fired))
+        for line in fired[:12]:
+            print("  " + line)
     bible = {
         "pack_name": "Studio One",
         "comp_name": "Studio One - War Of The Worlds 1938",
@@ -834,6 +855,9 @@ def main():
             "it described. The fifth is what happened after 9 pm - the doors, the switchboard, the flashbulbs "
             "and the headlines - and the correction: the panic was printed, not broadcast. The broadcast's "
             "88th anniversary is Thursday 30 October 2026.")}
+    bible.update(extra)
+    if KINETIC:
+        bible["fft_philosophy"] += KINETIC_NOTE
     with open(os.path.join(HERE, "bible.json"), "w", encoding="utf-8") as f:
         json.dump(bible, f, indent=1, ensure_ascii=False)
     with open(os.path.join(HERE, "decks.json"), "w", encoding="utf-8") as f:

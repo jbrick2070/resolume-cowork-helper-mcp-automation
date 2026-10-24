@@ -2,7 +2,7 @@
 
 *Everyone forgets. The record doesn't.*
 
-A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 384 of its parameters listen to the music through Resolume's external FFT.
+A procedural live instrument for **Resolume Avenue 7.28.1** and an **Akai APC40 mkII**. Every one of its 320 clips is a stock Resolume generator with hand-set parameters - no media files, no third-party plugins - and 711 of its parameters listen to the music through Resolume's external FFT.
 
 | | |
 |---|---|
@@ -46,7 +46,7 @@ Scenes: 9 PM Doors -> Switchboard -> Flashbulbs -> Headlines -> Two Percent -> H
 
 ## FFT philosophy
 
-Sound is the whole subject, so the composition listens like the room did. The kick drives only physical size - the RCA 44-BX diamond, the cylinder's ribs, the heat ray's width, the headlights - so a hit reads as pressure on the ribbon. Mids drive the board's program line (SCOPE) and the cap turning; highs only shiver the ribbon and the crowd's edges. Nothing about colour ever reacts: charcoal, ivory, grey and one amber are fixed, and red appears only where a pencil drew it. Text never moves. Dead Air, the Silent Mic and the Clock Held are deliberately deaf: the stillness is the effect.
+Sound is the whole subject, so the composition listens like the room did. The kick drives only physical size - the RCA 44-BX diamond, the cylinder's ribs, the heat ray's width, the headlights - so a hit reads as pressure on the ribbon. Mids drive the board's program line (SCOPE) and the cap turning; highs only shiver the ribbon and the crowd's edges. Nothing about colour ever reacts: charcoal, ivory, grey and one amber are fixed, and red appears only where a pencil drew it. Text never moves. Dead Air, the Silent Mic and the Clock Held are deliberately deaf: the stillness is the effect. Since the kinetic pass the room never stops: a texture on its own clock sits under every deck, the lows push the figures a little, the highs shiver the scope, and the captions stay put.
 
 ## Built from the running application
 
