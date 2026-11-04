@@ -101,12 +101,13 @@ Sume: 1.2 1.3 1.6 1.8, 2.2 2.4 2.5 2.6, 3.1 3.2 3.4 3.6, 4.2 4.3 4.4 4.7, 5.1 5.
 Local H3: the other twenty, from the prompts in `render/make_prompts.py` (the same constructions
 as this sheet, reworded to avoid period dates, which make some video models pillarbox to 4:3).
 
-**The clips are not in this repository.** The FILM composition expects them at
-`C:\Resolume Clips\studio_one\S1_<deck>_<scene>_<slug>.mov`. To rebuild them, render each scene
-from the prompts here (or `render/`), put the files in `media/` as `S1_<deck>_<scene>_<slug>.mov`
-or `.mp4`, and run `python packs/studio-one/add_film_layer.py`: it copies them to the library
-folder and rewrites the composition. `verify_pack.py` asserts 8 layers, so run it against the
-original composition, not the FILM one.
+**The clips are not stored in the repository** (about 2.4 GB). Download them from the
+[release](https://github.com/jbrick2070/resolume-cowork-helper-mcp-automation/releases/tag/studio-one-film-clips-v1) and extract both zips into `C:\Resolume Clips\`, or into any folder and
+run `relink_film.py` on it. To rebuild them yourself, render each scene from the prompts here (or
+`render/`), put the files in `media/` as `S1_<deck>_<scene>_<slug>.mov` or `.mp4`, and run
+`python packs/studio-one/add_film_layer.py`: it copies them to the library folder and rewrites the
+composition. `verify_pack.py` asserts 8 layers, so run it against the original composition, not
+the FILM one.
 
 ## Delivery
 

@@ -58,6 +58,19 @@ Every source, effect, parameter name, range, choice and blend-mode id in this pa
 instrument with a ninth layer, FILM, at the bottom, carrying forty photographic 1080p loop clips
 (one per scene, DXV, ping-pong): twenty from Sume's HeyGen Video 1 and twenty from MiniMax H3 run
 locally, all from `docs/SUME_CLIP_PROMPTS.md` and `render/`. Built by `add_film_layer.py`; the APC40
-layout is unchanged. Pick the FILM preset in Preferences > MIDI. The clips themselves are not in
-the repository (about 2 GB); the composition looks for them in `C:\Resolume Clips\studio_one`,
-see `docs/SUME_CLIP_PROMPTS.md` to rebuild them.
+layout is unchanged.
+
+**Get it running (Resolume Avenue or Arena 7):**
+
+1. Download the two clip zips (2.4 GB, DXV) from the
+   [release](https://github.com/jbrick2070/resolume-cowork-helper-mcp-automation/releases/tag/studio-one-film-clips-v1).
+2. **Windows, quickest:** extract both into `C:\Resolume Clips\` (each makes a `studio_one` folder)
+   and open `Studio One - War Of The Worlds 1938 FILM.avc`. Done.
+3. **Any other folder or a Mac:** extract both zips into one folder, then
+   `python relink_film.py "<that folder>"` and open the `(relinked).avc` it writes. It reports any
+   missing clip.
+4. APC40 mkII: copy `APC 40 MK II - Studio One FILM.xml` to `Documents/Resolume Avenue/Shortcuts/MIDI`,
+   then pick it in Preferences > MIDI.
+
+The clips are not stored in the git repository itself, only on the release page.
+To make your own, see `docs/SUME_CLIP_PROMPTS.md` and `render/`, then run `add_film_layer.py`.
