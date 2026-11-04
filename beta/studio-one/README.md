@@ -51,3 +51,13 @@ Sound is the whole subject, so the composition listens like the room did. The ki
 ## Built from the running application
 
 Every source, effect, parameter name, range, choice and blend-mode id in this pack was harvested from Avenue 7.28.1 itself through its REST API (`harvest/`), and the composition was opened on the rig and every parameter read back before it shipped. Shape Shifter 3D is excluded: it crashed Avenue on save, twice.
+
+## FILM edition
+
+`Studio One - War Of The Worlds 1938 FILM.avc` + `APC 40 MK II - Studio One FILM.xml`: the same
+instrument with a ninth layer, FILM, at the bottom, carrying forty photographic 1080p loop clips
+(one per scene, DXV, ping-pong): twenty from Sume's HeyGen Video 1 and twenty from MiniMax H3 run
+locally, all from `docs/SUME_CLIP_PROMPTS.md` and `render/`. Built by `add_film_layer.py`; the APC40
+layout is unchanged. Pick the FILM preset in Preferences > MIDI. The clips themselves are not in
+the repository (about 2 GB); the composition looks for them in `C:\Resolume Clips\studio_one`,
+see `docs/SUME_CLIP_PROMPTS.md` to rebuild them.
