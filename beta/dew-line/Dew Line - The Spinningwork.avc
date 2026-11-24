@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Composition name="Composition" uniqueId="1790200000006" numDecks="5" currentDeckIndex="0" numLayers="8" numColumns="8" compositionIsRelative="0">
-	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="28" microVersion="1" revision="26535" />
+	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="29" microVersion="0" revision="33052" />
 	<CompositionInfo name="Dew Line: The Spinningwork" description="A spider builds an early-warning station out of silk, takes her own scaffold down before dawn, and casts her shadow on every star the net catches." width="1920" height="1080">
 		<DeckInfo name="Orb Plate 1889" id="1790200000001" closed="0" />
 		<DeckInfo name="Sit and Wait" id="1790200000002" closed="0" />

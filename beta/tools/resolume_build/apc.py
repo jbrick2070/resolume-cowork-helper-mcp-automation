@@ -159,7 +159,7 @@ def esc(s):
 
 
 class Preset(object):
-    def __init__(self, name, preset_id, id_base, version=(7, 28, 1, 26535),
+    def __init__(self, name, preset_id, id_base, version=(7, 29, 0, 33052),
                  product="Resolume Avenue"):
         self.name = name
         self.preset_id = preset_id

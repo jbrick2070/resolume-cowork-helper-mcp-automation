@@ -58,6 +58,12 @@ def main():
             copy(os.path.join(ROOT, "harvest", "out", f),
                  os.path.join(tools, "harvest", "out", f))
             n += 1
+    out729 = os.path.join(ROOT, "harvest", "out_729")
+    if os.path.isdir(out729):
+        for f in os.listdir(out729):
+            if f.endswith((".json", ".txt")) and not f.startswith("_"):
+                copy(os.path.join(out729, f), os.path.join(tools, "harvest", "out_729", f))
+                n += 1
     print("mirrored %d files into %s" % (n, dst))
 
 

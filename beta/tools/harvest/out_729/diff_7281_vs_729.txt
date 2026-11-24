@@ -1,0 +1,7 @@
+== sources: old 24, new 29
+  + Spectral Bloom (16 params)
+  + Spectral Drops (12 params)
+  + Spectral Eclipse (14 params)
+  + Spectral Shape (22 params)
+  + Spectrum Visualizer (12 params)
+== effects: old 115, new 115

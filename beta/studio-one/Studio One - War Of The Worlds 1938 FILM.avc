@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Composition name="Composition" uniqueId="1792000000006" numDecks="5" currentDeckIndex="0" numLayers="9" numColumns="8" compositionIsRelative="0">
-	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="28" microVersion="1" revision="26535" />
+	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="29" microVersion="0" revision="33052" />
 	<CompositionInfo name="Studio One - War Of The Worlds 1938" description="Everyone forgets. The record doesn't." width="1920" height="1080">
 		<DeckInfo name="Studio One" id="1792000000001" closed="0" />
 		<DeckInfo name="Grovers Mill" id="1792000000002" closed="0" />

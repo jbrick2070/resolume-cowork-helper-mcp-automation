@@ -23,9 +23,9 @@ import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-LIBRARY_JSON = os.path.join(ROOT, "harvest", "out", "avenue_7281_library.json")
+LIBRARY_JSON = os.path.join(ROOT, "harvest", "out_729", "avenue_729_library.json")
 
-PRODUCT = ("Resolume Avenue", 7, 28, 1, 26535)
+PRODUCT = ("Resolume Avenue", 7, 29, 0, 33052)
 
 # Effects that must never be written into a pack. Shape Shifter 3D carries
 # 529 parameters and crashed Avenue 7.28.1 on save (twice, 2026-10-16).

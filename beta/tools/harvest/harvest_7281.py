@@ -39,6 +39,7 @@ import xml.etree.ElementTree as ET
 BASE = "http://127.0.0.1:8080/api/v1"
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
+TAG = "7281"   # library file name: avenue_<TAG>_library.json
 
 # Device-backed and routing sources are not generators; skip them.
 SKIP_SOURCES = {"Avenue - Composition", "Integrated Camera",
@@ -140,8 +141,9 @@ def harvest_sources():
 
 
 # ---------------------------------------------------------------- effects --
-def harvest_effects(batch_size, only=None):
-    effects = [e["name"] for e in get("/effects")["video"]]
+def harvest_effects(batch_size, only=None, skip=()):
+    effects = [e["name"] for e in get("/effects")["video"]
+               if e["name"] not in skip]
     if only:
         effects = [e for e in effects if e in only]
     effects.sort(key=lambda n: (n in SLOW_EFFECTS, n))
@@ -315,7 +317,7 @@ def parse_all():
                 "mixer": [m.get("name")
                           for m in wrap.findall("ChoosableMixer")],
                 "batch_file": os.path.basename(avc)}
-    jdump(lib, "avenue_7281_library.json")
+    jdump(lib, "avenue_%s_library.json" % TAG)
     jdump(compact(lib), "dictionary_compact.json")
     print("library: %d sources, %d effects" % (len(lib["sources"]),
                                                len(lib["effects"])))
@@ -356,6 +358,12 @@ def compact(lib):
 
 
 def main():
+    # --out DIR / --tag 729 harvest a newer Avenue without touching out/.
+    global OUT, TAG
+    if "--out" in sys.argv:
+        OUT = os.path.join(HERE, sys.argv[sys.argv.index("--out") + 1])
+    if "--tag" in sys.argv:
+        TAG = sys.argv[sys.argv.index("--tag") + 1]
     os.makedirs(OUT, exist_ok=True)
     if not alive():
         raise SystemExit("REST API on 8080 not answering")
@@ -369,7 +377,10 @@ def main():
             bs = int(sys.argv[sys.argv.index("--batch") + 1])
         if "--only" in sys.argv:
             only = set(sys.argv[sys.argv.index("--only") + 1].split(","))
-        harvest_effects(bs, only)
+        skip = set()
+        if "--skip" in sys.argv:
+            skip = set(sys.argv[sys.argv.index("--skip") + 1].split(","))
+        harvest_effects(bs, only, skip)
     elif cmd == "parse":
         parse_all()
     else:

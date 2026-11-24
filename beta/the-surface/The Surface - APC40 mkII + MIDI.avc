@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Composition name="Composition" uniqueId="1795000000006" numDecks="5" currentDeckIndex="0" numLayers="8" numColumns="8" compositionIsRelative="0">
-	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="28" microVersion="1" revision="26535" />
+	<versionInfo name="Resolume Avenue" majorVersion="7" minorVersion="29" microVersion="0" revision="33052" />
 	<CompositionInfo name="The Surface - APC40 mkII + MIDI" description="Note 0 is bottom-left. Channel is track. Centre is everything." width="1920" height="1080">
 		<DeckInfo name="The Grid" id="1795000000001" closed="0" />
 		<DeckInfo name="The Strips" id="1795000000002" closed="0" />
@@ -2994,7 +2994,7 @@ n7" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000299" layerIndex="5" columnIndex="1">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -3026,7 +3026,7 @@ n7" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -3050,9 +3050,29 @@ n7" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000303" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000000303" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -3810,7 +3830,7 @@ ROWS 1-5 = LAYERS 1-5" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000347" layerIndex="5" columnIndex="2">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -3842,7 +3862,7 @@ ROWS 1-5 = LAYERS 1-5" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -3866,9 +3886,32 @@ ROWS 1-5 = LAYERS 1-5" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000351" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000000351" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -4605,7 +4648,7 @@ RED
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000399" layerIndex="5" columnIndex="3">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -4637,7 +4680,7 @@ RED
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -4661,9 +4704,32 @@ RED
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000403" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000000403" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4292404456" channelmode="2" paletteEnabled="0" color="4292404456" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -7318,7 +7384,7 @@ MASTER n80" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000575" layerIndex="5" columnIndex="6">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -7350,7 +7416,7 @@ MASTER n80" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -7374,9 +7440,28 @@ MASTER n80" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000579" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000000579" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -9175,7 +9260,7 @@ TRACK
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000695" layerIndex="5" columnIndex="0">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -9207,7 +9292,7 @@ TRACK
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -9231,9 +9316,32 @@ TRACK
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000699" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000000699" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -10060,7 +10168,7 @@ TRACK
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000751" layerIndex="5" columnIndex="1">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -10092,7 +10200,7 @@ TRACK
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -10116,9 +10224,32 @@ TRACK
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000755" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000000755" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4280688927" channelmode="2" paletteEnabled="0" color="4280688927" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -10949,7 +11080,7 @@ KNOBS" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000807" layerIndex="5" columnIndex="2">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -10981,7 +11112,7 @@ KNOBS" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -11005,9 +11136,28 @@ KNOBS" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000811" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000000811" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -11836,7 +11986,7 @@ LIT = ON AIR" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000863" layerIndex="5" columnIndex="3">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -11868,7 +12018,7 @@ LIT = ON AIR" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -11892,9 +12042,29 @@ LIT = ON AIR" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000867" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000000867" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -12723,7 +12893,7 @@ EIGHT LATCHING TOGGLES" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000919" layerIndex="5" columnIndex="4">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -12755,7 +12925,7 @@ EIGHT LATCHING TOGGLES" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -12779,9 +12949,32 @@ EIGHT LATCHING TOGGLES" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000923" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000000923" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -13614,7 +13807,7 @@ BANK 3" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000000975" layerIndex="5" columnIndex="5">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -13646,7 +13839,7 @@ BANK 3" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -13670,9 +13863,32 @@ BANK 3" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000000979" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000000979" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4280688927" channelmode="2" paletteEnabled="0" color="4280688927" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -15300,7 +15516,7 @@ B: FIGURE LIGHT TEXT" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001079" layerIndex="5" columnIndex="7">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -15332,7 +15548,7 @@ B: FIGURE LIGHT TEXT" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -15356,9 +15572,28 @@ B: FIGURE LIGHT TEXT" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001083" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000001083" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -16215,7 +16450,7 @@ BANKS 1-4 - MACROS 5-8" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001143" layerIndex="5" columnIndex="0">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -16247,7 +16482,7 @@ BANKS 1-4 - MACROS 5-8" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -16271,9 +16506,32 @@ BANKS 1-4 - MACROS 5-8" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001147" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000001147" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4292404456" channelmode="2" paletteEnabled="0" color="4292404456" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -17138,7 +17396,7 @@ FOLLOW THE VALUE CC" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001203" layerIndex="5" columnIndex="1">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -17170,7 +17428,7 @@ FOLLOW THE VALUE CC" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -17194,9 +17452,28 @@ FOLLOW THE VALUE CC" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001207" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000001207" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -17971,7 +18248,7 @@ SCOPE DEPTH - TIME" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001255" layerIndex="5" columnIndex="2">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -18003,7 +18280,7 @@ SCOPE DEPTH - TIME" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -18027,9 +18304,29 @@ SCOPE DEPTH - TIME" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001259" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000001259" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -18851,7 +19148,7 @@ ANTICLOCKWISE = CLEAN" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001311" layerIndex="5" columnIndex="3">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -18883,7 +19180,7 @@ ANTICLOCKWISE = CLEAN" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -18907,9 +19204,32 @@ ANTICLOCKWISE = CLEAN" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001315" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000001315" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -19748,7 +20068,7 @@ DOWN
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001367" layerIndex="5" columnIndex="4">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -19780,7 +20100,7 @@ DOWN
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -19804,9 +20124,32 @@ DOWN
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001371" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000001371" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4292404456" channelmode="2" paletteEnabled="0" color="4292404456" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -20637,7 +20980,7 @@ SESSION REC n102" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001427" layerIndex="5" columnIndex="5">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -20669,7 +21012,7 @@ SESSION REC n102" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -20693,9 +21036,28 @@ SESSION REC n102" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001431" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000001431" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -21526,7 +21888,7 @@ HOME" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001487" layerIndex="5" columnIndex="6">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -21558,7 +21920,7 @@ HOME" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -21582,9 +21944,29 @@ HOME" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001491" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000001491" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -22368,7 +22750,7 @@ HOME" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001539" layerIndex="5" columnIndex="7">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -22400,7 +22782,7 @@ HOME" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -22424,9 +22806,32 @@ HOME" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001543" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000001543" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -23276,7 +23681,7 @@ OPTO-ISOLATED IN" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001599" layerIndex="5" columnIndex="0">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -23308,7 +23713,7 @@ OPTO-ISOLATED IN" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -23332,9 +23737,28 @@ OPTO-ISOLATED IN" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001603" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000001603" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -24149,7 +24573,7 @@ STOP
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001651" layerIndex="5" columnIndex="1">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -24181,7 +24605,7 @@ STOP
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -24205,9 +24629,29 @@ STOP
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001655" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000001655" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.408">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -25029,7 +25473,7 @@ nnnn = CHANNEL - 1" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001711" layerIndex="5" columnIndex="2">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -25061,7 +25505,7 @@ nnnn = CHANNEL - 1" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -25085,9 +25529,32 @@ nnnn = CHANNEL - 1" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001715" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000001715" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.408">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -26729,7 +27196,7 @@ CC16-23" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001819" layerIndex="5" columnIndex="4">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -26761,7 +27228,7 @@ CC16-23" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -26785,9 +27252,32 @@ CC16-23" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001823" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000001823" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4292404456" channelmode="2" paletteEnabled="0" color="4292404456" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -27610,7 +28100,7 @@ CLASS COMPLIANT
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001871" layerIndex="5" columnIndex="5">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -27642,7 +28132,7 @@ CLASS COMPLIANT
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -27666,9 +28156,28 @@ CLASS COMPLIANT
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001875" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000001875" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -28474,7 +28983,7 @@ NOTE 2^56 - CC 2^57" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001927" layerIndex="5" columnIndex="6">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -28506,7 +29015,7 @@ NOTE 2^56 - CC 2^57" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -28530,9 +29039,29 @@ NOTE 2^56 - CC 2^57" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001931" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000001931" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.408">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -29328,7 +29857,7 @@ APC40 MKII: IN + OUT" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000001979" layerIndex="5" columnIndex="7">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -29360,7 +29889,7 @@ APC40 MKII: IN + OUT" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -29384,9 +29913,32 @@ APC40 MKII: IN + OUT" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000001983" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000001983" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.408">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -30271,7 +30823,7 @@ APC40 MKII: IN + OUT" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000002043" layerIndex="5" columnIndex="0">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -30303,7 +30855,7 @@ APC40 MKII: IN + OUT" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -30327,9 +30879,29 @@ APC40 MKII: IN + OUT" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000002047" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000002047" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -31145,7 +31717,7 @@ S-VIDEO - QUAD PREVIEW" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000002095" layerIndex="5" columnIndex="1">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -31177,7 +31749,7 @@ S-VIDEO - QUAD PREVIEW" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -31201,9 +31773,32 @@ S-VIDEO - QUAD PREVIEW" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000002099" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000002099" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -31982,7 +32577,7 @@ AT YOUR OWN SPEED" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000002147" layerIndex="5" columnIndex="2">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -32014,7 +32609,7 @@ AT YOUR OWN SPEED" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -32038,9 +32633,32 @@ AT YOUR OWN SPEED" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000002151" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000002151" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4292404456" channelmode="2" paletteEnabled="0" color="4292404456" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -32770,7 +33388,7 @@ DIRECTION - BORDER" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000002195" layerIndex="5" columnIndex="3">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Shape Aura" value="Shape Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -32802,7 +33420,7 @@ DIRECTION - BORDER" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -32826,9 +33444,28 @@ DIRECTION - BORDER" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000002199" baseType="Generator">
+						<RenderPass name="SpectralShape" type="WireGenerator" uniqueTypeId="c_57112e07-cd1b-4e85-ad3e-e04007758136" uniqueId="1795000002199" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="16.0" value="12.0">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Thickness" T="DOUBLE" default="0.25" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Animation" T="DOUBLE" default="0.10000000149011612" value="0.2">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="0.10000000149011612" value="0.12">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4294967295" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Color 2" T="COLOR" default="4294942007" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamRange name="Fallback" T="DOUBLE" default="0.20000000298023224" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -33585,7 +34222,7 @@ BORDER" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000002247" layerIndex="5" columnIndex="4">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Bloom Aura" value="Bloom Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -33617,7 +34254,7 @@ BORDER" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -33641,9 +34278,29 @@ BORDER" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000002251" baseType="Generator">
+						<RenderPass name="SpectralBloom" type="WireGenerator" uniqueTypeId="c_e37bbe17-a1a8-4796-afd3-b533fa6444fd" uniqueId="1795000002251" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Amount" T="DOUBLE" default="0.5" value="0.35">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.55">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.15000000596046448" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="1.0" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Sectors" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.4000000059604645" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -34381,7 +35038,7 @@ A LEFT - B RIGHT" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000002299" layerIndex="5" columnIndex="5">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Eclipse Aura" value="Eclipse Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -34413,7 +35070,7 @@ A LEFT - B RIGHT" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -34437,9 +35094,32 @@ A LEFT - B RIGHT" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000002303" baseType="Generator">
+						<RenderPass name="SpectralEclipse" type="WireGenerator" uniqueTypeId="c_fc5e9263-52b3-4e2f-aa26-f6356d2945f2" uniqueId="1795000002303" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Reach" T="DOUBLE" default="0.5" value="0.45">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Eclipse" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Trail" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Glow" T="DOUBLE" default="0.25" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0.108">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Spread" T="DOUBLE" default="0.5" value="0.05">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Fallback" T="DOUBLE" default="0.30000001192092896" value="0.3">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.30000001192092896" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
@@ -35247,7 +35927,7 @@ COLOUR - TINT (MENU)" />
 		</Clip>
 		<Clip name="Clip" uniqueId="1795000002355" layerIndex="5" columnIndex="6">
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Blank" value="Blank" />
+				<Param name="Name" T="STRING" default="Drops Aura" value="Drops Aura" />
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0" />
 				<ParamChoice name="ColorId" T="INT32" default="0" value="4" storeChoices="0" />
 			</Params>
@@ -35279,7 +35959,7 @@ COLOUR - TINT (MENU)" />
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1.0">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.4">
 						<PhaseSourceStatic name="PhaseSourceStatic" />
 					</ParamRange>
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -35303,9 +35983,32 @@ COLOUR - TINT (MENU)" />
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
-						<RenderPass name="Blank" type="Blank" uniqueTypeId="6980259688" uniqueId="1795000002359" baseType="Generator">
+						<RenderPass name="SpectralDrops" type="WireGenerator" uniqueTypeId="c_d4fde4d5-7cfc-43a5-9969-c3bce96dc2d5" uniqueId="1795000002359" baseType="Generator">
 							<Params name="Params">
-								<Param name="Black BG" T="BOOL" default="0" value="0" />
+								<ParamRange name="Speed" T="DOUBLE" default="0.75" value="0.6">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Stillness" T="DOUBLE" default="0.75" value="0.75">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Detail" T="DOUBLE" default="0.25" value="0.25">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Force" T="DOUBLE" default="0.5" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamColor name="Low" T="COLOR" default="4283141119" value="4279938815" channelmode="2" paletteEnabled="0" color="4279938815" interpolated="0" />
+								<ParamColor name="Mid" T="COLOR" default="4293781118" value="4286897213" channelmode="2" paletteEnabled="0" color="4286897213" interpolated="0" />
+								<ParamColor name="High" T="COLOR" default="4294942406" value="4292404456" channelmode="2" paletteEnabled="0" color="4292404456" interpolated="0" />
+								<ParamRange name="Range" T="DOUBLE" default="1.0" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
+								<ParamRange name="Balance" T="DOUBLE" default="0.3499999940395355" value="0.4">
+									<PhaseSourceStatic name="PhaseSourceStatic" />
+								</ParamRange>
 							</Params>
 						</RenderPass>
 					</VideoSource>
