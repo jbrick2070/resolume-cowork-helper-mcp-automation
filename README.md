@@ -74,6 +74,8 @@ apc40mkii-kit/
                 08-your-topic-pack    - ANY topic -> full 4x8-bank-optimized set
                 09-any-controller     - bring your own hardware; agent researches
                                         its banks/colors and maps to it
+                10-apc40-v2-overnight - unattended V2 chassis + FFT build on top
+                                        of the frozen 148-control visual twin
   compositions/ APC40_Visual_QA_148.avc - verified 148-control APC40 twin
   controllers/  APC 40 MK II - Visual QA.xml - verified 203-shortcut preset
   beta/         older audio-reactive + Orbit compositions and controller presets
