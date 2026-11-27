@@ -1,4 +1,4 @@
-"""HTTP-over-named-pipe client for Resolume Avenue's local REST API.
+r"""HTTP-over-named-pipe client for Resolume Avenue's local REST API.
 
 Avenue exposes REST on `\\.\pipe\Resolume Avenue\rest-api` (HTTP/1.1 over a
 named pipe, no TCP). One request per pipe connection, serialized - the same
