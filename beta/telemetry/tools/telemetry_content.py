@@ -62,7 +62,7 @@ def PILOT(c1, c2):
             'color1': c1, 'color2': c2}
 
 def CAL(color, outline):
-    """The calibration dial: a Shaper the relative tempo encoder rotates."""
+    """The calibration dial: a Shaper with a serialized Rotation Z."""
     return {'kind': 'shaper', 'label': 'CAL DIAL', 'fft': 'none',
             'color': color, 'outline': outline}
 

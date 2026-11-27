@@ -5,11 +5,15 @@
 > format* — it parses, the IDs are unique, the counts hold, every shortcut species and
 > generator block clones a rig-saved donor — but the composition **has not been opened
 > in Resolume even once**. No pad has been pressed, no trace has been drawn, no pedal
-> has been stomped. Same disclaimer weight as [`../lexicon-ii/`](../lexicon-ii/), and
-> just as deliberate.
+> has been pressed. Its sibling [`../lexicon-ii/`](../lexicon-ii/) has since been opened
+> once; this one has not.
+>
+> On 2026-11-27 the preset was brought up to the kit's
+> [operator standard](../OPERATOR_STANDARD.md) (13 of 13 rules, built into the
+> generator). That change is as untested as the rest.
 >
 > For the brave: it's two files and about ninety seconds to find out. Everything is
-> regenerable from `tools/` in one command.
+> regenerable from `tools/`.
 
 Five decks = **five fictional instruments, all pointed at the same room**. Whatever the
 music does, the machines report it — the FFT is not a garnish here, it is the subject:
@@ -28,17 +32,22 @@ block-element raster typography (`█▓▒░ ▁▂▇ ┼─│` — text as 
 one **SNOW** (Static), one **PILOT** (Stroboscope, the deck's single bass-gated strobe)
 and one **CAL DIAL** (Shaper). No media, no FFGL, no Wire, nothing to install.
 
-## Three kit firsts
+## The surface
 
-- **The whole surface.** All **149 physical controls** are mapped — the first
-  *performance* preset in this kit to do it (the diagnostic visual twins mapped 148;
-  the Lexicons mapped 98). The build fails if even one address is missing.
-- **The footswitch lives.** CC64 had never been mapped by any preset in this repo.
-  Here it is **THE STOMP**: hold for a full RGB split, spring back to zero on release
-  (ShiftRGB ships active at Distance 0 so the pedal works with nothing armed).
-- **The relative encoder goes performance.** The tempo knob (CC13, a true relative
-  encoder) turns the CAL DIAL's rotation through the rig-proven `behaviour="16392"`
-  species — an endless calibration screw, previously seen only in the QA twins.
+- **The whole surface.** All **149 physical controls** are mapped, one shortcut on
+  each. The build fails if even one address is missing.
+- **The operator standard, built in.** The controls that mean the same thing on every
+  pack mean it here too: the **tempo knob** is the FFT INPUT GAIN — on a pack whose
+  subject is the FFT, the one knob that decides how hard the room drives every
+  instrument — **Cue Level** is TIME (the paper speed), **▲ ▼** walk the columns,
+  **◀ ▶** walk the decks, **Play** opens the show, **Stop** stops, and **Record** and
+  the **footswitch** are blackout. The generator asserts all thirteen rules before it
+  writes; see [`../OPERATOR_STANDARD.md`](../OPERATOR_STANDARD.md).
+- **What the first build had instead.** As built on 2026-08-07 the tempo knob turned
+  the CAL DIAL and the footswitch was an RGB-split stomp. The standard claims both
+  controls on every pack, so they were given up. The RGB split is still on Device
+  Knob 2 (ShiftRGB ships active at Distance 0, so the knob works with nothing armed);
+  the CAL DIAL keeps its Rotation Z in the composition with no control bound to it.
 
 ## The desk, in instrument-speak
 
@@ -48,6 +57,9 @@ and one **CAL DIAL** (Shaper). No media, no FFGL, no Wire, nothing to install.
   instrument from calm to catastrophe; 6–8 are CAL / UTILITY / SNOW.
 - **Scene Launch 1–5** lifts the pen (clears the aligned row). **Stop All** powers the
   desk down. **Master** drops the TEST CARD.
+- **Play** opens the show (column 1). **Stop** stops (ejects everything, as Stop All
+  does). **Record** = SCREEN DARK, a blackout toggle; the **footswitch** is the same
+  blackout for as long as it is held.
 - **Clip Stop row** = the instrument rack: HueRotate, ShiftRGB, LoRez, InvertRGB,
   MirrorQuad, Twitch, ShiftGlitch, Vignette. Bloom / WaveWarp / Tunnel arm from the
   device buttons. No Trails, no Freeze — the infinite-freeze pair stays banned.
@@ -57,13 +69,14 @@ and one **CAL DIAL** (Shaper). No media, no FFGL, no Wire, nothing to install.
 - **A/B row** = the diagonal walk: eight presses left to right build a complete look
   with one finger.
 - **Pan / Sends / User** = the classic test signals: TONE, BARS, SNOW — and faders
-  6–8 are their trim pots. **Shift** = SIGNAL LOST. **Record** = SLATE.
-  **Metronome** = the PILOT strobe.
+  6–8 are their trim pots. **Shift** = SIGNAL LOST. **Metronome** = tempo resync,
+  **Tap Tempo** = tap.
 - **◀ ▶ / Bank < >** = the instrument dial (deck surf, wraps). **▲ ▼ / Nudge** = paper
-  feed (previous / next column).
+  feed (▲ and Nudge + next column, ▼ and Nudge - previous).
 - **Track knobs 1–8** = the selected clip's own dials: GAIN, PHOSPHOR, EXCITE,
   PAPER/TRIG, HALO, QUAKE H, QUAKE W, SWEEP. **Device knobs** = rack dials + row lamp
-  brightness. **Cue Level** scrubs the selected clip.
+  brightness. **Tempo knob** = FFT INPUT GAIN. **Cue Level** = TIME, the paper speed
+  (composition speed). Both are relative, so neither jumps.
 
 Deliberate button **mirrors** (same cue under a second finger) are all declared and
 machine-checked — see `docs/_control_map.tsv`, every row tagged.
@@ -89,7 +102,8 @@ Rebuild cycle: edit `tools/telemetry_content.py` → `python build_telemetry.py`
 `python gen_preset_telemetry.py` → `python gen_padmap_telemetry.py`. The builds refuse
 to write unless the XML parses, IDs and MIDI keys are unique, the clip and generator
 counts hold, exactly one strobe cell exists per deck, **every one of the 149 surface
-addresses is mapped**, and every duplicated path is a declared mirror.
+addresses is mapped**, every duplicated path is a declared mirror, and the thirteen
+operator-standard rules hold.
 
 ## First test — what to check
 
@@ -108,9 +122,10 @@ addresses is mapped**, and every duplicated path is a declared mirror.
      `build_telemetry.py`, rebuild, recopy — every glyph has an ASCII stand-in.
    - with music: EKG trace snapping on kicks? VU deck showing three breathing columns?
      kill the audio — everything should decay to a readable floor, nothing to black.
-   - the three firsts: does the tempo knob spin the CAL DIAL (deck 1, NEEDLE row,
-     col 8)? does the footswitch split the RGB and spring back? do all six buttons
-     around the grid arrows do something?
+   - the standard: with music playing, does the tempo knob make every instrument
+     livelier and calmer (FFT gain)? does Record black the screen and bring it back,
+     and the footswitch black it only while held? do ▲ ▼ walk the columns forward and
+     back, and do all six buttons around the grid arrows do something?
 6. If a paragraph runs away or a raster overflows its band, shrink that row's
    `wrapChars`/`band` in `LAYERS` in `build_telemetry.py` and rebuild — one line,
    one command.

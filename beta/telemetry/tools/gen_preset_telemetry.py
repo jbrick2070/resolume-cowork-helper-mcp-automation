@@ -1,19 +1,23 @@
 # gen_preset_telemetry.py - build "APC 40 MK II - Telemetry v1.xml".
 # NEW FILE ONLY. No existing preset is read-modify-written.
 #
-# THE FULL SURFACE. Every performance preset in this kit so far mapped ~98 of
-# the APC40 mkII's 149 addressable controls; the diagnostic visual twins mapped
-# 148. This preset is the first PERFORMANCE build to map all 149 - including
-# the footswitch (CC64, never mapped by any preset in the kit, ever) and the
-# relative tempo encoder (CC13, behaviour 16392, previously diagnostic-only).
+# THE FULL SURFACE. All 149 addressable controls of the APC40 mkII are mapped,
+# one shortcut each, and the build refuses to write if one is missing.
 #
-# Shortcut species are cloned from rig-saved donors: clip-connect quartet /
-# column / fader / selected-clip dashboard / trigger / bool / solo from
-# "APC 40 MK II - React v4.4.xml" via the Lexicon generators; the relative
-# encoder from "APC 40 MK II - Visual QA.xml" (behaviour="16392",
-# numSteps="480"). Where the same action appears under two fingers that is
-# deliberate and listed in MIRRORS below; validation enforces that every
-# duplicated path is declared there and nowhere else.
+# THE OPERATOR STANDARD (beta/OPERATOR_STANDARD.md) is built in, not patched
+# on: TEMPO is the global FFT input gain, CUE LEVEL is TIME, UP / DOWN walk
+# the scenes, RIGHT / LEFT walk the decks, PLAY opens scene 1, STOP stops,
+# RECORD and the footswitch are blackout. The thirteen rules that
+# "python -m resolume_build.preset_patch --check" tests are asserted below.
+#
+# Shortcut species are cloned from donors already in the kit: clip-connect
+# quartet / column / fader / selected-clip dashboard / trigger / bool / solo
+# from "APC 40 MK II - React v4.4.xml" via the Lexicon generators; the two
+# relative encoders and the footswitch from the operator-standard block of
+# "APC 40 MK II - Lexicon v2.xml" (behaviour="16392"; ParamRange 0..1). Where
+# the same action appears under two fingers that is deliberate and listed in
+# MIRRORS below; validation enforces that every duplicated path is declared
+# there and nowhere else.
 import os, re
 import xml.etree.ElementTree as ET
 
@@ -144,16 +148,29 @@ def sc_solo(layer, key):
 '\t\t\t</NamedValues>\n'
 '\t\t</Shortcut>' % (nid(), p, p, sp, sp, key))
 
-def sc_relative(path, key):
-    """Relative encoder - cloned from the rig-saved Visual QA donor
-    (behaviour 16392, 480 steps per revolution, input-only)."""
+def sc_relative(path, key, steps):
+    """Relative encoder - the operator-standard species, cloned from the
+    block in "APC 40 MK II - Lexicon v2.xml" (behaviour 16392; the step
+    count sets how far one click moves the value)."""
     return (
-'\t\t<Shortcut name="Shortcut" uniqueId="%s" paramNodeName="ParamRange" behaviour="16392" inputDeviceName="%s">\n'
+'\t\t<Shortcut name="Shortcut" uniqueId="%s" paramNodeName="" behaviour="16392" inputDeviceName="%s" outputDeviceName="%s">\n'
 '\t\t\t<ShortcutPath name="InputPath" path="%s" translationType="1" allowedTranslationTypes="1" />\n'
 '\t\t\t<ShortcutPath name="OutputPath" path="%s" translationType="1" allowedTranslationTypes="1" />\n'
 '\t\t\t<Subtarget type="5" optionIndex="-1" />\n'
-'\t\t\t<RawInputMessage key="%d" value="-0.0020833333333333333044" numSteps="480" />\n'
-'\t\t</Shortcut>' % (nid(), DEV, path, path, key))
+'\t\t\t<RawInputMessage key="%d" value="0" numSteps="%d" />\n'
+'\t\t</Shortcut>' % (nid(), DEV, DEV, path, path, key, steps))
+
+def sc_ccrange(path, key, lo='0', hi='1'):
+    """A CC that drives a switch across a range - the operator-standard
+    footswitch species from the same donor: 127 down, 0 up."""
+    return (
+'\t\t<Shortcut name="Shortcut" uniqueId="%s" paramNodeName="ParamRange" behaviour="8" inputDeviceName="%s" outputDeviceName="%s">\n'
+'\t\t\t<ShortcutPath name="InputPath" path="%s" translationType="1" allowedTranslationTypes="1" />\n'
+'\t\t\t<ShortcutPath name="OutputPath" path="%s" translationType="1" allowedTranslationTypes="1" />\n'
+'\t\t\t<Subtarget type="5" optionIndex="-1" />\n'
+'\t\t\t<ValueRange min="%s" max="%s" />\n'
+'\t\t\t<RawInputMessage key="%d" value="0" numSteps="128" />\n'
+'\t\t</Shortcut>' % (nid(), DEV, DEV, path, path, lo, hi, key))
 
 # ---------------------------------------------------------------- the surface
 # Grid rows, top of the APC to the bottom; layer colour follows the on-screen
@@ -246,28 +263,29 @@ rec('sends', 'NOTE', 88, 1, 'connect BARS (L1 C7) [mirror]',
     pad_connect(1, 7, note_key(88, 1), 44, 45))
 rec('user', 'NOTE', 89, 1, 'connect SNOW (L1 C8) [mirror]',
     pad_connect(1, 8, note_key(89, 1), 44, 45))
-rec('metronome', 'NOTE', 90, 1, 'connect PILOT strobe (L4 C8) [mirror]',
-    pad_connect(4, 8, note_key(90, 1), 52, 53))
-rec('play', 'NOTE', 91, 1, 'resync',
-    sc_trigger('/composition/tempocontroller/resync', note_key(91, 1)))
-rec('stop', 'NOTE', 92, 1, 'composition bypass (SCREEN DARK)',
-    sc_bool('/composition/bypassed', note_key(92, 1), '0.023622047244094488',
+rec('metronome', 'NOTE', 90, 1, 'tempo resync',
+    sc_trigger('/composition/tempocontroller/resync', note_key(90, 1)))
+rec('play', 'NOTE', 91, 1, 'OPEN THE SHOW: connect column 1 [mirror of track select 1]',
+    sc_trigger('/composition/columns/1/connect', note_key(91, 1),
+               '0.007874015748031496', '1.0'))
+rec('stop', 'NOTE', 92, 1, 'STOP: disconnect all [mirror of stop all clips]',
+    sc_trigger('/composition/disconnectall', note_key(92, 1)))
+rec('record', 'NOTE', 93, 1, 'BLACKOUT toggle (SCREEN DARK)',
+    sc_bool('/composition/bypassed', note_key(93, 1), '0.023622047244094488',
             '0.10236220472440945', allowed='1', node='RangedParam[bool]'))
-rec('record', 'NOTE', 93, 1, 'connect SLATE (L5 C6) [mirror]',
-    pad_connect(5, 6, note_key(93, 1), 3, 0))
 rec('session rec', 'NOTE', 102, 1, 'connect DATA CARD (L3 C6) [mirror]',
     pad_connect(3, 6, note_key(102, 1), 8, 9))
 rec('tap tempo', 'NOTE', 99, 1, 'tempo tap',
     sc_trigger('/composition/tempocontroller/tempotap', note_key(99, 1)))
 
 add('\t\t<!-- PAPER FEED and CHANNEL DIAL -->')
-rec('up', 'NOTE', 94, 1, 'previous column (feed paper back)',
-    sc_trigger('/composition/connectprevcolumn', note_key(94, 1)))
-rec('down', 'NOTE', 95, 1, 'next column (feed paper on)',
-    sc_trigger('/composition/connectnextcolumn', note_key(95, 1)))
-rec('nudge -', 'NOTE', 100, 1, 'previous column [mirror of up]',
+rec('up', 'NOTE', 94, 1, 'next column (feed paper on)',
+    sc_trigger('/composition/connectnextcolumn', note_key(94, 1)))
+rec('down', 'NOTE', 95, 1, 'previous column (feed paper back)',
+    sc_trigger('/composition/connectprevcolumn', note_key(95, 1)))
+rec('nudge -', 'NOTE', 100, 1, 'previous column [mirror of down]',
     sc_trigger('/composition/connectprevcolumn', note_key(100, 1)))
-rec('nudge +', 'NOTE', 101, 1, 'next column [mirror of down]',
+rec('nudge +', 'NOTE', 101, 1, 'next column [mirror of up]',
     sc_trigger('/composition/connectnextcolumn', note_key(101, 1)))
 rec('right', 'NOTE', 96, 1, 'next deck (next instrument)',
     sc_trigger('/composition/selectnextdeck', note_key(96, 1)))
@@ -337,16 +355,13 @@ for i in range(8):
         'selected clip dashboard link %d' % (i + 1),
         sc_dashboard(i + 1, cc_key(48 + i, 1)))
 
-add('\t\t<!-- THE ODD THREE: cue wheel, calibration screw, stomp pedal -->')
-rec('cue level', 'CC', 47, 1, 'selected clip transport position',
-    sc_fader('/composition/selectedclip/transport/position', cc_key(47, 1),
-             value='0', allowed='1'))
-rec('tempo', 'CC', 13, 1, 'RELATIVE: rotate CAL DIAL (L3 C8 transform)',
-    sc_relative('/composition/layers/3/clips/8/video/effects/transform/rotationz',
-                cc_key(13, 1)))
-rec('footswitch', 'CC', 64, 1, 'THE STOMP: hold for RGB split (spring to 0)',
-    sc_fader('/composition/video/effects/shiftrgb/effect/distance',
-             cc_key(64, 1), value='0', allowed='1'))
+add('\t\t<!-- OPERATOR STANDARD: paper speed, input gain, blackout pedal -->')
+rec('cue level', 'CC', 47, 1, 'RELATIVE: TIME, composition speed (paper speed)',
+    sc_relative('/composition/speed', cc_key(47, 1), 256))
+rec('tempo', 'CC', 13, 1, 'RELATIVE: FFT INPUT GAIN (global audio gain)',
+    sc_relative('/audiodevicemanager/params/fftinputgain', cc_key(13, 1), 128))
+rec('footswitch', 'CC', 64, 1, 'momentary BLACKOUT (dark while held)',
+    sc_ccrange('/composition/bypassed', cc_key(64, 1)))
 
 # ---------------------------------------------------------------- assemble
 doc = ('<?xml version="1.0" encoding="utf-8"?>\n'
@@ -403,8 +418,8 @@ for m in re.finditer(r'<Shortcut\b.*?</Shortcut>', doc, re.S):
 
 # 3. Every duplicated input path is a declared mirror - nothing sneaks in.
 MIRRORS = {
-    '/composition/connectprevcolumn': 2,        # up + nudge -
-    '/composition/connectnextcolumn': 2,        # down + nudge +
+    '/composition/connectnextcolumn': 2,        # up + nudge +
+    '/composition/connectprevcolumn': 2,        # down + nudge -
     '/composition/selectnextdeck': 2,           # right + bank >
     '/composition/selectprevdeck': 2,           # left + bank <
     '/composition/layers/3/connectnextclip': 2, # rec arm 3 + device <
@@ -424,12 +439,12 @@ MIRRORS = {
     '/composition/layers/4/clips/1/connect': 2, # pad + solo 6
     '/composition/layers/4/clips/3/connect': 2, # pad + solo 7
     '/composition/layers/4/clips/5/connect': 2, # pad + solo 8
-    '/composition/layers/4/clips/8/connect': 2, # pad + metronome (PILOT)
-    '/composition/layers/5/clips/6/connect': 2, # pad + record (SLATE)
     '/composition/layers/5/clips/7/connect': 2, # pad + shift (SIGNAL LOST)
     '/composition/layers/5/clips/8/connect': 2, # pad + master (TEST CARD)
     '/composition/layers/3/clips/6/connect': 2, # pad + session (DATA CARD)
-    '/composition/video/effects/shiftrgb/effect/distance': 2,  # knob 2 + stomp
+    '/composition/columns/1/connect': 2,        # track select 1 + play
+    '/composition/disconnectall': 2,            # stop all clips + stop
+    '/composition/bypassed': 2,                 # record + footswitch
 }
 from collections import Counter
 paths = Counter(re.findall(r'name="InputPath" path="([^"]+)"', doc))
@@ -438,6 +453,36 @@ for p, c in paths.items():
         assert MIRRORS.get(p) == c, 'undeclared duplicate path %s x%d' % (p, c)
 for p, c in MIRRORS.items():
     assert paths[p] == c, 'mirror %s expected x%d got x%d' % (p, c, paths[p])
+
+# 4. The operator standard: the thirteen rules of
+#    resolume_build.preset_patch.RULES, asserted on the finished document.
+def bound(kind, num):
+    key = note_key(num) if kind == 'NOTE' else cc_key(num)
+    return [b for b in re.findall(r'<Shortcut\b.*?</Shortcut>', doc, re.S)
+            if 'RawInputMessage key="%d"' % key in b]
+
+STANDARD = [
+    ('TEMPO = FFT gain, relative',  'CC',   13, 'audiodevicemanager/params/fftinputgain', True),
+    ('CUE LEVEL relative',          'CC',   47, 'composition/speed',                      True),
+    ('UP = next scene',             'NOTE', 94, 'connectnextcolumn',                      False),
+    ('DOWN = previous scene',       'NOTE', 95, 'connectprevcolumn',                      False),
+    ('RIGHT = next deck',           'NOTE', 96, 'selectnextdeck',                         False),
+    ('LEFT = previous deck',        'NOTE', 97, 'selectprevdeck',                         False),
+    ('PLAY opens scene 1',          'NOTE', 91, 'columns/1/connect',                      False),
+    ('STOP stops',                  'NOTE', 92, 'composition/disconnectall',              False),
+    ('RECORD = blackout',           'NOTE', 93, 'composition/bypassed',                   False),
+    ('FOOTSWITCH = blackout',       'CC',   64, 'composition/bypassed',                   False),
+    ('STOP ALL = eject all',        'NOTE', 81, 'disconnectall',                          False),
+    ('MASTER fader',                'CC',   14, 'composition/master',                     False),
+    ('CROSSFADER',                  'CC',   15, 'crossfader/phase',                       False),
+]
+for label, kind, num, tail, relative in STANDARD:
+    blocks = bound(kind, num)
+    assert len(blocks) == 1, 'operator standard: %s is bound %d times' % (label, len(blocks))
+    path = re.search(r'name="InputPath" path="([^"]*)"', blocks[0]).group(1)
+    assert path.endswith(tail), 'operator standard broken: %s -> %s' % (label, path)
+    if relative:
+        assert 'behaviour="16392"' in blocks[0], 'operator standard: %s must be relative' % label
 
 open(OUT, 'w', encoding='utf-8', newline='').write(doc)
 with open(CMAP, 'w', encoding='utf-8', newline='\n') as fh:

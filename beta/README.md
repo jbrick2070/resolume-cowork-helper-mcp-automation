@@ -35,9 +35,9 @@ shortcut, pad or knob has been tested. It is here for the curious, not for a sho
 `telemetry/` is "The Measuring Room" — five fictional instruments (EKG,
 seismograph, VU array, polygraph, Geiger counter) that all measure the room's
 audio; the FFT is the subject, not the garnish. 200 native-generator pads drawn
-in block-element raster typography, and the first performance preset in the kit
-to map **all 149 physical controls** — footswitch and relative tempo encoder
-included. **Completely untested, same weight of disclaimer as lexicon-ii**; see
+in block-element raster typography, one shortcut on each of the **149 physical
+controls**, and the operator standard built into its generator (13 of 13).
+**Completely untested: it has not been opened in Resolume even once**; see
 `telemetry/README.md`.
 
 `library-hand/` is **The Library And The Hand**, a procedural pack cut from a

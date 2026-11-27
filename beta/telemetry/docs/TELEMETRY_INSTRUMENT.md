@@ -2,12 +2,12 @@
 
 The Measuring Room: five fictional instruments on one APC40, all measuring the same
 signal — the room. Built 2026-08-07, entirely from the XML up, **never yet opened in
-Resolume**. This note records what was built, which donors every block clones, and
-where the risk is.
+Resolume**; the preset was brought up to the operator standard on 2026-11-27. This note
+records what was built, which donors every block clones, and where the risk is.
 
 ## 1. The idea
 
-The kit's packs so far have been about *language* (Lexicon: a sentence machine;
+When this was built the kit's packs were about *language* (Lexicon: a sentence machine;
 Lexicon II: a found-text channel dial) or *pictures* (Live Gen, Orbit Gen). Telemetry
 is about the **FFT itself**: every deck is an instrument whose entire fiction is
 "I am measuring the music". The audio analysis isn't decorating the content — it *is*
@@ -68,14 +68,20 @@ and on any allowlisted mirror whose count drifts.
 
 Notable choices:
 
-- **CC13 (tempo)** is a hardware *relative* encoder — mapped through the rig-proven
-  `behaviour="16392"` / `numSteps="480"` species (donor: the Visual QA preset) to the
-  CAL DIAL clip's `transform/rotationz`. First performance use in the kit.
-- **CC64 (footswitch)** had never been mapped in any preset here. It drives comp
-  ShiftRGB `distance` as a plain dial shortcut: 127 on press, 0 on release = a
-  momentary RGB split. ShiftRGB is the one rack effect shipped **active** (at
-  Distance 0, i.e. invisible) so the pedal works from a cold load; its Clip Stop
-  toggle can still bypass it to lock the pedal out.
+- **The operator standard is built in** (`../../OPERATOR_STANDARD.md`). The generator
+  asserts the thirteen rules that `resolume_build/preset_patch.py --check` tests:
+  **CC13 (tempo)** is the global FFT input gain and **CC47 (cue level)** is TIME
+  (composition speed), both through the relative `behaviour="16392"` species (128 and
+  256 steps); ▲ is the next column and ▼ the previous; ◀ ▶ walk the decks; Play
+  connects column 1; Stop and Stop All disconnect everything; Record toggles
+  `/composition/bypassed` and **CC64 (footswitch)** holds it, so both are blackout.
+- **What that replaced.** As first built, CC13 turned the CAL DIAL clip's
+  `transform/rotationz` and CC64 drove comp ShiftRGB `distance` as a momentary RGB
+  split; Cue Level scrubbed the selected clip, Play was tempo resync, Stop was the
+  blackout, and Record and Metronome re-fired the SLATE and PILOT pads. Tempo resync
+  moved to Metronome, as in the Lexicon family. The Rotation Z is still serialized on
+  the CAL DIAL with nothing bound to it, and ShiftRGB still ships **active** (at
+  Distance 0, i.e. invisible) so Device Knob 2 splits the RGB from a cold load.
 - **Comp rack** (all bypassed on load except ShiftRGB): HueRotate, ShiftRGB, LoRez,
   InvertRGB, MirrorQuad, Twitch, ShiftGlitch, Vignette on the Clip Stop row;
   Bloom / WaveWarp / Tunnel on Device On/Off / Lock / Clip-Dev. **No Trails, no
@@ -94,7 +100,7 @@ Every emitted block is a clone of a shape some rig-saved file already contains:
 | StaticGenerator, StroboscopeGenerator | `Res React Live Gen.avc` |
 | Transform with serialized `Position X` / `Rotation Z` | `APC40_Visual_QA_148.avc` |
 | ParamColor with channel sub-params (Brightness on a dashboard dial) | Lexicon II Text Block + rig-saved TextGenerator instances |
-| Relative-encoder shortcut (`behaviour="16392"`) | `APC 40 MK II - Visual QA.xml` |
+| Relative-encoder shortcuts (`behaviour="16392"`), footswitch range shortcut, Play | the operator-standard block of `APC 40 MK II - Lexicon v2.xml`, block for block |
 | All other shortcut species | React v4.4 via the Lexicon generators |
 
 Resolume serializes sparsely — params not written take their defaults — so the
@@ -109,16 +115,20 @@ generator blocks carry only rig-observed parameter names; nothing is invented.
 2. **Shaper default look.** The CAL DIAL relies on the Shaper's default shape (only
    colours are serialized, as in the Orbit donors). If the default is a centred disc
    the rotation may read poorly — the risk is a boring dial, not a broken comp.
-3. **Relative encoder vs. this comp.** The 16392 species is rig-proven against a QA
-   twin's clip; here it points at a performance clip's transform. Same path grammar,
-   untested pairing.
+3. **The standard controls.** The tempo, cue level, footswitch and Play shortcuts are
+   the same blocks the Lexicon family carries, but the standard itself is not yet
+   confirmed on the hardware: the relative step sizes (FFT gain 128, TIME 256) have
+   not been felt. See `../../OPERATOR_STANDARD.md`.
 4. **Footswitch polarity.** CC64 sends 127 down / 0 up on the mkII per the protocol
-   doc; if a unit inverts, the stomp becomes press-to-clean. Annoying, not dangerous.
+   doc. A pedal wired the other way round would hold the picture dark until it is
+   pressed; unplug it. The same is true of every pack on the standard.
 5. **VU geometry.** The −520/0/+520 column offsets and bar sizes are computed, not
    seen. Worst case the columns crowd; retune `posX` in `telemetry_content.py`.
 
 ## 7. What would make it v2
 
+- A home for the CAL DIAL's rotation and for a momentary RGB split, now that the tempo
+  knob and the footswitch belong to the operator standard.
 - Per-deck LED palettes if the single-preset LED map proves too monochrome per row.
 - A sixth "OSCILLOSCOPE" deck once someone confirms how far the raster trick stretches.
 - Swapping the POLYGRAPH stamp row to a second narrowed band (voice sibilance) after

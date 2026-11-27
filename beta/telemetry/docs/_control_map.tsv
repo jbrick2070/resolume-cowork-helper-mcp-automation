@@ -97,16 +97,16 @@ crossfade A/B trk8	NOTE	66	8	connect diagonal L3 C8 [mirror]
 pan	NOTE	87	1	connect TONE (L1 C6) [mirror]
 sends	NOTE	88	1	connect BARS (L1 C7) [mirror]
 user	NOTE	89	1	connect SNOW (L1 C8) [mirror]
-metronome	NOTE	90	1	connect PILOT strobe (L4 C8) [mirror]
-play	NOTE	91	1	resync
-stop	NOTE	92	1	composition bypass (SCREEN DARK)
-record	NOTE	93	1	connect SLATE (L5 C6) [mirror]
+metronome	NOTE	90	1	tempo resync
+play	NOTE	91	1	OPEN THE SHOW: connect column 1 [mirror of track select 1]
+stop	NOTE	92	1	STOP: disconnect all [mirror of stop all clips]
+record	NOTE	93	1	BLACKOUT toggle (SCREEN DARK)
 session rec	NOTE	102	1	connect DATA CARD (L3 C6) [mirror]
 tap tempo	NOTE	99	1	tempo tap
-up	NOTE	94	1	previous column (feed paper back)
-down	NOTE	95	1	next column (feed paper on)
-nudge -	NOTE	100	1	previous column [mirror of up]
-nudge +	NOTE	101	1	next column [mirror of down]
+up	NOTE	94	1	next column (feed paper on)
+down	NOTE	95	1	previous column (feed paper back)
+nudge -	NOTE	100	1	previous column [mirror of down]
+nudge +	NOTE	101	1	next column [mirror of up]
 right	NOTE	96	1	next deck (next instrument)
 left	NOTE	97	1	previous deck (previous instrument)
 bank <	NOTE	60	1	previous deck [mirror of left]
@@ -145,6 +145,6 @@ track knob 5	CC	52	1	selected clip dashboard link 5
 track knob 6	CC	53	1	selected clip dashboard link 6
 track knob 7	CC	54	1	selected clip dashboard link 7
 track knob 8	CC	55	1	selected clip dashboard link 8
-cue level	CC	47	1	selected clip transport position
-tempo	CC	13	1	RELATIVE: rotate CAL DIAL (L3 C8 transform)
-footswitch	CC	64	1	THE STOMP: hold for RGB split (spring to 0)
+cue level	CC	47	1	RELATIVE: TIME, composition speed (paper speed)
+tempo	CC	13	1	RELATIVE: FFT INPUT GAIN (global audio gain)
+footswitch	CC	64	1	momentary BLACKOUT (dark while held)
