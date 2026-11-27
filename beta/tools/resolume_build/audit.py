@@ -408,7 +408,8 @@ def find_all():
             out.append(g[0])
     cd = PP._resolume_dir("Compositions")
     for f in ("EarthSearch_EP01_Live_Mix.avc", "Res React Lexicon.avc", "Res React Lexicon II.avc", "Res React Nisei.avc",
-              "Res React Test Card.avc", "Res React Orbit.avc", "Res React Live Gen SPECIMEN.avc"):
+              "Res React Test Card.avc", "Res React Telemetry.avc", "Res React Orbit.avc",
+              "Res React Live Gen SPECIMEN.avc"):
         p = os.path.join(cd, f)
         if os.path.exists(p):
             out.append(p)

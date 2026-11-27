@@ -192,8 +192,8 @@ def opacity_link(link):
 
 # ---------------------------------------------------------------- fx passes
 def transform_pass(rotz=None, posx=None):
-    """Bare clip Transform, optionally with serialized Rotation Z (the CAL
-    dial's relative-encoder target) or Position X (the VU column shift).
+    """Bare clip Transform, optionally with serialized Rotation Z (written on
+    the CAL dial; no control is bound to it) or Position X (the VU column shift).
     Param shapes cloned from APC40_Visual_QA_148.avc."""
     params = []
     if posx is not None:
@@ -299,8 +299,8 @@ def simple_pass(name, type_id, indent, bypassed=1):
                      t, t, nid(), t, nid(), t, t))
 
 # The instrument rack. 8 toggles live on the Clip Stop row, Bloom / WaveWarp /
-# Tunnel on the Device buttons. ShiftRGB ships ACTIVE at Distance 0 so the
-# footswitch stomp works with nothing armed; everything else loads bypassed.
+# Tunnel on the Device buttons. ShiftRGB ships ACTIVE at Distance 0 so device
+# knob 2 splits the RGB with nothing armed; everything else loads bypassed.
 # No Trails and no Freeze anywhere - the infinite-freeze pair stays banned.
 COMP_RACK = [
     ('HueRotate',    'A128', 1), ('ShiftRGB',   'A153', 0),

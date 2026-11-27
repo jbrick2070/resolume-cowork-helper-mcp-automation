@@ -39,12 +39,15 @@ Thirteen rules, a dot is a pass.
 | Signal Lost, Studio One, The Library And The Hand, The Manual, The Surface, The Mixers | 13 of 13 |
 | Dead Air, Dew Line | 13 of 13 |
 | Lexicon v1, Lexicon v2, Nisei v1, TestCard v1, Orbit v1, React v4.4, SPECIMEN | 13 of 13 |
+| Telemetry v1 | 13 of 13 (never opened in Resolume) |
 | EarthSearch EP01 | 7 of 13 (live show; arrows, PLAY and STOP ALL stay as designed) |
 
 The instrument packs get there by construction: they are all generated from one control table.
 Dead Air, Dew Line and the older React family were made by earlier generators, so they were
 brought up to the standard in place with `python -m resolume_build.preset_patch`, which edits
-only the controls named above and writes a change log beside each file.
+only the controls named above and writes a change log beside each file. Telemetry was built
+before the standard with other jobs on those controls, so its own generator was changed
+instead and now asserts the thirteen rules before it writes.
 
 ## What changed in the older presets
 

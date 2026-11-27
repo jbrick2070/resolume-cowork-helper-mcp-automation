@@ -305,6 +305,7 @@ TARGETS = [
     ("Lexicon v2", os.path.join(MIDI, "APC 40 MK II - Lexicon v2.xml"), "legacy", dict(decks=True)),
     ("Nisei v1", os.path.join(MIDI, "APC 40 MK II - Nisei v1.xml"), "legacy", dict(decks=True)),
     ("TestCard v1", os.path.join(MIDI, "APC 40 MK II - TestCard v1.xml"), "legacy", dict(decks=True)),
+    ("Telemetry v1", os.path.join(MIDI, "APC 40 MK II - Telemetry v1.xml"), "legacy", dict(decks=True)),
     ("Orbit v1", os.path.join(MIDI, "APC 40 MK II - Orbit v1.xml"), "legacy", dict(decks=True)),
     ("React v4.4", os.path.join(MIDI, "APC 40 MK II - React v4.4.xml"), "legacy", dict(decks=True)),
     ("SPECIMEN", os.path.join(MIDI, "APC 40 MK II - SPECIMEN.xml"), "legacy", dict(decks=True)),
